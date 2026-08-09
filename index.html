@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="theme-color"
+    content="#07182f"
+  />
+
+  <title>LaunchPoint HR</title>
+
+  <style>
+    :root {
+      --navy-950: #04111f;
+      --navy-900: #07182f;
+      --navy-800: #0c2342;
+      --navy-700: #12345b;
+
+      --red-600: #d71920;
+      --red-500: #ef233c;
+
+      --white: #ffffff;
+      --silver-100: #f4f7fb;
+      --silver-200: #dce4ee;
+      --silver-400: #9cadc1;
+      --silver-500: #8394a8;
+
+      --green: #39d98a;
+      --gold: #f2c14e;
+      --orange: #ff9f43;
+
+      --card: rgba(14, 40, 70, 0.92);
+      --card-strong: rgba(19, 52, 91, 0.96);
+
+      --border:
+        rgba(255, 255, 255, 0.09);
+
+      --shadow:
+        0 22px 55px
+        rgba(0, 0, 0, 0.28);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+      color: var(--white);
+
+      background:
+        radial-gradient(
+          circle at 50% -10%,
+          #174b7d 0%,
+          #0b2748 28%,
+          var(--navy-900) 58%,
+          var(--navy-950) 100%
+        );
+
+      background-attachment: fixed;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .app {
+      width: min(1240px, 100%);
+      margin: 0 auto;
+      padding:
+        max(18px, env(safe-area-inset-top))
+        16px
+        60px;
+    }
+
+    /* =======================================================
+       HEADER
+    ======================================================= */
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 54px;
+      height: 54px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 17px;
+
+      background:
+        linear-gradient(
+          145deg,
+          var(--red-500),
+          #a90f22
+        );
+
+      box-shadow:
+        0 14px 32px
+        rgba(239, 35, 60, 0.28);
+
+      font-size: 27px;
+    }
+
+    .brand-title {
+      font-size: 1.32rem;
+      line-height: 1;
+      letter-spacing: 0.045em;
+      font-weight: 900;
+    }
+
+    .brand-subtitle {
+      margin-top: 5px;
+      font-size: 0.73rem;
+      color: var(--silver-400);
+      letter-spacing: 0.04em;
+    }
+
+    .live-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 9px 12px;
+
+      border-radius: 999px;
+      border: 1px solid var(--border);
+
+      background:
+        rgba(255, 255, 255, 0.055);
+
+      color: var(--silver-100);
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+      background: var(--green);
+
+      box-shadow:
+        0 0 14px
+        rgba(57, 217, 138, 0.9);
+    }
+
+    /* =======================================================
+       HERO
+    ======================================================= */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+
+      border-radius: 27px;
+      border: 1px solid var(--border);
+
+      padding: 24px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(22, 63, 105, 0.96),
+          rgba(7, 24, 47, 0.98)
+        );
+
+      box-shadow: var(--shadow);
+
+      margin-bottom: 20px;
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 220px;
+      height: 220px;
+
+      top: -80px;
+      right: -70px;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(239, 35, 60, 0.25),
+          transparent 68%
+        );
+
+      pointer-events: none;
+    }
+
+    .hero-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+
+      color: #ff737e;
+
+      font-size: 0.74rem;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+
+      font-size:
+        clamp(
+          2.05rem,
+          8vw,
+          4.3rem
+        );
+
+      line-height: 0.98;
+      font-weight: 950;
+      letter-spacing: -0.035em;
+
+      margin-bottom: 13px;
+    }
+
+    .hero h1 span {
+      color: var(--red-500);
+    }
+
+    .hero-copy {
+      max-width: 700px;
+
+      color: var(--silver-200);
+      line-height: 1.65;
+      font-size: 0.94rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+
+      margin-top: 18px;
+    }
+
+    .meta-chip {
+      padding: 8px 10px;
+
+      border-radius: 11px;
+
+      background:
+        rgba(255, 255, 255, 0.055);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.075);
+
+      color: var(--silver-200);
+
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .updated {
+      margin-top: 14px;
+      color: var(--silver-500);
+      font-size: 0.74rem;
+    }
+
+    /* =======================================================
+       SUMMARY
+    ======================================================= */
+
+    .summary-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 10px;
+
+      margin-bottom: 18px;
+    }
+
+    .summary-card {
+      padding: 14px;
+
+      border-radius: 17px;
+
+      border:
+        1px solid
+        var(--border);
+
+      background:
+        rgba(255, 255, 255, 0.045);
+    }
+
+    .summary-label {
+      color: var(--silver-500);
+
+      font-size: 0.66rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+
+      margin-bottom: 7px;
+    }
+
+    .summary-value {
+      font-size: 1.4rem;
+      font-weight: 900;
+    }
+
+    /* =======================================================
+       FILTERS
+    ======================================================= */
+
+    .filter-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+
+      padding:
+        9px 0
+        12px;
+
+      margin-bottom: 5px;
+
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(4, 17, 31, 0.96),
+          rgba(4, 17, 31, 0.83),
+          transparent
+        );
+
+      backdrop-filter: blur(7px);
+    }
+
+    .filters {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+
+      scrollbar-width: none;
+    }
+
+    .filters::-webkit-scrollbar {
+      display: none;
+    }
+
+    .filter-btn {
+      flex: 0 0 auto;
+
+      padding: 10px 14px;
+
+      border-radius: 999px;
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+
+      background:
+        rgba(255, 255, 255, 0.055);
+
+      color: var(--white);
+
+      font-size: 0.77rem;
+      font-weight: 850;
+
+      cursor: pointer;
+    }
+
+    .filter-btn.active {
+      background:
+        linear-gradient(
+          135deg,
+          var(--red-500),
+          var(--red-600)
+        );
+
+      border-color: transparent;
+
+      box-shadow:
+        0 7px 20px
+        rgba(239, 35, 60, 0.22);
+    }
+
+    /* =======================================================
+       SECTION
+    ======================================================= */
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 12px;
+
+      margin:
+        7px 0
+        14px;
+    }
+
+    .section-header h2 {
+      font-size: 1.08rem;
+      letter-spacing: 0.01em;
+    }
+
+    .section-header p {
+      margin-top: 4px;
+
+      color: var(--silver-500);
+      font-size: 0.73rem;
+    }
+
+    .player-count {
+      color: var(--silver-400);
+      font-size: 0.74rem;
+      white-space: nowrap;
+    }
+
+    /* =======================================================
+       PLAYER GRID
+    ======================================================= */
+
+    .cards {
+      display: grid;
+
+      grid-template-columns:
+        repeat(
+          auto-fit,
+          minmax(285px, 1fr)
+        );
+
+      gap: 14px;
+    }
+
+    .player-card {
+      position: relative;
+      overflow: hidden;
+
+      padding: 18px;
+
+      border-radius: 22px;
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.085);
+
+      background:
+        linear-gradient(
+          150deg,
+          var(--card-strong),
+          var(--card)
+        );
+
+      box-shadow:
+        0 14px 35px
+        rgba(0, 0, 0, 0.20);
+    }
+
+    .player-card::before {
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+      width: 4px;
+
+      background:
+        linear-gradient(
+          to bottom,
+          var(--red-500),
+          #85101e
+        );
+    }
+
+    .player-card.elite-card::after {
+      content: "";
+
+      position: absolute;
+
+      top: -70px;
+      right: -70px;
+
+      width: 170px;
+      height: 170px;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(242, 193, 78, 0.15),
+          transparent 66%
+        );
+    }
+
+    .card-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+
+      margin-bottom: 14px;
+    }
+
+    .rank {
+      color: #ff626d;
+
+      font-size: 0.72rem;
+      font-weight: 900;
+
+      margin-bottom: 5px;
+    }
+
+    .player-name {
+      font-size: 1.2rem;
+      font-weight: 900;
+      line-height: 1.15;
+    }
+
+    .matchup {
+      margin-top: 6px;
+
+      color: var(--silver-300, #c7d2df);
+
+      font-size: 0.79rem;
+      line-height: 1.5;
+    }
+
+    .tier-badge {
+      flex: 0 0 auto;
+
+      padding: 7px 9px;
+
+      border-radius: 999px;
+
+      font-size: 0.67rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+    }
+
+    .tier-elite {
+      color: var(--gold);
+
+      background:
+        rgba(242, 193, 78, 0.12);
+
+      border:
+        1px solid
+        rgba(242, 193, 78, 0.32);
+    }
+
+    .tier-strong {
+      color: #ff717b;
+
+      background:
+        rgba(239, 35, 60, 0.12);
+
+      border:
+        1px solid
+        rgba(239, 35, 60, 0.28);
+    }
+
+    .tier-value {
+      color: #65eaa7;
+
+      background:
+        rgba(57, 217, 138, 0.11);
+
+      border:
+        1px solid
+        rgba(57, 217, 138, 0.27);
+    }
+
+    .tier-watch {
+      color: #b7c6d7;
+
+      background:
+        rgba(255, 255, 255, 0.055);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.09);
+    }
+
+    /* =======================================================
+       SCORE
+    ======================================================= */
+
+    .main-score {
+      display: grid;
+
+      grid-template-columns:
+        1.3fr 1fr;
+
+      gap: 10px;
+
+      margin-bottom: 11px;
+    }
+
+    .score-block {
+      padding: 13px;
+
+      border-radius: 15px;
+
+      background:
+        rgba(255, 255, 255, 0.048);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.065);
+    }
+
+    .score-label {
+      color: var(--silver-500);
+
+      font-size: 0.62rem;
+
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+
+      margin-bottom: 6px;
+    }
+
+    .launch-score {
+      font-size: 1.75rem;
+      font-weight: 950;
+      line-height: 1;
+    }
+
+    .percentile {
+      font-size: 1.3rem;
+      font-weight: 900;
+    }
+
+    /* =======================================================
+       INFO ROWS
+    ======================================================= */
+
+    .info-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 8px;
+    }
+
+    .info-box {
+      padding: 10px;
+
+      border-radius: 13px;
+
+      background:
+        rgba(255, 255, 255, 0.035);
+    }
+
+    .info-label {
+      color: var(--silver-500);
+      font-size: 0.61rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+
+      margin-bottom: 4px;
+    }
+
+    .info-value {
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .trend-rising {
+      color: #67eaaa;
+    }
+
+    .trend-falling {
+      color: #ff6d78;
+    }
+
+    .trend-neutral {
+      color: var(--silver-200);
+    }
+
+    /* =======================================================
+       DETAIL METRICS
+    ======================================================= */
+
+    .divider {
+      height: 1px;
+
+      background:
+        rgba(255, 255, 255, 0.075);
+
+      margin: 13px 0;
+    }
+
+    .mini-metrics {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 7px;
+    }
+
+    .mini {
+      text-align: center;
+
+      padding:
+        9px 5px;
+
+      border-radius: 11px;
+
+      background:
+        rgba(0, 0, 0, 0.11);
+    }
+
+    .mini-label {
+      color: var(--silver-500);
+      font-size: 0.56rem;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .mini-value {
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .pick-status {
+      margin-top: 13px;
+
+      text-align: center;
+
+      padding: 10px 12px;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--red-500),
+          #b51225
+        );
+
+      font-size: 0.76rem;
+      font-weight: 950;
+      letter-spacing: 0.03em;
+    }
+
+    .pick-status.best-bet {
+      background:
+        linear-gradient(
+          135deg,
+          #e8a800,
+          #b47700
+        );
+
+      color: #fff9e3;
+    }
+
+    .pick-status.strong {
+      background:
+        linear-gradient(
+          135deg,
+          #cb2836,
+          #8d1420
+        );
+    }
+
+    .pick-status.value {
+      background:
+        linear-gradient(
+          135deg,
+          #14874f,
+          #0e6038
+        );
+    }
+
+    /* =======================================================
+       EMPTY / ERROR
+    ======================================================= */
+
+    .message {
+      grid-column: 1 / -1;
+
+      text-align: center;
+
+      padding: 42px 18px;
+
+      border-radius: 18px;
+
+      color: var(--silver-400);
+
+      background:
+        rgba(255, 255, 255, 0.035);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.06);
+    }
+
+    /* =======================================================
+       FOOTER
+    ======================================================= */
+
+    footer {
+      margin-top: 34px;
+
+      padding-top: 18px;
+
+      border-top:
+        1px solid
+        rgba(255, 255, 255, 0.07);
+
+      color: var(--silver-500);
+
+      font-size: 0.69rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* =======================================================
+       MOBILE
+    ======================================================= */
+
+    @media (max-width: 720px) {
+
+      .app {
+        padding-left: 13px;
+        padding-right: 13px;
+      }
+
+      .brand-logo {
+        width: 48px;
+        height: 48px;
+        border-radius: 15px;
+      }
+
+      .brand-title {
+        font-size: 1.14rem;
+      }
+
+      .live-pill {
+        font-size: 0.64rem;
+        padding: 8px 10px;
+      }
+
+      .hero {
+        padding: 20px 18px;
+      }
+
+      .summary-grid {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .mini-metrics {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- =====================================================
+         TOP HEADER
+    ====================================================== -->
+
+    <header class="topbar">
+
+      <div class="brand">
+
+        <div class="brand-logo">
+          ⚾
+        </div>
+
+        <div>
+          <div class="brand-title">
+            LAUNCHPOINT HR
+          </div>
+
+          <div class="brand-subtitle">
+            MLB HOME RUN INTELLIGENCE
+          </div>
+        </div>
+
+      </div>
+
+      <div class="live-pill">
+        <span class="live-dot"></span>
+        MODEL LIVE
+      </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero">
+
+      <div class="hero-label">
+        ⚡ Daily Power Board
+      </div>
+
+      <h1>
+        Find the
+        <span>launch point.</span>
+      </h1>
+
+      <p class="hero-copy">
+        Daily MLB home run candidates ranked using
+        hitter power, pitcher vulnerability,
+        pitch-arsenal matchups, recent form,
+        bullpen exposure, park conditions,
+        handedness and lineup status.
+      </p>
+
+      <div class="hero-meta">
+
+        <div class="meta-chip">
+          Statcast Power
+        </div>
+
+        <div class="meta-chip">
+          Pitch Arsenal
+        </div>
+
+        <div class="meta-chip">
+          Live Weather
+        </div>
+
+        <div class="meta-chip">
+          Bullpen Matchup
+        </div>
+
+        <div class="meta-chip">
+          Lineup Tracking
+        </div>
+
+      </div>
+
+      <div
+        class="updated"
+        id="updated"
+      >
+        Loading latest LaunchPoint update...
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SUMMARY
+    ====================================================== -->
+
+    <section class="summary-grid">
+
+      <div class="summary-card">
+        <div class="summary-label">
+          Candidates
+        </div>
+
+        <div
+          class="summary-value"
+          id="summary-total"
+        >
+          —
+        </div>
+      </div>
+
+
+      <div class="summary-card">
+        <div class="summary-label">
+          Elite
+        </div>
+
+        <div
+          class="summary-value"
+          id="summary-elite"
+        >
+          —
+        </div>
+      </div>
+
+
+      <div class="summary-card">
+        <div class="summary-label">
+          Rising
+        </div>
+
+        <div
+          class="summary-value"
+          id="summary-rising"
+        >
+          —
+        </div>
+      </div>
+
+
+      <div class="summary-card">
+        <div class="summary-label">
+          Confirmed
+        </div>
+
+        <div
+          class="summary-value"
+          id="summary-confirmed"
+        >
+          —
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FILTERS
+    ====================================================== -->
+
+    <div class="filter-wrap">
+
+      <div class="filters">
+
+        <button
+          class="filter-btn active"
+          data-filter="ALL"
+        >
+          Top Picks
+        </button>
+
+        <button
+          class="filter-btn"
+          data-filter="ELITE"
+        >
+          🔥 Elite
+        </button>
+
+        <button
+          class="filter-btn"
+          data-filter="RISING"
+        >
+          ↑ Rising
+        </button>
+
+        <button
+          class="filter-btn"
+          data-filter="CONFIRMED"
+        >
+          ✓ Confirmed
+        </button>
+
+        <button
+          class="filter-btn"
+          data-filter="BEST BET"
+        >
+          ⭐ Best Bets
+        </button>
+
+        <button
+          class="filter-btn"
+          data-filter="WATCHLIST"
+        >
+          Watchlist
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         PLAYER LIST
+    ====================================================== -->
+
+    <section>
+
+      <div class="section-header">
+
+        <div>
+          <h2>
+            Today's HR Candidates
+          </h2>
+
+          <p>
+            Ranked by LaunchPoint model strength.
+          </p>
+        </div>
+
+        <div
+          class="player-count"
+          id="player-count"
+        >
+          Loading...
+        </div>
+
+      </div>
+
+
+      <div
+        class="cards"
+        id="cards"
+      >
+
+        <div class="message">
+          Loading LaunchPoint HR data...
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <footer>
+      LaunchPoint HR is an independent baseball
+      analytics dashboard and is not affiliated with
+      Major League Baseball. Model scores represent
+      analytical rankings, not guarantees.
+    </footer>
+
+  </div>
+
+
+  <script>
+
+    let allPlayers = [];
+
+
+    // ========================================================
+    // SAFE TEXT
+    // ========================================================
+
+    function safeText(value) {
+
+      if (
+        value === null
+        || value === undefined
+        || value === ""
+      ) {
+        return "—";
+      }
+
+      return String(value);
+    }
+
+
+    // ========================================================
+    // SAFE NUMBER
+    // ========================================================
+
+    function safeNumber(
+      value,
+      digits = 1
+    ) {
+
+      const number =
+        Number(value);
+
+      if (
+        Number.isNaN(number)
+      ) {
+        return "—";
+      }
+
+      return number.toFixed(
+        digits
+      );
+    }
+
+
+    // ========================================================
+    // TIER CLASS
+    // ========================================================
+
+    function tierClass(tier) {
+
+      const value =
+        String(
+          tier || ""
+        )
+        .toUpperCase();
+
+      if (
+        value === "ELITE"
+      ) {
+        return "tier-elite";
+      }
+
+      if (
+        value === "STRONG"
+      ) {
+        return "tier-strong";
+      }
+
+      if (
+        value === "VALUE"
+      ) {
+        return "tier-value";
+      }
+
+      return "tier-watch";
+    }
+
+
+    // ========================================================
+    // TREND CLASS
+    // ========================================================
+
+    function trendClass(trend) {
+
+      const value =
+        String(
+          trend || ""
+        )
+        .toUpperCase();
+
+      if (
+        value.includes(
+          "RISING"
+        )
+      ) {
+        return "trend-rising";
+      }
+
+      if (
+        value.includes(
+          "FALLING"
+        )
+      ) {
+        return "trend-falling";
+      }
+
+      return "trend-neutral";
+    }
+
+
+    // ========================================================
+    // PICK STATUS CLASS
+    // ========================================================
+
+    function pickStatusClass(
+      status
+    ) {
+
+      const value =
+        String(
+          status || ""
+        )
+        .toUpperCase();
+
+      if (
+        value === "BEST BET"
+      ) {
+        return "best-bet";
+      }
+
+      if (
+        value === "STRONG"
+      ) {
+        return "strong";
+      }
+
+      if (
+        value === "VALUE"
+      ) {
+        return "value";
+      }
+
+      return "";
+    }
+
+
+    // ========================================================
+    // BATTING ORDER
+    // ========================================================
+
+    function displayOrder(
+      order,
+      lineupStatus
+    ) {
+
+      const value =
+        Number(order || 0);
+
+      if (
+        value <= 0
+      ) {
+
+        if (
+          String(
+            lineupStatus || ""
+          )
+          .toUpperCase()
+          === "CONFIRMED"
+        ) {
+          return "Confirmed";
+        }
+
+        return "Pending";
+      }
+
+      return `#${value}`;
+    }
+
+
+    // ========================================================
+    // MOVEMENT
+    // ========================================================
+
+    function movementDisplay(
+      player
+    ) {
+
+      const movement =
+        Number(
+          player.percentile_change
+          || 0
+        );
+
+      let signed =
+        movement.toFixed(2);
+
+      if (
+        movement > 0
+      ) {
+        signed =
+          `+${signed}`;
+      }
+
+      return `
+        ${safeText(
+          player.trend
+          || "NEW"
+        )}
+        ${signed}
+      `;
+    }
+
+
+    // ========================================================
+    // RENDER SUMMARY
+    // ========================================================
+
+    function renderSummary() {
+
+      const elite =
+        allPlayers.filter(
+          player =>
+            String(
+              player.daily_tier
+              || ""
+            )
+            .toUpperCase()
+            === "ELITE"
+        ).length;
+
+
+      const rising =
+        allPlayers.filter(
+          player =>
+            String(
+              player.trend
+              || ""
+            )
+            .toUpperCase()
+            .includes(
+              "RISING"
+            )
+        ).length;
+
+
+      const confirmed =
+        allPlayers.filter(
+          player =>
+            String(
+              player.lineup_status
+              || ""
+            )
+            .toUpperCase()
+            === "CONFIRMED"
+        ).length;
+
+
+      document
+        .getElementById(
+          "summary-total"
+        )
+        .textContent =
+          allPlayers.length;
+
+
+      document
+        .getElementById(
+          "summary-elite"
+        )
+        .textContent =
+          elite;
+
+
+      document
+        .getElementById(
+          "summary-rising"
+        )
+        .textContent =
+          rising;
+
+
+      document
+        .getElementById(
+          "summary-confirmed"
+        )
+        .textContent =
+          confirmed;
+    }
+
+
+    // ========================================================
+    // RENDER PLAYER CARDS
+    // ========================================================
+
+    function renderPlayers(
+      players
+    ) {
+
+      const container =
+        document.getElementById(
+          "cards"
+        );
+
+
+      const count =
+        document.getElementById(
+          "player-count"
+        );
+
+
+      count.textContent =
+        `${players.length} players`;
+
+
+      container.innerHTML =
+        "";
+
+
+      if (
+        players.length === 0
+      ) {
+
+        container.innerHTML =
+          `
+            <div class="message">
+              No candidates match
+              this filter right now.
+            </div>
+          `;
+
+        return;
+      }
+
+
+      players
+        .slice(
+          0,
+          40
+        )
+        .forEach(
+          player => {
+
+            const card =
+              document.createElement(
+                "article"
+              );
+
+
+            const tier =
+              String(
+                player.daily_tier
+                || ""
+              )
+              .toUpperCase();
+
+
+            card.className =
+              tier === "ELITE"
+              ? "player-card elite-card"
+              : "player-card";
+
+
+            card.innerHTML = `
+
+              <div class="card-heading">
+
+                <div>
+
+                  <div class="rank">
+                    #${safeText(
+                      player.rank
+                    )}
+                  </div>
+
+
+                  <div class="player-name">
+                    ${safeText(
+                      player.player
+                    )}
+                  </div>
+
+
+                  <div class="matchup">
+
+                    ${safeText(
+                      player.team
+                    )}
+
+                    vs
+
+                    ${safeText(
+                      player.opponent
+                    )}
+
+                    <br>
+
+                    Pitcher:
+                    ${safeText(
+                      player.pitcher
+                    )}
+
+                  </div>
+
+                </div>
+
+
+                <div
+                  class="
+                    tier-badge
+                    ${tierClass(
+                      player.daily_tier
+                    )}
+                  "
+                >
+                  ${safeText(
+                    player.daily_tier
+                  )}
+                </div>
+
+              </div>
+
+
+              <div class="main-score">
+
+                <div class="score-block">
+
+                  <div class="score-label">
+                    LaunchPoint Score
+                  </div>
+
+                  <div class="launch-score">
+                    ${safeNumber(
+                      player.raw_hr_edge,
+                      2
+                    )}
+                  </div>
+
+                </div>
+
+
+                <div class="score-block">
+
+                  <div class="score-label">
+                    Percentile
+                  </div>
+
+                  <div class="percentile">
+                    ${safeNumber(
+                      player.daily_percentile,
+                      2
+                    )}
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="info-grid">
+
+                <div class="info-box">
+
+                  <div class="info-label">
+                    Trend
+                  </div>
+
+                  <div
+                    class="
+                      info-value
+                      ${trendClass(
+                        player.trend
+                      )}
+                    "
+                  >
+                    ${movementDisplay(
+                      player
+                    )}
+                  </div>
+
+                </div>
+
+
+                <div class="info-box">
+
+                  <div class="info-label">
+                    Lineup
+                  </div>
+
+                  <div class="info-value">
+                    ${displayOrder(
+                      player.batting_order,
+                      player.lineup_status
+                    )}
+                  </div>
+
+                </div>
+
+
+                <div class="info-box">
+
+                  <div class="info-label">
+                    Lineup Status
+                  </div>
+
+                  <div class="info-value">
+                    ${safeText(
+                      player.lineup_status
+                    )}
+                  </div>
+
+                </div>
+
+
+                <div class="info-box">
+
+                  <div class="info-label">
+                    Pitcher Vulnerability
+                  </div>
+
+                  <div class="info-value">
+                    ${safeNumber(
+                      player.pitcher_vulnerability,
+                      1
+                    )}
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="divider"></div>
+
+
+              <div class="mini-metrics">
+
+                <div class="mini">
+
+                  <div class="mini-label">
+                    Power
+                  </div>
+
+                  <div class="mini-value">
+                    ${safeNumber(
+                      player.statcast_power,
+                      1
+                    )}
+                  </div>
+
+                </div>
+
+
+                <div class="mini">
+
+                  <div class="mini-label">
+                    Arsenal
+                  </div>
+
+                  <div class="mini-value">
+                    ${safeNumber(
+                      player.pitch_arsenal_score,
+                      1
+                    )}
+                  </div>
+
+                </div>
+
+
+                <div class="mini">
+
+                  <div class="mini-label">
+                    Bullpen
+                  </div>
+
+                  <div class="mini-value">
+                    ${safeNumber(
+                      player.bullpen_vulnerability,
+                      1
+                    )}
+                  </div>
+
+                </div>
+
+
+                <div class="mini">
+
+                  <div class="mini-label">
+                    Weather
+                  </div>
+
+                  <div class="mini-value">
+                    ${safeNumber(
+                      player.park_weather_score,
+                      1
+                    )}
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div
+                class="
+                  pick-status
+                  ${pickStatusClass(
+                    player.pick_status
+                  )}
+                "
+              >
+                ${safeText(
+                  player.pick_status
+                )}
+              </div>
+
+            `;
+
+
+            container.appendChild(
+              card
+            );
+          }
+        );
+    }
+
+
+    // ========================================================
+    // FILTER
+    // ========================================================
+
+    function applyFilter(
+      filter
+    ) {
+
+      let players =
+        allPlayers;
+
+
+      if (
+        filter === "ELITE"
+      ) {
+
+        players =
+          allPlayers.filter(
+            player =>
+              String(
+                player.daily_tier
+                || ""
+              )
+              .toUpperCase()
+              === "ELITE"
+          );
+      }
+
+
+      if (
+        filter === "RISING"
+      ) {
+
+        players =
+          allPlayers.filter(
+            player =>
+              String(
+                player.trend
+                || ""
+              )
+              .toUpperCase()
+              .includes(
+                "RISING"
+              )
+          );
+      }
+
+
+      if (
+        filter === "CONFIRMED"
+      ) {
+
+        players =
+          allPlayers.filter(
+            player =>
+              String(
+                player.lineup_status
+                || ""
+              )
+              .toUpperCase()
+              === "CONFIRMED"
+          );
+      }
+
+
+      if (
+        filter === "BEST BET"
+      ) {
+
+        players =
+          allPlayers.filter(
+            player =>
+              String(
+                player.pick_status
+                || ""
+              )
+              .toUpperCase()
+              === "BEST BET"
+          );
+      }
+
+
+      if (
+        filter === "WATCHLIST"
+      ) {
+
+        players =
+          allPlayers.filter(
+            player =>
+              String(
+                player.pick_status
+                || ""
+              )
+              .toUpperCase()
+              === "WATCHLIST"
+          );
+      }
+
+
+      renderPlayers(
+        players
+      );
+    }
+
+
+    // ========================================================
+    // LOAD JSON
+    // ========================================================
+
+    async function loadLaunchPoint() {
+
+      try {
+
+        const response =
+          await fetch(
+            "./data/todays_top_hr_picks.json",
+            {
+              cache:
+                "no-store"
+            }
+          );
+
+
+        if (
+          !response.ok
+        ) {
+
+          throw new Error(
+            `HTTP ${response.status}`
+          );
+        }
+
+
+        const data =
+          await response.json();
+
+
+        allPlayers =
+          Array.isArray(
+            data.players
+          )
+          ? data.players
+          : [];
+
+
+        allPlayers.sort(
+          (
+            a,
+            b
+          ) => {
+
+            const pA =
+              Number(
+                a.daily_percentile
+                || 0
+              );
+
+            const pB =
+              Number(
+                b.daily_percentile
+                || 0
+              );
+
+            if (
+              pB !== pA
+            ) {
+              return pB - pA;
+            }
+
+            return (
+              Number(
+                b.raw_hr_edge
+                || 0
+              )
+              -
+              Number(
+                a.raw_hr_edge
+                || 0
+              )
+            );
+          }
+        );
+
+
+        if (
+          data.generated_at_utc
+        ) {
+
+          const date =
+            new Date(
+              data.generated_at_utc
+            );
+
+
+          document
+            .getElementById(
+              "updated"
+            )
+            .textContent =
+              `Last model update: ${
+                date.toLocaleString()
+              }`;
+        }
+
+
+        renderSummary();
+
+
+        renderPlayers(
+          allPlayers
+        );
+
+      }
+
+      catch (
+        error
+      ) {
+
+        console.error(
+          "LaunchPoint data error:",
+          error
+        );
+
+
+        document
+          .getElementById(
+            "player-count"
+          )
+          .textContent =
+            "Data unavailable";
+
+
+        document
+          .getElementById(
+            "cards"
+          )
+          .innerHTML =
+            `
+              <div class="message">
+
+                Latest LaunchPoint model
+                data is not available yet.
+
+                <br><br>
+
+                Once the model publishes
+                today's JSON file, the
+                player cards will appear
+                automatically.
+
+              </div>
+            `;
+      }
+    }
+
+
+    // ========================================================
+    // FILTER BUTTON EVENTS
+    // ========================================================
+
+    document
+      .querySelectorAll(
+        ".filter-btn"
+      )
+      .forEach(
+        button => {
+
+          button.addEventListener(
+            "click",
+            () => {
+
+              document
+                .querySelectorAll(
+                  ".filter-btn"
+                )
+                .forEach(
+                  item => {
+                    item.classList.remove(
+                      "active"
+                    );
+                  }
+                );
+
+
+              button.classList.add(
+                "active"
+              );
+
+
+              applyFilter(
+                button.dataset.filter
+              );
+            }
+          );
+        }
+      );
+
+
+    // ========================================================
+    // START
+    // ========================================================
+
+    loadLaunchPoint();
+
+  </script>
+
+</body>
+</html>
