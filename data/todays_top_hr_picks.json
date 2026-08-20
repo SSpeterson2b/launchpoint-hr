@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-20T22:48:17.118359+00:00",
+  "generated_at_utc": "2026-08-20T23:01:21.078441+00:00",
   "slate_date": "2026-08-20",
   "player_count": 162,
   "players": [
@@ -109,7 +109,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 4,
@@ -447,8 +447,8 @@
       "daily_percentile": 92.28,
       "daily_tier": "STRONG",
       "pick_status": "STRONG",
-      "trend": "SLIGHT RISE",
-      "percentile_change": 0.3,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 63.08,
       "pitcher_vulnerability": 56.14,
       "pitch_arsenal_score": 56.8,
@@ -483,8 +483,8 @@
       "daily_percentile": 91.67,
       "daily_tier": "STRONG",
       "pick_status": "STRONG",
-      "trend": "SLIGHT FALL",
-      "percentile_change": -0.31,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 70.32,
       "pitcher_vulnerability": 47.7,
       "pitch_arsenal_score": 57.79,
@@ -649,7 +649,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 19,
@@ -685,7 +685,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 20,
@@ -793,7 +793,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 23,
@@ -829,7 +829,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 24,
@@ -1549,7 +1549,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 44,
@@ -1657,7 +1657,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 47,
@@ -2067,8 +2067,8 @@
       "daily_percentile": 64.51,
       "daily_tier": "WATCH",
       "pick_status": "WATCH",
-      "trend": "SLIGHT RISE",
-      "percentile_change": 0.31,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 33.2,
       "pitcher_vulnerability": 58.85,
       "pitch_arsenal_score": 44.05,
@@ -2103,8 +2103,8 @@
       "daily_percentile": 63.89,
       "daily_tier": "PASS",
       "pick_status": "PASS",
-      "trend": "SLIGHT FALL",
-      "percentile_change": -0.31,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 47.77,
       "pitcher_vulnerability": 53.37,
       "pitch_arsenal_score": 34.18,
@@ -2125,7 +2125,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 60,
@@ -2341,7 +2341,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 66,
@@ -2485,7 +2485,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 70,
@@ -2751,8 +2751,8 @@
       "daily_percentile": 52.47,
       "daily_tier": "PASS",
       "pick_status": "PASS",
-      "trend": "SLIGHT RISE",
-      "percentile_change": 0.31,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 50.0,
       "pitcher_vulnerability": 43.57,
       "pitch_arsenal_score": 50.0,
@@ -2787,8 +2787,8 @@
       "daily_percentile": 52.47,
       "daily_tier": "WATCH",
       "pick_status": "WATCH",
-      "trend": "SLIGHT FALL",
-      "percentile_change": -0.31,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 32.48,
       "pitcher_vulnerability": 58.85,
       "pitch_arsenal_score": 35.93,
@@ -2989,7 +2989,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 84,
@@ -3097,7 +3097,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 87,
@@ -3363,8 +3363,8 @@
       "daily_percentile": 41.98,
       "daily_tier": "WATCH",
       "pick_status": "WATCH",
-      "trend": "SLIGHT RISE",
-      "percentile_change": 0.31,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 32.3,
       "pitcher_vulnerability": 61.78,
       "pitch_arsenal_score": 29.06,
@@ -3399,8 +3399,8 @@
       "daily_percentile": 41.98,
       "daily_tier": "WATCH",
       "pick_status": "WATCH",
-      "trend": "SLIGHT FALL",
-      "percentile_change": -0.3,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 21.68,
       "pitcher_vulnerability": 72.3,
       "pitch_arsenal_score": 32.87,
@@ -3543,8 +3543,8 @@
       "daily_percentile": 38.89,
       "daily_tier": "PASS",
       "pick_status": "PASS",
-      "trend": "SLIGHT RISE",
-      "percentile_change": 0.31,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 51.11,
       "pitcher_vulnerability": 34.46,
       "pitch_arsenal_score": 50.93,
@@ -3579,8 +3579,8 @@
       "daily_percentile": 38.89,
       "daily_tier": "WATCH",
       "pick_status": "WATCH",
-      "trend": "SLIGHT FALL",
-      "percentile_change": -0.31,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 23.01,
       "pitcher_vulnerability": 72.3,
       "pitch_arsenal_score": 23.14,
@@ -3889,7 +3889,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 109,
@@ -3925,7 +3925,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 110,
@@ -4011,8 +4011,8 @@
       "daily_percentile": 31.17,
       "daily_tier": "PASS",
       "pick_status": "PASS",
-      "trend": "SLIGHT RISE",
-      "percentile_change": 0.31,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 40.67,
       "pitcher_vulnerability": 37.83,
       "pitch_arsenal_score": 31.44,
@@ -4047,8 +4047,8 @@
       "daily_percentile": 30.56,
       "daily_tier": "PASS",
       "pick_status": "PASS",
-      "trend": "SLIGHT FALL",
-      "percentile_change": -0.3,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 41.48,
       "pitcher_vulnerability": 37.3,
       "pitch_arsenal_score": 38.15,
@@ -4119,8 +4119,8 @@
       "daily_percentile": 29.32,
       "daily_tier": "WATCH",
       "pick_status": "WATCH",
-      "trend": "SLIGHT RISE",
-      "percentile_change": 0.62,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 31.34,
       "pitcher_vulnerability": 46.9,
       "pitch_arsenal_score": 24.89,
@@ -4155,8 +4155,8 @@
       "daily_percentile": 28.7,
       "daily_tier": "PASS",
       "pick_status": "PASS",
-      "trend": "SLIGHT FALL",
-      "percentile_change": -0.62,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 29.34,
       "pitcher_vulnerability": 56.14,
       "pitch_arsenal_score": 35.61,
@@ -4321,7 +4321,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 121,
@@ -4465,7 +4465,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 125,
@@ -4515,8 +4515,8 @@
       "daily_percentile": 22.53,
       "daily_tier": "WATCH",
       "pick_status": "WATCH",
-      "trend": "SLIGHT RISE",
-      "percentile_change": 0.62,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 19.91,
       "pitcher_vulnerability": 46.9,
       "pitch_arsenal_score": 30.13,
@@ -4551,8 +4551,8 @@
       "daily_percentile": 21.91,
       "daily_tier": "PASS",
       "pick_status": "PASS",
-      "trend": "SLIGHT FALL",
-      "percentile_change": -0.62,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 23.38,
       "pitcher_vulnerability": 47.7,
       "pitch_arsenal_score": 22.34,
@@ -4609,7 +4609,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 129,
@@ -4947,8 +4947,8 @@
       "daily_percentile": 15.12,
       "daily_tier": "PASS",
       "pick_status": "PASS",
-      "trend": "SLIGHT RISE",
-      "percentile_change": 0.61,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 23.9,
       "pitcher_vulnerability": 43.57,
       "pitch_arsenal_score": 24.28,
@@ -4983,8 +4983,8 @@
       "daily_percentile": 14.51,
       "daily_tier": "WATCH",
       "pick_status": "WATCH",
-      "trend": "SLIGHT FALL",
-      "percentile_change": -0.61,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 14.01,
       "pitcher_vulnerability": 72.3,
       "pitch_arsenal_score": 10.99,
@@ -5545,7 +5545,7 @@
       "game_date": "2026-08-20",
       "game_datetime_utc": "2026-08-20T22:35:00Z",
       "game_time": "",
-      "game_status": "Warmup"
+      "game_status": "In Progress"
     },
     {
       "rank": 155,
@@ -5703,8 +5703,8 @@
       "daily_percentile": 2.16,
       "daily_tier": "PASS",
       "pick_status": "PASS",
-      "trend": "SLIGHT RISE",
-      "percentile_change": 0.31,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 24.52,
       "pitcher_vulnerability": 21.97,
       "pitch_arsenal_score": 20.59,
@@ -5739,8 +5739,8 @@
       "daily_percentile": 1.54,
       "daily_tier": "PASS",
       "pick_status": "PASS",
-      "trend": "SLIGHT FALL",
-      "percentile_change": -0.31,
+      "trend": "STEADY",
+      "percentile_change": 0.0,
       "statcast_power": 8.31,
       "pitcher_vulnerability": 37.3,
       "pitch_arsenal_score": 13.41,
