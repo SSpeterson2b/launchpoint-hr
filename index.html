@@ -70,21 +70,9 @@ body{--bg:#01060b;--panel:#06111b;--line:#243543;--white:#f4f7f9;--muted:#8795a0
     <span>Top 4 Targets + 1 Matchup Long Shot</span>
   </div>
 
-  <div id="launch5" class="launch5-grid">
-    TEST LAUNCH 5
-  </div>
+ <div id="launch5" class="launch5-grid"></div>
 </section>
 <nav class="tabs"><button class="active" data-view="by-game">BY GAME</button><button data-view="top-picks">TOP PICKS</button><button data-view="elite">ELITE</button><button data-view="confirmed">CONFIRMED</button></nav><section id="games"><div class="empty">Loading todayâs matchupsâ¦</div></section>
-<section class="launch5-section">
-  <div class="section-title">
-    <h3>TODAY'S LAUNCH 5</h3>
-    <span>Top 4 Targets + 1 Matchup Long Shot</span>
-  </div>
-
-  <div id="launch5" class="launch5-grid">
-    TEST LAUNCH 5
-  </div>
-</section>
 <aside class="more-panel" id="more-panel" hidden><button class="more-close" aria-label="Close model information">Ã</button><div class="section-label">ABOUT LAUNCHPOINT HR</div><h2>Model Intelligence</h2><p>Daily home-run candidates ranked using power, pitcher vulnerability, arsenal matchups, recent form, bullpen weakness, park conditions, handedness and lineup opportunity.</p><div class="more-stats"><span>Players loaded<b id="more-count">0</b></span><span>Last update<b id="more-update">Pending</b></span></div><small>Model scores are informational and do not guarantee a home run.</small><hr>
 <details>
 <summary>ð Results & Performance</summary>
@@ -112,6 +100,58 @@ body{--bg:#01060b;--panel:#06111b;--line:#243543;--white:#f4f7f9;--muted:#8795a0
 </details></aside>
 <nav class="bottom"><button class="active" data-bottom="home">â<small>HOME</small></button><button data-bottom="games">â¤<small>GAMES</small></button><button data-bottom="top-picks">â<small>TOP PICKS</small></button><button data-bottom="watchlist">â<small>WATCHLIST</small></button><button data-bottom="more">â¢â¢â¢<small>MORE</small></button></nav></main>
 <script>
+function renderLaunch5(players){
+  const container = document.getElementById("launch5");
+  if (!container) return;
+
+  const pool = (players || []).filter(p => p && p.player);
+
+  if (!pool.length){
+    container.innerHTML = '<div class="empty">Launch 5 unavailable</div>';
+    return;
+  }
+
+  const ranked = rankPlayers(pool);
+  const topFour = ranked.slice(0,4);
+
+  const used = new Set(topFour.map(p => String(p.player)));
+
+  const longshot =
+    ranked.find(p =>
+      !used.has(String(p.player)) &&
+      generatorScore(p) >= 45 &&
+      generatorScore(p) < 65
+    ) ||
+    ranked.find(p => !used.has(String(p.player)));
+
+  const launch5 = longshot
+    ? [...topFour, longshot]
+    : topFour;
+
+  container.innerHTML = launch5.map((p,i) => {
+    const score = generatorScore(p).toFixed(1);
+    const longShot = i === 4;
+
+    return `
+      <div class="launch5-card ${longShot ? "longshot" : ""}">
+        <div class="launch5-rank">${i + 1}</div>
+
+        <div class="launch5-name">
+          <b>${esc(displayName(p.player))}</b>
+          <small>${esc(p.team || "")} vs ${esc(p.opponent || "")}</small>
+          <span class="launch5-tag">
+            ${longShot ? "MATCHUP LONG SHOT" : "TOP TARGET"}
+          </span>
+        </div>
+
+        <div class="launch5-score">
+          ${score}
+          <small>GENERATOR</small>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
 let allPlayers=[],period="night",openKey=null,view="by-game",modelGenerated="",slateDate="";
 let watchlist=[];try{watchlist=JSON.parse(localStorage.getItem("launchpoint-watchlist")||"[]")}catch(e){watchlist=[]}
 const n=v=>Number(v)||0, esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -159,5 +199,5 @@ document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>setView(b.data
 document.querySelectorAll("[data-period]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-period]").forEach(x=>x.classList.remove("active"));b.classList.add("active");period=b.dataset.period;openKey=null;render()});
 document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-bottom]").forEach(x=>x.classList.remove("active"));b.classList.add("active");const action=b.dataset.bottom;if(action==="home"){view="by-game";openKey=null;render();scrollTo({top:0,behavior:"smooth"})}else if(action==="games")setView("by-game");else if(action==="top-picks")setView("top-picks");else if(action==="watchlist")setView("watchlist");else if(action==="more"){document.querySelector("#more-panel").hidden=false;document.querySelector("#more-count").textContent=allPlayers.length;document.querySelector("#more-update").textContent=modelGenerated?new Date(modelGenerated).toLocaleString():"Pending"}});
 document.querySelector(".more-close").onclick=()=>document.querySelector("#more-panel").hidden=true;
-fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>{allPlayers=d.players||[];modelGenerated=d.generated_at_utc||"";slateDate=d.slate_date||allPlayers.find(p=>p.game_date)?.game_date||"";updateModelMeta();render()}).catch(()=>{document.querySelector("#games").innerHTML='<div class="empty">Todayâs model data is not available yet.</div>'});
+fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>{allPlayers=d.players||[];renderLaunch5(allPlayers);modelGenerated=d.generated_at_utc||"";slateDate=d.slate_date||allPlayers.find(p=>p.game_date)?.game_date||"";updateModelMeta();render()}).catch(()=>{document.querySelector("#games").innerHTML='<div class="empty">Todayâs model data is not available yet.</div>'});
 </script></body></html>
