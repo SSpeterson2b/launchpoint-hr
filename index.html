@@ -808,6 +808,112 @@ button{font:inherit;cursor:pointer}
   .launch5-card{flex:auto}
   .bottom{width:min(100%,1180px)}
 }
+
+/* FINAL VISUAL FIXES: stadium background, realistic baseball, 5-across cards, live headshots */
+
+.hero{
+  min-height:300px;
+  background:
+    linear-gradient(180deg,rgba(1,5,1,.22),rgba(1,8,2,.72)),
+    radial-gradient(ellipse at 50% 78%,rgba(69,171,51,.28) 0,rgba(18,64,22,.18) 28%,transparent 56%),
+    linear-gradient(180deg,#020402 0%,#071108 58%,#030703 100%);
+}
+.hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:.78;
+  background:
+    radial-gradient(ellipse at 50% 112%,rgba(73,165,53,.45) 0 26%,transparent 27%),
+    repeating-linear-gradient(90deg,transparent 0 18px,rgba(123,255,92,.05) 19px 20px),
+    linear-gradient(180deg,transparent 0 46%,rgba(23,80,26,.16) 47% 100%);
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  left:10%;
+  right:10%;
+  bottom:24px;
+  height:82px;
+  opacity:.34;
+  background:
+    linear-gradient(145deg,transparent 48.5%,rgba(183,159,96,.42) 49%,rgba(183,159,96,.42) 51%,transparent 51.5%) center/56px 56px,
+    linear-gradient(35deg,transparent 48.5%,rgba(183,159,96,.28) 49%,rgba(183,159,96,.28) 51%,transparent 51.5%) center/56px 56px;
+}
+.hero-center{min-height:205px}
+.baseball{
+  width:112px;
+  height:112px;
+  margin-top:14px;
+  border-radius:50%;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3CradialGradient id='g' cx='35%25' cy='30%25' r='75%25'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='.72' stop-color='%23e8e5dd'/%3E%3Cstop offset='1' stop-color='%23b9b4aa'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='100' cy='100' r='96' fill='url(%23g)' stroke='%23d7d2c8' stroke-width='3'/%3E%3Cpath d='M58 18 C83 58 80 141 55 182' fill='none' stroke='%23a92f35' stroke-width='4'/%3E%3Cpath d='M142 18 C117 58 120 141 145 182' fill='none' stroke='%23a92f35' stroke-width='4'/%3E%3Cg stroke='%23a92f35' stroke-width='3'%3E%3Cpath d='M52 40 l13 5'/%3E%3Cpath d='M50 57 l14 4'/%3E%3Cpath d='M49 75 l14 3'/%3E%3Cpath d='M48 94 l14 1'/%3E%3Cpath d='M48 113 l14 -1'/%3E%3Cpath d='M49 132 l14 -3'/%3E%3Cpath d='M51 150 l14 -4'/%3E%3Cpath d='M54 167 l13 -5'/%3E%3Cpath d='M148 40 l-13 5'/%3E%3Cpath d='M150 57 l-14 4'/%3E%3Cpath d='M151 75 l-14 3'/%3E%3Cpath d='M152 94 l-14 1'/%3E%3Cpath d='M152 113 l-14 -1'/%3E%3Cpath d='M151 132 l-14 -3'/%3E%3Cpath d='M149 150 l-14 -4'/%3E%3Cpath d='M146 167 l-13 -5'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:cover;
+  background-position:center;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.08),
+    0 0 28px rgba(104,227,84,.42),
+    0 0 72px rgba(67,185,59,.28);
+}
+.baseball:before,.baseball:after{display:none!important}
+
+/* stadium/field backdrop behind Launch 5 */
+.launch5-section{
+  background:
+    linear-gradient(180deg,rgba(2,8,2,.72),rgba(4,10,4,.94)),
+    radial-gradient(ellipse at 50% 88%,rgba(39,99,34,.38) 0 32%,transparent 33%),
+    linear-gradient(180deg,#071007,#040804);
+}
+.launch5-section:after{
+  content:"";
+  position:absolute;
+  left:8%;
+  right:8%;
+  bottom:46px;
+  height:120px;
+  opacity:.24;
+  pointer-events:none;
+  background:
+    linear-gradient(145deg,transparent 48.5%,rgba(192,164,95,.48) 49%,rgba(192,164,95,.48) 51%,transparent 51.5%) center/64px 64px,
+    linear-gradient(35deg,transparent 48.5%,rgba(192,164,95,.28) 49%,rgba(192,164,95,.28) 51%,transparent 51.5%) center/64px 64px;
+}
+
+/* Five cards always across, like the reference */
+.launch5-card-row{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:6px!important;
+  overflow:visible!important;
+  padding:18px 0 8px!important;
+}
+.launch5-card{
+  min-width:0!important;
+  width:auto!important;
+  flex:none!important;
+}
+.launch5-photo-wrap{height:108px}
+.launch5-player{font-size:10px;min-height:29px}
+.launch5-team{font-size:6.5px}
+.launch5-opponent{font-size:6px;min-height:15px}
+.launch5-main-score{font-size:22px}
+.launch5-card-footer{font-size:6px;min-height:25px}
+.launch5-rank{width:25px;height:25px;font-size:15px}
+
+@media(max-width:430px){
+  .shell{padding-left:10px;padding-right:10px}
+  .hero{margin-left:-10px;margin-right:-10px}
+  .launch5-section{padding-left:8px;padding-right:8px}
+  .launch5-card-row{gap:4px!important}
+  .launch5-photo-wrap{height:96px}
+  .launch5-card-body{padding:6px}
+  .launch5-player{font-size:8.5px;min-height:26px}
+  .launch5-team{font-size:5.5px}
+  .launch5-opponent{font-size:5.5px}
+  .launch5-score-label{font-size:5px}
+  .launch5-main-score{font-size:20px}
+  .launch5-card-footer{font-size:5.3px;padding:5px 2px}
+  .launch5-rank{width:23px;height:23px;font-size:14px}
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -867,6 +973,45 @@ button{font:inherit;cursor:pointer}
 </details></aside>
 <nav class="bottom"><button class="active" data-bottom="home">HOME <small>HOME</small></button><button data-bottom="games">GAMES <small>GAMES</small></button><button data-bottom="top-picks">TOP <small>TOP PICKS</small></button><button data-bottom="watchlist"><small>WATCHLIST</small></button><button data-bottom="more">...<small>MORE</small></button></nav></main>
 <script>
+const lpHeadshotCache={};
+
+async function getMlbPlayerIdByName(name){
+  const key=String(name||"").trim();
+  if(!key)return "";
+  if(lpHeadshotCache[key]!==undefined)return lpHeadshotCache[key];
+  try{
+    const url="https://statsapi.mlb.com/api/v1/people/search?names="+encodeURIComponent(key);
+    const r=await fetch(url);
+    if(!r.ok)throw new Error("lookup failed");
+    const d=await r.json();
+    const people=Array.isArray(d.people)?d.people:[];
+    const exact=people.find(x=>String(x.fullName||"").toLowerCase()===key.toLowerCase())||people[0];
+    const id=exact&&exact.id?String(exact.id):"";
+    lpHeadshotCache[key]=id;
+    return id;
+  }catch(e){
+    lpHeadshotCache[key]="";
+    return "";
+  }
+}
+
+async function fillLaunch5Headshots(){
+  const imgs=[...document.querySelectorAll(".launch5-photo[data-player-name]")];
+  await Promise.all(imgs.map(async img=>{
+    if(img.dataset.loaded==="1")return;
+    img.dataset.loaded="1";
+    const current=String(img.dataset.mlbId||"").trim();
+    const id=current||await getMlbPlayerIdByName(img.dataset.playerName);
+    if(!id){
+      img.style.display="none";
+      const fb=img.nextElementSibling;
+      if(fb)fb.style.display="flex";
+      return;
+    }
+    img.src="https://img.mlbstatic.com/mlb-photos/image/upload/w_426,q_auto:best/v1/people/"+id+"/headshot/67/current";
+  }));
+}
+
 function renderLaunch5(players){
   const container=document.getElementById("launch5");
   if(!container)return;
@@ -895,21 +1040,25 @@ function renderLaunch5(players){
     const score=generatorScore(p).toFixed(0);
     const isLongshot=index===4;
     const playerName=esc(displayName(p.player));
+    const rawName=String(displayName(p.player)||"");
     const team=esc(p.team||"");
     const opponent=esc(p.opponent||"");
     const rawId=p.mlb_id||p.player_id||p.batter_id||"";
     const mlbId=String(rawId).replace(/\D/g,"");
-    const initial=playerName.replace(/&[^;]+;/g,"").charAt(0)||"?";
-    const photo=mlbId
-      ? `<img class="launch5-photo" src="https://img.mlbstatic.com/mlb-photos/image/upload/w_426,q_auto:best/v1/people/${mlbId}/headshot/67/current" alt="${playerName}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="launch5-photo-fallback" style="display:none">${initial}</div>`
-      : `<div class="launch5-photo-fallback">${initial}</div>`;
+    const initial=rawName.charAt(0)||"?";
 
     return `
       <article class="launch5-card ${isLongshot?"longshot":""}">
         ${isLongshot?'<div class="launch5-longshot-badge">LONG SHOT</div>':""}
         <div class="launch5-photo-wrap">
           <div class="launch5-rank">${index+1}</div>
-          ${photo}
+          <img class="launch5-photo"
+               data-player-name="${esc(rawName)}"
+               data-mlb-id="${mlbId}"
+               alt="${playerName}"
+               style="display:block"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="launch5-photo-fallback" style="display:none">${esc(initial)}</div>
         </div>
         <div class="launch5-card-body">
           <div class="launch5-player">${playerName}</div>
@@ -937,6 +1086,7 @@ function renderLaunch5(players){
       <button class="launch5-full-card" type="button" onclick="setView('top-picks')">VIEW FULL CARD -></button>
     </div>
   `;
+  fillLaunch5Headshots();
 }
 let allPlayers=[],period="night",openKey=null,view="by-game",modelGenerated="",slateDate="";
 let watchlist=[];try{watchlist=JSON.parse(localStorage.getItem("launchpoint-watchlist")||"[]")}catch(e){watchlist=[]}
