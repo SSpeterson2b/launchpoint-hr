@@ -1704,26 +1704,6 @@ function renderLaunch5(players){
       <button class="launch5-full-card" type="button" onclick="setView('top-picks')">VIEW FULL CARD -></button>
     </div>
   `;
-
-  document.querySelectorAll("[data-matchup-key]").forEach(btn=>{
-    btn.onclick=()=>{
-      const key=btn.dataset.matchupKey;
-      const game=shown.find(x=>String(x.key)===String(key));
-      const host=btn.closest(".body")?.querySelector(".game-inline-detail");
-      if(!game||!host)return;
-
-      if(host.dataset.mode==="game"){
-        host.innerHTML="";
-        host.dataset.mode="";
-        return;
-      }
-
-      host.dataset.mode="game";
-      host.dataset.openPlayer="";
-      host.innerHTML=gameMatchupDetails(game.players);
-    };
-  });
-
   fillAllPlayerHeadshots();
 }
 let allPlayers=[],period="night",openKey=null,view="by-game",modelGenerated="",slateDate="";
@@ -1932,6 +1912,34 @@ function render(){
         e.preventDefault();
         open();
       }
+    };
+  });
+
+
+  document.querySelectorAll("[data-matchup-key]").forEach(btn=>{
+    btn.onclick=(e)=>{
+      e.preventDefault();
+      e.stopPropagation();
+
+      const key=btn.dataset.matchupKey;
+      const game=shown.find(x=>String(x.key)===String(key));
+      const host=btn.closest(".body")?.querySelector(".game-inline-detail");
+
+      if(!game||!host)return;
+
+      if(host.dataset.mode==="game"){
+        host.innerHTML="";
+        host.dataset.mode="";
+        host.dataset.openPlayer="";
+        btn.textContent="VIEW MATCHUP DETAILS ->";
+        return;
+      }
+
+      host.dataset.mode="game";
+      host.dataset.openPlayer="";
+      host.innerHTML=gameMatchupDetails(game.players);
+      btn.textContent="CLOSE MATCHUP DETAILS";
+      host.scrollIntoView({behavior:"smooth",block:"nearest"});
     };
   });
 
