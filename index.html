@@ -60,149 +60,315 @@ body{--bg:#01060b;--panel:#06111b;--line:#243543;--white:#f4f7f9;--muted:#8795a0
   border-top:1px solid #243543;
   margin:16px 0;
 }
-/* TODAY'S LAUNCH 5 */
 
+/* TODAY'S LAUNCH 5 - FINAL DESIGN */
 .launch5-section{
-  margin:20px 0 24px;
+  position:relative;
+  margin:22px 0 24px;
+  padding:18px 12px 12px;
+  overflow:hidden;
+  border:1px solid rgba(79,131,72,.38);
+  border-radius:18px;
+  background:
+    radial-gradient(circle at 50% 12%,rgba(57,112,50,.18),transparent 34%),
+    linear-gradient(180deg,#07110d 0%,#08110d 56%,#050b09 100%);
+  box-shadow:0 16px 38px rgba(0,0,0,.28);
+}
+.launch5-section:before{
+  content:"";
+  position:absolute;
+  left:-8%;
+  right:-8%;
+  bottom:66px;
+  height:120px;
+  opacity:.22;
+  pointer-events:none;
+  background:
+    linear-gradient(145deg,transparent 49%,rgba(194,171,107,.32) 50%,transparent 51%) center/64px 64px,
+    linear-gradient(35deg,transparent 49%,rgba(194,171,107,.18) 50%,transparent 51%) center/64px 64px;
 }
 .launch5-section .section-title{
-  margin-bottom:12px;
+  position:relative;
+  z-index:2;
+  margin:0 0 14px;
+  text-align:center;
 }
-
 .launch5-section .section-title h3{
   margin:0;
-  font-size:20px;
-  font-weight:900;
-  letter-spacing:.08em;
+  color:#f7f7f2;
+  font-size:23px;
+  font-weight:950;
+  letter-spacing:.055em;
   text-transform:uppercase;
-  color:#f7fbff;
 }
-
+.launch5-section .section-title h3:before,
+.launch5-section .section-title h3:after{
+  content:"";
+  display:inline-block;
+  width:32px;
+  height:1px;
+  margin:0 9px 6px;
+  background:linear-gradient(90deg,transparent,#5fa451);
+}
+.launch5-section .section-title h3:after{
+  background:linear-gradient(90deg,#5fa451,transparent);
+}
 .launch5-section .section-title span{
   display:block;
   margin-top:5px;
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:.04em;
-  color:#8fa6bb;
+  color:#72cb67;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.09em;
+  text-transform:uppercase;
 }
 .launch5-grid{
-  display:grid;
-  gap:10px;
+  position:relative;
+  z-index:2;
+  display:block;
   width:100%;
 }
-
-.launch5-card{
+.launch5-card-row{
   display:grid;
-  grid-template-columns:42px 1fr auto;
-  align-items:center;
-  gap:12px;
-  padding:14px;
-  border:1px solid #24475b;
-  border-radius:14px;
-  background:#06131c;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:8px;
 }
-
+.launch5-card{
+  position:relative;
+  min-width:0;
+  overflow:visible;
+  border:1px solid #284733;
+  border-radius:11px;
+  background:#e9e8df;
+  box-shadow:0 8px 18px rgba(0,0,0,.30);
+}
 .launch5-card.longshot{
-  border-color:#d7a928;
-  background:linear-gradient(135deg,rgba(215,169,40,.14),rgba(6,19,28,.96));
+  border-color:#63b853;
+  box-shadow:0 0 0 1px rgba(99,184,83,.18),0 8px 18px rgba(0,0,0,.30);
 }
-
-.launch5-rank{
+.launch5-longshot-badge{
+  position:absolute;
+  top:-17px;
+  right:4px;
+  z-index:5;
+  color:#77d566;
+  font-size:7px;
+  font-weight:950;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.launch5-photo-wrap{
+  position:relative;
+  height:92px;
+  overflow:hidden;
+  border-radius:10px 10px 0 0;
+  background:
+    radial-gradient(circle at 50% 80%,rgba(71,128,65,.75),transparent 46%),
+    linear-gradient(145deg,#17361f,#07140c 68%);
+}
+.launch5-photo-wrap:after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:36%;
+  background:linear-gradient(transparent,rgba(0,0,0,.38));
+  pointer-events:none;
+}
+.launch5-photo{
+  position:relative;
+  z-index:1;
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+}
+.launch5-photo-fallback{
+  position:relative;
+  z-index:1;
   display:flex;
   align-items:center;
   justify-content:center;
-  width:38px;
-  height:38px;
-  border-radius:10px;
-  background:#0b3047;
-  color:#35baff;
-  font-size:20px;
-  font-weight:900;
+  width:100%;
+  height:100%;
+  color:#dbe8d7;
+  font-size:36px;
+  font-weight:950;
+  background:
+    radial-gradient(circle at 50% 82%,#2c6338 0,#1a3d24 40%,transparent 41%),
+    linear-gradient(145deg,#16351f,#08150d);
 }
-
+.launch5-rank{
+  position:absolute;
+  top:7px;
+  left:7px;
+  z-index:4;
+  display:grid;
+  place-items:center;
+  width:27px;
+  height:27px;
+  border-radius:7px;
+  color:#8eef7e;
+  background:#102e17;
+  border:1px solid rgba(126,220,109,.42);
+  font-size:16px;
+  font-weight:950;
+}
 .launch5-card.longshot .launch5-rank{
-  background:#3b2b08;
-  color:#ffc83d;
+  color:#fff;
+  background:#4a8f37;
 }
-
-.launch5-name{
-  min-width:0;
+.launch5-card-body{
+  padding:8px 8px 7px;
+  color:#10150f;
 }
-
-.launch5-name b{
-  display:block;
-  color:#f7f9fc;
-  font-size:17px;
-  font-weight:900;
-  margin-bottom:3px;
+.launch5-player{
+  min-height:31px;
+  color:#151915;
+  font-size:11px;
+  line-height:1.05;
+  font-weight:950;
+  text-transform:uppercase;
 }
-
-.launch5-name small{
-  display:block;
-  color:#8799a9;
-  font-size:12px;
-  line-height:1.3;
+.launch5-team{
+  margin-top:4px;
+  color:#666b65;
+  font-size:7px;
+  font-weight:800;
+  text-transform:uppercase;
 }
-
-.launch5-tag{
-  display:inline-block;
+.launch5-opponent{
+  min-height:17px;
+  margin-top:1px;
+  color:#7c817b;
+  font-size:6.5px;
+  line-height:1.15;
+}
+.launch5-score-label{
   margin-top:6px;
-  color:#35baff;
-  font-size:10px;
+  color:#626761;
+  font-size:6px;
   font-weight:900;
-  letter-spacing:1px;
+  letter-spacing:.04em;
 }
-
-.launch5-card.longshot .launch5-tag{
-  color:#ffc83d;
-}
-
-.launch5-score{
-  color:#35baff;
+.launch5-main-score{
+  margin-top:1px;
+  color:#121712;
   font-size:24px;
-  font-weight:900;
-  text-align:right;
+  line-height:1;
+  font-weight:950;
 }
-
-.launch5-card.longshot .launch5-score{
-  color:#ffc83d;
+.launch5-card-footer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:26px;
+  padding:6px 3px;
+  border-radius:0 0 10px 10px;
+  background:#07120a;
+  color:#76d965;
+  font-size:6.5px;
+  font-weight:950;
+  letter-spacing:.03em;
+  text-align:center;
+  text-transform:uppercase;
 }
-
-.launch5-score small{
+.launch5-card.longshot .launch5-card-footer{
+  background:#0b1b0d;
+  color:#8cec77;
+}
+.launch5-summary{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:7px;
+  margin-top:12px;
+  padding:9px;
+  border:1px solid rgba(78,133,71,.32);
+  border-radius:11px;
+  background:rgba(4,10,6,.88);
+}
+.launch5-summary-item{
+  min-width:0;
+  text-align:center;
+}
+.launch5-summary-item strong{
+  display:block;
+  color:#f3f6f1;
+  font-size:13px;
+  font-weight:950;
+}
+.launch5-summary-item span{
   display:block;
   margin-top:2px;
-  color:#8395a5;
-  font-size:9px;
-  font-weight:800;
-  letter-spacing:.8px;
+  color:#839286;
+  font-size:5.5px;
+  font-weight:900;
+  letter-spacing:.04em;
+  text-transform:uppercase;
 }
-
-@media(max-width:600px){
-  .launch5-card{
-    grid-template-columns:36px minmax(0,1fr) auto;
-    padding:12px 10px;
-    gap:9px;
+.launch5-full-card{
+  grid-column:1/-1;
+  width:100%;
+  margin-top:1px;
+  padding:8px 10px;
+  border:1px solid #4d8d43;
+  border-radius:8px;
+  background:#0c170d;
+  color:#80df6e;
+  font-size:8px;
+  font-weight:950;
+  letter-spacing:.06em;
+}
+.launch5-empty{
+  padding:26px;
+  text-align:center;
+  color:var(--muted);
+}
+@media(max-width:700px){
+  .launch5-section{
+    padding:18px 10px 11px;
   }
-
-  .launch5-rank{
-    width:34px;
-    height:34px;
-    font-size:18px;
-  }
-
-  .launch5-name b{
-    font-size:15px;
-  }
-
-  .launch5-name small{
-    font-size:10px;
-  }
-
-  .launch5-score{
+  .launch5-section .section-title h3{
     font-size:20px;
   }
+  .launch5-section .section-title h3:before,
+  .launch5-section .section-title h3:after{
+    width:20px;
+    margin-left:6px;
+    margin-right:6px;
+  }
+  .launch5-card-row{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    padding:18px 1px 8px;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .launch5-card-row::-webkit-scrollbar{
+    display:none;
+  }
+  .launch5-card{
+    flex:0 0 132px;
+    scroll-snap-align:start;
+  }
+  .launch5-photo-wrap{
+    height:100px;
+  }
+  .launch5-player{
+    font-size:11px;
+  }
+  .launch5-main-score{
+    font-size:23px;
+  }
+  .launch5-summary{
+    grid-template-columns:repeat(4,1fr);
+  }
 }
+
 </style>
 </head><body><main class="shell">
 <header class="top"><div class="logo">LP</div><div><h1>LAUNCHPOINT <em>HR</em></h1><p>MLB Home Run Intelligence</p><p class="model-meta" id="model-meta">Slate date pending - Updated pending</p></div><span class="live">MODEL LIVE</span></header>
@@ -245,56 +411,79 @@ body{--bg:#01060b;--panel:#06111b;--line:#243543;--white:#f4f7f9;--muted:#8795a0
 <nav class="bottom"><button class="active" data-bottom="home">HOME <small>HOME</small></button><button data-bottom="games">GAMES <small>GAMES</small></button><button data-bottom="top-picks">TOP <small>TOP PICKS</small></button><button data-bottom="watchlist"><small>WATCHLIST</small></button><button data-bottom="more">...<small>MORE</small></button></nav></main>
 <script>
 function renderLaunch5(players){
-  const container = document.getElementById("launch5");
-  if (!container) return;
+  const container=document.getElementById("launch5");
+  if(!container)return;
 
-  const pool = (players || []).filter(p => p && p.player);
-
-  if (!pool.length){
-    container.innerHTML = '<div class="empty">Launch 5 unavailable</div>';
+  const pool=(players||[]).filter(p=>p&&p.player);
+  if(!pool.length){
+    container.innerHTML='<div class="launch5-empty">Launch 5 is not available yet.</div>';
     return;
   }
 
-  const ranked = rankPlayers(pool);
-  const topFour = ranked.slice(0,4);
+  const ranked=rankPlayers(pool);
+  const topFour=ranked.slice(0,4);
+  const used=new Set(topFour.map(p=>String(p.player)));
 
-  const used = new Set(topFour.map(p => String(p.player)));
+  const longshot=
+    ranked.find(p=>
+      !used.has(String(p.player))&&
+      generatorScore(p)>=45&&
+      generatorScore(p)<65
+    )||
+    ranked.find(p=>!used.has(String(p.player)));
 
-  const longshot =
-    ranked.find(p =>
-      !used.has(String(p.player)) &&
-      generatorScore(p) >= 45 &&
-      generatorScore(p) < 65
-    ) ||
-    ranked.find(p => !used.has(String(p.player)));
+  const picks=longshot?[...topFour,longshot]:topFour;
 
-  const launch5 = longshot
-    ? [...topFour, longshot]
-    : topFour;
-
-  container.innerHTML = launch5.map((p,i) => {
-    const score = generatorScore(p).toFixed(1);
-    const longShot = i === 4;
+  const cards=picks.map((p,index)=>{
+    const score=generatorScore(p).toFixed(0);
+    const isLongshot=index===4;
+    const playerName=esc(displayName(p.player));
+    const team=esc(p.team||"");
+    const opponent=esc(p.opponent||"");
+    const rawId=p.mlb_id||p.player_id||p.batter_id||"";
+    const mlbId=String(rawId).replace(/\D/g,"");
+    const initial=playerName.replace(/&[^;]+;/g,"").charAt(0)||"?";
+    const photo=mlbId
+      ? `<img class="launch5-photo" src="https://img.mlbstatic.com/mlb-photos/image/upload/w_426,q_auto:best/v1/people/${mlbId}/headshot/67/current" alt="${playerName}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="launch5-photo-fallback" style="display:none">${initial}</div>`
+      : `<div class="launch5-photo-fallback">${initial}</div>`;
 
     return `
-      <div class="launch5-card ${longShot ? "longshot" : ""}">
-        <div class="launch5-rank">${i + 1}</div>
-
-        <div class="launch5-name">
-          <b>${esc(displayName(p.player))}</b>
-          <small>${esc(p.team || "")} vs ${esc(p.opponent || "")}</small>
-          <span class="launch5-tag">
-            ${longShot ? "MATCHUP LONG SHOT" : "TOP TARGET"}
-          </span>
+      <article class="launch5-card ${isLongshot?"longshot":""}">
+        ${isLongshot?'<div class="launch5-longshot-badge">LONG SHOT</div>':""}
+        <div class="launch5-photo-wrap">
+          <div class="launch5-rank">${index+1}</div>
+          ${photo}
         </div>
-
-        <div class="launch5-score">
-          ${score}
-          <small>GENERATOR</small>
+        <div class="launch5-card-body">
+          <div class="launch5-player">${playerName}</div>
+          <div class="launch5-team">${team}</div>
+          <div class="launch5-opponent">vs ${opponent}</div>
+          <div class="launch5-score-label">OVERALL SCORE</div>
+          <div class="launch5-main-score">${score}</div>
         </div>
-      </div>
+        <div class="launch5-card-footer">${isLongshot?"MATCHUP LONG SHOT":"TOP TARGET"}</div>
+      </article>
     `;
   }).join("");
+
+  const gamesToday=new Set(pool.map(p=>p.game_pk||keyFor(p)).filter(Boolean)).size;
+  const confidence=picks.length
+    ? picks.reduce((sum,p)=>sum+generatorScore(p),0)/picks.length
+    : 0;
+  const bestScore=picks.length
+    ? Math.max(...picks.map(p=>generatorScore(p)))
+    : 0;
+
+  container.innerHTML=`
+    <div class="launch5-card-row">${cards}</div>
+    <div class="launch5-summary">
+      <div class="launch5-summary-item"><strong>${gamesToday}</strong><span>GAMES TODAY</span></div>
+      <div class="launch5-summary-item"><strong>${pool.length}</strong><span>PLAYERS SCORED</span></div>
+      <div class="launch5-summary-item"><strong>${confidence.toFixed(0)}</strong><span>MODEL CONFIDENCE</span></div>
+      <div class="launch5-summary-item"><strong>${bestScore.toFixed(0)}</strong><span>TOP SCORE</span></div>
+      <button class="launch5-full-card" type="button" onclick="setView('top-picks')">VIEW FULL CARD -></button>
+    </div>
+  `;
 }
 let allPlayers=[],period="night",openKey=null,view="by-game",modelGenerated="",slateDate="";
 let watchlist=[];try{watchlist=JSON.parse(localStorage.getItem("launchpoint-watchlist")||"[]")}catch(e){watchlist=[]}
