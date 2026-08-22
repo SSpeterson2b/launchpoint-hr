@@ -914,6 +914,261 @@ button{font:inherit;cursor:pointer}
   .launch5-rank{width:23px;height:23px;font-size:14px}
 }
 
+
+/* REFERENCE-STYLE PLAYER CARDS FOR EVERY GAME */
+.game{
+  border:1px solid #294b2e;
+  border-radius:16px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 100%,rgba(57,122,45,.14),transparent 36%),
+    linear-gradient(180deg,#071108,#030703);
+}
+.game-head{
+  background:
+    linear-gradient(180deg,rgba(14,39,16,.95),rgba(6,15,7,.98));
+  border-bottom:1px solid #244628;
+}
+.game-head b{
+  font-size:17px;
+  line-height:1.1;
+}
+.game-head small{
+  color:#a3afa1;
+}
+.body{
+  position:relative;
+  padding:11px 9px 12px;
+  background:
+    linear-gradient(180deg,rgba(3,8,3,.76),rgba(4,10,4,.96)),
+    radial-gradient(ellipse at 50% 100%,rgba(53,123,43,.28),transparent 44%);
+}
+.body:after{
+  content:"";
+  position:absolute;
+  left:10%;
+  right:10%;
+  bottom:42px;
+  height:110px;
+  opacity:.18;
+  pointer-events:none;
+  background:
+    linear-gradient(145deg,transparent 48.5%,rgba(188,157,88,.42) 49%,rgba(188,157,88,.42) 51%,transparent 51.5%) center/56px 56px,
+    linear-gradient(35deg,transparent 48.5%,rgba(188,157,88,.25) 49%,rgba(188,157,88,.25) 51%,transparent 51.5%) center/56px 56px;
+}
+.game-meta-row{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+  margin-bottom:8px;
+}
+.game-condition{
+  padding:8px 9px;
+  border:1px solid #28452d;
+  border-radius:8px;
+  background:#071009;
+  color:#bdc8ba;
+  font-size:8px;
+  font-weight:800;
+}
+.game-condition.ok{
+  color:#71de62;
+  text-align:right;
+}
+.game-pitchers{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+  margin-bottom:14px;
+}
+.game-pitcher{
+  padding:8px 9px;
+  border:1px solid #438b3d;
+  border-radius:8px;
+  background:#07110a;
+}
+.game-pitcher.away{
+  border-color:#8b4a3d;
+  background:#140a08;
+}
+.game-pitcher small,.game-pitcher b{
+  display:block;
+}
+.game-pitcher small{
+  color:#7f8f7f;
+  font-size:7px;
+}
+.game-pitcher b{
+  margin-top:2px;
+  font-size:10px;
+}
+.game-player-row{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:5px;
+  padding:16px 0 7px;
+}
+.game-player-card{
+  position:relative;
+  min-width:0;
+  overflow:visible;
+  border:1px solid #2f4f34;
+  border-radius:10px;
+  background:#e9e8df;
+  box-shadow:0 8px 18px rgba(0,0,0,.30);
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+.game-player-card.primary-card{
+  border-color:#6cc05a;
+}
+.game-player-card .player-photo-wrap{
+  position:relative;
+  height:94px;
+  overflow:hidden;
+  border-radius:9px 9px 0 0;
+  background:
+    radial-gradient(circle at 50% 82%,rgba(67,132,58,.78),transparent 44%),
+    linear-gradient(145deg,#18371f,#07130b 68%);
+}
+.game-player-card .player-photo{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center top;
+}
+.game-player-card .player-photo-fallback{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#e1e9de;
+  font-size:30px;
+  font-weight:950;
+  background:linear-gradient(145deg,#193a21,#08140c);
+}
+.game-player-card .player-rank{
+  position:absolute;
+  top:6px;
+  left:6px;
+  z-index:4;
+  display:grid;
+  place-items:center;
+  width:24px;
+  height:24px;
+  border-radius:7px;
+  border:1px solid rgba(128,226,110,.44);
+  background:#113117;
+  color:#87ea76;
+  font-size:14px;
+  font-weight:950;
+}
+.game-player-card .primary-badge{
+  position:absolute;
+  top:-15px;
+  right:2px;
+  color:#79de68;
+  font-size:6px;
+  font-weight:950;
+  letter-spacing:.06em;
+}
+.game-player-card .player-card-body{
+  padding:6px 6px 5px;
+  color:#111611;
+}
+.game-player-card .player-name{
+  min-height:25px;
+  font-size:8.5px;
+  line-height:1.05;
+  font-weight:950;
+  text-transform:uppercase;
+}
+.game-player-card .player-team{
+  margin-top:3px;
+  color:#666c65;
+  font-size:5.5px;
+  font-weight:800;
+  text-transform:uppercase;
+}
+.game-player-card .player-score-label{
+  margin-top:5px;
+  color:#6b706a;
+  font-size:5px;
+  font-weight:900;
+}
+.game-player-card .player-score{
+  margin-top:1px;
+  font-size:20px;
+  line-height:1;
+  font-weight:950;
+}
+.game-player-card .player-footer{
+  min-height:23px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:5px 2px;
+  border-radius:0 0 9px 9px;
+  background:#07120a;
+  color:#78db67;
+  font-size:5.2px;
+  font-weight:950;
+  text-align:center;
+  letter-spacing:.02em;
+  text-transform:uppercase;
+}
+.game-player-card.primary-card .player-footer{
+  color:#e0bf56;
+}
+.game-footer{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+  margin-top:7px;
+}
+.game-footer>*{
+  padding:9px;
+  border:1px solid #314a35;
+  border-radius:7px;
+  background:#071009;
+  color:#b9c5b8;
+  font-size:8px;
+  font-weight:900;
+}
+.game-footer b{
+  color:var(--gold);
+  font-size:16px;
+}
+.game-footer button{
+  color:var(--green);
+  border-color:#3e763c;
+}
+.game-inline-detail{
+  position:relative;
+  z-index:3;
+  margin-top:8px;
+}
+
+@media(max-width:430px){
+  .game-player-row{gap:4px}
+  .game-player-card .player-photo-wrap{height:86px}
+  .game-player-card .player-card-body{padding:5px}
+  .game-player-card .player-name{font-size:7.7px;min-height:24px}
+  .game-player-card .player-team{font-size:5px}
+  .game-player-card .player-score{font-size:18px}
+  .game-player-card .player-footer{font-size:4.8px}
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -1012,6 +1267,24 @@ async function fillLaunch5Headshots(){
   }));
 }
 
+
+async function fillAllPlayerHeadshots(){
+  const imgs=[...document.querySelectorAll("img[data-player-name]")];
+  await Promise.all(imgs.map(async img=>{
+    if(img.dataset.loaded==="1")return;
+    img.dataset.loaded="1";
+    const current=String(img.dataset.mlbId||"").trim();
+    const id=current||await getMlbPlayerIdByName(img.dataset.playerName);
+    if(!id){
+      img.style.display="none";
+      const fb=img.nextElementSibling;
+      if(fb)fb.style.display="flex";
+      return;
+    }
+    img.src="https://img.mlbstatic.com/mlb-photos/image/upload/w_426,q_auto:best/v1/people/"+id+"/headshot/67/current";
+  }));
+}
+
 function renderLaunch5(players){
   const container=document.getElementById("launch5");
   if(!container)return;
@@ -1086,7 +1359,7 @@ function renderLaunch5(players){
       <button class="launch5-full-card" type="button" onclick="setView('top-picks')">VIEW FULL CARD -></button>
     </div>
   `;
-  fillLaunch5Headshots();
+  fillAllPlayerHeadshots();
 }
 let allPlayers=[],period="night",openKey=null,view="by-game",modelGenerated="",slateDate="";
 let watchlist=[];try{watchlist=JSON.parse(localStorage.getItem("launchpoint-watchlist")||"[]")}catch(e){watchlist=[]}
@@ -1120,14 +1393,149 @@ function viewPlayers(){let source=[...allPlayers];if(view==="top-picks")source=r
 function groups(){const map={};viewPlayers().forEach(p=>(map[keyFor(p)]??=[]).push(p));return Object.entries(map).map(([key,players])=>({key,players:rankPlayers(players).slice(0,5)}));}
 function starterFor(team,ps){return ps.find(p=>p.opponent===team)?.pitcher||"Starter TBD"}
 function field(){return `<svg class="field" viewBox="0 0 210 170" role="img" aria-label="Mini Field Map"><title>Mini Field Map</title><path class="grass" d="M105 160 L18 78 Q105 2 192 78 Z"/><path class="dirt" d="M105 151 L61 111 L105 68 L149 111 Z"/><path class="path" d="M105 150 Q127 58 181 23"/><circle class="ball" cx="181" cy="23" r="5"/></svg>`}
-function render(){const gs=groups();const top=rankPlayers(allPlayers).slice(0,3);document.querySelector("#top3").innerHTML=top.map((p,i)=>`<div class="top-pick"><strong>${i+1}</strong><span>${esc(displayName(p.player))}<b>${generatorScore(p).toFixed(1)}</b></span></div>`).join("");const shown=gs.filter(g=>gamePeriod(g.players[0])===period);if(!shown.length){document.querySelector("#games").innerHTML='<div class="empty">No games in this time window yet.</div>';return}if(!openKey)openKey=shown[0].key;document.querySelector("#games").innerHTML=shown.map(g=>{const p=g.players[0],teams=[p.team,p.opponent],expanded=g.key===openKey,rating=Math.round(g.players.reduce((s,x)=>s+generatorScore(x),0)/g.players.length),confirmed=p.lineup_status==="CONFIRMED"||n(p.starter_confirmed)===1;return `<article class="game"><button class="game-head" data-key="${esc(g.key)}"><span><b>${esc(teams[0])} vs ${esc(teams[1])}</b><small>${esc(formatGameTime(p))}  -  ${esc(p.venue||"Venue TBD")}</small></span><span>${expanded?'^':'v'}</span></button>${expanded?`<div class="body"><div class="conditions"><span>${p.temperature?` ${n(p.temperature).toFixed(0)} deg  -  Wind ${n(p.wind_speed).toFixed(0)} MPH`:"Conditions pending"}</span><span class="confirmed">OK  ${confirmed?"LINEUPS CONFIRMED":"LINEUPS PENDING"}</span></div><div class="pitchers"><div><small>${esc(teams[0])} STARTER</small><b>${esc(starterFor(teams[0],g.players))}</b></div><div><small>${esc(teams[1])} STARTER</small><b>${esc(starterFor(teams[1],g.players))}</b></div></div><div class="primary"><div class="copy"><small> PRIMARY LAUNCH</small><h2>${esc(displayName(p.player))}</h2><span>GENERATOR <b>${generatorScore(p).toFixed(1)}</b></span><em> ${esc(p.daily_tier||"ELITE")}</em></div>${field()}</div><div class="ranks">${g.players.slice(1).map((x,i)=>`<div class="rank ${(x.daily_tier||'').toLowerCase()}"><strong>${i+2}</strong><span>${esc(displayName(x.player))}</span><b>${generatorScore(x).toFixed(1)}</b><em>${esc(x.daily_tier)}</em></div>`).join("")}</div><div class="foot"><span>LAUNCH RATING <b>${rating}</b></span><button>VIEW MATCHUP DETAILS -></button></div></div>`:""}</article>`}).join("");document.querySelectorAll(".game-head").forEach(b=>b.onclick=()=>{openKey=openKey===b.dataset.key?null:b.dataset.key;render()})}
+function render(){
+  const gs=groups();
+  const top=rankPlayers(allPlayers).slice(0,3);
+
+  document.querySelector("#top3").innerHTML=top.map((p,i)=>`
+    <div class="top-pick">
+      <strong>${i+1}</strong>
+      <span>${esc(displayName(p.player))}<b>${generatorScore(p).toFixed(1)}</b></span>
+    </div>
+  `).join("");
+
+  const shown=gs.filter(g=>gamePeriod(g.players[0])===period);
+
+  if(!shown.length){
+    document.querySelector("#games").innerHTML='<div class="empty">No games in this time window yet.</div>';
+    return;
+  }
+
+  if(!openKey)openKey=shown[0].key;
+
+  document.querySelector("#games").innerHTML=shown.map(g=>{
+    const p=g.players[0];
+    const teams=[p.team,p.opponent];
+    const expanded=g.key===openKey;
+    const rating=Math.round(g.players.reduce((s,x)=>s+generatorScore(x),0)/g.players.length);
+    const confirmed=p.lineup_status==="CONFIRMED"||n(p.starter_confirmed)===1;
+
+    const playerCards=g.players.slice(0,5).map((x,i)=>{
+      const rawName=String(displayName(x.player)||"");
+      const playerName=esc(rawName);
+      const team=esc(x.team||"");
+      const score=generatorScore(x).toFixed(0);
+      const rawId=x.mlb_id||x.player_id||x.batter_id||"";
+      const mlbId=String(rawId).replace(/\D/g,"");
+      const initial=esc(rawName.charAt(0)||"?");
+      const tag=i===0?"PRIMARY LAUNCH":esc(x.daily_tier||"MODEL PICK");
+
+      return `
+        <article class="game-player-card ${i===0?"primary-card":""}" data-player-card="${esc(x.player)}" tabindex="0" role="button">
+          ${i===0?'<div class="primary-badge">PRIMARY</div>':""}
+          <div class="player-photo-wrap">
+            <div class="player-rank">${i+1}</div>
+            <img class="player-photo"
+                 data-player-name="${esc(rawName)}"
+                 data-mlb-id="${mlbId}"
+                 alt="${playerName}"
+                 style="display:block"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="player-photo-fallback" style="display:none">${initial}</div>
+          </div>
+          <div class="player-card-body">
+            <div class="player-name">${playerName}</div>
+            <div class="player-team">${team}</div>
+            <div class="player-score-label">OVERALL SCORE</div>
+            <div class="player-score">${score}</div>
+          </div>
+          <div class="player-footer">${tag}</div>
+        </article>
+      `;
+    }).join("");
+
+    return `
+      <article class="game">
+        <button class="game-head" data-key="${esc(g.key)}">
+          <span>
+            <b>${esc(teams[0])} vs ${esc(teams[1])}</b>
+            <small>${esc(formatGameTime(p))} - ${esc(p.venue||"Venue TBD")}</small>
+          </span>
+          <span>${expanded?"^":"V"}</span>
+        </button>
+        ${expanded?`
+          <div class="body">
+            <div class="game-meta-row">
+              <div class="game-condition">${p.temperature?`${n(p.temperature).toFixed(0)} deg - Wind ${n(p.wind_speed).toFixed(0)} MPH`:"Conditions pending"}</div>
+              <div class="game-condition ok">${confirmed?"OK LINEUPS CONFIRMED":"LINEUPS PENDING"}</div>
+            </div>
+
+            <div class="game-pitchers">
+              <div class="game-pitcher">
+                <small>${esc(teams[0])} STARTER</small>
+                <b>${esc(starterFor(teams[0],g.players))}</b>
+              </div>
+              <div class="game-pitcher away">
+                <small>${esc(teams[1])} STARTER</small>
+                <b>${esc(starterFor(teams[1],g.players))}</b>
+              </div>
+            </div>
+
+            <div class="game-player-row">${playerCards}</div>
+
+            <div class="game-inline-detail" data-game-detail="${esc(g.key)}"></div>
+
+            <div class="game-footer">
+              <span>LAUNCH RATING <b>${rating}</b></span>
+              <button type="button">VIEW MATCHUP DETAILS -></button>
+            </div>
+          </div>
+        `:""}
+      </article>
+    `;
+  }).join("");
+
+  document.querySelectorAll(".game-head").forEach(b=>{
+    b.onclick=()=>{
+      openKey=openKey===b.dataset.key?null:b.dataset.key;
+      render();
+    };
+  });
+
+  document.querySelectorAll("[data-player-card]").forEach(card=>{
+    const player=allPlayers.find(x=>String(x.player)===String(card.dataset.playerCard));
+    if(!player)return;
+    const open=()=>{
+      const host=card.closest(".body")?.querySelector(".game-inline-detail");
+      if(!host)return;
+      if(host.dataset.openPlayer===String(player.player)){
+        host.innerHTML="";
+        host.dataset.openPlayer="";
+        return;
+      }
+      host.dataset.openPlayer=String(player.player);
+      host.innerHTML=trendDetails(player)+watchButton(player);
+      bindWatchButtons();
+    };
+    card.onclick=open;
+    card.onkeydown=e=>{
+      if(e.key==="Enter"||e.key===" "){
+        e.preventDefault();
+        open();
+      }
+    };
+  });
+
+  fillAllPlayerHeadshots();
+}
 const has=v=>v!==undefined&&v!==null&&v!=="",num=(v,d=1)=>has(v)?n(v).toFixed(d):"-";
 function metricCard(label,value){return `<span class="metric-card">${label}<b>${num(value)}</b></span>`}
 function trendDetails(p){const change=n(p.percentile_change),raw=String(p.trend||"NEW").replaceAll("_"," "),kind=/RISING|UP/i.test(raw)?"rising":/FALL|DOWN/i.test(raw)?"fall":"new",sign=change>0?"+":"",previous=n(p.daily_percentile)-change,lineup=p.batting_order?`#${p.batting_order}`:(p.lineup_status||"PENDING"),hands=[p.hitter_hand?`${p.hitter_hand} hitter`:"",p.pitcher_hand?`${p.pitcher_hand} pitcher`:""].filter(Boolean).join(" vs "),conditions=[p.temperature?`${num(p.temperature,0)} deg`:"",p.wind_speed?`Wind ${num(p.wind_speed,0)} MPH ${p.wind_direction||""}`:"",has(p.rain_probability)?`Rain ${num(p.rain_probability,0)}%`:"",p.venue||""].filter(Boolean);return `<div class="player-trend" data-player="${esc(p.player)}"><div class="trend-head"><strong>${esc(displayName(p.player))}</strong><span class="trend-badge ${kind}">${esc(raw)}</span></div><div class="detail-title">${esc(p.team||"")} vs ${esc(p.opponent||"")}</div><div class="detail-tags"><span class="best">${esc(p.pick_status||"MODEL PICK")}</span><span class="tier">${esc(p.daily_tier||"TIER PENDING")}</span><span>${esc(p.lineup_status||"LINEUP PENDING")}</span></div><div class="detail-summary"><span>LaunchPoint score<b>${num(p.raw_hr_edge,2)}</b></span><span>Daily percentile<b>${num(p.daily_percentile,2)}</b></span><span>Trend change<b class="${change>0?'up':change<0?'down':''}">${sign}${change.toFixed(2)}</b></span><span>Lineup<b>${esc(lineup)}</b></span></div><div class="matchup-box"><small>TONIGHT'S MATCHUP</small><b>vs ${esc(p.pitcher||"Pitcher TBD")}</b><em>${esc(hands||"Handedness pending")}</em></div><div class="detail-section">MODEL BREAKDOWN</div><div class="metric-grid">${metricCard("Statcast power",p.statcast_power)}${metricCard("Pitcher vulnerability",p.pitcher_vulnerability)}${metricCard("Pitch arsenal",p.pitch_arsenal_score)}${metricCard("Recent form",p.recent_form_score)}${metricCard("Bullpen vulnerability",p.bullpen_vulnerability)}${metricCard("Park + weather",p.park_weather_score)}${metricCard("Handedness",p.handedness_score)}${metricCard("Previous percentile",previous)}</div>${conditions.length?`<div class="detail-section">GAME CONDITIONS</div><div class="condition-row">${conditions.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}<p class="detail-note">Tap the player again to close this breakdown.</p></div>`}
 function watchButton(p){const saved=watchlist.includes(String(p.player));return `<button class="watch-toggle ${saved?'saved':''}" data-watch="${esc(p.player)}">${saved?' SAVED TO WATCHLIST':' ADD TO WATCHLIST'}</button>`}
 function toggleWatch(name){const key=String(name);watchlist=watchlist.includes(key)?watchlist.filter(x=>x!==key):[...watchlist,key];localStorage.setItem("launchpoint-watchlist",JSON.stringify(watchlist));if(view==="watchlist")render();else{const p=allPlayers.find(x=>String(x.player)===key),btn=document.querySelector("[data-watch]");if(btn&&p){btn.outerHTML=watchButton(p);bindWatchButtons()}}}
 function bindWatchButtons(){document.querySelectorAll("[data-watch]").forEach(b=>b.onclick=e=>{e.stopPropagation();toggleWatch(b.dataset.watch)})}
-function addTrendClicks(){document.querySelectorAll(".copy,.rank").forEach(el=>{const shown=el.querySelector("h2,span")?.textContent?.trim(),p=allPlayers.find(x=>displayName(x.player)===shown);if(!p)return;el.setAttribute("role","button");el.setAttribute("tabindex","0");el.setAttribute("aria-label",`Show complete breakdown for ${shown}`);const open=()=>{const old=document.querySelector(".player-trend");if(old?.dataset.player===String(p.player)){old.remove();return}old?.remove();const anchor=el.classList.contains("copy")?el.closest(".primary"):el;anchor.insertAdjacentHTML("afterend",trendDetails(p));document.querySelector(".player-trend")?.insertAdjacentHTML("beforeend",watchButton(p));bindWatchButtons()};el.onclick=open;el.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open()}}})}
+function addTrendClicks(){return;/* legacy card click binding disabled */
+document.querySelectorAll(".copy,.rank").forEach(el=>{const shown=el.querySelector("h2,span")?.textContent?.trim(),p=allPlayers.find(x=>displayName(x.player)===shown);if(!p)return;el.setAttribute("role","button");el.setAttribute("tabindex","0");el.setAttribute("aria-label",`Show complete breakdown for ${shown}`);const open=()=>{const old=document.querySelector(".player-trend");if(old?.dataset.player===String(p.player)){old.remove();return}old?.remove();const anchor=el.classList.contains("copy")?el.closest(".primary"):el;anchor.insertAdjacentHTML("afterend",trendDetails(p));document.querySelector(".player-trend")?.insertAdjacentHTML("beforeend",watchButton(p));bindWatchButtons()};el.onclick=open;el.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open()}}})}
 const viewNames={"by-game":"ALL GAMES","top-picks":"TOP PICKS","elite":"ELITE PLAYERS","confirmed":"CONFIRMED LINEUPS","watchlist":"MY WATCHLIST"};
 const renderBoard=render;render=function(){renderBoard();const games=document.querySelector("#games");games.insertAdjacentHTML("afterbegin",`<div class="view-heading"><span>${viewNames[view]}</span><b>${viewPlayers().length} PLAYERS</b></div>`);document.querySelectorAll("[data-view]").forEach(b=>b.classList.toggle("active",b.dataset.view===view));addTrendClicks()};
 function setView(next){view=next;openKey=null;document.querySelector("#more-panel").hidden=true;render();document.querySelector("#games").scrollIntoView({behavior:"smooth",block:"start"})}
