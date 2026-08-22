@@ -1276,6 +1276,127 @@ html,body{
     radial-gradient(ellipse at 50% 100%,rgba(112,72,39,.36),transparent 58%) !important;
 }
 
+
+/* REALISTIC BASEBALL HERO + BALL */
+.hero{
+  min-height:330px !important;
+  background:
+    linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.42)),
+    radial-gradient(ellipse at 50% 72%,rgba(41,112,34,.34),transparent 42%),
+    linear-gradient(180deg,#050706 0%,#0a100b 43%,#11110b 44%,#171108 100%) !important;
+}
+.hero:before{
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  opacity:1 !important;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 6% 22%,rgba(255,255,235,.90) 0 1px,rgba(255,255,225,.36) 2px 4px,transparent 9px),
+    radial-gradient(circle at 13% 19%,rgba(255,255,235,.88) 0 1px,rgba(255,255,225,.30) 2px 4px,transparent 9px),
+    radial-gradient(circle at 87% 19%,rgba(255,255,235,.88) 0 1px,rgba(255,255,225,.30) 2px 4px,transparent 9px),
+    radial-gradient(circle at 94% 22%,rgba(255,255,235,.90) 0 1px,rgba(255,255,225,.36) 2px 4px,transparent 9px),
+    linear-gradient(164deg,transparent 0 24%,rgba(255,250,220,.055) 24.4% 25.2%,transparent 25.6%),
+    linear-gradient(196deg,transparent 0 24%,rgba(255,250,220,.055) 24.4% 25.2%,transparent 25.6%),
+    repeating-linear-gradient(90deg,rgba(0,0,0,.34) 0 22px,rgba(28,34,27,.38) 23px 44px) 0 38%/100% 24% no-repeat,
+    linear-gradient(180deg,transparent 0 37%,rgba(7,13,8,.92) 38% 61%,transparent 62%) !important;
+}
+.hero:after{
+  content:"" !important;
+  position:absolute !important;
+  left:-16% !important;
+  right:-16% !important;
+  bottom:-74px !important;
+  height:230px !important;
+  opacity:1 !important;
+  pointer-events:none;
+  transform:none !important;
+  background:
+    linear-gradient(153deg,transparent 49.25%,rgba(246,241,221,.88) 49.55%,rgba(246,241,221,.88) 50.05%,transparent 50.35%),
+    linear-gradient(27deg,transparent 49.25%,rgba(246,241,221,.88) 49.55%,rgba(246,241,221,.88) 50.05%,transparent 50.35%),
+    radial-gradient(ellipse at 50% 0%,rgba(44,105,35,.96) 0 39%,transparent 39.7%),
+    radial-gradient(ellipse at 50% 100%,#8b5c35 0 48%,#70462a 49% 67%,#4f321f 68% 100%) !important;
+}
+.hero-center{
+  min-height:230px !important;
+}
+.baseball{
+  width:128px !important;
+  height:128px !important;
+  margin-top:16px !important;
+  border-radius:50% !important;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Cdefs%3E%3CradialGradient id='leather' cx='32%25' cy='25%25' r='78%25'%3E%3Cstop offset='0' stop-color='%23fffef8'/%3E%3Cstop offset='.34' stop-color='%23f4f0e7'/%3E%3Cstop offset='.70' stop-color='%23ded8cb'/%3E%3Cstop offset='1' stop-color='%23aaa397'/%3E%3C/radialGradient%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' seed='9' result='n'/%3E%3CfeColorMatrix in='n' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .12 0' result='noise'/%3E%3CfeBlend in='SourceGraphic' in2='noise' mode='multiply'/%3E%3C/filter%3E%3Cfilter id='shadow'%3E%3CfeDropShadow dx='5' dy='8' stdDeviation='7' flood-color='%23000000' flood-opacity='.42'/%3E%3C/filter%3E%3C/defs%3E%3Cg filter='url(%23shadow)'%3E%3Ccircle cx='120' cy='120' r='108' fill='url(%23leather)' stroke='%23c9c1b4' stroke-width='2' filter='url(%23grain)'/%3E%3Cpath d='M75 20 C106 66 101 174 68 219' fill='none' stroke='%23a52b30' stroke-width='4.2' stroke-linecap='round'/%3E%3Cpath d='M165 20 C134 66 139 174 172 219' fill='none' stroke='%23a52b30' stroke-width='4.2' stroke-linecap='round'/%3E%3Cg stroke='%23a52b30' stroke-width='3.1' stroke-linecap='round'%3E%3Cpath d='M68 42l17 7M65 59l18 6M63 77l18 5M61 96l18 3M60 116l18 1M60 136l18-1M61 156l18-3M63 175l18-5M66 193l17-6M70 209l16-7'/%3E%3Cpath d='M172 42l-17 7M175 59l-18 6M177 77l-18 5M179 96l-18 3M180 116l-18 1M180 136l-18-1M179 156l-18-3M177 175l-18-5M174 193l-17-6M170 209l-16-7'/%3E%3C/g%3E%3Cellipse cx='83' cy='69' rx='31' ry='43' fill='%23ffffff' opacity='.15' transform='rotate(-28 83 69)'/%3E%3C/g%3E%3C/svg%3E") !important;
+  background-size:cover !important;
+  background-position:center !important;
+  box-shadow:
+    0 16px 25px rgba(0,0,0,.48),
+    0 0 22px rgba(114,230,91,.32),
+    0 0 68px rgba(71,188,55,.24) !important;
+  transform:rotate(-7deg);
+}
+.baseball:before,.baseball:after{display:none !important}
+
+/* REALISTIC BALLPARK BACKDROP THROUGH THE PAGE */
+.shell{
+  background:
+    linear-gradient(180deg,rgba(2,5,2,.46),rgba(2,5,2,.78)),
+    linear-gradient(180deg,#050705 0%,#071008 26%,#11110b 49%,#1a120b 100%) !important;
+}
+.shell:before{
+  content:"" !important;
+  position:fixed !important;
+  z-index:-2 !important;
+  inset:0 !important;
+  opacity:1 !important;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 4% 9%,rgba(255,252,226,.78) 0 1px,rgba(255,248,215,.18) 2px 6px,transparent 12px),
+    radial-gradient(circle at 9% 8%,rgba(255,252,226,.72) 0 1px,rgba(255,248,215,.16) 2px 6px,transparent 12px),
+    radial-gradient(circle at 91% 8%,rgba(255,252,226,.72) 0 1px,rgba(255,248,215,.16) 2px 6px,transparent 12px),
+    radial-gradient(circle at 96% 9%,rgba(255,252,226,.78) 0 1px,rgba(255,248,215,.18) 2px 6px,transparent 12px),
+    repeating-linear-gradient(90deg,rgba(8,10,8,.98) 0 24px,rgba(20,25,19,.98) 25px 48px) 0 18%/100% 18% no-repeat,
+    linear-gradient(180deg,#020302 0 18%,#0a0d09 18% 36%,#10120c 36% 47%,#19130c 47% 100%) !important;
+}
+.shell:after{
+  content:"" !important;
+  position:fixed !important;
+  z-index:-1 !important;
+  left:-25% !important;
+  right:-25% !important;
+  bottom:-12vh !important;
+  height:70vh !important;
+  opacity:.92 !important;
+  pointer-events:none;
+  background:
+    linear-gradient(153deg,transparent 49.35%,rgba(239,233,211,.82) 49.55%,rgba(239,233,211,.82) 50.0%,transparent 50.25%),
+    linear-gradient(27deg,transparent 49.35%,rgba(239,233,211,.82) 49.55%,rgba(239,233,211,.82) 50.0%,transparent 50.25%),
+    radial-gradient(ellipse at 50% 0%,rgba(37,92,31,.94) 0 40%,transparent 40.7%),
+    radial-gradient(ellipse at 50% 100%,#8c5b34 0 47%,#704729 48% 67%,#50331f 68% 100%) !important;
+}
+
+/* Add grass/infield depth behind every player-card set */
+.launch5-section,
+.game .body{
+  background:
+    linear-gradient(180deg,rgba(3,8,3,.70),rgba(4,8,3,.90)),
+    radial-gradient(ellipse at 50% 103%,rgba(129,82,45,.52) 0 28%,transparent 29%),
+    radial-gradient(ellipse at 50% 90%,rgba(42,105,35,.44) 0 48%,transparent 49%) !important;
+}
+.launch5-grid:before,
+.game-player-row:before{
+  opacity:.74 !important;
+  background:
+    linear-gradient(153deg,transparent 49.1%,rgba(246,240,218,.68) 49.45%,rgba(246,240,218,.68) 50%,transparent 50.35%),
+    linear-gradient(27deg,transparent 49.1%,rgba(246,240,218,.68) 49.45%,rgba(246,240,218,.68) 50%,transparent 50.35%),
+    radial-gradient(ellipse at 50% 100%,rgba(128,82,46,.72),rgba(83,51,30,.42) 58%,transparent 59%) !important;
+}
+
+@media(max-width:430px){
+  .hero{min-height:315px !important}
+  .hero-center{min-height:218px !important}
+  .baseball{width:116px !important;height:116px !important}
+}
+
 </style>
 
 </head><body><main class="shell">
