@@ -1462,31 +1462,71 @@ html, body{
  <div id="launch5" class="launch5-grid"></div>
 </section>
 <nav class="tabs"><button class="active" data-view="by-game">BY GAME</button><button data-view="top-picks">TOP PICKS</button><button data-view="elite">ELITE</button><button data-view="confirmed">CONFIRMED</button></nav><section id="games"><div class="empty">Loading today's matchups...</div></section>
-<aside class="more-panel" id="more-panel" hidden><button class="more-close" aria-label="Close model information">X</button><div class="section-label">ABOUT LAUNCHPOINT HR</div><h2>Model Intelligence</h2><p>Daily home-run candidates ranked using power, pitcher vulnerability, arsenal matchups, recent form, bullpen weakness, park conditions, handedness and lineup opportunity.</p><div class="more-stats"><span>Players loaded<b id="more-count">0</b></span><span>Last update<b id="more-update">Pending</b></span></div><small>Model scores are informational and do not guarantee a home run.</small><hr>
-<details>
-<summary> Results & Performance</summary>
-<p>Daily LaunchPoint results, home-run hits, Top 5, Top 10, Top 20 and tier performance.</p>
-</details>
+<aside class="more-panel" id="more-panel" hidden>
+  <button class="more-close" aria-label="Close model information">x</button>
 
-<details>
-<summary> History</summary>
-<p>Review previous LaunchPoint slates and daily model performance.</p>
-</details>
+  <div class="section-title">
+    <h2>LAUNCHPOINT MORE</h2>
+    <span>MODEL INFO - RESULTS - HISTORY - GUIDE</span>
+  </div>
 
-<details>
-<summary> How to Read LaunchPoint</summary>
-<p>Learn how LaunchPoint Score, Daily Percentile, Generator Score, tiers and Rising/Falling trends work.</p>
-</details>
+  <div class="more-stats">
+    <span>MODEL VERSION<b>HR Edge 2.8</b></span>
+    <span>DAILY PLAYER POOL<b id="more-player-count">0 players</b></span>
+    <span>SLATE DATE<b id="more-slate-date">Pending</b></span>
+    <span>LAST UPDATE<b id="more-updated">Pending</b></span>
+  </div>
 
-<details>
-<summary> About LaunchPoint</summary>
-<p>LaunchPoint HR ranks daily home-run candidates using power, pitcher vulnerability, arsenal matchups, recent form, bullpen weakness, park conditions, handedness and lineup opportunity.</p>
-</details>
+  <details open>
+    <summary>Results & Performance</summary>
+    <p id="more-results-copy">
+      Daily LaunchPoint results appear here after the slate loads.
+    </p>
+  </details>
 
-<details>
-<summary>WARNING:  Disclaimer</summary>
-<p>LaunchPoint projections are informational and do not guarantee a home run.</p>
-</details></aside>
+  <details>
+    <summary>History</summary>
+    <p>
+      Review previous LaunchPoint slates, daily model rankings and how the Top 5,
+      Top 10, Top 20 and tier groups performed over time.
+    </p>
+  </details>
+
+  <details>
+    <summary>How to Read LaunchPoint</summary>
+    <p>
+      LaunchPoint Score is the model's overall home-run matchup score.
+      Daily Percentile shows where a player ranks versus the full daily player pool.
+      Generator Score combines the model's power, matchup and opportunity signals.
+      Trend Change shows whether a player's daily position is rising or falling.
+    </p>
+  </details>
+
+  <details>
+    <summary>Model Breakdown</summary>
+    <p>
+      The model evaluates Statcast Power, Pitch Arsenal matchup, Pitcher Vulnerability,
+      Recent Form, Bullpen Vulnerability, Park + Weather, Lineup Opportunity and Handedness.
+    </p>
+  </details>
+
+  <details>
+    <summary>About LaunchPoint</summary>
+    <p>
+      LaunchPoint HR ranks daily home-run candidates using matchup quality,
+      batted-ball power indicators, opposing pitching conditions and lineup opportunity.
+      The board is designed to surface both strong targets and value or long-shot profiles.
+    </p>
+  </details>
+
+  <details>
+    <summary>Disclaimer</summary>
+    <p>
+      LaunchPoint projections are informational and do not guarantee outcomes.
+      Baseball results are volatile and home runs remain difficult to predict.
+    </p>
+  </details>
+</aside>
 <nav class="bottom"><button class="active" data-bottom="home">HOME <small>HOME</small></button><button data-bottom="games">GAMES <small>GAMES</small></button><button data-bottom="top-picks">TOP <small>TOP PICKS</small></button><button data-bottom="watchlist"><small>WATCHLIST</small></button><button data-bottom="more">...<small>MORE</small></button></nav></main>
 <script>
 const lpHeadshotCache={};
@@ -1797,12 +1837,74 @@ function toggleWatch(name){const key=String(name);watchlist=watchlist.includes(k
 function bindWatchButtons(){document.querySelectorAll("[data-watch]").forEach(b=>b.onclick=e=>{e.stopPropagation();toggleWatch(b.dataset.watch)})}
 function addTrendClicks(){return;/* legacy card click binding disabled */
 document.querySelectorAll(".copy,.rank").forEach(el=>{const shown=el.querySelector("h2,span")?.textContent?.trim(),p=allPlayers.find(x=>displayName(x.player)===shown);if(!p)return;el.setAttribute("role","button");el.setAttribute("tabindex","0");el.setAttribute("aria-label",`Show complete breakdown for ${shown}`);const open=()=>{const old=document.querySelector(".player-trend");if(old?.dataset.player===String(p.player)){old.remove();return}old?.remove();const anchor=el.classList.contains("copy")?el.closest(".primary"):el;anchor.insertAdjacentHTML("afterend",trendDetails(p));document.querySelector(".player-trend")?.insertAdjacentHTML("beforeend",watchButton(p));bindWatchButtons()};el.onclick=open;el.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open()}}})}
+
+function updateMorePanel(){
+  const countEl=document.getElementById("more-player-count");
+  const dateEl=document.getElementById("more-slate-date");
+  const updatedEl=document.getElementById("more-updated");
+  const resultsEl=document.getElementById("more-results-copy");
+
+  if(countEl)countEl.textContent=(allPlayers?.length||0)+" players";
+
+  const first=allPlayers&&allPlayers.length?allPlayers[0]:null;
+  const slateDate=first?.slate_date||first?.game_date||"";
+  if(dateEl)dateEl.textContent=slateDate?formatSlateDate(slateDate):"Pending";
+
+  if(updatedEl){
+    if(modelGenerated){
+      const d=new Date(modelGenerated);
+      updatedEl.textContent=Number.isNaN(d.getTime())
+        ?"Pending"
+        :d.toLocaleString([],{
+            month:"short",
+            day:"numeric",
+            hour:"numeric",
+            minute:"2-digit"
+          });
+    }else{
+      updatedEl.textContent="Pending";
+    }
+  }
+
+  if(resultsEl){
+    const top5=rankPlayers(allPlayers||[]).slice(0,5);
+    if(top5.length){
+      resultsEl.innerHTML=
+        "Today's top five: "+
+        top5.map((p,i)=>`${i+1}. ${esc(displayName(p.player))} (${generatorScore(p).toFixed(1)})`).join(" - ");
+    }else{
+      resultsEl.textContent="Daily LaunchPoint results appear here after the slate loads.";
+    }
+  }
+}
+
 const viewNames={"by-game":"ALL GAMES","top-picks":"TOP PICKS","elite":"ELITE PLAYERS","confirmed":"CONFIRMED LINEUPS","watchlist":"MY WATCHLIST"};
 const renderBoard=render;render=function(){renderBoard();const games=document.querySelector("#games");games.insertAdjacentHTML("afterbegin",`<div class="view-heading"><span>${viewNames[view]}</span><b>${viewPlayers().length} PLAYERS</b></div>`);document.querySelectorAll("[data-view]").forEach(b=>b.classList.toggle("active",b.dataset.view===view));addTrendClicks()};
-function setView(next){view=next;openKey=null;document.querySelector("#more-panel").hidden=true;render();document.querySelector("#games").scrollIntoView({behavior:"smooth",block:"start"})}
+function setView(next){view=next;openKey=null;document.querySelector("#more-panel").hidden=true;updateMorePanel();render();document.querySelector("#games").scrollIntoView({behavior:"smooth",block:"start"})}
 document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>setView(b.dataset.view));
 document.querySelectorAll("[data-period]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-period]").forEach(x=>x.classList.remove("active"));b.classList.add("active");period=b.dataset.period;openKey=null;render()});
-document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-bottom]").forEach(x=>x.classList.remove("active"));b.classList.add("active");const action=b.dataset.bottom;if(action==="home"){view="by-game";openKey=null;render();scrollTo({top:0,behavior:"smooth"})}else if(action==="games")setView("by-game");else if(action==="top-picks")setView("top-picks");else if(action==="watchlist")setView("watchlist");else if(action==="more"){document.querySelector("#more-panel").hidden=false;document.querySelector("#more-count").textContent=allPlayers.length;document.querySelector("#more-update").textContent=modelGenerated?new Date(modelGenerated).toLocaleString():"Pending"}});
-document.querySelector(".more-close").onclick=()=>document.querySelector("#more-panel").hidden=true;
-fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>{allPlayers=d.players||[];renderLaunch5(allPlayers);modelGenerated=d.generated_at_utc||"";slateDate=d.slate_date||allPlayers.find(p=>p.game_date)?.game_date||"";updateModelMeta();render()}).catch(()=>{document.querySelector("#games").innerHTML='<div class="empty">Today\'s model data is not available yet.</div>'});
+document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("[data-bottom]").forEach(x=>x.classList.remove("active"));
+  b.classList.add("active");
+
+  if(b.dataset.bottom==="more"){
+    updateMorePanel();
+    document.querySelector("#more-panel").hidden=false;
+    return;
+  }
+
+  document.querySelector("#more-panel").hidden=true;
+
+  const map={
+    "home":"by-game",
+    "games":"by-game",
+    "top":"top-picks",
+    "watchlist":"watchlist"
+  };
+
+  const next=map[b.dataset.bottom]||"by-game";
+  setView(next);
+});
+document.querySelector(".more-close").onclick=()=>document.querySelector("#more-panel").hidden=true;updateMorePanel();
+fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>{allPlayers=d.players||[];renderLaunch5(allPlayers);updateMorePanel();modelGenerated=d.generated_at_utc||"";updateMorePanel();slateDate=d.slate_date||allPlayers.find(p=>p.game_date)?.game_date||"";updateModelMeta();render()}).catch(()=>{document.querySelector("#games").innerHTML='<div class="empty">Today\'s model data is not available yet.</div>'});
 </script></body></html>
