@@ -1169,6 +1169,113 @@ button{font:inherit;cursor:pointer}
   .game-player-card .player-footer{font-size:4.8px}
 }
 
+
+/* FINAL REFERENCE LOOK: STADIUM + DIRT FIELD BACKGROUND / WHITE PLAYER CARDS */
+html,body{
+  background:#020402;
+}
+.shell{
+  position:relative;
+  isolation:isolate;
+  background:
+    linear-gradient(180deg,rgba(1,4,2,.54) 0%,rgba(1,5,2,.72) 28%,rgba(2,6,3,.88) 100%),
+    radial-gradient(ellipse at 50% 8%,rgba(76,116,53,.24) 0%,rgba(8,20,9,.18) 33%,transparent 55%),
+    linear-gradient(180deg,#071109 0%,#081108 38%,#17110a 67%,#0a0805 100%);
+}
+.shell:before{
+  content:"";
+  position:fixed;
+  z-index:-2;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(ellipse at 50% 9%,rgba(115,150,74,.22),transparent 29%),
+    repeating-linear-gradient(90deg,transparent 0 52px,rgba(217,231,205,.035) 53px 55px,transparent 56px 104px),
+    linear-gradient(180deg,#020603 0 19%,#071008 19% 39%,#1d150d 39% 100%);
+}
+.shell:after{
+  content:"";
+  position:fixed;
+  z-index:-1;
+  left:-18%;
+  right:-18%;
+  bottom:-8vh;
+  height:64vh;
+  pointer-events:none;
+  opacity:.72;
+  background:
+    linear-gradient(153deg,transparent 49.25%,rgba(240,232,205,.72) 49.5%,rgba(240,232,205,.72) 50.1%,transparent 50.35%) center/100% 100%,
+    linear-gradient(27deg,transparent 49.25%,rgba(240,232,205,.72) 49.5%,rgba(240,232,205,.72) 50.1%,transparent 50.35%) center/100% 100%,
+    radial-gradient(ellipse at 50% 100%,rgba(102,68,39,.92) 0 38%,rgba(70,47,28,.88) 39% 61%,transparent 62%);
+}
+.launch5-section,
+.game{
+  backdrop-filter:blur(1.5px);
+  -webkit-backdrop-filter:blur(1.5px);
+}
+.launch5-section{
+  background:
+    linear-gradient(180deg,rgba(3,10,4,.80),rgba(7,11,6,.88)),
+    radial-gradient(ellipse at 50% 100%,rgba(97,62,35,.34),transparent 54%);
+}
+.launch5-grid,
+.game-player-row{
+  position:relative;
+}
+.launch5-grid:before,
+.game-player-row:before{
+  content:"";
+  position:absolute;
+  left:-10px;
+  right:-10px;
+  bottom:-8px;
+  height:52%;
+  z-index:0;
+  pointer-events:none;
+  opacity:.48;
+  background:
+    linear-gradient(155deg,transparent 49%,rgba(239,229,201,.46) 49.4%,rgba(239,229,201,.46) 50%,transparent 50.4%),
+    linear-gradient(25deg,transparent 49%,rgba(239,229,201,.46) 49.4%,rgba(239,229,201,.46) 50%,transparent 50.4%),
+    linear-gradient(180deg,rgba(102,68,38,.20),rgba(77,49,29,.62));
+}
+.launch5-card,
+.game-player-card{
+  z-index:1;
+  background:#f7f5ed !important;
+  border-color:#d8d4c8 !important;
+  box-shadow:0 10px 22px rgba(0,0,0,.48);
+}
+.launch5-card .launch5-photo-wrap,
+.game-player-card .player-photo-wrap{
+  background:
+    radial-gradient(circle at 50% 88%,rgba(45,87,42,.44),transparent 46%),
+    linear-gradient(180deg,#e9eadf 0%,#dfe2d7 100%) !important;
+}
+.launch5-card .launch5-name,
+.launch5-card .launch5-team,
+.launch5-card .launch5-score,
+.game-player-card .player-name,
+.game-player-card .player-score{
+  color:#111 !important;
+}
+.game-player-card .player-team,
+.game-player-card .player-score-label{
+  color:#5e625d !important;
+}
+.launch5-card .launch5-card-body,
+.game-player-card .player-card-body{
+  background:#f7f5ed !important;
+}
+.game-player-card .player-footer,
+.launch5-card .launch5-footer{
+  background:#071008 !important;
+}
+.game .body{
+  background:
+    linear-gradient(180deg,rgba(3,8,3,.72),rgba(4,8,3,.88)),
+    radial-gradient(ellipse at 50% 100%,rgba(112,72,39,.36),transparent 58%) !important;
+}
+
 </style>
 
 </head><body><main class="shell">
