@@ -59,7 +59,131 @@ body{--bg:#01060b;--panel:#06111b;--line:#243543;--white:#f4f7f9;--muted:#8795a0
   border:0;
   border-top:1px solid #243543;
   margin:16px 0;
-}</style>
+}
+/* TODAY'S LAUNCH 5 */
+
+.launch5-section{
+  margin:20px 0 24px;
+}
+
+.launch5-grid{
+  display:grid;
+  gap:10px;
+  width:100%;
+}
+
+.launch5-card{
+  display:grid;
+  grid-template-columns:42px 1fr auto;
+  align-items:center;
+  gap:12px;
+  padding:14px;
+  border:1px solid #24475b;
+  border-radius:14px;
+  background:#06131c;
+}
+
+.launch5-card.longshot{
+  border-color:#d7a928;
+  background:linear-gradient(135deg,rgba(215,169,40,.14),rgba(6,19,28,.96));
+}
+
+.launch5-rank{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:38px;
+  height:38px;
+  border-radius:10px;
+  background:#0b3047;
+  color:#35baff;
+  font-size:20px;
+  font-weight:900;
+}
+
+.launch5-card.longshot .launch5-rank{
+  background:#3b2b08;
+  color:#ffc83d;
+}
+
+.launch5-name{
+  min-width:0;
+}
+
+.launch5-name b{
+  display:block;
+  color:#f7f9fc;
+  font-size:17px;
+  font-weight:900;
+  margin-bottom:3px;
+}
+
+.launch5-name small{
+  display:block;
+  color:#8799a9;
+  font-size:12px;
+  line-height:1.3;
+}
+
+.launch5-tag{
+  display:inline-block;
+  margin-top:6px;
+  color:#35baff;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:1px;
+}
+
+.launch5-card.longshot .launch5-tag{
+  color:#ffc83d;
+}
+
+.launch5-score{
+  color:#35baff;
+  font-size:24px;
+  font-weight:900;
+  text-align:right;
+}
+
+.launch5-card.longshot .launch5-score{
+  color:#ffc83d;
+}
+
+.launch5-score small{
+  display:block;
+  margin-top:2px;
+  color:#8395a5;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.8px;
+}
+
+@media(max-width:600px){
+  .launch5-card{
+    grid-template-columns:36px minmax(0,1fr) auto;
+    padding:12px 10px;
+    gap:9px;
+  }
+
+  .launch5-rank{
+    width:34px;
+    height:34px;
+    font-size:18px;
+  }
+
+  .launch5-name b{
+    font-size:15px;
+  }
+
+  .launch5-name small{
+    font-size:10px;
+  }
+
+  .launch5-score{
+    font-size:20px;
+  }
+}
+</style>
 </head><body><main class="shell">
 <header class="top"><div class="logo">â¾</div><div><h1>LAUNCHPOINT <em>HR</em></h1><p>MLB Home Run Intelligence</p><p class="model-meta" id="model-meta">Slate date pending Â· Updated pending</p></div><span class="live">MODEL LIVE</span></header>
 <section class="periods"><button data-period="early"><b>EARLY</b><small>12 PM â 3 PM</small></button><button data-period="afternoon"><b>AFTERNOON</b><small>3 PM â 7 PM</small></button><button class="active" data-period="night"><b>NIGHT</b><small>7 PM â LATE</small></button></section>
