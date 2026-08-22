@@ -1430,6 +1430,50 @@ html, body{
   background:transparent !important;
 }
 
+
+/* WORKING GAME MATCHUP DETAILS PANEL */
+.game-matchup-panel{
+  margin-top:9px;
+  padding:12px;
+  border:1px solid #31523a;
+  border-radius:10px;
+  background:linear-gradient(145deg,#08120a,#040804);
+  color:#dfe7dd;
+}
+.game-matchup-panel h3{
+  margin:0 0 9px;
+  color:var(--green);
+  font-size:13px;
+  letter-spacing:.05em;
+}
+.game-matchup-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:7px;
+}
+.game-matchup-grid span{
+  padding:8px;
+  border:1px solid #263d2b;
+  border-radius:7px;
+  background:#050b06;
+  color:#8fa08f;
+  font-size:7px;
+  text-transform:uppercase;
+}
+.game-matchup-grid b{
+  display:block;
+  margin-top:3px;
+  color:#fff;
+  font-size:12px;
+  text-transform:none;
+}
+.game-matchup-note{
+  margin:9px 0 0;
+  color:#839383;
+  font-size:8px;
+  line-height:1.45;
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -1660,6 +1704,26 @@ function renderLaunch5(players){
       <button class="launch5-full-card" type="button" onclick="setView('top-picks')">VIEW FULL CARD -></button>
     </div>
   `;
+
+  document.querySelectorAll("[data-matchup-key]").forEach(btn=>{
+    btn.onclick=()=>{
+      const key=btn.dataset.matchupKey;
+      const game=shown.find(x=>String(x.key)===String(key));
+      const host=btn.closest(".body")?.querySelector(".game-inline-detail");
+      if(!game||!host)return;
+
+      if(host.dataset.mode==="game"){
+        host.innerHTML="";
+        host.dataset.mode="";
+        return;
+      }
+
+      host.dataset.mode="game";
+      host.dataset.openPlayer="";
+      host.innerHTML=gameMatchupDetails(game.players);
+    };
+  });
+
   fillAllPlayerHeadshots();
 }
 let allPlayers=[],period="night",openKey=null,view="by-game",modelGenerated="",slateDate="";
@@ -1694,6 +1758,50 @@ function viewPlayers(){let source=[...allPlayers];if(view==="top-picks")source=r
 function groups(){const map={};viewPlayers().forEach(p=>(map[keyFor(p)]??=[]).push(p));return Object.entries(map).map(([key,players])=>({key,players:rankPlayers(players).slice(0,5)}));}
 function starterFor(team,ps){return ps.find(p=>p.opponent===team)?.pitcher||"Starter TBD"}
 function field(){return `<svg class="field" viewBox="0 0 210 170" role="img" aria-label="Mini Field Map"><title>Mini Field Map</title><path class="grass" d="M105 160 L18 78 Q105 2 192 78 Z"/><path class="dirt" d="M105 151 L61 111 L105 68 L149 111 Z"/><path class="path" d="M105 150 Q127 58 181 23"/><circle class="ball" cx="181" cy="23" r="5"/></svg>`}
+
+function gameMatchupDetails(players){
+  if(!players||!players.length)return "";
+
+  const ranked=rankPlayers(players);
+  const p=ranked[0];
+  const teams=[p.team,p.opponent];
+
+  const avg=(key)=>{
+    const vals=ranked.map(x=>n(x[key])).filter(v=>Number.isFinite(v));
+    return vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:0;
+  };
+
+  const lineupConfirmed=ranked.some(x=>String(x.lineup_status).toUpperCase()==="CONFIRMED");
+  const starterConfirmed=ranked.some(x=>n(x.starter_confirmed)===1);
+
+  return `
+    <div class="game-matchup-panel">
+      <h3>${esc(teams[0])} vs ${esc(teams[1])} - MATCHUP DETAILS</h3>
+
+      <div class="game-matchup-grid">
+        <span>TOP HITTER<b>${esc(displayName(p.player))}</b></span>
+        <span>GENERATOR SCORE<b>${generatorScore(p).toFixed(1)}</b></span>
+
+        <span>${esc(teams[0])} STARTER<b>${esc(starterFor(teams[0],ranked))}</b></span>
+        <span>${esc(teams[1])} STARTER<b>${esc(starterFor(teams[1],ranked))}</b></span>
+
+        <span>AVG PITCHER VULN<b>${avg("pitcher_vulnerability").toFixed(1)}</b></span>
+        <span>AVG ARSENAL MATCHUP<b>${avg("pitch_arsenal_score").toFixed(1)}</b></span>
+
+        <span>AVG PARK + WEATHER<b>${avg("park_weather_score").toFixed(1)}</b></span>
+        <span>AVG BULLPEN VULN<b>${avg("bullpen_vulnerability").toFixed(1)}</b></span>
+
+        <span>LINEUPS<b>${lineupConfirmed?"CONFIRMED":"PENDING"}</b></span>
+        <span>STARTERS<b>${starterConfirmed?"CONFIRMED":"PENDING"}</b></span>
+      </div>
+
+      <p class="game-matchup-note">
+        Tap any player card above for that hitter's full LaunchPoint breakdown.
+      </p>
+    </div>
+  `;
+}
+
 function render(){
   const gs=groups();
   const top=rankPlayers(allPlayers).slice(0,3);
@@ -1788,7 +1896,7 @@ function render(){
 
             <div class="game-footer">
               <span>LAUNCH RATING <b>${rating}</b></span>
-              <button type="button">VIEW MATCHUP DETAILS -></button>
+              <button type="button" data-matchup-key="${esc(g.key)}">VIEW MATCHUP DETAILS -></button>
             </div>
           </div>
         `:""}
@@ -1814,7 +1922,7 @@ function render(){
         host.dataset.openPlayer="";
         return;
       }
-      host.dataset.openPlayer=String(player.player);
+      host.dataset.mode="player";host.dataset.openPlayer=String(player.player);
       host.innerHTML=trendDetails(player)+watchButton(player);
       bindWatchButtons();
     };
