@@ -2021,6 +2021,63 @@ html,body{background:#000!important}
   .launch5-player{font-size:7.8px !important}
 }
 
+
+/* RESTORE LAUNCH 5 PLAYER PHOTOS ONLY */
+.launch5-photo-wrap{
+  display:block !important;
+  position:relative !important;
+  height:105px !important;
+  overflow:hidden !important;
+  border-radius:8px 8px 0 0 !important;
+  background:#151815 !important;
+}
+.launch5-photo{
+  width:100% !important;
+  height:100% !important;
+  display:block !important;
+  object-fit:cover !important;
+  object-position:center top !important;
+}
+.launch5-photo-fallback{
+  width:100% !important;
+  height:100% !important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#151815 !important;
+  color:#dfe4dd !important;
+  font-size:28px !important;
+  font-weight:950 !important;
+}
+.launch5-rank{
+  position:absolute !important;
+  top:7px !important;
+  left:7px !important;
+  z-index:4 !important;
+  display:grid !important;
+  place-items:center !important;
+  width:24px !important;
+  height:24px !important;
+  border:1px solid #5f9f24 !important;
+  border-radius:5px !important;
+  background:#0e150d !important;
+  color:#91e52b !important;
+  font-size:13px !important;
+  font-weight:950 !important;
+}
+.launch5-card-body:before{
+  display:none !important;
+  content:none !important;
+}
+@media(max-width:560px){
+  .launch5-photo-wrap{height:88px !important}
+  .launch5-rank{
+    width:21px !important;
+    height:21px !important;
+    font-size:11px !important;
+  }
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -2249,14 +2306,28 @@ function renderLaunch5(players){
   const cards=picks.map((p,index)=>{
     const score=generatorScore(p).toFixed(1);
     const isLongshot=index===4;
-    const playerName=esc(displayName(p.player));
+    const rawName=String(displayName(p.player)||"");
+    const playerName=esc(rawName);
     const team=esc(p.team||"");
     const opponent=esc(p.opponent||"");
+    const rawId=p.mlb_id||p.player_id||p.batter_id||"";
+    const mlbId=String(rawId).replace(/\D/g,"");
+    const initial=esc(rawName.charAt(0)||"?");
 
     return `
       <article class="launch5-card ${isLongshot?"longshot":""}">
         ${isLongshot?'<div class="launch5-longshot-badge">LONG SHOT</div>':""}
-        <div class="launch5-card-body" data-rank="${index+1}">
+        <div class="launch5-photo-wrap">
+          <div class="launch5-rank">${index+1}</div>
+          <img class="launch5-photo"
+               data-player-name="${esc(rawName)}"
+               data-mlb-id="${mlbId}"
+               alt="${playerName}"
+               style="display:block"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="launch5-photo-fallback" style="display:none">${initial}</div>
+        </div>
+        <div class="launch5-card-body">
           <div class="launch5-player">${playerName}</div>
           <div class="launch5-team">${team}</div>
           <div class="launch5-opponent">vs ${opponent}</div>
@@ -2286,6 +2357,10 @@ function renderLaunch5(players){
       <button class="launch5-full-card" type="button" onclick="setView('top-picks')">VIEW FULL CARD -></button>
     </div>
   `;
+
+  if(typeof fillAllPlayerHeadshots==="function"){
+    fillAllPlayerHeadshots();
+  }
 }
 let allPlayers=[],period="night",openKey=null,view="by-game",modelGenerated="",slateDate="";
 let watchlist=[];try{watchlist=JSON.parse(localStorage.getItem("launchpoint-watchlist")||"[]")}catch(e){watchlist=[]}
