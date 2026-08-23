@@ -2021,6 +2021,84 @@ html,body{background:#000!important}
   .launch5-player{font-size:7.8px !important}
 }
 
+
+/* ===== LP FINAL FIX: RESTORE PHOTOS + 5 PLAYER CARDS ===== */
+.launch5-section{
+  background:#080a08 !important;
+}
+.launch5-section:before,.launch5-section:after,.launch5-grid:before,.launch5-grid:after{
+  display:none !important;
+  content:none !important;
+}
+.launch5-photo-wrap{
+  display:block !important;
+  height:108px !important;
+  overflow:hidden !important;
+  background:#151815 !important;
+}
+.launch5-photo{
+  display:block;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center top !important;
+}
+.launch5-card{
+  background:#f7f5ed !important;
+  border:1px solid #d8d4c8 !important;
+}
+.launch5-card-body{
+  background:#f7f5ed !important;
+  color:#111 !important;
+}
+.launch5-card-body:before{display:none !important;content:none !important}
+.launch5-player,.launch5-team,.launch5-opponent,.launch5-score-label{
+  color:#111 !important;
+  text-shadow:none !important;
+}
+.launch5-main-score{color:#78df28 !important}
+.launch5-card-footer{background:#080a08 !important}
+.launch5-rank{display:grid !important}
+
+.game-player-row{
+  position:relative !important;
+  z-index:2 !important;
+  display:grid !important;
+  grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  gap:5px !important;
+  padding:16px 0 7px !important;
+}
+.game-player-row:before,.game-player-row:after{display:none !important;content:none !important}
+.game-player-card{
+  display:block !important;
+  min-width:0 !important;
+  overflow:hidden !important;
+  background:#f7f5ed !important;
+  border:1px solid #d8d4c8 !important;
+}
+.game-player-card .player-photo-wrap{
+  display:block !important;
+  height:94px !important;
+  overflow:hidden !important;
+  background:#151815 !important;
+}
+.game-player-card .player-photo{
+  display:block;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center top !important;
+}
+.game-player-card .player-card-body{background:#f7f5ed !important}
+.game-player-card .player-name,.game-player-card .player-team,
+.game-player-card .player-score-label{color:#111 !important;text-shadow:none !important}
+.game-player-card .player-score{color:#78df28 !important}
+.game-player-card .player-footer{background:#080a08 !important}
+@media(max-width:430px){
+  .launch5-photo-wrap{height:96px !important}
+  .game-player-card .player-photo-wrap{height:86px !important}
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -2677,4 +2755,21 @@ document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
 });
 document.querySelector(".more-close").onclick=()=>document.querySelector("#more-panel").hidden=true;updateMorePanel();
 fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>{allPlayers=d.players||[];renderLaunch5(allPlayers);updateDashboardUI();updateMorePanel();modelGenerated=d.generated_at_utc||"";updateMorePanel();slateDate=d.slate_date||allPlayers.find(p=>p.game_date)?.game_date||"";updateModelMeta();render()}).catch(()=>{document.querySelector("#games").innerHTML='<div class="empty">Today\'s model data is not available yet.</div>'});
-</script></body></html>
+</script>
+<script>
+/* LP headshot safety net: fills photos whenever Launch 5 or game cards render */
+(function(){
+  let timer=null;
+  const run=()=>{
+    clearTimeout(timer);
+    timer=setTimeout(()=>{
+      if(typeof fillAllPlayerHeadshots==="function") fillAllPlayerHeadshots();
+      else if(typeof fillLaunch5Headshots==="function") fillLaunch5Headshots();
+    },40);
+  };
+  document.addEventListener("DOMContentLoaded",run);
+  new MutationObserver(run).observe(document.documentElement,{childList:true,subtree:true});
+})();
+</script>
+
+</body></html>
