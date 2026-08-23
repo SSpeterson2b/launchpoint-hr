@@ -1474,6 +1474,284 @@ html, body{
   line-height:1.45;
 }
 
+
+/* ===== LAUNCHPOINT FULL WEBSITE REDESIGN ===== */
+:root{
+  --lp-bg:#050505;
+  --lp-panel:#0b0d0b;
+  --lp-panel2:#101310;
+  --lp-line:#2a3029;
+  --lp-green:#8be329;
+  --lp-green2:#5fae1f;
+  --lp-white:#f4f5f2;
+  --lp-muted:#949c93;
+  --lp-gold:#e8b53d;
+}
+html,body{background:#000!important;color:var(--lp-white)!important}
+.shell{
+  width:min(100%,1180px)!important;
+  background:#000!important;
+  padding:0 16px 92px!important;
+}
+.shell:before,.shell:after{display:none!important;content:none!important}
+
+/* HEADER */
+.top{
+  display:grid!important;
+  grid-template-columns:auto 1fr auto!important;
+  align-items:center!important;
+  gap:14px!important;
+  padding:18px 4px 14px!important;
+  border-bottom:1px solid #1e231e!important;
+  background:#000!important;
+}
+.logo{
+  width:46px!important;height:46px!important;
+  display:grid!important;place-items:center!important;
+  border:1px solid #4d8124!important;
+  border-radius:10px!important;
+  background:#0b100a!important;
+  color:var(--lp-green)!important;
+  font-weight:950!important;
+  box-shadow:none!important;
+}
+.top h1{margin:0!important;font-size:25px!important;font-style:italic!important}
+.top h1 em{color:var(--lp-green)!important;font-style:normal!important}
+.top p{margin:2px 0 0!important;color:#9ba29a!important;font-size:10px!important}
+.model-meta{color:#83d72d!important;font-size:8px!important;font-weight:900!important;letter-spacing:.05em!important}
+.live{
+  justify-self:end!important;
+  border:1px solid #365d1d!important;
+  background:#0c130b!important;
+  color:#eef6e8!important;
+  border-radius:999px!important;
+  padding:8px 11px!important;
+  font-size:9px!important;
+}
+.live:before{background:var(--lp-green)!important}
+
+/* PERIODS + TABS */
+.periods{gap:8px!important;margin:14px 0!important}
+.periods button,.tabs button{
+  border:1px solid #282e28!important;
+  background:#0b0d0b!important;
+  color:#a8afa7!important;
+  border-radius:8px!important;
+}
+.periods button.active,.tabs button.active{
+  color:var(--lp-green)!important;
+  border-color:#5f9f24!important;
+  background:#10160e!important;
+}
+
+/* TOP 3 */
+.top3{
+  border:1px solid #4c4020!important;
+  border-radius:10px!important;
+  background:#0b0b08!important;
+  box-shadow:none!important;
+}
+.label{color:var(--lp-gold)!important}
+.top-pick{
+  border:1px solid #31382f!important;
+  border-radius:8px!important;
+  background:#0b0e0b!important;
+}
+.top-pick span b{color:var(--lp-green)!important}
+
+/* LAUNCH 5 */
+.launch5-section{
+  margin:16px 0!important;
+  padding:14px!important;
+  border:1px solid #2b312a!important;
+  border-radius:10px!important;
+  background:#080a08!important;
+}
+.launch5-section:before,.launch5-section:after{display:none!important;content:none!important}
+.launch5-section .section-title{
+  display:flex!important;
+  align-items:flex-end!important;
+  justify-content:space-between!important;
+  text-align:left!important;
+  margin-bottom:12px!important;
+}
+.launch5-section .section-title h3{
+  color:#fff!important;
+  font-size:23px!important;
+  letter-spacing:.03em!important;
+}
+.launch5-section .section-title span{
+  color:var(--lp-green)!important;
+  font-size:8px!important;
+  font-weight:900!important;
+}
+.launch5-card-row{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:8px!important;
+  overflow:visible!important;
+  padding:0!important;
+}
+.launch5-card{
+  min-width:0!important;
+  overflow:hidden!important;
+  border:1px solid #343b32!important;
+  border-radius:8px!important;
+  background:#0c0f0c!important;
+  box-shadow:none!important;
+}
+.launch5-card.longshot{border-color:#5f9f24!important}
+.launch5-photo-wrap{
+  height:150px!important;
+  background:#151915!important;
+}
+.launch5-card-body{background:#0c0f0c!important;color:#fff!important}
+.launch5-player{color:#fff!important;font-size:11px!important}
+.launch5-team,.launch5-opponent,.launch5-score-label{color:#8f978e!important}
+.launch5-main-score{color:var(--lp-green)!important;font-size:24px!important}
+.launch5-card-footer{background:#080a08!important;color:#ff9e25!important;border-top:1px solid #252b25!important}
+.launch5-card.longshot .launch5-card-footer{color:var(--lp-green)!important}
+.launch5-summary{
+  grid-template-columns:repeat(4,1fr) auto!important;
+  border:1px solid #2a3029!important;
+  background:#0b0d0b!important;
+}
+.launch5-summary-item strong{color:#fff!important}
+.launch5-summary-item span{color:#929a91!important}
+.launch5-full-card{
+  border-color:#548d21!important;
+  background:#0c120b!important;
+  color:var(--lp-green)!important;
+}
+
+/* DASHBOARD PANELS */
+.lp-dashboard-grid{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:12px;
+  margin:14px 0 18px;
+}
+.lp-panel{
+  border:1px solid #2b302a;
+  border-radius:10px;
+  background:#0a0c0a;
+  overflow:hidden;
+}
+.lp-panel-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:11px 12px;
+  border-bottom:1px solid #222722;
+}
+.lp-panel-head h3{margin:0;font-size:13px}
+.lp-panel-head span{color:#8f978e;font-size:7px}
+.lp-stat-row{
+  display:grid;
+  grid-template-columns:28px 1fr auto;
+  gap:8px;
+  align-items:center;
+  padding:9px 12px;
+  border-bottom:1px solid #1f241f;
+}
+.lp-stat-row:last-child{border-bottom:0}
+.lp-stat-rank{color:var(--lp-green);font-weight:950}
+.lp-stat-name{font-size:10px;font-weight:850}
+.lp-stat-name small{display:block;color:#818981;font-size:6px;margin-top:1px}
+.lp-stat-score{color:var(--lp-green);font-size:15px;font-weight:950}
+.lp-confidence{
+  display:flex;
+  min-height:220px;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+}
+.lp-confidence-ring{
+  width:124px;height:124px;border-radius:50%;
+  display:grid;place-items:center;
+  background:conic-gradient(var(--lp-green) 0 76%,#2a2f29 76% 100%);
+  position:relative;
+}
+.lp-confidence-ring:after{
+  content:"";
+  position:absolute;
+  inset:16px;
+  border-radius:50%;
+  background:#0a0c0a;
+}
+.lp-confidence-ring b{position:relative;z-index:2;font-size:28px}
+.lp-confidence p{margin:10px 0 0;color:#8f978e;font-size:8px;text-align:center;line-height:1.45}
+
+/* GAME BOARD */
+.game{
+  border:1px solid #2b312b!important;
+  border-radius:10px!important;
+  background:#090b09!important;
+  box-shadow:none!important;
+}
+.game-head{
+  border-bottom:1px solid #222722!important;
+  background:#0b0d0b!important;
+}
+.game .body{
+  background:#090b09!important;
+}
+.game .body:after{display:none!important}
+.game-condition,.game-pitcher,.game-player-card,.game-footer>*{
+  background:#0b0d0b!important;
+}
+.game-player-card{
+  border:1px solid #333a32!important;
+  box-shadow:none!important;
+}
+.game-player-card.primary-card{border-color:#5a9e20!important}
+.player-photo-wrap{background:#131713!important}
+.player-card-body{background:#0d100d!important;color:#fff!important}
+.player-name{color:#fff!important}
+.player-team,.player-score-label{color:#858d84!important}
+.player-score{color:var(--lp-green)!important}
+.player-footer{background:#080a08!important;color:#ff9d21!important}
+.game-footer b{color:var(--lp-green)!important}
+.game-footer button{color:var(--lp-green)!important;border-color:#4b8120!important}
+
+/* DETAILS / MORE */
+.game-matchup-panel,.player-trend,.matchup-box,.metric-card,.detail-summary span,.condition-row span{
+  background:#0a0d0a!important;
+}
+.game-matchup-panel h3,.matchup-box small{color:var(--lp-green)!important}
+.more-panel{
+  background:#090b09!important;
+  border:1px solid #303630!important;
+  border-radius:10px!important;
+}
+.more-panel details{background:#0b0d0b!important}
+
+/* BOTTOM NAV */
+.bottom{
+  width:min(100%,1180px)!important;
+  border-top:1px solid #1e231e!important;
+  background:rgba(5,5,5,.98)!important;
+}
+.bottom .active{color:var(--lp-green)!important}
+
+@media(max-width:760px){
+  .shell{padding-left:10px!important;padding-right:10px!important}
+  .top h1{font-size:20px!important}
+  .launch5-section .section-title{display:block!important}
+  .launch5-section .section-title span{display:block!important;margin-top:4px!important}
+  .launch5-card-row,.game-player-row{
+    display:flex!important;
+    overflow-x:auto!important;
+    gap:7px!important;
+  }
+  .launch5-card{flex:0 0 145px!important}
+  .game-player-card{flex:0 0 125px!important}
+  .launch5-summary{grid-template-columns:repeat(2,1fr)!important}
+  .launch5-full-card{grid-column:1/-1!important}
+  .lp-dashboard-grid{grid-template-columns:1fr}
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -1504,6 +1782,28 @@ html, body{
   </div>
 
  <div id="launch5" class="launch5-grid"></div>
+</section>
+
+<section class="dashboard-section">
+  <div class="lp-dashboard-grid">
+    <div class="lp-panel">
+      <div class="lp-panel-head">
+        <h3>TOP LONG SHOTS</h3>
+        <span>TODAY</span>
+      </div>
+      <div id="longshot-list"></div>
+    </div>
+    <div class="lp-panel">
+      <div class="lp-panel-head">
+        <h3>MODEL CONFIDENCE</h3>
+        <span>DAILY SLATE</span>
+      </div>
+      <div class="lp-confidence">
+        <div class="lp-confidence-ring"><b id="confidence-value">--%</b></div>
+        <p id="confidence-copy">Waiting for today's slate.</p>
+      </div>
+    </div>
+  </div>
 </section>
 <nav class="tabs"><button class="active" data-view="by-game">BY GAME</button><button data-view="top-picks">TOP PICKS</button><button data-view="elite">ELITE</button><button data-view="confirmed">CONFIRMED</button></nav><section id="games"><div class="empty">Loading today's matchups...</div></section>
 <aside class="more-panel" id="more-panel" hidden>
@@ -1954,6 +2254,39 @@ function bindWatchButtons(){document.querySelectorAll("[data-watch]").forEach(b=
 function addTrendClicks(){return;/* legacy card click binding disabled */
 document.querySelectorAll(".copy,.rank").forEach(el=>{const shown=el.querySelector("h2,span")?.textContent?.trim(),p=allPlayers.find(x=>displayName(x.player)===shown);if(!p)return;el.setAttribute("role","button");el.setAttribute("tabindex","0");el.setAttribute("aria-label",`Show complete breakdown for ${shown}`);const open=()=>{const old=document.querySelector(".player-trend");if(old?.dataset.player===String(p.player)){old.remove();return}old?.remove();const anchor=el.classList.contains("copy")?el.closest(".primary"):el;anchor.insertAdjacentHTML("afterend",trendDetails(p));document.querySelector(".player-trend")?.insertAdjacentHTML("beforeend",watchButton(p));bindWatchButtons()};el.onclick=open;el.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open()}}})}
 
+
+function renderDashboardExtras(){
+  const longEl=document.getElementById("longshot-list");
+  const confEl=document.getElementById("confidence-value");
+  const confCopy=document.getElementById("confidence-copy");
+
+  if(longEl){
+    const ranked=rankPlayers(allPlayers||[]);
+    const longs=ranked.filter(p=>generatorScore(p)>=45&&generatorScore(p)<65).slice(0,5);
+    longEl.innerHTML=longs.length
+      ? longs.map((p,i)=>`
+          <div class="lp-stat-row">
+            <div class="lp-stat-rank">${i+1}</div>
+            <div class="lp-stat-name">${esc(displayName(p.player))}
+              <small>${esc(p.team||"")} - ${esc(p.opponent||"")}</small>
+            </div>
+            <div class="lp-stat-score">${generatorScore(p).toFixed(0)}</div>
+          </div>
+        `).join("")
+      : '<div class="empty">No long shots available yet.</div>';
+  }
+
+  if(confEl&&confCopy){
+    const top=rankPlayers(allPlayers||[]).slice(0,20);
+    const avg=top.length?top.reduce((s,p)=>s+generatorScore(p),0)/top.length:0;
+    const pct=Math.max(0,Math.min(99,Math.round(avg)));
+    confEl.textContent=pct+"%";
+    confCopy.textContent=top.length
+      ?"Based on the top 20 LaunchPoint scores for today's slate."
+      :"Waiting for today's slate.";
+  }
+}
+
 function updateMorePanel(){
   const countEl=document.getElementById("more-player-count");
   const dateEl=document.getElementById("more-slate-date");
@@ -2022,5 +2355,5 @@ document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
   setView(next);
 });
 document.querySelector(".more-close").onclick=()=>document.querySelector("#more-panel").hidden=true;updateMorePanel();
-fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>{allPlayers=d.players||[];renderLaunch5(allPlayers);updateMorePanel();modelGenerated=d.generated_at_utc||"";updateMorePanel();slateDate=d.slate_date||allPlayers.find(p=>p.game_date)?.game_date||"";updateModelMeta();render()}).catch(()=>{document.querySelector("#games").innerHTML='<div class="empty">Today\'s model data is not available yet.</div>'});
+fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>{allPlayers=d.players||[];renderLaunch5(allPlayers);renderDashboardExtras();updateMorePanel();modelGenerated=d.generated_at_utc||"";updateMorePanel();slateDate=d.slate_date||allPlayers.find(p=>p.game_date)?.game_date||"";updateModelMeta();render()}).catch(()=>{document.querySelector("#games").innerHTML='<div class="empty">Today\'s model data is not available yet.</div>'});
 </script></body></html>
