@@ -2099,6 +2099,72 @@ html,body{background:#000!important}
   .game-player-card .player-photo-wrap{height:86px !important}
 }
 
+
+/* ===== FINAL GAME LIST: NAME-ONLY, NO PLAYER PHOTOS ===== */
+.game-player-row{
+  display:grid !important;
+  grid-template-columns:1fr !important;
+  gap:6px !important;
+  padding:10px 0 4px !important;
+}
+.game-player-card{
+  min-height:42px !important;
+  display:grid !important;
+  grid-template-columns:38px 1fr 54px 58px !important;
+  align-items:center !important;
+  overflow:hidden !important;
+  border:1px solid #28465a !important;
+  border-radius:8px !important;
+  background:#020a0f !important;
+  box-shadow:none !important;
+}
+.game-player-card .player-photo-wrap,
+.game-player-card .primary-badge{
+  display:none !important;
+}
+.game-player-card .player-card-body{
+  display:contents !important;
+}
+.game-player-card .player-name{
+  grid-column:2 !important;
+  min-height:0 !important;
+  padding:0 8px !important;
+  color:#f4f7f2 !important;
+  font-size:12px !important;
+  font-weight:900 !important;
+  text-transform:none !important;
+}
+.game-player-card .player-team,
+.game-player-card .player-score-label{
+  display:none !important;
+}
+.game-player-card .player-score{
+  grid-column:3 !important;
+  color:#76e35f !important;
+  font-size:20px !important;
+  font-weight:950 !important;
+}
+.game-player-card .player-footer{
+  grid-column:4 !important;
+  min-height:0 !important;
+  padding:0 4px !important;
+  background:transparent !important;
+  color:#76e35f !important;
+  font-size:8px !important;
+}
+.game-player-card:before{
+  content:attr(data-list-rank);
+  grid-column:1;
+  grid-row:1;
+  display:grid;
+  place-items:center;
+  align-self:stretch;
+  background:#10351a;
+  color:#76e35f;
+  font-size:16px;
+  font-weight:950;
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -2769,6 +2835,21 @@ fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>
   };
   document.addEventListener("DOMContentLoaded",run);
   new MutationObserver(run).observe(document.documentElement,{childList:true,subtree:true});
+})();
+</script>
+
+
+<script>
+(function(){
+  function numberGameRows(){
+    document.querySelectorAll(".game-player-row").forEach(row=>{
+      [...row.querySelectorAll(".game-player-card")].forEach((card,i)=>{
+        card.setAttribute("data-list-rank", String(i+1));
+      });
+    });
+  }
+  document.addEventListener("DOMContentLoaded", numberGameRows);
+  new MutationObserver(numberGameRows).observe(document.documentElement,{childList:true,subtree:true});
 })();
 </script>
 
