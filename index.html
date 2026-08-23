@@ -1827,6 +1827,142 @@ html,body{background:#000!important}
   .launch5-full-card{grid-column:1/-1!important}
 }
 
+
+/* FINAL LAUNCH 5 - NO PLAYER PHOTOS / PLAIN BLACK CARDS */
+.launch5-section{
+  background:#080a08 !important;
+  border:1px solid #2a3029 !important;
+}
+.launch5-section:before,
+.launch5-section:after,
+.launch5-grid:before,
+.launch5-grid:after{
+  display:none !important;
+  content:none !important;
+}
+.launch5-card-row{
+  display:grid !important;
+  grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  gap:7px !important;
+  overflow:visible !important;
+  padding:0 !important;
+}
+.launch5-card{
+  min-width:0 !important;
+  min-height:174px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  background:#070907 !important;
+  border:1px solid #30362f !important;
+  border-radius:8px !important;
+  overflow:hidden !important;
+  box-shadow:none !important;
+}
+.launch5-card.longshot{
+  border-color:#5f9f24 !important;
+}
+.launch5-photo-wrap{
+  display:none !important;
+}
+.launch5-card-body{
+  position:relative !important;
+  flex:1 !important;
+  padding:13px 10px 10px !important;
+  background:#070907 !important;
+  color:#fff !important;
+}
+.launch5-card-body:before{
+  content:attr(data-rank) !important;
+  display:grid !important;
+  place-items:center !important;
+  width:24px !important;
+  height:24px !important;
+  margin-bottom:14px !important;
+  border:1px solid #5f9f24 !important;
+  border-radius:5px !important;
+  color:#91e52b !important;
+  background:#0e150d !important;
+  font-size:13px !important;
+  font-weight:950 !important;
+}
+.launch5-player{
+  min-height:auto !important;
+  color:#fff !important;
+  font-size:12px !important;
+  line-height:1.08 !important;
+  font-weight:950 !important;
+  text-transform:uppercase !important;
+}
+.launch5-team{
+  margin-top:8px !important;
+  color:#c3c8c1 !important;
+  font-size:7px !important;
+  font-weight:800 !important;
+}
+.launch5-opponent{
+  margin-top:2px !important;
+  color:#767d76 !important;
+  font-size:6px !important;
+}
+.launch5-score-label{
+  margin-top:18px !important;
+  color:#9aa198 !important;
+  font-size:6px !important;
+  font-weight:900 !important;
+}
+.launch5-main-score{
+  margin-top:3px !important;
+  color:#91e52b !important;
+  font-size:26px !important;
+  font-weight:950 !important;
+}
+.launch5-longshot-badge{
+  top:8px !important;
+  right:8px !important;
+  background:#91e52b !important;
+  color:#111 !important;
+  border-radius:4px !important;
+  padding:3px 5px !important;
+}
+.launch5-card-footer{
+  min-height:30px !important;
+  background:#050705 !important;
+  border-top:1px solid #20251f !important;
+  color:#f2a221 !important;
+  font-size:6px !important;
+  font-weight:950 !important;
+}
+.launch5-card.longshot .launch5-card-footer{
+  color:#91e52b !important;
+}
+@media(max-width:560px){
+  .launch5-card-row{
+    display:grid !important;
+    grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+    gap:4px !important;
+    overflow:visible !important;
+  }
+  .launch5-card{
+    min-height:165px !important;
+    flex:none !important;
+  }
+  .launch5-card-body{
+    padding:9px 6px 8px !important;
+  }
+  .launch5-card-body:before{
+    width:21px !important;
+    height:21px !important;
+    margin-bottom:10px !important;
+    font-size:11px !important;
+  }
+  .launch5-player{font-size:8px !important}
+  .launch5-team{font-size:5.5px !important}
+  .launch5-opponent{font-size:5px !important}
+  .launch5-score-label{margin-top:13px !important;font-size:5px !important}
+  .launch5-main-score{font-size:20px !important}
+  .launch5-card-footer{font-size:4.8px !important;padding:4px 2px !important}
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -2053,30 +2189,16 @@ function renderLaunch5(players){
   const picks=longshot?[...topFour,longshot]:topFour;
 
   const cards=picks.map((p,index)=>{
-    const score=generatorScore(p).toFixed(0);
+    const score=generatorScore(p).toFixed(1);
     const isLongshot=index===4;
     const playerName=esc(displayName(p.player));
-    const rawName=String(displayName(p.player)||"");
     const team=esc(p.team||"");
     const opponent=esc(p.opponent||"");
-    const rawId=p.mlb_id||p.player_id||p.batter_id||"";
-    const mlbId=String(rawId).replace(/\D/g,"");
-    const initial=rawName.charAt(0)||"?";
 
     return `
       <article class="launch5-card ${isLongshot?"longshot":""}">
         ${isLongshot?'<div class="launch5-longshot-badge">LONG SHOT</div>':""}
-        <div class="launch5-photo-wrap">
-          <div class="launch5-rank">${index+1}</div>
-          <img class="launch5-photo"
-               data-player-name="${esc(rawName)}"
-               data-mlb-id="${mlbId}"
-               alt="${playerName}"
-               style="display:block"
-               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div class="launch5-photo-fallback" style="display:none">${esc(initial)}</div>
-        </div>
-        <div class="launch5-card-body">
+        <div class="launch5-card-body" data-rank="${index+1}">
           <div class="launch5-player">${playerName}</div>
           <div class="launch5-team">${team}</div>
           <div class="launch5-opponent">vs ${opponent}</div>
@@ -2089,8 +2211,12 @@ function renderLaunch5(players){
   }).join("");
 
   const gamesToday=new Set(pool.map(p=>p.game_pk||keyFor(p)).filter(Boolean)).size;
-  const confidence=picks.length?picks.reduce((sum,p)=>sum+generatorScore(p),0)/picks.length:0;
-  const bestScore=picks.length?Math.max(...picks.map(p=>generatorScore(p))):0;
+  const confidence=picks.length
+    ? picks.reduce((sum,p)=>sum+generatorScore(p),0)/picks.length
+    : 0;
+  const bestScore=picks.length
+    ? Math.max(...picks.map(p=>generatorScore(p)))
+    : 0;
 
   container.innerHTML=`
     <div class="launch5-card-row">${cards}</div>
@@ -2102,7 +2228,6 @@ function renderLaunch5(players){
       <button class="launch5-full-card" type="button" onclick="setView('top-picks')">VIEW FULL CARD -></button>
     </div>
   `;
-  fillAllPlayerHeadshots();
 }
 let allPlayers=[],period="night",openKey=null,view="by-game",modelGenerated="",slateDate="";
 let watchlist=[];try{watchlist=JSON.parse(localStorage.getItem("launchpoint-watchlist")||"[]")}catch(e){watchlist=[]}
