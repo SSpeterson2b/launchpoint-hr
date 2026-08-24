@@ -1091,6 +1091,23 @@ button{font:inherit;cursor:pointer}
   font-weight:950;
   text-transform:uppercase;
 }
+.homer-badge{
+  display:inline-flex;
+  align-items:center;
+  margin-left:4px;
+  padding:2px 4px;
+  border:1px solid #6fbd35;
+  border-radius:999px;
+  background:#16320f;
+  color:#9cf15d;
+  font-size:.72em;
+  line-height:1;
+  font-weight:950;
+  white-space:nowrap;
+  vertical-align:middle;
+}
+.launch5-player .homer-badge{font-size:7px}
+.top-pick .homer-badge{font-size:7px}
 .game-player-card .player-team{
   margin-top:3px;
   color:#666c65;
@@ -2165,6 +2182,161 @@ html,body{background:#000!important}
   font-weight:950;
 }
 
+/* ===== RESTORED ORIGINAL GAME-CARD DESIGN ===== */
+.game-player-row{
+  display:grid !important;
+  grid-template-columns:1fr !important;
+  gap:7px !important;
+  padding:10px 0 4px !important;
+}
+.game-player-card{
+  position:relative !important;
+  min-height:50px !important;
+  display:grid !important;
+  grid-template-columns:48px minmax(0,1fr) 78px 88px !important;
+  align-items:center !important;
+  overflow:hidden !important;
+  border:1px solid #265d55 !important;
+  border-radius:9px !important;
+  background:#020a0f !important;
+  box-shadow:none !important;
+}
+.game-player-card .player-card-body{display:contents !important}
+.game-player-card .player-name{
+  grid-column:2 !important;
+  min-height:0 !important;
+  padding:0 10px !important;
+  color:#f5f7f4 !important;
+  font-size:13px !important;
+  line-height:1.1 !important;
+  font-weight:950 !important;
+  text-transform:none !important;
+}
+.game-player-card .player-team,.game-player-card .player-score-label{display:none !important}
+.game-player-card .player-score{
+  grid-column:3 !important;
+  color:#10d2b9 !important;
+  font-size:23px !important;
+  font-weight:950 !important;
+}
+.game-player-card .player-footer{
+  grid-column:4 !important;
+  min-height:0 !important;
+  padding:0 7px !important;
+  background:transparent !important;
+  color:#10d2b9 !important;
+  font-size:9px !important;
+  justify-content:flex-start !important;
+}
+.game-player-card:before{
+  content:attr(data-list-rank) !important;
+  grid-column:1 !important;
+  grid-row:1 !important;
+  display:grid !important;
+  place-items:center !important;
+  align-self:stretch !important;
+  background:#063d38 !important;
+  color:#12d6c2 !important;
+  font-size:19px !important;
+  font-weight:950 !important;
+}
+.game-player-card:nth-child(n+3){border-color:#68377d !important}
+.game-player-card:nth-child(n+3):before{background:#3c174d !important;color:#c147ef !important}
+.game-player-card:nth-child(n+3) .player-score,
+.game-player-card:nth-child(n+3) .player-footer{color:#c147ef !important}
+
+.game-player-card.primary-card{
+  min-height:275px !important;
+  display:block !important;
+  padding:24px 22px 20px !important;
+  border:1px solid #80652d !important;
+  border-radius:12px !important;
+  background:linear-gradient(115deg,#121006 0%,#060b09 56%,#00141b 100%) !important;
+  box-shadow:inset 0 0 35px rgba(216,168,37,.05) !important;
+}
+.game-player-card.primary-card:before{display:none !important;content:none !important}
+.game-player-card.primary-card .primary-badge{
+  position:relative !important;
+  top:auto !important;
+  right:auto !important;
+  display:block !important;
+  color:#ffc52b !important;
+  font-size:17px !important;
+  font-weight:950 !important;
+  letter-spacing:.02em !important;
+}
+.game-player-card.primary-card .player-card-body{display:block !important;position:relative !important;z-index:2 !important}
+.game-player-card.primary-card .player-name{
+  display:block !important;
+  padding:17px 0 0 !important;
+  color:#fff !important;
+  font-size:28px !important;
+  line-height:1.05 !important;
+  font-weight:950 !important;
+}
+.game-player-card.primary-card .player-score-label{
+  display:block !important;
+  margin-top:28px !important;
+  color:#c6c8c7 !important;
+  font-size:13px !important;
+  font-weight:500 !important;
+}
+.game-player-card.primary-card .player-score{
+  display:block !important;
+  margin-top:3px !important;
+  color:#ffbd19 !important;
+  font-size:56px !important;
+  line-height:1 !important;
+  font-weight:500 !important;
+}
+.game-player-card.primary-card .player-footer{
+  position:relative !important;
+  z-index:2 !important;
+  display:inline-flex !important;
+  width:auto !important;
+  margin-top:8px !important;
+  padding:6px 10px !important;
+  border:1px solid #a67f37 !important;
+  border-radius:7px !important;
+  color:#e5bd6f !important;
+  font-size:11px !important;
+  background:rgba(26,18,7,.35) !important;
+}
+.game-player-card.primary-card .primary-field{
+  position:absolute;
+  right:26px;
+  top:72px;
+  width:150px;
+  height:150px;
+  transform:rotate(45deg);
+  border:3px solid #b78b38;
+  border-radius:70% 8% 8% 8%;
+  background:linear-gradient(135deg,#00543f 0 55%,#8b6037 56% 72%,#00543f 73%);
+  opacity:.9;
+}
+.game-player-card.primary-card .primary-field:after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:0;
+  width:3px;
+  height:155px;
+  background:#ffd23a;
+  transform:rotate(-21deg);
+  transform-origin:bottom;
+  box-shadow:0 -152px 0 3px #fff4bb;
+}
+@media(max-width:430px){
+  .game-player-card{grid-template-columns:42px minmax(0,1fr) 66px 76px !important}
+  .game-player-card .player-name{font-size:11.5px !important;padding:0 8px !important}
+  .game-player-card .player-score{font-size:21px !important}
+  .game-player-card .player-footer{font-size:7px !important}
+  .game-player-card.primary-card{min-height:255px !important;padding:21px 18px 17px !important}
+  .game-player-card.primary-card .player-name{font-size:25px !important;padding:16px 0 0 !important;max-width:58% !important}
+  .game-player-card.primary-card .player-score{font-size:50px !important}
+  .game-player-card.primary-card .primary-field{right:20px;top:78px;width:125px;height:125px}
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -2401,7 +2573,7 @@ function renderLaunch5(players){
       <article class="launch5-card ${isLongshot?"longshot":""}">
         ${isLongshot?'<div class="launch5-longshot-badge">LONG SHOT</div>':""}
         <div class="launch5-card-body" data-rank="${index+1}">
-          <div class="launch5-player">${playerName}</div>
+          <div class="launch5-player">${playerName}${homerBadge(p)}</div>
           <div class="launch5-team">${team}</div>
           <div class="launch5-opponent">vs ${opponent}</div>
           <div class="launch5-score-label">OVERALL SCORE</div>
@@ -2432,10 +2604,51 @@ function renderLaunch5(players){
   `;
 }
 let allPlayers=[],period="night",openKey=null,view="by-game",modelGenerated="",slateDate="";
+let homerResultsById=new Map(),homerResultsByGameName=new Map();
 let watchlist=[];try{watchlist=JSON.parse(localStorage.getItem("launchpoint-watchlist")||"[]")}catch(e){watchlist=[]}
 const n=v=>Number(v)||0, esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const displayName=name=>{const p=String(name||"").split(",");return p.length>1?`${p[1].trim()} ${p[0].trim()}`:name||"Unknown"};
+const normalizePlayerName=name=>String(displayName(name)||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
 const keyFor=p=>p.game_pk?String(p.game_pk):[p.team,p.opponent].sort().join("|");
+function homeRunsForPlayer(p){
+  const id=String(p?.player_id||p?.mlb_id||p?.batter_id||"").replace(/\D/g,"");
+  if(id&&homerResultsById.has(id))return homerResultsById.get(id)||0;
+  return homerResultsByGameName.get(`${p?.game_pk||""}|${normalizePlayerName(p?.player)}`)||0;
+}
+function homerBadge(p){
+  const homers=homeRunsForPlayer(p);
+  if(homers<=0)return "";
+  return `<span class="homer-badge">${homers>1?`${homers} HOMERS 🔥`:"HOMER ✅"}</span>`;
+}
+async function refreshHomerResults(){
+  const gamePks=[...new Set((allPlayers||[]).map(p=>Number(p.game_pk)||0).filter(Boolean))];
+  if(!gamePks.length)return;
+  const feeds=await Promise.allSettled(gamePks.map(async gamePk=>{
+    const response=await fetch(`https://statsapi.mlb.com/api/v1.1/game/${gamePk}/feed/live`);
+    if(!response.ok)throw new Error(`MLB feed ${gamePk} failed`);
+    return {gamePk,data:await response.json()};
+  }));
+  const byId=new Map(),byGameName=new Map();
+  feeds.forEach(result=>{
+    if(result.status!=="fulfilled")return;
+    const {gamePk,data}=result.value;
+    const plays=data?.liveData?.plays?.allPlays||[];
+    plays.forEach(play=>{
+      if(play?.result?.eventType!=="home_run")return;
+      const id=String(play?.matchup?.batter?.id||"");
+      const name=normalizePlayerName(play?.matchup?.batter?.fullName||"");
+      if(id)byId.set(id,(byId.get(id)||0)+1);
+      if(name){
+        const key=`${gamePk}|${name}`;
+        byGameName.set(key,(byGameName.get(key)||0)+1);
+      }
+    });
+  });
+  homerResultsById=byId;
+  homerResultsByGameName=byGameName;
+  renderLaunch5(allPlayers);
+  render();
+}
 function gameLocalDate(p){const iso=String(p?.game_datetime_utc||"").trim();if(!iso)return null;const d=new Date(iso);return Number.isNaN(d.getTime())?null:d}
 function formatGameTime(p){const d=gameLocalDate(p);if(d)return new Intl.DateTimeFormat(undefined,{hour:"numeric",minute:"2-digit"}).format(d);return String(p?.game_time||"Time TBD")||"Time TBD"}
 function gamePeriod(p){const d=gameLocalDate(p);if(d){const h=d.getHours();return h<15?"early":h<19?"afternoon":"night"}const t=String(p?.game_time||"");const m=t.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);if(!m)return "unknown";let h=+m[1];const ap=(m[3]||"").toUpperCase();if(ap==="PM"&&h<12)h+=12;if(ap==="AM"&&h===12)h=0;return h<15?"early":h<19?"afternoon":"night"}
@@ -2460,7 +2673,42 @@ function generatorScore(p){
 }
 function rankPlayers(list){return [...list].sort((a,b)=>generatorScore(b)-generatorScore(a)||n(b.daily_percentile)-n(a.daily_percentile));}
 function viewPlayers(){let source=[...allPlayers];if(view==="top-picks")source=rankPlayers(source).slice(0,10);else if(view==="elite")source=source.filter(p=>String(p.daily_tier).toUpperCase()==="ELITE");else if(view==="confirmed")source=source.filter(p=>String(p.lineup_status).toUpperCase()==="CONFIRMED");else if(view==="watchlist")source=source.filter(p=>watchlist.includes(String(p.player)));return source}
-function groups(){const map={};viewPlayers().forEach(p=>(map[keyFor(p)]??=[]).push(p));return Object.entries(map).map(([key,players])=>({key,players:rankPlayers(players).slice(0,5)}));}
+function qualifiesGameTarget(p){
+  const tier=String(p.daily_tier||"").toUpperCase();
+  const signals=[
+    n(p.pitcher_vulnerability)>=60,
+    n(p.pitch_arsenal_score)>=60,
+    n(p.bullpen_vulnerability)>=60,
+    n(p.park_weather_score)>=65,
+    n(p.handedness_score)>=65
+  ].filter(Boolean).length;
+  const powerPath=n(p.statcast_power)>=70&&generatorScore(p)>=55;
+  return tier==="ELITE"||tier==="STRONG"||powerPath||(signals>=2&&generatorScore(p)>=55);
+}
+function selectGamePlayers(players){
+  const ranked=rankPlayers(players);
+  const selected=ranked.slice(0,2);
+  ranked.slice(2).filter(qualifiesGameTarget).forEach(p=>{if(selected.length<5)selected.push(p)});
+  return selected;
+}
+function groups(){
+  const map={};
+  viewPlayers().forEach(p=>(map[keyFor(p)]??=[]).push(p));
+  return Object.entries(map).map(([key,players])=>{
+    const allPlayers=rankPlayers(players);
+    return {key,allPlayers,players:view==="by-game"?selectGamePlayers(allPlayers):allPlayers.slice(0,5)};
+  });
+}
+function gameCardStrength(players){
+  const qualified=players.filter(qualifiesGameTarget).length;
+  const top=players.length?generatorScore(players[0]):0;
+  return qualified>=3&&top>=60?"strong":qualified>=2?"average":"weak";
+}
+function gamePlayerLabel(player,index,strength){
+  if(strength==="weak")return index===0?"BEST AVAILABLE":"MATCHUP LONG SHOT";
+  if(index===0)return "PRIMARY LAUNCH";
+  return String(player.daily_tier||"MODEL PICK");
+}
 function starterFor(team,ps){return ps.find(p=>p.opponent===team)?.pitcher||"Starter TBD"}
 function field(){return `<svg class="field" viewBox="0 0 210 170" role="img" aria-label="Mini Field Map"><title>Mini Field Map</title><path class="grass" d="M105 160 L18 78 Q105 2 192 78 Z"/><path class="dirt" d="M105 151 L61 111 L105 68 L149 111 Z"/><path class="path" d="M105 150 Q127 58 181 23"/><circle class="ball" cx="181" cy="23" r="5"/></svg>`}
 
@@ -2514,7 +2762,7 @@ function render(){
   document.querySelector("#top3").innerHTML=top.map((p,i)=>`
     <div class="top-pick">
       <strong>${i+1}</strong>
-      <span>${esc(displayName(p.player))}<b>${generatorScore(p).toFixed(1)}</b></span>
+      <span>${esc(displayName(p.player))}${homerBadge(p)}<b>${generatorScore(p).toFixed(1)}</b></span>
     </div>
   `).join("");
 
@@ -2529,10 +2777,12 @@ function render(){
 
   document.querySelector("#games").innerHTML=shown.map(g=>{
     const p=g.players[0];
+    const matchupPlayers=g.allPlayers||g.players;
     const teams=[p.team,p.opponent];
     const expanded=g.key===openKey;
     const rating=Math.round(g.players.reduce((s,x)=>s+generatorScore(x),0)/g.players.length);
     const confirmed=p.lineup_status==="CONFIRMED"||n(p.starter_confirmed)===1;
+    const strength=gameCardStrength(matchupPlayers);
 
     const playerCards=g.players.slice(0,5).map((x,i)=>{
       const rawName=String(displayName(x.player)||"");
@@ -2542,11 +2792,13 @@ function render(){
       const rawId=x.mlb_id||x.player_id||x.batter_id||"";
       const mlbId=String(rawId).replace(/\D/g,"");
       const initial=esc(rawName.charAt(0)||"?");
-      const tag=i===0?"PRIMARY LAUNCH":esc(x.daily_tier||"MODEL PICK");
+      const tag=esc(gamePlayerLabel(x,i,strength));
+      const isPrimary=i===0&&strength!=="weak";
+      const tier=esc(String(x.daily_tier||x.pick_status||x.raw_classification||"WATCH").toUpperCase());
 
       return `
-        <article class="game-player-card ${i===0?"primary-card":""}" data-player-card="${esc(x.player)}" tabindex="0" role="button">
-          ${i===0?'<div class="primary-badge">PRIMARY</div>':""}
+        <article class="game-player-card ${isPrimary?"primary-card":""}" data-list-rank="${i+1}" data-player-card="${esc(x.player)}" tabindex="0" role="button">
+          ${isPrimary?'<div class="primary-badge">⭐ PRIMARY LAUNCH</div>':""}
           <div class="player-photo-wrap">
             <div class="player-rank">${i+1}</div>
             <img class="player-photo"
@@ -2558,12 +2810,13 @@ function render(){
             <div class="player-photo-fallback" style="display:none">${initial}</div>
           </div>
           <div class="player-card-body">
-            <div class="player-name">${playerName}</div>
+            <div class="player-name">${playerName}${homerBadge(x)}</div>
             <div class="player-team">${team}</div>
-            <div class="player-score-label">OVERALL SCORE</div>
+            <div class="player-score-label">${isPrimary?"GENERATOR":"OVERALL SCORE"}</div>
             <div class="player-score">${score}</div>
           </div>
-          <div class="player-footer">${tag}</div>
+          ${isPrimary?'<div class="primary-field" aria-hidden="true"></div>':""}
+          <div class="player-footer">${isPrimary?`◇ ${tier}`:tag}</div>
         </article>
       `;
     }).join("");
@@ -2587,11 +2840,11 @@ function render(){
             <div class="game-pitchers">
               <div class="game-pitcher">
                 <small>${esc(teams[0])} STARTER</small>
-                <b>${esc(starterFor(teams[0],g.players))}</b>
+                <b>${esc(starterFor(teams[0],matchupPlayers))}</b>
               </div>
               <div class="game-pitcher away">
                 <small>${esc(teams[1])} STARTER</small>
-                <b>${esc(starterFor(teams[1],g.players))}</b>
+                <b>${esc(starterFor(teams[1],matchupPlayers))}</b>
               </div>
             </div>
 
@@ -2662,7 +2915,7 @@ function render(){
 
       host.dataset.mode="game";
       host.dataset.openPlayer="";
-      host.innerHTML=gameMatchupDetails(game.players);
+      host.innerHTML=gameMatchupDetails(game.allPlayers||game.players);
       btn.textContent="CLOSE MATCHUP DETAILS";
       host.scrollIntoView({behavior:"smooth",block:"nearest"});
     };
@@ -2820,7 +3073,21 @@ document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
   setView(next);
 });
 document.querySelector(".more-close").onclick=()=>document.querySelector("#more-panel").hidden=true;updateMorePanel();
-fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>{allPlayers=d.players||[];renderLaunch5(allPlayers);updateDashboardUI();updateMorePanel();modelGenerated=d.generated_at_utc||"";updateMorePanel();slateDate=d.slate_date||allPlayers.find(p=>p.game_date)?.game_date||"";updateModelMeta();render()}).catch(()=>{document.querySelector("#games").innerHTML='<div class="empty">Today\'s model data is not available yet.</div>'});
+fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>{
+  allPlayers=d.players||[];
+  renderLaunch5(allPlayers);
+  updateDashboardUI();
+  updateMorePanel();
+  modelGenerated=d.generated_at_utc||"";
+  slateDate=d.slate_date||allPlayers.find(p=>p.game_date)?.game_date||"";
+  updateModelMeta();
+  render();
+  refreshHomerResults();
+}).catch(()=>{document.querySelector("#games").innerHTML='<div class="empty">Today\'s model data is not available yet.</div>'});
+
+setInterval(()=>{
+  if(allPlayers.length) refreshHomerResults();
+},300000);
 </script>
 <script>
 /* LP headshot safety net: fills photos whenever Launch 5 or game cards render */
