@@ -2594,7 +2594,7 @@ function homeRunsForPlayer(p){
 function homerBadge(p){
   const homers=homeRunsForPlayer(p);
   if(homers<=0)return "";
-  return `<span class="homer-badge">${homers>1?`${homers} HOMERS 🔥`:"HOMER ✅"}</span>`;
+  return `<span class="homer-badge">${homers>1?`${homers} HOMERS ð¥`:"HOMER â"}</span>`;
 }
 async function refreshHomerResults(){
   const gamePks=[...new Set((allPlayers||[]).map(p=>Number(p.game_pk)||0).filter(Boolean))];
@@ -2789,7 +2789,7 @@ function render(){
 
       return `
         <article class="game-player-card ${isPrimary?"primary-card":""}" data-list-rank="${i+1}" data-player-card="${esc(x.player)}" tabindex="0" role="button">
-          ${isPrimary?'<div class="primary-badge">⭐ PRIMARY LAUNCH</div>':""}
+          ${isPrimary?'<div class="primary-badge">â­ PRIMARY LAUNCH</div>':""}
           <div class="player-photo-wrap">
             <div class="player-rank">${i+1}</div>
             <img class="player-photo"
@@ -2806,7 +2806,7 @@ function render(){
             <div class="player-score-label">${isPrimary?"GENERATOR":"OVERALL SCORE"}</div>
             <div class="player-score">${score}</div>
           </div>
-          <div class="player-footer">${isPrimary?`◇ ${tier}`:tag}</div>
+          <div class="player-footer">${isPrimary?`â ${tier}`:tag}</div>
         </article>
       `;
     }).join("");
