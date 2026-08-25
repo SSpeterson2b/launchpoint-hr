@@ -2416,6 +2416,192 @@ html,body{background:#000!important}
   .results-totals{grid-template-columns:1fr 1fr}.results-total:last-child{grid-column:1/-1}
 }
 
+/* APPROVED PUBLIC DESIGN — hard override of legacy themes */
+.lp-intel,.lp-side-column{display:none!important}
+.lp-content-grid{display:block!important}
+.tabs button.active{
+  color:#071016!important;
+  background:linear-gradient(110deg,#ffc437,#dca01c)!important;
+  border-color:#ffc437!important;
+  box-shadow:0 0 16px rgba(255,196,55,.13)!important;
+}
+.bottom .active{color:var(--lp-gold)!important}
+
+/* Launch 5: compact dark trajectory tiles from the approved design */
+.launch5-card-row{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:8px!important;
+  overflow:visible!important;
+}
+.launch5-card{
+  position:relative!important;
+  display:block!important;
+  min-width:0!important;
+  min-height:190px!important;
+  overflow:hidden!important;
+  border:1px solid #294654!important;
+  border-radius:10px!important;
+  background:radial-gradient(circle at 50% 110%,rgba(28,175,170,.13),transparent 52%),#030b10!important;
+  box-shadow:inset 0 0 28px rgba(11,95,110,.06)!important;
+}
+.launch5-card:first-child{border-color:var(--lp-gold)!important;box-shadow:inset 0 0 28px rgba(255,196,55,.06)!important}
+.launch5-card.longshot{border-color:#55a92c!important}
+.launch5-photo-wrap,.launch5-longshot-badge,.launch5-card-footer,
+.launch5-team,.launch5-opponent,.launch5-score-label,.launch5-main-score{display:none!important}
+.launch5-card-body{
+  position:relative!important;
+  display:block!important;
+  min-height:190px!important;
+  padding:39px 11px 10px!important;
+  color:#f5f8f9!important;
+  background:transparent!important;
+}
+.launch5-card-body:before{
+  content:attr(data-rank)!important;
+  position:absolute!important;
+  left:9px!important;
+  top:9px!important;
+  display:grid!important;
+  place-items:center!important;
+  width:23px!important;
+  height:23px!important;
+  margin:0!important;
+  border:1px solid rgba(255,196,55,.62)!important;
+  border-radius:5px!important;
+  color:var(--lp-gold)!important;
+  background:#071016!important;
+  font-size:12px!important;
+  font-weight:950!important;
+  transform:none!important;
+  box-shadow:none!important;
+}
+.launch5-card-body:after{
+  content:""!important;
+  position:absolute!important;
+  display:block!important;
+  left:16px!important;
+  right:16px!important;
+  bottom:13px!important;
+  height:91px!important;
+  opacity:.86!important;
+  border:0!important;
+  background:
+    radial-gradient(circle at 83% 10%,#fff4b0 0 2px,#ffc437 3px 5px,transparent 6px),
+    linear-gradient(132deg,transparent 0 47%,rgba(255,196,55,.95) 48% 49%,transparent 50% 100%),
+    repeating-radial-gradient(ellipse at 18% 97%,transparent 0 12px,rgba(39,215,208,.12) 13px 14px,transparent 15px 24px)!important;
+  transform:none!important;
+  box-shadow:none!important;
+  pointer-events:none!important;
+}
+.launch5-player{
+  position:relative!important;
+  z-index:2!important;
+  display:block!important;
+  min-height:0!important;
+  color:#f4f7f8!important;
+  font-size:15px!important;
+  line-height:1.02!important;
+  font-weight:950!important;
+  letter-spacing:.01em!important;
+  text-transform:uppercase!important;
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+  text-shadow:none!important;
+}
+
+/* Matchup cards: compact primary launch with visible radar and trajectory */
+.game-player-card.primary-card{
+  min-height:250px!important;
+  padding:20px 20px 18px!important;
+  overflow:hidden!important;
+  background:radial-gradient(circle at 84% 62%,rgba(0,89,104,.16),transparent 40%),linear-gradient(115deg,#131006,#030b0d 62%,#00131a)!important;
+}
+.game-player-card.primary-card:before{
+  content:""!important;
+  position:absolute!important;
+  display:block!important;
+  z-index:3!important;
+  width:118px!important;
+  height:2px!important;
+  right:7%!important;
+  top:39%!important;
+  background:linear-gradient(90deg,#ffc437,rgba(255,196,55,0))!important;
+  transform:rotate(-43deg)!important;
+  transform-origin:left center!important;
+  box-shadow:0 0 8px rgba(255,196,55,.6)!important;
+}
+.game-player-card.primary-card:after{
+  content:"LP"!important;
+  position:absolute!important;
+  display:grid!important;
+  place-items:center!important;
+  z-index:1!important;
+  width:124px!important;
+  height:124px!important;
+  right:8%!important;
+  top:58%!important;
+  transform:translateY(-50%)!important;
+  border:1px solid rgba(40,215,208,.19)!important;
+  border-radius:50%!important;
+  color:rgba(255,255,255,.07)!important;
+  background:repeating-radial-gradient(circle,transparent 0 20px,rgba(40,215,208,.08) 21px 22px)!important;
+  font-size:31px!important;
+  font-style:italic!important;
+  font-weight:950!important;
+}
+.game-player-card.primary-card .player-card-body{max-width:64%!important}
+.game-player-card.primary-card .player-name{
+  padding-top:15px!important;
+  max-width:none!important;
+  color:#fff!important;
+  font-size:27px!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+}
+.game-player-card.primary-card .player-score-label{margin-top:24px!important;font-size:11px!important}
+.game-player-card.primary-card .player-score{font-size:52px!important}
+.game-player-card.primary-card .player-footer{margin-top:9px!important}
+.game-player-card{min-height:54px!important}
+
+/* Keep every approved weather field visible, including park impact. */
+.game-weather-strip{overflow-x:auto!important;scrollbar-width:none}
+.game-weather-strip::-webkit-scrollbar{display:none}
+
+@media(max-width:560px){
+  .launch5-section{padding:15px 10px!important}
+  .launch5-card-row{
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    gap:5px!important;
+    overflow:visible!important;
+  }
+  .launch5-card{min-height:166px!important;flex:none!important}
+  .launch5-card-body{min-height:166px!important;padding:35px 6px 8px!important}
+  .launch5-card-body:before{left:6px!important;top:7px!important;width:19px!important;height:19px!important;font-size:10px!important}
+  .launch5-card-body:after{left:7px!important;right:7px!important;bottom:8px!important;height:77px!important}
+  .launch5-player{font-size:9px!important;line-height:1.02!important;letter-spacing:-.01em!important}
+  .game-weather-strip{
+    grid-template-columns:auto auto auto auto auto!important;
+    gap:7px!important;
+    padding:9px!important;
+  }
+  .weather-source{grid-column:auto!important;font-size:6px!important}
+  .weather-item{font-size:7px!important}.weather-item b{font-size:9px!important}
+  .park-impact{display:block!important;font-size:6px!important;padding:5px 6px!important}
+  .game-player-card.primary-card{min-height:230px!important;padding:18px 16px 15px!important}
+  .game-player-card.primary-card:after{width:92px!important;height:92px!important;right:5%!important;top:60%!important}
+  .game-player-card.primary-card:before{width:88px!important;right:2%!important;top:41%!important}
+  .game-player-card.primary-card .player-card-body{max-width:68%!important}
+  .game-player-card.primary-card .player-name{font-size:22px!important;white-space:nowrap!important}
+  .game-player-card.primary-card .player-score-label{margin-top:21px!important}
+  .game-player-card.primary-card .player-score{font-size:47px!important}
+}
+@media(max-width:390px){
+  .launch5-player{font-size:8px!important}
+  .game-player-card.primary-card .player-name{font-size:20px!important}
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -2812,40 +2998,24 @@ function qualifiesGameTarget(p){
 function gameLaunchRating(players){
   const ranked=rankPlayers(players);
   if(!ranked.length)return 0;
-  if(ranked.length===1)return generatorScore(ranked[0]);
-  return (generatorScore(ranked[0])+generatorScore(ranked[1]))/2;
-}
-function balancedGamePicks(ranked,count){
-  if(!ranked.length||count<=0)return [];
-  const selected=[ranked[0]];
-  const firstTeam=String(ranked[0].team||"");
-  const opposite=ranked.find(p=>String(p.team||"")!==firstTeam);
-  if(opposite&&count>1)selected.push(opposite);
-  const maxPerTeam=Math.ceil(count/2);
-  for(const p of ranked){
-    if(selected.includes(p))continue;
-    const team=String(p.team||"");
-    const used=selected.filter(x=>String(x.team||"")===team).length;
-    if(used>=maxPerTeam)continue;
-    selected.push(p);
-    if(selected.length>=count)break;
-  }
-  for(const p of ranked){
-    if(selected.length>=count)break;
-    if(!selected.includes(p))selected.push(p);
-  }
-  return selected;
+  const teams=[...new Set(ranked.map(p=>String(p.team||"")).filter(Boolean))];
+  const teamLeaders=teams.map(team=>ranked.find(p=>String(p.team||"")===team)).filter(Boolean).slice(0,2);
+  if(!teamLeaders.length)return generatorScore(ranked[0]);
+  return teamLeaders.reduce((sum,p)=>sum+generatorScore(p),0)/teamLeaders.length;
 }
 function selectGamePlayers(players){
   const ranked=rankPlayers(players);
-  if(ranked.length<=2)return ranked;
-  const topTwoRating=gameLaunchRating(ranked);
-  const qualified=ranked.filter(qualifiesGameTarget);
-  if(topTwoRating>=64&&qualified.length>=3){
-    return balancedGamePicks(ranked,Math.min(5,Math.max(3,qualified.length)));
+  if(ranked.length<=4)return ranked;
+  const teams=[...new Set(ranked.map(p=>String(p.team||"")).filter(Boolean))].slice(0,2);
+  const selected=[];
+  teams.forEach(team=>{
+    rankPlayers(ranked.filter(p=>String(p.team||"")===team)).slice(0,2).forEach(p=>selected.push(p));
+  });
+  for(const p of ranked){
+    if(selected.length>=4)break;
+    if(!selected.includes(p))selected.push(p);
   }
-  if(topTwoRating>=58||qualified.length>=2)return balancedGamePicks(ranked,3);
-  return balancedGamePicks(ranked,2);
+  return rankPlayers(selected).slice(0,4);
 }
 function groups(){
   const map={};
@@ -2860,10 +3030,12 @@ function gameCardStrength(players){
   const topTwoRating=gameLaunchRating(players);
   return topTwoRating>=64&&qualified>=3?"strong":topTwoRating>=58||qualified>=2?"average":"weak";
 }
-function gamePlayerLabel(player,index,strength){
-  if(strength==="weak")return index===0?"BEST AVAILABLE":"MATCHUP LONG SHOT";
+function gamePlayerLabel(player,index,strength,gamePlayers){
+  const teamRank=rankPlayers((gamePlayers||[]).filter(p=>String(p.team||"")===String(player.team||""))).findIndex(p=>String(p.player_id||p.player)===String(player.player_id||player.player))+1;
+  if(strength==="weak")return teamRank===1?"BEST AVAILABLE":"SECONDARY OPTION";
   if(index===0)return "PRIMARY LAUNCH";
-  return String(player.daily_tier||"MODEL PICK");
+  if(teamRank===1)return "TEAM LEADER";
+  return qualifiesGameTarget(player)?String(player.daily_tier||"SECONDARY OPTION"):"SECONDARY OPTION";
 }
 function starterFor(team,ps){return ps.find(p=>p.opponent===team)?.pitcher||"Starter TBD"}
 function field(){return `<svg class="field lp-radar" viewBox="0 0 210 170" role="img" aria-label="Launch trajectory"><title>Launch trajectory</title><g fill="none" stroke="#24b9b6" opacity=".28"><circle cx="108" cy="93" r="28"/><circle cx="108" cy="93" r="50"/><circle cx="108" cy="93" r="72"/><path d="M20 93h176M108 12v150"/></g><text x="108" y="101" text-anchor="middle" fill="#fff" opacity=".08" font-size="28" font-weight="900" font-style="italic">LP</text><path d="M45 145 Q92 62 177 27" fill="none" stroke="#ffc437" stroke-width="3"/><circle cx="45" cy="145" r="3" fill="#ffc437"/><circle cx="177" cy="27" r="7" fill="#ffc437" stroke="#fff0a8" stroke-width="1"/></svg>`}
@@ -2968,7 +3140,7 @@ function render(){
       const rawId=x.mlb_id||x.player_id||x.batter_id||"";
       const mlbId=String(rawId).replace(/\D/g,"");
       const initial=esc(rawName.charAt(0)||"?");
-      const tag=esc(gamePlayerLabel(x,i,strength));
+      const tag=esc(gamePlayerLabel(x,i,strength,matchupPlayers));
       const isPrimary=i===0&&strength!=="weak";
       const tier=esc(String(x.daily_tier||x.pick_status||x.raw_classification||"WATCH").toUpperCase());
 
