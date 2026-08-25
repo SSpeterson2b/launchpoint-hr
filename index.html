@@ -2772,8 +2772,9 @@ html,body{background:#000!important}
 .game{border-radius:15px!important;border-color:#284b5c!important;background:#02080c!important}
 .game-head{padding:20px 18px 16px!important;background:#06131c!important}
 .game-head b{
-  font-family:Impact,"Arial Narrow",sans-serif!important;font-size:26px!important;
-  font-style:italic!important;font-weight:700!important;letter-spacing:.025em!important;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important;
+  font-size:24px!important;font-style:normal!important;font-weight:800!important;
+  letter-spacing:-.015em!important;
 }
 .game-subline{margin-top:8px!important}
 .game-subline>span{color:#7d9bae!important;font-size:11px!important;letter-spacing:.06em!important}
@@ -2793,7 +2794,32 @@ html,body{background:#000!important}
 .game-weather-strip>svg:not(.rain-icon){width:32px!important;height:29px!important;flex:0 0 auto!important}
 .game-weather-strip .weather-source{top:3px!important;z-index:3!important;background:transparent!important}
 .park-impact{font-size:7px!important}
-.game-pitchers{display:none!important}
+.game-pitchers{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:9px!important;
+  margin:0 0 13px!important;
+}
+.game-pitcher{
+  min-height:54px!important;
+  padding:10px 12px!important;
+  border:1px solid #20bde8!important;
+  border-radius:9px!important;
+  background:#06151c!important;
+}
+.game-pitcher.away{
+  border-color:#e12d49!important;
+  background:#210b0f!important;
+}
+.game-pitcher small{
+  color:#7f918c!important;font-size:8px!important;font-weight:600!important;
+  letter-spacing:.03em!important;
+}
+.game-pitcher b{
+  margin-top:4px!important;color:#f4f6f4!important;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important;
+  font-size:14px!important;font-weight:800!important;letter-spacing:0!important;
+}
 
 .game-player-row{padding:0!important;gap:8px!important}
 .game-player-card.primary-card{
@@ -2805,8 +2831,10 @@ html,body{background:#000!important}
 }
 .game-player-card.primary-card .player-card-body{max-width:55%!important}
 .game-player-card.primary-card .player-name{
-  padding-top:18px!important;font-family:Impact,"Arial Narrow",sans-serif!important;
-  font-size:36px!important;font-style:italic!important;letter-spacing:.02em!important;
+  padding-top:18px!important;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important;
+  font-size:34px!important;font-style:normal!important;font-weight:850!important;
+  letter-spacing:-.025em!important;
 }
 .game-player-card.primary-card .player-score-label{margin-top:29px!important;color:#7fa4b7!important;font-size:10px!important}
 .game-player-card.primary-card .player-score{font-size:64px!important}
@@ -2817,7 +2845,8 @@ html,body{background:#000!important}
 }
 .game-player-card:not(.primary-card):before{font-size:25px!important}
 .game-player-card:not(.primary-card) .player-name{
-  font-family:Impact,"Arial Narrow",sans-serif!important;font-size:20px!important;font-weight:700!important;letter-spacing:.02em!important;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important;
+  font-size:18px!important;font-weight:800!important;letter-spacing:-.01em!important;
 }
 .game-player-card:not(.primary-card) .player-score{font-size:27px!important}
 .game-player-card:not(.primary-card) .player-footer{font-size:10px!important;border:1px solid currentColor!important;border-radius:6px!important;padding:7px!important;justify-content:center!important}
