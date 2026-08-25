@@ -2794,6 +2794,13 @@ html,body{background:#000!important}
 .game-weather-strip>svg:not(.rain-icon){width:32px!important;height:29px!important;flex:0 0 auto!important}
 .game-weather-strip .weather-source{top:3px!important;z-index:3!important;background:transparent!important}
 .park-impact{font-size:7px!important}
+.game-weather-strip.weather-unavailable{
+  grid-template-columns:auto auto 1fr!important;
+  justify-items:start!important;
+}
+.game-weather-strip.weather-unavailable .weather-temp{
+  font-size:12px!important;letter-spacing:.08em!important;color:#9cb5c1!important;
+}
 .game-pitchers{
   display:grid!important;
   grid-template-columns:1fr 1fr!important;
@@ -2880,6 +2887,8 @@ html,body{background:#000!important}
   .game .body{padding:10px!important}
   .game-weather-strip{grid-template-columns:auto auto minmax(80px,1fr) auto auto!important;gap:5px!important;min-height:58px!important;padding:16px 7px 7px!important}
   .game-weather-strip svg{width:25px!important;height:25px!important}.weather-temp{font-size:15px!important}
+  .game-weather-strip.weather-unavailable{grid-template-columns:auto auto 1fr!important}
+  .game-weather-strip.weather-unavailable .weather-temp{font-size:9px!important}
   .weather-item{font-size:6px!important}.weather-item b{font-size:8px!important}.park-impact{font-size:5.5px!important;padding:5px!important}
   .game-player-card.primary-card{min-height:264px!important;padding:17px 14px 14px!important}
   .game-player-card.primary-card .primary-badge{font-size:18px!important}
@@ -3345,6 +3354,7 @@ function gamePlayerLabel(player,index,strength,gamePlayers){
   return qualifiesGameTarget(player)?String(player.daily_tier||"SECONDARY OPTION"):"SECONDARY OPTION";
 }
 function starterFor(team,ps){return ps.find(p=>p.opponent===team)?.pitcher||"Starter TBD"}
+function displayVenue(value){const venue=String(value||"").trim();return !venue||/^UNKNOWN$/i.test(venue)?"":venue}
 function field(){return `<svg class="field lp-radar" viewBox="0 0 210 170" role="img" aria-label="Launch trajectory"><title>Launch trajectory</title><g fill="none" stroke="#24b9b6" opacity=".28"><circle cx="108" cy="93" r="28"/><circle cx="108" cy="93" r="50"/><circle cx="108" cy="93" r="72"/><path d="M20 93h176M108 12v150"/></g><text x="108" y="101" text-anchor="middle" fill="#fff" opacity=".08" font-size="28" font-weight="900" font-style="italic">LP</text><path d="M45 145 Q92 62 177 27" fill="none" stroke="#ffc437" stroke-width="3"/><circle cx="45" cy="145" r="3" fill="#ffc437"/><g transform="translate(177 27)"><circle r="8.5" fill="#f7e7b1" stroke="#ffc437" stroke-width="1.3"/><path d="M-5.5 -6.2 C-2.1 -3.2 -2.1 3.2 -5.5 6.2 M5.5 -6.2 C2.1 -3.2 2.1 3.2 5.5 6.2" fill="none" stroke="#9a5e24" stroke-width="1.1" stroke-linecap="round"/></g></svg>`}
 
 function weatherIcon(p){
@@ -3362,17 +3372,21 @@ function weatherIcon(p){
 }
 function rainIcon(){return `<svg class="rain-icon" viewBox="0 0 20 26" aria-hidden="true"><path d="M10 2C8 6 3 12 3 17a7 7 0 0 0 14 0c0-5-5-11-7-15Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>`}
 function weatherStrip(p){
-  const temp=has(p?.temperature)?`${n(p.temperature).toFixed(0)}°F`:"--°F";
-  const wind=has(p?.wind_speed)?`${n(p.wind_speed).toFixed(0)} MPH`:"PENDING";
+  const source=String(p?.weather_source||"FORECAST").toUpperCase();
+  const venue=String(p?.venue||"").trim();
   const direction=String(p?.wind_direction||"").trim();
-  const rain=has(p?.rain_probability)?`${n(p.rain_probability).toFixed(0)}%`:"--";
+  const missingFallback=/FALLBACK/.test(source)&&n(p?.temperature)<=0&&n(p?.wind_speed)<=0&&(!venue||/^UNKNOWN$/i.test(venue));
+  if(missingFallback)return `<div class="game-weather-strip weather-unavailable"><span class="weather-source">FORECAST</span>${weatherIcon(p)}<span class="weather-temp">WEATHER UPDATE PENDING</span></div>`;
+  const temp=!missingFallback&&has(p?.temperature)?`${n(p.temperature).toFixed(0)}°F`:"--°F";
+  const wind=!missingFallback&&has(p?.wind_speed)?`${n(p.wind_speed).toFixed(0)} MPH`:"TBD";
+  const rain=!missingFallback&&has(p?.rain_probability)?`${n(p.rain_probability).toFixed(0)}%`:"TBD";
   const park=n(p?.park_weather_score);
   const impact=park>=65?"HR BOOST":park<=40?"PITCHER EDGE":"NEUTRAL";
-  const source=String(p?.weather_source||"FORECAST").toUpperCase();
   const d=direction.toUpperCase();
   const arrow=d.includes("OUT")?"↑":d.includes("IN")?"↓":d.includes("LEFT")?"↖":d.includes("RIGHT")?"↗":d.startsWith("N")?"↓":d.startsWith("S")?"↑":d.startsWith("E")?"←":d.startsWith("W")?"→":"→";
-  const directionLabel=direction||"TBD";
-  return `<div class="game-weather-strip"><span class="weather-source">${esc(source)} FORECAST</span>${weatherIcon(p)}<span class="weather-temp">${esc(temp)}</span><span class="weather-item">WIND <b>${esc(wind)} ${arrow} ${esc(directionLabel)}</b></span><span class="weather-item rain-item">${rainIcon()}<span>RAIN <b>${esc(rain)}</b></span></span><span class="park-impact">PARK IMPACT: ${impact}</span></div>`;
+  const directionLabel=!missingFallback&&direction?direction:"TBD";
+  const windArrow=missingFallback?"":arrow;
+  return `<div class="game-weather-strip"><span class="weather-source">${esc(source)} FORECAST</span>${weatherIcon(p)}<span class="weather-temp">${esc(temp)}</span><span class="weather-item">WIND <b>${esc(wind)} ${windArrow} ${esc(directionLabel)}</b></span><span class="weather-item rain-item">${rainIcon()}<span>RAIN <b>${esc(rain)}</b></span></span><span class="park-impact">PARK IMPACT: ${impact}</span></div>`;
 }
 
 function gameMatchupDetails(players){
@@ -3489,7 +3503,7 @@ function render(){
         <button class="game-head" data-key="${esc(g.key)}">
           <span>
             <b>${esc(teams[0])} vs ${esc(teams[1])}</b>
-            <small class="game-subline"><span>${esc(formatGameTime(p))} - ${esc(p.venue||"Venue TBD")}</span><em>${confirmed?"LINEUPS CONFIRMED ✓":"LINEUPS PENDING"}</em></small>
+            <small class="game-subline"><span>${esc(formatGameTime(p))}${displayVenue(p.venue)?` - ${esc(displayVenue(p.venue))}`:""}</span><em>${confirmed?"LINEUPS CONFIRMED ✓":"LINEUPS PENDING"}</em></small>
           </span>
           <span>${expanded?"^":"V"}</span>
         </button>
