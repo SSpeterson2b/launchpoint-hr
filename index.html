@@ -2313,6 +2313,109 @@ html,body{background:#000!important}
   .game-player-card.primary-card .player-score{font-size:50px !important}
 }
 
+/* LAUNCHPOINT PUBLIC REFRESH */
+:root{
+  --lp-gold:#ffc437;
+  --lp-cyan:#28d7d0;
+  --lp-blue:#47bfff;
+  --lp-ink:#02080c;
+  --lp-panel:#06131c;
+  --lp-line:#234454;
+}
+.hero-center{display:none!important}
+.hero{
+  padding:18px 20px 14px!important;
+  background:radial-gradient(circle at 70% 0,rgba(20,97,111,.18),transparent 38%),#02080c!important;
+  border-color:#234454!important;
+}
+.brand-mark{border-color:var(--lp-gold)!important;color:var(--lp-gold)!important;background:#061016!important}
+.brand-copy h1 em{color:var(--lp-gold)!important}
+.brand-copy p{color:var(--lp-cyan)!important;letter-spacing:.12em!important}
+.live{color:#9dec39!important;border-color:#4f7d23!important;background:rgba(39,70,14,.18)!important}
+.model-meta{text-align:right!important;color:#7195a9!important;margin:8px 0 0!important}
+.lp-status-strip,.periods,.top3{display:none!important}
+.launch5-section{margin-top:12px!important;border-color:#244554!important;background:#030b10!important}
+.launch5-section .section-title h3{color:#f5f7f8!important}
+.launch5-section .section-title span{color:var(--lp-gold)!important}
+.launch5-card{
+  background:radial-gradient(circle at 50% 100%,rgba(13,111,111,.12),transparent 46%),#040b10!important;
+  border-color:#2a444f!important;
+  min-height:210px!important;
+}
+.launch5-card:first-child{border-color:var(--lp-gold)!important}
+.launch5-card-body:after{
+  content:"";position:absolute;left:18px;right:18px;bottom:24px;height:68px;opacity:.65;
+  background:
+    radial-gradient(circle at 75% 15%,var(--lp-gold) 0 2px,transparent 3px),
+    radial-gradient(ellipse at 38% 100%,transparent 0 35%,rgba(40,215,208,.22) 36% 37%,transparent 38% 48%,rgba(40,215,208,.13) 49% 50%,transparent 51%);
+  border-bottom:1px solid rgba(40,215,208,.16);
+  pointer-events:none;
+}
+.launch5-card-body:before{
+  content:"";position:absolute;width:72px;height:1px;left:48px;bottom:49px;
+  background:linear-gradient(90deg,var(--lp-gold),rgba(255,196,55,0));
+  transform:rotate(-42deg);transform-origin:left center;box-shadow:0 0 7px rgba(255,196,55,.5);
+  pointer-events:none;
+}
+.launch5-summary{display:none!important}
+.results-preview{
+  display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;
+  margin:12px 0;padding:15px 18px;border:1px solid #244554;border-radius:13px;
+  background:linear-gradient(105deg,#06121a,#03090e);color:#dfe7eb;
+}
+.results-preview-icon{width:32px;height:32px;color:var(--lp-gold)}
+.results-preview-copy small{display:block;color:#7fa4b7;font-size:10px;font-weight:900;letter-spacing:.14em}
+.results-preview-stats{display:flex;gap:18px;margin-top:5px;flex-wrap:wrap}
+.results-preview-stats b{font-size:18px;color:#fff}.results-preview-stats span{font-size:9px;color:#89a3b1;letter-spacing:.08em}
+.results-preview button{border:0;background:transparent;color:var(--lp-gold);font-size:10px;font-weight:950;letter-spacing:.1em}
+.game-weather-strip{
+  display:grid;grid-template-columns:auto auto minmax(115px,1fr) auto auto;align-items:center;gap:9px;
+  padding:10px 12px;margin:10px 0 12px;border:1px solid #168d91;border-radius:10px;
+  background:#031016;color:#dce7eb;
+}
+.game-weather-strip svg{width:25px;height:25px;color:#e6eef0}
+.weather-temp{font-size:16px;font-weight:900;color:#fff}
+.weather-item{font-size:9px;font-weight:800;letter-spacing:.06em;color:#9cb5c1;white-space:nowrap}
+.weather-item b{color:#eef4f5;font-size:11px;margin-left:3px}
+.weather-source{font-size:7px;font-weight:950;color:var(--lp-cyan);letter-spacing:.12em}
+.park-impact{padding:6px 8px;border:1px solid #665121;border-radius:7px;color:var(--lp-gold);font-size:8px;font-weight:950;white-space:nowrap}
+.game-player-card.primary-card:after{
+  content:"LP";position:absolute;right:14%;top:45%;transform:translateY(-50%);
+  width:120px;height:120px;border:1px solid rgba(40,215,208,.2);border-radius:50%;
+  display:grid;place-items:center;color:rgba(255,255,255,.08);font-size:30px;font-style:italic;font-weight:950;
+  background:repeating-radial-gradient(circle,transparent 0 20px,rgba(40,215,208,.08) 21px 22px);
+}
+.game-player-card.primary-card:before{
+  content:"";position:absolute;right:8%;top:27%;width:130px;height:2px;z-index:2;
+  background:linear-gradient(90deg,var(--lp-gold),rgba(255,196,55,0));
+  transform:rotate(-40deg);box-shadow:0 0 9px rgba(255,196,55,.55);
+}
+.game-player-card.primary-card .player-card-body{max-width:58%!important}
+.results-panel{
+  position:fixed;inset:0;z-index:90;overflow:auto;padding:24px 18px 100px;
+  background:rgba(2,8,12,.985);color:#eef4f6;
+}
+.results-panel[hidden]{display:none!important}
+.results-shell{width:min(100%,760px);margin:auto}
+.results-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;border-bottom:1px solid #244554}
+.results-head h2{margin:0;color:var(--lp-gold);letter-spacing:.08em}
+.results-close{border:1px solid #2c5264;background:#06131c;color:#fff;border-radius:8px;padding:8px 11px}
+.results-totals{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:14px 0}
+.results-total{padding:13px 9px;border:1px solid #234454;border-radius:10px;background:#06131c;text-align:center}
+.results-total b{display:block;font-size:24px;color:#fff}.results-total span{font-size:8px;color:#83a5b5;letter-spacing:.1em}
+.results-list{display:grid;gap:8px}.result-row{display:grid;grid-template-columns:1fr auto;gap:12px;padding:12px 14px;border:1px solid #224451;border-radius:9px;background:#041017}
+.result-row b{font-size:13px}.result-row small{display:block;color:#7896a5;margin-top:3px}.result-row strong{color:var(--lp-gold);font-size:11px}
+.bottom button[data-bottom="results"]{color:#7896a5}.bottom button[data-bottom="results"].active{color:var(--lp-gold)!important}
+@media(max-width:560px){
+  .results-preview{grid-template-columns:28px 1fr auto;padding:12px 11px;gap:8px}
+  .results-preview-stats{gap:10px}.results-preview-stats b{font-size:15px}
+  .game-weather-strip{grid-template-columns:auto auto 1fr auto;gap:7px;padding:9px}
+  .weather-source{grid-column:1/-1}.park-impact{display:none}
+  .game-player-card.primary-card:after{width:94px;height:94px;right:7%}
+  .game-player-card.primary-card:before{width:94px;right:4%}
+  .results-totals{grid-template-columns:1fr 1fr}.results-total:last-child{grid-column:1/-1}
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -2350,6 +2453,18 @@ html,body{background:#000!important}
   </div>
 
  <div id="launch5" class="launch5-grid"></div>
+</section>
+<section class="results-preview" id="results-preview" aria-label="Slate results">
+  <svg class="results-preview-icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="3" fill="currentColor"/><path d="M16 1v6M16 25v6M1 16h6M25 16h6" stroke="currentColor" stroke-width="2"/></svg>
+  <div class="results-preview-copy">
+    <small id="results-preview-label">SLATE RESULTS • LIVE TRACKING</small>
+    <div class="results-preview-stats">
+      <span><b id="preview-card-hits">0</b> CARD HITS</span>
+      <span><b id="preview-board-hitters">0</b> FULL-BOARD HR HITTERS</span>
+      <span><b id="preview-total-homers">0</b> HOME RUNS</span>
+    </div>
+  </div>
+  <button type="button" data-open-results>VIEW RESULTS →</button>
 </section>
 <section class="lp-intel">
   <h3 class="lp-section-title">SLATE INTELLIGENCE</h3>
@@ -2455,7 +2570,18 @@ html,body{background:#000!important}
     </p>
   </details>
 </aside>
-<nav class="bottom"><button class="active" data-bottom="home">HOME <small>HOME</small></button><button data-bottom="games">GAMES <small>GAMES</small></button><button data-bottom="top-picks">TOP <small>TOP PICKS</small></button><button data-bottom="watchlist"><small>WATCHLIST</small></button><button data-bottom="more">...<small>MORE</small></button></nav></main>
+<section class="results-panel" id="results-panel" hidden>
+  <div class="results-shell">
+    <div class="results-head"><div><small>LAUNCHPOINT HR</small><h2>SLATE RESULTS</h2></div><button class="results-close" type="button" aria-label="Close results">CLOSE</button></div>
+    <div class="results-totals">
+      <div class="results-total"><b id="results-card-hits">0</b><span>CARD HITS</span></div>
+      <div class="results-total"><b id="results-board-hitters">0</b><span>FULL-BOARD HR HITTERS</span></div>
+      <div class="results-total"><b id="results-total-homers">0</b><span>HOME RUNS TRACKED</span></div>
+    </div>
+    <div class="results-list" id="results-list"><div class="empty">Results update automatically as games are played.</div></div>
+  </div>
+</section>
+<nav class="bottom"><button class="active" data-bottom="home">HOME <small>HOME</small></button><button data-bottom="games">GAMES <small>GAMES</small></button><button data-bottom="top-picks">TOP <small>TOP PICKS</small></button><button data-bottom="results">RESULTS <small>RESULTS</small></button><button data-bottom="more">...<small>MORE</small></button></nav></main>
 <script>
 const lpHeadshotCache={};
 
@@ -2514,6 +2640,7 @@ async function fillAllPlayerHeadshots(){
   }));
 }
 
+let currentLaunch5=[];
 function renderLaunch5(players){
   const container=document.getElementById("launch5");
   if(!container)return;
@@ -2537,6 +2664,7 @@ function renderLaunch5(players){
     ranked.find(p=>!used.has(String(p.player)));
 
   const picks=longshot?[...topFour,longshot]:topFour;
+  currentLaunch5=picks;
 
   const cards=picks.map((p,index)=>{
     const score=generatorScore(p).toFixed(1);
@@ -2578,6 +2706,7 @@ function renderLaunch5(players){
       <button class="launch5-full-card" type="button" onclick="setView('top-picks')">VIEW FULL CARD -></button>
     </div>
   `;
+  updateResultsUI();
 }
 let allPlayers=[],period="night",openKey=null,view="by-game",modelGenerated="",slateDate="";
 let homerResultsById=new Map(),homerResultsByGameName=new Map();
@@ -2594,7 +2723,23 @@ function homeRunsForPlayer(p){
 function homerBadge(p){
   const homers=homeRunsForPlayer(p);
   if(homers<=0)return "";
-  return `<span class="homer-badge">${homers>1?`${homers} HOMERS &#128293;`:"HOMER &#10003;"}</span>`;
+  return `<span class="homer-badge">${homers>1?`${homers} HOMERS 🔥`:"HOMER ✅"}</span>`;
+}
+function updateResultsUI(){
+  const boardHitters=(allPlayers||[]).filter(p=>homeRunsForPlayer(p)>0);
+  const totalHomers=boardHitters.reduce((sum,p)=>sum+homeRunsForPlayer(p),0);
+  const cardHits=(currentLaunch5||[]).filter(p=>homeRunsForPlayer(p)>0).length;
+  const set=(id,value)=>{const el=document.getElementById(id);if(el)el.textContent=String(value)};
+  ["preview-card-hits","results-card-hits"].forEach(id=>set(id,cardHits));
+  ["preview-board-hitters","results-board-hitters"].forEach(id=>set(id,boardHitters.length));
+  ["preview-total-homers","results-total-homers"].forEach(id=>set(id,totalHomers));
+  const list=document.getElementById("results-list");
+  if(list){
+    list.innerHTML=boardHitters.length?boardHitters
+      .sort((a,b)=>homeRunsForPlayer(b)-homeRunsForPlayer(a)||generatorScore(b)-generatorScore(a))
+      .map(p=>`<div class="result-row"><span><b>${esc(displayName(p.player))}</b><small>${esc(p.team||"")} • Rank ${esc(p.rank||"—")} • Score ${generatorScore(p).toFixed(1)}</small></span><strong>${homeRunsForPlayer(p)>1?`${homeRunsForPlayer(p)} HOMERS`:"HOMER ✓"}</strong></div>`).join("")
+      :'<div class="empty">Results update automatically as games are played.</div>';
+  }
 }
 async function refreshHomerResults(){
   const gamePks=[...new Set((allPlayers||[]).map(p=>Number(p.game_pk)||0).filter(Boolean))];
@@ -2624,6 +2769,7 @@ async function refreshHomerResults(){
   homerResultsByGameName=byGameName;
   renderLaunch5(allPlayers);
   render();
+  updateResultsUI();
 }
 function gameLocalDate(p){const iso=String(p?.game_datetime_utc||"").trim();if(!iso)return null;const d=new Date(iso);return Number.isNaN(d.getTime())?null:d}
 function formatGameTime(p){const d=gameLocalDate(p);if(d)return new Intl.DateTimeFormat(undefined,{hour:"numeric",minute:"2-digit"}).format(d);return String(p?.game_time||"Time TBD")||"Time TBD"}
@@ -2669,18 +2815,37 @@ function gameLaunchRating(players){
   if(ranked.length===1)return generatorScore(ranked[0]);
   return (generatorScore(ranked[0])+generatorScore(ranked[1]))/2;
 }
+function balancedGamePicks(ranked,count){
+  if(!ranked.length||count<=0)return [];
+  const selected=[ranked[0]];
+  const firstTeam=String(ranked[0].team||"");
+  const opposite=ranked.find(p=>String(p.team||"")!==firstTeam);
+  if(opposite&&count>1)selected.push(opposite);
+  const maxPerTeam=Math.ceil(count/2);
+  for(const p of ranked){
+    if(selected.includes(p))continue;
+    const team=String(p.team||"");
+    const used=selected.filter(x=>String(x.team||"")===team).length;
+    if(used>=maxPerTeam)continue;
+    selected.push(p);
+    if(selected.length>=count)break;
+  }
+  for(const p of ranked){
+    if(selected.length>=count)break;
+    if(!selected.includes(p))selected.push(p);
+  }
+  return selected;
+}
 function selectGamePlayers(players){
   const ranked=rankPlayers(players);
   if(ranked.length<=2)return ranked;
   const topTwoRating=gameLaunchRating(ranked);
   const qualified=ranked.filter(qualifiesGameTarget);
   if(topTwoRating>=64&&qualified.length>=3){
-    const selected=ranked.slice(0,3);
-    ranked.slice(3).filter(qualifiesGameTarget).forEach(p=>{if(selected.length<5)selected.push(p)});
-    return selected;
+    return balancedGamePicks(ranked,Math.min(5,Math.max(3,qualified.length)));
   }
-  if(topTwoRating>=58||qualified.length>=2)return ranked.slice(0,3);
-  return ranked.slice(0,2);
+  if(topTwoRating>=58||qualified.length>=2)return balancedGamePicks(ranked,3);
+  return balancedGamePicks(ranked,2);
 }
 function groups(){
   const map={};
@@ -2701,7 +2866,27 @@ function gamePlayerLabel(player,index,strength){
   return String(player.daily_tier||"MODEL PICK");
 }
 function starterFor(team,ps){return ps.find(p=>p.opponent===team)?.pitcher||"Starter TBD"}
-function field(){return `<svg class="field" viewBox="0 0 210 170" role="img" aria-label="Mini Field Map"><title>Mini Field Map</title><path class="grass" d="M105 160 L18 78 Q105 2 192 78 Z"/><path class="dirt" d="M105 151 L61 111 L105 68 L149 111 Z"/><path class="path" d="M105 150 Q127 58 181 23"/><circle class="ball" cx="181" cy="23" r="5"/></svg>`}
+function field(){return `<svg class="field lp-radar" viewBox="0 0 210 170" role="img" aria-label="Launch trajectory"><title>Launch trajectory</title><g fill="none" stroke="#24b9b6" opacity=".28"><circle cx="108" cy="93" r="28"/><circle cx="108" cy="93" r="50"/><circle cx="108" cy="93" r="72"/><path d="M20 93h176M108 12v150"/></g><text x="108" y="101" text-anchor="middle" fill="#fff" opacity=".08" font-size="28" font-weight="900" font-style="italic">LP</text><path d="M45 145 Q92 62 177 27" fill="none" stroke="#ffc437" stroke-width="3"/><circle cx="45" cy="145" r="3" fill="#ffc437"/><circle cx="177" cy="27" r="7" fill="#ffc437" stroke="#fff0a8" stroke-width="1"/></svg>`}
+
+function weatherIcon(p){
+  const venue=String(p?.venue||"").toLowerCase();
+  const indoor=["tropicana","rogers centre","minute maid","loanDepot","chase field","american family field","globe life field"].some(x=>venue.includes(x.toLowerCase()));
+  const rain=n(p?.rain_probability);
+  if(indoor)return `<svg viewBox="0 0 32 32" aria-label="Indoor venue"><path d="M5 24V13l11-7 11 7v11M9 24V15h14v9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 24v-6h8v6" fill="none" stroke="currentColor" stroke-width="2"/></svg>`;
+  if(rain>=55)return `<svg viewBox="0 0 32 32" aria-label="Rain"><path d="M9 22h14a6 6 0 0 0 0-12 8 8 0 0 0-15 3A5 5 0 0 0 9 22Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m10 25-2 4m8-4-2 4m8-4-2 4" stroke="currentColor" stroke-width="2"/></svg>`;
+  if(rain>=20)return `<svg viewBox="0 0 32 32" aria-label="Cloudy"><path d="M9 24h14a6 6 0 0 0 0-12 8 8 0 0 0-15 3A5 5 0 0 0 9 24Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M18 5a6 6 0 0 1 6 5" fill="none" stroke="currentColor" stroke-width="2"/></svg>`;
+  return `<svg viewBox="0 0 32 32" aria-label="Clear"><circle cx="16" cy="16" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 2v5M16 25v5M2 16h5M25 16h5M6 6l4 4m12 12 4 4M26 6l-4 4M10 22l-4 4" stroke="currentColor" stroke-width="2"/></svg>`;
+}
+function weatherStrip(p){
+  const temp=has(p?.temperature)?`${n(p.temperature).toFixed(0)}°F`:"--°F";
+  const wind=has(p?.wind_speed)?`${n(p.wind_speed).toFixed(0)} MPH`:"PENDING";
+  const direction=String(p?.wind_direction||"").trim();
+  const rain=has(p?.rain_probability)?`${n(p.rain_probability).toFixed(0)}%`:"--";
+  const park=n(p?.park_weather_score);
+  const impact=park>=65?"HR BOOST":park<=40?"PITCHER EDGE":"NEUTRAL";
+  const source=String(p?.weather_source||"FORECAST").toUpperCase();
+  return `<div class="game-weather-strip">${weatherIcon(p)}<span class="weather-temp">${esc(temp)}</span><span class="weather-item">WIND <b>${esc(wind)}${direction?` • ${esc(direction)}`:""}</b></span><span class="weather-item">RAIN <b>${esc(rain)}</b></span><span class="park-impact">PARK IMPACT: ${impact}</span><span class="weather-source">${esc(source)} FORECAST</span></div>`;
+}
 
 function gameMatchupDetails(players){
   if(!players||!players.length)return "";
@@ -2789,7 +2974,7 @@ function render(){
 
       return `
         <article class="game-player-card ${isPrimary?"primary-card":""}" data-list-rank="${i+1}" data-player-card="${esc(x.player)}" tabindex="0" role="button">
-          ${isPrimary?'<div class="primary-badge">&#9733; PRIMARY LAUNCH</div>':""}
+          ${isPrimary?'<div class="primary-badge">⭐ PRIMARY LAUNCH</div>':""}
           <div class="player-photo-wrap">
             <div class="player-rank">${i+1}</div>
             <img class="player-photo"
@@ -2806,7 +2991,7 @@ function render(){
             <div class="player-score-label">${isPrimary?"GENERATOR":"OVERALL SCORE"}</div>
             <div class="player-score">${score}</div>
           </div>
-          <div class="player-footer">${isPrimary?`&#9671; ${tier}`:tag}</div>
+          <div class="player-footer">${isPrimary?`◇ ${tier}`:tag}</div>
         </article>
       `;
     }).join("");
@@ -2823,9 +3008,9 @@ function render(){
         ${expanded?`
           <div class="body">
             <div class="game-meta-row">
-              <div class="game-condition">${p.temperature?`${n(p.temperature).toFixed(0)} deg - Wind ${n(p.wind_speed).toFixed(0)} MPH`:"Conditions pending"}</div>
-              <div class="game-condition ok">${confirmed?"OK LINEUPS CONFIRMED":"LINEUPS PENDING"}</div>
+              <div class="game-condition ok">${confirmed?"LINEUPS CONFIRMED":"LINEUPS PENDING"}</div>
             </div>
+            ${weatherStrip(p)}
 
             <div class="game-pitchers">
               <div class="game-pitcher">
@@ -3037,7 +3222,13 @@ function updateMorePanel(){
 
 const viewNames={"by-game":"ALL GAMES","top-picks":"TOP PICKS","elite":"ELITE PLAYERS","confirmed":"CONFIRMED LINEUPS","watchlist":"MY WATCHLIST"};
 const renderBoard=render;render=function(){renderBoard();const games=document.querySelector("#games");games.insertAdjacentHTML("afterbegin",`<div class="view-heading"><span>${viewNames[view]}</span><b>${viewPlayers().length} PLAYERS</b></div>`);document.querySelectorAll("[data-view]").forEach(b=>b.classList.toggle("active",b.dataset.view===view));addTrendClicks()};
-function setView(next){view=next;openKey=null;document.querySelector("#more-panel").hidden=true;updateMorePanel();render();document.querySelector("#games").scrollIntoView({behavior:"smooth",block:"start"})}
+function setView(next){view=next;openKey=null;document.querySelector("#more-panel").hidden=true;document.querySelector("#results-panel").hidden=true;updateMorePanel();render();document.querySelector("#games").scrollIntoView({behavior:"smooth",block:"start"})}
+function openResults(){
+  updateResultsUI();
+  document.querySelector("#more-panel").hidden=true;
+  document.querySelector("#results-panel").hidden=false;
+}
+document.querySelectorAll("[data-open-results]").forEach(b=>b.onclick=openResults);
 document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>setView(b.dataset.view));
 document.querySelectorAll("[data-period]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-period]").forEach(x=>x.classList.remove("active"));b.classList.add("active");period=b.dataset.period;openKey=null;render()});
 document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
@@ -3046,23 +3237,30 @@ document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
 
   if(b.dataset.bottom==="more"){
     updateMorePanel();
+    document.querySelector("#results-panel").hidden=true;
     document.querySelector("#more-panel").hidden=false;
     return;
   }
 
+  if(b.dataset.bottom==="results"){
+    openResults();
+    return;
+  }
+
   document.querySelector("#more-panel").hidden=true;
+  document.querySelector("#results-panel").hidden=true;
 
   const map={
     "home":"by-game",
     "games":"by-game",
-    "top":"top-picks",
-    "watchlist":"watchlist"
+    "top-picks":"top-picks"
   };
 
   const next=map[b.dataset.bottom]||"by-game";
   setView(next);
 });
 document.querySelector(".more-close").onclick=()=>document.querySelector("#more-panel").hidden=true;updateMorePanel();
+document.querySelector(".results-close").onclick=()=>document.querySelector("#results-panel").hidden=true;
 fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>{
   allPlayers=d.players||[];
   renderLaunch5(allPlayers);
@@ -3110,4 +3308,5 @@ setInterval(()=>{
 })();
 </script>
 
+<!-- LaunchPoint public release: radar graphics, live weather and results UI -->
 </body></html>
