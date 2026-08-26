@@ -3145,7 +3145,8 @@ function renderLaunch5(players){
   const container=document.getElementById("launch5");
   if(!container)return;
 
-  const pool=(players||[]).filter(p=>p&&p.player);
+  const allScored=(players||[]).filter(p=>p&&p.player);
+  const pool=allScored.filter(isSelectionEligible);
   if(!pool.length){
     container.innerHTML='<div class="launch5-empty">Launch 5 is not available yet.</div>';
     return;
@@ -3201,7 +3202,7 @@ function renderLaunch5(players){
     <div class="launch5-card-row">${cards}</div>
     <div class="launch5-summary">
       <div class="launch5-summary-item"><strong>${gamesToday}</strong><span>GAMES TODAY</span></div>
-      <div class="launch5-summary-item"><strong>${pool.length}</strong><span>PLAYERS SCORED</span></div>
+      <div class="launch5-summary-item"><strong>${allScored.length}</strong><span>PLAYERS SCORED</span></div>
       <div class="launch5-summary-item"><strong>${confidence.toFixed(0)}</strong><span>MODEL CONFIDENCE</span></div>
       <div class="launch5-summary-item"><strong>${bestScore.toFixed(0)}</strong><span>TOP SCORE</span></div>
       <button class="launch5-full-card" type="button" onclick="setView('top-picks')">VIEW FULL CARD -></button>
@@ -3297,9 +3298,14 @@ function generatorScore(p){
   if(String(p.lineup_status).toUpperCase()==="CONFIRMED"&&n(p.batting_order)>=1&&n(p.batting_order)<=5)score+=1;
   return Math.max(0,Math.min(100,score));
 }
+function isSelectionEligible(p){
+  if(!p||p.selection_eligible===undefined||p.selection_eligible===null||p.selection_eligible==="")return true;
+  return n(p.selection_eligible)===1;
+}
 function rankPlayers(list){return [...list].sort((a,b)=>generatorScore(b)-generatorScore(a)||n(b.daily_percentile)-n(a.daily_percentile));}
 function viewPlayers(){let source=[...allPlayers];if(view==="top-picks")source=rankPlayers(source).slice(0,10);else if(view==="elite")source=source.filter(p=>String(p.daily_tier).toUpperCase()==="ELITE");else if(view==="confirmed")source=source.filter(p=>String(p.lineup_status).toUpperCase()==="CONFIRMED");else if(view==="watchlist")source=source.filter(p=>watchlist.includes(String(p.player)));return source}
 function qualifiesGameTarget(p){
+  if(!isSelectionEligible(p))return false;
   const tier=String(p.daily_tier||"").toUpperCase();
   const signals=[
     n(p.pitcher_vulnerability)>=60,
@@ -3347,6 +3353,7 @@ function gameCardStrength(players){
   return topTwoRating>=64&&qualified>=3?"strong":topTwoRating>=58||qualified>=2?"average":"weak";
 }
 function gamePlayerLabel(player,index,strength,gamePlayers){
+  if(!isSelectionEligible(player))return "DATA HOLD";
   const teamRank=rankPlayers((gamePlayers||[]).filter(p=>String(p.team||"")===String(player.team||""))).findIndex(p=>String(p.player_id||p.player)===String(player.player_id||player.player))+1;
   if(strength==="weak")return teamRank===1?"BEST AVAILABLE":"SECONDARY OPTION";
   if(index===0)return "PRIMARY LAUNCH";
@@ -3434,7 +3441,7 @@ function gameMatchupDetails(players){
 
 function render(){
   const gs=groups();
-  const top=rankPlayers(allPlayers).slice(0,3);
+  const top=rankPlayers(allPlayers.filter(isSelectionEligible)).slice(0,3);
 
   document.querySelector("#top3").innerHTML=top.map((p,i)=>`
     <div class="top-pick">
@@ -3460,6 +3467,7 @@ function render(){
     const rating=Math.round(gameLaunchRating(matchupPlayers));
     const confirmed=p.lineup_status==="CONFIRMED"||n(p.starter_confirmed)===1;
     const strength=gameCardStrength(matchupPlayers);
+    const primaryCandidate=g.players.find(isSelectionEligible);
 
     const playerCards=g.players.slice(0,5).map((x,i)=>{
       const rawName=String(displayName(x.player)||"");
@@ -3470,7 +3478,7 @@ function render(){
       const mlbId=String(rawId).replace(/\D/g,"");
       const initial=esc(rawName.charAt(0)||"?");
       const tag=esc(gamePlayerLabel(x,i,strength,matchupPlayers));
-      const isPrimary=i===0&&strength!=="weak";
+      const isPrimary=x===primaryCandidate&&strength!=="weak";
       const tier=esc(String(x.daily_tier||x.pick_status||x.raw_classification||"WATCH").toUpperCase());
 
       return `
@@ -3599,7 +3607,7 @@ function render(){
 }
 const has=v=>v!==undefined&&v!==null&&v!=="",num=(v,d=1)=>has(v)?n(v).toFixed(d):"-";
 function metricCard(label,value){return `<span class="metric-card">${label}<b>${num(value)}</b></span>`}
-function trendDetails(p){const change=n(p.percentile_change),raw=String(p.trend||"NEW").replaceAll("_"," "),kind=/RISING|UP/i.test(raw)?"rising":/FALL|DOWN/i.test(raw)?"fall":"new",sign=change>0?"+":"",previous=n(p.daily_percentile)-change,lineup=p.batting_order?`#${p.batting_order}`:(p.lineup_status||"PENDING"),hands=[p.hitter_hand?`${p.hitter_hand} hitter`:"",p.pitcher_hand?`${p.pitcher_hand} pitcher`:""].filter(Boolean).join(" vs "),conditions=[p.temperature?`${num(p.temperature,0)} deg`:"",p.wind_speed?`Wind ${num(p.wind_speed,0)} MPH ${p.wind_direction||""}`:"",has(p.rain_probability)?`Rain ${num(p.rain_probability,0)}%`:"",p.venue||""].filter(Boolean);return `<div class="player-trend" data-player="${esc(p.player)}"><div class="trend-head"><strong>${esc(displayName(p.player))}</strong><span class="trend-badge ${kind}">${esc(raw)}</span></div><div class="detail-title">${esc(p.team||"")} vs ${esc(p.opponent||"")}</div><div class="detail-tags"><span class="best">${esc(p.pick_status||"MODEL PICK")}</span><span class="tier">${esc(p.daily_tier||"TIER PENDING")}</span><span>${esc(p.lineup_status||"LINEUP PENDING")}</span></div><div class="detail-summary"><span>LaunchPoint score<b>${num(p.raw_hr_edge,2)}</b></span><span>Matchup damage<b>${num(p.matchup_damage_score,2)}</b></span><span>Damage confidence<b>${num(p.matchup_damage_confidence,1)}%</b></span><span>Damage lift<b>${n(p.matchup_damage_lift)>=0?'+':''}${num(p.matchup_damage_lift,2)}</b></span></div><div class="matchup-box"><small>TONIGHT'S MATCHUP • ${esc(p.matchup_damage_label||"FIT PENDING")}</small><b>vs ${esc(p.pitcher||"Pitcher TBD")}</b><em>${esc(hands||"Handedness pending")}</em></div><div class="detail-section">MODEL BREAKDOWN</div><div class="metric-grid">${metricCard("Matchup damage",p.matchup_damage_score)}${metricCard("Baseline score",p.baseline_hr_edge)}${metricCard("Statcast power",p.statcast_power)}${metricCard("Pitcher vulnerability",p.pitcher_vulnerability)}${metricCard("Pitch arsenal",p.pitch_arsenal_score)}${metricCard("Recent form",p.recent_form_score)}${metricCard("Bullpen vulnerability",p.bullpen_vulnerability)}${metricCard("Park + weather",p.park_weather_score)}${metricCard("Handedness",p.handedness_score)}${metricCard("Previous percentile",previous)}</div>${conditions.length?`<div class="detail-section">GAME CONDITIONS</div><div class="condition-row">${conditions.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}<p class="detail-note">Tap the player again to close this breakdown.</p></div>`}
+function trendDetails(p){const change=n(p.percentile_change),raw=String(p.trend||"NEW").replaceAll("_"," "),kind=/RISING|UP/i.test(raw)?"rising":/FALL|DOWN/i.test(raw)?"fall":"new",sign=change>0?"+":"",previous=n(p.daily_percentile)-change,lineup=p.batting_order?`#${p.batting_order}`:(p.lineup_status||"PENDING"),hands=[p.hitter_hand?`${p.hitter_hand} hitter`:"",p.pitcher_hand?`${p.pitcher_hand} pitcher`:""].filter(Boolean).join(" vs "),conditions=[p.temperature?`${num(p.temperature,0)} deg`:"",p.wind_speed?`Wind ${num(p.wind_speed,0)} MPH ${p.wind_direction||""}`:"",has(p.rain_probability)?`Rain ${num(p.rain_probability,0)}%`:"",p.venue||""].filter(Boolean),flags=String(p.red_flag_reasons||"").split("|").filter(Boolean).map(x=>x.replaceAll("_"," "));return `<div class="player-trend" data-player="${esc(p.player)}"><div class="trend-head"><strong>${esc(displayName(p.player))}</strong><span class="trend-badge ${kind}">${esc(raw)}</span></div><div class="detail-title">${esc(p.team||"")} vs ${esc(p.opponent||"")}</div><div class="detail-tags"><span class="best">${esc(p.pick_status||"MODEL PICK")}</span><span class="tier">${esc(p.selection_status||p.daily_tier||"TIER PENDING")}</span><span>${esc(p.lineup_status||"LINEUP PENDING")}</span></div><div class="detail-summary"><span>LaunchPoint score<b>${num(p.raw_hr_edge,2)}</b></span><span>Before flags<b>${num(p.model_score_before_flags,2)}</b></span><span>Red-flag penalty<b>-${num(p.red_flag_penalty,2)}</b></span><span>Data completeness<b>${num(p.data_completeness_pct,1)}%</b></span></div>${flags.length?`<div class="detail-tags">${flags.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}<div class="matchup-box"><small>TONIGHT'S MATCHUP • ${esc(p.matchup_damage_label||"FIT PENDING")}</small><b>vs ${esc(p.pitcher||"Pitcher pending")}</b><em>${esc(hands||"Handedness pending")}</em></div><div class="detail-section">MODEL BREAKDOWN</div><div class="metric-grid">${metricCard("Matchup damage",p.matchup_damage_score)}${metricCard("Baseline score",p.baseline_hr_edge)}${metricCard("Statcast power",p.statcast_power)}${metricCard("Pitcher vulnerability",p.pitcher_vulnerability)}${metricCard("Pitch arsenal",p.pitch_arsenal_score)}${metricCard("Recent form",p.recent_form_score)}${metricCard("Bullpen vulnerability",p.bullpen_vulnerability)}${metricCard("Park + weather",p.park_weather_score)}${metricCard("Handedness",p.handedness_score)}${metricCard("Previous percentile",previous)}</div>${conditions.length?`<div class="detail-section">GAME CONDITIONS</div><div class="condition-row">${conditions.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}<p class="detail-note">Tap the player again to close this breakdown.</p></div>`}
 function watchButton(p){const saved=watchlist.includes(String(p.player));return `<button class="watch-toggle ${saved?'saved':''}" data-watch="${esc(p.player)}">${saved?' SAVED TO WATCHLIST':' ADD TO WATCHLIST'}</button>`}
 function toggleWatch(name){const key=String(name);watchlist=watchlist.includes(key)?watchlist.filter(x=>x!==key):[...watchlist,key];localStorage.setItem("launchpoint-watchlist",JSON.stringify(watchlist));if(view==="watchlist")render();else{const p=allPlayers.find(x=>String(x.player)===key),btn=document.querySelector("[data-watch]");if(btn&&p){btn.outerHTML=watchButton(p);bindWatchButtons()}}}
 function bindWatchButtons(){document.querySelectorAll("[data-watch]").forEach(b=>b.onclick=e=>{e.stopPropagation();toggleWatch(b.dataset.watch)})}
