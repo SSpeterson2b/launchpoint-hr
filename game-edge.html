@@ -42,13 +42,13 @@ function render(r){const hold=r.selection_status!=="FINAL READY";const away=num(
 function renderSafe(r){
   const status=String(r.selection_status||'DATA HOLD').toUpperCase();
   const finalReady=status==='FINAL READY', preliminary=status==='PRELIMINARY';
-  const hasProjection=present(r.away_win_probability)&&present(r.home_win_probability)&&present(r.winner_pick);
+  const missing=String(r.missing_inputs||'').split(';').filter(Boolean);
+  const teamContext=!missing.includes('team_or_pitcher_run_context');
+  const hasProjection=teamContext&&present(r.away_win_probability)&&present(r.home_win_probability)&&present(r.winner_pick);
   const pick=hasProjection?r.winner_pick:'';
   const pickHome=pick===r.home_team;
   const win=hasProjection?num(pickHome?r.home_win_probability:r.away_win_probability):0;
   const lose=hasProjection?100-win:0;
-  const missing=String(r.missing_inputs||'').split(';').filter(Boolean);
-  const teamContext=!missing.includes('team_or_pitcher_run_context');
   const starters=!missing.includes('confirmed_starter');
   const lineups=!missing.includes('confirmed_lineups');
   const weather=!missing.includes('live_weather')&&present(r.temperature);
@@ -72,9 +72,9 @@ function renderSafe(r){
     </section>
     <section class="card"><h2>TEAM COMPARISON</h2><div class="compare"><div class="team">${esc(r.away_team)}</div><div class="versus">VS</div><div class="team">${esc(r.home_team)}</div></div>
       <div class="starter-row"><div>STARTER<strong>${esc(r.away_starter||'Pending')}</strong></div><div>VS</div><div>STARTER<strong>${esc(r.home_starter||'Pending')}</strong></div></div>
-      <div class="metrics"><div class="metric"><b>${valueOrPending(r.away_projected_runs)}</b><span>PROJECTED RUNS</span><b>${valueOrPending(r.home_projected_runs)}</b></div><div class="metric"><b>${valueOrPending(r.away_team_offense_score)}</b><span>OFFENSE SCORE</span><b>${valueOrPending(r.home_team_offense_score)}</b></div><div class="metric"><b>${valueOrPending(r.away_starter_run_prevention)}</b><span>STARTER PREVENTION</span><b>${valueOrPending(r.home_starter_run_prevention)}</b></div><div class="metric"><b>${valueOrPending(r.away_staff_run_prevention)}</b><span>STAFF PREVENTION</span><b>${valueOrPending(r.home_staff_run_prevention)}</b></div></div>
+      <div class="metrics"><div class="metric"><b>${teamContext?valueOrPending(r.away_projected_runs):'<span class="pending">DATA PENDING</span>'}</b><span>PROJECTED RUNS</span><b>${teamContext?valueOrPending(r.home_projected_runs):'<span class="pending">DATA PENDING</span>'}</b></div><div class="metric"><b>${teamContext?valueOrPending(r.away_team_offense_score):'<span class="pending">DATA PENDING</span>'}</b><span>OFFENSE SCORE</span><b>${teamContext?valueOrPending(r.home_team_offense_score):'<span class="pending">DATA PENDING</span>'}</b></div><div class="metric"><b>${teamContext?valueOrPending(r.away_starter_run_prevention):'<span class="pending">DATA PENDING</span>'}</b><span>STARTER PREVENTION</span><b>${teamContext?valueOrPending(r.home_starter_run_prevention):'<span class="pending">DATA PENDING</span>'}</b></div><div class="metric"><b>${teamContext?valueOrPending(r.away_staff_run_prevention):'<span class="pending">DATA PENDING</span>'}</b><span>STAFF PREVENTION</span><b>${teamContext?valueOrPending(r.home_staff_run_prevention):'<span class="pending">DATA PENDING</span>'}</b></div></div>
     </section>
-    <section class="card"><h2>TOTAL PROJECTION</h2><div class="total-grid"><div><span>PROJECTED TOTAL</span><b>${totalReady?fmt(r.projected_total):'<span class="pending">PENDING</span>'}</b></div><div><span>MARKET TOTAL</span><b class="market">${marketReady?fmt(r.market_total):'—'}</b></div><div><span>MODEL PICK</span><b>${esc(totalPick)}</b></div><div><span>EDGE</span><b>${totalEdge}</b></div><div><span>STATUS</span><b>${esc(marketReady?(r.total_confidence||'UNAVAILABLE'):'UNAVAILABLE')}</b></div>${!marketReady?'<div class="market-note">OVER/UNDER remains unavailable until a real market total is supplied.</div>':''}</div></section>
+    <section class="card"><h2>TOTAL PROJECTION</h2><div class="total-grid"><div><span>PROJECTED TOTAL</span><b>${teamContext&&totalReady?fmt(r.projected_total):'<span class="pending">PENDING</span>'}</b></div><div><span>MARKET TOTAL</span><b class="market">${marketReady?fmt(r.market_total):'—'}</b></div><div><span>MODEL PICK</span><b>${esc(teamContext?totalPick:'DATA HOLD')}</b></div><div><span>EDGE</span><b>${teamContext?totalEdge:'—'}</b></div><div><span>STATUS</span><b>${esc(teamContext&&marketReady?(r.total_confidence||'UNAVAILABLE'):'UNAVAILABLE')}</b></div>${!marketReady?'<div class="market-note">OVER/UNDER remains unavailable until a real market total is supplied.</div>':''}</div></section>
     <section class="card"><h2>${hasProjection?'WHY '+esc(pick).toUpperCase():'WHY THE MODEL IS WAITING'}</h2><div class="reasons">${scoreReasons(r,pick)}</div></section>
     <section class="card"><h2>MODEL CHECKS</h2><div class="checks">${check(teamContext,'TEAM DATA '+fmt(r.data_completeness_pct)+'%')}${check(starters,'STARTERS CONFIRMED')}${check(weather,'WEATHER LIVE')}${check(lineups,'LINEUPS CONFIRMED')}</div></section>`;
 }
