@@ -3068,7 +3068,7 @@ html,body{background:#000!important}
     <div class="results-list" id="results-list"><div class="empty">Results update automatically as games are played.</div></div>
   </div>
 </section>
-<nav class="bottom"><button class="active" data-bottom="home">HOME <small>HOME</small></button><button data-bottom="games">GAMES <small>GAMES</small></button><button data-bottom="top-picks">TOP <small>TOP PICKS</small></button><button data-bottom="results">RESULTS <small>RESULTS</small></button><button data-bottom="more">...<small>MORE</small></button></nav></main>
+<nav class="bottom"><button class="active" data-bottom="home">HOME <small>HOME</small></button><button data-bottom="hr-picks">HR PICKS <small>HR PICKS</small></button><button data-bottom="game-edge">GAME EDGE <small>GAME EDGE</small></button><button data-bottom="results">RESULTS <small>RESULTS</small></button><button data-bottom="more">...<small>MORE</small></button></nav></main>
 <script>
 const lpHeadshotCache={};
 
@@ -3743,6 +3743,11 @@ document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
   document.querySelectorAll("[data-bottom]").forEach(x=>x.classList.remove("active"));
   b.classList.add("active");
 
+  if(b.dataset.bottom==="game-edge"){
+    window.location.href="game-edge.html";
+    return;
+  }
+
   if(b.dataset.bottom==="more"){
     updateMorePanel();
     document.querySelector("#results-panel").hidden=true;
@@ -3760,8 +3765,7 @@ document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
 
   const map={
     "home":"by-game",
-    "games":"by-game",
-    "top-picks":"top-picks"
+    "hr-picks":"top-picks"
   };
 
   const next=map[b.dataset.bottom]||"by-game";
