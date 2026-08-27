@@ -3547,6 +3547,7 @@ function render(){
   document.querySelectorAll(".game-head").forEach(b=>{
     b.onclick=()=>{
       openKey=openKey===b.dataset.key?null:b.dataset.key;
+      if(openKey)sessionStorage.setItem("launchpoint-selected-game",String(openKey));
       render();
     };
   });
@@ -3744,7 +3745,8 @@ document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
   b.classList.add("active");
 
   if(b.dataset.bottom==="game-edge"){
-    window.location.href="game-edge.html";
+    const selected=openKey||sessionStorage.getItem("launchpoint-selected-game")||"";
+    window.location.href=`game-edge.html${selected?`?game_pk=${encodeURIComponent(selected)}`:""}`;
     return;
   }
 
