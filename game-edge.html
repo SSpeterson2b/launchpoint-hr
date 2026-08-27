@@ -78,7 +78,15 @@ function renderSafe(r){
     <section class="card"><h2>${hasProjection?'WHY '+esc(pick).toUpperCase():'WHY THE MODEL IS WAITING'}</h2><div class="reasons">${scoreReasons(r,pick)}</div></section>
     <section class="card"><h2>MODEL CHECKS</h2><div class="checks">${check(teamContext,'TEAM DATA '+fmt(r.data_completeness_pct)+'%')}${check(starters,'STARTERS CONFIRMED')}${check(weather,'WEATHER LIVE')}${check(lineups,'LINEUPS CONFIRMED')}</div></section>`;
 }
-let games=[];async function load(){for(const url of ['data/daily_game_predictions.csv','daily_game_predictions.csv']){try{const res=await fetch(url+'?ts='+Date.now());if(!res.ok)continue;games=csv(await res.text());if(games.length)break}catch(e){}}if(!games.length){$('#ready').textContent='NOT READY';$('#screen').innerHTML='<div class="empty">Today’s Game Edge file has not been published yet.</div>';return}renderSafe(games[0]);$('#game-list').innerHTML='<h2>OTHER MATCHUPS</h2>'+games.map((g,i)=>`<button class="game-row" data-i="${i}"><b>${esc(g.away_team)} vs ${esc(g.home_team)}</b><span>${esc(g.selection_status)} · ${esc(g.venue)}</span></button>`).join('');document.querySelectorAll('.game-row').forEach(b=>b.onclick=()=>{renderSafe(games[+b.dataset.i]);scrollTo({top:0,behavior:'smooth'})})}load();
+function selectGame(index,updateUrl=true){
+  const game=games[index]||games[0];
+  if(!game)return;
+  const gamePk=String(game.game_pk||'');
+  if(gamePk)sessionStorage.setItem('launchpoint-selected-game',gamePk);
+  if(updateUrl&&gamePk)history.replaceState(null,'',`game-edge.html?game_pk=${encodeURIComponent(gamePk)}`);
+  renderSafe(game);
+}
+let games=[];async function load(){for(const url of ['data/daily_game_predictions.csv','daily_game_predictions.csv']){try{const res=await fetch(url+'?ts='+Date.now());if(!res.ok)continue;games=csv(await res.text());if(games.length)break}catch(e){}}if(!games.length){$('#ready').textContent='NOT READY';$('#screen').innerHTML='<div class="empty">Today’s Game Edge file has not been published yet.</div>';return}const requested=new URLSearchParams(location.search).get('game_pk')||sessionStorage.getItem('launchpoint-selected-game')||'';const selectedIndex=Math.max(0,games.findIndex(g=>String(g.game_pk)===String(requested)));selectGame(selectedIndex,false);$('#game-list').innerHTML='<h2>OTHER MATCHUPS</h2>'+games.map((g,i)=>`<button class="game-row" data-i="${i}"><b>${esc(g.away_team)} vs ${esc(g.home_team)}</b><span>${esc(g.selection_status)} · ${esc(g.venue)}</span></button>`).join('');document.querySelectorAll('.game-row').forEach(b=>b.onclick=()=>{selectGame(+b.dataset.i);scrollTo({top:0,behavior:'smooth'})})}load();
 </script>
 <script>
 // Keep Game Edge current while the page remains open.
