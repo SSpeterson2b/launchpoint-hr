@@ -3465,7 +3465,13 @@ function render(){
     const teams=[p.team,p.opponent];
     const expanded=g.key===openKey;
     const rating=Math.round(gameLaunchRating(matchupPlayers));
-    const confirmed=p.lineup_status==="CONFIRMED"||n(p.starter_confirmed)===1;
+    const confirmedTeams=new Set(
+      matchupPlayers
+        .filter(player=>String(player.lineup_status||"").toUpperCase()==="CONFIRMED")
+        .map(player=>String(player.team||"").trim())
+        .filter(Boolean)
+    );
+    const confirmed=confirmedTeams.size>=2;
     const strength=gameCardStrength(matchupPlayers);
     const primaryCandidate=g.players.find(isSelectionEligible);
 
