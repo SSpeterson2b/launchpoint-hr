@@ -488,7 +488,7 @@ button{font:inherit;cursor:pointer}
 /* TABS */
 .tabs{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(5,1fr);
   gap:6px;
   margin:0 0 12px;
 }
@@ -2964,7 +2964,7 @@ html,body{background:#000!important}
 </section>
 <div class="lp-content-grid">
   <div class="lp-main-column">
-<nav class="tabs"><button class="active" data-view="by-game">BY GAME</button><button data-view="top-picks">TOP PICKS</button><button data-view="elite">ELITE</button><button data-view="confirmed">CONFIRMED</button></nav><section id="games"><div class="empty">Loading today's matchups...</div></section>
+<nav class="tabs"><button class="active" data-view="by-game">BY GAME</button><button data-view="top-picks">TOP PICKS</button><button data-view="eligible">ELIGIBLE</button><button data-view="elite">ELITE</button><button data-view="confirmed">CONFIRMED</button></nav><section id="games"><div class="empty">Loading today's matchups...</div></section>
   </div>
   <aside class="lp-side-column">
     <section class="lp-side-card">
@@ -3302,8 +3302,14 @@ function isSelectionEligible(p){
   if(!p||p.selection_eligible===undefined||p.selection_eligible===null||p.selection_eligible==="")return true;
   return n(p.selection_eligible)===1;
 }
+function isFullyEligible(p){
+  if(!p)return false;
+  if(p.selection_eligible!==undefined&&p.selection_eligible!==null&&p.selection_eligible!=="")return n(p.selection_eligible)===1;
+  const status=String(p.selection_status||p.eligibility_status||"").trim().toUpperCase();
+  return status==="ELIGIBLE"||status==="FINAL READY";
+}
 function rankPlayers(list){return [...list].sort((a,b)=>generatorScore(b)-generatorScore(a)||n(b.daily_percentile)-n(a.daily_percentile));}
-function viewPlayers(){let source=[...allPlayers];if(view==="top-picks")source=rankPlayers(source).slice(0,10);else if(view==="elite")source=source.filter(p=>String(p.daily_tier).toUpperCase()==="ELITE");else if(view==="confirmed")source=source.filter(p=>String(p.lineup_status).toUpperCase()==="CONFIRMED");else if(view==="watchlist")source=source.filter(p=>watchlist.includes(String(p.player)));return source}
+function viewPlayers(){let source=[...allPlayers];if(view==="top-picks")source=rankPlayers(source).slice(0,10);else if(view==="eligible")source=rankPlayers(source.filter(isFullyEligible));else if(view==="elite")source=source.filter(p=>String(p.daily_tier).toUpperCase()==="ELITE");else if(view==="confirmed")source=source.filter(p=>String(p.lineup_status).toUpperCase()==="CONFIRMED");else if(view==="watchlist")source=source.filter(p=>watchlist.includes(String(p.player)));return source}
 function qualifiesGameTarget(p){
   if(!isSelectionEligible(p))return false;
   const tier=String(p.daily_tier||"").toUpperCase();
@@ -3344,7 +3350,7 @@ function groups(){
   viewPlayers().forEach(p=>(map[keyFor(p)]??=[]).push(p));
   return Object.entries(map).map(([key,players])=>{
     const allPlayers=rankPlayers(players);
-    return {key,allPlayers,players:view==="by-game"?selectGamePlayers(allPlayers):allPlayers.slice(0,5)};
+    return {key,allPlayers,players:view==="by-game"?selectGamePlayers(allPlayers):view==="eligible"?allPlayers:allPlayers.slice(0,5)};
   });
 }
 function gameCardStrength(players){
@@ -3453,7 +3459,9 @@ function render(){
   const shown=gs.filter(g=>gamePeriod(g.players[0])===period);
 
   if(!shown.length){
-    document.querySelector("#games").innerHTML='<div class="empty">No games in this time window yet.</div>';
+    document.querySelector("#games").innerHTML=view==="eligible"
+      ?'<div class="empty">No fully eligible hitters yet. This list will update after the required lineup, starter, weather, and model data are verified.</div>'
+      :'<div class="empty">No games in this time window yet.</div>';
     return;
   }
 
@@ -3475,7 +3483,8 @@ function render(){
     const strength=gameCardStrength(matchupPlayers);
     const primaryCandidate=g.players.find(isSelectionEligible);
 
-    const playerCards=g.players.slice(0,5).map((x,i)=>{
+    const displayedPlayers=view==="eligible"?g.players:g.players.slice(0,5);
+    const playerCards=displayedPlayers.map((x,i)=>{
       const rawName=String(displayName(x.player)||"");
       const playerName=esc(rawName);
       const team=esc(x.team||"");
@@ -3734,7 +3743,7 @@ function updateMorePanel(){
   }
 }
 
-const viewNames={"by-game":"ALL GAMES","top-picks":"TOP PICKS","elite":"ELITE PLAYERS","confirmed":"CONFIRMED LINEUPS","watchlist":"MY WATCHLIST"};
+const viewNames={"by-game":"ALL GAMES","top-picks":"TOP PICKS","eligible":"ALL ELIGIBLE HITTERS","elite":"ELITE PLAYERS","confirmed":"CONFIRMED LINEUPS","watchlist":"MY WATCHLIST"};
 const renderBoard=render;render=function(){renderBoard();const games=document.querySelector("#games");games.insertAdjacentHTML("afterbegin",`<div class="view-heading"><span>${viewNames[view]}</span><b>${viewPlayers().length} PLAYERS</b></div>`);document.querySelectorAll("[data-view]").forEach(b=>b.classList.toggle("active",b.dataset.view===view));addTrendClicks()};
 function setView(next){view=next;openKey=null;document.querySelector("#more-panel").hidden=true;document.querySelector("#results-panel").hidden=true;updateMorePanel();render();document.querySelector("#games").scrollIntoView({behavior:"smooth",block:"start"})}
 function openResults(){
