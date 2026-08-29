@@ -3011,7 +3011,7 @@ html,body{background:#000!important}
   </div>
 
   <div class="more-stats">
-    <span>MODEL VERSION<b>HR Edge 3.1</b></span>
+    <span>MODEL VERSION<b id="more-model-version">HR Edge 3.3</b></span>
     <span>DAILY PLAYER POOL<b id="more-player-count">0 players</b></span>
     <span>SLATE DATE<b id="more-slate-date">Pending</b></span>
     <span>LAST UPDATE<b id="more-updated">Pending</b></span>
@@ -3230,7 +3230,7 @@ function renderLaunch5(players){
   updateResultsUI();
 }
 const currentHour=new Date().getHours();
-let allPlayers=[],period=currentHour<15?"early":currentHour<19?"afternoon":"night",openKey=null,view="by-game",modelGenerated="",slateDate="";
+let allPlayers=[],period=currentHour<15?"early":currentHour<19?"afternoon":"night",openKey=null,view="by-game",modelGenerated="",slateDate="",modelVersion="HR Edge 3.3";
 let homerResultsById=new Map(),homerResultsByGameName=new Map(),gameEdgeResults=[];
 let watchlist=[];try{watchlist=JSON.parse(localStorage.getItem("launchpoint-watchlist")||"[]")}catch(e){watchlist=[]}
 const n=v=>Number(v)||0, esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -3785,11 +3785,13 @@ function updateDashboardUI(){
 }
 
 function updateMorePanel(){
+  const versionEl=document.getElementById("more-model-version");
   const countEl=document.getElementById("more-player-count");
   const dateEl=document.getElementById("more-slate-date");
   const updatedEl=document.getElementById("more-updated");
   const resultsEl=document.getElementById("more-results-copy");
 
+  if(versionEl)versionEl.textContent=modelVersion||"HR Edge 3.3";
   if(countEl)countEl.textContent=(allPlayers?.length||0)+" players";
 
   const first=allPlayers&&allPlayers.length?allPlayers[0]:null;
@@ -3874,6 +3876,7 @@ document.querySelector(".more-close").onclick=()=>document.querySelector("#more-
 document.querySelector(".results-close").onclick=()=>document.querySelector("#results-panel").hidden=true;
 fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>{
   allPlayers=d.players||[];
+  modelVersion=d.model_version||"HR Edge 3.3";
   renderLaunch5(allPlayers);
   updateDashboardUI();
   updateMorePanel();
