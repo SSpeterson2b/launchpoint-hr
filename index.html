@@ -2408,6 +2408,15 @@ html,body{background:#000!important}
 .results-total b{display:block;font-size:24px;color:#fff}.results-total span{font-size:8px;color:#83a5b5;letter-spacing:.1em}
 .results-list{display:grid;gap:8px}.result-row{display:grid;grid-template-columns:1fr auto;gap:12px;padding:12px 14px;border:1px solid #224451;border-radius:9px;background:#041017}
 .result-row b{font-size:13px}.result-row small{display:block;color:#7896a5;margin-top:3px}.result-row strong{color:var(--lp-gold);font-size:11px}
+.results-section-title{margin:22px 0 10px;padding-top:18px;border-top:1px solid #244554;color:#a8bdc8;font-size:14px;letter-spacing:.12em}
+.game-results-date{color:#7fa4b7;font-size:10px;font-weight:900;letter-spacing:.1em;margin-bottom:9px}
+.game-results-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}
+.game-result-stat{padding:11px 7px;border:1px solid #234454;border-radius:9px;background:#06131c;text-align:center}
+.game-result-stat b{display:block;color:#fff;font-size:19px}.game-result-stat span{color:#83a5b5;font-size:7px;letter-spacing:.08em}
+.game-result-row{display:grid;grid-template-columns:1fr auto;gap:10px;padding:12px 13px;border:1px solid #224451;border-radius:9px;background:#041017;margin-bottom:8px}
+.game-result-row b{font-size:13px}.game-result-row small{display:block;color:#7896a5;margin-top:4px;line-height:1.35}
+.game-result-badges{display:grid;gap:5px;align-content:center;text-align:right}.result-badge{font-size:9px;font-weight:950;letter-spacing:.06em}
+.result-badge.hit{color:#7ce63b}.result-badge.miss{color:#ff6b72}.result-badge.push{color:#ffbb21}.result-badge.ungraded{color:#7896a5}
 .bottom button[data-bottom="results"]{color:#7896a5}.bottom button[data-bottom="results"].active{color:var(--lp-gold)!important}
 @media(max-width:560px){
   .results-preview{grid-template-columns:28px 1fr auto;padding:12px 11px;gap:8px}
@@ -2417,6 +2426,7 @@ html,body{background:#000!important}
   .game-player-card.primary-card:after{width:94px;height:94px;right:7%}
   .game-player-card.primary-card:before{width:94px;right:4%}
   .results-totals{grid-template-columns:1fr 1fr}.results-total:last-child{grid-column:1/-1}
+  .game-results-grid{grid-template-columns:1fr 1fr}
 }
 
 /* APPROVED PUBLIC DESIGN — hard override of legacy themes */
@@ -3066,6 +3076,15 @@ html,body{background:#000!important}
       <div class="results-total"><b id="results-total-homers">0</b><span>HOME RUNS TRACKED</span></div>
     </div>
     <div class="results-list" id="results-list"><div class="empty">Results update automatically as games are played.</div></div>
+    <h3 class="results-section-title">GAME EDGE RESULTS</h3>
+    <div class="game-results-date" id="game-results-date">Waiting for completed games</div>
+    <div class="game-results-grid">
+      <div class="game-result-stat"><b id="game-winner-record">0-0</b><span>WINNER RECORD</span></div>
+      <div class="game-result-stat"><b id="game-winner-accuracy">—</b><span>WINNER ACCURACY</span></div>
+      <div class="game-result-stat"><b id="game-total-record">0-0</b><span>TOTALS H-M</span></div>
+      <div class="game-result-stat"><b id="game-total-pushes">0</b><span>TOTAL PUSHES</span></div>
+    </div>
+    <div id="game-results-list"><div class="empty">Game Edge grades appear after games become final.</div></div>
   </div>
 </section>
 <nav class="bottom"><button class="active" data-bottom="home">HOME <small>HOME</small></button><button data-bottom="hr-picks">HR PICKS <small>HR PICKS</small></button><button data-bottom="game-edge">GAME EDGE <small>GAME EDGE</small></button><button data-bottom="results">RESULTS <small>RESULTS</small></button><button data-bottom="more">...<small>MORE</small></button></nav></main>
@@ -3212,7 +3231,7 @@ function renderLaunch5(players){
 }
 const currentHour=new Date().getHours();
 let allPlayers=[],period=currentHour<15?"early":currentHour<19?"afternoon":"night",openKey=null,view="by-game",modelGenerated="",slateDate="";
-let homerResultsById=new Map(),homerResultsByGameName=new Map();
+let homerResultsById=new Map(),homerResultsByGameName=new Map(),gameEdgeResults=[];
 let watchlist=[];try{watchlist=JSON.parse(localStorage.getItem("launchpoint-watchlist")||"[]")}catch(e){watchlist=[]}
 const n=v=>Number(v)||0, esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const displayName=name=>{const p=String(name||"").split(",");return p.length>1?`${p[1].trim()} ${p[0].trim()}`:name||"Unknown"};
@@ -3243,6 +3262,68 @@ function updateResultsUI(){
       .map(p=>`<div class="result-row"><span><b>${esc(displayName(p.player))}</b><small>${esc(p.team||"")} • Rank ${esc(p.rank||"—")} • Score ${generatorScore(p).toFixed(1)}</small></span><strong>${homeRunsForPlayer(p)>1?`${homeRunsForPlayer(p)} HOMERS`:"HOMER ✓"}</strong></div>`).join("")
       :'<div class="empty">Results update automatically as games are played.</div>';
   }
+}
+function parseGameResultsCsv(text){
+  const rows=[];let row=[],cell="",quoted=false;
+  for(let i=0;i<text.length;i++){
+    const char=text[i],next=text[i+1];
+    if(char==='"'&&quoted&&next==='"'){cell+='"';i++}
+    else if(char==='"')quoted=!quoted;
+    else if(char===','&&!quoted){row.push(cell);cell=""}
+    else if((char==='\n'||char==='\r')&&!quoted){if(char==='\r'&&next==='\n')i++;row.push(cell);if(row.some(value=>value!==""))rows.push(row);row=[];cell=""}
+    else cell+=char;
+  }
+  if(cell||row.length){row.push(cell);rows.push(row)}
+  const headers=rows.shift()||[];
+  return rows.map(values=>Object.fromEntries(headers.map((header,index)=>[header,values[index]??""])));
+}
+function gameResultClass(value){
+  const result=String(value||"").toUpperCase();
+  if(result==="HIT")return "hit";
+  if(result==="MISS")return "miss";
+  if(result==="PUSH"||result==="NO PLAY")return "push";
+  return "ungraded";
+}
+function renderGameEdgeResults(){
+  const set=(id,value)=>{const element=document.getElementById(id);if(element)element.textContent=String(value)};
+  const list=document.getElementById("game-results-list");
+  const dateElement=document.getElementById("game-results-date");
+  if(!list||!dateElement)return;
+  const dates=[...new Set(gameEdgeResults.map(row=>String(row.game_date||"")).filter(Boolean))].sort();
+  const latestDate=dates.at(-1)||"";
+  const rows=gameEdgeResults.filter(row=>String(row.game_date||"")===latestDate);
+  if(!rows.length){
+    dateElement.textContent="Waiting for completed games";
+    list.innerHTML='<div class="empty">Game Edge grades appear after games become final.</div>';
+    return;
+  }
+  const winnerHits=rows.filter(row=>row.winner_result==="HIT").length;
+  const winnerMisses=rows.filter(row=>row.winner_result==="MISS").length;
+  const totalHits=rows.filter(row=>row.total_result==="HIT").length;
+  const totalMisses=rows.filter(row=>row.total_result==="MISS").length;
+  const pushes=rows.filter(row=>row.total_result==="PUSH").length;
+  const winnerGames=winnerHits+winnerMisses;
+  set("game-winner-record",`${winnerHits}-${winnerMisses}`);
+  set("game-winner-accuracy",winnerGames?`${(winnerHits/winnerGames*100).toFixed(1)}%`:"—");
+  set("game-total-record",`${totalHits}-${totalMisses}`);
+  set("game-total-pushes",pushes);
+  const displayDate=new Date(`${latestDate}T12:00:00`);
+  dateElement.textContent=`FINAL RESULTS · ${displayDate.toLocaleDateString([], {month:"short",day:"numeric",year:"numeric"}).toUpperCase()}`;
+  list.innerHTML=rows
+    .sort((a,b)=>String(a.game_datetime_utc||"").localeCompare(String(b.game_datetime_utc||"")))
+    .map(row=>{
+      const market=row.market_total?` · Market ${esc(row.market_total)}`:"";
+      const totalLabel=row.total_pick?`${esc(row.total_pick)} ${esc(row.total_result)}`:esc(row.total_result||"UNGRADED");
+      return `<div class="game-result-row"><span><b>${esc(row.away_team)} ${esc(row.actual_away_runs)} — ${esc(row.actual_home_runs)} ${esc(row.home_team)}</b><small>Winner pick: ${esc(row.winner_pick)} · ${esc(row.winner_confidence||"")}<br>Projected total: ${esc(row.projected_total||"—")}${market}</small></span><span class="game-result-badges"><strong class="result-badge ${gameResultClass(row.winner_result)}">WINNER ${esc(row.winner_result)}</strong><strong class="result-badge ${gameResultClass(row.total_result)}">${totalLabel}</strong></span></div>`;
+    }).join("");
+}
+async function loadGameEdgeResults(){
+  try{
+    const response=await fetch("data/game_edge_results.csv?ts="+Date.now());
+    if(!response.ok)throw new Error("results unavailable");
+    gameEdgeResults=parseGameResultsCsv(await response.text());
+  }catch(error){gameEdgeResults=[]}
+  renderGameEdgeResults();
 }
 async function refreshHomerResults(){
   const gamePks=[...new Set((allPlayers||[]).map(p=>Number(p.game_pk)||0).filter(Boolean))];
@@ -3748,6 +3829,7 @@ const renderBoard=render;render=function(){renderBoard();const games=document.qu
 function setView(next){view=next;openKey=null;document.querySelector("#more-panel").hidden=true;document.querySelector("#results-panel").hidden=true;updateMorePanel();render();document.querySelector("#games").scrollIntoView({behavior:"smooth",block:"start"})}
 function openResults(){
   updateResultsUI();
+  renderGameEdgeResults();
   document.querySelector("#more-panel").hidden=true;
   document.querySelector("#results-panel").hidden=false;
 }
@@ -3802,8 +3884,12 @@ fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>
   refreshHomerResults();
 }).catch(()=>{document.querySelector("#games").innerHTML='<div class="empty">Today\'s model data is not available yet.</div>'});
 
+loadGameEdgeResults();
+if(location.hash==="#results")setTimeout(openResults,0);
+
 setInterval(()=>{
   if(allPlayers.length) refreshHomerResults();
+  loadGameEdgeResults();
 },300000);
 </script>
 <script>
