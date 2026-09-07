@@ -3200,6 +3200,41 @@ body{background:radial-gradient(circle at 50% -10%,#073756 0,#01111e 34%,#00080e
   .game-player-card:not(.primary-card){min-height:68px!important;grid-template-columns:74px minmax(0,1fr)!important}.game-player-card:not(.primary-card) .player-photo-wrap{width:74px!important;height:66px!important}.game-player-card:not(.primary-card) .row-team-logo{width:34px!important;height:34px!important;top:15px!important}.game-player-card:not(.primary-card) .player-photo{width:48px!important;height:64px!important}.game-player-card:not(.primary-card) .player-card-body{padding:0 9px!important}.game-player-card:not(.primary-card) .player-name{font-size:15px!important;gap:6px!important}.player-profile-badge{min-width:78px!important;padding:6px 7px!important;font-size:9px!important}
 }
 
+/* Reference-photo correction: compact enough to show a complete game card */
+.game-player-card:not(.primary-card):before{display:none!important}
+.game-player-card.primary-card .primary-badge{position:relative!important;z-index:5!important}
+.game-player-card.primary-card .row-team-logo{display:none!important}
+
+@media(max-width:560px){
+  .game{margin-bottom:10px!important}
+  .game-head{min-height:84px!important;padding:10px 9px 8px!important}
+  .game-matchup-title>span{font-size:17px!important;line-height:1.02!important}.team-logo{width:38px!important;height:38px!important}
+  .game-subline{margin-top:7px!important}.game-subline>span,.game-subline em{font-size:9px!important}
+  .game .body{padding:6px!important}
+  .game-weather-strip{min-height:56px!important;margin-bottom:6px!important;padding:7px 8px!important;grid-template-columns:25px 48px minmax(0,1fr) auto!important;gap:5px!important}
+  .game-weather-strip>svg:not(.rain-icon){width:24px!important;height:24px!important}.weather-temp{font-size:19px!important}
+  .game-weather-strip>.weather-item:not(.rain-item),.game-weather-strip>.weather-item:not(.rain-item) b{font-size:9px!important;line-height:1.15!important}
+  .game-weather-strip .rain-item,.game-weather-strip .rain-item b{font-size:9px!important}.game-weather-strip .rain-icon{width:12px!important;height:17px!important}
+  .park-impact{padding:4px 5px!important;font-size:8px!important;border-radius:6px!important}
+  .stadium-profile{min-height:112px!important;margin:6px 0!important;border-radius:8px!important}
+  .stadium-profile svg{top:1px!important;width:160px!important;height:108px!important}.stadium-profile-copy{min-height:96px!important}
+  .stadium-profile-copy b{right:6px!important;bottom:16px!important;font-size:9px!important}.stadium-chips{right:6px!important}.stadium-chips .wind-effect{font-size:8px!important}
+  .game-pitchers{gap:6px!important;margin:6px 0!important}.game-pitcher{min-height:58px!important;grid-template-columns:49px minmax(0,1fr)!important;border-radius:7px!important}
+  .pitcher-photo,.pitcher-photo-fallback{width:49px!important;height:57px!important}.pitcher-copy small{font-size:8.5px!important;line-height:1.1!important}.pitcher-copy b{font-size:12px!important;line-height:1.12!important}.pitcher-hand{margin-top:2px!important;font-size:9px!important}
+  .game-player-row{gap:5px!important}
+  .game-player-card.primary-card{min-height:118px!important;padding:9px 8px!important;border-radius:8px!important}
+  .game-player-card.primary-card .primary-badge{font-size:14px!important;line-height:1!important}
+  .game-player-card.primary-card .player-photo-wrap{left:7px!important;bottom:0!important;width:78px!important;height:92px!important}
+  .game-player-card.primary-card .player-card-body{margin-left:74px!important;max-width:calc(100% - 74px)!important}
+  .game-player-card.primary-card .player-name{padding-top:27px!important;font-size:21px!important;gap:4px!important}
+  .game-player-card.primary-card .homer-badge{padding:4px 6px!important;border-radius:6px!important;font-size:10px!important}
+  .game-player-card:not(.primary-card){min-height:49px!important;grid-template-columns:57px minmax(0,1fr)!important;border-radius:7px!important}
+  .game-player-card:not(.primary-card) .player-photo-wrap{width:57px!important;height:47px!important}.game-player-card:not(.primary-card) .row-team-logo{left:5px!important;top:10px!important;width:27px!important;height:27px!important}.game-player-card:not(.primary-card) .player-photo{width:37px!important;height:46px!important}
+  .game-player-card:not(.primary-card) .player-card-body{padding:0 7px!important}.game-player-card:not(.primary-card) .player-name{font-size:12px!important;gap:4px!important}
+  .player-profile-badge{min-width:64px!important;padding:4px 5px!important;border-radius:6px!important;font-size:7.5px!important}
+  .bottom{height:64px!important}.bottom button{font-size:10px!important}.bottom small{font-size:8px!important}
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -3951,7 +3986,7 @@ function render(){
     const strength=gameCardStrength(matchupPlayers);
     const primaryCandidate=g.players.find(isSelectionEligible);
 
-    const displayedPlayers=view==="eligible"?g.players:g.players.slice(0,5);
+    const displayedPlayers=view==="eligible"?g.players:g.players.slice(0,4);
     const playerCards=displayedPlayers.map((x,i)=>{
       const rawName=String(displayName(x.player)||"");
       const playerName=esc(rawName);
