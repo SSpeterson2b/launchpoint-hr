@@ -2993,6 +2993,114 @@ html,body{background:#000!important}
   .game-player-card.primary-card .player-name{font-size:24px!important;padding-top:17px!important}
 }
 
+/* ==========================================================
+   LAUNCHPOINT READABLE SCORECARD — SEPTEMBER 2026
+   Compact MLB broadcast hierarchy for phones and desktop.
+   ========================================================== */
+body,.shell,button{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important}
+.shell{color:#f4f8fa!important;line-height:1.4!important}
+.hero{
+  min-height:72px!important;padding:14px 16px 12px!important;
+  background:linear-gradient(115deg,#071922,#0b2a24)!important;
+  border-bottom:1px solid #2d5967!important;
+}
+.hero-center{display:none!important}
+.brand-copy h1{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important;font-size:23px!important;letter-spacing:-.02em!important}
+.brand-copy p{font-size:12px!important;letter-spacing:.02em!important;text-transform:none!important}
+.model-meta{margin-top:8px!important;font-size:12px!important;color:#a9c1cc!important;letter-spacing:0!important}
+.live{font-size:12px!important;padding:7px 10px!important}
+.lp-status-strip{gap:8px!important;padding:10px!important}
+.lp-status{min-height:54px!important;padding:9px!important}
+.lp-status strong{font-size:15px!important}.lp-status span{font-size:12px!important;letter-spacing:0!important;text-transform:none!important}
+.periods{gap:6px!important;margin:10px 0!important}
+.periods button{min-height:52px!important;border-radius:10px!important}
+.periods b{font-size:14px!important}.periods small{font-size:12px!important}
+.top3{padding:12px!important;border-radius:12px!important}
+.top3 .label{font-size:13px!important;letter-spacing:.03em!important}
+.top-pick span{font-size:15px!important}
+.launch5-section{padding:14px!important;border-radius:14px!important}
+.launch5-section .section-title h3{font-family:inherit!important;font-size:20px!important;letter-spacing:-.01em!important}
+.launch5-card-row{display:flex!important;gap:10px!important;overflow-x:auto!important;scroll-snap-type:x proximity;padding-bottom:5px!important}
+.launch5-card{flex:0 0 158px!important;min-height:108px!important;scroll-snap-align:start!important;border-radius:10px!important}
+.launch5-card .launch5-card-body{min-height:108px!important;padding:32px 12px 12px!important}
+.launch5-card .launch5-player{font-size:16px!important;line-height:1.18!important;white-space:normal!important}
+.launch5-trajectory{display:none!important}
+.launch5-card-footer{font-size:12px!important;padding:8px!important}
+.launch5-summary-item span{font-size:12px!important;letter-spacing:0!important}.launch5-summary-item strong{font-size:20px!important}
+.results-preview{min-height:76px!important;padding:12px 14px!important}
+.results-preview-copy small,.results-preview-stats>span,.results-preview button{font-size:12px!important;letter-spacing:0!important}
+.results-preview-stats b{font-size:20px!important}
+.tabs{height:auto!important;gap:6px!important;padding:4px!important}
+.tabs button{min-height:44px!important;font-size:13px!important;letter-spacing:0!important}
+.game{margin-bottom:14px!important;border-radius:14px!important;background:#041017!important}
+.game-head{padding:15px 16px!important;background:#091923!important}
+.game-head b{font-size:22px!important;line-height:1.2!important;letter-spacing:-.02em!important}
+.game-subline{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;margin-top:8px!important}
+.game-subline>span,.game-subline em{font-size:13px!important;letter-spacing:0!important;line-height:1.3!important}
+.game-subline em{padding:4px 7px!important;border-radius:999px!important;background:#07312e!important}
+.game .body{padding:12px!important}
+.game-weather-strip{
+  min-height:0!important;padding:12px!important;margin:0 0 10px!important;gap:8px 10px!important;
+  border-radius:11px!important;background:#071923!important;
+}
+.game-weather-strip .weather-source{font-size:12px!important;letter-spacing:.04em!important}
+.weather-temp{font-size:20px!important}.weather-item,.weather-item b{font-size:13px!important;line-height:1.25!important}
+.park-impact{font-size:12px!important;padding:7px 9px!important}
+.stadium-profile{grid-template-columns:82px 1fr!important;gap:12px!important;margin:0 0 10px!important;padding:10px 12px!important}
+.stadium-profile svg{width:82px!important;height:70px!important}
+.stadium-profile-copy small{font-size:12px!important;letter-spacing:.04em!important}
+.stadium-profile-copy b{font-size:17px!important;margin:2px 0 7px!important}
+.stadium-chips{gap:6px!important}.stadium-chips span{font-size:12px!important;padding:5px 8px!important}
+.game-pitcher{min-height:62px!important;padding:10px 12px!important}
+.game-pitcher small{font-size:12px!important;letter-spacing:0!important}.game-pitcher b{font-size:16px!important;line-height:1.3!important}
+.pitcher-hand{font-size:11px!important;padding:3px 6px!important}
+.game-player-row{gap:7px!important}
+.game-player-card.primary-card{min-height:158px!important;padding:15px 16px!important}
+.game-player-card.primary-card .primary-badge{font-family:inherit!important;font-size:15px!important;letter-spacing:.03em!important}
+.game-player-card.primary-card .player-card-body{max-width:72%!important}
+.game-player-card.primary-card .player-name{font-size:27px!important;line-height:1.15!important;padding-top:14px!important;white-space:normal!important}
+.game-player-card.primary-card .lp-radar{width:33%!important;height:118px!important;top:34px!important;right:6px!important;opacity:.72!important}
+.game-player-card:not(.primary-card){min-height:60px!important;grid-template-columns:52px minmax(0,1fr)!important}
+.game-player-card:not(.primary-card):before{font-size:22px!important}
+.game-player-card:not(.primary-card) .player-name{font-size:17px!important;line-height:1.25!important;white-space:normal!important}
+.player-profile-badge{font-size:11px!important;padding:4px 7px!important;letter-spacing:.03em!important}
+.homer-badge{font-size:12px!important;line-height:1!important}
+.game-footer button{min-height:48px!important;font-size:14px!important;letter-spacing:.02em!important}
+.bottom button{font-size:13px!important}.bottom small{font-size:11px!important;letter-spacing:0!important}
+
+@media(max-width:560px){
+  .shell{padding:8px 8px 86px!important}
+  .hero{min-height:66px!important;padding:11px 10px!important}.brand-mark{width:42px!important;height:42px!important}.brand-copy h1{font-size:20px!important}.brand-copy p{font-size:11px!important}
+  .model-meta{font-size:11px!important}.live{font-size:11px!important}
+  .lp-status-strip{grid-template-columns:repeat(3,1fr)!important}.lp-status:nth-child(n+4){display:none!important}
+  .lp-status strong{font-size:14px!important}.lp-status span{font-size:11px!important}
+  .periods b{font-size:13px!important}.periods small{font-size:11px!important}
+  .top3 .label{font-size:12px!important}.top-pick span{font-size:14px!important}
+  .launch5-section{padding:12px 10px!important}.launch5-card{flex-basis:150px!important}
+  .launch5-card .launch5-card-body{min-height:102px!important}.launch5-card .launch5-player{font-size:15px!important}
+  .launch5-summary{grid-template-columns:1fr 1fr!important}.launch5-summary-item span{font-size:11px!important}
+  .results-preview{grid-template-columns:28px 1fr auto!important}.results-preview-icon{width:26px!important;height:26px!important}
+  .results-preview-copy small,.results-preview-stats>span,.results-preview button{font-size:11px!important}
+  .tabs button{font-size:12px!important}
+  .game-head{padding:13px 12px!important}.game-head b{font-size:20px!important}
+  .game-subline{align-items:flex-start!important}.game-subline>span,.game-subline em{font-size:12px!important}.game-subline>span{max-width:none!important;white-space:normal!important}
+  .game .body{padding:9px!important}
+  .game-weather-strip{display:grid!important;grid-template-columns:32px 64px minmax(0,1fr)!important;padding:10px!important}
+  .game-weather-strip .weather-source{position:static!important;grid-column:1/-1!important;font-size:12px!important}
+  .game-weather-strip>svg:not(.rain-icon){grid-column:1!important;grid-row:2!important;width:28px!important;height:28px!important}
+  .weather-temp{grid-column:2!important;grid-row:2!important;font-size:19px!important}
+  .game-weather-strip>.weather-item:not(.rain-item){grid-column:3!important;grid-row:2!important;font-size:12px!important}.game-weather-strip>.weather-item:not(.rain-item) b{font-size:12px!important}
+  .game-weather-strip .rain-item{grid-column:1/3!important;grid-row:3!important;font-size:12px!important}.game-weather-strip .rain-item b{font-size:12px!important}
+  .park-impact{grid-column:3!important;grid-row:3!important;justify-self:end!important;font-size:11px!important}
+  .stadium-profile{grid-template-columns:70px 1fr!important;padding:9px!important}.stadium-profile svg{width:70px!important;height:62px!important}
+  .stadium-profile-copy small{font-size:11px!important}.stadium-profile-copy b{font-size:16px!important}.stadium-chips span{font-size:10px!important}
+  .game-pitchers{gap:7px!important}.game-pitcher{padding:9px!important}.game-pitcher small{font-size:11px!important}.game-pitcher b{font-size:15px!important}
+  .game-player-card.primary-card{min-height:146px!important;padding:13px!important}.game-player-card.primary-card .primary-badge{font-size:14px!important}.game-player-card.primary-card .player-name{font-size:24px!important;padding-top:11px!important}.game-player-card.primary-card .lp-radar{height:105px!important;top:35px!important}
+  .game-player-card:not(.primary-card){min-height:58px!important}.game-player-card:not(.primary-card) .player-name{font-size:16px!important}
+  .player-profile-badge{font-size:10px!important}.homer-badge{font-size:11px!important}
+  .bottom{height:70px!important}.bottom button{font-size:12px!important}.bottom small{font-size:10px!important}
+}
+
 </style>
 
 </head><body><main class="shell">
