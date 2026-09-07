@@ -3558,12 +3558,12 @@ function windFieldEffect(p){
   return {label:"FIELD DIRECTION PENDING",kind:"cross",arrow:"•",flow:"pending"};
 }
 function fieldWindArrow(wind){
-  const style='fill="none" stroke="#ff9b52" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"';
-  if(wind.flow==="out")return `<g aria-label="Wind blowing toward the outfield"><path d="M75 83V20" ${style}/><path d="M66 31 75 20l9 11" ${style}/></g>`;
-  if(wind.flow==="in")return `<g aria-label="Wind blowing toward home plate"><path d="M75 20v63" ${style}/><path d="m66 72 9 11 9-11" ${style}/></g>`;
-  if(wind.flow==="ltr")return `<g aria-label="Wind blowing left to right"><path d="M27 51h96" ${style}/><path d="m112 42 11 9-11 9" ${style}/></g>`;
-  if(wind.flow==="rtl")return `<g aria-label="Wind blowing right to left"><path d="M123 51H27" ${style}/><path d="m38 42-11 9 11 9" ${style}/></g>`;
-  if(wind.flow==="cross")return `<g aria-label="Crosswind"><path d="M30 51h90" ${style}/><path d="m40 42-10 9 10 9m70-18 10 9-10 9" ${style}/></g>`;
+  const style='fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"';
+  if(wind.flow==="out")return `<g aria-label="Wind blowing toward the outfield"><path d="M75 72V34" ${style}/><path d="m69 42 6-8 6 8" ${style}/></g>`;
+  if(wind.flow==="in")return `<g aria-label="Wind blowing toward home plate"><path d="M75 34v38" ${style}/><path d="m69 64 6 8 6-8" ${style}/></g>`;
+  if(wind.flow==="ltr")return `<g aria-label="Wind blowing left to right"><path d="M45 51h60" ${style}/><path d="m97 45 8 6-8 6" ${style}/></g>`;
+  if(wind.flow==="rtl")return `<g aria-label="Wind blowing right to left"><path d="M105 51H45" ${style}/><path d="m53 45-8 6 8 6" ${style}/></g>`;
+  if(wind.flow==="cross")return `<g aria-label="Crosswind"><path d="M48 51h54" ${style}/><path d="m55 45-7 6 7 6m40-12 7 6-7 6" ${style}/></g>`;
   return "";
 }
 function stadiumField(p){
