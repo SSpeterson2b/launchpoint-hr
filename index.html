@@ -2913,6 +2913,81 @@ html,body{background:#000!important}
   .game-player-card:not(.primary-card) .player-footer{font-size:7px!important;padding:5px 3px!important}
 }
 
+/* ==========================================================
+   LAUNCHPOINT MLB FIELD PROFILE — PUBLIC CLARITY UPDATE
+   Keep model numbers private; show clear baseball signals.
+   ========================================================== */
+.shell{
+  background:
+    linear-gradient(rgba(2,9,6,.91),rgba(2,9,6,.96)),
+    repeating-linear-gradient(102deg,#123d21 0 22px,#0c321a 22px 44px)!important;
+}
+.shell:after{
+  content:"";
+  position:fixed;
+  left:50%;bottom:64px;
+  width:min(520px,96vw);height:min(520px,96vw);
+  transform:translateX(-50%) rotate(45deg);
+  border:1px solid rgba(113,220,142,.08);
+  border-radius:18% 70% 18% 70%;
+  pointer-events:none;
+  z-index:0;
+}
+.shell>*:not(.bottom):not(.more-panel):not(.results-panel){position:relative;z-index:1}
+.hero{
+  background:
+    radial-gradient(ellipse at 50% 106%,rgba(178,127,64,.48) 0 10%,transparent 10.5%),
+    linear-gradient(135deg,transparent 47%,rgba(236,239,220,.15) 47.5% 48%,transparent 48.5%),
+    linear-gradient(45deg,transparent 47%,rgba(236,239,220,.15) 47.5% 48%,transparent 48.5%),
+    repeating-linear-gradient(102deg,#144626 0 25px,#0d391e 25px 50px)!important;
+}
+.hero-title{font-family:Impact,"Arial Narrow",sans-serif;letter-spacing:.055em}
+.launch5-score-label,.launch5-main-score,
+.game-player-card .player-score-label,.game-player-card .player-score{display:none!important}
+.launch5-card-footer{color:#fff!important}
+.launch5-card-body{padding-bottom:12px!important}
+.top-pick span b{display:none!important}
+.player-profile-badge{
+  display:inline-flex;align-items:center;justify-content:center;
+  margin-left:6px;padding:3px 7px;border:1px solid currentColor;border-radius:999px;
+  font-size:8px;font-weight:950;line-height:1;letter-spacing:.08em;white-space:nowrap;vertical-align:middle;
+}
+.player-profile-badge.strong{color:#ffc437;background:#2a2108}
+.player-profile-badge.value{color:#55dfff;background:#072833}
+.player-profile-badge.sleeper{color:#a5f06f;background:#132a0d}
+.player-profile-badge.hold{color:#aeb8bc;background:#192126}
+.game-player-card:not(.primary-card){grid-template-columns:49px minmax(0,1fr) 88px!important}
+.game-player-card:not(.primary-card) .player-footer{font-size:8px!important}
+.game-player-card.primary-card .player-name{max-width:100%!important}
+.game-player-card.primary-card .player-card-body{max-width:62%!important}
+.game-player-card.primary-card .player-footer{margin-top:28px!important}
+.stadium-profile{
+  display:grid;grid-template-columns:112px 1fr;gap:10px;align-items:center;
+  margin:10px 0;padding:10px;border:1px solid #28515e;border-radius:12px;
+  background:linear-gradient(135deg,#06141a,#07100c);overflow:hidden;
+}
+.stadium-profile svg{width:112px;height:88px;display:block}
+.stadium-profile-copy small{display:block;color:#6fdbe8;font-size:7px;font-weight:950;letter-spacing:.13em}
+.stadium-profile-copy b{display:block;margin:4px 0 7px;color:#fff;font-size:13px}
+.stadium-chips{display:flex;flex-wrap:wrap;gap:5px}
+.stadium-chips span{padding:5px 7px;border:1px solid #315a46;border-radius:999px;background:#0a1b12;color:#a8d9b3;font-size:7px;font-weight:900}
+.wind-effect{color:#fff!important}
+.wind-effect.out{color:#8bf07a!important}.wind-effect.in{color:#ffad69!important}.wind-effect.cross{color:#74dff4!important}
+.game-footer{grid-template-columns:1fr!important}
+.game-footer>span{display:none!important}
+.game-footer button{text-align:center}
+.lp-status-strip .lp-status:nth-child(5),
+.lp-side-card:first-child .lp-side-stat:last-child,
+.lp-confidence-ring,.lp-confidence-copy{display:none!important}
+.lp-intel-card strong,.lp-list-row .score{display:none!important}
+.game-matchup-grid span:nth-child(2){display:none!important}
+.detail-summary,.metric-grid{display:none!important}
+@media(max-width:560px){
+  .stadium-profile{grid-template-columns:94px 1fr}.stadium-profile svg{width:94px;height:76px}
+  .game-player-card.primary-card{min-height:205px!important}
+  .game-player-card.primary-card .player-name{font-size:24px!important;padding-top:17px!important}
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -2936,7 +3011,7 @@ html,body{background:#000!important}
 </section>
 <section class="lp-status-strip">
   <div class="lp-status live-stat"><strong>MODEL LIVE</strong><span>Daily engine active</span></div>
-  <div class="lp-status"><strong id="lp-player-count">--</strong><span>Players scored</span></div>
+  <div class="lp-status"><strong id="lp-player-count">--</strong><span>Players evaluated</span></div>
   <div class="lp-status"><strong id="lp-game-count">--</strong><span>Games today</span></div>
   <div class="lp-status"><strong id="lp-hit-rate">--</strong><span>Top 5 hit rate</span></div>
   <div class="lp-status"><strong id="lp-confidence-label">--</strong><span>Model confidence</span></div>
@@ -2974,14 +3049,14 @@ html,body{background:#000!important}
 </section>
 <div class="lp-content-grid">
   <div class="lp-main-column">
-<nav class="tabs"><button class="active" data-view="by-game">BY GAME</button><button data-view="top-picks">TOP PICKS</button><button data-view="eligible">ELIGIBLE</button><button data-view="elite">ELITE</button><button data-view="confirmed">CONFIRMED</button></nav><section id="games"><div class="empty">Loading today's matchups...</div></section>
+<nav class="tabs"><button class="active" data-view="by-game">BY GAME</button><button data-view="top-picks">3.3 SWEET SPOT</button><button data-view="eligible">ELIGIBLE</button><button data-view="elite">ELITE</button><button data-view="confirmed">CONFIRMED</button></nav><section id="games"><div class="empty">Loading today's matchups...</div></section>
   </div>
   <aside class="lp-side-column">
     <section class="lp-side-card">
       <div class="lp-side-head">TODAY'S SLATE</div>
       <div class="lp-side-body">
         <div class="lp-side-stat"><span>Games Today</span><b id="side-games">--</b></div>
-        <div class="lp-side-stat"><span>Players Scored</span><b id="side-players">--</b></div>
+        <div class="lp-side-stat"><span>Players Evaluated</span><b id="side-players">--</b></div>
         <div class="lp-side-stat"><span>Top Score</span><b id="side-top-score">--</b></div>
       </div>
     </section>
@@ -3035,10 +3110,10 @@ html,body{background:#000!important}
   <details>
     <summary>How to Read LaunchPoint</summary>
     <p>
-      LaunchPoint Score is the model's overall home-run matchup score.
-      Daily Percentile shows where a player ranks versus the full daily player pool.
-      Generator Score combines the model's power, matchup and opportunity signals.
-      Trend Change shows whether a player's daily position is rising or falling.
+      Strong identifies the clearest complete matchup profile. Value identifies a
+      favorable profile outside the headline names. Sleeper highlights a lower-profile
+      hitter whose power, pitch fit or opportunity deserves attention. Model scores stay
+      private so the public board remains simple and easy to read.
     </p>
   </details>
 
@@ -3187,43 +3262,30 @@ function renderLaunch5(players){
   currentLaunch5=picks;
 
   const cards=picks.map((p,index)=>{
-    const score=generatorScore(p).toFixed(1);
     const isLongshot=index===4;
     const playerName=esc(displayName(p.player));
-    const team=esc(p.team||"");
-    const opponent=esc(p.opponent||"");
+    const profile=playerPublicProfile(p,isLongshot);
 
     return `
       <article class="launch5-card ${isLongshot?"longshot":""}">
-        ${isLongshot?'<div class="launch5-longshot-badge">LONG SHOT</div>':""}
+        ${isLongshot?'<div class="launch5-longshot-badge">SLEEPER</div>':""}
         <div class="launch5-card-body" data-rank="${index+1}">
-          <div class="launch5-player">${playerName}${homerBadge(p)}</div>
+          <div class="launch5-player">${playerName}${homerBadge(p)}<span class="player-profile-badge ${profile.kind}">${profile.label}</span></div>
           ${launchArc()}
-          <div class="launch5-team">${team}</div>
-          <div class="launch5-opponent">vs ${opponent}</div>
-          <div class="launch5-score-label">OVERALL SCORE</div>
-          <div class="launch5-main-score">${score}</div>
         </div>
-        <div class="launch5-card-footer">${isLongshot?"MATCHUP LONG SHOT":"TOP TARGET"}</div>
+        <div class="launch5-card-footer">${profile.label}</div>
       </article>
     `;
   }).join("");
 
   const gamesToday=new Set(pool.map(p=>p.game_pk||keyFor(p)).filter(Boolean)).size;
-  const confidence=picks.length
-    ? picks.reduce((sum,p)=>sum+generatorScore(p),0)/picks.length
-    : 0;
-  const bestScore=picks.length
-    ? Math.max(...picks.map(p=>generatorScore(p)))
-    : 0;
-
   container.innerHTML=`
     <div class="launch5-card-row">${cards}</div>
     <div class="launch5-summary">
       <div class="launch5-summary-item"><strong>${gamesToday}</strong><span>GAMES TODAY</span></div>
-      <div class="launch5-summary-item"><strong>${allScored.length}</strong><span>PLAYERS SCORED</span></div>
-      <div class="launch5-summary-item"><strong>${confidence.toFixed(0)}</strong><span>MODEL CONFIDENCE</span></div>
-      <div class="launch5-summary-item"><strong>${bestScore.toFixed(0)}</strong><span>TOP SCORE</span></div>
+      <div class="launch5-summary-item"><strong>${allScored.length}</strong><span>PLAYERS EVALUATED</span></div>
+      <div class="launch5-summary-item"><strong>${picks.filter(p=>playerPublicProfile(p).label==="STRONG").length}</strong><span>STRONG PROFILES</span></div>
+      <div class="launch5-summary-item"><strong>${picks.filter(p=>playerPublicProfile(p).label!=="STRONG").length}</strong><span>VALUE / SLEEPER</span></div>
       <button class="launch5-full-card" type="button" onclick="setView('top-picks')">VIEW FULL CARD -></button>
     </div>
   `;
@@ -3259,7 +3321,7 @@ function updateResultsUI(){
   if(list){
     list.innerHTML=boardHitters.length?boardHitters
       .sort((a,b)=>homeRunsForPlayer(b)-homeRunsForPlayer(a)||generatorScore(b)-generatorScore(a))
-      .map(p=>`<div class="result-row"><span><b>${esc(displayName(p.player))}</b><small>${esc(p.team||"")} • Rank ${esc(p.rank||"—")} • Score ${generatorScore(p).toFixed(1)}</small></span><strong>${homeRunsForPlayer(p)>1?`${homeRunsForPlayer(p)} HOMERS`:"HOMER ✓"}</strong></div>`).join("")
+      .map(p=>`<div class="result-row"><span><b>${esc(displayName(p.player))}</b><small>${esc(p.team||"")} • Rank ${esc(p.rank||"—")} • ${playerPublicProfile(p).label}</small></span><strong>${homeRunsForPlayer(p)>1?`${homeRunsForPlayer(p)} HOMERS`:"HOMER ✓"}</strong></div>`).join("")
       :'<div class="empty">Results update automatically as games are played.</div>';
   }
 }
@@ -3390,7 +3452,18 @@ function isFullyEligible(p){
   return status==="ELIGIBLE"||status==="FINAL READY";
 }
 function rankPlayers(list){return [...list].sort((a,b)=>generatorScore(b)-generatorScore(a)||n(b.daily_percentile)-n(a.daily_percentile));}
-function viewPlayers(){let source=[...allPlayers];if(view==="top-picks")source=rankPlayers(source).slice(0,10);else if(view==="eligible")source=rankPlayers(source.filter(isFullyEligible));else if(view==="elite")source=source.filter(p=>String(p.daily_tier).toUpperCase()==="ELITE");else if(view==="confirmed")source=source.filter(p=>String(p.lineup_status).toUpperCase()==="CONFIRMED");else if(view==="watchlist")source=source.filter(p=>watchlist.includes(String(p.player)));return source}
+function sweetSpotPlayers(){
+  return rankPlayers(allPlayers).filter(p=>{
+    const modelRank=n(p.rank);
+    const tier=String(p.daily_tier||p.pick_status||"").trim().toUpperCase();
+    const lineup=String(p.lineup_status||"").trim().toUpperCase();
+    const order=n(p.batting_order);
+    return modelRank>=6&&modelRank<=50&&
+      (tier==="STRONG"||tier==="VALUE")&&
+      isFullyEligible(p)&&lineup==="CONFIRMED"&&order>=1&&order<=6;
+  });
+}
+function viewPlayers(){let source=[...allPlayers];if(view==="top-picks")source=sweetSpotPlayers();else if(view==="eligible")source=rankPlayers(source.filter(isFullyEligible));else if(view==="elite")source=source.filter(p=>String(p.daily_tier).toUpperCase()==="ELITE");else if(view==="confirmed")source=source.filter(p=>String(p.lineup_status).toUpperCase()==="CONFIRMED");else if(view==="watchlist")source=source.filter(p=>watchlist.includes(String(p.player)));return source}
 function qualifiesGameTarget(p){
   if(!isSelectionEligible(p))return false;
   const tier=String(p.daily_tier||"").toUpperCase();
@@ -3440,16 +3513,67 @@ function gameCardStrength(players){
   return topTwoRating>=64&&qualified>=3?"strong":topTwoRating>=58||qualified>=2?"average":"weak";
 }
 function gamePlayerLabel(player,index,strength,gamePlayers){
-  if(!isSelectionEligible(player))return "DATA HOLD";
-  const teamRank=rankPlayers((gamePlayers||[]).filter(p=>String(p.team||"")===String(player.team||""))).findIndex(p=>String(p.player_id||p.player)===String(player.player_id||player.player))+1;
-  if(strength==="weak")return teamRank===1?"BEST AVAILABLE":"SECONDARY OPTION";
-  if(index===0)return "PRIMARY LAUNCH";
-  if(teamRank===1)return "TEAM LEADER";
-  return qualifiesGameTarget(player)?String(player.daily_tier||"SECONDARY OPTION"):"SECONDARY OPTION";
+  return playerPublicProfile(player).label;
+}
+function playerPublicProfile(player,forceSleeper=false){
+  if(!isSelectionEligible(player))return {label:"DATA PENDING",kind:"hold"};
+  if(forceSleeper)return {label:"SLEEPER",kind:"sleeper"};
+  const tier=String(player?.daily_tier||player?.raw_classification||"").trim().toUpperCase();
+  const rank=n(player?.rank);
+  if(tier==="ELITE"||tier==="STRONG")return {label:"STRONG",kind:"strong"};
+  if(tier==="VALUE"||(rank>=6&&rank<=50))return {label:"VALUE",kind:"value"};
+  return {label:"SLEEPER",kind:"sleeper"};
 }
 function starterFor(team,ps){return ps.find(p=>p.opponent===team)?.pitcher||"Starter TBD"}
 function displayVenue(value){const venue=String(value||"").trim();return !venue||/^UNKNOWN$/i.test(venue)?"":venue}
 function field(){return `<svg class="field lp-radar" viewBox="0 0 210 170" role="img" aria-label="Launch trajectory"><title>Launch trajectory</title><g fill="none" stroke="#24b9b6" opacity=".28"><circle cx="108" cy="93" r="28"/><circle cx="108" cy="93" r="50"/><circle cx="108" cy="93" r="72"/><path d="M20 93h176M108 12v150"/></g><text x="108" y="101" text-anchor="middle" fill="#fff" opacity=".08" font-size="28" font-weight="900" font-style="italic">LP</text><path d="M45 145 Q92 62 177 27" fill="none" stroke="#ffc437" stroke-width="3"/><circle cx="45" cy="145" r="3" fill="#ffc437"/><g transform="translate(177 27)"><circle r="8.5" fill="#f7e7b1" stroke="#ffc437" stroke-width="1.3"/><path d="M-5.5 -6.2 C-2.1 -3.2 -2.1 3.2 -5.5 6.2 M5.5 -6.2 C2.1 -3.2 2.1 3.2 5.5 6.2" fill="none" stroke="#9a5e24" stroke-width="1.1" stroke-linecap="round"/></g></svg>`}
+
+const LP_PARK_HAND={
+  "yankee stadium":"LHB",
+  "fenway park":"RHB",
+  "daikin park":"RHB",
+  "minute maid park":"RHB",
+  "oracle park":"LHB"
+};
+function parkHandProfile(p){
+  const direct=String(p?.park_hand_advantage||p?.park_hand_edge||"").trim().toUpperCase();
+  if(["LHB","RHB","BALANCED","NEUTRAL"].includes(direct))return direct==="NEUTRAL"?"BALANCED":direct;
+  return LP_PARK_HAND[String(p?.venue||"").trim().toLowerCase()]||"BALANCED";
+}
+function parkLean(p){
+  const direct=String(p?.park_lean||"").trim().toUpperCase();
+  if(direct)return direct;
+  const score=n(p?.park_score||p?.park_weather_score);
+  return score>=65?"HITTER FRIENDLY":score<=45?"PITCHER FRIENDLY":"NEUTRAL";
+}
+function windFieldEffect(p){
+  const direct=String(p?.wind_field_effect||p?.wind_effect||"").trim().toUpperCase();
+  const raw=String(p?.wind_direction||"").trim().toUpperCase();
+  const value=direct||raw;
+  if(/OUT/.test(value))return {label:"BLOWING OUT",kind:"out",arrow:"↑"};
+  if(/IN/.test(value))return {label:"BLOWING IN",kind:"in",arrow:"↓"};
+  if(/CROSS|LEFT|RIGHT/.test(value))return {label:"CROSSWIND",kind:"cross",arrow:"↔"};
+  return {label:"FIELD DIRECTION PENDING",kind:"cross",arrow:"•"};
+}
+function stadiumField(p){
+  const venue=displayVenue(p?.venue)||"Ballpark pending";
+  const hand=parkHandProfile(p);
+  const lean=parkLean(p);
+  const wind=windFieldEffect(p);
+  const left=hand==="RHB"?"M28 70 Q30 26 75 10":"M28 70 Q20 30 75 10";
+  const right=hand==="LHB"?"M75 10 Q120 26 122 70":"M75 10 Q130 30 122 70";
+  return `<div class="stadium-profile">
+    <svg viewBox="0 0 150 105" role="img" aria-label="${esc(venue)} field outline">
+      <defs><linearGradient id="grass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1c6a36"/><stop offset="1" stop-color="#0b351d"/></linearGradient></defs>
+      <path d="M75 94 18 48 Q18 18 75 4 Q132 18 132 48Z" fill="url(#grass)" stroke="#78c990" stroke-width="2"/>
+      <path d="M75 91 43 59 75 28 107 59Z" fill="#9a7041" opacity=".9" stroke="#ead8a8"/>
+      <path d="M75 91 75 28M43 59 107 59" stroke="#f4f1dc" opacity=".7"/>
+      <path d="${left} ${right}" fill="none" stroke="#ffc437" stroke-width="2.4" stroke-linecap="round"/>
+      <circle cx="75" cy="91" r="3" fill="#fff"/>
+    </svg>
+    <div class="stadium-profile-copy"><small>STADIUM FIELD PROFILE</small><b>${esc(venue)}</b><div class="stadium-chips"><span>${esc(hand)} PARK EDGE</span><span>${esc(lean)}</span><span class="wind-effect ${wind.kind}">${wind.arrow} ${wind.label}</span></div></div>
+  </div>`;
+}
 
 function weatherIcon(p){
   const venue=String(p?.venue||"").toLowerCase();
@@ -3476,11 +3600,8 @@ function weatherStrip(p){
   const rain=!missingFallback&&has(p?.rain_probability)?`${n(p.rain_probability).toFixed(0)}%`:"TBD";
   const park=n(p?.park_weather_score);
   const impact=park>=65?"HR BOOST":park<=40?"PITCHER EDGE":"NEUTRAL";
-  const d=direction.toUpperCase();
-  const arrow=d.includes("OUT")?"↑":d.includes("IN")?"↓":d.includes("LEFT")?"↖":d.includes("RIGHT")?"↗":d.startsWith("N")?"↓":d.startsWith("S")?"↑":d.startsWith("E")?"←":d.startsWith("W")?"→":"→";
-  const directionLabel=!missingFallback&&direction?direction:"TBD";
-  const windArrow=missingFallback?"":arrow;
-  return `<div class="game-weather-strip"><span class="weather-source">${esc(source)} FORECAST</span>${weatherIcon(p)}<span class="weather-temp">${esc(temp)}</span><span class="weather-item">WIND <b>${esc(wind)} ${windArrow} ${esc(directionLabel)}</b></span><span class="weather-item rain-item">${rainIcon()}<span>RAIN <b>${esc(rain)}</b></span></span><span class="park-impact">PARK IMPACT: ${impact}</span></div>`;
+  const fieldWind=windFieldEffect(p);
+  return `<div class="game-weather-strip"><span class="weather-source">${esc(source)} FORECAST</span>${weatherIcon(p)}<span class="weather-temp">${esc(temp)}</span><span class="weather-item">WIND <b class="wind-effect ${fieldWind.kind}">${esc(wind)} ${fieldWind.arrow} ${fieldWind.label}</b></span><span class="weather-item rain-item">${rainIcon()}<span>RAIN <b>${esc(rain)}</b></span></span><span class="park-impact">PARK IMPACT: ${impact}</span></div>`;
 }
 
 function gameMatchupDetails(players){
@@ -3533,7 +3654,7 @@ function render(){
   document.querySelector("#top3").innerHTML=top.map((p,i)=>`
     <div class="top-pick">
       <strong>${i+1}</strong>
-      <span>${esc(displayName(p.player))}${homerBadge(p)}<b>${generatorScore(p).toFixed(1)}</b></span>
+      <span>${esc(displayName(p.player))}${homerBadge(p)}<i class="player-profile-badge ${playerPublicProfile(p).kind}">${playerPublicProfile(p).label}</i></span>
     </div>
   `).join("");
 
@@ -3542,6 +3663,8 @@ function render(){
   if(!shown.length){
     document.querySelector("#games").innerHTML=view==="eligible"
       ?'<div class="empty">No fully eligible hitters yet. This list will update after the required lineup, starter, weather, and model data are verified.</div>'
+      :view==="top-picks"
+      ?'<div class="empty">No 3.3 Sweet Spot hitters are qualified yet. This list updates when lineups are confirmed.</div>'
       :'<div class="empty">No games in this time window yet.</div>';
     return;
   }
@@ -3569,20 +3692,19 @@ function render(){
       const rawName=String(displayName(x.player)||"");
       const playerName=esc(rawName);
       const team=esc(x.team||"");
-      const score=generatorScore(x).toFixed(0);
       const rawId=x.mlb_id||x.player_id||x.batter_id||"";
       const mlbId=String(rawId).replace(/\D/g,"");
       const initial=esc(rawName.charAt(0)||"?");
-      const tag=esc(gamePlayerLabel(x,i,strength,matchupPlayers));
+      const profile=playerPublicProfile(x);
       const isPrimary=x===primaryCandidate&&strength!=="weak";
-      const tier=esc(String(x.daily_tier||x.pick_status||x.raw_classification||"WATCH").toUpperCase());
+      const handMatch=[x.hitter_hand?`${x.hitter_hand}HB`:"",x.pitcher_hand?`vs ${x.pitcher_hand}HP`:""].filter(Boolean).join(" ");
 
       return `
-        <article class="game-player-card ${isPrimary?"primary-card":""}" data-list-rank="${i+1}" data-player-card="${esc(x.player)}" tabindex="0" role="button">
-          ${isPrimary?'<div class="primary-badge">⭐ PRIMARY LAUNCH</div>':""}
+        <article class="game-player-card ${isPrimary?"primary-card":""}" data-list-rank="${esc(x.rank||i+1)}" data-player-card="${esc(x.player)}" tabindex="0" role="button">
+          ${isPrimary?'<div class="primary-badge">⭐ FEATURED PROFILE</div>':""}
           ${isPrimary?field():""}
           <div class="player-photo-wrap">
-            <div class="player-rank">${i+1}</div>
+            <div class="player-rank">${esc(x.rank||i+1)}</div>
             <img class="player-photo"
                  data-player-name="${esc(rawName)}"
                  data-mlb-id="${mlbId}"
@@ -3592,12 +3714,10 @@ function render(){
             <div class="player-photo-fallback" style="display:none">${initial}</div>
           </div>
           <div class="player-card-body">
-            <div class="player-name">${playerName}${homerBadge(x)}</div>
+            <div class="player-name">${playerName}${homerBadge(x)}<span class="player-profile-badge ${profile.kind}">${profile.label}</span></div>
             <div class="player-team">${team}</div>
-            <div class="player-score-label">${isPrimary?"GENERATED SCORE":"OVERALL SCORE"}</div>
-            <div class="player-score">${score}</div>
           </div>
-          <div class="player-footer">${isPrimary?`◇ ${tier}`:tag}</div>
+          <div class="player-footer">${esc(handMatch||profile.label)}</div>
         </article>
       `;
     }).join("");
@@ -3614,6 +3734,7 @@ function render(){
         ${expanded?`
           <div class="body">
             ${weatherStrip(p)}
+            ${stadiumField(p)}
 
             <div class="game-pitchers">
               <div class="game-pitcher">
@@ -3631,7 +3752,6 @@ function render(){
             <div class="game-inline-detail" data-game-detail="${esc(g.key)}"></div>
 
             <div class="game-footer">
-              <span>GAME RATING <b>${rating}</b></span>
               <button type="button" data-matchup-key="${esc(g.key)}">VIEW MATCHUP →</button>
             </div>
           </div>
@@ -3704,7 +3824,29 @@ function render(){
 }
 const has=v=>v!==undefined&&v!==null&&v!=="",num=(v,d=1)=>has(v)?n(v).toFixed(d):"-";
 function metricCard(label,value){return `<span class="metric-card">${label}<b>${num(value)}</b></span>`}
-function trendDetails(p){const change=n(p.percentile_change),raw=String(p.trend||"NEW").replaceAll("_"," "),kind=/RISING|UP/i.test(raw)?"rising":/FALL|DOWN/i.test(raw)?"fall":"new",sign=change>0?"+":"",previous=n(p.daily_percentile)-change,lineup=p.batting_order?`#${p.batting_order}`:(p.lineup_status||"PENDING"),hands=[p.hitter_hand?`${p.hitter_hand} hitter`:"",p.pitcher_hand?`${p.pitcher_hand} pitcher`:""].filter(Boolean).join(" vs "),conditions=[p.temperature?`${num(p.temperature,0)} deg`:"",p.wind_speed?`Wind ${num(p.wind_speed,0)} MPH ${p.wind_direction||""}`:"",has(p.rain_probability)?`Rain ${num(p.rain_probability,0)}%`:"",p.venue||""].filter(Boolean),flags=String(p.red_flag_reasons||"").split("|").filter(Boolean).map(x=>x.replaceAll("_"," "));return `<div class="player-trend" data-player="${esc(p.player)}"><div class="trend-head"><strong>${esc(displayName(p.player))}</strong><span class="trend-badge ${kind}">${esc(raw)}</span></div><div class="detail-title">${esc(p.team||"")} vs ${esc(p.opponent||"")}</div><div class="detail-tags"><span class="best">${esc(p.pick_status||"MODEL PICK")}</span><span class="tier">${esc(p.selection_status||p.daily_tier||"TIER PENDING")}</span><span>${esc(p.lineup_status||"LINEUP PENDING")}</span></div><div class="detail-summary"><span>LaunchPoint score<b>${num(p.raw_hr_edge,2)}</b></span><span>Before flags<b>${num(p.model_score_before_flags,2)}</b></span><span>Red-flag penalty<b>-${num(p.red_flag_penalty,2)}</b></span><span>Data completeness<b>${num(p.data_completeness_pct,1)}%</b></span></div>${flags.length?`<div class="detail-tags">${flags.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}<div class="matchup-box"><small>TONIGHT'S MATCHUP • ${esc(p.matchup_damage_label||"FIT PENDING")}</small><b>vs ${esc(p.pitcher||"Pitcher pending")}</b><em>${esc(hands||"Handedness pending")}</em></div><div class="detail-section">MODEL BREAKDOWN</div><div class="metric-grid">${metricCard("Matchup damage",p.matchup_damage_score)}${metricCard("Baseline score",p.baseline_hr_edge)}${metricCard("Statcast power",p.statcast_power)}${metricCard("Pitcher vulnerability",p.pitcher_vulnerability)}${metricCard("Pitch arsenal",p.pitch_arsenal_score)}${metricCard("Recent form",p.recent_form_score)}${metricCard("Bullpen vulnerability",p.bullpen_vulnerability)}${metricCard("Park + weather",p.park_weather_score)}${metricCard("Handedness",p.handedness_score)}${metricCard("Previous percentile",previous)}</div>${conditions.length?`<div class="detail-section">GAME CONDITIONS</div><div class="condition-row">${conditions.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}<p class="detail-note">Tap the player again to close this breakdown.</p></div>`}
+function trendDetails(p){
+  const raw=String(p.trend||"NEW").replaceAll("_"," ");
+  const kind=/RISING|UP/i.test(raw)?"rising":/FALL|DOWN/i.test(raw)?"fall":"new";
+  const profile=playerPublicProfile(p);
+  const hands=[p.hitter_hand?`${p.hitter_hand}HB hitter`:"",p.pitcher_hand?`${p.pitcher_hand}HP pitcher`:""].filter(Boolean).join(" vs ");
+  const wind=windFieldEffect(p);
+  const conditions=[
+    p.temperature?`${num(p.temperature,0)}°F`:"",
+    p.wind_speed?`${num(p.wind_speed,0)} MPH ${wind.label}`:"",
+    has(p.rain_probability)?`Rain ${num(p.rain_probability,0)}%`:"",
+    p.venue||""
+  ].filter(Boolean);
+  const rookieSource=String(p.rookie_data_source||p.development_source||"").trim();
+  return `<div class="player-trend" data-player="${esc(p.player)}">
+    <div class="trend-head"><strong>${esc(displayName(p.player))}<span class="player-profile-badge ${profile.kind}">${profile.label}</span></strong><span class="trend-badge ${kind}">${esc(raw)}</span></div>
+    <div class="detail-title">${esc(p.team||"")} vs ${esc(p.opponent||"")}</div>
+    <div class="detail-tags"><span>${esc(p.lineup_status||"LINEUP PENDING")}</span><span>${esc(p.batting_order?`BATTING ${p.batting_order}`:"ORDER PENDING")}</span>${rookieSource?`<span>ROOKIE SOURCE: ${esc(rookieSource)}</span>`:""}</div>
+    <div class="matchup-box"><small>TONIGHT'S MATCHUP • ${esc(p.matchup_damage_label||"FIT PENDING")}</small><b>vs ${esc(p.pitcher||p.opposing_pitcher||"Pitcher pending")}</b><em>${esc(hands||"Handedness pending")}</em></div>
+    ${stadiumField(p)}
+    ${conditions.length?`<div class="detail-section">GAME CONDITIONS</div><div class="condition-row">${conditions.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}
+    <p class="detail-note">Internal model scores are intentionally hidden from the public card.</p>
+  </div>`;
+}
 function watchButton(p){const saved=watchlist.includes(String(p.player));return `<button class="watch-toggle ${saved?'saved':''}" data-watch="${esc(p.player)}">${saved?' SAVED TO WATCHLIST':' ADD TO WATCHLIST'}</button>`}
 function toggleWatch(name){const key=String(name);watchlist=watchlist.includes(key)?watchlist.filter(x=>x!==key):[...watchlist,key];localStorage.setItem("launchpoint-watchlist",JSON.stringify(watchlist));if(view==="watchlist")render();else{const p=allPlayers.find(x=>String(x.player)===key),btn=document.querySelector("[data-watch]");if(btn&&p){btn.outerHTML=watchButton(p);bindWatchButtons()}}}
 function bindWatchButtons(){document.querySelectorAll("[data-watch]").forEach(b=>b.onclick=e=>{e.stopPropagation();toggleWatch(b.dataset.watch)})}
@@ -3819,14 +3961,14 @@ function updateMorePanel(){
     if(top5.length){
       resultsEl.innerHTML=
         "Today's top five: "+
-        top5.map((p,i)=>`${i+1}. ${esc(displayName(p.player))} (${generatorScore(p).toFixed(1)})`).join(" - ");
+        top5.map((p,i)=>`${i+1}. ${esc(displayName(p.player))} — ${playerPublicProfile(p).label}`).join(" - ");
     }else{
       resultsEl.textContent="Daily LaunchPoint results appear here after the slate loads.";
     }
   }
 }
 
-const viewNames={"by-game":"ALL GAMES","top-picks":"TOP PICKS","eligible":"ALL ELIGIBLE HITTERS","elite":"ELITE PLAYERS","confirmed":"CONFIRMED LINEUPS","watchlist":"MY WATCHLIST"};
+const viewNames={"by-game":"ALL GAMES","top-picks":"MODEL SWEET SPOT · RANKS 6–50","eligible":"ALL ELIGIBLE HITTERS","elite":"ELITE PLAYERS","confirmed":"CONFIRMED LINEUPS","watchlist":"MY WATCHLIST"};
 const renderBoard=render;render=function(){renderBoard();const games=document.querySelector("#games");games.insertAdjacentHTML("afterbegin",`<div class="view-heading"><span>${viewNames[view]}</span><b>${viewPlayers().length} PLAYERS</b></div>`);document.querySelectorAll("[data-view]").forEach(b=>b.classList.toggle("active",b.dataset.view===view));addTrendClicks()};
 function setView(next){view=next;openKey=null;document.querySelector("#more-panel").hidden=true;document.querySelector("#results-panel").hidden=true;updateMorePanel();render();document.querySelector("#games").scrollIntoView({behavior:"smooth",block:"start"})}
 function openResults(){
