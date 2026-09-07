@@ -3116,7 +3116,7 @@ html,body{background:#000!important}
     <summary>How to Read LaunchPoint</summary>
     <p>
       Strong identifies the clearest complete matchup profile. Value identifies a
-      favorable profile outside the headline names. Sleeper highlights a lower-profile
+      favorable profile outside the headline names. Secondary highlights a lower-profile
       hitter whose power, pitch fit or opportunity deserves attention. Model scores stay
       private so the public board remains simple and easy to read.
     </p>
@@ -3273,7 +3273,7 @@ function renderLaunch5(players){
 
     return `
       <article class="launch5-card ${isLongshot?"longshot":""}">
-        ${isLongshot?'<div class="launch5-longshot-badge">SLEEPER</div>':""}
+        ${isLongshot?'<div class="launch5-longshot-badge">SECONDARY</div>':""}
         <div class="launch5-card-body" data-rank="${index+1}">
           <div class="launch5-player">${playerName}${homerBadge(p)}<span class="player-profile-badge ${profile.kind}">${profile.label}</span></div>
           ${launchArc()}
@@ -3290,7 +3290,7 @@ function renderLaunch5(players){
       <div class="launch5-summary-item"><strong>${gamesToday}</strong><span>GAMES TODAY</span></div>
       <div class="launch5-summary-item"><strong>${allScored.length}</strong><span>PLAYERS EVALUATED</span></div>
       <div class="launch5-summary-item"><strong>${picks.filter(p=>playerPublicProfile(p).label==="STRONG").length}</strong><span>STRONG PROFILES</span></div>
-      <div class="launch5-summary-item"><strong>${picks.filter(p=>playerPublicProfile(p).label!=="STRONG").length}</strong><span>VALUE / SLEEPER</span></div>
+      <div class="launch5-summary-item"><strong>${picks.filter(p=>playerPublicProfile(p).label!=="STRONG").length}</strong><span>VALUE / SECONDARY</span></div>
       <button class="launch5-full-card" type="button" onclick="setView('top-picks')">VIEW FULL CARD -></button>
     </div>
   `;
@@ -3520,14 +3520,14 @@ function gameCardStrength(players){
 function gamePlayerLabel(player,index,strength,gamePlayers){
   return playerPublicProfile(player).label;
 }
-function playerPublicProfile(player,forceSleeper=false){
+function playerPublicProfile(player,forceSecondary=false){
   if(!isSelectionEligible(player))return {label:"DATA PENDING",kind:"hold"};
-  if(forceSleeper)return {label:"SLEEPER",kind:"sleeper"};
+  if(forceSecondary)return {label:"SECONDARY",kind:"sleeper"};
   const tier=String(player?.daily_tier||player?.raw_classification||"").trim().toUpperCase();
   const rank=n(player?.rank);
   if(tier==="ELITE"||tier==="STRONG")return {label:"STRONG",kind:"strong"};
   if(tier==="VALUE"||(rank>=6&&rank<=50))return {label:"VALUE",kind:"value"};
-  return {label:"SLEEPER",kind:"sleeper"};
+  return {label:"SECONDARY",kind:"sleeper"};
 }
 function starterInfo(team,ps){
   const row=ps.find(p=>p.opponent===team)||{};
