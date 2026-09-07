@@ -3853,15 +3853,20 @@ function windFieldEffect(p){
   const direct=String(p?.wind_field_effect||p?.wind_effect||"").trim().toUpperCase();
   const raw=String(p?.wind_direction||"").trim().toUpperCase();
   const value=direct||raw;
-  if(/LEFT\s*(TO|2|→|-)\s*RIGHT|L\s*(TO|2|→|-)\s*R/.test(value))return {label:"LEFT → RIGHT",kind:"cross",arrow:"→",flow:"ltr"};
-  if(/RIGHT\s*(TO|2|→|-)\s*LEFT|R\s*(TO|2|→|-)\s*L/.test(value))return {label:"RIGHT → LEFT",kind:"cross",arrow:"←",flow:"rtl"};
-  if(/OUT/.test(value))return {label:"BLOWING OUT",kind:"out",arrow:"↑",flow:"out"};
-  if(/IN/.test(value))return {label:"BLOWING IN",kind:"in",arrow:"↓",flow:"in"};
-  if(/CROSS|LEFT|RIGHT/.test(value))return {label:"CROSSWIND",kind:"cross",arrow:"↔",flow:"cross"};
-  return {label:"FIELD DIRECTION PENDING",kind:"cross",arrow:"•",flow:"pending"};
+  const compassMatch=raw.match(/\b(N|NNE|NE|ENE|E|ESE|SE|SSE|S|SSW|SW|WSW|W|WNW|NW|NNW)\b/);
+  const compass=compassMatch?compassMatch[1]:"";
+  const angles={N:0,NNE:22.5,NE:45,ENE:67.5,E:90,ESE:112.5,SE:135,SSE:157.5,S:180,SSW:202.5,SW:225,WSW:247.5,W:270,WNW:292.5,NW:315,NNW:337.5};
+  const angle=compass?angles[compass]:null;
+  if(/LEFT\s*(TO|2|→|-)\s*RIGHT|L\s*(TO|2|→|-)\s*R/.test(value))return {label:"LEFT → RIGHT",kind:"cross",arrow:"→",flow:"ltr",compass,angle};
+  if(/RIGHT\s*(TO|2|→|-)\s*LEFT|R\s*(TO|2|→|-)\s*L/.test(value))return {label:"RIGHT → LEFT",kind:"cross",arrow:"←",flow:"rtl",compass,angle};
+  if(/OUT/.test(value))return {label:"BLOWING OUT",kind:"out",arrow:"↑",flow:"out",compass,angle};
+  if(/IN/.test(value))return {label:"BLOWING IN",kind:"in",arrow:"↓",flow:"in",compass,angle};
+  if(/CROSS|LEFT|RIGHT/.test(value))return {label:"CROSSWIND",kind:"cross",arrow:"↔",flow:"cross",compass,angle};
+  return {label:"FIELD DIRECTION PENDING",kind:"cross",arrow:"•",flow:"pending",compass,angle};
 }
 function fieldWindArrow(wind){
   const style='fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"';
+  if(Number.isFinite(wind.angle))return `<g aria-label="Wind toward ${wind.compass}" transform="rotate(${wind.angle} 75 53)"><path d="M75 76V30" ${style}/><path d="m67 39 8-9 8 9" ${style}/></g>`;
   if(wind.flow==="out")return `<g aria-label="Wind blowing toward the outfield"><path d="M75 72V34" ${style}/><path d="m69 42 6-8 6 8" ${style}/></g>`;
   if(wind.flow==="in")return `<g aria-label="Wind blowing toward home plate"><path d="M75 34v38" ${style}/><path d="m69 64 6 8 6-8" ${style}/></g>`;
   if(wind.flow==="ltr")return `<g aria-label="Wind blowing left to right"><path d="M45 51h60" ${style}/><path d="m97 45 8 6-8 6" ${style}/></g>`;
@@ -3873,8 +3878,8 @@ function stadiumField(p){
   const venue=displayVenue(p?.venue)||"Ballpark pending";
   const wind=windFieldEffect(p);
   return `<div class="stadium-profile">
-    <svg class="stadium-wind-overlay" viewBox="0 0 150 105" role="img" aria-label="Wind ${esc(wind.label.toLowerCase())} at ${esc(venue)}">${fieldWindArrow(wind)}</svg>
-    <div class="stadium-profile-copy"><b>${esc(venue)}</b><div class="stadium-chips"><span class="wind-effect ${wind.kind}">${wind.arrow} ${wind.label}</span></div></div>
+    <svg class="stadium-wind-overlay" viewBox="0 0 150 105" role="img" aria-label="Wind ${esc(wind.compass||"")} ${esc(wind.label.toLowerCase())} at ${esc(venue)}">${fieldWindArrow(wind)}</svg>
+    <div class="stadium-profile-copy"><b>${esc(venue)}</b><div class="stadium-chips"><span class="wind-effect ${wind.kind}">${wind.compass?`${esc(wind.compass)} • `:""}${wind.arrow} ${wind.label}</span></div></div>
   </div>`;
 }
 
@@ -3904,7 +3909,7 @@ function weatherStrip(p){
   const park=n(p?.park_weather_score);
   const impact=park>=65?"HR BOOST":park<=40?"PITCHER EDGE":"NEUTRAL";
   const fieldWind=windFieldEffect(p);
-  return `<div class="game-weather-strip"><span class="weather-source">${esc(source)} FORECAST</span>${weatherIcon(p)}<span class="weather-temp">${esc(temp)}</span><span class="weather-item">WIND <b class="wind-effect ${fieldWind.kind}">${esc(wind)} ${fieldWind.arrow} ${fieldWind.label}</b></span><span class="weather-item rain-item">${rainIcon()}<span>RAIN <b>${esc(rain)}</b></span></span><span class="park-impact">PARK IMPACT: ${impact}</span></div>`;
+  return `<div class="game-weather-strip"><span class="weather-source">${esc(source)} FORECAST</span>${weatherIcon(p)}<span class="weather-temp">${esc(temp)}</span><span class="weather-item">WIND <b class="wind-effect ${fieldWind.kind}">${esc(wind)}${fieldWind.compass?` • ${esc(fieldWind.compass)}`:""} ${fieldWind.arrow} ${fieldWind.label}</b></span><span class="weather-item rain-item">${rainIcon()}<span>RAIN <b>${esc(rain)}</b></span></span><span class="park-impact">PARK IMPACT: ${impact}</span></div>`;
 }
 
 function gameMatchupDetails(players){
