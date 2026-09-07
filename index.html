@@ -3550,10 +3550,21 @@ function windFieldEffect(p){
   const direct=String(p?.wind_field_effect||p?.wind_effect||"").trim().toUpperCase();
   const raw=String(p?.wind_direction||"").trim().toUpperCase();
   const value=direct||raw;
-  if(/OUT/.test(value))return {label:"BLOWING OUT",kind:"out",arrow:"↑"};
-  if(/IN/.test(value))return {label:"BLOWING IN",kind:"in",arrow:"↓"};
-  if(/CROSS|LEFT|RIGHT/.test(value))return {label:"CROSSWIND",kind:"cross",arrow:"↔"};
-  return {label:"FIELD DIRECTION PENDING",kind:"cross",arrow:"•"};
+  if(/LEFT\s*(TO|2|→|-)\s*RIGHT|L\s*(TO|2|→|-)\s*R/.test(value))return {label:"LEFT → RIGHT",kind:"cross",arrow:"→",flow:"ltr"};
+  if(/RIGHT\s*(TO|2|→|-)\s*LEFT|R\s*(TO|2|→|-)\s*L/.test(value))return {label:"RIGHT → LEFT",kind:"cross",arrow:"←",flow:"rtl"};
+  if(/OUT/.test(value))return {label:"BLOWING OUT",kind:"out",arrow:"↑",flow:"out"};
+  if(/IN/.test(value))return {label:"BLOWING IN",kind:"in",arrow:"↓",flow:"in"};
+  if(/CROSS|LEFT|RIGHT/.test(value))return {label:"CROSSWIND",kind:"cross",arrow:"↔",flow:"cross"};
+  return {label:"FIELD DIRECTION PENDING",kind:"cross",arrow:"•",flow:"pending"};
+}
+function fieldWindArrow(wind){
+  const style='fill="none" stroke="#ff9b52" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"';
+  if(wind.flow==="out")return `<g aria-label="Wind blowing toward the outfield"><path d="M75 83V20" ${style}/><path d="M66 31 75 20l9 11" ${style}/></g>`;
+  if(wind.flow==="in")return `<g aria-label="Wind blowing toward home plate"><path d="M75 20v63" ${style}/><path d="m66 72 9 11 9-11" ${style}/></g>`;
+  if(wind.flow==="ltr")return `<g aria-label="Wind blowing left to right"><path d="M27 51h96" ${style}/><path d="m112 42 11 9-11 9" ${style}/></g>`;
+  if(wind.flow==="rtl")return `<g aria-label="Wind blowing right to left"><path d="M123 51H27" ${style}/><path d="m38 42-11 9 11 9" ${style}/></g>`;
+  if(wind.flow==="cross")return `<g aria-label="Crosswind"><path d="M30 51h90" ${style}/><path d="m40 42-10 9 10 9m70-18 10 9-10 9" ${style}/></g>`;
+  return "";
 }
 function stadiumField(p){
   const venue=displayVenue(p?.venue)||"Ballpark pending";
@@ -3569,6 +3580,7 @@ function stadiumField(p){
       <path d="M75 91 43 59 75 28 107 59Z" fill="#9a7041" opacity=".9" stroke="#ead8a8"/>
       <path d="M75 91 75 28M43 59 107 59" stroke="#f4f1dc" opacity=".7"/>
       <path d="${left} ${right}" fill="none" stroke="#ffc437" stroke-width="2.4" stroke-linecap="round"/>
+      ${fieldWindArrow(wind)}
       <circle cx="75" cy="91" r="3" fill="#fff"/>
     </svg>
     <div class="stadium-profile-copy"><small>STADIUM FIELD PROFILE</small><b>${esc(venue)}</b><div class="stadium-chips"><span>${esc(hand)} PARK EDGE</span><span>${esc(lean)}</span><span class="wind-effect ${wind.kind}">${wind.arrow} ${wind.label}</span></div></div>
