@@ -3389,7 +3389,18 @@ async function loadGameEdgeResults(){
 }
 async function refreshHomerResults(){
   const gamePks=[...new Set((allPlayers||[]).map(p=>Number(p.game_pk)||0).filter(Boolean))];
-  if(!gamePks.length)return;
+  if(!gamePks.length){
+    homerResultsById=new Map();
+    homerResultsByGameName=new Map();
+    updateResultsUI();
+    return;
+  }
+  const expectedDateByGame=new Map();
+  (allPlayers||[]).forEach(p=>{
+    const gamePk=Number(p?.game_pk)||0;
+    const date=String(p?.game_date||slateDate||"").slice(0,10);
+    if(gamePk&&date)expectedDateByGame.set(gamePk,date);
+  });
   const feeds=await Promise.allSettled(gamePks.map(async gamePk=>{
     const response=await fetch(`https://statsapi.mlb.com/api/v1.1/game/${gamePk}/feed/live`);
     if(!response.ok)throw new Error(`MLB feed ${gamePk} failed`);
@@ -3399,6 +3410,12 @@ async function refreshHomerResults(){
   feeds.forEach(result=>{
     if(result.status!=="fulfilled")return;
     const {gamePk,data}=result.value;
+    const gameStatus=data?.gameData?.status||{};
+    const isFinal=gameStatus.abstractGameState==="Final"||gameStatus.codedGameState==="F"||gameStatus.statusCode==="F";
+    const officialDate=String(data?.gameData?.datetime?.officialDate||"").slice(0,10);
+    const expectedDate=String(slateDate||expectedDateByGame.get(gamePk)||"").slice(0,10);
+    // Public result badges belong only to this slate and only after the game is final.
+    if(!isFinal||!officialDate||!expectedDate||officialDate!==expectedDate)return;
     const plays=data?.liveData?.plays?.allPlays||[];
     plays.forEach(play=>{
       if(play?.result?.eventType!=="home_run")return;
