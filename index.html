@@ -3138,6 +3138,68 @@ body,.shell,button{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial
   .game-player-card:not(.primary-card){grid-template-columns:68px minmax(0,1fr)!important}.game-player-card:not(.primary-card) .player-photo-wrap{width:68px!important;height:58px!important}.game-player-card:not(.primary-card) .player-photo{width:45px!important;height:56px!important}
 }
 
+/* Design #3 exact mobile scoreboard treatment */
+body{background:radial-gradient(circle at 50% -10%,#073756 0,#01111e 34%,#00080e 75%) fixed!important}
+.shell{max-width:760px!important;margin:0 auto!important;padding:0 12px 94px!important;background:linear-gradient(180deg,rgba(2,28,45,.96),rgba(0,10,17,.98))!important;box-shadow:0 0 70px rgba(0,182,255,.13)!important}
+.hero{margin:0 -12px!important;padding:20px 24px 14px!important;background:linear-gradient(135deg,#031826,#072b43 58%,#031622)!important;border-bottom:1px solid #0c6d9b!important}
+.hero-top{align-items:center!important}
+.brand-mark,.brand-copy p{display:none!important}
+.brand-copy h1{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif!important;font-size:36px!important;font-style:italic!important;letter-spacing:.01em!important;color:#fff!important;text-shadow:0 2px 12px rgba(0,0,0,.5)!important}
+.brand-copy h1 span{color:#fff!important}.brand-copy h1 strong{color:#28c8f5!important;font:inherit!important}
+.brand-copy h1 em{color:#ffc83d!important;font-style:italic!important}
+.brand-copy h1::first-line{color:inherit}
+.live{border:1px solid #32ec90!important;border-radius:999px!important;background:rgba(5,68,50,.55)!important;color:#66f5a9!important;padding:8px 14px!important;box-shadow:0 0 17px rgba(46,238,142,.16)!important}
+.live:before{width:9px!important;height:9px!important;background:#42f397!important;box-shadow:0 0 9px #42f397!important}
+.hero-slate-row{display:grid!important;grid-template-columns:minmax(150px,1fr) auto!important;align-items:end!important;gap:16px!important;margin-top:15px!important}
+.model-meta{margin:0!important;color:#aab8cb!important;font-size:14px!important;font-weight:800!important;text-transform:uppercase!important;letter-spacing:.08em!important}
+.hero .periods{display:flex!important;gap:8px!important;margin:0!important}
+.hero .periods button{min-height:42px!important;min-width:104px!important;padding:7px 12px!important;border:1px solid #174d70!important;border-radius:9px!important;background:#06182a!important;color:#9dacbf!important}
+.hero .periods button.active{border-color:#12c9ff!important;color:#29d2ff!important;box-shadow:inset 0 0 18px rgba(0,194,255,.08)!important}
+.hero .periods b{font-size:13px!important}.hero .periods small{display:none!important}
+.shell[data-view="by-game"] .lp-intel,.shell[data-view="by-game"] .lp-side-column,.shell[data-view="by-game"] .view-heading{display:none!important}
+.lp-content-grid{display:block!important}.lp-main-column{width:100%!important;max-width:none!important}
+.shell[data-view="by-game"] #games{margin-top:16px!important}
+.game{overflow:hidden!important;margin-bottom:18px!important;border:1px solid #125a80!important;border-radius:15px!important;background:linear-gradient(180deg,#031521,#000b12)!important;box-shadow:0 12px 32px rgba(0,0,0,.24)!important}
+.game-head{min-height:128px!important;padding:18px 18px 13px!important;border-bottom:1px solid #11628a!important;background:radial-gradient(circle at 50% 100%,rgba(24,109,158,.22),transparent 60%),linear-gradient(135deg,#061e31,#031321)!important}
+.game-head>span:first-child{width:100%!important}.game-head>span:last-child{display:none!important}
+.game-matchup-title{gap:18px!important}
+.game-matchup-title>span{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif!important;font-size:27px!important;line-height:1.05!important;letter-spacing:.01em!important}
+.game-matchup-title i{font-size:15px!important;color:#71839c!important}
+.team-logo{width:60px!important;height:60px!important;filter:drop-shadow(0 3px 4px rgba(0,0,0,.35))!important}
+.game-subline{margin-top:12px!important}.game-subline>span{font-size:14px!important;color:#b0bed0!important}.game-subline em{background:transparent!important;color:#42eda5!important;font-size:12px!important;font-weight:900!important;letter-spacing:.06em!important}
+.game .body{padding:12px!important}
+.game-weather-strip{grid-template-columns:auto auto 1fr auto auto!important;min-height:94px!important;padding:14px 18px!important;border:1px solid #11668f!important;background:linear-gradient(135deg,#061c2a,#03131e)!important}
+.game-weather-strip .weather-source{display:none!important}.game-weather-strip>svg:not(.rain-icon){width:40px!important;height:40px!important;color:#ffd24a!important}.weather-temp{font-size:31px!important;font-weight:900!important}.weather-item{padding-left:17px!important;border-left:1px solid #174967!important}.weather-item,.weather-item b{font-size:13px!important}.rain-item{display:flex!important}.park-impact{border:1px solid #b4891a!important;border-radius:9px!important;background:#171709!important;color:#ffd34d!important;font-size:12px!important}
+.stadium-profile{position:relative!important;display:block!important;min-height:190px!important;margin:10px 0!important;padding:12px!important;overflow:hidden!important;border:1px solid #125b82!important;border-radius:12px!important;background:radial-gradient(ellipse at center,#185938 0,#0c3628 46%,#03131d 72%)!important}
+.stadium-profile:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.03) 0 18px,rgba(0,0,0,.025) 18px 36px);opacity:.6;pointer-events:none}
+.stadium-profile svg{position:absolute!important;left:50%!important;top:8px!important;width:245px!important;height:170px!important;transform:translateX(-50%)!important;filter:drop-shadow(0 5px 8px rgba(0,0,0,.45))!important}
+.stadium-profile-copy{position:relative!important;z-index:2!important;min-height:162px!important}
+.stadium-profile-copy small,.stadium-profile-copy .stadium-chips span:not(.wind-effect){display:none!important}
+.stadium-profile-copy b{position:absolute!important;right:10px!important;bottom:22px!important;margin:0!important;color:#fff!important;font-size:16px!important;text-shadow:0 2px 4px #000!important}
+.stadium-chips{position:absolute!important;right:10px!important;bottom:-2px!important}.stadium-chips .wind-effect{border:0!important;background:transparent!important;color:#fff!important;font-size:14px!important;padding:0!important;text-shadow:0 2px 4px #000!important}
+.game-pitchers{gap:9px!important;margin:10px 0!important}
+.game-pitcher{min-height:98px!important;grid-template-columns:86px minmax(0,1fr)!important;padding:0 12px 0 0!important;border-width:1px!important;border-radius:11px!important;background:linear-gradient(135deg,#122438,#061521)!important}
+.game-pitcher:first-child{border-color:#e42458!important;background:linear-gradient(135deg,#431020,#11172a)!important}.game-pitcher:last-child{border-color:#168bc4!important}
+.pitcher-photo,.pitcher-photo-fallback{width:86px!important;height:96px!important}.pitcher-copy small{font-size:11px!important;color:#a9b7ca!important;font-weight:900!important}.pitcher-copy b{font-size:20px!important}.pitcher-hand{display:block!important;margin-top:4px!important;padding:0!important;background:none!important;border:0!important;color:#fff!important;font-size:16px!important}
+.game-player-row{gap:8px!important}
+.game-player-card.primary-card{min-height:190px!important;padding:19px 18px!important;border:2px solid #ffd13e!important;border-radius:12px!important;background:radial-gradient(circle at 80% 40%,rgba(16,93,119,.25),transparent 38%),linear-gradient(135deg,#071b24,#061116)!important;box-shadow:0 0 14px rgba(255,205,52,.16)!important}
+.game-player-card.primary-card .primary-badge{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif!important;font-size:23px!important;color:#ffd144!important}.game-player-card.primary-card .lp-radar{display:none!important}
+.game-player-card.primary-card .player-photo-wrap{left:14px!important;width:132px!important;height:148px!important}.game-player-card.primary-card .row-team-logo{width:44px!important;height:44px!important}.game-player-card.primary-card .player-card-body{margin-left:126px!important;max-width:calc(100% - 132px)!important;position:relative!important;z-index:3!important}.game-player-card.primary-card .player-name{display:flex!important;align-items:center!important;flex-wrap:wrap!important;gap:8px!important;padding-top:38px!important;font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif!important;font-size:38px!important;line-height:1!important;text-shadow:0 2px 5px #000!important}.game-player-card.primary-card .player-team{display:none!important}.game-player-card.primary-card .homer-badge{margin:0!important;padding:8px 12px!important;border:1px solid #43ff78!important;border-radius:9px!important;background:#074e20!important;color:#7dff9b!important;font-size:20px!important;box-shadow:0 0 12px rgba(64,255,119,.18)!important}
+.game-player-card:not(.primary-card){min-height:82px!important;grid-template-columns:92px minmax(0,1fr)!important;border:1px solid #155779!important;border-radius:11px!important;background:linear-gradient(90deg,#09243a,#03131f 32%,#02101a)!important}
+.game-player-card:not(.primary-card) .player-photo-wrap{width:92px!important;height:80px!important;border-right:1px solid #1b628a!important;background:#0b2941!important}.game-player-card:not(.primary-card) .row-team-logo{left:8px!important;top:17px!important;width:42px!important;height:42px!important}.game-player-card:not(.primary-card) .player-photo{width:58px!important;height:76px!important}.game-player-card:not(.primary-card) .player-card-body{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:10px!important;padding:0 14px!important}.game-player-card:not(.primary-card) .player-name{display:flex!important;align-items:center!important;justify-content:space-between!important;width:100%!important;gap:10px!important;font-size:20px!important;font-weight:900!important}.game-player-card:not(.primary-card) .player-team{display:none!important}.player-profile-badge{margin-left:auto!important;min-width:112px!important;text-align:center!important;border-radius:9px!important;background:#04131e!important;font-size:12px!important;padding:8px 12px!important}.player-profile-badge.strong{border-color:#f5c93c!important;color:#ffd34c!important}.player-profile-badge.value{border-color:#36d9f3!important;color:#50e5ff!important}.player-profile-badge.sleeper{border-color:#e548ff!important;color:#e85cff!important;background:#180622!important}
+.game-footer{display:none!important}
+
+@media(max-width:560px){
+  .shell{padding:0 8px 82px!important}.hero{margin:0 -8px!important;padding:15px 12px 12px!important}.brand-copy h1{font-size:27px!important}.live{padding:7px 10px!important;font-size:10px!important}
+  .hero-slate-row{grid-template-columns:1fr!important;gap:9px!important;margin-top:12px!important}.model-meta{font-size:11px!important}.hero .periods{width:100%!important}.hero .periods button{flex:1!important;min-width:0!important;min-height:38px!important;padding:6px!important}.hero .periods b{font-size:11px!important}
+  .shell[data-view="by-game"] #games{margin-top:10px!important}.game{border-radius:12px!important}.game-head{min-height:105px!important;padding:14px 10px 11px!important}.game-matchup-title{gap:7px!important}.game-matchup-title>span{font-size:20px!important}.game-matchup-title i{font-size:11px!important}.team-logo{width:43px!important;height:43px!important}.game-subline{gap:6px!important}.game-subline>span,.game-subline em{font-size:10px!important}
+  .game .body{padding:8px!important}.game-weather-strip{display:grid!important;grid-template-columns:31px 58px minmax(0,1fr) auto!important;min-height:76px!important;padding:10px!important;gap:7px!important}.game-weather-strip>svg:not(.rain-icon){grid-column:1!important;grid-row:1!important;width:30px!important;height:30px!important}.weather-temp{grid-column:2!important;grid-row:1!important;font-size:23px!important}.game-weather-strip>.weather-item:not(.rain-item){grid-column:3!important;grid-row:1!important;padding-left:8px!important}.game-weather-strip .rain-item{grid-column:1/3!important;grid-row:2!important;padding-left:0!important;border:0!important}.park-impact{grid-column:3/5!important;grid-row:2!important;font-size:9px!important;padding:6px!important}
+  .stadium-profile{min-height:154px!important;padding:8px!important}.stadium-profile svg{width:200px!important;height:138px!important;top:4px!important}.stadium-profile-copy{min-height:136px!important}.stadium-profile-copy b{font-size:12px!important;bottom:18px!important}.stadium-chips{bottom:0!important}.stadium-chips .wind-effect{font-size:11px!important}
+  .game-pitcher{min-height:78px!important;grid-template-columns:62px minmax(0,1fr)!important;padding-right:5px!important}.pitcher-photo,.pitcher-photo-fallback{width:62px!important;height:76px!important}.pitcher-copy small{font-size:8px!important}.pitcher-copy b{font-size:14px!important}.pitcher-hand{font-size:12px!important}
+  .game-player-card.primary-card{min-height:158px!important;padding:14px 10px!important}.game-player-card.primary-card .primary-badge{font-size:18px!important}.game-player-card.primary-card .player-photo-wrap{left:8px!important;width:104px!important;height:126px!important}.game-player-card.primary-card .player-card-body{margin-left:98px!important;max-width:calc(100% - 98px)!important}.game-player-card.primary-card .player-name{padding-top:34px!important;font-size:27px!important;gap:5px!important}.game-player-card.primary-card .homer-badge{padding:6px 8px!important;font-size:14px!important}
+  .game-player-card:not(.primary-card){min-height:68px!important;grid-template-columns:74px minmax(0,1fr)!important}.game-player-card:not(.primary-card) .player-photo-wrap{width:74px!important;height:66px!important}.game-player-card:not(.primary-card) .row-team-logo{width:34px!important;height:34px!important;top:15px!important}.game-player-card:not(.primary-card) .player-photo{width:48px!important;height:64px!important}.game-player-card:not(.primary-card) .player-card-body{padding:0 9px!important}.game-player-card:not(.primary-card) .player-name{font-size:15px!important;gap:6px!important}.player-profile-badge{min-width:78px!important;padding:6px 7px!important;font-size:9px!important}
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -3146,7 +3208,7 @@ body,.shell,button{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial
     <div class="brand">
       <div class="brand-mark">LP</div>
       <div class="brand-copy">
-        <h1>LAUNCHPOINT <em>HR</em></h1>
+        <h1><span>LAUNCH</span><strong>POINT</strong> <em>HR</em></h1>
         <p>MLB Home Run Intelligence</p>
       </div>
     </div>
@@ -3157,7 +3219,10 @@ body,.shell,button{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial
     <div class="hero-sub">Home Run Intelligence</div>
     <div class="baseball" aria-hidden="true"></div>
   </div>
-  <p class="model-meta" id="model-meta">Slate date pending - Updated pending</p>
+  <div class="hero-slate-row">
+    <p class="model-meta" id="model-meta">Slate date pending - Updated pending</p>
+    <section class="periods"><button data-period="early"><b>EARLY</b><small>1 PM - 3 PM</small></button><button data-period="afternoon"><b>AFTERNOON</b><small>3 PM - 7 PM</small></button><button data-period="night"><b>NIGHT</b><small>7 PM - 10 PM</small></button></section>
+  </div>
 </section>
 <section class="lp-status-strip">
   <div class="lp-status live-stat"><strong>MODEL LIVE</strong><span>Daily engine active</span></div>
@@ -3166,7 +3231,6 @@ body,.shell,button{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial
   <div class="lp-status"><strong id="lp-hit-rate">--</strong><span>Top 5 hit rate</span></div>
   <div class="lp-status"><strong id="lp-confidence-label">--</strong><span>Model confidence</span></div>
 </section>
-<section class="periods"><button data-period="early"><b>EARLY</b><small>1 PM - 3 PM</small></button><button data-period="afternoon"><b>AFTERNOON</b><small>3 PM - 7 PM</small></button><button data-period="night"><b>NIGHT</b><small>7 PM - 10 PM</small></button></section>
 <section class="top3"><div class="label">DAILY TOP 3 - GENERATOR</div><div class="top-grid" id="top3"></div></section>
 <section class="launch5-section">
   <div class="section-title">
