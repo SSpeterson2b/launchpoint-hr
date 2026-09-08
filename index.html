@@ -3252,6 +3252,23 @@ body{background:radial-gradient(circle at 50% -10%,#073756 0,#01111e 34%,#00080e
   .stadium-chips{right:7px!important;bottom:6px!important;padding:2px 4px!important}
 }
 
+/* Readability correction: player names stay bold at every card size. */
+.game-player-card .player-name{
+  font-family:"Arial Black","Helvetica Neue",Arial,sans-serif!important;
+  font-weight:950!important;
+  color:#fff!important;
+  letter-spacing:-.025em!important;
+  text-shadow:0 2px 4px rgba(0,0,0,.88)!important;
+}
+.game-player-card:not(.primary-card) .player-name{
+  font-size:20px!important;
+  line-height:1.08!important;
+}
+@media(max-width:560px){
+  .game-player-card.primary-card .player-name{font-size:27px!important;line-height:1.02!important}
+  .game-player-card:not(.primary-card) .player-name{font-size:14px!important;line-height:1.08!important}
+}
+
 </style>
 
 </head><body><main class="shell">
@@ -3866,11 +3883,11 @@ function windFieldEffect(p){
 }
 function fieldWindArrow(wind){
   const style='fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"';
-  if(Number.isFinite(wind.angle))return `<g aria-label="Wind toward ${wind.compass}" transform="rotate(${wind.angle} 75 53)"><path d="M75 76V30" ${style}/><path d="m67 39 8-9 8 9" ${style}/></g>`;
   if(wind.flow==="out")return `<g aria-label="Wind blowing toward the outfield"><path d="M75 72V34" ${style}/><path d="m69 42 6-8 6 8" ${style}/></g>`;
   if(wind.flow==="in")return `<g aria-label="Wind blowing toward home plate"><path d="M75 34v38" ${style}/><path d="m69 64 6 8 6-8" ${style}/></g>`;
   if(wind.flow==="ltr")return `<g aria-label="Wind blowing left to right"><path d="M45 51h60" ${style}/><path d="m97 45 8 6-8 6" ${style}/></g>`;
   if(wind.flow==="rtl")return `<g aria-label="Wind blowing right to left"><path d="M105 51H45" ${style}/><path d="m53 45-8 6 8 6" ${style}/></g>`;
+  if(Number.isFinite(wind.angle))return `<g aria-label="Wind toward ${wind.compass}" transform="rotate(${wind.angle} 75 53)"><path d="M75 76V30" ${style}/><path d="m67 39 8-9 8 9" ${style}/></g>`;
   if(wind.flow==="cross")return `<g aria-label="Crosswind"><path d="M48 51h54" ${style}/><path d="m55 45-7 6 7 6m40-12 7 6-7 6" ${style}/></g>`;
   return "";
 }
@@ -3879,7 +3896,7 @@ function stadiumField(p){
   const wind=windFieldEffect(p);
   return `<div class="stadium-profile">
     <svg class="stadium-wind-overlay" viewBox="0 0 150 105" role="img" aria-label="Wind ${esc(wind.compass||"")} ${esc(wind.label.toLowerCase())} at ${esc(venue)}">${fieldWindArrow(wind)}</svg>
-    <div class="stadium-profile-copy"><b>${esc(venue)}</b><div class="stadium-chips"><span class="wind-effect ${wind.kind}">${wind.compass?`${esc(wind.compass)} • `:""}${wind.arrow} ${wind.label}</span></div></div>
+    <div class="stadium-profile-copy"><b>${esc(venue)}</b><div class="stadium-chips"><span class="wind-effect ${wind.kind}">${wind.compass?`${esc(wind.compass)} WIND • `:""}${wind.arrow} ${wind.label}</span></div></div>
   </div>`;
 }
 
@@ -3909,7 +3926,7 @@ function weatherStrip(p){
   const park=n(p?.park_weather_score);
   const impact=park>=65?"HR BOOST":park<=40?"PITCHER EDGE":"NEUTRAL";
   const fieldWind=windFieldEffect(p);
-  return `<div class="game-weather-strip"><span class="weather-source">${esc(source)} FORECAST</span>${weatherIcon(p)}<span class="weather-temp">${esc(temp)}</span><span class="weather-item">WIND <b class="wind-effect ${fieldWind.kind}">${esc(wind)}${fieldWind.compass?` • ${esc(fieldWind.compass)}`:""} ${fieldWind.arrow} ${fieldWind.label}</b></span><span class="weather-item rain-item">${rainIcon()}<span>RAIN <b>${esc(rain)}</b></span></span><span class="park-impact">PARK IMPACT: ${impact}</span></div>`;
+  return `<div class="game-weather-strip"><span class="weather-source">${esc(source)} FORECAST</span>${weatherIcon(p)}<span class="weather-temp">${esc(temp)}</span><span class="weather-item">WIND <b class="wind-effect ${fieldWind.kind}">${esc(wind)}${fieldWind.compass?` • ${esc(fieldWind.compass)} WIND`:""} • ${fieldWind.arrow} ${fieldWind.label}</b></span><span class="weather-item rain-item">${rainIcon()}<span>RAIN <b>${esc(rain)}</b></span></span><span class="park-impact">PARK IMPACT: ${impact}</span></div>`;
 }
 
 function gameMatchupDetails(players){
