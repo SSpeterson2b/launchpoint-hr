@@ -3809,7 +3809,7 @@ function gameCardProfile(supportingIndex,isPrimary,player){
   if(supportingIndex===0)return {label:"TOP CONTENDER",kind:"contender"};
   if(supportingIndex===1)return {label:"SECONDARY",kind:"sleeper"};
   const profile=playerPublicProfile(player);
-  return profile.label==="DATA PENDING"?profile:null;
+  return profile.label==="DATA PENDING"?profile:{label:"VALUE",kind:"value"};
 }
 function playerPublicProfile(player,forceSecondary=false){
   if(!isSelectionEligible(player))return {label:"DATA PENDING",kind:"hold"};
@@ -3883,6 +3883,12 @@ function parkLean(p){
   const score=n(p?.park_score||p?.park_weather_score);
   return score>=65?"HITTER FRIENDLY":score<=45?"PITCHER FRIENDLY":"NEUTRAL";
 }
+function parkFriendlyLabel(p){
+  const lean=parkLean(p);
+  if(lean==="HITTER FRIENDLY"||lean==="BATTER FRIENDLY")return "BATTER FRIENDLY";
+  if(lean==="PITCHER FRIENDLY")return "PITCHER FRIENDLY";
+  return "BALANCED PARK";
+}
 function windFieldEffect(p){
   const direct=String(p?.wind_field_effect||p?.wind_effect||"").trim().toUpperCase();
   const raw=String(p?.wind_direction||"").trim().toUpperCase();
@@ -3950,10 +3956,8 @@ function weatherStrip(p){
   const temp=!missingFallback&&has(p?.temperature)?`${n(p.temperature).toFixed(0)}°F`:"--°F";
   const wind=!missingFallback&&has(p?.wind_speed)?`${n(p.wind_speed).toFixed(0)} MPH`:"TBD";
   const rain=!missingFallback&&has(p?.rain_probability)?`${n(p.rain_probability).toFixed(0)}%`:"TBD";
-  const park=n(p?.park_weather_score);
-  const impact=park>=65?"HR BOOST":park<=40?"PITCHER EDGE":"NEUTRAL";
   const fieldWind=windFieldEffect(p);
-  return `<div class="game-weather-strip"><span class="weather-source">${esc(source)} FORECAST</span>${weatherIcon(p)}<span class="weather-temp">${esc(temp)}</span><span class="weather-item">WIND <b class="wind-effect ${fieldWind.kind}">${esc(wind)}${fieldWind.compass&&fieldWind.towardCompass?` • ${esc(fieldWind.compass)}→${esc(fieldWind.towardCompass)}`:""} • ${fieldWind.arrow} ${fieldWind.label}</b></span><span class="weather-item rain-item">${rainIcon()}<span>RAIN <b>${esc(rain)}</b></span></span><span class="park-impact">PARK IMPACT: ${impact}</span></div>`;
+  return `<div class="game-weather-strip"><span class="weather-source">${esc(source)} FORECAST</span>${weatherIcon(p)}<span class="weather-temp">${esc(temp)}</span><span class="weather-item">WIND <b class="wind-effect ${fieldWind.kind}">${esc(wind)}${fieldWind.compass&&fieldWind.towardCompass?` • ${esc(fieldWind.compass)}→${esc(fieldWind.towardCompass)}`:""} • ${fieldWind.arrow} ${fieldWind.label}</b></span><span class="weather-item rain-item">${rainIcon()}<span>RAIN <b>${esc(rain)}</b></span></span><span class="park-impact">${esc(parkFriendlyLabel(p))}</span></div>`;
 }
 
 function gameMatchupDetails(players){
