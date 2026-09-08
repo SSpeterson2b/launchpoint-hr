@@ -691,6 +691,55 @@ button{font:inherit;cursor:pointer}
 .matchup-box small{display:block;color:var(--green);font-size:8px;font-weight:900;letter-spacing:.08em}
 .matchup-box b{display:block;margin-top:4px;font-size:12px}
 .matchup-box em{display:block;margin-top:4px;color:var(--muted);font-size:9px;font-style:normal}
+.matchup-dashboard{
+  margin-top:9px;
+  overflow:hidden;
+  border:1px solid #2a5534;
+  border-radius:9px;
+  background:linear-gradient(145deg,#07130b,#030806);
+}
+.matchup-dashboard-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:10px;
+  padding:11px;
+  border-bottom:1px solid #203c29;
+}
+.matchup-dashboard-head small{display:block;color:#74dc82;font-size:8px;font-weight:950;letter-spacing:.12em}
+.matchup-dashboard-head b{display:block;margin-top:4px;color:#fff;font-size:14px;line-height:1.2}
+.matchup-dashboard-head em{display:block;margin-top:3px;color:#8ea394;font-size:9px;font-style:normal}
+.advantage-badge{
+  flex:0 0 auto;
+  padding:6px 8px;
+  border:1px solid #4a6850;
+  border-radius:99px;
+  color:#c5d2c8;
+  font-size:8px;
+  font-weight:950;
+  letter-spacing:.06em;
+  text-align:center;
+}
+.advantage-badge.batter{border-color:#39844a;background:#092414;color:#73e886}
+.advantage-badge.pitcher{border-color:#8b3941;background:#260b0e;color:#ff8389}
+.advantage-badge.even{border-color:#806a28;background:#1b1607;color:#f0c94d}
+.matchup-subhead{padding:10px 11px 6px;color:#91a897;font-size:8px;font-weight:950;letter-spacing:.12em}
+.matchup-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:0 10px 10px}
+.matchup-stat{
+  min-width:0;
+  padding:8px 7px;
+  border:1px solid #243d2b;
+  border-radius:7px;
+  background:#040b07;
+}
+.matchup-stat span{display:block;color:#819486;font-size:7px;font-weight:900;letter-spacing:.05em;line-height:1.2;text-transform:uppercase}
+.matchup-stat b{display:block;margin-top:4px;color:#f5f8f5;font-size:14px;line-height:1}
+.matchup-stat.pending b{color:#657369;font-size:9px;line-height:1.2}
+.matchup-source{margin:0;padding:0 11px 11px;color:#74877a;font-size:8px;line-height:1.45}
+@media (max-width:420px){
+  .matchup-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .matchup-dashboard-head{align-items:center}
+}
 .detail-section{margin:11px 0 6px;color:#93a493;font-size:8px;font-weight:900;letter-spacing:.12em}
 .metric-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}
 .metric-card b{font-size:15px}
@@ -4177,27 +4226,70 @@ function render(){
 }
 const has=v=>v!==undefined&&v!==null&&v!=="",num=(v,d=1)=>has(v)?n(v).toFixed(d):"-";
 function metricCard(label,value){return `<span class="metric-card">${label}<b>${num(value)}</b></span>`}
+function firstMetric(p,keys){
+  for(const key of keys){
+    const value=p?.[key];
+    if(value!==undefined&&value!==null&&value!==""&&Number.isFinite(Number(value)))return Number(value);
+  }
+  return null;
+}
+function pctMetric(p,...keys){const value=firstMetric(p,keys);return value===null?null:(Math.abs(value)<=1?value*100:value)}
+function statValue(label,value,format="pct"){
+  let shown="DATA PENDING";
+  if(value!==null&&Number.isFinite(value)){
+    if(format==="pct")shown=`${value.toFixed(1)}%`;
+    else if(format==="rate")shown=value.toFixed(3).replace(/^0/,"");
+    else if(format==="mph")shown=`${value.toFixed(1)} MPH`;
+    else shown=value.toFixed(2);
+  }
+  return `<div class="matchup-stat ${value===null?'pending':''}"><span>${esc(label)}</span><b>${esc(shown)}</b></div>`;
+}
+function matchupAdvantage(p){
+  const score=firstMetric(p,["handedness_score"]);
+  if(score===null||score<=0)return {label:"ADVANTAGE PENDING",kind:""};
+  if(score>=65)return {label:"BATTER ADVANTAGE",kind:"batter"};
+  if(score<=45)return {label:"PITCHER ADVANTAGE",kind:"pitcher"};
+  return {label:"EVEN MATCHUP",kind:"even"};
+}
 function trendDetails(p){
   const raw=String(p.trend||"NEW").replaceAll("_"," ");
   const kind=/RISING|UP/i.test(raw)?"rising":/FALL|DOWN/i.test(raw)?"fall":"new";
   const profile=playerPublicProfile(p);
   const hands=[p.hitter_hand?`${p.hitter_hand}HB hitter`:"",p.pitcher_hand?`${p.pitcher_hand}HP pitcher`:""].filter(Boolean).join(" vs ");
-  const wind=windFieldEffect(p);
-  const conditions=[
-    p.temperature?`${num(p.temperature,0)}°F`:"",
-    p.wind_speed?`${num(p.wind_speed,0)} MPH ${wind.label}`:"",
-    has(p.rain_probability)?`Rain ${num(p.rain_probability,0)}%`:"",
-    p.venue||""
-  ].filter(Boolean);
+  const advantage=matchupAdvantage(p);
+  const pitcher=p.pitcher||p.opposing_pitcher||"Pitcher pending";
+  const pitcherHand=p.pitcher_hand?`${p.pitcher_hand}HP`:"HAND PENDING";
+  const pitcherStats=[
+    statValue("ERA",firstMetric(p,["pitcher_era"]),"number"),
+    statValue("Pitcher K%",pctMetric(p,"pitcher_k_pct")),
+    statValue("Pitcher Whiff%",pctMetric(p,"pitcher_whiff_pct")),
+    statValue("SLG Allowed",firstMetric(p,["pitcher_slg_allowed"]),"rate"),
+    statValue("ISO Allowed",firstMetric(p,["pitcher_iso_allowed"]),"rate"),
+    statValue("Barrel% Allowed",pctMetric(p,"pitcher_barrel_pct_allowed"))
+  ].join("");
+  const hitterStats=[
+    statValue("SLG",firstMetric(p,["hitter_slg"]),"rate"),
+    statValue("ISO",firstMetric(p,["hitter_iso"]),"rate"),
+    statValue("K%",pctMetric(p,"hitter_k_pct")),
+    statValue("Whiff%",pctMetric(p,"hitter_whiff_pct")),
+    statValue("Barrel%",pctMetric(p,"hitter_barrel_pct","recent_barrel_pct")),
+    statValue("Avg EV",firstMetric(p,["hitter_avg_ev","recent_avg_ev"]),"mph"),
+    statValue("Pull Air%",pctMetric(p,"hitter_pull_air_pct")),
+    statValue("Fly Ball%",pctMetric(p,"hitter_fly_ball_pct")),
+    statValue("Pull%",pctMetric(p,"hitter_pull_pct")),
+    statValue("Air%",pctMetric(p,"hitter_air_pct"))
+  ].join("");
   const rookieSource=String(p.rookie_data_source||p.development_source||"").trim();
   return `<div class="player-trend" data-player="${esc(p.player)}">
     <div class="trend-head"><strong>${esc(displayName(p.player))}<span class="player-profile-badge ${profile.kind}">${profile.label}</span></strong><span class="trend-badge ${kind}">${esc(raw)}</span></div>
     <div class="detail-title">${esc(p.team||"")} vs ${esc(p.opponent||"")}</div>
     <div class="detail-tags"><span>${esc(p.lineup_status||"LINEUP PENDING")}</span><span>${esc(p.batting_order?`BATTING ${p.batting_order}`:"ORDER PENDING")}</span>${rookieSource?`<span>ROOKIE SOURCE: ${esc(rookieSource)}</span>`:""}</div>
-    <div class="matchup-box"><small>TONIGHT'S MATCHUP • ${esc(p.matchup_damage_label||"FIT PENDING")}</small><b>vs ${esc(p.pitcher||p.opposing_pitcher||"Pitcher pending")}</b><em>${esc(hands||"Handedness pending")}</em></div>
-    ${stadiumField(p)}
-    ${conditions.length?`<div class="detail-section">GAME CONDITIONS</div><div class="condition-row">${conditions.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}
-    <p class="detail-note">Internal model scores are intentionally hidden from the public card.</p>
+    <section class="matchup-dashboard">
+      <div class="matchup-dashboard-head"><div><small>TODAY'S PITCHER MATCHUP</small><b>vs ${esc(pitcher)}</b><em>${esc(hands||pitcherHand)}</em></div><span class="advantage-badge ${advantage.kind}">${advantage.label}</span></div>
+      <div class="matchup-subhead">OPPOSING PITCHER</div><div class="matchup-metrics">${pitcherStats}</div>
+      <div class="matchup-subhead">HITTER POWER PROFILE</div><div class="matchup-metrics">${hitterStats}</div>
+      <p class="matchup-source">Current-season profile applied to today's opposing pitcher. This is matchup context, not a small-sample career head-to-head line.</p>
+    </section>
   </div>`;
 }
 function watchButton(p){const saved=watchlist.includes(String(p.player));return `<button class="watch-toggle ${saved?'saved':''}" data-watch="${esc(p.player)}">${saved?' SAVED TO WATCHLIST':' ADD TO WATCHLIST'}</button>`}
