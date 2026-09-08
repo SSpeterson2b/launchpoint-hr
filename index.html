@@ -3264,6 +3264,11 @@ body{background:radial-gradient(circle at 50% -10%,#073756 0,#01111e 34%,#00080e
   font-size:20px!important;
   line-height:1.08!important;
 }
+.player-profile-badge.contender{
+  border-color:#f5c93c!important;
+  background:#171709!important;
+  color:#ffd34c!important;
+}
 @media(max-width:560px){
   .game-player-card.primary-card .player-name{font-size:27px!important;line-height:1.02!important}
   .game-player-card:not(.primary-card) .player-name{font-size:14px!important;line-height:1.08!important}
@@ -3798,6 +3803,13 @@ function gameCardStrength(players){
 function gamePlayerLabel(player,index,strength,gamePlayers){
   return playerPublicProfile(player).label;
 }
+function gameCardProfile(supportingIndex,isPrimary,player){
+  if(isPrimary)return null;
+  if(supportingIndex===0)return {label:"TOP CONTENDER",kind:"contender"};
+  if(supportingIndex===1)return {label:"SECONDARY",kind:"sleeper"};
+  const profile=playerPublicProfile(player);
+  return profile.label==="DATA PENDING"?profile:null;
+}
 function playerPublicProfile(player,forceSecondary=false){
   if(!isSelectionEligible(player))return {label:"DATA PENDING",kind:"hold"};
   if(forceSecondary)return {label:"SECONDARY",kind:"sleeper"};
@@ -3896,7 +3908,7 @@ function stadiumField(p){
   const wind=windFieldEffect(p);
   return `<div class="stadium-profile">
     <svg class="stadium-wind-overlay" viewBox="0 0 150 105" role="img" aria-label="Wind ${esc(wind.compass||"")} ${esc(wind.label.toLowerCase())} at ${esc(venue)}">${fieldWindArrow(wind)}</svg>
-    <div class="stadium-profile-copy"><b>${esc(venue)}</b><div class="stadium-chips"><span class="wind-effect ${wind.kind}">${wind.compass?`${esc(wind.compass)} WIND • `:""}${wind.arrow} ${wind.label}</span></div></div>
+    <div class="stadium-profile-copy"><b>${esc(venue)}</b></div>
   </div>`;
 }
 
@@ -4012,8 +4024,11 @@ function render(){
     const confirmed=confirmedTeams.size>=2;
     const strength=gameCardStrength(matchupPlayers);
     const primaryCandidate=g.players.find(isSelectionEligible);
+    const showPrimary=Boolean(primaryCandidate&&strength!=="weak");
 
     const displayedPlayers=view==="eligible"?g.players:g.players.slice(0,4);
+    const displayedPrimary=showPrimary&&displayedPlayers.includes(primaryCandidate)?primaryCandidate:null;
+    const supportingPlayers=displayedPlayers.filter(player=>player!==displayedPrimary);
     const playerCards=displayedPlayers.map((x,i)=>{
       const rawName=String(displayName(x.player)||"");
       const playerName=esc(rawName);
@@ -4021,8 +4036,8 @@ function render(){
       const rawId=x.mlb_id||x.player_id||x.batter_id||"";
       const mlbId=String(rawId).replace(/\D/g,"");
       const initial=esc(rawName.charAt(0)||"?");
-      const profile=playerPublicProfile(x);
-      const isPrimary=x===primaryCandidate&&strength!=="weak";
+      const isPrimary=x===displayedPrimary;
+      const profile=gameCardProfile(supportingPlayers.indexOf(x),isPrimary,x);
 
       return `
         <article class="game-player-card ${isPrimary?"primary-card":""}" data-list-rank="${esc(x.rank||i+1)}" data-player-card="${esc(x.player)}" tabindex="0" role="button">
@@ -4040,7 +4055,7 @@ function render(){
             <div class="player-photo-fallback" style="display:none">${initial}</div>
           </div>
           <div class="player-card-body">
-            <div class="player-name">${playerName}${homerBadge(x)}${isPrimary?"":`<span class="player-profile-badge ${profile.kind}">${profile.label}</span>`}</div>
+            <div class="player-name">${playerName}${homerBadge(x)}${profile?`<span class="player-profile-badge ${profile.kind}">${profile.label}</span>`:""}</div>
             <div class="player-team">${team}</div>
           </div>
         </article>
