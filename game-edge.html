@@ -41,6 +41,7 @@ new MutationObserver(addTeamLogos).observe(document.body,{childList:true,subtree
 function csv(text){const rows=[];let row=[],cell="",q=false;for(let i=0;i<text.length;i++){const c=text[i],n=text[i+1];if(c==='"'&&q&&n==='"'){cell+='"';i++}else if(c==='"')q=!q;else if(c===','&&!q){row.push(cell);cell=""}else if((c==='\n'||c==='\r')&&!q){if(c==='\r'&&n==='\n')i++;row.push(cell);if(row.some(x=>x!==""))rows.push(row);row=[];cell=""}else cell+=c}if(cell||row.length){row.push(cell);rows.push(row)}const h=rows.shift()||[];return rows.map(r=>Object.fromEntries(h.map((x,i)=>[x,r[i]??""])))}
 const fmt=v=>num(v).toFixed(1),initials=n=>String(n).split(/\s+/).map(x=>x[0]).join("").slice(0,3).toUpperCase();
 function present(v){return v!==undefined&&v!==null&&String(v).trim()!==''}
+function winnerAction(r){const raw=String(r.winner_confidence||'').trim().toUpperCase();if(raw==='NO EDGE'||raw==='SKIP BET')return 'SKIP BET';if(raw==='STRONG'||raw==='LEAN'||raw==='PLAY')return 'PLAY';return raw||'SKIP BET'}
 function valueOrPending(v){return present(v)?fmt(v):'<span class="pending">DATA PENDING</span>'}
 function scoreReasons(r,pick){const parts=String(r.winner_reasons||"").split(';').map(x=>x.trim()).filter(Boolean).slice(0,3);if(!parts.length)return '<div class="reason-empty">Reasons will appear after real offense and pitching context is verified.</div>';return parts.map(x=>{const pieces=x.split(':');const team=(pieces.shift()||pick).trim();const label=pieces.join(':').trim()||x;return `<div class="reason"><span>${esc(team)}</span><b>${esc(label.toUpperCase())}</b></div>`}).join('')}
 function check(ok,label){return `<div class="check ${ok?'':'bad'}"><i>${ok?'✓':'!'}</i>${label}</div>`}
@@ -48,6 +49,7 @@ function render(r){const hold=r.selection_status!=="FINAL READY";const away=num(
 function renderSafe(r){
   const status=String(r.selection_status||'DATA HOLD').toUpperCase();
   const finalReady=status==='FINAL READY', preliminary=status==='PRELIMINARY';
+  const action=winnerAction(r), playable=finalReady&&action==='PLAY';
   const missing=String(r.missing_inputs||'').split(';').filter(Boolean);
   const teamContext=!missing.includes('team_or_pitcher_run_context');
   const hasProjection=teamContext&&present(r.away_win_probability)&&present(r.home_win_probability)&&present(r.winner_pick);
@@ -60,19 +62,19 @@ function renderSafe(r){
   const weather=!missing.includes('live_weather')&&present(r.temperature);
   const totalReady=present(r.projected_total);
   const marketReady=present(r.market_total);
-  const statusLabel=finalReady?'FINAL READY ✓':preliminary?'PRELIMINARY':'DATA HOLD';
+  const statusLabel=finalReady?(playable?'PLAY ✓':'SKIP BET'):preliminary?'PRELIMINARY':'DATA HOLD';
   $('#ready').textContent=statusLabel;
   $('#ready').style.borderColor=finalReady?'#7ce63b':'#ffbb21';
   $('#ready').style.color=finalReady?'#7ce63b':'#ffbb21';
-  const pickTitle=finalReady?`${esc(pick)} TO WIN`:preliminary&&hasProjection?'EARLY PROJECTION — NOT OFFICIAL':'OFFICIAL PICK PENDING';
+  const pickTitle=playable?`${esc(pick)} TO WIN`:finalReady?'SKIP BET — MATCHUP TOO CLOSE':preliminary&&hasProjection?'EARLY PROJECTION — NOT OFFICIAL':'OFFICIAL PICK PENDING';
   const probability=hasProjection?`${fmt(win)}%`:'DATA PENDING';
   const totalPick=marketReady?(r.total_pick||'NO EDGE'):'NO LINE';
   const totalEdge=marketReady&&present(r.total_edge)?`${num(r.total_edge)>0?'+':''}${fmt(r.total_edge)}`:'—';
   $('#screen').innerHTML=`
     <section class="game-hero"><div class="matchup-line"><div class="matchup-team">${logo(r.away_team,'compare-logo')}<b>${esc(r.away_team)}</b></div><div class="matchup-vs">VS</div><div class="matchup-team home"><b>${esc(r.home_team)}</b>${logo(r.home_team,'compare-logo')}</div></div><div class="meta">${new Date(r.game_datetime_utc).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})} · ${esc(r.venue||'Venue pending')} <span class="game-state">${esc(r.game_status||'SCHEDULED')}</span></div><div class="final-outcome" id="final-outcome"></div><div class="data-updated">MODEL UPDATED ${present(r.prediction_generated_at_utc)?new Date(r.prediction_generated_at_utc).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'TIME PENDING'}</div></section>
-    ${!finalReady?`<div class="card hold"><strong>${statusLabel}</strong>${preliminary?'Real team and pitching data are loaded, but the official pick is waiting for final lineup or weather confirmation.':'No official winner or total pick is published while required data is missing.'}<div class="hold-note">Missing: ${esc(missing.map(x=>x.replaceAll('_',' ')).join(' · ')||'verification pending')}</div></div>`:''}
+    ${!finalReady?`<div class="card hold"><strong>${statusLabel}</strong>${preliminary?'Real team and pitching data are loaded, but the official pick is waiting for final lineup or weather confirmation.':'No official winner or total pick is published while required data is missing.'}<div class="hold-note">Missing: ${esc(missing.map(x=>x.replaceAll('_',' ')).join(' · ')||'verification pending')}</div></div>`:!playable?`<div class="card hold"><strong>SKIP BET</strong>The projected matchup is too close to qualify as a playable edge.</div>`:''}
     <section class="card pick-card">
-      <div class="pick-row"><div class="team-mark">${hasProjection?logo(pick):'—'}</div><div><div class="pick-name"><span class="star">★</span> ${pickTitle}</div><div class="label">MODEL WIN PROBABILITY</div><div class="prob ${hasProjection?'':'pending'}">${probability}</div></div><div class="confidence">◇ ${finalReady?esc(r.winner_confidence):statusLabel}</div></div>
+      <div class="pick-row"><div class="team-mark">${hasProjection?logo(pick):'—'}</div><div><div class="pick-name"><span class="star">★</span> ${pickTitle}</div><div class="label">MODEL WIN PROBABILITY</div><div class="prob ${hasProjection?'':'pending'}">${probability}</div></div><div class="confidence">◇ ${finalReady?esc(action):statusLabel}</div></div>
       ${hasProjection?`<div class="bar-labels"><span>${esc(pick)} ${fmt(win)}%</span><span>${esc(pickHome?r.away_team:r.home_team)} ${fmt(lose)}%</span></div><div class="bar"><i style="width:${win}%"></i></div>`:'<div class="hold-note">Win probability will appear after real team and pitcher context loads.</div>'}
     </section>
     <section class="card"><h2>TEAM COMPARISON</h2><div class="compare"><div class="team">${esc(r.away_team)}</div><div class="versus">VS</div><div class="team">${esc(r.home_team)}</div></div>
@@ -80,7 +82,7 @@ function renderSafe(r){
       <div class="metrics"><div class="metric"><b>${teamContext?valueOrPending(r.away_projected_runs):'<span class="pending">DATA PENDING</span>'}</b><span>PROJECTED RUNS</span><b>${teamContext?valueOrPending(r.home_projected_runs):'<span class="pending">DATA PENDING</span>'}</b></div><div class="metric"><b>${teamContext?valueOrPending(r.away_team_offense_score):'<span class="pending">DATA PENDING</span>'}</b><span>OFFENSE SCORE</span><b>${teamContext?valueOrPending(r.home_team_offense_score):'<span class="pending">DATA PENDING</span>'}</b></div><div class="metric"><b>${teamContext?valueOrPending(r.away_starter_run_prevention):'<span class="pending">DATA PENDING</span>'}</b><span>STARTER PREVENTION</span><b>${teamContext?valueOrPending(r.home_starter_run_prevention):'<span class="pending">DATA PENDING</span>'}</b></div><div class="metric"><b>${teamContext?valueOrPending(r.away_staff_run_prevention):'<span class="pending">DATA PENDING</span>'}</b><span>STAFF PREVENTION</span><b>${teamContext?valueOrPending(r.home_staff_run_prevention):'<span class="pending">DATA PENDING</span>'}</b></div></div>
     </section>
     <section class="card"><h2>TOTAL PROJECTION</h2>${marketReady?`<div class="total-grid"><div><span>PROJECTED TOTAL</span><b>${teamContext&&totalReady?fmt(r.projected_total):'<span class="pending">PENDING</span>'}</b></div><div><span>MARKET TOTAL</span><b class="market">${fmt(r.market_total)}</b></div><div><span>MODEL PICK</span><b>${esc(teamContext?totalPick:'DATA HOLD')}</b></div><div><span>EDGE</span><b>${teamContext?totalEdge:'—'}</b></div><div><span>STATUS</span><b>${esc(teamContext?(r.total_confidence||'UNAVAILABLE'):'UNAVAILABLE')}</b></div></div>`:`<div class="projection-only"><b>${teamContext&&totalReady?fmt(r.projected_total):'PENDING'}</b><span>PROJECTED GAME TOTAL<br>Sportsbook line has not been supplied, so no Over/Under pick is shown.</span></div>`}</section>
-    <section class="card"><h2>${hasProjection?'WHY '+esc(pick).toUpperCase():'WHY THE MODEL IS WAITING'}</h2><div class="reasons">${scoreReasons(r,pick)}</div></section>
+    <section class="card"><h2>${finalReady&&!playable?'WHY THE MODEL IS PASSING':hasProjection?'WHY '+esc(pick).toUpperCase():'WHY THE MODEL IS WAITING'}</h2><div class="reasons">${scoreReasons(r,pick)}</div></section>
     <section class="card"><h2>MODEL CHECKS</h2><div class="checks">${check(teamContext,'TEAM DATA '+fmt(r.data_completeness_pct)+'%')}${check(starters,'STARTERS CONFIRMED')}${check(weather,'WEATHER LIVE')}${check(lineups,'LINEUPS CONFIRMED')}</div></section>`;
 }
 function selectGame(index,updateUrl=true){
