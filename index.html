@@ -3714,7 +3714,7 @@ function renderGameEdgeResults(){
     .map(row=>{
       const market=row.market_total?` · Market ${esc(row.market_total)}`:"";
       const totalLabel=row.total_pick?`${esc(row.total_pick)} ${esc(row.total_result)}`:esc(row.total_result||"UNGRADED");
-      return `<div class="game-result-row"><span><b>${esc(row.away_team)} ${esc(row.actual_away_runs)} — ${esc(row.actual_home_runs)} ${esc(row.home_team)}</b><small>Winner pick: ${esc(row.winner_pick)} · ${esc(row.winner_confidence||"")}<br>Projected total: ${esc(row.projected_total||"—")}${market}</small></span><span class="game-result-badges"><strong class="result-badge ${gameResultClass(row.winner_result)}">WINNER ${esc(row.winner_result)}</strong><strong class="result-badge ${gameResultClass(row.total_result)}">${totalLabel}</strong></span></div>`;
+      return `<div class="game-result-row"><span><b>${esc(row.away_team)} ${esc(row.actual_away_runs)} — ${esc(row.actual_home_runs)} ${esc(row.home_team)}</b><small>Winner pick: ${esc(row.winner_pick)} · ${esc((()=>{const a=String(row.winner_confidence||"").toUpperCase();return a==="NO EDGE"||a==="SKIP BET"?"SKIP BET":a==="STRONG"||a==="LEAN"?"PLAY":a})())}<br>Projected total: ${esc(row.projected_total||"—")}${market}</small></span><span class="game-result-badges"><strong class="result-badge ${gameResultClass(row.winner_result)}">WINNER ${esc(row.winner_result)}</strong><strong class="result-badge ${gameResultClass(row.total_result)}">${totalLabel}</strong></span></div>`;
     }).join("");
 }
 async function loadGameEdgeResults(){
@@ -4283,7 +4283,7 @@ function trendDetails(p){
   return `<div class="player-trend" data-player="${esc(p.player)}">
     <div class="trend-head"><strong>${esc(displayName(p.player))}<span class="player-profile-badge ${profile.kind}">${profile.label}</span></strong><span class="trend-badge ${kind}">${esc(raw)}</span></div>
     <div class="detail-title">${esc(p.team||"")} vs ${esc(p.opponent||"")}</div>
-    <div class="detail-tags"><span>${esc(p.lineup_status||"LINEUP PENDING")}</span><span>${esc(p.batting_order?`BATTING ${p.batting_order}`:"ORDER PENDING")}</span>${rookieSource?`<span>ROOKIE SOURCE: ${esc(rookieSource)}</span>`:""}</div>
+    <div class="detail-tags"><span>${esc(p.lineup_status||"LINEUP PENDING")}</span><span>${esc(p.batting_order?`BATTING ${p.batting_order}`:"ORDER PENDING")}</span>${p.core_signal_agreement?`<span>${esc(p.core_signal_agreement)}</span>`:""}${p.hitter_fit?`<span>${esc(p.hitter_fit)}</span>`:""}${p.hitter_playability?`<span>${esc(p.hitter_playability)}</span>`:""}${rookieSource?`<span>ROOKIE SOURCE: ${esc(rookieSource)}</span>`:""}</div>
     <section class="matchup-dashboard">
       <div class="matchup-dashboard-head"><div><small>TODAY'S PITCHER MATCHUP</small><b>vs ${esc(pitcher)}</b><em>${esc(hands||pitcherHand)}</em></div><span class="advantage-badge ${advantage.kind}">${advantage.label}</span></div>
       <div class="matchup-subhead">OPPOSING PITCHER</div><div class="matchup-metrics">${pitcherStats}</div>
