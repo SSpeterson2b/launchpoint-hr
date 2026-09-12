@@ -3324,7 +3324,7 @@ body{background:radial-gradient(circle at 50% -10%,#073756 0,#01111e 34%,#00080e
   .game-player-card:not(.primary-card) .player-name{font-size:14px!important;line-height:1.08!important}
 }
 
-</style>
+\n/* PLAYER PROPS NAV */\n.bottom{grid-template-columns:repeat(6,1fr)!important}\n.bottom button[data-bottom="player-props"]{color:#14caed}\n@media(max-width:560px){.bottom button{font-size:9px!important}.bottom small{font-size:7px!important}}\n</style>
 
 </head><body><main class="shell">
 <section class="hero">
@@ -3500,7 +3500,7 @@ body{background:radial-gradient(circle at 50% -10%,#073756 0,#01111e 34%,#00080e
     <div id="game-results-list"><div class="empty">Game Edge grades appear after games become final.</div></div>
   </div>
 </section>
-<nav class="bottom"><button class="active" data-bottom="home">HOME <small>HOME</small></button><button data-bottom="hr-picks">HR PICKS <small>HR PICKS</small></button><button data-bottom="game-edge">GAME EDGE <small>GAME EDGE</small></button><button data-bottom="results">RESULTS <small>RESULTS</small></button><button data-bottom="more">...<small>MORE</small></button></nav></main>
+<nav class="bottom"><button class="active" data-bottom="home">HOME <small>HOME</small></button><button data-bottom="hr-picks">HR PICKS <small>HR PICKS</small></button><button data-bottom="game-edge">GAME EDGE <small>GAME EDGE</small></button><button data-bottom="player-props">PROPS <small>PLAYER PROPS</small></button><button data-bottom="results">RESULTS <small>RESULTS</small></button><button data-bottom="more">...<small>MORE</small></button></nav></main>
 <script>
 const lpHeadshotCache={};
 
@@ -4430,7 +4430,7 @@ document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
   document.querySelectorAll("[data-bottom]").forEach(x=>x.classList.remove("active"));
   b.classList.add("active");
 
-  if(b.dataset.bottom==="game-edge"){
+  if(b.dataset.bottom==="player-props"){\n    window.location.href="player-props.html";\n    return;\n  }\n\n  if(b.dataset.bottom==="game-edge"){
     const selected=openKey||sessionStorage.getItem("launchpoint-selected-game")||"";
     window.location.href=`game-edge.html${selected?`?game_pk=${encodeURIComponent(selected)}`:""}`;
     return;
