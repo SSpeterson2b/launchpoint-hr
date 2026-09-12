@@ -4430,7 +4430,17 @@ document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
   document.querySelectorAll("[data-bottom]").forEach(x=>x.classList.remove("active"));
   b.classList.add("active");
 
-  if(b.dataset.bottom==="player-props"){\n    window.location.href="player-props.html";\n    return;\n  }\n\n  if(b.dataset.bottom==="parlays"){\n    window.location.href="parlays.html";\n    return;\n  }\n\n  if(b.dataset.bottom==="game-edge"){
+  if(b.dataset.bottom==="player-props"){
+    window.location.href="player-props.html";
+    return;
+  }
+
+  if(b.dataset.bottom==="parlays"){
+    window.location.href="parlays.html";
+    return;
+  }
+
+  if(b.dataset.bottom==="game-edge"){
     const selected=openKey||sessionStorage.getItem("launchpoint-selected-game")||"";
     window.location.href=`game-edge.html${selected?`?game_pk=${encodeURIComponent(selected)}`:""}`;
     return;
