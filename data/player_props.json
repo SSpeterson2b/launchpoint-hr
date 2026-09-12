@@ -1,0 +1,13 @@
+{
+  "generated_at_utc": "",
+  "slate_date": "",
+  "model_version": "Player Props 1.0",
+  "status": "SKIP",
+  "status_reason": "Waiting for the next completed model update",
+  "games": [],
+  "rules": {
+    "main": "One best candidate per category per game",
+    "long_shots": "Maximum one per team",
+    "missing_data": "Always SKIP"
+  }
+}
