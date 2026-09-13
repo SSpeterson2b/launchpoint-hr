@@ -2,6 +2,180 @@
   "version": 1,
   "slates": [
     {
+      "slate_date": "2026-09-13",
+      "generated_at_utc": "2026-09-13T17:14:30.638179+00:00",
+      "locked_at_utc": "2026-09-13T17:14:41.506Z",
+      "first_game_start_utc": "2026-09-13T17:35:00.000Z",
+      "status": "LOCKED",
+      "cards": [
+        {
+          "title": "Top 2-Leg Parlay",
+          "legs": [
+            {
+              "game": "823734",
+              "start": "2026-09-13T18:10:00Z",
+              "player": "Chase Burns",
+              "player_id": 641343,
+              "team": "Milwaukee Brewers",
+              "opponent": "Cincinnati Reds",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 3.5,
+              "pick": "OVER 3.5",
+              "odds": -145,
+              "confidence": 86,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "823495",
+              "start": "2026-09-13T17:35:00Z",
+              "player": "Christian Scott",
+              "player_id": 592450,
+              "team": "New York Yankees",
+              "opponent": "New York Mets",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 5.5,
+              "pick": "OVER 5.5",
+              "odds": -135,
+              "confidence": 86,
+              "result": "",
+              "actual": ""
+            }
+          ]
+        },
+        {
+          "title": "Same-Game Parlay",
+          "legs": [
+            {
+              "game": "823734",
+              "start": "2026-09-13T18:10:00Z",
+              "player": "Chase Burns",
+              "player_id": 641343,
+              "team": "Milwaukee Brewers",
+              "opponent": "Cincinnati Reds",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 3.5,
+              "pick": "OVER 3.5",
+              "odds": -145,
+              "confidence": 86,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "823734",
+              "start": "2026-09-13T18:10:00Z",
+              "player": "Jake Bauers",
+              "player_id": 641343,
+              "team": "Milwaukee Brewers",
+              "opponent": "Cincinnati Reds",
+              "market": "TOTAL BASES",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": -140,
+              "confidence": 83,
+              "result": "",
+              "actual": ""
+            }
+          ]
+        },
+        {
+          "title": "Player Prop Parlay",
+          "legs": [
+            {
+              "game": "823171",
+              "start": "2026-09-13T23:20:00Z",
+              "player": "Nick Pivetta",
+              "player_id": 646240,
+              "team": "San Francisco Giants",
+              "opponent": "San Diego Padres",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 4.5,
+              "pick": "OVER 4.5",
+              "odds": -121,
+              "confidence": 86,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "823008",
+              "start": "2026-09-13T18:15:00Z",
+              "player": "David Sandlin",
+              "player_id": 699024,
+              "team": "St. Louis Cardinals",
+              "opponent": "Chicago White Sox",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 3.5,
+              "pick": "OVER 3.5",
+              "odds": -165,
+              "confidence": 85,
+              "result": "",
+              "actual": ""
+            }
+          ]
+        },
+        {
+          "title": "Long-Shot Parlay",
+          "legs": [
+            {
+              "game": "823815",
+              "start": "2026-09-13T17:40:00Z",
+              "player": "Emmet Sheehan",
+              "player_id": 665052,
+              "team": "Miami Marlins",
+              "opponent": "Los Angeles Dodgers",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 5.5,
+              "pick": "OVER 5.5",
+              "odds": 122,
+              "confidence": 77,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "822764",
+              "start": "2026-09-13T17:37:00Z",
+              "player": "Dylan Cease",
+              "player_id": 624413,
+              "team": "Baltimore Orioles",
+              "opponent": "Toronto Blue Jays",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 8.5,
+              "pick": "OVER 8.5",
+              "odds": 116,
+              "confidence": 71,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "823008",
+              "start": "2026-09-13T18:15:00Z",
+              "player": "Munetaka Murakami",
+              "player_id": 808959,
+              "team": "Chicago White Sox",
+              "opponent": "St. Louis Cardinals",
+              "market": "RBI",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": 152,
+              "confidence": 68,
+              "result": "",
+              "actual": ""
+            }
+          ]
+        }
+      ],
+      "graded_at_utc": ""
+    },
+    {
       "slate_date": "2026-09-12",
       "generated_at_utc": "2026-09-12T16:44:39.518052+00:00",
       "locked_at_utc": "2026-09-13T04:04:50.069Z",
@@ -176,5 +350,5 @@
       "graded_at_utc": "2026-09-13T16:07:54.543Z"
     }
   ],
-  "updated_at_utc": "2026-09-13T16:07:54.580Z"
+  "updated_at_utc": "2026-09-13T17:14:42.050Z"
 }
