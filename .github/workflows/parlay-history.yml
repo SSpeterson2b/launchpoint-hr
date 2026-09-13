@@ -1,0 +1,42 @@
+name: Preserve and grade parlay history
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "data/player_props.json"
+      - "player_props.json"
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: parlay-history
+  cancel-in-progress: false
+
+jobs:
+  archive-and-grade:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Preserve selections and grade final legs
+        run: node scripts/update_parlay_history.mjs
+
+      - name: Save parlay history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/parlay_history.json
+          if git diff --cached --quiet; then
+            echo "No parlay history changes."
+          else
+            git commit -m "Update graded parlay history"
+            git push
+          fi

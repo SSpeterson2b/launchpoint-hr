@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "slates": [
+    {
+      "slate_date": "2026-09-12",
+      "generated_at_utc": "2026-09-12T16:44:39.518052+00:00",
+      "locked_at_utc": "2026-09-13T04:04:50.069Z",
+      "first_game_start_utc": "2026-09-12T17:10:00.000Z",
+      "status": "GRADED",
+      "cards": [
+        {
+          "title": "Top 2-Leg Parlay",
+          "legs": [
+            {
+              "game": "823009",
+              "start": "2026-09-12T23:15:00Z",
+              "player": "Kyle Leahy",
+              "player_id": 808959,
+              "team": "Chicago White Sox",
+              "opponent": "St. Louis Cardinals",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 2.5,
+              "pick": "OVER 2.5",
+              "odds": -152,
+              "confidence": 86,
+              "result": "HIT",
+              "actual": "4"
+            },
+            {
+              "game": "823170",
+              "start": "2026-09-12T20:05:00Z",
+              "player": "Cesar Perdomo",
+              "player_id": 665487,
+              "team": "San Diego Padres",
+              "opponent": "San Francisco Giants",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 3.5,
+              "pick": "OVER 3.5",
+              "odds": -139,
+              "confidence": 86,
+              "result": "MISS",
+              "actual": "3"
+            }
+          ]
+        },
+        {
+          "title": "Same-Game Parlay",
+          "legs": [
+            {
+              "game": "823170",
+              "start": "2026-09-12T20:05:00Z",
+              "player": "Cesar Perdomo",
+              "player_id": 665487,
+              "team": "San Diego Padres",
+              "opponent": "San Francisco Giants",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 3.5,
+              "pick": "OVER 3.5",
+              "odds": -139,
+              "confidence": 86,
+              "result": "MISS",
+              "actual": "3"
+            },
+            {
+              "game": "823170",
+              "start": "2026-09-12T20:05:00Z",
+              "player": "Bryce Eldridge",
+              "player_id": 805811,
+              "team": "San Francisco Giants",
+              "opponent": "San Diego Padres",
+              "market": "TOTAL BASES",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": -165,
+              "confidence": 78,
+              "result": "MISS",
+              "actual": "0"
+            }
+          ]
+        },
+        {
+          "title": "Player Prop Parlay",
+          "legs": [
+            {
+              "game": "824224",
+              "start": "2026-09-12T17:10:00Z",
+              "player": "Tanner Gordon",
+              "player_id": 682985,
+              "team": "Detroit Tigers",
+              "opponent": "Colorado Rockies",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 3.5,
+              "pick": "OVER 3.5",
+              "odds": -153,
+              "confidence": 82,
+              "result": "HIT",
+              "actual": "5"
+            },
+            {
+              "game": "822927",
+              "start": "2026-09-12T22:10:00Z",
+              "player": "Ian Seymour",
+              "player_id": 670541,
+              "team": "Houston Astros",
+              "opponent": "Tampa Bay Rays",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 5.5,
+              "pick": "OVER 5.5",
+              "odds": -102,
+              "confidence": 78,
+              "result": "HIT",
+              "actual": "10"
+            }
+          ]
+        },
+        {
+          "title": "Long-Shot Parlay",
+          "legs": [
+            {
+              "game": "823819",
+              "start": "2026-09-12T20:10:00Z",
+              "player": "Tyler Glasnow",
+              "player_id": 665052,
+              "team": "Miami Marlins",
+              "opponent": "Los Angeles Dodgers",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 7.5,
+              "pick": "OVER 7.5",
+              "odds": 119,
+              "confidence": 75,
+              "result": "MISS",
+              "actual": "7"
+            },
+            {
+              "game": "824955",
+              "start": "2026-09-13T01:40:00Z",
+              "player": "Gage Jump",
+              "player_id": 686527,
+              "team": "Seattle Mariners",
+              "opponent": "Athletics",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 5.5,
+              "pick": "OVER 5.5",
+              "odds": 118,
+              "confidence": 75,
+              "result": "MISS",
+              "actual": "2"
+            },
+            {
+              "game": "823496",
+              "start": "2026-09-12T17:35:00Z",
+              "player": "Aaron Judge",
+              "player_id": 592450,
+              "team": "New York Yankees",
+              "opponent": "New York Mets",
+              "market": "RBI",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": 133,
+              "confidence": 67,
+              "result": "MISS",
+              "actual": "0"
+            }
+          ]
+        }
+      ],
+      "graded_at_utc": "2026-09-13T05:21:16.043Z"
+    }
+  ],
+  "updated_at_utc": "2026-09-13T05:21:16.044Z"
+}
