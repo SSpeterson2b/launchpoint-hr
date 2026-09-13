@@ -1,44 +1,187 @@
 {
-  "generated_at_utc": "2026-09-12T23:40:56.725023+00:00",
-  "slate_date": "2026-09-12",
+  "generated_at_utc": "2026-09-13T17:14:30.638179+00:00",
+  "slate_date": "2026-09-13",
   "model_version": "Player Props 1.0",
   "status": "LIVE",
   "games": [
     {
-      "game_pk": "823009",
+      "game_pk": "822682",
+      "teams": [
+        "Los Angeles Angels",
+        "Washington Nationals"
+      ],
+      "venue": "Nationals Park",
+      "game_datetime_utc": "2026-09-13T17:35:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Jose Siri",
+          "player_id": 642350,
+          "team": "Los Angeles Angels",
+          "opponent": "Washington Nationals",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -165,
+          "book": "BetMGM",
+          "projection": 1.34,
+          "edge": 0.84,
+          "confidence": 67,
+          "decision": "PLAY",
+          "batting_order": 8,
+          "reasons": [
+            "14.3% barrel rate"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:49Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "James Wood",
+          "player_id": 695578,
+          "team": "Washington Nationals",
+          "opponent": "Los Angeles Angels",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -153,
+          "book": "DraftKings",
+          "projection": 0.9,
+          "edge": 0.4,
+          "confidence": 68,
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "20.3% barrel rate",
+            "pitcher vulnerability"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:11Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "James Wood",
+          "player_id": 695578,
+          "team": "Washington Nationals",
+          "opponent": "Los Angeles Angels",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 126,
+          "book": "DraftKings",
+          "projection": 0.85,
+          "edge": 0.35,
+          "confidence": 67,
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "20.3% barrel rate",
+            "pitcher vulnerability"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:11Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Grayson Rodriguez",
+          "player_id": 695578,
+          "team": "Washington Nationals",
+          "opponent": "Los Angeles Angels",
+          "line": 4.5,
+          "side": "OVER",
+          "odds": -129,
+          "book": "DraftKings",
+          "projection": 4.87,
+          "edge": 0.37,
+          "confidence": 67,
+          "decision": "SKIP",
+          "batting_order": 1,
+          "reasons": [
+            "20.3% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:11Z",
+          "status_reason": "No qualifying edge"
+        }
+      ],
+      "long_shots": [
+        {
+          "category": "HOME RUN",
+          "market": "batter_home_runs",
+          "player": "James Wood",
+          "player_id": 695578,
+          "team": "Washington Nationals",
+          "opponent": "Los Angeles Angels",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 325,
+          "book": "BetRivers",
+          "projection": 0.32,
+          "decision": "LONG SHOT",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "20.3% barrel rate",
+            "pitcher vulnerability"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:19Z"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Wade Meckler",
+          "player_id": 685133,
+          "team": "Los Angeles Angels",
+          "opponent": "Washington Nationals",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 253,
+          "book": "DraftKings",
+          "projection": 0.58,
+          "decision": "LONG SHOT",
+          "batting_order": 3,
+          "reasons": [
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:11Z"
+        }
+      ],
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
+    },
+    {
+      "game_pk": "823008",
       "teams": [
         "Chicago White Sox",
         "St. Louis Cardinals"
       ],
       "venue": "Busch Stadium",
-      "game_datetime_utc": "2026-09-12T23:15:00Z",
+      "game_datetime_utc": "2026-09-13T18:15:00Z",
       "props": [
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
-          "player": "Munetaka Murakami",
-          "player_id": 808959,
+          "player": "Colson Montgomery",
+          "player_id": 695657,
           "team": "Chicago White Sox",
           "opponent": "St. Louis Cardinals",
           "line": 0.5,
           "side": "OVER",
-          "odds": -125,
+          "odds": -150,
           "book": "BetMGM",
-          "projection": 1.79,
-          "edge": 1.29,
-          "confidence": 84,
+          "projection": 1.43,
+          "edge": 0.93,
+          "confidence": 68,
           "decision": "PLAY",
-          "batting_order": 4,
+          "batting_order": 8,
           "reasons": [
-            "3/3 core signals",
-            "19.0% barrel rate",
-            "pitcher vulnerability"
+            "12.8% barrel rate"
           ],
-          "locked_at_utc": "2026-09-12T23:40:01Z",
-          "status_reason": "Qualified edge",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-13T10:17:44.547814+00:00"
+          "locked_at_utc": "2026-09-13T17:13:10Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RUNS",
@@ -49,8 +192,8 @@
           "opponent": "St. Louis Cardinals",
           "line": 0.5,
           "side": "OVER",
-          "odds": 120,
-          "book": "BetMGM",
+          "odds": -107,
+          "book": "DraftKings",
           "projection": 0.73,
           "edge": 0.23,
           "confidence": 65,
@@ -58,14 +201,11 @@
           "batting_order": 4,
           "reasons": [
             "3/3 core signals",
-            "19.0% barrel rate",
-            "pitcher vulnerability"
+            "18.8% barrel rate",
+            "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-12T23:40:01Z",
-          "status_reason": "Qualified edge",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-13T10:17:44.547836+00:00"
+          "locked_at_utc": "2026-09-13T17:14:18Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RBI",
@@ -76,74 +216,66 @@
           "opponent": "St. Louis Cardinals",
           "line": 0.5,
           "side": "OVER",
-          "odds": 140,
-          "book": "BetMGM",
-          "projection": 0.96,
-          "edge": 0.46,
-          "confidence": 69,
+          "odds": 152,
+          "book": "DraftKings",
+          "projection": 0.94,
+          "edge": 0.44,
+          "confidence": 68,
           "decision": "PLAY",
           "batting_order": 4,
           "reasons": [
             "3/3 core signals",
-            "19.0% barrel rate",
-            "pitcher vulnerability"
+            "18.8% barrel rate",
+            "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-12T23:40:01Z",
-          "status_reason": "Qualified edge",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-13T10:17:44.547842+00:00"
+          "locked_at_utc": "2026-09-13T17:14:18Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Kyle Leahy",
-          "player_id": 808959,
-          "team": "Chicago White Sox",
-          "opponent": "St. Louis Cardinals",
-          "line": 2.5,
+          "player": "David Sandlin",
+          "player_id": 699024,
+          "team": "St. Louis Cardinals",
+          "opponent": "Chicago White Sox",
+          "line": 3.5,
           "side": "OVER",
-          "odds": -157,
+          "odds": -165,
           "book": "DraftKings",
-          "projection": 5.52,
-          "edge": 3.02,
-          "confidence": 86,
+          "projection": 4.86,
+          "edge": 1.36,
+          "confidence": 85,
           "decision": "PLAY",
-          "batting_order": 4,
+          "batting_order": 5,
           "reasons": [
-            "22.2% pitcher K rate",
+            "22.6% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-12T23:37:09Z",
-          "status_reason": "Qualified edge",
-          "result": "EXCLUDED",
-          "result_reason": "Player box-score statistic unavailable"
+          "locked_at_utc": "2026-09-13T17:14:18Z",
+          "status_reason": "Qualified edge"
         }
       ],
       "long_shots": [
         {
           "category": "HOME RUN",
           "market": "batter_home_runs",
-          "player": "Miguel Vargas",
-          "player_id": 678246,
+          "player": "Munetaka Murakami",
+          "player_id": 808959,
           "team": "Chicago White Sox",
           "opponent": "St. Louis Cardinals",
           "line": 0.5,
           "side": "OVER",
-          "odds": 480,
+          "odds": 440,
           "book": "BetRivers",
-          "projection": 0.26,
+          "projection": 0.3,
           "decision": "LONG SHOT",
-          "batting_order": 3,
+          "batting_order": 4,
           "reasons": [
-            "13.6% barrel rate",
-            "pitcher vulnerability",
-            "confirmed batting 3"
+            "3/3 core signals",
+            "18.8% barrel rate",
+            "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-12T23:40:51Z",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-13T10:17:44.547848+00:00"
+          "locked_at_utc": "2026-09-13T17:14:09Z"
         },
         {
           "category": "RBI",
@@ -154,7 +286,7 @@
           "opponent": "Chicago White Sox",
           "line": 0.5,
           "side": "OVER",
-          "odds": 245,
+          "odds": 263,
           "book": "DraftKings",
           "projection": 0.57,
           "decision": "LONG SHOT",
@@ -162,117 +294,508 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-12T23:40:50Z",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-13T10:17:44.547851+00:00"
+          "locked_at_utc": "2026-09-13T17:14:18Z"
         }
       ],
       "status": "LIVE",
-      "status_reason": "Verified prop card",
-      "grading_status": "FINAL"
+      "status_reason": "Verified prop card"
     },
     {
-      "game_pk": "823496",
+      "game_pk": "822928",
       "teams": [
-        "New York Mets",
-        "New York Yankees"
+        "Houston Astros",
+        "Tampa Bay Rays"
       ],
-      "venue": "Yankee Stadium",
-      "game_datetime_utc": "2026-09-12T17:35:00Z",
+      "venue": "Tropicana Field",
+      "game_datetime_utc": "2026-09-13T17:40:00Z",
       "props": [
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        }
-      ],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "823737",
-      "teams": [
-        "Cincinnati Reds",
-        "Milwaukee Brewers"
-      ],
-      "venue": "American Family Field",
-      "game_datetime_utc": "2026-09-12T23:10:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Jackson Chourio",
-          "player_id": 694192,
-          "team": "Milwaukee Brewers",
-          "opponent": "Cincinnati Reds",
+          "player": "Isaac Paredes",
+          "player_id": 670623,
+          "team": "Houston Astros",
+          "opponent": "Tampa Bay Rays",
           "line": 0.5,
           "side": "OVER",
-          "odds": -150,
+          "odds": -185,
           "book": "BetMGM",
-          "projection": 2.01,
-          "edge": 1.51,
-          "confidence": 85,
+          "projection": 1.58,
+          "edge": 1.08,
+          "confidence": 71,
           "decision": "PLAY",
-          "batting_order": 1,
+          "batting_order": 3,
           "reasons": [
-            "12.4% barrel rate",
-            "pitcher vulnerability",
-            "confirmed batting 1"
+            "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-12T23:40:48Z",
-          "status_reason": "Qualified edge",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-13T10:17:44.730841+00:00"
+          "locked_at_utc": "2026-09-13T17:13:40Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
-          "player": "Elly De La Cruz",
-          "player_id": 682829,
-          "team": "Cincinnati Reds",
-          "opponent": "Milwaukee Brewers",
+          "player": "Yordan Alvarez",
+          "player_id": 670541,
+          "team": "Houston Astros",
+          "opponent": "Tampa Bay Rays",
           "line": 0.5,
           "side": "OVER",
-          "odds": 165,
+          "odds": -119,
           "book": "DraftKings",
-          "projection": 0.81,
-          "edge": 0.31,
+          "projection": 0.79,
+          "edge": 0.29,
           "confidence": 66,
           "decision": "PLAY",
           "batting_order": 2,
           "reasons": [
             "3/3 core signals",
-            "15.9% barrel rate",
+            "16.0% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-12T23:40:35Z",
-          "status_reason": "Qualified edge",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-13T10:17:44.730863+00:00"
+          "locked_at_utc": "2026-09-13T17:14:15Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Junior Caminero",
+          "player_id": 691406,
+          "team": "Tampa Bay Rays",
+          "opponent": "Houston Astros",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 142,
+          "book": "DraftKings",
+          "projection": 0.86,
+          "edge": 0.36,
+          "confidence": 64,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "13.1% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:15Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Hayden Wesneski",
+          "player_id": 691406,
+          "team": "Tampa Bay Rays",
+          "opponent": "Houston Astros",
+          "line": 3.5,
+          "side": "OVER",
+          "odds": 110,
+          "book": "DraftKings",
+          "projection": 3.09,
+          "edge": -0.41,
+          "confidence": 50,
+          "decision": "SKIP",
+          "batting_order": 3,
+          "reasons": [
+            "20.0% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:15Z",
+          "status_reason": "No qualifying edge"
+        }
+      ],
+      "long_shots": [
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Taylor Trammell",
+          "player_id": 666211,
+          "team": "Houston Astros",
+          "opponent": "Tampa Bay Rays",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 334,
+          "book": "DraftKings",
+          "projection": 0.56,
+          "decision": "LONG SHOT",
+          "batting_order": 9,
+          "reasons": [
+            "12.3% barrel rate"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:15Z"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Jonny Deluca",
+          "player_id": 676356,
+          "team": "Tampa Bay Rays",
+          "opponent": "Houston Astros",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 224,
+          "book": "DraftKings",
+          "projection": 0.55,
+          "decision": "LONG SHOT",
+          "batting_order": 6,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:15Z"
+        }
+      ],
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
+    },
+    {
+      "game_pk": "824628",
+      "teams": [
+        "Chicago Cubs",
+        "Pittsburgh Pirates"
+      ],
+      "venue": "Wrigley Field",
+      "game_datetime_utc": "2026-09-13T18:20:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Oneil Cruz",
+          "player_id": 665833,
+          "team": "Pittsburgh Pirates",
+          "opponent": "Chicago Cubs",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -150,
+          "book": "BetMGM",
+          "projection": 1.83,
+          "edge": 1.33,
+          "confidence": 84,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "16.3% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-13T17:12:25Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Oneil Cruz",
+          "player_id": 665833,
+          "team": "Pittsburgh Pirates",
+          "opponent": "Chicago Cubs",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 148,
+          "book": "DraftKings",
+          "projection": 0.79,
+          "edge": 0.29,
+          "confidence": 66,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "16.3% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:08Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Oneil Cruz",
+          "player_id": 665833,
+          "team": "Pittsburgh Pirates",
+          "opponent": "Chicago Cubs",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 255,
+          "book": "DraftKings",
+          "projection": 0.78,
+          "edge": 0.28,
+          "confidence": 66,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "16.3% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:08Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Bubba Chandler",
+          "player_id": 691718,
+          "team": "Chicago Cubs",
+          "opponent": "Pittsburgh Pirates",
+          "line": 4.5,
+          "side": "OVER",
+          "odds": 127,
+          "book": "DraftKings",
+          "projection": 4.64,
+          "edge": 0.14,
+          "confidence": 63,
+          "decision": "SKIP",
+          "batting_order": 1,
+          "reasons": [
+            "21.0% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:08Z",
+          "status_reason": "No qualifying edge"
+        }
+      ],
+      "long_shots": [
+        {
+          "category": "HOME RUN",
+          "market": "batter_home_runs",
+          "player": "Oneil Cruz",
+          "player_id": 665833,
+          "team": "Pittsburgh Pirates",
+          "opponent": "Chicago Cubs",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 600,
+          "book": "BetRivers",
+          "projection": 0.27,
+          "decision": "LONG SHOT",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "16.3% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:09Z"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Michael Conforto",
+          "player_id": 624424,
+          "team": "Chicago Cubs",
+          "opponent": "Pittsburgh Pirates",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 269,
+          "book": "DraftKings",
+          "projection": 0.68,
+          "decision": "LONG SHOT",
+          "batting_order": 7,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:08Z"
+        }
+      ],
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
+    },
+    {
+      "game_pk": "824869",
+      "teams": [
+        "Atlanta Braves",
+        "Philadelphia Phillies"
+      ],
+      "venue": "Truist Park",
+      "game_datetime_utc": "2026-09-13T17:35:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Austin Riley",
+          "player_id": 663586,
+          "team": "Atlanta Braves",
+          "opponent": "Philadelphia Phillies",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -190,
+          "book": "BetMGM",
+          "projection": 1.24,
+          "edge": 0.74,
+          "confidence": 65,
+          "decision": "PLAY",
+          "batting_order": 7,
+          "reasons": [
+            "12.2% barrel rate"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:39Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Kyle Schwarber",
+          "player_id": 656941,
+          "team": "Philadelphia Phillies",
+          "opponent": "Atlanta Braves",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -150,
+          "book": "DraftKings",
+          "projection": 0.83,
+          "edge": 0.33,
+          "confidence": 66,
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "16.9% barrel rate",
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:10Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Matt Olson",
+          "player_id": 621566,
+          "team": "Atlanta Braves",
+          "opponent": "Philadelphia Phillies",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 135,
+          "book": "DraftKings",
+          "projection": 0.87,
+          "edge": 0.37,
+          "confidence": 64,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "14.6% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:10Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Grant Holmes",
+          "player_id": 656941,
+          "team": "Philadelphia Phillies",
+          "opponent": "Atlanta Braves",
+          "line": 3.5,
+          "side": "OVER",
+          "odds": -112,
+          "book": "DraftKings",
+          "projection": 3.67,
+          "edge": 0.17,
+          "confidence": 64,
+          "decision": "SKIP",
+          "batting_order": 1,
+          "reasons": [
+            "18.9% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:10Z",
+          "status_reason": "No qualifying edge"
+        }
+      ],
+      "long_shots": [
+        {
+          "category": "HOME RUN",
+          "market": "batter_home_runs",
+          "player": "Kyle Schwarber",
+          "player_id": 656941,
+          "team": "Philadelphia Phillies",
+          "opponent": "Atlanta Braves",
+          "line": 1.5,
+          "side": "OVER",
+          "odds": 1400,
+          "book": "BetRivers",
+          "projection": 0.3,
+          "decision": "LONG SHOT",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "16.9% barrel rate",
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:50Z"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Mike Yastrzemski",
+          "player_id": 573262,
+          "team": "Atlanta Braves",
+          "opponent": "Philadelphia Phillies",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 252,
+          "book": "DraftKings",
+          "projection": 0.55,
+          "decision": "LONG SHOT",
+          "batting_order": 8,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:10Z"
+        }
+      ],
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
+    },
+    {
+      "game_pk": "823734",
+      "teams": [
+        "Cincinnati Reds",
+        "Milwaukee Brewers"
+      ],
+      "venue": "American Family Field",
+      "game_datetime_utc": "2026-09-13T18:10:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Jake Bauers",
+          "player_id": 641343,
+          "team": "Milwaukee Brewers",
+          "opponent": "Cincinnati Reds",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -140,
+          "book": "BetMGM",
+          "projection": 1.76,
+          "edge": 1.26,
+          "confidence": 83,
+          "decision": "PLAY",
+          "batting_order": 5,
+          "reasons": [
+            "3/3 core signals",
+            "13.7% barrel rate"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:08Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Garrett Mitchell",
+          "player_id": 669003,
+          "team": "Milwaukee Brewers",
+          "opponent": "Cincinnati Reds",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 105,
+          "book": "DraftKings",
+          "projection": 0.8,
+          "edge": 0.3,
+          "confidence": 63,
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "12.0% barrel rate",
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:18Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RBI",
@@ -283,74 +806,64 @@
           "opponent": "Cincinnati Reds",
           "line": 0.5,
           "side": "OVER",
-          "odds": 115,
-          "book": "BetMGM",
-          "projection": 0.87,
-          "edge": 0.37,
-          "confidence": 64,
+          "odds": 182,
+          "book": "DraftKings",
+          "projection": 0.85,
+          "edge": 0.35,
+          "confidence": 67,
           "decision": "PLAY",
-          "batting_order": 3,
+          "batting_order": 5,
           "reasons": [
-            "13.8% barrel rate",
-            "pitcher vulnerability",
-            "confirmed batting 3"
+            "3/3 core signals",
+            "13.7% barrel rate"
           ],
-          "locked_at_utc": "2026-09-12T23:40:48Z",
-          "status_reason": "Qualified edge",
-          "actual": 2,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-13T10:17:44.730867+00:00"
+          "locked_at_utc": "2026-09-13T17:14:18Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Shane Drohan",
-          "player_id": 682829,
-          "team": "Cincinnati Reds",
-          "opponent": "Milwaukee Brewers",
-          "line": 5.5,
+          "player": "Chase Burns",
+          "player_id": 641343,
+          "team": "Milwaukee Brewers",
+          "opponent": "Cincinnati Reds",
+          "line": 3.5,
           "side": "OVER",
-          "odds": -140,
+          "odds": -145,
           "book": "DraftKings",
-          "projection": 6.15,
-          "edge": 0.65,
-          "confidence": 72,
+          "projection": 6.84,
+          "edge": 3.34,
+          "confidence": 86,
           "decision": "PLAY",
-          "batting_order": 2,
+          "batting_order": 5,
           "reasons": [
-            "23.8% pitcher K rate",
+            "29.2% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-12T23:40:35Z",
-          "status_reason": "Qualified edge",
-          "result": "EXCLUDED",
-          "result_reason": "Player box-score statistic unavailable"
+          "locked_at_utc": "2026-09-13T17:14:18Z",
+          "status_reason": "Qualified edge"
         }
       ],
       "long_shots": [
         {
           "category": "HOME RUN",
           "market": "batter_home_runs",
-          "player": "Jackson Chourio",
-          "player_id": 694192,
+          "player": "Garrett Mitchell",
+          "player_id": 669003,
           "team": "Milwaukee Brewers",
           "opponent": "Cincinnati Reds",
           "line": 0.5,
           "side": "OVER",
-          "odds": 600,
+          "odds": 500,
           "book": "BetRivers",
-          "projection": 0.25,
+          "projection": 0.24,
           "decision": "LONG SHOT",
           "batting_order": 1,
           "reasons": [
-            "12.4% barrel rate",
-            "pitcher vulnerability",
+            "12.0% barrel rate",
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-12T23:40:48Z",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-13T10:17:44.730874+00:00"
+          "locked_at_utc": "2026-09-13T17:13:41Z"
         },
         {
           "category": "HOME RUN",
@@ -361,360 +874,745 @@
           "opponent": "Milwaukee Brewers",
           "line": 0.5,
           "side": "OVER",
-          "odds": 540,
+          "odds": 390,
+          "book": "BetRivers",
+          "projection": 0.27,
+          "decision": "LONG SHOT",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "16.1% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:41Z"
+        }
+      ],
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
+    },
+    {
+      "game_pk": "823815",
+      "teams": [
+        "Los Angeles Dodgers",
+        "Miami Marlins"
+      ],
+      "venue": "loanDepot park",
+      "game_datetime_utc": "2026-09-13T17:40:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Max Muncy",
+          "player_id": 571970,
+          "team": "Los Angeles Dodgers",
+          "opponent": "Miami Marlins",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -140,
+          "book": "BetMGM",
+          "projection": 1.86,
+          "edge": 1.36,
+          "confidence": 85,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "3/3 core signals",
+            "13.2% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:22Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Kyle Stowers",
+          "player_id": 669065,
+          "team": "Miami Marlins",
+          "opponent": "Los Angeles Dodgers",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 109,
+          "book": "DraftKings",
+          "projection": 0.76,
+          "edge": 0.26,
+          "confidence": 65,
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "12.6% barrel rate",
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:10Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Griffin Conine",
+          "player_id": 665052,
+          "team": "Miami Marlins",
+          "opponent": "Los Angeles Dodgers",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 213,
+          "book": "DraftKings",
+          "projection": 0.86,
+          "edge": 0.36,
+          "confidence": 67,
+          "decision": "PLAY",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "15.1% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:10Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Emmet Sheehan",
+          "player_id": 665052,
+          "team": "Miami Marlins",
+          "opponent": "Los Angeles Dodgers",
+          "line": 5.5,
+          "side": "OVER",
+          "odds": 122,
+          "book": "DraftKings",
+          "projection": 6.41,
+          "edge": 0.91,
+          "confidence": 77,
+          "decision": "PLAY",
+          "batting_order": 4,
+          "reasons": [
+            "27.3% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:10Z",
+          "status_reason": "Qualified edge"
+        }
+      ],
+      "long_shots": [
+        {
+          "category": "HOME RUN",
+          "market": "batter_home_runs",
+          "player": "Griffin Conine",
+          "player_id": 665052,
+          "team": "Miami Marlins",
+          "opponent": "Los Angeles Dodgers",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 550,
+          "book": "BetRivers",
+          "projection": 0.27,
+          "decision": "LONG SHOT",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "15.1% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:49Z"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Miguel Rojas",
+          "player_id": 500743,
+          "team": "Los Angeles Dodgers",
+          "opponent": "Miami Marlins",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 231,
+          "book": "DraftKings",
+          "projection": 0.51,
+          "decision": "LONG SHOT",
+          "batting_order": 8,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:10Z"
+        }
+      ],
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
+    },
+    {
+      "game_pk": "823495",
+      "teams": [
+        "New York Mets",
+        "New York Yankees"
+      ],
+      "venue": "Yankee Stadium",
+      "game_datetime_utc": "2026-09-13T17:35:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Spencer Jones",
+          "player_id": 682987,
+          "team": "New York Yankees",
+          "opponent": "New York Mets",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -155,
+          "book": "BetMGM",
+          "projection": 1.58,
+          "edge": 1.08,
+          "confidence": 80,
+          "decision": "PLAY",
+          "batting_order": 5,
+          "reasons": [
+            "3/3 core signals",
+            "15.4% barrel rate"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:09Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Juan Soto",
+          "player_id": 665742,
+          "team": "New York Mets",
+          "opponent": "New York Yankees",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 103,
+          "book": "DraftKings",
+          "projection": 0.79,
+          "edge": 0.29,
+          "confidence": 66,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "14.2% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:11Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Aaron Judge",
+          "player_id": 592450,
+          "team": "New York Yankees",
+          "opponent": "New York Mets",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 131,
+          "book": "DraftKings",
+          "projection": 0.92,
+          "edge": 0.42,
+          "confidence": 68,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "3/3 core signals",
+            "20.5% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:11Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Christian Scott",
+          "player_id": 592450,
+          "team": "New York Yankees",
+          "opponent": "New York Mets",
+          "line": 5.5,
+          "side": "OVER",
+          "odds": -135,
+          "book": "DraftKings",
+          "projection": 6.89,
+          "edge": 1.39,
+          "confidence": 86,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "27.8% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:11Z",
+          "status_reason": "Qualified edge"
+        }
+      ],
+      "long_shots": [
+        {
+          "category": "HOME RUN",
+          "market": "batter_home_runs",
+          "player": "Aaron Judge",
+          "player_id": 592450,
+          "team": "New York Yankees",
+          "opponent": "New York Mets",
+          "line": 1.5,
+          "side": "OVER",
+          "odds": 1500,
+          "book": "BetRivers",
+          "projection": 0.3,
+          "decision": "LONG SHOT",
+          "batting_order": 3,
+          "reasons": [
+            "3/3 core signals",
+            "20.5% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:28Z"
+        },
+        {
+          "category": "HOME RUN",
+          "market": "batter_home_runs",
+          "player": "Juan Soto",
+          "player_id": 665742,
+          "team": "New York Mets",
+          "opponent": "New York Yankees",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 300,
           "book": "BetRivers",
           "projection": 0.28,
           "decision": "LONG SHOT",
           "batting_order": 2,
           "reasons": [
             "3/3 core signals",
-            "15.9% barrel rate",
+            "14.2% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-12T23:40:48Z",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-13T10:17:44.730877+00:00"
+          "locked_at_utc": "2026-09-13T17:13:28Z"
         }
       ],
       "status": "LIVE",
-      "status_reason": "Verified prop card",
-      "grading_status": "FINAL"
+      "status_reason": "Verified prop card"
     },
     {
-      "game_pk": "824630",
+      "game_pk": "824708",
       "teams": [
-        "Chicago Cubs",
-        "Pittsburgh Pirates"
+        "Boston Red Sox",
+        "Kansas City Royals"
       ],
-      "venue": "Wrigley Field",
-      "game_datetime_utc": "2026-09-12T18:20:00Z",
+      "venue": "Fenway Park",
+      "game_datetime_utc": "2026-09-13T19:05:00Z",
       "props": [
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "player": "Nick Loftin",
+          "player_id": 679845,
+          "team": "Kansas City Royals",
+          "opponent": "Boston Red Sox",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -190,
+          "book": "BetMGM",
+          "projection": 1.44,
+          "edge": 0.94,
+          "confidence": 68,
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:23Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "player": "Bobby Witt Jr.",
+          "player_id": 677951,
+          "team": "Kansas City Royals",
+          "opponent": "Boston Red Sox",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 120,
+          "book": "DraftKings",
+          "projection": 0.73,
+          "edge": 0.23,
+          "confidence": 65,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "12.0% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:59Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RBI",
           "market": "batter_rbis",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "player": "Jac Caglianone",
+          "player_id": 695506,
+          "team": "Kansas City Royals",
+          "opponent": "Boston Red Sox",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 232,
+          "book": "DraftKings",
+          "projection": 0.82,
+          "edge": 0.32,
+          "confidence": 63,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "13.7% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:59Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
+          "player": "Payton Tolle",
+          "player_id": 695506,
+          "team": "Kansas City Royals",
+          "opponent": "Boston Red Sox",
+          "line": 6.5,
+          "side": "OVER",
+          "odds": 103,
+          "book": "DraftKings",
+          "projection": 6.74,
+          "edge": 0.24,
+          "confidence": 62,
           "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "batting_order": 3,
+          "reasons": [
+            "28.9% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:59Z",
+          "status_reason": "No qualifying edge"
         }
       ],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge",
-      "grading_status": "FINAL"
+      "long_shots": [
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Michael Massey",
+          "player_id": 686681,
+          "team": "Kansas City Royals",
+          "opponent": "Boston Red Sox",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 316,
+          "book": "DraftKings",
+          "projection": 0.67,
+          "decision": "LONG SHOT",
+          "batting_order": 5,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:59Z"
+        }
+      ],
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
     },
     {
-      "game_pk": "824870",
+      "game_pk": "822764",
       "teams": [
-        "Atlanta Braves",
-        "Philadelphia Phillies"
+        "Baltimore Orioles",
+        "Toronto Blue Jays"
       ],
-      "venue": "Truist Park",
-      "game_datetime_utc": "2026-09-12T23:15:00Z",
+      "venue": "Rogers Centre",
+      "game_datetime_utc": "2026-09-13T17:37:00Z",
       "props": [
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "player": "Pete Alonso",
+          "player_id": 624413,
+          "team": "Baltimore Orioles",
+          "opponent": "Toronto Blue Jays",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -155,
+          "book": "BetMGM",
+          "projection": 1.82,
+          "edge": 1.32,
+          "confidence": 81,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "14.0% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:53Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "player": "Pete Alonso",
+          "player_id": 624413,
+          "team": "Baltimore Orioles",
+          "opponent": "Toronto Blue Jays",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 132,
+          "book": "DraftKings",
+          "projection": 0.75,
+          "edge": 0.25,
+          "confidence": 62,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "14.0% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:11Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RBI",
           "market": "batter_rbis",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "player": "Coby Mayo",
+          "player_id": 691723,
+          "team": "Baltimore Orioles",
+          "opponent": "Toronto Blue Jays",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 232,
+          "book": "DraftKings",
+          "projection": 0.82,
+          "edge": 0.32,
+          "confidence": 63,
+          "decision": "PLAY",
+          "batting_order": 4,
+          "reasons": [
+            "13.1% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:11Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "player": "Dylan Cease",
+          "player_id": 624413,
+          "team": "Baltimore Orioles",
+          "opponent": "Toronto Blue Jays",
+          "line": 8.5,
+          "side": "OVER",
+          "odds": 116,
+          "book": "DraftKings",
+          "projection": 9.23,
+          "edge": 0.73,
+          "confidence": 71,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "35.2% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:11Z",
+          "status_reason": "Qualified edge"
         }
       ],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "822685",
-      "teams": [
-        "Los Angeles Angels",
-        "Washington Nationals"
-      ],
-      "venue": "Nationals Park",
-      "game_datetime_utc": "2026-09-12T20:05:00Z",
-      "props": [
+      "long_shots": [
         {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Colton Cowser",
+          "player_id": 681297,
+          "team": "Baltimore Orioles",
+          "opponent": "Toronto Blue Jays",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 363,
+          "book": "DraftKings",
+          "projection": 0.54,
+          "decision": "LONG SHOT",
+          "batting_order": 9,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:11Z"
         },
         {
           "category": "RBI",
           "market": "batter_rbis",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "player": "Brandon Valenzuela",
+          "player_id": 678218,
+          "team": "Toronto Blue Jays",
+          "opponent": "Baltimore Orioles",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 257,
+          "book": "DraftKings",
+          "projection": 0.54,
+          "decision": "LONG SHOT",
+          "batting_order": 8,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:11Z"
         }
       ],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge",
-      "grading_status": "FINAL"
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
     },
     {
-      "game_pk": "823819",
-      "teams": [
-        "Los Angeles Dodgers",
-        "Miami Marlins"
-      ],
-      "venue": "loanDepot park",
-      "game_datetime_utc": "2026-09-12T20:10:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        }
-      ],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "824955",
-      "teams": [
-        "Athletics",
-        "Seattle Mariners"
-      ],
-      "venue": "Sutter Health Park",
-      "game_datetime_utc": "2026-09-13T01:40:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        }
-      ],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "824224",
-      "teams": [
-        "Colorado Rockies",
-        "Detroit Tigers"
-      ],
-      "venue": "Comerica Park",
-      "game_datetime_utc": "2026-09-12T17:10:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        }
-      ],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "823170",
-      "teams": [
-        "San Diego Padres",
-        "San Francisco Giants"
-      ],
-      "venue": "Oracle Park",
-      "game_datetime_utc": "2026-09-12T20:05:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        }
-      ],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "823657",
+      "game_pk": "823658",
       "teams": [
         "Cleveland Guardians",
         "Minnesota Twins"
       ],
       "venue": "Target Field",
-      "game_datetime_utc": "2026-09-12T20:10:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "822927",
-      "teams": [
-        "Houston Astros",
-        "Tampa Bay Rays"
-      ],
-      "venue": "Tropicana Field",
-      "game_datetime_utc": "2026-09-12T22:10:00Z",
+      "game_datetime_utc": "2026-09-13T18:10:00Z",
       "props": [
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "player": "Nathaniel Lowe",
+          "player_id": 663993,
+          "team": "Cleveland Guardians",
+          "opponent": "Minnesota Twins",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -175,
+          "book": "BetMGM",
+          "projection": 1.64,
+          "edge": 1.14,
+          "confidence": 72,
+          "decision": "PLAY",
+          "batting_order": 5,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:29Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "player": "Chase DeLauter",
+          "player_id": 800050,
+          "team": "Cleveland Guardians",
+          "opponent": "Minnesota Twins",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 116,
+          "book": "DraftKings",
+          "projection": 0.71,
+          "edge": 0.21,
+          "confidence": 61,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:29Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RBI",
           "market": "batter_rbis",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "player": "Kody Clemens",
+          "player_id": 665019,
+          "team": "Minnesota Twins",
+          "opponent": "Cleveland Guardians",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 153,
+          "book": "DraftKings",
+          "projection": 0.82,
+          "edge": 0.32,
+          "confidence": 57,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "12.0% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:29Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "player": "Joe Ryan",
+          "player_id": 800050,
+          "team": "Cleveland Guardians",
+          "opponent": "Minnesota Twins",
+          "line": 4.5,
+          "side": "OVER",
+          "odds": 126,
+          "book": "DraftKings",
+          "projection": 5.06,
+          "edge": 0.56,
+          "confidence": 68,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "26.8% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:29Z",
+          "status_reason": "Qualified edge"
         }
       ],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge",
-      "grading_status": "FINAL"
+      "long_shots": [
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Ryan Kreidler",
+          "player_id": 668952,
+          "team": "Minnesota Twins",
+          "opponent": "Cleveland Guardians",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 293,
+          "book": "DraftKings",
+          "projection": 0.55,
+          "decision": "LONG SHOT",
+          "batting_order": 9,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:29Z"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Patrick Bailey",
+          "player_id": 672275,
+          "team": "Cleveland Guardians",
+          "opponent": "Minnesota Twins",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 272,
+          "book": "DraftKings",
+          "projection": 0.55,
+          "decision": "LONG SHOT",
+          "batting_order": 8,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:29Z"
+        }
+      ],
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
     },
     {
-      "game_pk": "825035",
+      "game_pk": "825033",
       "teams": [
         "Arizona Diamondbacks",
         "Texas Rangers"
       ],
       "venue": "Unknown",
-      "game_datetime_utc": "2026-09-13T00:10:00Z",
+      "game_datetime_utc": "2026-09-13T20:10:00Z",
       "props": [
         {
           "category": "TOTAL BASES",
@@ -725,46 +1623,40 @@
           "opponent": "Texas Rangers",
           "line": 0.5,
           "side": "OVER",
-          "odds": -175,
+          "odds": -190,
           "book": "BetMGM",
-          "projection": 1.49,
-          "edge": 0.99,
+          "projection": 1.47,
+          "edge": 0.97,
           "confidence": 69,
           "decision": "PLAY",
           "batting_order": 6,
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-12T23:40:01Z",
-          "status_reason": "Qualified edge",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-13T10:17:45.600948+00:00"
+          "locked_at_utc": "2026-09-13T17:13:39Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
-          "player": "Joc Pederson",
-          "player_id": 592626,
-          "team": "Texas Rangers",
-          "opponent": "Arizona Diamondbacks",
+          "player": "Lars Nootbaar",
+          "player_id": 663457,
+          "team": "Arizona Diamondbacks",
+          "opponent": "Texas Rangers",
           "line": 0.5,
           "side": "OVER",
-          "odds": 115,
+          "odds": 103,
           "book": "DraftKings",
-          "projection": 0.73,
-          "edge": 0.23,
-          "confidence": 62,
+          "projection": 0.71,
+          "edge": 0.21,
+          "confidence": 58,
           "decision": "PLAY",
           "batting_order": 1,
           "reasons": [
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-12T23:40:50Z",
-          "status_reason": "Qualified edge",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-13T10:17:45.600969+00:00"
+          "locked_at_utc": "2026-09-13T17:13:58Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RBI",
@@ -775,175 +1667,418 @@
           "opponent": "Texas Rangers",
           "line": 0.5,
           "side": "OVER",
-          "odds": 144,
+          "odds": 154,
           "book": "DraftKings",
-          "projection": 0.83,
-          "edge": 0.33,
+          "projection": 0.82,
+          "edge": 0.32,
           "confidence": 60,
           "decision": "PLAY",
           "batting_order": 5,
           "reasons": [
             "12.4% barrel rate"
           ],
-          "locked_at_utc": "2026-09-12T23:40:50Z",
-          "status_reason": "Qualified edge",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-13T10:17:45.600975+00:00"
+          "locked_at_utc": "2026-09-13T17:13:58Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Kumar Rocker",
+          "player": "Cal Quantrill",
           "player_id": 682998,
           "team": "Arizona Diamondbacks",
           "opponent": "Texas Rangers",
           "line": 3.5,
           "side": "OVER",
-          "odds": -129,
+          "odds": -118,
           "book": "DraftKings",
-          "projection": 4.22,
-          "edge": 0.72,
-          "confidence": 67,
-          "decision": "PLAY",
+          "projection": 3.76,
+          "edge": 0.26,
+          "confidence": 59,
+          "decision": "SKIP",
           "batting_order": 5,
           "reasons": [
-            "21.4% pitcher K rate",
+            "18.5% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-12T23:40:50Z",
-          "status_reason": "Qualified edge",
-          "result": "EXCLUDED",
-          "result_reason": "Player box-score statistic unavailable"
+          "locked_at_utc": "2026-09-13T17:13:58Z",
+          "status_reason": "No qualifying edge"
         }
       ],
       "long_shots": [
         {
           "category": "RBI",
           "market": "batter_rbis",
-          "player": "Tim Tawa",
-          "player_id": 694374,
+          "player": "Jordan Lawlar",
+          "player_id": 691783,
           "team": "Arizona Diamondbacks",
           "opponent": "Texas Rangers",
           "line": 0.5,
           "side": "OVER",
-          "odds": 239,
+          "odds": 301,
+          "book": "DraftKings",
+          "projection": 0.52,
+          "decision": "LONG SHOT",
+          "batting_order": 9,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:58Z"
+        }
+      ],
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
+    },
+    {
+      "game_pk": "824952",
+      "teams": [
+        "Athletics",
+        "Seattle Mariners"
+      ],
+      "venue": "Sutter Health Park",
+      "game_datetime_utc": "2026-09-13T20:05:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Donovan Walton",
+          "player_id": 622268,
+          "team": "Athletics",
+          "opponent": "Seattle Mariners",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -175,
+          "book": "BetMGM",
+          "projection": 1.43,
+          "edge": 0.93,
+          "confidence": 68,
+          "decision": "SKIP",
+          "batting_order": 0,
+          "reasons": [
+            "confirmed batting 0"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:28Z",
+          "status_reason": "No qualifying edge"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Shea Langeliers",
+          "player_id": 669127,
+          "team": "Athletics",
+          "opponent": "Seattle Mariners",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 105,
+          "book": "BetMGM",
+          "projection": 0.77,
+          "edge": 0.27,
+          "confidence": 62,
+          "decision": "SKIP",
+          "batting_order": 0,
+          "reasons": [
+            "14.8% barrel rate",
+            "confirmed batting 0"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:28Z",
+          "status_reason": "No qualifying edge"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Shea Langeliers",
+          "player_id": 669127,
+          "team": "Athletics",
+          "opponent": "Seattle Mariners",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 130,
+          "book": "BetMGM",
+          "projection": 0.7,
+          "edge": 0.2,
+          "confidence": 61,
+          "decision": "SKIP",
+          "batting_order": 0,
+          "reasons": [
+            "14.8% barrel rate",
+            "confirmed batting 0"
+          ],
+          "locked_at_utc": "2026-09-13T17:13:28Z",
+          "status_reason": "No qualifying edge"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Bryce Miller",
+          "player_id": 669127,
+          "team": "Athletics",
+          "opponent": "Seattle Mariners",
+          "line": 4.5,
+          "side": "OVER",
+          "odds": -105,
+          "book": "DraftKings",
+          "projection": 5.39,
+          "edge": 0.89,
+          "confidence": 74,
+          "decision": "PLAY",
+          "batting_order": 0,
+          "reasons": [
+            "24.3% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:09Z",
+          "status_reason": "Qualified edge"
+        }
+      ],
+      "long_shots": [],
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
+    },
+    {
+      "game_pk": "824225",
+      "teams": [
+        "Colorado Rockies",
+        "Detroit Tigers"
+      ],
+      "venue": "Comerica Park",
+      "game_datetime_utc": "2026-09-13T16:10:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Mickey Moniak",
+          "player_id": 666160,
+          "team": "Colorado Rockies",
+          "opponent": "Detroit Tigers",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -110,
+          "book": "BetMGM",
+          "projection": 1.72,
+          "edge": 1.22,
+          "confidence": 73,
+          "decision": "PLAY",
+          "batting_order": 5,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:30Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Kevin McGonigle",
+          "player_id": 805808,
+          "team": "Detroit Tigers",
+          "opponent": "Colorado Rockies",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 150,
+          "book": "DraftKings",
+          "projection": 0.67,
+          "edge": 0.17,
+          "confidence": 54,
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:18Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Mickey Moniak",
+          "player_id": 666160,
+          "team": "Colorado Rockies",
+          "opponent": "Detroit Tigers",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 260,
+          "book": "DraftKings",
+          "projection": 0.8,
+          "edge": 0.3,
+          "confidence": 57,
+          "decision": "PLAY",
+          "batting_order": 5,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:18Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Jackson Jobe",
+          "player_id": 605353,
+          "team": "Colorado Rockies",
+          "opponent": "Detroit Tigers",
+          "line": 5.5,
+          "side": "OVER",
+          "odds": 110,
+          "book": "DraftKings",
+          "projection": 5.43,
+          "edge": -0.07,
+          "confidence": 50,
+          "decision": "SKIP",
+          "batting_order": 7,
+          "reasons": [
+            "20.8% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:18Z",
+          "status_reason": "No qualifying edge"
+        }
+      ],
+      "long_shots": [
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Zac Veen",
+          "player_id": 691728,
+          "team": "Colorado Rockies",
+          "opponent": "Detroit Tigers",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 500,
+          "book": "DraftKings",
+          "projection": 0.65,
+          "decision": "LONG SHOT",
+          "batting_order": 9,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:18Z"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Spencer Torkelson",
+          "player_id": 679529,
+          "team": "Detroit Tigers",
+          "opponent": "Colorado Rockies",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 330,
           "book": "DraftKings",
           "projection": 0.59,
           "decision": "LONG SHOT",
           "batting_order": 7,
           "reasons": [
-            "verified matchup data"
+            "12.1% barrel rate"
           ],
-          "locked_at_utc": "2026-09-12T23:40:50Z",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-13T10:17:45.600981+00:00"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Joc Pederson",
-          "player_id": 592626,
-          "team": "Texas Rangers",
-          "opponent": "Arizona Diamondbacks",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 223,
-          "book": "DraftKings",
-          "projection": 0.72,
-          "decision": "LONG SHOT",
-          "batting_order": 1,
-          "reasons": [
-            "confirmed batting 1"
-          ],
-          "locked_at_utc": "2026-09-12T23:40:50Z",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-13T10:17:45.600984+00:00"
+          "locked_at_utc": "2026-09-13T17:14:18Z"
         }
       ],
       "status": "LIVE",
-      "status_reason": "Verified prop card",
-      "grading_status": "FINAL"
+      "status_reason": "Verified prop card"
     },
     {
-      "game_pk": "824712",
+      "game_pk": "823171",
       "teams": [
-        "Boston Red Sox",
-        "Kansas City Royals"
+        "San Diego Padres",
+        "San Francisco Giants"
       ],
-      "venue": "Fenway Park",
-      "game_datetime_utc": "2026-09-12T20:10:00Z",
+      "venue": "Oracle Park",
+      "game_datetime_utc": "2026-09-13T23:20:00Z",
       "props": [
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
+          "player": "Luis Campusano",
+          "player_id": 669134,
+          "team": "San Diego Padres",
+          "opponent": "San Francisco Giants",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -200,
+          "book": "BetMGM",
+          "projection": 1.4,
+          "edge": 0.9,
+          "confidence": 68,
           "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "batting_order": 0,
+          "reasons": [
+            "confirmed batting 0"
+          ],
+          "locked_at_utc": "2026-09-13T17:12:34Z",
+          "status_reason": "No qualifying edge"
         },
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
+          "player": "Fernando Tatis Jr.",
+          "player_id": 665487,
+          "team": "San Diego Padres",
+          "opponent": "San Francisco Giants",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 101,
+          "book": "DraftKings",
+          "projection": 0.71,
+          "edge": 0.21,
+          "confidence": 61,
           "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "batting_order": 0,
+          "reasons": [
+            "12.6% barrel rate",
+            "confirmed batting 0"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:20Z",
+          "status_reason": "No qualifying edge"
         },
         {
           "category": "RBI",
           "market": "batter_rbis",
+          "player": "Rafael Devers",
+          "player_id": 646240,
+          "team": "San Francisco Giants",
+          "opponent": "San Diego Padres",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 179,
+          "book": "DraftKings",
+          "projection": 0.74,
+          "edge": 0.24,
+          "confidence": 62,
           "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "batting_order": 0,
+          "reasons": [
+            "12.5% barrel rate",
+            "confirmed batting 0"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:20Z",
+          "status_reason": "No qualifying edge"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
+          "player": "Nick Pivetta",
+          "player_id": 646240,
+          "team": "San Francisco Giants",
+          "opponent": "San Diego Padres",
+          "line": 4.5,
+          "side": "OVER",
+          "odds": -121,
+          "book": "DraftKings",
+          "projection": 7.53,
+          "edge": 3.03,
+          "confidence": 86,
+          "decision": "PLAY",
+          "batting_order": 0,
+          "reasons": [
+            "31.3% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-13T17:14:20Z",
+          "status_reason": "Qualified edge"
         }
       ],
       "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "822768",
-      "teams": [
-        "Baltimore Orioles",
-        "Toronto Blue Jays"
-      ],
-      "venue": "Rogers Centre",
-      "game_datetime_utc": "2026-09-12T19:07:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "decision": "SKIP",
-          "status_reason": "No verified line or required data"
-        }
-      ],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge",
-      "grading_status": "FINAL"
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
     }
   ],
   "rules": {
@@ -951,6 +2086,5 @@
     "long_shots": "Maximum one per team",
     "missing_data": "Always SKIP",
     "disclaimer": "Informational projections; no outcome is guaranteed."
-  },
-  "graded_at_utc": "2026-09-13T10:17:45.757474+00:00"
+  }
 }
