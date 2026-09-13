@@ -6,7 +6,7 @@
       "generated_at_utc": "2026-09-13T17:14:30.638179+00:00",
       "locked_at_utc": "2026-09-13T17:14:41.506Z",
       "first_game_start_utc": "2026-09-13T17:35:00.000Z",
-      "status": "LOCKED",
+      "status": "GRADING",
       "cards": [
         {
           "title": "Top 2-Leg Parlay",
@@ -24,8 +24,8 @@
               "pick": "OVER 3.5",
               "odds": -145,
               "confidence": 86,
-              "result": "",
-              "actual": ""
+              "result": "HIT",
+              "actual": "5"
             },
             {
               "game": "823495",
@@ -40,8 +40,8 @@
               "pick": "OVER 5.5",
               "odds": -135,
               "confidence": 86,
-              "result": "",
-              "actual": ""
+              "result": "HIT",
+              "actual": "7"
             }
           ]
         },
@@ -61,8 +61,8 @@
               "pick": "OVER 3.5",
               "odds": -145,
               "confidence": 86,
-              "result": "",
-              "actual": ""
+              "result": "HIT",
+              "actual": "5"
             },
             {
               "game": "823734",
@@ -77,8 +77,8 @@
               "pick": "OVER 0.5",
               "odds": -140,
               "confidence": 83,
-              "result": "",
-              "actual": ""
+              "result": "HIT",
+              "actual": "4"
             }
           ]
         },
@@ -114,8 +114,8 @@
               "pick": "OVER 3.5",
               "odds": -165,
               "confidence": 85,
-              "result": "",
-              "actual": ""
+              "result": "HIT",
+              "actual": "5"
             }
           ]
         },
@@ -135,8 +135,8 @@
               "pick": "OVER 5.5",
               "odds": 122,
               "confidence": 77,
-              "result": "",
-              "actual": ""
+              "result": "MISS",
+              "actual": "5"
             },
             {
               "game": "822764",
@@ -151,8 +151,8 @@
               "pick": "OVER 8.5",
               "odds": 116,
               "confidence": 71,
-              "result": "",
-              "actual": ""
+              "result": "HIT",
+              "actual": "9"
             },
             {
               "game": "823008",
@@ -167,13 +167,13 @@
               "pick": "OVER 0.5",
               "odds": 152,
               "confidence": 68,
-              "result": "",
-              "actual": ""
+              "result": "MISS",
+              "actual": "0"
             }
           ]
         }
       ],
-      "graded_at_utc": ""
+      "graded_at_utc": "2026-09-13T21:21:14.923Z"
     },
     {
       "slate_date": "2026-09-12",
@@ -350,5 +350,5 @@
       "graded_at_utc": "2026-09-13T16:07:54.543Z"
     }
   ],
-  "updated_at_utc": "2026-09-13T17:14:42.050Z"
+  "updated_at_utc": "2026-09-13T21:21:14.949Z"
 }
