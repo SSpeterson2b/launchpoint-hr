@@ -35,7 +35,10 @@
             "pitcher vulnerability"
           ],
           "locked_at_utc": "2026-09-12T23:40:01Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 1,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-13T10:17:44.547814+00:00"
         },
         {
           "category": "RUNS",
@@ -59,7 +62,10 @@
             "pitcher vulnerability"
           ],
           "locked_at_utc": "2026-09-12T23:40:01Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 1,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-13T10:17:44.547836+00:00"
         },
         {
           "category": "RBI",
@@ -83,7 +89,10 @@
             "pitcher vulnerability"
           ],
           "locked_at_utc": "2026-09-12T23:40:01Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 1,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-13T10:17:44.547842+00:00"
         },
         {
           "category": "STRIKEOUTS",
@@ -106,7 +115,9 @@
             "confirmed starter"
           ],
           "locked_at_utc": "2026-09-12T23:37:09Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "result": "EXCLUDED",
+          "result_reason": "Player box-score statistic unavailable"
         }
       ],
       "long_shots": [
@@ -129,7 +140,10 @@
             "pitcher vulnerability",
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-12T23:40:51Z"
+          "locked_at_utc": "2026-09-12T23:40:51Z",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-13T10:17:44.547848+00:00"
         },
         {
           "category": "RBI",
@@ -148,11 +162,15 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-12T23:40:50Z"
+          "locked_at_utc": "2026-09-12T23:40:50Z",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-13T10:17:44.547851+00:00"
         }
       ],
       "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status_reason": "Verified prop card",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823496",
@@ -190,7 +208,8 @@
       ],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No qualifying edge"
+      "status_reason": "No qualifying edge",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823737",
@@ -223,7 +242,10 @@
             "confirmed batting 1"
           ],
           "locked_at_utc": "2026-09-12T23:40:48Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 1,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-13T10:17:44.730841+00:00"
         },
         {
           "category": "RUNS",
@@ -247,7 +269,10 @@
             "confirmed batting 2"
           ],
           "locked_at_utc": "2026-09-12T23:40:35Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-13T10:17:44.730863+00:00"
         },
         {
           "category": "RBI",
@@ -271,7 +296,10 @@
             "confirmed batting 3"
           ],
           "locked_at_utc": "2026-09-12T23:40:48Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 2,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-13T10:17:44.730867+00:00"
         },
         {
           "category": "STRIKEOUTS",
@@ -294,7 +322,9 @@
             "confirmed starter"
           ],
           "locked_at_utc": "2026-09-12T23:40:35Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "result": "EXCLUDED",
+          "result_reason": "Player box-score statistic unavailable"
         }
       ],
       "long_shots": [
@@ -317,7 +347,10 @@
             "pitcher vulnerability",
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-12T23:40:48Z"
+          "locked_at_utc": "2026-09-12T23:40:48Z",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-13T10:17:44.730874+00:00"
         },
         {
           "category": "HOME RUN",
@@ -338,11 +371,15 @@
             "15.9% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-12T23:40:48Z"
+          "locked_at_utc": "2026-09-12T23:40:48Z",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-13T10:17:44.730877+00:00"
         }
       ],
       "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status_reason": "Verified prop card",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824630",
@@ -380,7 +417,8 @@
       ],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No qualifying edge"
+      "status_reason": "No qualifying edge",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824870",
@@ -418,7 +456,8 @@
       ],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No qualifying edge"
+      "status_reason": "No qualifying edge",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "822685",
@@ -456,7 +495,8 @@
       ],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No qualifying edge"
+      "status_reason": "No qualifying edge",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823819",
@@ -494,7 +534,8 @@
       ],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No qualifying edge"
+      "status_reason": "No qualifying edge",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824955",
@@ -532,7 +573,8 @@
       ],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No qualifying edge"
+      "status_reason": "No qualifying edge",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824224",
@@ -570,7 +612,8 @@
       ],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No qualifying edge"
+      "status_reason": "No qualifying edge",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823170",
@@ -608,7 +651,8 @@
       ],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No qualifying edge"
+      "status_reason": "No qualifying edge",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823657",
@@ -621,7 +665,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "822927",
@@ -659,7 +704,8 @@
       ],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No qualifying edge"
+      "status_reason": "No qualifying edge",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "825035",
@@ -690,7 +736,10 @@
             "verified matchup data"
           ],
           "locked_at_utc": "2026-09-12T23:40:01Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-13T10:17:45.600948+00:00"
         },
         {
           "category": "RUNS",
@@ -712,7 +761,10 @@
             "confirmed batting 1"
           ],
           "locked_at_utc": "2026-09-12T23:40:50Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-13T10:17:45.600969+00:00"
         },
         {
           "category": "RBI",
@@ -734,7 +786,10 @@
             "12.4% barrel rate"
           ],
           "locked_at_utc": "2026-09-12T23:40:50Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 1,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-13T10:17:45.600975+00:00"
         },
         {
           "category": "STRIKEOUTS",
@@ -757,7 +812,9 @@
             "confirmed starter"
           ],
           "locked_at_utc": "2026-09-12T23:40:50Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "result": "EXCLUDED",
+          "result_reason": "Player box-score statistic unavailable"
         }
       ],
       "long_shots": [
@@ -778,7 +835,10 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-12T23:40:50Z"
+          "locked_at_utc": "2026-09-12T23:40:50Z",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-13T10:17:45.600981+00:00"
         },
         {
           "category": "RBI",
@@ -797,11 +857,15 @@
           "reasons": [
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-12T23:40:50Z"
+          "locked_at_utc": "2026-09-12T23:40:50Z",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-13T10:17:45.600984+00:00"
         }
       ],
       "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status_reason": "Verified prop card",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824712",
@@ -839,7 +903,8 @@
       ],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No qualifying edge"
+      "status_reason": "No qualifying edge",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "822768",
@@ -877,7 +942,8 @@
       ],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No qualifying edge"
+      "status_reason": "No qualifying edge",
+      "grading_status": "FINAL"
     }
   ],
   "rules": {
@@ -885,5 +951,6 @@
     "long_shots": "Maximum one per team",
     "missing_data": "Always SKIP",
     "disclaimer": "Informational projections; no outcome is guaranteed."
-  }
+  },
+  "graded_at_utc": "2026-09-13T10:17:45.757474+00:00"
 }
