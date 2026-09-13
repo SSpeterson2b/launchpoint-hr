@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-13T22:22:24.855644+00:00",
+  "generated_at_utc": "2026-09-13T23:53:10.020616+00:00",
   "slate_date": "2026-09-13",
   "model_version": "Player Props 1.0",
   "status": "LIVE",
@@ -31,19 +31,6 @@
       "status_reason": "No verified sportsbook event"
     },
     {
-      "game_pk": "823495",
-      "teams": [
-        "New York Mets",
-        "New York Yankees"
-      ],
-      "venue": "Yankee Stadium",
-      "game_datetime_utc": "2026-09-13T17:35:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
-    },
-    {
       "game_pk": "823815",
       "teams": [
         "Los Angeles Dodgers",
@@ -51,6 +38,19 @@
       ],
       "venue": "loanDepot park",
       "game_datetime_utc": "2026-09-13T17:40:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "No verified sportsbook event"
+    },
+    {
+      "game_pk": "823495",
+      "teams": [
+        "New York Mets",
+        "New York Yankees"
+      ],
+      "venue": "Yankee Stadium",
+      "game_datetime_utc": "2026-09-13T17:35:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
@@ -119,7 +119,20 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+      "status_reason": "No verified sportsbook event"
+    },
+    {
+      "game_pk": "824952",
+      "teams": [
+        "Athletics",
+        "Seattle Mariners"
+      ],
+      "venue": "Sutter Health Park",
+      "game_datetime_utc": "2026-09-13T20:05:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "No verified sportsbook event"
     },
     {
       "game_pk": "825033",
@@ -132,7 +145,7 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+      "status_reason": "No verified sportsbook event"
     },
     {
       "game_pk": "822764",
@@ -185,19 +198,6 @@
       "long_shots": [],
       "status": "SKIP",
       "status_reason": "No verified sportsbook event"
-    },
-    {
-      "game_pk": "824952",
-      "teams": [
-        "Athletics",
-        "Seattle Mariners"
-      ],
-      "venue": "Sutter Health Park",
-      "game_datetime_utc": "2026-09-13T20:05:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
     }
   ],
   "rules": {
