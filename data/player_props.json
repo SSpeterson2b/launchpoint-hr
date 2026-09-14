@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14T21:27:32.166451+00:00",
+  "generated_at_utc": "2026-09-14T23:08:51.438577+00:00",
   "slate_date": "2026-09-14",
   "model_version": "Player Props 1.0",
   "status": "LIVE",
@@ -10,7 +10,7 @@
         "Chicago White Sox",
         "Cleveland Guardians"
       ],
-      "venue": "Progressive Field",
+      "venue": "Unknown",
       "game_datetime_utc": "2026-09-14T22:40:00Z",
       "props": [],
       "long_shots": [],
@@ -23,7 +23,7 @@
         "Minnesota Twins",
         "New York Yankees"
       ],
-      "venue": "Target Field",
+      "venue": "Unknown",
       "game_datetime_utc": "2026-09-14T23:40:00Z",
       "props": [],
       "long_shots": [],
@@ -36,8 +36,21 @@
         "Cincinnati Reds",
         "Los Angeles Dodgers"
       ],
-      "venue": "Great American Ball Park",
+      "venue": "Unknown",
       "game_datetime_utc": "2026-09-14T22:40:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+    },
+    {
+      "game_pk": "824308",
+      "teams": [
+        "Colorado Rockies",
+        "San Diego Padres"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-15T00:40:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
@@ -49,7 +62,7 @@
         "Baltimore Orioles",
         "New York Mets"
       ],
-      "venue": "Citi Field",
+      "venue": "Unknown",
       "game_datetime_utc": "2026-09-14T23:10:00Z",
       "props": [],
       "long_shots": [],
@@ -62,47 +75,8 @@
         "Atlanta Braves",
         "Chicago Cubs"
       ],
-      "venue": "Wrigley Field",
+      "venue": "Unknown",
       "game_datetime_utc": "2026-09-14T23:40:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
-    },
-    {
-      "game_pk": "824308",
-      "teams": [
-        "Colorado Rockies",
-        "San Diego Padres"
-      ],
-      "venue": "Coors Field",
-      "game_datetime_utc": "2026-09-15T00:40:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
-    },
-    {
-      "game_pk": "822765",
-      "teams": [
-        "Detroit Tigers",
-        "Toronto Blue Jays"
-      ],
-      "venue": "Rogers Centre",
-      "game_datetime_utc": "2026-09-14T23:07:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
-    },
-    {
-      "game_pk": "823006",
-      "teams": [
-        "San Francisco Giants",
-        "St. Louis Cardinals"
-      ],
-      "venue": "Busch Stadium",
-      "game_datetime_utc": "2026-09-14T23:45:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
@@ -114,8 +88,21 @@
         "Arizona Diamondbacks",
         "Miami Marlins"
       ],
-      "venue": "Chase Field",
+      "venue": "Unknown",
       "game_datetime_utc": "2026-09-15T01:40:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+    },
+    {
+      "game_pk": "822765",
+      "teams": [
+        "Detroit Tigers",
+        "Toronto Blue Jays"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-14T23:07:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
@@ -127,8 +114,21 @@
         "Los Angeles Angels",
         "Seattle Mariners"
       ],
-      "venue": "Angel Stadium",
+      "venue": "Unknown",
       "game_datetime_utc": "2026-09-15T01:38:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+    },
+    {
+      "game_pk": "823006",
+      "teams": [
+        "San Francisco Giants",
+        "St. Louis Cardinals"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-14T23:45:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
