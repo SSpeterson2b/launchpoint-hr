@@ -1,22 +1,9 @@
 {
-  "generated_at_utc": "2026-09-14T19:03:52.845748+00:00",
+  "generated_at_utc": "2026-09-14T20:11:53.416768+00:00",
   "slate_date": "2026-09-14",
   "model_version": "Player Props 1.0",
   "status": "LIVE",
   "games": [
-    {
-      "game_pk": "824465",
-      "teams": [
-        "Cincinnati Reds",
-        "Los Angeles Dodgers"
-      ],
-      "venue": "Great American Ball Park",
-      "game_datetime_utc": "2026-09-14T22:40:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
-    },
     {
       "game_pk": "824386",
       "teams": [
@@ -31,6 +18,19 @@
       "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
     },
     {
+      "game_pk": "824465",
+      "teams": [
+        "Cincinnati Reds",
+        "Los Angeles Dodgers"
+      ],
+      "venue": "Great American Ball Park",
+      "game_datetime_utc": "2026-09-14T22:40:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+    },
+    {
       "game_pk": "823656",
       "teams": [
         "Minnesota Twins",
@@ -38,19 +38,6 @@
       ],
       "venue": "Target Field",
       "game_datetime_utc": "2026-09-14T23:40:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
-    },
-    {
-      "game_pk": "824308",
-      "teams": [
-        "Colorado Rockies",
-        "San Diego Padres"
-      ],
-      "venue": "Coors Field",
-      "game_datetime_utc": "2026-09-15T00:40:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
@@ -83,13 +70,13 @@
       "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
     },
     {
-      "game_pk": "825034",
+      "game_pk": "824308",
       "teams": [
-        "Arizona Diamondbacks",
-        "Miami Marlins"
+        "Colorado Rockies",
+        "San Diego Padres"
       ],
-      "venue": "Chase Field",
-      "game_datetime_utc": "2026-09-15T01:40:00Z",
+      "venue": "Coors Field",
+      "game_datetime_utc": "2026-09-15T00:40:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
@@ -109,19 +96,6 @@
       "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
     },
     {
-      "game_pk": "823981",
-      "teams": [
-        "Los Angeles Angels",
-        "Seattle Mariners"
-      ],
-      "venue": "Angel Stadium",
-      "game_datetime_utc": "2026-09-15T01:38:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
-    },
-    {
       "game_pk": "823006",
       "teams": [
         "San Francisco Giants",
@@ -129,6 +103,32 @@
       ],
       "venue": "Busch Stadium",
       "game_datetime_utc": "2026-09-14T23:45:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+    },
+    {
+      "game_pk": "825034",
+      "teams": [
+        "Arizona Diamondbacks",
+        "Miami Marlins"
+      ],
+      "venue": "Chase Field",
+      "game_datetime_utc": "2026-09-15T01:40:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+    },
+    {
+      "game_pk": "823981",
+      "teams": [
+        "Los Angeles Angels",
+        "Seattle Mariners"
+      ],
+      "venue": "Angel Stadium",
+      "game_datetime_utc": "2026-09-15T01:38:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
