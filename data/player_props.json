@@ -1,9 +1,22 @@
 {
-  "generated_at_utc": "2026-09-14T14:41:34.436877+00:00",
+  "generated_at_utc": "2026-09-14T19:03:52.845748+00:00",
   "slate_date": "2026-09-14",
   "model_version": "Player Props 1.0",
   "status": "LIVE",
   "games": [
+    {
+      "game_pk": "824465",
+      "teams": [
+        "Cincinnati Reds",
+        "Los Angeles Dodgers"
+      ],
+      "venue": "Great American Ball Park",
+      "game_datetime_utc": "2026-09-14T22:40:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+    },
     {
       "game_pk": "824386",
       "teams": [
@@ -25,19 +38,6 @@
       ],
       "venue": "Target Field",
       "game_datetime_utc": "2026-09-14T23:40:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
-    },
-    {
-      "game_pk": "824465",
-      "teams": [
-        "Cincinnati Reds",
-        "Los Angeles Dodgers"
-      ],
-      "venue": "Great American Ball Park",
-      "game_datetime_utc": "2026-09-14T22:40:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
