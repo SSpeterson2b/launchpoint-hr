@@ -1,218 +1,138 @@
 {
-  "generated_at_utc": "2026-09-13T23:53:10.020616+00:00",
-  "slate_date": "2026-09-13",
+  "generated_at_utc": "2026-09-14T14:41:34.436877+00:00",
+  "slate_date": "2026-09-14",
   "model_version": "Player Props 1.0",
   "status": "LIVE",
   "games": [
     {
-      "game_pk": "824628",
-      "teams": [
-        "Chicago Cubs",
-        "Pittsburgh Pirates"
-      ],
-      "venue": "Wrigley Field",
-      "game_datetime_utc": "2026-09-13T18:20:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "824869",
-      "teams": [
-        "Atlanta Braves",
-        "Philadelphia Phillies"
-      ],
-      "venue": "Truist Park",
-      "game_datetime_utc": "2026-09-13T17:35:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "823815",
-      "teams": [
-        "Los Angeles Dodgers",
-        "Miami Marlins"
-      ],
-      "venue": "loanDepot park",
-      "game_datetime_utc": "2026-09-13T17:40:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "823495",
-      "teams": [
-        "New York Mets",
-        "New York Yankees"
-      ],
-      "venue": "Yankee Stadium",
-      "game_datetime_utc": "2026-09-13T17:35:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "823008",
+      "game_pk": "824386",
       "teams": [
         "Chicago White Sox",
-        "St. Louis Cardinals"
+        "Cleveland Guardians"
       ],
-      "venue": "Busch Stadium",
-      "game_datetime_utc": "2026-09-13T18:15:00Z",
+      "venue": "Progressive Field",
+      "game_datetime_utc": "2026-09-14T22:40:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
     },
     {
-      "game_pk": "823734",
+      "game_pk": "823656",
+      "teams": [
+        "Minnesota Twins",
+        "New York Yankees"
+      ],
+      "venue": "Target Field",
+      "game_datetime_utc": "2026-09-14T23:40:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+    },
+    {
+      "game_pk": "824465",
       "teams": [
         "Cincinnati Reds",
-        "Milwaukee Brewers"
+        "Los Angeles Dodgers"
       ],
-      "venue": "American Family Field",
-      "game_datetime_utc": "2026-09-13T18:10:00Z",
+      "venue": "Great American Ball Park",
+      "game_datetime_utc": "2026-09-14T22:40:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
     },
     {
-      "game_pk": "822928",
+      "game_pk": "824308",
       "teams": [
-        "Houston Astros",
-        "Tampa Bay Rays"
+        "Colorado Rockies",
+        "San Diego Padres"
       ],
-      "venue": "Tropicana Field",
-      "game_datetime_utc": "2026-09-13T17:40:00Z",
+      "venue": "Coors Field",
+      "game_datetime_utc": "2026-09-15T00:40:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
     },
     {
-      "game_pk": "822682",
-      "teams": [
-        "Los Angeles Angels",
-        "Washington Nationals"
-      ],
-      "venue": "Nationals Park",
-      "game_datetime_utc": "2026-09-13T17:35:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "824708",
-      "teams": [
-        "Boston Red Sox",
-        "Kansas City Royals"
-      ],
-      "venue": "Fenway Park",
-      "game_datetime_utc": "2026-09-13T19:05:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "824952",
-      "teams": [
-        "Athletics",
-        "Seattle Mariners"
-      ],
-      "venue": "Sutter Health Park",
-      "game_datetime_utc": "2026-09-13T20:05:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "825033",
-      "teams": [
-        "Arizona Diamondbacks",
-        "Texas Rangers"
-      ],
-      "venue": "Chase Field",
-      "game_datetime_utc": "2026-09-13T20:10:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "822764",
+      "game_pk": "823575",
       "teams": [
         "Baltimore Orioles",
+        "New York Mets"
+      ],
+      "venue": "Citi Field",
+      "game_datetime_utc": "2026-09-14T23:10:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+    },
+    {
+      "game_pk": "824629",
+      "teams": [
+        "Atlanta Braves",
+        "Chicago Cubs"
+      ],
+      "venue": "Wrigley Field",
+      "game_datetime_utc": "2026-09-14T23:40:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+    },
+    {
+      "game_pk": "825034",
+      "teams": [
+        "Arizona Diamondbacks",
+        "Miami Marlins"
+      ],
+      "venue": "Chase Field",
+      "game_datetime_utc": "2026-09-15T01:40:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+    },
+    {
+      "game_pk": "822765",
+      "teams": [
+        "Detroit Tigers",
         "Toronto Blue Jays"
       ],
       "venue": "Rogers Centre",
-      "game_datetime_utc": "2026-09-13T17:37:00Z",
+      "game_datetime_utc": "2026-09-14T23:07:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
     },
     {
-      "game_pk": "823171",
+      "game_pk": "823981",
       "teams": [
-        "San Diego Padres",
-        "San Francisco Giants"
+        "Los Angeles Angels",
+        "Seattle Mariners"
       ],
-      "venue": "Oracle Park",
-      "game_datetime_utc": "2026-09-13T23:20:00Z",
+      "venue": "Angel Stadium",
+      "game_datetime_utc": "2026-09-15T01:38:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized",
-      "grading_status": "FINAL"
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
     },
     {
-      "game_pk": "823658",
+      "game_pk": "823006",
       "teams": [
-        "Cleveland Guardians",
-        "Minnesota Twins"
+        "San Francisco Giants",
+        "St. Louis Cardinals"
       ],
-      "venue": "Target Field",
-      "game_datetime_utc": "2026-09-13T18:10:00Z",
+      "venue": "Busch Stadium",
+      "game_datetime_utc": "2026-09-14T23:45:00Z",
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "824225",
-      "teams": [
-        "Colorado Rockies",
-        "Detroit Tigers"
-      ],
-      "venue": "Comerica Park",
-      "game_datetime_utc": "2026-09-13T16:10:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No verified sportsbook event",
-      "grading_status": "FINAL"
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
     }
   ],
   "rules": {
@@ -220,6 +140,5 @@
     "long_shots": "Maximum one per team",
     "missing_data": "Always SKIP",
     "disclaimer": "Informational projections; no outcome is guaranteed."
-  },
-  "graded_at_utc": "2026-09-14T10:39:31.881679+00:00"
+  }
 }
