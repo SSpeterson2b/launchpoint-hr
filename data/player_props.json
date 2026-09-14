@@ -15,7 +15,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824869",
@@ -28,7 +29,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823815",
@@ -41,7 +43,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823495",
@@ -54,7 +57,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823008",
@@ -67,7 +71,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823734",
@@ -80,7 +85,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "822928",
@@ -93,7 +99,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "822682",
@@ -106,7 +113,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824708",
@@ -119,7 +127,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824952",
@@ -132,7 +141,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "825033",
@@ -145,7 +155,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "822764",
@@ -158,7 +169,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823171",
@@ -171,7 +183,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized"
+      "status_reason": "Prop odds unavailable: HTTP Error 401: Unauthorized",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823658",
@@ -184,7 +197,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824225",
@@ -197,7 +211,8 @@
       "props": [],
       "long_shots": [],
       "status": "SKIP",
-      "status_reason": "No verified sportsbook event"
+      "status_reason": "No verified sportsbook event",
+      "grading_status": "FINAL"
     }
   ],
   "rules": {
@@ -205,5 +220,6 @@
     "long_shots": "Maximum one per team",
     "missing_data": "Always SKIP",
     "disclaimer": "Informational projections; no outcome is guaranteed."
-  }
+  },
+  "graded_at_utc": "2026-09-14T10:39:31.881679+00:00"
 }
