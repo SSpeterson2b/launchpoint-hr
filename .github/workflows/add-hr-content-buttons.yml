@@ -21,51 +21,36 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Add content card link
+      - name: Fix content card loader
         shell: bash
         run: |
           python - <<'PY'
           from pathlib import Path
-
-          path = Path("index.html")
-          text = path.read_text(encoding="utf-8")
-          needle = '<button type="button" data-matchup-key="${esc(g.key)}">VIEW MATCHUP →</button>'
-          link = '<a class="lp-content-btn" href="hr-content.html?game_key=${encodeURIComponent(g.key)}&game_pk=${encodeURIComponent(p.game_pk||\x27\x27)}">CONTENT CARD →</a>'
-
-          if "CONTENT CARD →" not in text:
-              if needle not in text:
-                  raise SystemExit("VIEW MATCHUP button not found")
-              text = text.replace(needle, needle + "\n              " + link, 1)
-
-          css = """
-          <style id="lp-content-card-style">
-          .game-footer{display:flex!important;gap:9px!important;align-items:center!important;flex-wrap:wrap!important}
-          .lp-content-btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #20c8f3;border-radius:10px;background:#20c8f3;color:#031522!important;text-decoration:none!important;padding:10px 14px;font-size:11px;font-weight:900;letter-spacing:.06em;min-height:38px}
-          @media(max-width:560px){.game-footer>*{flex:1 1 calc(50% - 5px)!important}.lp-content-btn{font-size:10px;padding:9px 8px}}
-          </style>
-          """
-          if 'id="lp-content-card-style"' not in text:
-              if "</head>" not in text:
-                  raise SystemExit("closing head not found")
-              text = text.replace("</head>", css + "\n</head>", 1)
-
-          path.write_text(text, encoding="utf-8")
+          p = Path('hr-content.html')
+          s = p.read_text(encoding='utf-8')
+          bad = "venue=F(g,['venue','park','stadium','ballpark'])??F(ps[0],['venue','park','stadium','ballpark'])||''"
+          good = "venue=(F(g,['venue','park','stadium','ballpark'])??F(ps[0],['venue','park','stadium','ballpark']))||''"
+          if bad in s:
+              s = s.replace(bad, good, 1)
+          elif good not in s:
+              raise SystemExit('venue loader expression not found')
+          p.write_text(s, encoding='utf-8')
           PY
 
-      - name: Verify
+      - name: Verify content page
         shell: bash
         run: |
-          grep -Fq 'CONTENT CARD →' index.html
-          grep -Fq 'lp-content-card-style' index.html
+          grep -Fq "venue=(F(g,['venue','park','stadium','ballpark'])??F(ps[0],['venue','park','stadium','ballpark']))||''" hr-content.html
+          grep -Fq "fetch('data/todays_top_hr_picks.json?ts='" hr-content.html
 
       - name: Commit
         shell: bash
         run: |
           git config user.name launchpoint-bot
           git config user.email actions@users.noreply.github.com
-          git add index.html
+          git add hr-content.html
           if ! git diff --cached --quiet; then
-            git commit -m "Add Content Card link to HR games"
+            git commit -m "Fix HR content card data loader"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
