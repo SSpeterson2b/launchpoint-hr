@@ -19,13 +19,15 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Remove misleading DATA PENDING metric tiles
+      - name: Fix HR card pending labels
         run: |
           python - <<'PY'
           from pathlib import Path
           p = Path('index.html')
           s = p.read_text()
-          old = '''function statValue(label,value,format="pct"){
+
+          # Missing individual matchup metrics should be hidden, never shown as DATA PENDING.
+          old_metric = '''function statValue(label,value,format="pct"){
             let shown="DATA PENDING";
             if(value!==null&&Number.isFinite(value)){
               if(format==="pct")shown=`${value.toFixed(1)}%`;
@@ -35,7 +37,7 @@ jobs:
             }
             return `<div class="matchup-stat ${value===null?'pending':''}"><span>${esc(label)}</span><b>${esc(shown)}</b></div>`;
           }'''
-          new = '''function statValue(label,value,format="pct"){
+          new_metric = '''function statValue(label,value,format="pct"){
             if(value===null||!Number.isFinite(value))return "";
             let shown;
             if(format==="pct")shown=`${value.toFixed(1)}%`;
@@ -44,18 +46,40 @@ jobs:
             else shown=value.toFixed(2);
             return `<div class="matchup-stat"><span>${esc(label)}</span><b>${esc(shown)}</b></div>`;
           }'''
-          if old not in s:
-              raise SystemExit('statValue block not found; no changes made')
-          s = s.replace(old, new, 1)
+          if old_metric in s:
+              s = s.replace(old_metric, new_metric, 1)
+
+          # A visible game-card hitter is already ranked by the model. Do not turn the
+          # fourth/supporting card into DATA PENDING merely because the lineup is pending.
+          old_profile = '''function gameCardProfile(supportingIndex,isPrimary,player){
+            if(isPrimary)return null;
+            if(supportingIndex===0)return {label:"TOP CONTENDER",kind:"contender"};
+            if(supportingIndex===1)return {label:"SECONDARY",kind:"sleeper"};
+            const profile=playerPublicProfile(player);
+            return profile.label==="DATA PENDING"?profile:{label:"VALUE",kind:"value"};
+          }'''
+          new_profile = '''function gameCardProfile(supportingIndex,isPrimary,player){
+            if(isPrimary)return null;
+            if(supportingIndex===0)return {label:"TOP CONTENDER",kind:"contender"};
+            if(supportingIndex===1)return {label:"SECONDARY",kind:"sleeper"};
+            const profile=playerPublicProfile(player);
+            if(profile.label==="STRONG")return {label:"STRONG",kind:"strong"};
+            if(profile.label==="VALUE")return {label:"VALUE",kind:"value"};
+            return {label:"SECONDARY",kind:"sleeper"};
+          }'''
+          if old_profile not in s:
+              raise SystemExit('gameCardProfile block not found; no changes made')
+          s = s.replace(old_profile, new_profile, 1)
+
           s = s.replace('Current-season profile applied to today\'s opposing pitcher. This is matchup context, not a small-sample career head-to-head line.', 'Available current-season profile applied to today\'s opposing pitcher. Metrics without a verified source are hidden rather than shown as pending.', 1)
           p.write_text(s)
           PY
 
       - name: Verify fix
         run: |
-          grep -q 'if(value===null||!Number.isFinite(value))return ""' index.html
-          if grep -q 'let shown="DATA PENDING"' index.html; then
-            echo 'DATA PENDING metric renderer still present'
+          grep -q 'return {label:"SECONDARY",kind:"sleeper"};' index.html
+          if grep -q 'return profile.label==="DATA PENDING"?profile' index.html; then
+            echo 'Game-card DATA PENDING fallback still present'
             exit 1
           fi
 
@@ -65,7 +89,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add index.html
           if ! git diff --cached --quiet; then
-            git commit -m "Hide unavailable HR matchup metrics"
+            git commit -m "Remove DATA PENDING from ranked HR player cards"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
