@@ -3858,7 +3858,9 @@ function gameCardProfile(supportingIndex,isPrimary,player){
   if(supportingIndex===0)return {label:"TOP CONTENDER",kind:"contender"};
   if(supportingIndex===1)return {label:"SECONDARY",kind:"sleeper"};
   const profile=playerPublicProfile(player);
-  return profile.label==="DATA PENDING"?profile:{label:"VALUE",kind:"value"};
+  if(profile.label==="STRONG")return {label:"STRONG",kind:"strong"};
+  if(profile.label==="VALUE")return {label:"VALUE",kind:"value"};
+  return {label:"SECONDARY",kind:"sleeper"};
 }
 function playerPublicProfile(player,forceSecondary=false){
   if(!isSelectionEligible(player))return {label:"DATA PENDING",kind:"hold"};
