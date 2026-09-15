@@ -19,24 +19,51 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Connect game cards to HR Content
+      - name: Put Content button in each expanded HR game
         run: |
           python - <<'PY'
           from pathlib import Path
-          p = Path('index.html')
-          s = p.read_text()
-          marker = '<!-- LP-HR-CONTENT-BUTTONS -->'
-          if marker not in s:
-              addon = """<!-- LP-HR-CONTENT-BUTTONS -->\n<style>.lp-content-action{display:flex;justify-content:flex-end;padding:8px 8px 4px}.lp-content-btn{display:inline-flex;align-items:center;gap:7px;border:1px solid #20c8f3;border-radius:10px;background:linear-gradient(135deg,#0cc4ed,#39ddff);color:#031522!important;text-decoration:none!important;padding:9px 14px;font-size:11px;font-weight:1000;letter-spacing:.08em}@media(max-width:560px){.lp-content-action{padding:6px 5px 3px}.lp-content-btn{width:100%;justify-content:center}}</style>\n<script>(function(){function add(){document.querySelectorAll('#games .game,.game').forEach(function(g,i){if(g.querySelector('.lp-content-action'))return;var pk=g.getAttribute('data-game-pk')||'';var d=document.createElement('div');d.className='lp-content-action';var a=document.createElement('a');a.className='lp-content-btn';a.textContent='CONTENT CARD';a.href='hr-content.html?game='+i+(pk?'&game_pk='+encodeURIComponent(pk):'');d.appendChild(a);(g.querySelector('.body')||g).appendChild(d)})}document.addEventListener('DOMContentLoaded',add);new MutationObserver(add).observe(document.documentElement,{childList:true,subtree:true});setTimeout(add,1000)})();</script>\n"""
-              if '</body>' not in s:
-                  raise SystemExit('index.html closing body not found')
-              p.write_text(s.replace('</body>', addon + '</body>', 1))
+          p=Path('index.html')
+          s=p.read_text()
+
+          old='''            <div class="game-footer">
+              <button type="button" data-matchup-key="${esc(g.key)}">VIEW MATCHUP →</button>
+            </div>'''
+          new='''            <div class="game-footer">
+              <button type="button" data-matchup-key="${esc(g.key)}">VIEW MATCHUP →</button>
+              <a class="lp-content-btn" href="hr-content.html?game_key=${encodeURIComponent(g.key)}&game_pk=${encodeURIComponent(p.game_pk||'')}">CONTENT CARD →</a>
+            </div>'''
+          if old not in s:
+              raise SystemExit('game-footer render block not found')
+          s=s.replace(old,new,1)
+
+          # Remove the old observer-based injector. It targeted rendered .game nodes
+          # after render(), which could be wiped out on every re-render.
+          start=s.find('<!-- LP-HR-CONTENT-BUTTONS -->')
+          if start>=0:
+              end=s.find('</script>',start)
+              if end>=0:
+                  end+=len('</script>')
+                  old_block=s[start:end]
+                  s=s[:start]+s[end:]
+
+          # Add stable styling before closing head/body without relying on an observer.
+          css='''\n<style id="lp-content-card-style">
+          .game-footer{display:flex!important;gap:9px!important;align-items:center!important;flex-wrap:wrap!important}
+          .lp-content-btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #20c8f3;border-radius:10px;background:linear-gradient(135deg,#0cc4ed,#39ddff);color:#031522!important;text-decoration:none!important;padding:10px 14px;font-size:11px;font-weight:1000;letter-spacing:.06em;min-height:38px}
+          @media(max-width:560px){.game-footer>*{flex:1 1 calc(50% - 5px)!important}.lp-content-btn{font-size:10px;padding:9px 8px}}
+          </style>\n'''
+          if 'id="lp-content-card-style"' not in s:
+              s=s.replace('</head>',css+'</head>',1)
+
+          p.write_text(s)
           PY
 
       - name: Verify integration
         run: |
-          grep -q 'LP-HR-CONTENT-BUTTONS' index.html
-          grep -q 'CONTENT CARD' index.html
+          grep -q 'CONTENT CARD →' index.html
+          grep -q 'game_key=' index.html
+          grep -q 'lp-content-card-style' index.html
 
       - name: Commit website integration
         run: |
@@ -44,7 +71,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add index.html
           if ! git diff --cached --quiet; then
-            git commit -m "Connect HR game cards to Content page"
+            git commit -m "Place Content Card button in HR game footer"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
