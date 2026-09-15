@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-15T17:55:40.505958+00:00",
+  "generated_at_utc": "2026-09-15T19:30:02.575719+00:00",
   "slate_date": "2026-09-15",
   "model_version": "Player Props 1.1",
   "status": "LIVE",
@@ -16,93 +16,64 @@
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
-          "player": "Yohandy Morales",
-          "player_id": 691002,
-          "team": "Washington Nationals",
-          "opponent": "Philadelphia Phillies",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": -185,
-          "book": "BetMGM",
-          "projection": 1.89,
-          "edge": 1.39,
-          "confidence": 76,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "15.8% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:15Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
-          "player": "James Wood",
-          "player_id": 695578,
-          "team": "Washington Nationals",
-          "opponent": "Philadelphia Phillies",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 141,
-          "book": "DraftKings",
-          "projection": 0.65,
-          "edge": 0.15,
-          "confidence": 63,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "3/3 core signals",
-            "20.1% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "RBI",
           "market": "batter_rbis",
-          "player": "James Wood",
-          "player_id": 695578,
-          "team": "Washington Nationals",
-          "opponent": "Philadelphia Phillies",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 259,
-          "book": "DraftKings",
-          "projection": 0.81,
-          "edge": 0.31,
-          "confidence": 66,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "3/3 core signals",
-            "20.1% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Jackson Kent",
-          "player_id": 656941,
-          "team": "Philadelphia Phillies",
-          "opponent": "Washington Nationals",
-          "line": 3.5,
-          "side": "OVER",
-          "odds": -121,
-          "book": "DraftKings",
-          "projection": 3.63,
-          "edge": 0.13,
-          "confidence": 63,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "17.8% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
+        }
+      ],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "No qualifying edge"
+    },
+    {
+      "game_pk": "824466",
+      "teams": [
+        "Cincinnati Reds",
+        "Los Angeles Dodgers"
+      ],
+      "venue": "Great American Ball Park",
+      "game_datetime_utc": "2026-09-15T22:40:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "decision": "SKIP",
+          "status_reason": "No verified line or required data"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "decision": "SKIP",
+          "status_reason": "No verified line or required data"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "decision": "SKIP",
+          "status_reason": "No verified line or required data"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "decision": "SKIP",
+          "status_reason": "No verified line or required data"
         }
       ],
       "long_shots": [],
@@ -121,96 +92,178 @@
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
-          "player": "Christian Encarnacion-Strand",
-          "player_id": 687952,
-          "team": "Baltimore Orioles",
-          "opponent": "New York Mets",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": -190,
-          "book": "BetMGM",
-          "projection": 1.53,
-          "edge": 1.03,
-          "confidence": 76,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "15.4% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:35Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
-          "player": "Pete Alonso",
-          "player_id": 624413,
-          "team": "Baltimore Orioles",
-          "opponent": "New York Mets",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 105,
-          "book": "DraftKings",
-          "projection": 0.63,
-          "edge": 0.13,
-          "confidence": 63,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "3/3 core signals",
-            "13.8% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:04Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "RBI",
           "market": "batter_rbis",
-          "player": "Pete Alonso",
-          "player_id": 624413,
-          "team": "Baltimore Orioles",
-          "opponent": "New York Mets",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 165,
-          "book": "DraftKings",
-          "projection": 0.76,
-          "edge": 0.26,
-          "confidence": 65,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "3/3 core signals",
-            "13.8% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:04Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Shane Baz",
-          "player_id": 665742,
-          "team": "New York Mets",
-          "opponent": "Baltimore Orioles",
-          "line": 4.5,
-          "side": "OVER",
-          "odds": -138,
-          "book": "DraftKings",
-          "projection": 5.26,
-          "edge": 0.76,
-          "confidence": 74,
-          "decision": "PLAY",
-          "batting_order": 0,
-          "reasons": [
-            "20.8% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:04Z",
-          "status_reason": "Qualified edge"
+          "decision": "SKIP",
+          "status_reason": "No verified line or required data"
         }
       ],
       "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "No qualifying edge"
+    },
+    {
+      "game_pk": "824384",
+      "teams": [
+        "Chicago White Sox",
+        "Cleveland Guardians"
+      ],
+      "venue": "Progressive Field",
+      "game_datetime_utc": "2026-09-15T22:40:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Munetaka Murakami",
+          "player_id": 808959,
+          "team": "Chicago White Sox",
+          "opponent": "Cleveland Guardians",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -120,
+          "book": "BetMGM",
+          "projection": 1.68,
+          "edge": 1.18,
+          "confidence": 82,
+          "decision": "PLAY",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "18.7% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "2026-09-15T19:28:32Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Randal Grichuk",
+          "player_id": 545341,
+          "team": "Chicago White Sox",
+          "opponent": "Cleveland Guardians",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 119,
+          "book": "DraftKings",
+          "projection": 0.74,
+          "edge": 0.24,
+          "confidence": 65,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-15T19:29:20Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Munetaka Murakami",
+          "player_id": 808959,
+          "team": "Chicago White Sox",
+          "opponent": "Cleveland Guardians",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 181,
+          "book": "DraftKings",
+          "projection": 0.92,
+          "edge": 0.42,
+          "confidence": 68,
+          "decision": "PLAY",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "18.7% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "2026-09-15T19:29:20Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Foster Griffin",
+          "player_id": 808959,
+          "team": "Chicago White Sox",
+          "opponent": "Cleveland Guardians",
+          "line": 5.5,
+          "side": "OVER",
+          "odds": 124,
+          "book": "DraftKings",
+          "projection": 5.16,
+          "edge": -0.34,
+          "confidence": 54,
+          "decision": "SKIP",
+          "batting_order": 4,
+          "reasons": [
+            "21.7% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-15T19:29:20Z",
+          "status_reason": "No qualifying edge"
+        }
+      ],
+      "long_shots": [
+        {
+          "category": "HOME RUN",
+          "market": "batter_home_runs",
+          "player": "Munetaka Murakami",
+          "player_id": 808959,
+          "team": "Chicago White Sox",
+          "opponent": "Cleveland Guardians",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 380,
+          "book": "BetRivers",
+          "projection": 0.29,
+          "decision": "LONG SHOT",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "18.7% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "2026-09-15T19:29:25Z"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Patrick Bailey",
+          "player_id": 672275,
+          "team": "Cleveland Guardians",
+          "opponent": "Chicago White Sox",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 200,
+          "book": "DraftKings",
+          "projection": 0.51,
+          "decision": "LONG SHOT",
+          "batting_order": 7,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-15T19:29:20Z"
+        }
+      ],
       "status": "LIVE",
       "status_reason": "Verified prop card"
     },
@@ -242,7 +295,7 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-15T17:54:36Z",
+          "locked_at_utc": "2026-09-15T19:28:58Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -254,7 +307,7 @@
           "opponent": "Colorado Rockies",
           "line": 0.5,
           "side": "OVER",
-          "odds": -195,
+          "odds": -204,
           "book": "DraftKings",
           "projection": 0.68,
           "edge": 0.18,
@@ -266,7 +319,7 @@
             "12.6% barrel rate",
             "pitcher vulnerability"
           ],
-          "locked_at_utc": "2026-09-15T17:55:03Z",
+          "locked_at_utc": "2026-09-15T19:29:02Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -278,7 +331,7 @@
           "opponent": "San Diego Padres",
           "line": 0.5,
           "side": "OVER",
-          "odds": 115,
+          "odds": 110,
           "book": "BetMGM",
           "projection": 0.78,
           "edge": 0.28,
@@ -288,7 +341,7 @@
           "reasons": [
             "15.0% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:54:36Z",
+          "locked_at_utc": "2026-09-15T19:28:58Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -300,7 +353,7 @@
           "opponent": "Colorado Rockies",
           "line": 2.5,
           "side": "OVER",
-          "odds": -115,
+          "odds": -114,
           "book": "DraftKings",
           "projection": 4.39,
           "edge": 1.89,
@@ -311,7 +364,7 @@
             "18.6% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-15T17:55:03Z",
+          "locked_at_utc": "2026-09-15T19:29:02Z",
           "status_reason": "Qualified edge"
         }
       ],
@@ -347,7 +400,7 @@
           "reasons": [
             "13.7% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:15Z",
+          "locked_at_utc": "2026-09-15T19:29:27Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -370,7 +423,7 @@
             "3/3 core signals",
             "16.0% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:03Z",
+          "locked_at_utc": "2026-09-15T19:29:48Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -393,7 +446,7 @@
             "3/3 core signals",
             "16.0% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:03Z",
+          "locked_at_utc": "2026-09-15T19:29:48Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -416,8 +469,46 @@
             "25.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-15T17:55:03Z",
+          "locked_at_utc": "2026-09-15T19:29:48Z",
           "status_reason": "No qualifying edge"
+        }
+      ],
+      "long_shots": [],
+      "status": "SKIP",
+      "status_reason": "No qualifying edge"
+    },
+    {
+      "game_pk": "823333",
+      "teams": [
+        "Milwaukee Brewers",
+        "Pittsburgh Pirates"
+      ],
+      "venue": "PNC Park",
+      "game_datetime_utc": "2026-09-15T22:40:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "decision": "SKIP",
+          "status_reason": "No verified line or required data"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "decision": "SKIP",
+          "status_reason": "No verified line or required data"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "decision": "SKIP",
+          "status_reason": "No verified line or required data"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "decision": "SKIP",
+          "status_reason": "No verified line or required data"
         }
       ],
       "long_shots": [],
@@ -436,96 +527,31 @@
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
-          "player": "Ryan Jeffers",
-          "player_id": 680777,
-          "team": "Minnesota Twins",
-          "opponent": "New York Yankees",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": -185,
-          "book": "BetMGM",
-          "projection": 1.41,
-          "edge": 0.91,
-          "confidence": 68,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "verified matchup data"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:14Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
-          "player": "Aaron Judge",
-          "player_id": 592450,
-          "team": "New York Yankees",
-          "opponent": "Minnesota Twins",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": -111,
-          "book": "DraftKings",
-          "projection": 0.61,
-          "edge": 0.11,
-          "confidence": 59,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "20.9% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:28Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "RBI",
           "market": "batter_rbis",
-          "player": "Aaron Judge",
-          "player_id": 592450,
-          "team": "New York Yankees",
-          "opponent": "Minnesota Twins",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 140,
-          "book": "DraftKings",
-          "projection": 0.83,
-          "edge": 0.33,
-          "confidence": 63,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "20.9% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:28Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Max Fried",
-          "player_id": 665019,
-          "team": "Minnesota Twins",
-          "opponent": "New York Yankees",
-          "line": 4.5,
-          "side": "OVER",
-          "odds": -142,
-          "book": "DraftKings",
-          "projection": 5.46,
-          "edge": 0.96,
-          "confidence": 69,
-          "decision": "PLAY",
-          "batting_order": 0,
-          "reasons": [
-            "24.6% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:28Z",
-          "status_reason": "Qualified edge"
+          "decision": "SKIP",
+          "status_reason": "No verified line or required data"
         }
       ],
       "long_shots": [],
-      "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status": "SKIP",
+      "status_reason": "No qualifying edge"
     },
     {
       "game_pk": "823007",
@@ -555,7 +581,7 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-15T17:55:25Z",
+          "locked_at_utc": "2026-09-15T19:29:59Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -577,7 +603,7 @@
           "reasons": [
             "12.8% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:26Z",
+          "locked_at_utc": "2026-09-15T19:28:34Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -599,7 +625,7 @@
           "reasons": [
             "12.8% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:26Z",
+          "locked_at_utc": "2026-09-15T19:28:34Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -611,7 +637,7 @@
           "opponent": "St. Louis Cardinals",
           "line": 3.5,
           "side": "OVER",
-          "odds": -109,
+          "odds": -105,
           "book": "DraftKings",
           "projection": 4.49,
           "edge": 0.99,
@@ -622,7 +648,7 @@
             "16.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-15T17:55:26Z",
+          "locked_at_utc": "2026-09-15T19:28:34Z",
           "status_reason": "Qualified edge"
         }
       ],
@@ -631,209 +657,37 @@
       "status_reason": "Verified prop card"
     },
     {
-      "game_pk": "824466",
+      "game_pk": "822925",
       "teams": [
-        "Cincinnati Reds",
-        "Los Angeles Dodgers"
+        "Athletics",
+        "Tampa Bay Rays"
       ],
-      "venue": "Great American Ball Park",
+      "venue": "Tropicana Field",
       "game_datetime_utc": "2026-09-15T22:40:00Z",
       "props": [
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
-          "player": "Josue De Paula",
-          "player_id": 800543,
-          "team": "Los Angeles Dodgers",
-          "opponent": "Cincinnati Reds",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": -190,
-          "book": "BetMGM",
-          "projection": 2.24,
-          "edge": 1.74,
-          "confidence": 83,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "22.2% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:18Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
-          "player": "Elly De La Cruz",
-          "player_id": 682829,
-          "team": "Cincinnati Reds",
-          "opponent": "Los Angeles Dodgers",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 129,
-          "book": "DraftKings",
-          "projection": 0.69,
-          "edge": 0.19,
-          "confidence": 64,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "3/3 core signals",
-            "16.4% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "RBI",
           "market": "batter_rbis",
-          "player": "Josue De Paula",
-          "player_id": 800543,
-          "team": "Los Angeles Dodgers",
-          "opponent": "Cincinnati Reds",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 200,
-          "book": "DraftKings",
-          "projection": 0.95,
-          "edge": 0.45,
-          "confidence": 60,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "22.2% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Rhett Lowder",
-          "player_id": 571970,
-          "team": "Los Angeles Dodgers",
-          "opponent": "Cincinnati Reds",
-          "line": 3.5,
-          "side": "OVER",
-          "odds": -129,
-          "book": "DraftKings",
-          "projection": 3.22,
-          "edge": -0.28,
-          "confidence": 52,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "17.4% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
-          "status_reason": "No qualifying edge"
-        }
-      ],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge"
-    },
-    {
-      "game_pk": "824384",
-      "teams": [
-        "Chicago White Sox",
-        "Cleveland Guardians"
-      ],
-      "venue": "Progressive Field",
-      "game_datetime_utc": "2026-09-15T22:40:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Munetaka Murakami",
-          "player_id": 808959,
-          "team": "Chicago White Sox",
-          "opponent": "Cleveland Guardians",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": -110,
-          "book": "BetMGM",
-          "projection": 1.49,
-          "edge": 0.99,
-          "confidence": 78,
-          "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "3/3 core signals",
-            "18.7% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:53:29Z",
-          "status_reason": "No qualifying edge"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Munetaka Murakami",
-          "player_id": 808959,
-          "team": "Chicago White Sox",
-          "opponent": "Cleveland Guardians",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 102,
-          "book": "DraftKings",
-          "projection": 0.62,
-          "edge": 0.12,
-          "confidence": 63,
-          "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "3/3 core signals",
-            "18.7% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
-          "status_reason": "No qualifying edge"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Munetaka Murakami",
-          "player_id": 808959,
-          "team": "Chicago White Sox",
-          "opponent": "Cleveland Guardians",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 187,
-          "book": "DraftKings",
-          "projection": 0.8,
-          "edge": 0.3,
-          "confidence": 66,
-          "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "3/3 core signals",
-            "18.7% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
-          "status_reason": "No qualifying edge"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Foster Griffin",
-          "player_id": 808959,
-          "team": "Chicago White Sox",
-          "opponent": "Cleveland Guardians",
-          "line": 5.5,
-          "side": "OVER",
-          "odds": 118,
-          "book": "DraftKings",
-          "projection": 5.42,
-          "edge": -0.08,
-          "confidence": 59,
-          "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "21.7% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         }
       ],
       "long_shots": [],
@@ -846,7 +700,7 @@
         "Los Angeles Angels",
         "Seattle Mariners"
       ],
-      "venue": "Unknown",
+      "venue": "Angel Stadium",
       "game_datetime_utc": "2026-09-16T01:38:00Z",
       "props": [
         {
@@ -858,17 +712,17 @@
           "opponent": "Los Angeles Angels",
           "line": 0.5,
           "side": "OVER",
-          "odds": -135,
+          "odds": -130,
           "book": "BetMGM",
-          "projection": 1.96,
-          "edge": 1.46,
+          "projection": 1.97,
+          "edge": 1.47,
           "confidence": 78,
           "decision": "SKIP",
           "batting_order": 0,
           "reasons": [
             "23.1% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:36Z",
+          "locked_at_utc": "2026-09-15T19:29:26Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -882,15 +736,15 @@
           "side": "OVER",
           "odds": 120,
           "book": "DraftKings",
-          "projection": 0.6,
-          "edge": 0.1,
-          "confidence": 59,
+          "projection": 0.62,
+          "edge": 0.12,
+          "confidence": 60,
           "decision": "SKIP",
           "batting_order": 0,
           "reasons": [
             "15.8% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:03Z",
+          "locked_at_utc": "2026-09-15T19:30:00Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -912,7 +766,7 @@
           "reasons": [
             "23.1% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:03Z",
+          "locked_at_utc": "2026-09-15T19:30:00Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -935,113 +789,7 @@
             "27.3% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-15T17:55:03Z",
-          "status_reason": "Qualified edge"
-        }
-      ],
-      "long_shots": [],
-      "status": "LIVE",
-      "status_reason": "Verified prop card"
-    },
-    {
-      "game_pk": "823333",
-      "teams": [
-        "Milwaukee Brewers",
-        "Pittsburgh Pirates"
-      ],
-      "venue": "PNC Park",
-      "game_datetime_utc": "2026-09-15T22:40:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Oneil Cruz",
-          "player_id": 665833,
-          "team": "Pittsburgh Pirates",
-          "opponent": "Milwaukee Brewers",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": -115,
-          "book": "BetMGM",
-          "projection": 1.44,
-          "edge": 0.94,
-          "confidence": 77,
-          "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "3/3 core signals",
-            "16.2% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:36Z",
-          "status_reason": "No qualifying edge"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Jake Bauers",
-          "player_id": 641343,
-          "team": "Milwaukee Brewers",
-          "opponent": "Pittsburgh Pirates",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 101,
-          "book": "DraftKings",
-          "projection": 0.59,
-          "edge": 0.09,
-          "confidence": 62,
-          "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "3/3 core signals",
-            "13.9% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:09Z",
-          "status_reason": "No qualifying edge"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Jake Bauers",
-          "player_id": 641343,
-          "team": "Milwaukee Brewers",
-          "opponent": "Pittsburgh Pirates",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 163,
-          "book": "DraftKings",
-          "projection": 0.73,
-          "edge": 0.23,
-          "confidence": 65,
-          "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "3/3 core signals",
-            "13.9% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:09Z",
-          "status_reason": "No qualifying edge"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Lake Bachar",
-          "player_id": 641343,
-          "team": "Milwaukee Brewers",
-          "opponent": "Pittsburgh Pirates",
-          "line": 2.5,
-          "side": "OVER",
-          "odds": 146,
-          "book": "DraftKings",
-          "projection": 5.42,
-          "edge": 2.92,
-          "confidence": 86,
-          "decision": "PLAY",
-          "batting_order": 0,
-          "reasons": [
-            "25.5% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:09Z",
+          "locked_at_utc": "2026-09-15T19:30:00Z",
           "status_reason": "Qualified edge"
         }
       ],
@@ -1077,7 +825,7 @@
           "reasons": [
             "13.3% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:35Z",
+          "locked_at_utc": "2026-09-15T19:29:25Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1089,8 +837,8 @@
           "opponent": "Texas Rangers",
           "line": 0.5,
           "side": "OVER",
-          "odds": 115,
-          "book": "BetMGM",
+          "odds": 108,
+          "book": "DraftKings",
           "projection": 0.66,
           "edge": 0.16,
           "confidence": 60,
@@ -1099,7 +847,7 @@
           "reasons": [
             "12.1% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:35Z",
+          "locked_at_utc": "2026-09-15T19:28:58Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1121,36 +869,36 @@
           "reasons": [
             "13.3% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:35Z",
+          "locked_at_utc": "2026-09-15T19:29:25Z",
           "status_reason": "No qualifying edge"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Jacob deGrom",
-          "player_id": 701350,
-          "team": "Boston Red Sox",
-          "opponent": "Texas Rangers",
-          "line": 6.5,
+          "player": "Patrick Sandoval",
+          "player_id": 592626,
+          "team": "Texas Rangers",
+          "opponent": "Boston Red Sox",
+          "line": 4.5,
           "side": "OVER",
-          "odds": -119,
+          "odds": -161,
           "book": "DraftKings",
-          "projection": 6.9,
-          "edge": 0.4,
+          "projection": 5.06,
+          "edge": 0.56,
           "confidence": 65,
-          "decision": "SKIP",
+          "decision": "PLAY",
           "batting_order": 0,
           "reasons": [
-            "30.9% pitcher K rate",
+            "22.5% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-15T17:55:15Z",
-          "status_reason": "No qualifying edge"
+          "locked_at_utc": "2026-09-15T19:28:58Z",
+          "status_reason": "Qualified edge"
         }
       ],
       "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge"
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
     },
     {
       "game_pk": "822762",
@@ -1164,97 +912,31 @@
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
-          "player": "Kazuma Okamoto",
-          "player_id": 672960,
-          "team": "Toronto Blue Jays",
-          "opponent": "Detroit Tigers",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": -165,
-          "book": "BetMGM",
-          "projection": 1.51,
-          "edge": 1.01,
-          "confidence": 73,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "13.9% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:35Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
-          "player": "Riley Greene",
-          "player_id": 682985,
-          "team": "Detroit Tigers",
-          "opponent": "Toronto Blue Jays",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 131,
-          "book": "DraftKings",
-          "projection": 0.62,
-          "edge": 0.12,
-          "confidence": 63,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "3/3 core signals",
-            "15.1% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "RBI",
           "market": "batter_rbis",
-          "player": "Kazuma Okamoto",
-          "player_id": 672960,
-          "team": "Toronto Blue Jays",
-          "opponent": "Detroit Tigers",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 167,
-          "book": "DraftKings",
-          "projection": 0.71,
-          "edge": 0.21,
-          "confidence": 58,
           "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "13.9% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
-          "status_reason": "No qualifying edge"
+          "status_reason": "No verified line or required data"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Drew Anderson",
-          "player_id": 815873,
-          "team": "Toronto Blue Jays",
-          "opponent": "Detroit Tigers",
-          "line": 3.5,
-          "side": "OVER",
-          "odds": -145,
-          "book": "DraftKings",
-          "projection": 5.34,
-          "edge": 1.84,
-          "confidence": 85,
-          "decision": "PLAY",
-          "batting_order": 0,
-          "reasons": [
-            "25.3% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
-          "status_reason": "Qualified edge"
+          "decision": "SKIP",
+          "status_reason": "No verified line or required data"
         }
       ],
       "long_shots": [],
-      "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status": "SKIP",
+      "status_reason": "No qualifying edge"
     },
     {
       "game_pk": "825030",
@@ -1274,7 +956,7 @@
           "opponent": "Miami Marlins",
           "line": 0.5,
           "side": "OVER",
-          "odds": -150,
+          "odds": -155,
           "book": "BetMGM",
           "projection": 1.48,
           "edge": 0.98,
@@ -1284,7 +966,7 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-15T17:55:20Z",
+          "locked_at_utc": "2026-09-15T19:29:48Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1307,7 +989,7 @@
             "3/3 core signals",
             "14.9% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:25Z",
+          "locked_at_utc": "2026-09-15T19:29:50Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1319,7 +1001,7 @@
           "opponent": "Arizona Diamondbacks",
           "line": 0.5,
           "side": "OVER",
-          "odds": 186,
+          "odds": 180,
           "book": "DraftKings",
           "projection": 0.71,
           "edge": 0.21,
@@ -1330,7 +1012,7 @@
             "3/3 core signals",
             "14.9% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:25Z",
+          "locked_at_utc": "2026-09-15T19:29:50Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1342,7 +1024,7 @@
           "opponent": "Arizona Diamondbacks",
           "line": 4.5,
           "side": "OVER",
-          "odds": 115,
+          "odds": 126,
           "book": "DraftKings",
           "projection": 5.58,
           "edge": 1.08,
@@ -1353,7 +1035,7 @@
             "23.1% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-15T17:55:25Z",
+          "locked_at_utc": "2026-09-15T19:29:50Z",
           "status_reason": "Qualified edge"
         }
       ],
@@ -1389,7 +1071,7 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-15T17:55:16Z",
+          "locked_at_utc": "2026-09-15T19:28:45Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1412,7 +1094,7 @@
             "3/3 core signals",
             "12.5% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
+          "locked_at_utc": "2026-09-15T19:29:47Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1434,7 +1116,7 @@
           "reasons": [
             "13.3% barrel rate"
           ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
+          "locked_at_utc": "2026-09-15T19:29:47Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1457,111 +1139,7 @@
             "24.2% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-15T17:55:02Z",
-          "status_reason": "No qualifying edge"
-        }
-      ],
-      "long_shots": [],
-      "status": "SKIP",
-      "status_reason": "No qualifying edge"
-    },
-    {
-      "game_pk": "822925",
-      "teams": [
-        "Athletics",
-        "Tampa Bay Rays"
-      ],
-      "venue": "Tropicana Field",
-      "game_datetime_utc": "2026-09-15T22:40:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Shea Langeliers",
-          "player_id": 669127,
-          "team": "Athletics",
-          "opponent": "Tampa Bay Rays",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": -160,
-          "book": "BetMGM",
-          "projection": 1.61,
-          "edge": 1.11,
-          "confidence": 75,
-          "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "14.7% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:54:07Z",
-          "status_reason": "No qualifying edge"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Shea Langeliers",
-          "player_id": 669127,
-          "team": "Athletics",
-          "opponent": "Tampa Bay Rays",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 141,
-          "book": "DraftKings",
-          "projection": 0.6,
-          "edge": 0.1,
-          "confidence": 56,
-          "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "14.7% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:25Z",
-          "status_reason": "No qualifying edge"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Junior Caminero",
-          "player_id": 691406,
-          "team": "Tampa Bay Rays",
-          "opponent": "Athletics",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 116,
-          "book": "DraftKings",
-          "projection": 0.75,
-          "edge": 0.25,
-          "confidence": 65,
-          "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "3/3 core signals",
-            "13.0% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:25Z",
-          "status_reason": "No qualifying edge"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Griffin Jax",
-          "player_id": 669127,
-          "team": "Athletics",
-          "opponent": "Tampa Bay Rays",
-          "line": 5.5,
-          "side": "OVER",
-          "odds": 114,
-          "book": "DraftKings",
-          "projection": 5.51,
-          "edge": 0.01,
-          "confidence": 55,
-          "decision": "SKIP",
-          "batting_order": 0,
-          "reasons": [
-            "24.9% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-15T17:55:25Z",
+          "locked_at_utc": "2026-09-15T19:29:47Z",
           "status_reason": "No qualifying edge"
         }
       ],
