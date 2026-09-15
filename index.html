@@ -4235,14 +4235,13 @@ function firstMetric(p,keys){
 }
 function pctMetric(p,...keys){const value=firstMetric(p,keys);return value===null?null:(Math.abs(value)<=1?value*100:value)}
 function statValue(label,value,format="pct"){
-  let shown="DATA PENDING";
-  if(value!==null&&Number.isFinite(value)){
-    if(format==="pct")shown=`${value.toFixed(1)}%`;
-    else if(format==="rate")shown=value.toFixed(3).replace(/^0/,"");
-    else if(format==="mph")shown=`${value.toFixed(1)} MPH`;
-    else shown=value.toFixed(2);
-  }
-  return `<div class="matchup-stat ${value===null?'pending':''}"><span>${esc(label)}</span><b>${esc(shown)}</b></div>`;
+  if(value===null||!Number.isFinite(value))return "";
+  let shown;
+  if(format==="pct")shown=`${value.toFixed(1)}%`;
+  else if(format==="rate")shown=value.toFixed(3).replace(/^0/,"");
+  else if(format==="mph")shown=`${value.toFixed(1)} MPH`;
+  else shown=value.toFixed(2);
+  return `<div class="matchup-stat"><span>${esc(label)}</span><b>${esc(shown)}</b></div>`;
 }
 function matchupAdvantage(p){
   const score=firstMetric(p,["handedness_score"]);
@@ -4288,7 +4287,7 @@ function trendDetails(p){
       <div class="matchup-dashboard-head"><div><small>TODAY'S PITCHER MATCHUP</small><b>vs ${esc(pitcher)}</b><em>${esc(hands||pitcherHand)}</em></div><span class="advantage-badge ${advantage.kind}">${advantage.label}</span></div>
       <div class="matchup-subhead">OPPOSING PITCHER</div><div class="matchup-metrics">${pitcherStats}</div>
       <div class="matchup-subhead">HITTER POWER PROFILE</div><div class="matchup-metrics">${hitterStats}</div>
-      <p class="matchup-source">Current-season profile applied to today's opposing pitcher. This is matchup context, not a small-sample career head-to-head line.</p>
+      <p class="matchup-source">Available current-season profile applied to today's opposing pitcher. Metrics without a verified source are hidden rather than shown as pending.</p>
     </section>
   </div>`;
 }
