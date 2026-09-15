@@ -1,11 +1,12 @@
 name: Add HR Content Buttons
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/add-hr-content-buttons.yml'
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/add-hr-content-buttons.yml
 
 permissions:
   contents: write
@@ -14,61 +15,57 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
 
-      - name: Put Content button in each expanded HR game
+      - name: Add content card link
+        shell: bash
         run: |
           python - <<'PY'
           from pathlib import Path
-          p=Path('index.html')
-          s=p.read_text()
 
-          needle='<button type="button" data-matchup-key="${esc(g.key)}">VIEW MATCHUP →</button>'
-          addon='''<button type="button" data-matchup-key="${esc(g.key)}">VIEW MATCHUP →</button>
-              <a class="lp-content-btn" href="hr-content.html?game_key=${encodeURIComponent(g.key)}&game_pk=${encodeURIComponent(p.game_pk||'')}">CONTENT CARD →</a>'''
-          if 'CONTENT CARD →' not in s:
-              if needle not in s:
-                  raise SystemExit('VIEW MATCHUP button not found')
-              s=s.replace(needle,addon,1)
+          path = Path("index.html")
+          text = path.read_text(encoding="utf-8")
+          needle = '<button type="button" data-matchup-key="${esc(g.key)}">VIEW MATCHUP →</button>'
+          link = '<a class="lp-content-btn" href="hr-content.html?game_key=${encodeURIComponent(g.key)}&game_pk=${encodeURIComponent(p.game_pk||\x27\x27)}">CONTENT CARD →</a>'
 
-          # Remove the legacy observer injector only; keep the actual page intact.
-          marker='<!-- LP-HR-CONTENT-BUTTONS -->'
-          start=s.find(marker)
-          if start>=0:
-              style_end=s.find('</style>',start)
-              script_end=s.find('</script>',style_end if style_end>=0 else start)
-              if script_end>=0:
-                  s=s[:start]+s[script_end+len('</script>'):]
+          if "CONTENT CARD →" not in text:
+              if needle not in text:
+                  raise SystemExit("VIEW MATCHUP button not found")
+              text = text.replace(needle, needle + "\n              " + link, 1)
 
-          css='''\n<style id="lp-content-card-style">
-.game-footer{display:flex!important;gap:9px!important;align-items:center!important;flex-wrap:wrap!important}
-.lp-content-btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #20c8f3;border-radius:10px;background:linear-gradient(135deg,#0cc4ed,#39ddff);color:#031522!important;text-decoration:none!important;padding:10px 14px;font-size:11px;font-weight:1000;letter-spacing:.06em;min-height:38px}
-@media(max-width:560px){.game-footer>*{flex:1 1 calc(50% - 5px)!important}.lp-content-btn{font-size:10px;padding:9px 8px}}
-</style>\n'''
-          if 'id="lp-content-card-style"' not in s:
-              if '</head>' not in s:
-                  raise SystemExit('closing head not found')
-              s=s.replace('</head>',css+'</head>',1)
+          css = """
+          <style id="lp-content-card-style">
+          .game-footer{display:flex!important;gap:9px!important;align-items:center!important;flex-wrap:wrap!important}
+          .lp-content-btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #20c8f3;border-radius:10px;background:#20c8f3;color:#031522!important;text-decoration:none!important;padding:10px 14px;font-size:11px;font-weight:900;letter-spacing:.06em;min-height:38px}
+          @media(max-width:560px){.game-footer>*{flex:1 1 calc(50% - 5px)!important}.lp-content-btn{font-size:10px;padding:9px 8px}}
+          </style>
+          """
+          if 'id="lp-content-card-style"' not in text:
+              if "</head>" not in text:
+                  raise SystemExit("closing head not found")
+              text = text.replace("</head>", css + "\n</head>", 1)
 
-          p.write_text(s)
+          path.write_text(text, encoding="utf-8")
           PY
 
-      - name: Verify integration
+      - name: Verify
+        shell: bash
         run: |
-          grep -q 'CONTENT CARD →' index.html
-          grep -q 'game_key=' index.html
-          grep -q 'lp-content-card-style' index.html
+          grep -Fq 'CONTENT CARD →' index.html
+          grep -Fq 'lp-content-card-style' index.html
 
-      - name: Commit website integration
+      - name: Commit
+        shell: bash
         run: |
-          git config user.name "launchpoint-bot"
-          git config user.email "actions@users.noreply.github.com"
+          git config user.name launchpoint-bot
+          git config user.email actions@users.noreply.github.com
           git add index.html
           if ! git diff --cached --quiet; then
-            git commit -m "Place Content Card button in HR game footer"
+            git commit -m "Add Content Card link to HR games"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
