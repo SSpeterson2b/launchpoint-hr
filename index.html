@@ -3326,6 +3326,13 @@ body{background:radial-gradient(circle at 50% -10%,#073756 0,#01111e 34%,#00080e
 
 \n/* PLAYER PROPS NAV */\n.bottom{grid-template-columns:repeat(7,1fr)!important}\n.bottom button[data-bottom="player-props"]{color:#14caed}\n@media(max-width:560px){.bottom button{font-size:9px!important}.bottom small{font-size:7px!important}}\n</style>
 
+
+<style id="lp-content-card-style">
+.game-footer{display:flex!important;gap:9px!important;align-items:center!important;flex-wrap:wrap!important}
+.lp-content-btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #20c8f3;border-radius:10px;background:#20c8f3;color:#031522!important;text-decoration:none!important;padding:10px 14px;font-size:11px;font-weight:900;letter-spacing:.06em;min-height:38px}
+@media(max-width:560px){.game-footer>*{flex:1 1 calc(50% - 5px)!important}.lp-content-btn{font-size:10px;padding:9px 8px}}
+</style>
+
 </head><body><main class="shell">
 <section class="hero">
   <div class="hero-top">
@@ -4157,6 +4164,7 @@ function render(){
 
             <div class="game-footer">
               <button type="button" data-matchup-key="${esc(g.key)}">VIEW MATCHUP →</button>
+              <a class="lp-content-btn" href="hr-content.html?game_key=${encodeURIComponent(g.key)}&game_pk=${encodeURIComponent(p.game_pk||'')}">CONTENT CARD →</a>
             </div>
           </div>
         `:""}
