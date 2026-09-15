@@ -1,0 +1,71 @@
+name: Fix HR Data Pending Display
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-hr-data-pending.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Remove misleading DATA PENDING metric tiles
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text()
+          old = '''function statValue(label,value,format="pct"){
+            let shown="DATA PENDING";
+            if(value!==null&&Number.isFinite(value)){
+              if(format==="pct")shown=`${value.toFixed(1)}%`;
+              else if(format==="rate")shown=value.toFixed(3).replace(/^0/,"");
+              else if(format==="mph")shown=`${value.toFixed(1)} MPH`;
+              else shown=value.toFixed(2);
+            }
+            return `<div class="matchup-stat ${value===null?'pending':''}"><span>${esc(label)}</span><b>${esc(shown)}</b></div>`;
+          }'''
+          new = '''function statValue(label,value,format="pct"){
+            if(value===null||!Number.isFinite(value))return "";
+            let shown;
+            if(format==="pct")shown=`${value.toFixed(1)}%`;
+            else if(format==="rate")shown=value.toFixed(3).replace(/^0/,"");
+            else if(format==="mph")shown=`${value.toFixed(1)} MPH`;
+            else shown=value.toFixed(2);
+            return `<div class="matchup-stat"><span>${esc(label)}</span><b>${esc(shown)}</b></div>`;
+          }'''
+          if old not in s:
+              raise SystemExit('statValue block not found; no changes made')
+          s = s.replace(old, new, 1)
+          s = s.replace('Current-season profile applied to today\'s opposing pitcher. This is matchup context, not a small-sample career head-to-head line.', 'Available current-season profile applied to today\'s opposing pitcher. Metrics without a verified source are hidden rather than shown as pending.', 1)
+          p.write_text(s)
+          PY
+
+      - name: Verify fix
+        run: |
+          grep -q 'if(value===null||!Number.isFinite(value))return ""' index.html
+          if grep -q 'let shown="DATA PENDING"' index.html; then
+            echo 'DATA PENDING metric renderer still present'
+            exit 1
+          fi
+
+      - name: Commit fix
+        run: |
+          git config user.name "launchpoint-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Hide unavailable HR matchup metrics"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
