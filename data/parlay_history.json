@@ -2,6 +2,131 @@
   "version": 1,
   "slates": [
     {
+      "slate_date": "2026-09-15",
+      "generated_at_utc": "2026-09-15T15:36:29.027131+00:00",
+      "locked_at_utc": "2026-09-15T15:36:40.004Z",
+      "first_game_start_utc": "2026-09-15T22:40:00.000Z",
+      "status": "LOCKED",
+      "cards": [
+        {
+          "title": "Top 2-Leg Parlay",
+          "legs": [
+            {
+              "game": "824307",
+              "start": "2026-09-16T00:40:00Z",
+              "player": "Kyle Freeland",
+              "player_id": 665487,
+              "team": "San Diego Padres",
+              "opponent": "Colorado Rockies",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 2.5,
+              "pick": "OVER 2.5",
+              "odds": -115,
+              "confidence": 86,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "823333",
+              "start": "2026-09-15T22:40:00Z",
+              "player": "Lake Bachar",
+              "player_id": 641343,
+              "team": "Milwaukee Brewers",
+              "opponent": "Pittsburgh Pirates",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 2.5,
+              "pick": "OVER 2.5",
+              "odds": 140,
+              "confidence": 86,
+              "result": "",
+              "actual": ""
+            }
+          ]
+        },
+        {
+          "title": "Same-Game Parlay",
+          "legs": []
+        },
+        {
+          "title": "Player Prop Parlay",
+          "legs": [
+            {
+              "game": "822762",
+              "start": "2026-09-15T23:07:00Z",
+              "player": "Drew Anderson",
+              "player_id": 815873,
+              "team": "Toronto Blue Jays",
+              "opponent": "Detroit Tigers",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 3.5,
+              "pick": "OVER 3.5",
+              "odds": -145,
+              "confidence": 85,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "825030",
+              "start": "2026-09-16T01:40:00Z",
+              "player": "Michael Soroka",
+              "player_id": 665052,
+              "team": "Miami Marlins",
+              "opponent": "Arizona Diamondbacks",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 4.5,
+              "pick": "OVER 4.5",
+              "odds": 115,
+              "confidence": 80,
+              "result": "",
+              "actual": ""
+            }
+          ]
+        },
+        {
+          "title": "Long-Shot Parlay",
+          "legs": [
+            {
+              "game": "823333",
+              "start": "2026-09-15T22:40:00Z",
+              "player": "Lake Bachar",
+              "player_id": 641343,
+              "team": "Milwaukee Brewers",
+              "opponent": "Pittsburgh Pirates",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 2.5,
+              "pick": "OVER 2.5",
+              "odds": 140,
+              "confidence": 86,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "825030",
+              "start": "2026-09-16T01:40:00Z",
+              "player": "Michael Soroka",
+              "player_id": 665052,
+              "team": "Miami Marlins",
+              "opponent": "Arizona Diamondbacks",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 4.5,
+              "pick": "OVER 4.5",
+              "odds": 115,
+              "confidence": 80,
+              "result": "",
+              "actual": ""
+            }
+          ]
+        }
+      ],
+      "graded_at_utc": ""
+    },
+    {
       "slate_date": "2026-09-13",
       "generated_at_utc": "2026-09-13T17:14:30.638179+00:00",
       "locked_at_utc": "2026-09-13T17:14:41.506Z",
@@ -350,5 +475,5 @@
       "graded_at_utc": "2026-09-13T16:07:54.543Z"
     }
   ],
-  "updated_at_utc": "2026-09-14T06:58:46.307Z"
+  "updated_at_utc": "2026-09-15T15:36:40.226Z"
 }
