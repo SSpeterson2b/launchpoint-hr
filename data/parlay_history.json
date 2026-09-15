@@ -3,8 +3,8 @@
   "slates": [
     {
       "slate_date": "2026-09-15",
-      "generated_at_utc": "2026-09-15T17:55:40.505958+00:00",
-      "locked_at_utc": "2026-09-15T17:55:53.853Z",
+      "generated_at_utc": "2026-09-15T19:30:02.575719+00:00",
+      "locked_at_utc": "2026-09-15T19:30:13.712Z",
       "first_game_start_utc": "2026-09-15T22:40:00.000Z",
       "status": "LOCKED",
       "cards": [
@@ -22,24 +22,24 @@
               "side": "OVER",
               "line": 2.5,
               "pick": "OVER 2.5",
-              "odds": -115,
+              "odds": -114,
               "confidence": 86,
               "result": "",
               "actual": ""
             },
             {
-              "game": "823333",
+              "game": "824384",
               "start": "2026-09-15T22:40:00Z",
-              "player": "Lake Bachar",
-              "player_id": 641343,
-              "team": "Milwaukee Brewers",
-              "opponent": "Pittsburgh Pirates",
-              "market": "STRIKEOUTS",
+              "player": "Munetaka Murakami",
+              "player_id": 808959,
+              "team": "Chicago White Sox",
+              "opponent": "Cleveland Guardians",
+              "market": "TOTAL BASES",
               "side": "OVER",
-              "line": 2.5,
-              "pick": "OVER 2.5",
-              "odds": 146,
-              "confidence": 86,
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": -120,
+              "confidence": 82,
               "result": "",
               "actual": ""
             }
@@ -47,27 +47,44 @@
         },
         {
           "title": "Same-Game Parlay",
-          "legs": []
+          "legs": [
+            {
+              "game": "824384",
+              "start": "2026-09-15T22:40:00Z",
+              "player": "Munetaka Murakami",
+              "player_id": 808959,
+              "team": "Chicago White Sox",
+              "opponent": "Cleveland Guardians",
+              "market": "TOTAL BASES",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": -120,
+              "confidence": 82,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "824384",
+              "start": "2026-09-15T22:40:00Z",
+              "player": "Randal Grichuk",
+              "player_id": 545341,
+              "team": "Chicago White Sox",
+              "opponent": "Cleveland Guardians",
+              "market": "RUNS",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": 119,
+              "confidence": 65,
+              "result": "",
+              "actual": ""
+            }
+          ]
         },
         {
           "title": "Player Prop Parlay",
           "legs": [
-            {
-              "game": "822762",
-              "start": "2026-09-15T23:07:00Z",
-              "player": "Drew Anderson",
-              "player_id": 815873,
-              "team": "Toronto Blue Jays",
-              "opponent": "Detroit Tigers",
-              "market": "STRIKEOUTS",
-              "side": "OVER",
-              "line": 3.5,
-              "pick": "OVER 3.5",
-              "odds": -145,
-              "confidence": 85,
-              "result": "",
-              "actual": ""
-            },
             {
               "game": "825030",
               "start": "2026-09-16T01:40:00Z",
@@ -79,8 +96,24 @@
               "side": "OVER",
               "line": 4.5,
               "pick": "OVER 4.5",
-              "odds": 115,
+              "odds": 126,
               "confidence": 80,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "823007",
+              "start": "2026-09-15T23:45:00Z",
+              "player": "Andre Pallante",
+              "player_id": 805811,
+              "team": "San Francisco Giants",
+              "opponent": "St. Louis Cardinals",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 3.5,
+              "pick": "OVER 3.5",
+              "odds": -105,
+              "confidence": 75,
               "result": "",
               "actual": ""
             }
@@ -90,22 +123,6 @@
           "title": "Long-Shot Parlay",
           "legs": [
             {
-              "game": "823333",
-              "start": "2026-09-15T22:40:00Z",
-              "player": "Lake Bachar",
-              "player_id": 641343,
-              "team": "Milwaukee Brewers",
-              "opponent": "Pittsburgh Pirates",
-              "market": "STRIKEOUTS",
-              "side": "OVER",
-              "line": 2.5,
-              "pick": "OVER 2.5",
-              "odds": 146,
-              "confidence": 86,
-              "result": "",
-              "actual": ""
-            },
-            {
               "game": "825030",
               "start": "2026-09-16T01:40:00Z",
               "player": "Michael Soroka",
@@ -116,8 +133,24 @@
               "side": "OVER",
               "line": 4.5,
               "pick": "OVER 4.5",
-              "odds": 115,
+              "odds": 126,
               "confidence": 80,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "824384",
+              "start": "2026-09-15T22:40:00Z",
+              "player": "Munetaka Murakami",
+              "player_id": 808959,
+              "team": "Chicago White Sox",
+              "opponent": "Cleveland Guardians",
+              "market": "RBI",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": 181,
+              "confidence": 68,
               "result": "",
               "actual": ""
             }
@@ -475,5 +508,5 @@
       "graded_at_utc": "2026-09-13T16:07:54.543Z"
     }
   ],
-  "updated_at_utc": "2026-09-15T17:55:54.055Z"
+  "updated_at_utc": "2026-09-15T19:30:14.049Z"
 }
