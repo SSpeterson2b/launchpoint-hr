@@ -4525,4 +4525,7 @@ setInterval(()=>{
 </script>
 
 <!-- LaunchPoint public release: radar graphics, live weather and results UI -->
+<!-- LP-HR-CONTENT-BUTTONS -->
+<style>.lp-content-action{display:flex;justify-content:flex-end;padding:8px 8px 4px}.lp-content-btn{display:inline-flex;align-items:center;gap:7px;border:1px solid #20c8f3;border-radius:10px;background:linear-gradient(135deg,#0cc4ed,#39ddff);color:#031522!important;text-decoration:none!important;padding:9px 14px;font-size:11px;font-weight:1000;letter-spacing:.08em}@media(max-width:560px){.lp-content-action{padding:6px 5px 3px}.lp-content-btn{width:100%;justify-content:center}}</style>
+<script>(function(){function add(){document.querySelectorAll('#games .game,.game').forEach(function(g,i){if(g.querySelector('.lp-content-action'))return;var pk=g.getAttribute('data-game-pk')||'';var d=document.createElement('div');d.className='lp-content-action';var a=document.createElement('a');a.className='lp-content-btn';a.textContent='CONTENT CARD';a.href='hr-content.html?game='+i+(pk?'&game_pk='+encodeURIComponent(pk):'');d.appendChild(a);(g.querySelector('.body')||g).appendChild(d)})}document.addEventListener('DOMContentLoaded',add);new MutationObserver(add).observe(document.documentElement,{childList:true,subtree:true});setTimeout(add,1000)})();</script>
 </body></html>
