@@ -14,81 +14,37 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
 
-      - name: Connect HR game cards to Content cards
+      - name: Connect game cards to HR Content
         run: |
           python - <<'PY'
           from pathlib import Path
-
-          p=Path('index.html')
-          s=p.read_text()
-          marker='<!-- LP-HR-CONTENT-BUTTONS -->'
+          p = Path('index.html')
+          s = p.read_text()
+          marker = '<!-- LP-HR-CONTENT-BUTTONS -->'
           if marker not in s:
-              addon=r'''
-<!-- LP-HR-CONTENT-BUTTONS -->
-<style>
-.lp-content-action{display:flex;justify-content:flex-end;padding:8px 8px 4px}
-.lp-content-btn{display:inline-flex;align-items:center;gap:7px;border:1px solid #20c8f3;border-radius:10px;background:linear-gradient(135deg,#0cc4ed,#39ddff);color:#031522!important;text-decoration:none!important;padding:9px 14px;font-size:11px;font-weight:1000;letter-spacing:.08em;box-shadow:0 0 14px rgba(24,201,243,.18)}
-.lp-content-btn:before{content:'▣';font-size:14px}
-@media(max-width:560px){.lp-content-action{padding:6px 5px 3px}.lp-content-btn{width:100%;justify-content:center;padding:8px 10px;font-size:10px}}
-</style>
-<script>
-(function(){
-  function attachContentButtons(){
-    document.querySelectorAll('#games .game, .game').forEach(function(game,index){
-      if(game.querySelector('.lp-content-action'))return;
-      var gamePk=game.getAttribute('data-game-pk')||game.dataset.gamePk||'';
-      var action=document.createElement('div');
-      action.className='lp-content-action';
-      var link=document.createElement('a');
-      link.className='lp-content-btn';
-      link.textContent='CONTENT CARD';
-      link.href='hr-content.html?game='+encodeURIComponent(index)+(gamePk?'&game_pk='+encodeURIComponent(gamePk):'');
-      action.appendChild(link);
-      var body=game.querySelector('.body')||game;
-      body.appendChild(action);
-    });
-  }
-  document.addEventListener('DOMContentLoaded',attachContentButtons);
-  var observer=new MutationObserver(function(){attachContentButtons()});
-  observer.observe(document.documentElement,{childList:true,subtree:true});
-  setTimeout(attachContentButtons,800);
-  setTimeout(attachContentButtons,2200);
-})();
-</script>
-'''
+              addon = """<!-- LP-HR-CONTENT-BUTTONS -->\n<style>.lp-content-action{display:flex;justify-content:flex-end;padding:8px 8px 4px}.lp-content-btn{display:inline-flex;align-items:center;gap:7px;border:1px solid #20c8f3;border-radius:10px;background:linear-gradient(135deg,#0cc4ed,#39ddff);color:#031522!important;text-decoration:none!important;padding:9px 14px;font-size:11px;font-weight:1000;letter-spacing:.08em}@media(max-width:560px){.lp-content-action{padding:6px 5px 3px}.lp-content-btn{width:100%;justify-content:center}}</style>\n<script>(function(){function add(){document.querySelectorAll('#games .game,.game').forEach(function(g,i){if(g.querySelector('.lp-content-action'))return;var pk=g.getAttribute('data-game-pk')||'';var d=document.createElement('div');d.className='lp-content-action';var a=document.createElement('a');a.className='lp-content-btn';a.textContent='CONTENT CARD';a.href='hr-content.html?game='+i+(pk?'&game_pk='+encodeURIComponent(pk):'');d.appendChild(a);(g.querySelector('.body')||g).appendChild(d)})}document.addEventListener('DOMContentLoaded',add);new MutationObserver(add).observe(document.documentElement,{childList:true,subtree:true});setTimeout(add,1000)})();</script>\n"""
               if '</body>' not in s:
-                  raise SystemExit('index.html has no closing body tag')
-              s=s.replace('</body>',addon+'\n</body>',1)
-              p.write_text(s)
-
-          p=Path('hr-content.html')
-          s=p.read_text()
-          old="function setup(){const tabs=document.getElementById('tabs');tabs.innerHTML=GAMES.map((g,i)=>`<button onclick=\"render(${i})\">${esc(teamName(g,'away'))} vs ${esc(teamName(g,'home'))}</button>`).join('');render(0)}"
-          new="function setup(){const tabs=document.getElementById('tabs');tabs.innerHTML=GAMES.map((g,i)=>`<button onclick=\"render(${i})\">${esc(teamName(g,'away'))} vs ${esc(teamName(g,'home'))}</button>`).join('');const q=new URLSearchParams(location.search);let chosen=Number(q.get('game'));const pk=q.get('game_pk');if(pk){const found=GAMES.findIndex(g=>String(first(g,['game_pk','game_id'])||'')===String(pk));if(found>=0)chosen=found}if(!Number.isInteger(chosen)||chosen<0||chosen>=GAMES.length)chosen=0;render(chosen);setTimeout(()=>tabs.children[chosen]?.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'}),50)}"
-          if old not in s:
-              raise SystemExit('hr-content setup function not found')
-          s=s.replace(old,new,1)
-          p.write_text(s)
+                  raise SystemExit('index.html closing body not found')
+              p.write_text(s.replace('</body>', addon + '</body>', 1))
           PY
 
-      - name: Verify Content integration
+      - name: Verify integration
         run: |
           grep -q 'LP-HR-CONTENT-BUTTONS' index.html
           grep -q 'CONTENT CARD' index.html
-          grep -q "URLSearchParams(location.search)" hr-content.html
 
       - name: Commit website integration
         run: |
           git config user.name "launchpoint-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add index.html hr-content.html
+          git add index.html
           if ! git diff --cached --quiet; then
-            git commit -m "Connect HR games to shareable Content cards"
+            git commit -m "Connect HR game cards to Content page"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
