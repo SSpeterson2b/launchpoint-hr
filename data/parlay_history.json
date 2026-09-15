@@ -3,30 +3,14 @@
   "slates": [
     {
       "slate_date": "2026-09-15",
-      "generated_at_utc": "2026-09-15T19:30:02.575719+00:00",
-      "locked_at_utc": "2026-09-15T19:52:09.218Z",
+      "generated_at_utc": "2026-09-15T20:25:55.348587+00:00",
+      "locked_at_utc": "2026-09-15T20:26:05.930Z",
       "first_game_start_utc": "2026-09-15T22:40:00.000Z",
       "status": "LOCKED",
       "cards": [
         {
           "title": "Top 2-Leg Parlay",
           "legs": [
-            {
-              "game": "824307",
-              "start": "2026-09-16T00:40:00Z",
-              "player": "Kyle Freeland",
-              "player_id": 665487,
-              "team": "San Diego Padres",
-              "opponent": "Colorado Rockies",
-              "market": "STRIKEOUTS",
-              "side": "OVER",
-              "line": 2.5,
-              "pick": "OVER 2.5",
-              "odds": -114,
-              "confidence": 86,
-              "result": "",
-              "actual": ""
-            },
             {
               "game": "824384",
               "start": "2026-09-15T22:40:00Z",
@@ -40,6 +24,22 @@
               "pick": "OVER 0.5",
               "odds": -120,
               "confidence": 82,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "823007",
+              "start": "2026-09-15T23:45:00Z",
+              "player": "Drew Gilbert",
+              "player_id": 687551,
+              "team": "San Francisco Giants",
+              "opponent": "St. Louis Cardinals",
+              "market": "TOTAL BASES",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": -190,
+              "confidence": 68,
               "result": "",
               "actual": ""
             }
@@ -86,18 +86,18 @@
           "title": "Player Prop Parlay",
           "legs": [
             {
-              "game": "825030",
-              "start": "2026-09-16T01:40:00Z",
-              "player": "Michael Soroka",
-              "player_id": 665052,
-              "team": "Miami Marlins",
-              "opponent": "Arizona Diamondbacks",
-              "market": "STRIKEOUTS",
+              "game": "824384",
+              "start": "2026-09-15T22:40:00Z",
+              "player": "Munetaka Murakami",
+              "player_id": 808959,
+              "team": "Chicago White Sox",
+              "opponent": "Cleveland Guardians",
+              "market": "RBI",
               "side": "OVER",
-              "line": 4.5,
-              "pick": "OVER 4.5",
-              "odds": 126,
-              "confidence": 80,
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": 181,
+              "confidence": 68,
               "result": "",
               "actual": ""
             },
@@ -112,8 +112,8 @@
               "side": "OVER",
               "line": 3.5,
               "pick": "OVER 3.5",
-              "odds": -105,
-              "confidence": 75,
+              "odds": -116,
+              "confidence": 66,
               "result": "",
               "actual": ""
             }
@@ -122,22 +122,6 @@
         {
           "title": "Long-Shot Parlay",
           "legs": [
-            {
-              "game": "825030",
-              "start": "2026-09-16T01:40:00Z",
-              "player": "Michael Soroka",
-              "player_id": 665052,
-              "team": "Miami Marlins",
-              "opponent": "Arizona Diamondbacks",
-              "market": "STRIKEOUTS",
-              "side": "OVER",
-              "line": 4.5,
-              "pick": "OVER 4.5",
-              "odds": 126,
-              "confidence": 80,
-              "result": "",
-              "actual": ""
-            },
             {
               "game": "824384",
               "start": "2026-09-15T22:40:00Z",
@@ -151,6 +135,22 @@
               "pick": "OVER 0.5",
               "odds": 181,
               "confidence": 68,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "823007",
+              "start": "2026-09-15T23:45:00Z",
+              "player": "Bryce Eldridge",
+              "player_id": 805811,
+              "team": "San Francisco Giants",
+              "opponent": "St. Louis Cardinals",
+              "market": "RUNS",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": 124,
+              "confidence": 61,
               "result": "",
               "actual": ""
             }
@@ -508,5 +508,5 @@
       "graded_at_utc": "2026-09-13T16:07:54.543Z"
     }
   ],
-  "updated_at_utc": "2026-09-15T19:52:09.495Z"
+  "updated_at_utc": "2026-09-15T20:26:06.188Z"
 }
