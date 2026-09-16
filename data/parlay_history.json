@@ -3,8 +3,8 @@
   "slates": [
     {
       "slate_date": "2026-09-16",
-      "generated_at_utc": "2026-09-16T15:47:33.350589+00:00",
-      "locked_at_utc": "2026-09-16T15:47:47.507Z",
+      "generated_at_utc": "2026-09-16T16:28:30.707987+00:00",
+      "locked_at_utc": "2026-09-16T16:28:41.894Z",
       "first_game_start_utc": "2026-09-16T17:10:00.000Z",
       "status": "LOCKED",
       "cards": [
@@ -75,7 +75,7 @@
               "side": "OVER",
               "line": 6.5,
               "pick": "OVER 6.5",
-              "odds": -113,
+              "odds": -101,
               "confidence": 72,
               "result": "",
               "actual": ""
@@ -123,6 +123,22 @@
           "title": "Long-Shot Parlay",
           "legs": [
             {
+              "game": "823655",
+              "start": "2026-09-16T17:40:00Z",
+              "player": "Aaron Judge",
+              "player_id": 592450,
+              "team": "New York Yankees",
+              "opponent": "Minnesota Twins",
+              "market": "RBI",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": 138,
+              "confidence": 69,
+              "result": "",
+              "actual": ""
+            },
+            {
               "game": "823004",
               "start": "2026-09-16T17:15:00Z",
               "player": "Jordan Walker",
@@ -133,7 +149,7 @@
               "side": "OVER",
               "line": 0.5,
               "pick": "OVER 0.5",
-              "odds": 143,
+              "odds": 138,
               "confidence": 66,
               "result": "",
               "actual": ""
@@ -149,24 +165,8 @@
               "side": "OVER",
               "line": 0.5,
               "pick": "OVER 0.5",
-              "odds": 217,
+              "odds": 226,
               "confidence": 63,
-              "result": "",
-              "actual": ""
-            },
-            {
-              "game": "822763",
-              "start": "2026-09-16T19:07:00Z",
-              "player": "Kazuma Okamoto",
-              "player_id": 672960,
-              "team": "Toronto Blue Jays",
-              "opponent": "Detroit Tigers",
-              "market": "RBI",
-              "side": "OVER",
-              "line": 0.5,
-              "pick": "OVER 0.5",
-              "odds": 166,
-              "confidence": 60,
               "result": "",
               "actual": ""
             }
@@ -682,5 +682,5 @@
       "graded_at_utc": "2026-09-13T16:07:54.543Z"
     }
   ],
-  "updated_at_utc": "2026-09-16T15:47:48.992Z"
+  "updated_at_utc": "2026-09-16T16:28:42.227Z"
 }
