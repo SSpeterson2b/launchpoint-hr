@@ -114,8 +114,8 @@
               "pick": "OVER 3.5",
               "odds": -106,
               "confidence": 82,
-              "result": "",
-              "actual": ""
+              "result": "HIT",
+              "actual": "6"
             }
           ]
         },
@@ -151,8 +151,8 @@
               "pick": "OVER 0.5",
               "odds": 138,
               "confidence": 66,
-              "result": "",
-              "actual": ""
+              "result": "MISS",
+              "actual": "0"
             },
             {
               "game": "824382",
@@ -173,7 +173,7 @@
           ]
         }
       ],
-      "graded_at_utc": "2026-09-16T20:19:27.153Z"
+      "graded_at_utc": "2026-09-16T21:15:25.680Z"
     },
     {
       "slate_date": "2026-09-15",
@@ -682,5 +682,5 @@
       "graded_at_utc": "2026-09-13T16:07:54.543Z"
     }
   ],
-  "updated_at_utc": "2026-09-16T20:19:27.735Z"
+  "updated_at_utc": "2026-09-16T21:15:25.699Z"
 }
