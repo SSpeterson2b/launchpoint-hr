@@ -1,0 +1,66 @@
+name: Polish HR Content Card
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/polish-hr-content.yml]
+permissions:
+  contents: write
+jobs:
+  polish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Polish content card
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('hr-content.html')
+          s=p.read_text()
+          # Cleaner compact team names in the matchup hero only.
+          s=s.replace("function pitcherFor(g,starterTeam)", "function shortTeam(t){var a={'Philadelphia Phillies':'PHILLIES','Washington Nationals':'NATIONALS','New York Mets':'METS','New York Yankees':'YANKEES','Los Angeles Dodgers':'DODGERS','Los Angeles Angels':'ANGELS','San Francisco Giants':'GIANTS','San Diego Padres':'PADRES','Boston Red Sox':'RED SOX','Chicago White Sox':'WHITE SOX','Toronto Blue Jays':'BLUE JAYS','Tampa Bay Rays':'RAYS','Kansas City Royals':'ROYALS','Cleveland Guardians':'GUARDIANS','Arizona Diamondbacks':'DIAMONDBACKS','Colorado Rockies':'ROCKIES','Seattle Mariners':'MARINERS','Texas Rangers':'RANGERS','Houston Astros':'ASTROS','Detroit Tigers':'TIGERS','Minnesota Twins':'TWINS','Milwaukee Brewers':'BREWERS','Chicago Cubs':'CUBS','Cincinnati Reds':'REDS','St. Louis Cardinals':'CARDINALS','Pittsburgh Pirates':'PIRATES','Baltimore Orioles':'ORIOLES','Atlanta Braves':'BRAVES','Miami Marlins':'MARLINS','Athletics':'ATHLETICS'};return a[t]||String(t||'').replace(/^(Arizona|Atlanta|Baltimore|Boston|Chicago|Cincinnati|Cleveland|Colorado|Detroit|Houston|Kansas City|Los Angeles|Miami|Milwaukee|Minnesota|New York|Philadelphia|Pittsburgh|San Diego|San Francisco|Seattle|St. Louis|Tampa Bay|Texas|Toronto|Washington) /,'').toUpperCase()}function pitcherFor(g,starterTeam)",1)
+          s=s.replace("<div class=\"teamName\">'+esc(away)+'</div>","<div class=\"teamName\">'+esc(shortTeam(away))+'</div>")
+          s=s.replace("<div class=\"teamName\">'+esc(home)+'</div>","<div class=\"teamName\">'+esc(shortTeam(home))+'</div>")
+          # Remove decorative glyph beside HR Edge.
+          s=s.replace("<div class=\"bars\">▥</div>","")
+          s=s.replace("grid-template-columns:38px 48px 62px minmax(0,1fr) 52px 26px","grid-template-columns:38px 48px 62px minmax(0,1fr) 58px")
+          s=s.replace("grid-template-columns:30px 35px 46px minmax(0,1fr) 40px 17px","grid-template-columns:30px 35px 46px minmax(0,1fr) 44px")
+          # Stronger tier separation.
+          s=s.replace(".pick{min-height:84px", ".pick{position:relative;min-height:84px")
+          s=s.replace(".rank{height:52px", ".pick:nth-of-type(2){border-left:4px solid #f3bf22}.pick:nth-of-type(3){border-left:4px solid #4fa7ff}.pick:nth-of-type(4){border-left:4px solid #27b878}.rank{height:52px")
+          # Improve pitcher image fallback: try MLB headshot first, then team logo rather than baseball emoji.
+          old="var img=x.id?'<img class=\"pitcherImg\" src=\"'+photo(x.id)+'\" onerror=\"this.style.visibility=\\'hidden\\'\">':'<div class=\"pitcherFallback\">⚾</div>';"
+          new="var fallback=logo(tm);var img=x.id?'<img class=\"pitcherImg\" src=\"'+photo(x.id)+'\" onerror=\"if(this.dataset.f){this.style.visibility=\\'hidden\\'}else{this.dataset.f=1;this.src=\\''+fallback+'\\'}\">':(fallback?'<img class=\"pitcherImg pitcherTeamLogo\" src=\"'+fallback+'\">':'<div class=\"pitcherFallback\">SP</div>');"
+          if old in s:s=s.replace(old,new,1)
+          # Normalize hand text and avoid leading bullet when hand is missing.
+          old2="esc(x.hand?x.hand+'HP':'')+(x.era!=null?' · '+esc(Number(x.era).toFixed(2))+' ERA':'')"
+          new2="esc(x.hand?(String(x.hand).toUpperCase().endsWith('HP')?String(x.hand).toUpperCase():String(x.hand).toUpperCase()+'HP'):'')+(x.era!=null?((x.hand?' · ':'')+esc(Number(x.era).toFixed(2))+' ERA'):'')"
+          if old2 in s:s=s.replace(old2,new2,1)
+          # One useful takeaway per ranked hitter before filling extra signals.
+          start="var reasons=[];p.forEach(function(x){takeaway(x).forEach(function(r){if(r&&reasons.indexOf(r)<0)reasons.push(r)})});"
+          repl="var reasons=[];p.forEach(function(x){var rr=takeaway(x);if(rr.length&&reasons.indexOf(rr[0])<0)reasons.push(rr[0]);else if(x)reasons.push(displayName(x.player)+' ranks #'+(reasons.length+1)+' by HR Edge');});p.forEach(function(x){takeaway(x).slice(1).forEach(function(r){if(r&&reasons.indexOf(r)<0&&reasons.length<4)reasons.push(r)})});"
+          if start in s:s=s.replace(start,repl,1)
+          # Slightly tighter hero and more premium pitcher cards.
+          s=s.replace(".hero{height:285px", ".hero{height:250px")
+          s=s.replace(".pitcher{min-height:92px", ".pitcher{min-height:100px")
+          s=s.replace(".pitcherImg,.pitcherFallback{width:66px;height:76px", ".pitcherImg,.pitcherFallback{width:72px;height:82px")
+          s=s.replace(".hero{height:225px", ".hero{height:205px")
+          s=s.replace(".pitcher{min-height:74px", ".pitcher{min-height:82px")
+          s=s.replace(".pitcherImg,.pitcherFallback{width:46px;height:57px", ".pitcherImg,.pitcherFallback{width:52px;height:64px")
+          # Team-logo fallback should fit instead of crop.
+          s=s.replace(".pitcherImg{object-fit:cover;object-position:top}", ".pitcherImg{object-fit:cover;object-position:top}.pitcherTeamLogo{object-fit:contain;padding:7px}")
+          p.write_text(s)
+          PY
+          grep -q 'function shortTeam' hr-content.html
+          grep -q 'ranks #' hr-content.html
+      - name: Commit polish
+        run: |
+          git config user.name "launchpoint-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add hr-content.html
+          git diff --cached --quiet || git commit -m "Polish HR content card"
+          git pull --rebase origin main
+          git push origin HEAD:main
