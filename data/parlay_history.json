@@ -2,6 +2,180 @@
   "version": 1,
   "slates": [
     {
+      "slate_date": "2026-09-16",
+      "generated_at_utc": "2026-09-16T15:47:33.350589+00:00",
+      "locked_at_utc": "2026-09-16T15:47:47.507Z",
+      "first_game_start_utc": "2026-09-16T17:10:00.000Z",
+      "status": "LOCKED",
+      "cards": [
+        {
+          "title": "Top 2-Leg Parlay",
+          "legs": [
+            {
+              "game": "824306",
+              "start": "2026-09-17T00:40:00Z",
+              "player": "Mason Adams",
+              "player_id": 665487,
+              "team": "San Diego Padres",
+              "opponent": "Colorado Rockies",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 3.5,
+              "pick": "OVER 3.5",
+              "odds": -104,
+              "confidence": 86,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "822680",
+              "start": "2026-09-16T22:45:00Z",
+              "player": "Jared Simpson",
+              "player_id": 656941,
+              "team": "Philadelphia Phillies",
+              "opponent": "Washington Nationals",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 1.5,
+              "pick": "OVER 1.5",
+              "odds": -114,
+              "confidence": 86,
+              "result": "",
+              "actual": ""
+            }
+          ]
+        },
+        {
+          "title": "Same-Game Parlay",
+          "legs": [
+            {
+              "game": "824382",
+              "start": "2026-09-16T17:10:00Z",
+              "player": "Miguel Vargas",
+              "player_id": 678246,
+              "team": "Chicago White Sox",
+              "opponent": "Cleveland Guardians",
+              "market": "TOTAL BASES",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": -185,
+              "confidence": 79,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "824382",
+              "start": "2026-09-16T17:10:00Z",
+              "player": "Parker Messick",
+              "player_id": 545341,
+              "team": "Chicago White Sox",
+              "opponent": "Cleveland Guardians",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 6.5,
+              "pick": "OVER 6.5",
+              "odds": -113,
+              "confidence": 72,
+              "result": "",
+              "actual": ""
+            }
+          ]
+        },
+        {
+          "title": "Player Prop Parlay",
+          "legs": [
+            {
+              "game": "824626",
+              "start": "2026-09-16T23:40:00Z",
+              "player": "JR Ritchie",
+              "player_id": 691718,
+              "team": "Chicago Cubs",
+              "opponent": "Atlanta Braves",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 3.5,
+              "pick": "OVER 3.5",
+              "odds": -145,
+              "confidence": 84,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "823004",
+              "start": "2026-09-16T17:15:00Z",
+              "player": "Anthony Molina",
+              "player_id": 699024,
+              "team": "St. Louis Cardinals",
+              "opponent": "San Francisco Giants",
+              "market": "STRIKEOUTS",
+              "side": "OVER",
+              "line": 3.5,
+              "pick": "OVER 3.5",
+              "odds": -106,
+              "confidence": 82,
+              "result": "",
+              "actual": ""
+            }
+          ]
+        },
+        {
+          "title": "Long-Shot Parlay",
+          "legs": [
+            {
+              "game": "823004",
+              "start": "2026-09-16T17:15:00Z",
+              "player": "Jordan Walker",
+              "player_id": 691023,
+              "team": "St. Louis Cardinals",
+              "opponent": "San Francisco Giants",
+              "market": "RBI",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": 143,
+              "confidence": 66,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "824382",
+              "start": "2026-09-16T17:10:00Z",
+              "player": "Miguel Vargas",
+              "player_id": 678246,
+              "team": "Chicago White Sox",
+              "opponent": "Cleveland Guardians",
+              "market": "RBI",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": 217,
+              "confidence": 63,
+              "result": "",
+              "actual": ""
+            },
+            {
+              "game": "822763",
+              "start": "2026-09-16T19:07:00Z",
+              "player": "Kazuma Okamoto",
+              "player_id": 672960,
+              "team": "Toronto Blue Jays",
+              "opponent": "Detroit Tigers",
+              "market": "RBI",
+              "side": "OVER",
+              "line": 0.5,
+              "pick": "OVER 0.5",
+              "odds": 166,
+              "confidence": 60,
+              "result": "",
+              "actual": ""
+            }
+          ]
+        }
+      ],
+      "graded_at_utc": ""
+    },
+    {
       "slate_date": "2026-09-15",
       "generated_at_utc": "2026-09-15T20:25:55.348587+00:00",
       "locked_at_utc": "2026-09-15T20:26:05.930Z",
@@ -508,5 +682,5 @@
       "graded_at_utc": "2026-09-13T16:07:54.543Z"
     }
   ],
-  "updated_at_utc": "2026-09-16T06:09:42.852Z"
+  "updated_at_utc": "2026-09-16T15:47:48.992Z"
 }
