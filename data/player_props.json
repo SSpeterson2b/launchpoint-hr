@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-16T15:47:33.350589+00:00",
+  "generated_at_utc": "2026-09-16T16:28:30.707987+00:00",
   "slate_date": "2026-09-16",
   "model_version": "Player Props 1.1",
   "status": "LIVE",
@@ -24,40 +24,40 @@
           "side": "OVER",
           "odds": -165,
           "book": "BetMGM",
-          "projection": 1.54,
-          "edge": 1.04,
-          "confidence": 70,
-          "decision": "SKIP",
-          "batting_order": 0,
+          "projection": 1.78,
+          "edge": 1.28,
+          "confidence": 75,
+          "decision": "PLAY",
+          "batting_order": 3,
           "reasons": [
-            "verified matchup data"
+            "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-16T15:47:22Z",
-          "status_reason": "No qualifying edge"
+          "locked_at_utc": "2026-09-16T16:27:26Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
-          "player": "Aaron Judge",
-          "player_id": 592450,
+          "player": "Ben Rice",
+          "player_id": 700250,
           "team": "New York Yankees",
           "opponent": "Minnesota Twins",
           "line": 0.5,
           "side": "OVER",
-          "odds": -118,
+          "odds": -134,
           "book": "DraftKings",
-          "projection": 0.67,
-          "edge": 0.17,
-          "confidence": 64,
-          "decision": "SKIP",
-          "batting_order": 0,
+          "projection": 0.8,
+          "edge": 0.3,
+          "confidence": 66,
+          "decision": "PLAY",
+          "batting_order": 1,
           "reasons": [
             "3/3 core signals",
-            "20.9% barrel rate",
+            "14.1% barrel rate",
             "pitcher vulnerability"
           ],
-          "locked_at_utc": "2026-09-16T15:47:21Z",
-          "status_reason": "No qualifying edge"
+          "locked_at_utc": "2026-09-16T16:28:05Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "RBI",
@@ -70,18 +70,18 @@
           "side": "OVER",
           "odds": 138,
           "book": "DraftKings",
-          "projection": 0.85,
-          "edge": 0.35,
-          "confidence": 67,
-          "decision": "SKIP",
-          "batting_order": 0,
+          "projection": 0.97,
+          "edge": 0.47,
+          "confidence": 69,
+          "decision": "PLAY",
+          "batting_order": 3,
           "reasons": [
             "3/3 core signals",
             "20.9% barrel rate",
             "pitcher vulnerability"
           ],
-          "locked_at_utc": "2026-09-16T15:47:21Z",
-          "status_reason": "No qualifying edge"
+          "locked_at_utc": "2026-09-16T16:28:05Z",
+          "status_reason": "Qualified edge"
         },
         {
           "category": "STRIKEOUTS",
@@ -92,22 +92,62 @@
           "opponent": "Minnesota Twins",
           "line": 4.5,
           "side": "OVER",
-          "odds": -142,
+          "odds": -140,
           "book": "DraftKings",
-          "projection": 5.0,
-          "edge": 0.5,
-          "confidence": 70,
+          "projection": 4.97,
+          "edge": 0.47,
+          "confidence": 69,
           "decision": "PLAY",
-          "batting_order": 0,
+          "batting_order": 3,
           "reasons": [
             "19.8% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:47:21Z",
+          "locked_at_utc": "2026-09-16T16:28:05Z",
           "status_reason": "Qualified edge"
         }
       ],
-      "long_shots": [],
+      "long_shots": [
+        {
+          "category": "HOME RUN",
+          "market": "batter_home_runs",
+          "player": "Spencer Jones",
+          "player_id": 682987,
+          "team": "New York Yankees",
+          "opponent": "Minnesota Twins",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 370,
+          "book": "BetRivers",
+          "projection": 0.27,
+          "decision": "LONG SHOT",
+          "batting_order": 5,
+          "reasons": [
+            "15.7% barrel rate",
+            "pitcher vulnerability"
+          ],
+          "locked_at_utc": "2026-09-16T16:27:50Z"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Ryan Kreidler",
+          "player_id": 668952,
+          "team": "Minnesota Twins",
+          "opponent": "New York Yankees",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 323,
+          "book": "DraftKings",
+          "projection": 0.54,
+          "decision": "LONG SHOT",
+          "batting_order": 8,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-16T16:28:05Z"
+        }
+      ],
       "status": "LIVE",
       "status_reason": "Verified prop card"
     },
@@ -139,7 +179,7 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-16T15:46:52Z",
+          "locked_at_utc": "2026-09-16T16:27:47Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -153,8 +193,8 @@
           "side": "OVER",
           "odds": -200,
           "book": "DraftKings",
-          "projection": 0.71,
-          "edge": 0.21,
+          "projection": 0.72,
+          "edge": 0.22,
           "confidence": 64,
           "decision": "SKIP",
           "batting_order": 0,
@@ -163,7 +203,7 @@
             "12.7% barrel rate",
             "pitcher vulnerability"
           ],
-          "locked_at_utc": "2026-09-16T15:46:54Z",
+          "locked_at_utc": "2026-09-16T16:27:54Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -185,7 +225,7 @@
           "reasons": [
             "15.0% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:46:52Z",
+          "locked_at_utc": "2026-09-16T16:27:47Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -208,7 +248,7 @@
             "28.6% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:46:54Z",
+          "locked_at_utc": "2026-09-16T16:27:54Z",
           "status_reason": "Qualified edge"
         }
       ],
@@ -236,15 +276,15 @@
           "side": "OVER",
           "odds": -200,
           "book": "BetMGM",
-          "projection": 1.36,
-          "edge": 0.86,
+          "projection": 1.37,
+          "edge": 0.87,
           "confidence": 67,
           "decision": "PLAY",
           "batting_order": 7,
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-16T15:46:54Z",
+          "locked_at_utc": "2026-09-16T16:28:04Z",
           "status_reason": "Qualified edge"
         },
         {
@@ -258,8 +298,8 @@
           "side": "OVER",
           "odds": 118,
           "book": "DraftKings",
-          "projection": 0.76,
-          "edge": 0.26,
+          "projection": 0.77,
+          "edge": 0.27,
           "confidence": 62,
           "decision": "PLAY",
           "batting_order": 2,
@@ -267,7 +307,7 @@
             "pitcher vulnerability",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-16T15:47:19Z",
+          "locked_at_utc": "2026-09-16T16:28:22Z",
           "status_reason": "Qualified edge"
         },
         {
@@ -279,7 +319,7 @@
           "opponent": "San Francisco Giants",
           "line": 0.5,
           "side": "OVER",
-          "odds": 143,
+          "odds": 138,
           "book": "DraftKings",
           "projection": 0.8,
           "edge": 0.3,
@@ -291,7 +331,7 @@
             "12.9% barrel rate",
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-16T15:47:19Z",
+          "locked_at_utc": "2026-09-16T16:28:22Z",
           "status_reason": "Qualified edge"
         },
         {
@@ -314,7 +354,7 @@
             "20.2% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:47:19Z",
+          "locked_at_utc": "2026-09-16T16:28:22Z",
           "status_reason": "Qualified edge"
         }
       ],
@@ -328,7 +368,7 @@
           "opponent": "San Francisco Giants",
           "line": 0.5,
           "side": "OVER",
-          "odds": 337,
+          "odds": 400,
           "book": "DraftKings",
           "projection": 0.54,
           "decision": "LONG SHOT",
@@ -336,7 +376,7 @@
           "reasons": [
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-16T15:47:19Z"
+          "locked_at_utc": "2026-09-16T16:28:22Z"
         },
         {
           "category": "RBI",
@@ -356,7 +396,7 @@
             "pitcher vulnerability",
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-16T15:47:19Z"
+          "locked_at_utc": "2026-09-16T16:28:22Z"
         }
       ],
       "status": "LIVE",
@@ -390,7 +430,7 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-16T15:46:51Z",
+          "locked_at_utc": "2026-09-16T16:26:22Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -413,7 +453,7 @@
             "3/3 core signals",
             "13.6% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:47:20Z",
+          "locked_at_utc": "2026-09-16T16:28:21Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -436,7 +476,7 @@
             "3/3 core signals",
             "16.2% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:47:20Z",
+          "locked_at_utc": "2026-09-16T16:28:21Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -459,7 +499,7 @@
             "16.6% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:47:20Z",
+          "locked_at_utc": "2026-09-16T16:28:21Z",
           "status_reason": "Qualified edge"
         }
       ],
@@ -496,7 +536,7 @@
             "3/3 core signals",
             "13.8% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:47:07Z",
+          "locked_at_utc": "2026-09-16T16:27:48Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -519,7 +559,7 @@
             "3/3 core signals",
             "16.2% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:47:25Z",
+          "locked_at_utc": "2026-09-16T16:28:23Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -531,7 +571,7 @@
           "opponent": "Milwaukee Brewers",
           "line": 0.5,
           "side": "OVER",
-          "odds": 178,
+          "odds": 185,
           "book": "DraftKings",
           "projection": 0.73,
           "edge": 0.23,
@@ -542,7 +582,7 @@
             "3/3 core signals",
             "16.2% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:47:25Z",
+          "locked_at_utc": "2026-09-16T16:28:23Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -565,7 +605,7 @@
             "28.0% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:47:25Z",
+          "locked_at_utc": "2026-09-16T16:28:23Z",
           "status_reason": "No qualifying edge"
         }
       ],
@@ -602,7 +642,7 @@
             "3/3 core signals",
             "20.1% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:46:50Z",
+          "locked_at_utc": "2026-09-16T16:27:50Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -625,7 +665,7 @@
             "3/3 core signals",
             "20.1% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:46:52Z",
+          "locked_at_utc": "2026-09-16T16:28:05Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -648,7 +688,7 @@
             "3/3 core signals",
             "16.5% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:46:52Z",
+          "locked_at_utc": "2026-09-16T16:28:05Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -671,7 +711,7 @@
             "28.6% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:46:52Z",
+          "locked_at_utc": "2026-09-16T16:28:05Z",
           "status_reason": "Qualified edge"
         }
       ],
@@ -697,7 +737,7 @@
           "opponent": "Miami Marlins",
           "line": 0.5,
           "side": "OVER",
-          "odds": -140,
+          "odds": -150,
           "book": "BetMGM",
           "projection": 1.46,
           "edge": 0.96,
@@ -707,7 +747,7 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-16T15:47:22Z",
+          "locked_at_utc": "2026-09-16T16:27:48Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -730,7 +770,7 @@
             "15.3% barrel rate",
             "pitcher vulnerability"
           ],
-          "locked_at_utc": "2026-09-16T15:47:16Z",
+          "locked_at_utc": "2026-09-16T16:28:22Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -753,7 +793,7 @@
             "15.3% barrel rate",
             "pitcher vulnerability"
           ],
-          "locked_at_utc": "2026-09-16T15:47:16Z",
+          "locked_at_utc": "2026-09-16T16:28:22Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -776,13 +816,155 @@
             "18.7% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:47:16Z",
+          "locked_at_utc": "2026-09-16T16:28:22Z",
           "status_reason": "No qualifying edge"
         }
       ],
       "long_shots": [],
       "status": "DECISIONS",
       "status_reason": "Model decisions available - no qualifying PLAY"
+    },
+    {
+      "game_pk": "822763",
+      "teams": [
+        "Detroit Tigers",
+        "Toronto Blue Jays"
+      ],
+      "venue": "Rogers Centre",
+      "game_datetime_utc": "2026-09-16T19:07:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Max Clark",
+          "player_id": 703601,
+          "team": "Detroit Tigers",
+          "opponent": "Toronto Blue Jays",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -175,
+          "book": "BetMGM",
+          "projection": 1.56,
+          "edge": 1.06,
+          "confidence": 70,
+          "decision": "PLAY",
+          "batting_order": 6,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-16T16:27:26Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Kevin McGonigle",
+          "player_id": 805808,
+          "team": "Detroit Tigers",
+          "opponent": "Toronto Blue Jays",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": -102,
+          "book": "DraftKings",
+          "projection": 0.71,
+          "edge": 0.21,
+          "confidence": 55,
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-09-16T16:28:21Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Kazuma Okamoto",
+          "player_id": 672960,
+          "team": "Toronto Blue Jays",
+          "opponent": "Detroit Tigers",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 160,
+          "book": "DraftKings",
+          "projection": 0.82,
+          "edge": 0.32,
+          "confidence": 60,
+          "decision": "PLAY",
+          "batting_order": 5,
+          "reasons": [
+            "13.8% barrel rate"
+          ],
+          "locked_at_utc": "2026-09-16T16:28:21Z",
+          "status_reason": "Qualified edge"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Keider Montero",
+          "player_id": 672960,
+          "team": "Toronto Blue Jays",
+          "opponent": "Detroit Tigers",
+          "line": 2.5,
+          "side": "OVER",
+          "odds": -143,
+          "book": "DraftKings",
+          "projection": 3.07,
+          "edge": 0.57,
+          "confidence": 65,
+          "decision": "PLAY",
+          "batting_order": 5,
+          "reasons": [
+            "16.5% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-16T16:28:21Z",
+          "status_reason": "Qualified edge"
+        }
+      ],
+      "long_shots": [
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Brandon Valenzuela",
+          "player_id": 678218,
+          "team": "Toronto Blue Jays",
+          "opponent": "Detroit Tigers",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 274,
+          "book": "DraftKings",
+          "projection": 0.54,
+          "decision": "LONG SHOT",
+          "batting_order": 8,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-16T16:28:21Z"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Max Clark",
+          "player_id": 703601,
+          "team": "Detroit Tigers",
+          "opponent": "Toronto Blue Jays",
+          "line": 0.5,
+          "side": "OVER",
+          "odds": 268,
+          "book": "DraftKings",
+          "projection": 0.59,
+          "decision": "LONG SHOT",
+          "batting_order": 6,
+          "reasons": [
+            "verified matchup data"
+          ],
+          "locked_at_utc": "2026-09-16T16:28:21Z"
+        }
+      ],
+      "status": "LIVE",
+      "status_reason": "Verified prop card"
     },
     {
       "game_pk": "823576",
@@ -812,7 +994,7 @@
           "reasons": [
             "14.9% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:46:51Z",
+          "locked_at_utc": "2026-09-16T16:27:47Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -835,7 +1017,7 @@
             "3/3 core signals",
             "14.0% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:47:22Z",
+          "locked_at_utc": "2026-09-16T16:28:24Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -858,7 +1040,7 @@
             "3/3 core signals",
             "14.0% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:47:22Z",
+          "locked_at_utc": "2026-09-16T16:28:24Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -881,7 +1063,7 @@
             "19.7% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:47:22Z",
+          "locked_at_utc": "2026-09-16T16:28:24Z",
           "status_reason": "Qualified edge"
         }
       ],
@@ -907,7 +1089,7 @@
           "opponent": "Los Angeles Angels",
           "line": 0.5,
           "side": "OVER",
-          "odds": -175,
+          "odds": -165,
           "book": "BetMGM",
           "projection": 2.03,
           "edge": 1.53,
@@ -917,7 +1099,7 @@
           "reasons": [
             "pitcher vulnerability"
           ],
-          "locked_at_utc": "2026-09-16T15:46:53Z",
+          "locked_at_utc": "2026-09-16T16:27:30Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -941,7 +1123,7 @@
             "12.2% barrel rate",
             "pitcher vulnerability"
           ],
-          "locked_at_utc": "2026-09-16T15:47:21Z",
+          "locked_at_utc": "2026-09-16T16:28:23Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -963,7 +1145,7 @@
           "reasons": [
             "pitcher vulnerability"
           ],
-          "locked_at_utc": "2026-09-16T15:46:53Z",
+          "locked_at_utc": "2026-09-16T16:27:30Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -975,7 +1157,7 @@
           "opponent": "Seattle Mariners",
           "line": 5.5,
           "side": "OVER",
-          "odds": -106,
+          "odds": -107,
           "book": "DraftKings",
           "projection": 5.44,
           "edge": -0.06,
@@ -986,7 +1168,7 @@
             "19.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:47:21Z",
+          "locked_at_utc": "2026-09-16T16:28:23Z",
           "status_reason": "No qualifying edge"
         }
       ],
@@ -1022,30 +1204,30 @@
           "reasons": [
             "14.8% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:47:09Z",
+          "locked_at_utc": "2026-09-16T16:27:47Z",
           "status_reason": "No qualifying edge"
         },
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
-          "player": "Drake Baldwin",
-          "player_id": 686948,
-          "team": "Atlanta Braves",
-          "opponent": "Chicago Cubs",
+          "player": "Pete Crow-Armstrong",
+          "player_id": 691718,
+          "team": "Chicago Cubs",
+          "opponent": "Atlanta Braves",
           "line": 0.5,
           "side": "OVER",
-          "odds": 151,
+          "odds": -110,
           "book": "DraftKings",
-          "projection": 0.62,
-          "edge": 0.12,
+          "projection": 0.61,
+          "edge": 0.11,
           "confidence": 63,
           "decision": "SKIP",
           "batting_order": 0,
           "reasons": [
             "3/3 core signals",
-            "12.6% barrel rate"
+            "13.2% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:46:53Z",
+          "locked_at_utc": "2026-09-16T16:28:26Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1068,7 +1250,7 @@
             "3/3 core signals",
             "13.2% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:46:53Z",
+          "locked_at_utc": "2026-09-16T16:28:26Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1091,7 +1273,7 @@
             "20.7% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:46:53Z",
+          "locked_at_utc": "2026-09-16T16:28:26Z",
           "status_reason": "Qualified edge"
         }
       ],
@@ -1127,7 +1309,7 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-16T15:47:06Z",
+          "locked_at_utc": "2026-09-16T16:27:48Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1149,7 +1331,7 @@
           "reasons": [
             "3/3 core signals"
           ],
-          "locked_at_utc": "2026-09-16T15:47:19Z",
+          "locked_at_utc": "2026-09-16T16:28:22Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1171,7 +1353,7 @@
           "reasons": [
             "13.3% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:47:19Z",
+          "locked_at_utc": "2026-09-16T16:28:22Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1183,7 +1365,7 @@
           "opponent": "Texas Rangers",
           "line": 4.5,
           "side": "OVER",
-          "odds": -161,
+          "odds": -163,
           "book": "DraftKings",
           "projection": 5.48,
           "edge": 0.98,
@@ -1194,134 +1376,11 @@
             "24.4% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:47:19Z",
+          "locked_at_utc": "2026-09-16T16:28:22Z",
           "status_reason": "Qualified edge"
         }
       ],
       "long_shots": [],
-      "status": "LIVE",
-      "status_reason": "Verified prop card"
-    },
-    {
-      "game_pk": "822763",
-      "teams": [
-        "Detroit Tigers",
-        "Toronto Blue Jays"
-      ],
-      "venue": "Rogers Centre",
-      "game_datetime_utc": "2026-09-16T19:07:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Josh Smith",
-          "player_id": 669701,
-          "team": "Toronto Blue Jays",
-          "opponent": "Detroit Tigers",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": -155,
-          "book": "BetMGM",
-          "projection": 1.18,
-          "edge": 0.68,
-          "confidence": 64,
-          "decision": "PLAY",
-          "batting_order": 6,
-          "reasons": [
-            "verified matchup data"
-          ],
-          "locked_at_utc": "2026-09-16T15:46:13Z",
-          "status_reason": "Qualified edge"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Vladimir Guerrero Jr.",
-          "player_id": 665489,
-          "team": "Toronto Blue Jays",
-          "opponent": "Detroit Tigers",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 113,
-          "book": "DraftKings",
-          "projection": 0.66,
-          "edge": 0.16,
-          "confidence": 54,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-09-16T15:47:24Z",
-          "status_reason": "Qualified edge"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Kazuma Okamoto",
-          "player_id": 672960,
-          "team": "Toronto Blue Jays",
-          "opponent": "Detroit Tigers",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 166,
-          "book": "DraftKings",
-          "projection": 0.82,
-          "edge": 0.32,
-          "confidence": 60,
-          "decision": "PLAY",
-          "batting_order": 5,
-          "reasons": [
-            "13.8% barrel rate"
-          ],
-          "locked_at_utc": "2026-09-16T15:47:24Z",
-          "status_reason": "Qualified edge"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Keider Montero",
-          "player_id": 672960,
-          "team": "Toronto Blue Jays",
-          "opponent": "Detroit Tigers",
-          "line": 2.5,
-          "side": "OVER",
-          "odds": -143,
-          "book": "DraftKings",
-          "projection": 3.07,
-          "edge": 0.57,
-          "confidence": 65,
-          "decision": "PLAY",
-          "batting_order": 5,
-          "reasons": [
-            "16.5% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-16T15:47:24Z",
-          "status_reason": "Qualified edge"
-        }
-      ],
-      "long_shots": [
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Brandon Valenzuela",
-          "player_id": 678218,
-          "team": "Toronto Blue Jays",
-          "opponent": "Detroit Tigers",
-          "line": 0.5,
-          "side": "OVER",
-          "odds": 266,
-          "book": "DraftKings",
-          "projection": 0.54,
-          "decision": "LONG SHOT",
-          "batting_order": 8,
-          "reasons": [
-            "verified matchup data"
-          ],
-          "locked_at_utc": "2026-09-16T15:47:24Z"
-        }
-      ],
       "status": "LIVE",
       "status_reason": "Verified prop card"
     },
@@ -1354,7 +1413,7 @@
             "13.4% barrel rate",
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-16T15:46:51Z",
+          "locked_at_utc": "2026-09-16T16:27:51Z",
           "status_reason": "Qualified edge"
         },
         {
@@ -1366,7 +1425,7 @@
           "opponent": "Cleveland Guardians",
           "line": 0.5,
           "side": "OVER",
-          "odds": 177,
+          "odds": 182,
           "book": "DraftKings",
           "projection": 0.68,
           "edge": 0.18,
@@ -1376,7 +1435,7 @@
           "reasons": [
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-16T15:46:54Z",
+          "locked_at_utc": "2026-09-16T16:28:21Z",
           "status_reason": "Qualified edge"
         },
         {
@@ -1388,7 +1447,7 @@
           "opponent": "Cleveland Guardians",
           "line": 0.5,
           "side": "OVER",
-          "odds": 217,
+          "odds": 226,
           "book": "DraftKings",
           "projection": 0.79,
           "edge": 0.29,
@@ -1399,7 +1458,7 @@
             "13.4% barrel rate",
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-16T15:46:54Z",
+          "locked_at_utc": "2026-09-16T16:28:21Z",
           "status_reason": "Qualified edge"
         },
         {
@@ -1411,7 +1470,7 @@
           "opponent": "Cleveland Guardians",
           "line": 6.5,
           "side": "OVER",
-          "odds": -113,
+          "odds": -101,
           "book": "DraftKings",
           "projection": 7.31,
           "edge": 0.81,
@@ -1422,7 +1481,7 @@
             "26.0% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:46:54Z",
+          "locked_at_utc": "2026-09-16T16:28:21Z",
           "status_reason": "Qualified edge"
         }
       ],
@@ -1444,7 +1503,7 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-16T15:46:54Z"
+          "locked_at_utc": "2026-09-16T16:28:21Z"
         },
         {
           "category": "RBI",
@@ -1455,7 +1514,7 @@
           "opponent": "Chicago White Sox",
           "line": 0.5,
           "side": "OVER",
-          "odds": 252,
+          "odds": 263,
           "book": "DraftKings",
           "projection": 0.65,
           "decision": "LONG SHOT",
@@ -1463,7 +1522,7 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-16T15:46:54Z"
+          "locked_at_utc": "2026-09-16T16:28:21Z"
         }
       ],
       "status": "LIVE",
@@ -1498,7 +1557,7 @@
             "3/3 core signals",
             "16.3% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:46:53Z",
+          "locked_at_utc": "2026-09-16T16:26:44Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1521,7 +1580,7 @@
             "3/3 core signals",
             "16.3% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:47:19Z",
+          "locked_at_utc": "2026-09-16T16:28:21Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1543,7 +1602,7 @@
           "reasons": [
             "16.7% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:46:53Z",
+          "locked_at_utc": "2026-09-16T16:26:44Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1566,7 +1625,7 @@
             "33.1% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:47:19Z",
+          "locked_at_utc": "2026-09-16T16:28:21Z",
           "status_reason": "Qualified edge"
         }
       ],
@@ -1602,7 +1661,7 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-16T15:46:53Z",
+          "locked_at_utc": "2026-09-16T16:27:27Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1624,7 +1683,7 @@
           "reasons": [
             "13.1% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:46:02Z",
+          "locked_at_utc": "2026-09-16T16:28:22Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1646,7 +1705,7 @@
           "reasons": [
             "13.1% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T15:46:02Z",
+          "locked_at_utc": "2026-09-16T16:28:22Z",
           "status_reason": "No qualifying edge"
         },
         {
@@ -1669,7 +1728,7 @@
             "17.3% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-16T15:46:02Z",
+          "locked_at_utc": "2026-09-16T16:28:22Z",
           "status_reason": "Qualified edge"
         }
       ],
