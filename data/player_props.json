@@ -35,7 +35,10 @@
             "confirmed batting 2"
           ],
           "locked_at_utc": "2026-09-16T06:37:44Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 2,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-16T09:57:34.221097+00:00"
         },
         {
           "category": "RUNS",
@@ -111,7 +114,8 @@
       ],
       "long_shots": [],
       "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status_reason": "Verified prop card",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824307",
@@ -217,7 +221,8 @@
       ],
       "long_shots": [],
       "status": "DECISIONS",
-      "status_reason": "Model decisions available - no qualifying PLAY"
+      "status_reason": "Model decisions available - no qualifying PLAY",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824143",
@@ -326,7 +331,8 @@
       ],
       "long_shots": [],
       "status": "DECISIONS",
-      "status_reason": "Model decisions available - no qualifying PLAY"
+      "status_reason": "Model decisions available - no qualifying PLAY",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823007",
@@ -403,7 +409,10 @@
             "confirmed batting 4"
           ],
           "locked_at_utc": "2026-09-16T06:37:44Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-16T09:57:34.748913+00:00"
         },
         {
           "category": "STRIKEOUTS",
@@ -447,11 +456,15 @@
           "reasons": [
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-16T06:37:44Z"
+          "locked_at_utc": "2026-09-16T06:37:44Z",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-16T09:57:34.748938+00:00"
         }
       ],
       "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status_reason": "Verified prop card",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824466",
@@ -482,7 +495,10 @@
             "confirmed batting 2"
           ],
           "locked_at_utc": "2026-09-16T06:37:04Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 3,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-16T09:57:34.883938+00:00"
         },
         {
           "category": "RUNS",
@@ -558,7 +574,8 @@
       ],
       "long_shots": [],
       "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status_reason": "Verified prop card",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823654",
@@ -589,7 +606,10 @@
             "verified matchup data"
           ],
           "locked_at_utc": "2026-09-16T06:37:31Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 1,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-16T09:57:35.036364+00:00"
         },
         {
           "category": "RUNS",
@@ -613,7 +633,10 @@
             "confirmed batting 1"
           ],
           "locked_at_utc": "2026-09-16T06:37:20Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 2,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-16T09:57:35.036386+00:00"
         },
         {
           "category": "RBI",
@@ -635,7 +658,10 @@
             "15.6% barrel rate"
           ],
           "locked_at_utc": "2026-09-16T06:37:20Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 3,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-16T09:57:35.036390+00:00"
         },
         {
           "category": "STRIKEOUTS",
@@ -679,7 +705,10 @@
           "reasons": [
             "15.6% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T06:37:22Z"
+          "locked_at_utc": "2026-09-16T06:37:22Z",
+          "actual": 1,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-16T09:57:35.036394+00:00"
         },
         {
           "category": "RBI",
@@ -698,11 +727,15 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-16T06:37:20Z"
+          "locked_at_utc": "2026-09-16T06:37:20Z",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-16T09:57:35.036398+00:00"
         }
       ],
       "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status_reason": "Verified prop card",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824384",
@@ -809,7 +842,8 @@
       ],
       "long_shots": [],
       "status": "DECISIONS",
-      "status_reason": "Model decisions available - no qualifying PLAY"
+      "status_reason": "Model decisions available - no qualifying PLAY",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823980",
@@ -915,7 +949,8 @@
       ],
       "long_shots": [],
       "status": "DECISIONS",
-      "status_reason": "Model decisions available - no qualifying PLAY"
+      "status_reason": "Model decisions available - no qualifying PLAY",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823333",
@@ -947,7 +982,10 @@
             "confirmed batting 2"
           ],
           "locked_at_utc": "2026-09-16T06:37:31Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-16T09:57:35.507574+00:00"
         },
         {
           "category": "RUNS",
@@ -1021,7 +1059,8 @@
       ],
       "long_shots": [],
       "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status_reason": "Verified prop card",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "822762",
@@ -1052,7 +1091,10 @@
             "verified matchup data"
           ],
           "locked_at_utc": "2026-09-16T06:36:58Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 3,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-16T09:57:35.657369+00:00"
         },
         {
           "category": "RUNS",
@@ -1074,7 +1116,10 @@
             "confirmed batting 1"
           ],
           "locked_at_utc": "2026-09-16T06:37:45Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 1,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-16T09:57:35.657390+00:00"
         },
         {
           "category": "RBI",
@@ -1098,7 +1143,10 @@
             "confirmed batting 4"
           ],
           "locked_at_utc": "2026-09-16T06:37:45Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 1,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-16T09:57:35.657395+00:00"
         },
         {
           "category": "STRIKEOUTS",
@@ -1142,7 +1190,10 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-16T06:37:45Z"
+          "locked_at_utc": "2026-09-16T06:37:45Z",
+          "actual": 2,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-16T09:57:35.657399+00:00"
         },
         {
           "category": "RBI",
@@ -1161,11 +1212,15 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-16T06:37:45Z"
+          "locked_at_utc": "2026-09-16T06:37:45Z",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-16T09:57:35.657402+00:00"
         }
       ],
       "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status_reason": "Verified prop card",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "822849",
@@ -1271,7 +1326,8 @@
       ],
       "long_shots": [],
       "status": "DECISIONS",
-      "status_reason": "Model decisions available - no qualifying PLAY"
+      "status_reason": "Model decisions available - no qualifying PLAY",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "822683",
@@ -1302,7 +1358,10 @@
             "confirmed batting 3"
           ],
           "locked_at_utc": "2026-09-16T06:37:21Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 2,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-16T09:57:35.925626+00:00"
         },
         {
           "category": "RUNS",
@@ -1378,7 +1437,8 @@
       ],
       "long_shots": [],
       "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status_reason": "Verified prop card",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824627",
@@ -1410,7 +1470,10 @@
             "confirmed batting 1"
           ],
           "locked_at_utc": "2026-09-16T06:37:22Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-16T09:57:36.090578+00:00"
         },
         {
           "category": "RUNS",
@@ -1457,7 +1520,10 @@
             "confirmed batting 3"
           ],
           "locked_at_utc": "2026-09-16T06:37:30Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-16T09:57:36.090598+00:00"
         },
         {
           "category": "STRIKEOUTS",
@@ -1501,7 +1567,10 @@
           "reasons": [
             "12.0% barrel rate"
           ],
-          "locked_at_utc": "2026-09-16T06:37:30Z"
+          "locked_at_utc": "2026-09-16T06:37:30Z",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-16T09:57:36.090603+00:00"
         },
         {
           "category": "RBI",
@@ -1520,11 +1589,15 @@
           "reasons": [
             "verified matchup data"
           ],
-          "locked_at_utc": "2026-09-16T06:37:30Z"
+          "locked_at_utc": "2026-09-16T06:37:30Z",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-16T09:57:36.090606+00:00"
         }
       ],
       "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status_reason": "Verified prop card",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "822925",
@@ -1555,7 +1628,10 @@
             "verified matchup data"
           ],
           "locked_at_utc": "2026-09-16T06:37:48Z",
-          "status_reason": "Qualified edge"
+          "status_reason": "Qualified edge",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-16T09:57:36.249396+00:00"
         },
         {
           "category": "RUNS",
@@ -1631,7 +1707,8 @@
       ],
       "long_shots": [],
       "status": "LIVE",
-      "status_reason": "Verified prop card"
+      "status_reason": "Verified prop card",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "825030",
@@ -1735,7 +1812,8 @@
       ],
       "long_shots": [],
       "status": "DECISIONS",
-      "status_reason": "Model decisions available - no qualifying PLAY"
+      "status_reason": "Model decisions available - no qualifying PLAY",
+      "grading_status": "FINAL"
     }
   ],
   "rules": {
@@ -1743,5 +1821,6 @@
     "long_shots": "Maximum one per team",
     "missing_data": "MODEL ONLY until verified line is available",
     "disclaimer": "Model-only projections are not betting recommendations; no outcome is guaranteed."
-  }
+  },
+  "graded_at_utc": "2026-09-16T09:57:36.403404+00:00"
 }
