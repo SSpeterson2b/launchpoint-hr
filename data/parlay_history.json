@@ -6,7 +6,7 @@
       "generated_at_utc": "2026-09-16T16:28:30.707987+00:00",
       "locked_at_utc": "2026-09-16T16:28:41.894Z",
       "first_game_start_utc": "2026-09-16T17:10:00.000Z",
-      "status": "LOCKED",
+      "status": "GRADING",
       "cards": [
         {
           "title": "Top 2-Leg Parlay",
@@ -61,8 +61,8 @@
               "pick": "OVER 0.5",
               "odds": -185,
               "confidence": 79,
-              "result": "",
-              "actual": ""
+              "result": "HIT",
+              "actual": "1"
             },
             {
               "game": "824382",
@@ -77,8 +77,8 @@
               "pick": "OVER 6.5",
               "odds": -101,
               "confidence": 72,
-              "result": "",
-              "actual": ""
+              "result": "HIT",
+              "actual": "8"
             }
           ]
         },
@@ -167,13 +167,13 @@
               "pick": "OVER 0.5",
               "odds": 226,
               "confidence": 63,
-              "result": "",
-              "actual": ""
+              "result": "MISS",
+              "actual": "0"
             }
           ]
         }
       ],
-      "graded_at_utc": ""
+      "graded_at_utc": "2026-09-16T20:19:27.153Z"
     },
     {
       "slate_date": "2026-09-15",
@@ -682,5 +682,5 @@
       "graded_at_utc": "2026-09-13T16:07:54.543Z"
     }
   ],
-  "updated_at_utc": "2026-09-16T16:28:42.227Z"
+  "updated_at_utc": "2026-09-16T20:19:27.735Z"
 }
