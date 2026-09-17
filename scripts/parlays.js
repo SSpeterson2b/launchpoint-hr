@@ -127,9 +127,17 @@
     });
   }
 
-  function renderCard(slot, legs, archived) {
+  function sportsbookUnavailable() {
+    var health = liveData.sportsbook || {};
+    return liveData.status === "ODDS UNAVAILABLE" || health.status === "UNAVAILABLE";
+  }
+
+  function renderCard(slot, legs, archived, oddsUnavailable) {
     var playable = legs.length === slot.need;
     if (!playable) {
+      if (oddsUnavailable) {
+        return '<article class="card ' + (slot.long ? "long " : "") + 'skip"><div class="top"><div><div class="kicker">' + slot.kicker + '</div><h2>' + slot.title + '</h2></div><span class="decision skip">WAIT</span></div><div class="empty"><b>SPORTSBOOK DATA UNAVAILABLE</b><p>Model projections are available, but verified prices were not returned. No parlay will be forced.</p></div></article>';
+      }
       return '<article class="card ' + (slot.long ? "long " : "") + 'skip"><div class="top"><div><div class="kicker">' + slot.kicker + '</div><h2>' + slot.title + '</h2></div><span class="decision skip">SKIP</span></div><div class="empty"><b>NO FORCED PARLAY</b><p>No qualifying combination was locked for this parlay type.</p></div></article>';
     }
 
@@ -171,9 +179,10 @@
   function render() {
     var slate = selectedSlate();
     var archived = Boolean(slate);
+    var oddsUnavailable = !archived && activeDate === liveData.slate_date && sportsbookUnavailable();
     var cards = orderedCards(slate ? slate.cards : liveCards(liveData));
     document.querySelector("#grid").innerHTML = cards.map(function (card, index) {
-      return renderCard(slots[index], card.legs || [], archived);
+      return renderCard(slots[index], card.legs || [], archived, oddsUnavailable);
     }).join("");
 
     var playable = cards.filter(function (card, index) { return (card.legs || []).length === slots[index].need; });
@@ -183,6 +192,7 @@
     else if (grades.some(Boolean)) status.textContent = "GRADING";
     else if (archived && playable.length) status.textContent = "PARLAYS LOCKED";
     else if (playable.length) status.textContent = "MODEL LIVE";
+    else if (oddsUnavailable) status.textContent = "ODDS UNAVAILABLE";
     else status.textContent = "MODEL SKIP";
     status.classList.toggle("skip", !playable.length);
     renderTabs();
