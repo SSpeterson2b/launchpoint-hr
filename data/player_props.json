@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-17T14:48:32.089520+00:00",
+  "generated_at_utc": "2026-09-17T18:14:31.724471+00:00",
   "slate_date": "2026-09-17",
   "model_version": "Player Props 1.1",
   "status": "LIVE",
@@ -151,6 +151,114 @@
       "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
+      "game_pk": "824305",
+      "teams": [
+        "Colorado Rockies",
+        "San Diego Padres"
+      ],
+      "venue": "Coors Field",
+      "game_datetime_utc": "2026-09-17T19:10:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Tatis Jr., Fernando",
+          "player_id": 665487,
+          "team": "San Diego Padres",
+          "opponent": "Colorado Rockies",
+          "line": "",
+          "side": "PROJ 1.91",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 1.91,
+          "edge": null,
+          "confidence": 70,
+          "decision": "MODEL ONLY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "12.6% barrel rate",
+            "pitcher vulnerability"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Tatis Jr., Fernando",
+          "player_id": 665487,
+          "team": "San Diego Padres",
+          "opponent": "Colorado Rockies",
+          "line": "",
+          "side": "PROJ 0.86",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.86,
+          "edge": null,
+          "confidence": 70,
+          "decision": "MODEL ONLY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "12.6% barrel rate",
+            "pitcher vulnerability"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Merrill, Jackson",
+          "player_id": 701538,
+          "team": "San Diego Padres",
+          "opponent": "Colorado Rockies",
+          "line": "",
+          "side": "PROJ 0.81",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.81,
+          "edge": null,
+          "confidence": 65,
+          "decision": "MODEL ONLY",
+          "batting_order": 5,
+          "reasons": [
+            "12.6% barrel rate",
+            "pitcher vulnerability"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Michael King",
+          "player_id": "",
+          "team": "San Diego Padres",
+          "opponent": "Colorado Rockies",
+          "line": "",
+          "side": "PROJ 4.7",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 4.67,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "20.8% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
       "game_pk": "823334",
       "teams": [
         "Milwaukee Brewers",
@@ -190,10 +298,10 @@
           "team": "Pittsburgh Pirates",
           "opponent": "Milwaukee Brewers",
           "line": "",
-          "side": "PROJ 0.76",
+          "side": "PROJ 0.75",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 0.76,
+          "projection": 0.75,
           "edge": null,
           "confidence": 61,
           "decision": "MODEL ONLY",
@@ -245,43 +353,6 @@
           "batting_order": "",
           "reasons": [
             "28.2% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
-    {
-      "game_pk": "824305",
-      "teams": [
-        "Colorado Rockies",
-        "San Diego Padres"
-      ],
-      "venue": "Coors Field",
-      "game_datetime_utc": "2026-09-17T19:10:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Michael King",
-          "player_id": "",
-          "team": "San Diego Padres",
-          "opponent": "Colorado Rockies",
-          "line": "",
-          "side": "PROJ 5.1",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 5.1,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "20.8% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
