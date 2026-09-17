@@ -3861,13 +3861,12 @@ function gamePlayerLabel(player,index,strength,gamePlayers){
   return playerPublicProfile(player).label;
 }
 function gameCardProfile(supportingIndex,isPrimary,player){
-  if(isPrimary)return null;
-  if(supportingIndex===0)return {label:"TOP CONTENDER",kind:"contender"};
-  if(supportingIndex===1)return {label:"SECONDARY",kind:"sleeper"};
-  const profile=playerPublicProfile(player);
-  if(profile.label==="STRONG")return {label:"STRONG",kind:"strong"};
-  if(profile.label==="VALUE")return {label:"VALUE",kind:"value"};
-  return {label:"SECONDARY",kind:"sleeper"};
+  const role=String(player?.launchpoint_34_role||"").toUpperCase();
+  const state=String(player?.launchpoint_34_state||"").toUpperCase();
+  if(state==="LOCKED"||role==="HOLD")return null;
+  if(role==="PRIMARY")return {label:"PRIMARY",kind:"contender"};
+  if(role==="SECONDARY")return {label:"SECONDARY",kind:"sleeper"};
+  return null;
 }
 function playerPublicProfile(player,forceSecondary=false){
   if(!isSelectionEligible(player))return {label:"DATA PENDING",kind:"hold"};
@@ -4113,7 +4112,8 @@ function render(){
       const rawId=x.mlb_id||x.player_id||x.batter_id||"";
       const mlbId=String(rawId).replace(/\D/g,"");
       const initial=esc(rawName.charAt(0)||"?");
-      const isPrimary=x===displayedPrimary;
+      const modelRole=String(x?.launchpoint_34_role||"").toUpperCase();
+      const isPrimary=modelRole?modelRole==="PRIMARY":x===displayedPrimary;
       const profile=gameCardProfile(supportingPlayers.indexOf(x),isPrimary,x);
 
       return `
