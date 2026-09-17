@@ -129,7 +129,16 @@
 
   function sportsbookUnavailable() {
     var health = liveData.sportsbook || {};
-    return liveData.status === "ODDS UNAVAILABLE" || health.status === "UNAVAILABLE";
+    if (liveData.status === "ODDS UNAVAILABLE" || health.status === "UNAVAILABLE") return true;
+    if (health.status === "AVAILABLE") return false;
+    var props = [];
+    (liveData.games || []).forEach(function (game) {
+      props = props.concat(game.props || []);
+    });
+    if (!props.length) return false;
+    return !props.some(function (prop) {
+      return numOdds(prop.odds) != null && prop.book !== "MODEL ONLY";
+    });
   }
 
   function renderCard(slot, legs, archived, oddsUnavailable) {
