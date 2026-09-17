@@ -1,0 +1,48 @@
+name: Sync LaunchPoint 3.4 Role Labels
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/sync-34-role-labels.yml'
+
+jobs:
+  sync-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Make 3.4 role the card source of truth
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          old='''function gameCardProfile(supportingIndex,isPrimary,player){\n  if(isPrimary)return null;\n  if(supportingIndex===0)return {label:"TOP CONTENDER",kind:"contender"};\n  if(supportingIndex===1)return {label:"SECONDARY",kind:"sleeper"};\n  const profile=playerPublicProfile(player);\n  if(profile.label==="STRONG")return {label:"STRONG",kind:"strong"};\n  if(profile.label==="VALUE")return {label:"VALUE",kind:"value"};\n  return {label:"SECONDARY",kind:"sleeper"};\n}'''
+          new='''function gameCardProfile(supportingIndex,isPrimary,player){\n  const role=String(player?.launchpoint_34_role||"").toUpperCase();\n  const state=String(player?.launchpoint_34_state||"").toUpperCase();\n  if(state==="LOCKED"||role==="HOLD")return null;\n  if(role==="PRIMARY")return {label:"PRIMARY",kind:"contender"};\n  if(role==="SECONDARY")return {label:"SECONDARY",kind:"sleeper"};\n  return null;\n}'''
+          if old not in s:
+              raise SystemExit('Expected old gameCardProfile block not found; refusing unsafe patch')
+          s=s.replace(old,new,1)
+          # Primary card itself must also be selected by the model role when available.
+          old2='''const isPrimary=x===displayedPrimary;\n      const profile=gameCardProfile(supportingPlayers.indexOf(x),isPrimary,x);'''
+          new2='''const modelRole=String(x?.launchpoint_34_role||"").toUpperCase();\n      const isPrimary=modelRole?modelRole==="PRIMARY":x===displayedPrimary;\n      const profile=gameCardProfile(supportingPlayers.indexOf(x),isPrimary,x);'''
+          if old2 not in s:
+              raise SystemExit('Expected primary selection block not found; refusing unsafe patch')
+          s=s.replace(old2,new2,1)
+          p.write_text(s)
+          PY
+      - name: Commit role sync
+        run: |
+          git config user.name 'launchpoint-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add index.html
+          if git diff --cached --quiet; then
+            echo 'Role labels already synced.'
+          else
+            git commit -m 'Use LaunchPoint 3.4 roles for HR card labels'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
