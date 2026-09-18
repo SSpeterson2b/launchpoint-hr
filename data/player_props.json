@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-09-18T00:20:07.931721+00:00",
+  "generated_at_utc": "2026-09-18T17:45:09.566348+00:00",
   "slate_date": "2026-09-18",
   "model_version": "Player Props 1.1",
   "status": "ODDS UNAVAILABLE",
   "status_reason": "Sportsbook events matched, but no usable player-prop lines were returned",
   "sportsbook": {
     "status": "UNAVAILABLE",
-    "events_returned": 16,
-    "games_matched": 12,
+    "events_returned": 15,
+    "games_matched": 15,
     "verified_lines": 0,
     "play_legs": 0,
     "reason": "Sportsbook events matched, but no usable player-prop lines were returned"
@@ -19,7 +19,7 @@
         "St. Louis Cardinals",
         "Washington Nationals"
       ],
-      "venue": "Unknown",
+      "venue": "Busch Stadium",
       "game_datetime_utc": "2026-09-19T00:15:00Z",
       "props": [
         {
@@ -56,7 +56,7 @@
         "Atlanta Braves",
         "Houston Astros"
       ],
-      "venue": "Unknown",
+      "venue": "Daikin Park",
       "game_datetime_utc": "2026-09-19T00:10:00Z",
       "props": [
         {
@@ -70,7 +70,7 @@
           "side": "PROJ 5.0",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 5.0,
+          "projection": 4.99,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -93,7 +93,7 @@
         "Baltimore Orioles",
         "Milwaukee Brewers"
       ],
-      "venue": "Unknown",
+      "venue": "Oriole Park at Camden Yards",
       "game_datetime_utc": "2026-09-18T23:05:00Z",
       "props": [
         {
@@ -122,80 +122,6 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
-    },
-    {
-      "game_pk": "823572",
-      "teams": [
-        "New York Mets",
-        "Philadelphia Phillies"
-      ],
-      "venue": "Citi Field",
-      "game_datetime_utc": "2026-09-18T23:15:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Zac Thornton",
-          "player_id": "",
-          "team": "New York Mets",
-          "opponent": "Philadelphia Phillies",
-          "line": "",
-          "side": "PROJ 3.8",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 3.83,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "18.8% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
-    {
-      "game_pk": "823331",
-      "teams": [
-        "Kansas City Royals",
-        "Pittsburgh Pirates"
-      ],
-      "venue": "Unknown",
-      "game_datetime_utc": "2026-09-18T22:40:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Paul Skenes",
-          "player_id": "",
-          "team": "Pittsburgh Pirates",
-          "opponent": "Kansas City Royals",
-          "line": "",
-          "side": "PROJ 5.7",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 5.69,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "27.8% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
       "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
@@ -204,7 +130,7 @@
         "Chicago Cubs",
         "Cincinnati Reds"
       ],
-      "venue": "Unknown",
+      "venue": "Great American Ball Park",
       "game_datetime_utc": "2026-09-18T22:40:00Z",
       "props": [
         {
@@ -233,7 +159,44 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "823572",
+      "teams": [
+        "New York Mets",
+        "Philadelphia Phillies"
+      ],
+      "venue": "Citi Field",
+      "game_datetime_utc": "2026-09-18T23:15:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Zac Thornton",
+          "player_id": "",
+          "team": "New York Mets",
+          "opponent": "Philadelphia Phillies",
+          "line": "",
+          "side": "PROJ 3.8",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 3.84,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "18.8% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
       "game_pk": "823898",
@@ -241,7 +204,7 @@
         "Los Angeles Dodgers",
         "San Francisco Giants"
       ],
-      "venue": "Unknown",
+      "venue": "UNIQLO Field at Dodger Stadium",
       "game_datetime_utc": "2026-09-19T02:15:00Z",
       "props": [
         {
@@ -262,6 +225,43 @@
           "batting_order": "",
           "reasons": [
             "32.0% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "823331",
+      "teams": [
+        "Kansas City Royals",
+        "Pittsburgh Pirates"
+      ],
+      "venue": "PNC Park",
+      "game_datetime_utc": "2026-09-18T22:40:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Paul Skenes",
+          "player_id": "",
+          "team": "Pittsburgh Pirates",
+          "opponent": "Kansas City Royals",
+          "line": "",
+          "side": "PROJ 5.7",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 5.69,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "27.8% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
@@ -315,7 +315,7 @@
         "Miami Marlins",
         "San Diego Padres"
       ],
-      "venue": "Unknown",
+      "venue": "Petco Park",
       "game_datetime_utc": "2026-09-19T01:40:00Z",
       "props": [
         {
@@ -366,13 +366,50 @@
           "side": "PROJ 5.3",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 5.29,
+          "projection": 5.3,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
           "batting_order": "",
           "reasons": [
             "23.0% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "824303",
+      "teams": [
+        "Colorado Rockies",
+        "Seattle Mariners"
+      ],
+      "venue": "Coors Field",
+      "game_datetime_utc": "2026-09-19T00:10:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Bryan Woo",
+          "player_id": "",
+          "team": "Seattle Mariners",
+          "opponent": "Colorado Rockies",
+          "line": "",
+          "side": "PROJ 6.1",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 6.12,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "24.8% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
@@ -403,7 +440,7 @@
           "side": "PROJ 6.6",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 6.57,
+          "projection": 6.6,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -421,49 +458,12 @@
       "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
-      "game_pk": "824303",
-      "teams": [
-        "Colorado Rockies",
-        "Seattle Mariners"
-      ],
-      "venue": "Unknown",
-      "game_datetime_utc": "2026-09-19T00:10:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Bryan Woo",
-          "player_id": "",
-          "team": "Seattle Mariners",
-          "opponent": "Colorado Rockies",
-          "line": "",
-          "side": "PROJ 6.1",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 6.08,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "24.8% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
-    },
-    {
       "game_pk": "822923",
       "teams": [
         "Boston Red Sox",
         "Tampa Bay Rays"
       ],
-      "venue": "Unknown",
+      "venue": "Tropicana Field",
       "game_datetime_utc": "2026-09-18T23:10:00Z",
       "props": [
         {
@@ -477,7 +477,7 @@
           "side": "PROJ 6.6",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 6.59,
+          "projection": 6.58,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -500,7 +500,7 @@
         "Athletics",
         "Cleveland Guardians"
       ],
-      "venue": "Unknown",
+      "venue": "Progressive Field",
       "game_datetime_utc": "2026-09-18T23:10:00Z",
       "props": [
         {
@@ -511,10 +511,10 @@
           "team": "Cleveland Guardians",
           "opponent": "Athletics",
           "line": "",
-          "side": "PROJ 9.0",
+          "side": "PROJ 9.1",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 8.96,
+          "projection": 9.07,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -537,7 +537,7 @@
         "Texas Rangers",
         "Toronto Blue Jays"
       ],
-      "venue": "Unknown",
+      "venue": "Globe Life Field",
       "game_datetime_utc": "2026-09-19T00:05:00Z",
       "props": [
         {
