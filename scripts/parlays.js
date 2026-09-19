@@ -127,6 +127,62 @@
     });
   }
 
+
+  function gameEdgeProbability(game) {
+    var direct = Number(game.winner_probability_pct);
+    if (Number.isFinite(direct) && direct > 0) return direct;
+    var away = Number(game.away_win_probability);
+    var home = Number(game.home_win_probability);
+    if (Number.isFinite(away) && Number.isFinite(home)) return Math.max(away, home);
+    return 0;
+  }
+
+  function gameEdgeQuality(game) {
+    var q = String(game.winner_play_quality || "").trim().toUpperCase();
+    if (q) return q;
+    var action = String(game.winner_confidence || "").trim().toUpperCase();
+    var p = gameEdgeProbability(game);
+    if (action === "PLAY" || action === "STRONG" || action === "LEAN") return p >= 70 ? "TOP PLAY" : "PLAY";
+    return "SKIP BET";
+  }
+
+  function qualifiedGameEdgeGames(games) {
+    return (games || []).filter(function (game) {
+      return String(game.selection_status || "").toUpperCase() === "FINAL READY"
+        && game.winner_pick
+        && gameEdgeQuality(game) !== "SKIP BET";
+    }).sort(function (a, b) {
+      var qa = gameEdgeQuality(a) === "TOP PLAY" ? 1 : 0;
+      var qb = gameEdgeQuality(b) === "TOP PLAY" ? 1 : 0;
+      if (qa !== qb) return qb - qa;
+      return gameEdgeProbability(b) - gameEdgeProbability(a);
+    });
+  }
+
+  function renderGameEdgeParlays(games) {
+    var host = document.querySelector("#game-edge-parlays");
+    if (!host) return;
+    var pool = qualifiedGameEdgeGames(games);
+    var coreCount = Math.min(3, pool.length);
+    var core = pool.slice(0, coreCount >= 2 ? coreCount : 0);
+    var longCount = pool.length >= 5 ? 5 : (pool.length >= 4 ? 4 : 0);
+    var longshot = longCount ? pool.slice(0, longCount) : [];
+
+    function card(title, kicker, rows, longshotCard) {
+      if (!rows.length) {
+        return '<article class="ge-card ' + (longshotCard ? 'longshot' : '') + '"><div class="top"><div><div class="kicker">' + kicker + '</div><h2>' + title + '</h2></div><span class="ge-badge ' + (longshotCard ? 'long' : '') + '">WAIT</span></div><div class="ge-empty">Not enough qualified Game Edge winner plays. No parlay forced.</div></article>';
+      }
+      var legs = rows.map(function (game, index) {
+        return '<div class="ge-leg"><span class="num">' + (index + 1) + '</span><div><strong>' + esc(game.winner_pick) + '</strong><small>' + esc(game.away_team) + ' vs ' + esc(game.home_team) + ' · ' + esc(gameEdgeQuality(game)) + '</small></div><div class="prob">' + gameEdgeProbability(game).toFixed(1) + '%</div></div>';
+      }).join("");
+      return '<article class="ge-card ' + (longshotCard ? 'longshot' : '') + '"><div class="top"><div><div class="kicker">' + kicker + '</div><h2>' + title + '</h2></div><span class="ge-badge ' + (longshotCard ? 'long' : '') + '">MODEL</span></div><div class="legs">' + legs + '</div><div class="why">' + (longshotCard ? 'Higher-variance 4–5 team Game Edge combination built only from qualified winner plays.' : 'Best 2–3 Game Edge winner selections on the current slate.') + '</div></article>';
+    }
+
+    host.innerHTML =
+      card("Game Edge Core Parlay", "BEST 2–3 TEAM WINNERS", core, false) +
+      card("Game Edge Longshot Parlay", "4–5 TEAM HIGHER-RISK COMBO", longshot, true);
+  }
+
   function sportsbookUnavailable() {
     var health = liveData.sportsbook || {};
     if (liveData.status === "ODDS UNAVAILABLE" || health.status === "UNAVAILABLE") return true;
@@ -186,6 +242,7 @@
   }
 
   function render() {
+    renderGameEdgeParlays(liveData.game_edge_games || []);
     var slate = selectedSlate();
     var archived = Boolean(slate);
     var oddsUnavailable = !archived && activeDate === liveData.slate_date && sportsbookUnavailable();
@@ -215,9 +272,13 @@
     fetch("data/parlay_history.json?ts=" + Date.now()).then(function (response) {
       return response.ok ? response.json() : { slates: [] };
     }).catch(function () { return { slates: [] }; }),
+    fetch("data/daily_game_predictions.csv?ts=" + Date.now()).then(function (response) {
+      return response.ok ? response.text() : "";
+    }).catch(function () { return ""; }),
   ]).then(function (values) {
     liveData = values[0];
     history = values[1] || { slates: [] };
+    liveData.game_edge_games = values[2] ? csv(values[2]) : [];
     activeDate = liveData.slate_date || ((history.slates || [])[0] || {}).slate_date || "";
     render();
   }).catch(function () {
