@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-19T15:38:15.486578+00:00",
+  "generated_at_utc": "2026-09-19T16:12:29.861884+00:00",
   "slate_date": "2026-09-19",
   "model_version": "Player Props 1.1",
   "status": "ODDS UNAVAILABLE",
@@ -165,10 +165,10 @@
           "team": "Chicago White Sox",
           "opponent": "Detroit Tigers",
           "line": "",
-          "side": "PROJ 0.69",
+          "side": "PROJ 0.68",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 0.69,
+          "projection": 0.68,
           "edge": null,
           "confidence": 69,
           "decision": "MODEL ONLY",
@@ -461,7 +461,7 @@
         "Los Angeles Dodgers",
         "San Francisco Giants"
       ],
-      "venue": "UNIQLO Field at Dodger Stadium",
+      "venue": "Unknown",
       "game_datetime_utc": "2026-09-20T01:10:00Z",
       "props": [
         {
