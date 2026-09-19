@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-19T10:02:44.188048+00:00",
+  "generated_at_utc": "2026-09-19T15:38:15.486578+00:00",
   "slate_date": "2026-09-19",
   "model_version": "Player Props 1.1",
   "status": "ODDS UNAVAILABLE",
@@ -125,6 +125,115 @@
       "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
+      "game_pk": "824545",
+      "teams": [
+        "Chicago White Sox",
+        "Detroit Tigers"
+      ],
+      "venue": "Rate Field",
+      "game_datetime_utc": "2026-09-19T18:10:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Greene, Riley",
+          "player_id": 682985,
+          "team": "Detroit Tigers",
+          "opponent": "Chicago White Sox",
+          "line": "",
+          "side": "PROJ 1.75",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 1.75,
+          "edge": null,
+          "confidence": 69,
+          "decision": "MODEL ONLY",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "15.2% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Murakami, Munetaka",
+          "player_id": 808959,
+          "team": "Chicago White Sox",
+          "opponent": "Detroit Tigers",
+          "line": "",
+          "side": "PROJ 0.69",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.69,
+          "edge": null,
+          "confidence": 69,
+          "decision": "MODEL ONLY",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "18.8% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Murakami, Munetaka",
+          "player_id": 808959,
+          "team": "Chicago White Sox",
+          "opponent": "Detroit Tigers",
+          "line": "",
+          "side": "PROJ 0.91",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.91,
+          "edge": null,
+          "confidence": 69,
+          "decision": "MODEL ONLY",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "18.8% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Jackson Jobe",
+          "player_id": "",
+          "team": "Detroit Tigers",
+          "opponent": "Chicago White Sox",
+          "line": "",
+          "side": "PROJ 6.1",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 6.14,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "23.0% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
       "game_pk": "825029",
       "teams": [
         "Arizona Diamondbacks",
@@ -151,43 +260,6 @@
           "batting_order": "",
           "reasons": [
             "31.6% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
-    {
-      "game_pk": "824545",
-      "teams": [
-        "Chicago White Sox",
-        "Detroit Tigers"
-      ],
-      "venue": "Rate Field",
-      "game_datetime_utc": "2026-09-19T18:10:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Jackson Jobe",
-          "player_id": "",
-          "team": "Detroit Tigers",
-          "opponent": "Chicago White Sox",
-          "line": "",
-          "side": "PROJ 6.1",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 6.09,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "23.0% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
@@ -273,49 +345,12 @@
       "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
-      "game_pk": "824788",
-      "teams": [
-        "Baltimore Orioles",
-        "Milwaukee Brewers"
-      ],
-      "venue": "Oriole Park at Camden Yards",
-      "game_datetime_utc": "2026-09-19T20:05:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Robert Gasser",
-          "player_id": "",
-          "team": "Milwaukee Brewers",
-          "opponent": "Baltimore Orioles",
-          "line": "",
-          "side": "PROJ 6.2",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 6.24,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "22.1% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
-    {
       "game_pk": "823976",
       "teams": [
         "Los Angeles Angels",
         "Minnesota Twins"
       ],
-      "venue": "Unknown",
+      "venue": "Angel Stadium",
       "game_datetime_utc": "2026-09-20T01:38:00Z",
       "props": [
         {
@@ -373,6 +408,43 @@
           "batting_order": "",
           "reasons": [
             "28.0% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "824788",
+      "teams": [
+        "Baltimore Orioles",
+        "Milwaukee Brewers"
+      ],
+      "venue": "Oriole Park at Camden Yards",
+      "game_datetime_utc": "2026-09-19T20:05:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Robert Gasser",
+          "player_id": "",
+          "team": "Milwaukee Brewers",
+          "opponent": "Baltimore Orioles",
+          "line": "",
+          "side": "PROJ 6.2",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 6.24,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "22.1% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
