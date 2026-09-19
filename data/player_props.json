@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-09-19T22:19:43.387129+00:00",
+  "generated_at_utc": "2026-09-19T23:56:08.997898+00:00",
   "slate_date": "2026-09-19",
   "model_version": "Player Props 1.1",
   "status": "ODDS UNAVAILABLE",
   "status_reason": "Sportsbook events matched, but no usable player-prop lines were returned",
   "sportsbook": {
     "status": "UNAVAILABLE",
-    "events_returned": 23,
-    "games_matched": 15,
+    "events_returned": 20,
+    "games_matched": 14,
     "verified_lines": 0,
     "play_legs": 0,
     "reason": "Sportsbook events matched, but no usable player-prop lines were returned"
@@ -248,10 +248,10 @@
           "team": "Chicago Cubs",
           "opponent": "Cincinnati Reds",
           "line": "",
-          "side": "PROJ 2.34",
+          "side": "PROJ 2.35",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 2.34,
+          "projection": 2.35,
           "edge": null,
           "confidence": 70,
           "decision": "MODEL ONLY",
@@ -379,10 +379,10 @@
           "team": "Chicago White Sox",
           "opponent": "Detroit Tigers",
           "line": "",
-          "side": "PROJ 0.68",
+          "side": "PROJ 0.69",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 0.68,
+          "projection": 0.69,
           "edge": null,
           "confidence": 69,
           "decision": "MODEL ONLY",
@@ -464,10 +464,10 @@
           "team": "Pittsburgh Pirates",
           "opponent": "Kansas City Royals",
           "line": "",
-          "side": "PROJ 1.80",
+          "side": "PROJ 1.79",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 1.8,
+          "projection": 1.79,
           "edge": null,
           "confidence": 69,
           "decision": "MODEL ONLY",
@@ -654,6 +654,112 @@
           "batting_order": "",
           "reasons": [
             "25.7% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "823976",
+      "teams": [
+        "Los Angeles Angels",
+        "Minnesota Twins"
+      ],
+      "venue": "Angel Stadium",
+      "game_datetime_utc": "2026-09-20T01:38:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Trout, Mike",
+          "player_id": 545361,
+          "team": "Los Angeles Angels",
+          "opponent": "Minnesota Twins",
+          "line": "",
+          "side": "PROJ 1.62",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 1.62,
+          "edge": null,
+          "confidence": 65,
+          "decision": "MODEL ONLY",
+          "batting_order": 2,
+          "reasons": [
+            "16.0% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Trout, Mike",
+          "player_id": 545361,
+          "team": "Los Angeles Angels",
+          "opponent": "Minnesota Twins",
+          "line": "",
+          "side": "PROJ 0.73",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.73,
+          "edge": null,
+          "confidence": 65,
+          "decision": "MODEL ONLY",
+          "batting_order": 2,
+          "reasons": [
+            "16.0% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Trout, Mike",
+          "player_id": 545361,
+          "team": "Los Angeles Angels",
+          "opponent": "Minnesota Twins",
+          "line": "",
+          "side": "PROJ 0.72",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.72,
+          "edge": null,
+          "confidence": 65,
+          "decision": "MODEL ONLY",
+          "batting_order": 2,
+          "reasons": [
+            "16.0% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Joe Ryan",
+          "player_id": "",
+          "team": "Minnesota Twins",
+          "opponent": "Los Angeles Angels",
+          "line": "",
+          "side": "PROJ 6.4",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 6.37,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "25.9% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
@@ -1095,7 +1201,7 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
     },
     {
       "game_pk": "825029",
@@ -1311,43 +1417,6 @@
       "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
-      "game_pk": "823976",
-      "teams": [
-        "Los Angeles Angels",
-        "Minnesota Twins"
-      ],
-      "venue": "Angel Stadium",
-      "game_datetime_utc": "2026-09-20T01:38:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Reid Detmers",
-          "player_id": "",
-          "team": "Los Angeles Angels",
-          "opponent": "Minnesota Twins",
-          "line": "",
-          "side": "PROJ 7.1",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 7.09,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "28.6% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
-    {
       "game_pk": "824304",
       "teams": [
         "Colorado Rockies",
@@ -1470,10 +1539,10 @@
           "team": "Texas Rangers",
           "opponent": "Toronto Blue Jays",
           "line": "",
-          "side": "PROJ 1.65",
+          "side": "PROJ 1.66",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 1.65,
+          "projection": 1.66,
           "edge": null,
           "confidence": 59,
           "decision": "MODEL ONLY",
