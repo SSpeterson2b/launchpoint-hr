@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-09-19T06:38:39.915384+00:00",
+  "generated_at_utc": "2026-09-19T10:02:44.188048+00:00",
   "slate_date": "2026-09-19",
   "model_version": "Player Props 1.1",
   "status": "ODDS UNAVAILABLE",
   "status_reason": "Sportsbook events matched, but no usable player-prop lines were returned",
   "sportsbook": {
     "status": "UNAVAILABLE",
-    "events_returned": 13,
-    "games_matched": 13,
+    "events_returned": 15,
+    "games_matched": 15,
     "verified_lines": 0,
     "play_legs": 0,
     "reason": "Sportsbook events matched, but no usable player-prop lines were returned"
@@ -33,7 +33,7 @@
           "side": "PROJ 4.2",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 4.18,
+          "projection": 4.16,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -70,7 +70,7 @@
           "side": "PROJ 4.7",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 4.73,
+          "projection": 4.74,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -104,10 +104,10 @@
           "team": "Chicago Cubs",
           "opponent": "Cincinnati Reds",
           "line": "",
-          "side": "PROJ 4.8",
+          "side": "PROJ 4.7",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 4.77,
+          "projection": 4.71,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -130,7 +130,7 @@
         "Arizona Diamondbacks",
         "New York Yankees"
       ],
-      "venue": "Unknown",
+      "venue": "Chase Field",
       "game_datetime_utc": "2026-09-20T00:10:00Z",
       "props": [
         {
@@ -141,10 +141,10 @@
           "team": "New York Yankees",
           "opponent": "Arizona Diamondbacks",
           "line": "",
-          "side": "PROJ 6.5",
+          "side": "PROJ 6.6",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 6.53,
+          "projection": 6.58,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -178,16 +178,53 @@
           "team": "Detroit Tigers",
           "opponent": "Chicago White Sox",
           "line": "",
-          "side": "PROJ 6.2",
+          "side": "PROJ 6.1",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 6.19,
+          "projection": 6.09,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
           "batting_order": "",
           "reasons": [
             "23.0% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "823249",
+      "teams": [
+        "Miami Marlins",
+        "San Diego Padres"
+      ],
+      "venue": "Petco Park",
+      "game_datetime_utc": "2026-09-20T00:40:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Eury P\u00e9rez",
+          "player_id": "",
+          "team": "Miami Marlins",
+          "opponent": "San Diego Padres",
+          "line": "",
+          "side": "PROJ 5.9",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 5.86,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "25.7% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
@@ -236,43 +273,6 @@
       "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
-      "game_pk": "823249",
-      "teams": [
-        "Miami Marlins",
-        "San Diego Padres"
-      ],
-      "venue": "Petco Park",
-      "game_datetime_utc": "2026-09-20T00:40:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Eury P\u00e9rez",
-          "player_id": "",
-          "team": "Miami Marlins",
-          "opponent": "San Diego Padres",
-          "line": "",
-          "side": "PROJ 5.9",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 5.95,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "25.7% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
-    {
       "game_pk": "824788",
       "teams": [
         "Baltimore Orioles",
@@ -292,7 +292,7 @@
           "side": "PROJ 6.2",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 6.19,
+          "projection": 6.24,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -315,27 +315,27 @@
         "Los Angeles Angels",
         "Minnesota Twins"
       ],
-      "venue": "Angel Stadium",
+      "venue": "Unknown",
       "game_datetime_utc": "2026-09-20T01:38:00Z",
       "props": [
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Joe Ryan",
+          "player": "Reid Detmers",
           "player_id": "",
-          "team": "Minnesota Twins",
-          "opponent": "Los Angeles Angels",
+          "team": "Los Angeles Angels",
+          "opponent": "Minnesota Twins",
           "line": "",
-          "side": "PROJ 6.9",
+          "side": "PROJ 7.1",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 6.92,
+          "projection": 7.09,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
           "batting_order": "",
           "reasons": [
-            "25.9% pitcher K rate",
+            "28.6% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
@@ -366,7 +366,7 @@
           "side": "PROJ 5.7",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 5.73,
+          "projection": 5.71,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -400,10 +400,10 @@
           "team": "Los Angeles Dodgers",
           "opponent": "San Francisco Giants",
           "line": "",
-          "side": "PROJ 7.5",
+          "side": "PROJ 7.7",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 7.55,
+          "projection": 7.74,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -418,7 +418,7 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
       "game_pk": "824380",
@@ -437,10 +437,10 @@
           "team": "Cleveland Guardians",
           "opponent": "Athletics",
           "line": "",
-          "side": "PROJ 4.3",
+          "side": "PROJ 4.4",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 4.31,
+          "projection": 4.38,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -477,7 +477,7 @@
           "side": "PROJ 6.0",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 6.0,
+          "projection": 5.98,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -492,7 +492,7 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
       "game_pk": "822843",
@@ -548,10 +548,10 @@
           "team": "Tampa Bay Rays",
           "opponent": "Boston Red Sox",
           "line": "",
-          "side": "PROJ 4.8",
+          "side": "PROJ 4.7",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 4.75,
+          "projection": 4.74,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
