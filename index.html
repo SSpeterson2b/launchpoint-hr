@@ -3585,35 +3585,30 @@ function renderLaunch5(players){
   if(!container)return;
 
   const allScored=(players||[]).filter(p=>p&&p.player);
-  const pool=allScored.filter(isSelectionEligible);
+  const cleanupPool=cleanupRankPlayers(allScored.filter(p=>{
+    const role=String(p.launchpoint_34_role||"").toUpperCase();
+    const state=String(p.launchpoint_34_state||"").toUpperCase();
+    return isSelectionEligible(p)&&state!=="LOCKED"&&["PRIMARY","SECONDARY","UPSIDE"].includes(role);
+  }));
+  const fallbackPool=rankPlayers(allScored.filter(isSelectionEligible));
+  const pool=cleanupPool.length?cleanupPool:fallbackPool;
+
   if(!pool.length){
     container.innerHTML='<div class="launch5-empty">Launch 5 is not available yet.</div>';
     return;
   }
 
-  const ranked=rankPlayers(pool);
-  const topFour=ranked.slice(0,4);
-  const used=new Set(topFour.map(p=>String(p.player)));
-
-  const longshot=
-    ranked.find(p=>
-      !used.has(String(p.player))&&
-      generatorScore(p)>=45&&
-      generatorScore(p)<65
-    )||
-    ranked.find(p=>!used.has(String(p.player)));
-
-  const picks=longshot?[...topFour,longshot]:topFour;
+  const picks=pool.slice(0,5);
   currentLaunch5=picks;
 
   const cards=picks.map((p,index)=>{
-    const isLongshot=index===4;
+    const role=String(p.launchpoint_34_role||"").toUpperCase();
+    const profile=playerPublicProfile(p);
     const playerName=esc(displayName(p.player));
-    const profile=playerPublicProfile(p,isLongshot);
-
+    const isUpside=role==="UPSIDE";
     return `
-      <article class="launch5-card ${isLongshot?"longshot":""}">
-        ${isLongshot?'<div class="launch5-longshot-badge">SECONDARY</div>':""}
+      <article class="launch5-card ${isUpside?"longshot":""}">
+        ${isUpside?'<div class="launch5-longshot-badge">UPSIDE</div>':""}
         <div class="launch5-card-body" data-rank="${index+1}">
           <div class="launch5-player">${playerName}${homerBadge(p)}<span class="player-profile-badge ${profile.kind}">${profile.label}</span></div>
           ${launchArc()}
@@ -3623,14 +3618,16 @@ function renderLaunch5(players){
     `;
   }).join("");
 
-  const gamesToday=new Set(pool.map(p=>p.game_pk||keyFor(p)).filter(Boolean)).size;
+  const gamesToday=new Set(allScored.map(p=>p.game_pk||keyFor(p)).filter(Boolean)).size;
+  const primaryCount=picks.filter(p=>String(p.launchpoint_34_role||"").toUpperCase()==="PRIMARY").length;
+  const supportCount=picks.filter(p=>["SECONDARY","UPSIDE"].includes(String(p.launchpoint_34_role||"").toUpperCase())).length;
   container.innerHTML=`
     <div class="launch5-card-row">${cards}</div>
     <div class="launch5-summary">
       <div class="launch5-summary-item"><strong>${gamesToday}</strong><span>GAMES TODAY</span></div>
       <div class="launch5-summary-item"><strong>${allScored.length}</strong><span>PLAYERS EVALUATED</span></div>
-      <div class="launch5-summary-item"><strong>${picks.filter(p=>playerPublicProfile(p).label==="STRONG").length}</strong><span>STRONG PROFILES</span></div>
-      <div class="launch5-summary-item"><strong>${picks.filter(p=>playerPublicProfile(p).label!=="STRONG").length}</strong><span>VALUE / SECONDARY</span></div>
+      <div class="launch5-summary-item"><strong>${primaryCount}</strong><span>PRIMARY</span></div>
+      <div class="launch5-summary-item"><strong>${supportCount}</strong><span>SECONDARY / UPSIDE</span></div>
       <button class="launch5-full-card" type="button" onclick="setView('top-picks')">VIEW FULL CARD -></button>
     </div>
   `;
@@ -3849,19 +3846,32 @@ function gameLaunchRating(players){
   if(!teamLeaders.length)return generatorScore(ranked[0]);
   return teamLeaders.reduce((sum,p)=>sum+generatorScore(p),0)/teamLeaders.length;
 }
+function cleanupRoleRank(p){
+  const role=String(p?.launchpoint_34_role||"").toUpperCase();
+  return role==="PRIMARY"?4:role==="SECONDARY"?3:role==="UPSIDE"?2:0;
+}
+function cleanupRankPlayers(list){
+  return [...list].sort((a,b)=>
+    cleanupRoleRank(b)-cleanupRoleRank(a)||
+    n(b.launchpoint_34_score)-n(a.launchpoint_34_score)||
+    generatorScore(b)-generatorScore(a)
+  );
+}
 function selectGamePlayers(players){
   const ranked=rankPlayers(players);
-  if(ranked.length<=4)return ranked;
   const teams=[...new Set(ranked.map(p=>String(p.team||"")).filter(Boolean))].slice(0,2);
   const selected=[];
   teams.forEach(team=>{
-    rankPlayers(ranked.filter(p=>String(p.team||"")===team)).slice(0,2).forEach(p=>selected.push(p));
+    const teamRows=ranked.filter(p=>String(p.team||"")===team);
+    const cleanup=cleanupRankPlayers(teamRows.filter(p=>{
+      const role=String(p.launchpoint_34_role||"").toUpperCase();
+      const state=String(p.launchpoint_34_state||"").toUpperCase();
+      return state!=="LOCKED"&&role&&role!=="HOLD";
+    }));
+    const picks=cleanup.length?cleanup.slice(0,2):rankPlayers(teamRows).slice(0,2);
+    picks.forEach(p=>{if(!selected.includes(p))selected.push(p)});
   });
-  for(const p of ranked){
-    if(selected.length>=4)break;
-    if(!selected.includes(p))selected.push(p);
-  }
-  return rankPlayers(selected).slice(0,4);
+  return cleanupRankPlayers(selected).slice(0,4);
 }
 function groups(){
   const map={};
@@ -3885,10 +3895,19 @@ function gameCardProfile(supportingIndex,isPrimary,player){
   if(state==="LOCKED"||role==="HOLD")return null;
   if(role==="PRIMARY")return {label:"PRIMARY",kind:"contender"};
   if(role==="SECONDARY")return {label:"SECONDARY",kind:"sleeper"};
+  if(role==="UPSIDE")return {label:"UPSIDE",kind:"value"};
   return null;
 }
 function playerPublicProfile(player,forceSecondary=false){
   if(!isSelectionEligible(player))return {label:"DATA PENDING",kind:"hold"};
+  const role=String(player?.launchpoint_34_role||"").toUpperCase();
+  const state=String(player?.launchpoint_34_state||"").toUpperCase();
+  if(state!=="LOCKED"){
+    if(role==="PRIMARY")return {label:"PRIMARY",kind:"contender"};
+    if(role==="SECONDARY")return {label:"SECONDARY",kind:"sleeper"};
+    if(role==="UPSIDE")return {label:"UPSIDE",kind:"value"};
+    if(role==="HOLD")return {label:"HOLD",kind:"hold"};
+  }
   if(forceSecondary)return {label:"SECONDARY",kind:"sleeper"};
   const tier=String(player?.daily_tier||player?.raw_classification||"").trim().toUpperCase();
   const rank=n(player?.rank);
