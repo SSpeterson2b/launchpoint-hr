@@ -43,6 +43,8 @@ function csv(text){const rows=[];let row=[],cell="",q=false;for(let i=0;i<text.l
 const fmt=v=>num(v).toFixed(1),initials=n=>String(n).split(/\s+/).map(x=>x[0]).join("").slice(0,3).toUpperCase();
 function present(v){return v!==undefined&&v!==null&&String(v).trim()!==''}
 function winnerAction(r){const raw=String(r.winner_confidence||'').trim().toUpperCase();if(raw==='NO EDGE'||raw==='SKIP BET')return 'SKIP BET';if(raw==='STRONG'||raw==='LEAN'||raw==='PLAY')return 'PLAY';return raw||'SKIP BET'}
+function playQuality(r){const q=String(r.winner_play_quality||'').trim().toUpperCase();if(q)return q;const p=num(r.winner_probability_pct||0);const a=winnerAction(r);return a==='PLAY'?(p>=70?'TOP PLAY':'PLAY'):'SKIP BET'}
+function topReason(r){const parts=String(r.winner_reasons||'').split(';').map(x=>x.trim()).filter(Boolean);return parts[0]||''}
 function valueOrPending(v){return present(v)?fmt(v):'<span class="pending">DATA PENDING</span>'}
 function scoreReasons(r,pick){const parts=String(r.winner_reasons||"").split(';').map(x=>x.trim()).filter(Boolean).slice(0,3);if(!parts.length)return '<div class="reason-empty">Reasons will appear after real offense and pitching context is verified.</div>';return parts.map(x=>{const pieces=x.split(':');const team=(pieces.shift()||pick).trim();const label=pieces.join(':').trim()||x;return `<div class="reason"><span>${esc(team)}</span><b>${esc(label.toUpperCase())}</b></div>`}).join('')}
 function check(ok,label){return `<div class="check ${ok?'':'bad'}"><i>${ok?'✓':'!'}</i>${label}</div>`}
@@ -50,7 +52,7 @@ function render(r){const hold=r.selection_status!=="FINAL READY";const away=num(
 function renderSafe(r){
   const status=String(r.selection_status||'DATA HOLD').toUpperCase();
   const finalReady=status==='FINAL READY', preliminary=status==='PRELIMINARY';
-  const action=winnerAction(r), playable=finalReady&&action==='PLAY';
+  const action=winnerAction(r), quality=playQuality(r), playable=finalReady&&action==='PLAY';
   const missing=String(r.missing_inputs||'').split(';').filter(Boolean);
   const teamContext=!missing.includes('team_or_pitcher_run_context');
   const hasProjection=teamContext&&present(r.away_win_probability)&&present(r.home_win_probability)&&present(r.winner_pick);
@@ -77,7 +79,7 @@ function renderSafe(r){
     <section class="game-hero"><div class="matchup-line"><div class="matchup-team">${logo(r.away_team,'compare-logo')}<b>${esc(r.away_team)}</b></div><div class="matchup-vs">VS</div><div class="matchup-team home"><b>${esc(r.home_team)}</b>${logo(r.home_team,'compare-logo')}</div></div><div class="meta">${new Date(r.game_datetime_utc).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})} · ${esc(r.venue||'Venue pending')} <span class="game-state">${esc(r.game_status||'SCHEDULED')}</span></div><div class="final-outcome" id="final-outcome"></div><div class="data-updated">MODEL UPDATED ${present(r.prediction_generated_at_utc)?new Date(r.prediction_generated_at_utc).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'TIME PENDING'}</div></section>
     ${!finalReady?`<div class="card hold"><strong>${statusLabel}</strong>${preliminary?'Real team and pitching data are loaded, but the official pick is waiting for final lineup or weather confirmation.':'No official winner or total pick is published while required data is missing.'}<div class="hold-note">Missing: ${esc(missing.map(x=>x.replaceAll('_',' ')).join(' · ')||'verification pending')}</div></div>`:!playable?`<div class="card hold"><strong>SKIP BET</strong>Model leans ${esc(pick)}, but the projected edge is too small to bet.</div>`:''}
     <section class="card pick-card">
-      <div class="pick-row"><div class="team-mark">${hasProjection?logo(pick):'—'}</div><div><div class="pick-name"><span class="star">★</span> ${pickTitle} ${underdogBadge}</div><div class="label">MODEL WIN PROBABILITY</div><div class="prob ${hasProjection?'':'pending'}">${probability}</div></div><div class="confidence">◇ ${finalReady?esc(action):statusLabel}</div></div>
+      <div class="pick-row"><div class="team-mark">${hasProjection?logo(pick):'—'}</div><div><div class="pick-name"><span class="star">★</span> ${pickTitle} ${underdogBadge}</div><div class="label">MODEL WIN PROBABILITY</div><div class="prob ${hasProjection?'':'pending'}">${probability}</div></div><div class="confidence">◇ ${finalReady?esc(quality):statusLabel}</div></div>
       ${hasProjection?`<div class="bar-labels"><span>${esc(pick)} ${fmt(win)}%</span><span>${esc(pickHome?r.away_team:r.home_team)} ${fmt(lose)}%</span></div><div class="bar"><i style="width:${win}%"></i></div>`:'<div class="hold-note">Win probability will appear after real team and pitcher context loads.</div>'}
     </section>
     <section class="card"><h2>TEAM COMPARISON</h2><div class="compare"><div class="team">${esc(r.away_team)}</div><div class="versus">VS</div><div class="team">${esc(r.home_team)}</div></div>
@@ -131,7 +133,7 @@ async function load(){
   const requested=new URLSearchParams(location.search).get('game_pk')||sessionStorage.getItem('launchpoint-selected-game')||'';
   const selectedIndex=Math.max(0,games.findIndex(g=>String(g.game_pk)===String(requested)));
   selectGame(selectedIndex,false);
-  $('#game-list').innerHTML='<h2>OTHER MATCHUPS</h2>'+games.map((g,i)=>{const result=resultsByGame[String(g.game_pk)];const final=result?` · ${esc(result.actual_winner)} WON ${num(result.actual_away_runs)}-${num(result.actual_home_runs)}`:'';return `<button class="game-row" data-i="${i}"><b>${esc(g.away_team)} vs ${esc(g.home_team)}</b><span>${esc(g.selection_status)} · ${esc(g.venue)}${final}</span></button>`}).join('');
+  $('#game-list').innerHTML='<h2>OTHER MATCHUPS</h2>'+games.map((g,i)=>{const result=resultsByGame[String(g.game_pk)];const final=result?` · ${esc(result.actual_winner)} WON ${num(result.actual_away_runs)}-${num(result.actual_home_runs)}`:'';const q=playQuality(g);const p=present(g.winner_probability_pct)?fmt(g.winner_probability_pct):(present(g.away_win_probability)&&present(g.home_win_probability)?fmt(Math.max(num(g.away_win_probability),num(g.home_win_probability))):'—');const why=topReason(g);return `<button class="game-row" data-i="${i}"><b>${esc(g.away_team)} vs ${esc(g.home_team)}</b><span>${esc(q)} · ${esc(g.winner_pick||'No pick')} ${p!=='—'?'· '+p+'%':''}${why?' · '+esc(why):''}${final}</span></button>`}).join('');
   document.querySelectorAll('.game-row').forEach(b=>b.onclick=()=>{selectGame(+b.dataset.i);scrollTo({top:0,behavior:'smooth'})});
 }
 load();
