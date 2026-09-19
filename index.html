@@ -3733,6 +3733,25 @@ async function loadGameEdgeResults(){
   renderGameEdgeResults();
 }
 async function refreshHomerResults(){
+  // Seed badges from the persisted server-side result file first. This keeps
+  // HOMER badges visible after refresh/final and avoids relying only on the
+  // browser being able to reach MLB's live feed.
+  try{
+    const saved=await fetch("data/homer_results.json?ts="+Date.now()).then(r=>r.ok?r.json():null);
+    if(saved&&Array.isArray(saved.results)){
+      const byId=new Map(),byGameName=new Map();
+      saved.results.forEach(row=>{
+        const homers=Number(row.home_runs)||0;
+        const id=String(row.player_id||"").replace(/\D/g,"");
+        const name=normalizePlayerName(row.player||"");
+        if(id&&homers>0)byId.set(id,homers);
+        if(name&&homers>0)byGameName.set(`${row.game_pk||""}|${name}`,homers);
+      });
+      homerResultsById=byId;
+      homerResultsByGameName=byGameName;
+      renderLaunch5(allPlayers); render(); updateResultsUI();
+    }
+  }catch(error){}
   const gamePks=[...new Set((allPlayers||[]).map(p=>Number(p.game_pk)||0).filter(Boolean))];
   if(!gamePks.length)return;
   const feeds=await Promise.allSettled(gamePks.map(async gamePk=>{
