@@ -146,11 +146,20 @@
     return "SKIP BET";
   }
 
+  function gameEdgeMoneyline(game) {
+    var pick = String(game.winner_pick || "").trim();
+    if (!pick) return null;
+    if (pick === String(game.away_team || "").trim()) return numOdds(game.away_moneyline);
+    if (pick === String(game.home_team || "").trim()) return numOdds(game.home_moneyline);
+    return null;
+  }
+
   function qualifiedGameEdgeGames(games) {
     return (games || []).filter(function (game) {
       return String(game.selection_status || "").toUpperCase() === "FINAL READY"
         && game.winner_pick
-        && gameEdgeQuality(game) !== "SKIP BET";
+        && gameEdgeQuality(game) !== "SKIP BET"
+        && gameEdgeMoneyline(game) != null;
     }).sort(function (a, b) {
       var qa = gameEdgeQuality(a) === "TOP PLAY" ? 1 : 0;
       var qb = gameEdgeQuality(b) === "TOP PLAY" ? 1 : 0;
@@ -159,28 +168,35 @@
     });
   }
 
+  function combinedGameEdgeOdds(rows) {
+    var legs = rows.map(function (game) {
+      return { odds: gameEdgeMoneyline(game) };
+    }).filter(function (leg) { return leg.odds != null; });
+    return legs.length === rows.length && rows.length ? combined(legs) : "—";
+  }
+
   function renderGameEdgeParlays(games) {
     var host = document.querySelector("#game-edge-parlays");
     if (!host) return;
     var pool = qualifiedGameEdgeGames(games);
-    var coreCount = Math.min(3, pool.length);
-    var core = pool.slice(0, coreCount >= 2 ? coreCount : 0);
-    var longCount = pool.length >= 5 ? 5 : (pool.length >= 4 ? 4 : 0);
-    var longshot = longCount ? pool.slice(0, longCount) : [];
+    var core = pool.slice(0, Math.min(3, pool.length));
+    var longshot = pool.slice(0, Math.min(5, pool.length));
 
     function card(title, kicker, rows, longshotCard) {
       if (!rows.length) {
-        return '<article class="ge-card ' + (longshotCard ? 'longshot' : '') + '"><div class="top"><div><div class="kicker">' + kicker + '</div><h2>' + title + '</h2></div><span class="ge-badge ' + (longshotCard ? 'long' : '') + '">WAIT</span></div><div class="ge-empty">Not enough qualified Game Edge winner plays. No parlay forced.</div></article>';
+        return '<article class="ge-card ' + (longshotCard ? 'longshot' : '') + '"><div class="top"><div><div class="kicker">' + kicker + '</div><h2>' + title + '</h2></div><span class="ge-badge ' + (longshotCard ? 'long' : '') + '">NO PLAY</span></div><div class="ge-empty">No qualified Game Edge winner plays with verified moneyline odds are available.</div></article>';
       }
       var legs = rows.map(function (game, index) {
-        return '<div class="ge-leg"><span class="num">' + (index + 1) + '</span><div><strong>' + esc(game.winner_pick) + '</strong><small>' + esc(game.away_team) + ' vs ' + esc(game.home_team) + ' · ' + esc(gameEdgeQuality(game)) + '</small></div><div class="prob">' + gameEdgeProbability(game).toFixed(1) + '%</div></div>';
+        var odds = gameEdgeMoneyline(game);
+        return '<div class="ge-leg"><span class="num">' + (index + 1) + '</span><div><strong>' + esc(game.winner_pick) + '</strong><small>' + esc(game.away_team) + ' vs ' + esc(game.home_team) + ' · ' + esc(gameEdgeQuality(game)) + '</small></div><div class="prob">' + showOdds(odds) + '</div></div>';
       }).join("");
-      return '<article class="ge-card ' + (longshotCard ? 'longshot' : '') + '"><div class="top"><div><div class="kicker">' + kicker + '</div><h2>' + title + '</h2></div><span class="ge-badge ' + (longshotCard ? 'long' : '') + '">MODEL</span></div><div class="legs">' + legs + '</div><div class="why">' + (longshotCard ? 'Higher-variance 4–5 team Game Edge combination built only from qualified winner plays.' : 'Best 2–3 Game Edge winner selections on the current slate.') + '</div></article>';
+      var combo = combinedGameEdgeOdds(rows);
+      return '<article class="ge-card ' + (longshotCard ? 'longshot' : '') + '"><div class="top"><div><div class="kicker">' + kicker + '</div><h2>' + title + '</h2></div><span class="ge-badge ' + (longshotCard ? 'long' : '') + '">' + rows.length + ' LEGS</span></div><div class="price"><span>COMBINED PARLAY ODDS</span><b>' + combo + '</b></div><div class="legs">' + legs + '</div><div class="why">' + (longshotCard ? 'Up to five qualified Game Edge team winners using verified moneyline prices.' : 'Best available qualified Game Edge team winners using verified moneyline prices.') + '</div></article>';
     }
 
     host.innerHTML =
-      card("Game Edge Core Parlay", "BEST 2–3 TEAM WINNERS", core, false) +
-      card("Game Edge Longshot Parlay", "4–5 TEAM HIGHER-RISK COMBO", longshot, true);
+      card("Game Edge Core Parlay", "BEST QUALIFIED TEAM WINNERS", core, false) +
+      card("Game Edge Longshot Parlay", "UP TO 5 QUALIFIED TEAMS", longshot, true);
   }
 
   function sportsbookUnavailable() {
