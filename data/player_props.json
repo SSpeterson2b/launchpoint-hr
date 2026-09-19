@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-19T19:32:33.992173+00:00",
+  "generated_at_utc": "2026-09-19T20:32:54.513865+00:00",
   "slate_date": "2026-09-19",
   "model_version": "Player Props 1.1",
   "status": "ODDS UNAVAILABLE",
@@ -14,6 +14,115 @@
   },
   "games": [
     {
+      "game_pk": "824137",
+      "teams": [
+        "Atlanta Braves",
+        "Houston Astros"
+      ],
+      "venue": "Daikin Park",
+      "game_datetime_utc": "2026-09-19T23:10:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Alvarez, Yordan",
+          "player_id": 670541,
+          "team": "Houston Astros",
+          "opponent": "Atlanta Braves",
+          "line": "",
+          "side": "PROJ 2.39",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 2.39,
+          "edge": null,
+          "confidence": 72,
+          "decision": "MODEL ONLY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "16.3% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Alvarez, Yordan",
+          "player_id": 670541,
+          "team": "Houston Astros",
+          "opponent": "Atlanta Braves",
+          "line": "",
+          "side": "PROJ 0.84",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.84,
+          "edge": null,
+          "confidence": 72,
+          "decision": "MODEL ONLY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "16.3% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Alvarez, Yordan",
+          "player_id": 670541,
+          "team": "Houston Astros",
+          "opponent": "Atlanta Braves",
+          "line": "",
+          "side": "PROJ 0.90",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.9,
+          "edge": null,
+          "confidence": 72,
+          "decision": "MODEL ONLY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "16.3% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Hayden Wesneski",
+          "player_id": "",
+          "team": "Houston Astros",
+          "opponent": "Atlanta Braves",
+          "line": "",
+          "side": "PROJ 4.3",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 4.34,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "19.2% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
       "game_pk": "824461",
       "teams": [
         "Chicago Cubs",
@@ -25,23 +134,23 @@
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
-          "player": "De La Cruz, Elly",
-          "player_id": 682829,
-          "team": "Cincinnati Reds",
-          "opponent": "Chicago Cubs",
+          "player": "Crow-Armstrong, Pete",
+          "player_id": 691718,
+          "team": "Chicago Cubs",
+          "opponent": "Cincinnati Reds",
           "line": "",
-          "side": "PROJ 2.01",
+          "side": "PROJ 2.35",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 2.01,
+          "projection": 2.35,
           "edge": null,
-          "confidence": 71,
+          "confidence": 70,
           "decision": "MODEL ONLY",
-          "batting_order": 2,
+          "batting_order": 1,
           "reasons": [
             "3/3 core signals",
-            "16.3% barrel rate",
-            "confirmed batting 2"
+            "13.5% barrel rate",
+            "confirmed batting 1"
           ],
           "locked_at_utc": "",
           "status_reason": "Sportsbook line unavailable \u2014 model projection only"
@@ -123,115 +232,6 @@
       "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
-      "game_pk": "824137",
-      "teams": [
-        "Atlanta Braves",
-        "Houston Astros"
-      ],
-      "venue": "Daikin Park",
-      "game_datetime_utc": "2026-09-19T23:10:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Olson, Matt",
-          "player_id": 621566,
-          "team": "Atlanta Braves",
-          "opponent": "Houston Astros",
-          "line": "",
-          "side": "PROJ 1.89",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 1.89,
-          "edge": null,
-          "confidence": 68,
-          "decision": "MODEL ONLY",
-          "batting_order": 3,
-          "reasons": [
-            "3/3 core signals",
-            "14.8% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Baldwin, Drake",
-          "player_id": 686948,
-          "team": "Atlanta Braves",
-          "opponent": "Houston Astros",
-          "line": "",
-          "side": "PROJ 0.80",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 0.8,
-          "edge": null,
-          "confidence": 68,
-          "decision": "MODEL ONLY",
-          "batting_order": 1,
-          "reasons": [
-            "3/3 core signals",
-            "12.7% barrel rate",
-            "confirmed batting 1"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Olson, Matt",
-          "player_id": 621566,
-          "team": "Atlanta Braves",
-          "opponent": "Houston Astros",
-          "line": "",
-          "side": "PROJ 0.87",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 0.87,
-          "edge": null,
-          "confidence": 68,
-          "decision": "MODEL ONLY",
-          "batting_order": 3,
-          "reasons": [
-            "3/3 core signals",
-            "14.8% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Hayden Wesneski",
-          "player_id": "",
-          "team": "Houston Astros",
-          "opponent": "Atlanta Braves",
-          "line": "",
-          "side": "PROJ 4.3",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 4.34,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "19.2% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
-    {
       "game_pk": "823003",
       "teams": [
         "St. Louis Cardinals",
@@ -241,6 +241,76 @@
       "game_datetime_utc": "2026-09-19T23:15:00Z",
       "props": [
         {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Bernal, Leo",
+          "player_id": 699024,
+          "team": "St. Louis Cardinals",
+          "opponent": "Washington Nationals",
+          "line": "",
+          "side": "PROJ 1.81",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 1.81,
+          "edge": null,
+          "confidence": 69,
+          "decision": "MODEL ONLY",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Walker, Jordan",
+          "player_id": 691023,
+          "team": "St. Louis Cardinals",
+          "opponent": "Washington Nationals",
+          "line": "",
+          "side": "PROJ 0.70",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.7,
+          "edge": null,
+          "confidence": 68,
+          "decision": "MODEL ONLY",
+          "batting_order": 3,
+          "reasons": [
+            "3/3 core signals",
+            "13.1% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Bernal, Leo",
+          "player_id": 699024,
+          "team": "St. Louis Cardinals",
+          "opponent": "Washington Nationals",
+          "line": "",
+          "side": "PROJ 0.79",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.79,
+          "edge": null,
+          "confidence": 69,
+          "decision": "MODEL ONLY",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
           "player": "Andrew Alvarez",
@@ -248,10 +318,10 @@
           "team": "Washington Nationals",
           "opponent": "St. Louis Cardinals",
           "line": "",
-          "side": "PROJ 4.7",
+          "side": "PROJ 4.9",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 4.74,
+          "projection": 4.87,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -280,23 +350,21 @@
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
-          "player": "Greene, Riley",
-          "player_id": 682985,
+          "player": "Valencia, Eduardo",
+          "player_id": 680664,
           "team": "Detroit Tigers",
           "opponent": "Chicago White Sox",
           "line": "",
-          "side": "PROJ 1.75",
+          "side": "PROJ 1.97",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 1.75,
+          "projection": 1.97,
           "edge": null,
-          "confidence": 69,
+          "confidence": 60,
           "decision": "MODEL ONLY",
-          "batting_order": 4,
+          "batting_order": 8,
           "reasons": [
-            "3/3 core signals",
-            "15.2% barrel rate",
-            "confirmed batting 4"
+            "16.9% barrel rate"
           ],
           "locked_at_utc": "",
           "status_reason": "Sportsbook line unavailable \u2014 model projection only"
@@ -309,10 +377,10 @@
           "team": "Chicago White Sox",
           "opponent": "Detroit Tigers",
           "line": "",
-          "side": "PROJ 0.69",
+          "side": "PROJ 0.68",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 0.69,
+          "projection": 0.68,
           "edge": null,
           "confidence": 69,
           "decision": "MODEL ONLY",
@@ -850,10 +918,10 @@
           "team": "Tampa Bay Rays",
           "opponent": "Boston Red Sox",
           "line": "",
-          "side": "PROJ 0.68",
+          "side": "PROJ 0.69",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 0.68,
+          "projection": 0.69,
           "edge": null,
           "confidence": 68,
           "decision": "MODEL ONLY",
@@ -972,10 +1040,10 @@
           "team": "Athletics",
           "opponent": "Cleveland Guardians",
           "line": "",
-          "side": "PROJ 1.78",
+          "side": "PROJ 1.79",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 1.78,
+          "projection": 1.79,
           "edge": null,
           "confidence": 64,
           "decision": "MODEL ONLY",
@@ -1099,6 +1167,43 @@
       "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
+      "game_pk": "823899",
+      "teams": [
+        "Los Angeles Dodgers",
+        "San Francisco Giants"
+      ],
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "game_datetime_utc": "2026-09-20T01:10:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Tarik Skubal",
+          "player_id": "",
+          "team": "Los Angeles Dodgers",
+          "opponent": "San Francisco Giants",
+          "line": "",
+          "side": "PROJ 7.7",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 7.74,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "30.2% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
       "game_pk": "822843",
       "teams": [
         "Texas Rangers",
@@ -1156,22 +1261,21 @@
         {
           "category": "RBI",
           "market": "batter_rbis",
-          "player": "Seager, Corey",
-          "player_id": 608369,
-          "team": "Texas Rangers",
-          "opponent": "Toronto Blue Jays",
+          "player": "Okamoto, Kazuma",
+          "player_id": 672960,
+          "team": "Toronto Blue Jays",
+          "opponent": "Texas Rangers",
           "line": "",
-          "side": "PROJ 0.71",
+          "side": "PROJ 0.74",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 0.71,
+          "projection": 0.74,
           "edge": null,
-          "confidence": 59,
+          "confidence": 58,
           "decision": "MODEL ONLY",
-          "batting_order": 2,
+          "batting_order": 6,
           "reasons": [
-            "14.6% barrel rate",
-            "confirmed batting 2"
+            "13.6% barrel rate"
           ],
           "locked_at_utc": "",
           "status_reason": "Sportsbook line unavailable \u2014 model projection only"
@@ -1194,43 +1298,6 @@
           "batting_order": "",
           "reasons": [
             "22.5% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
-    {
-      "game_pk": "823899",
-      "teams": [
-        "Los Angeles Dodgers",
-        "San Francisco Giants"
-      ],
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "game_datetime_utc": "2026-09-20T01:10:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Tarik Skubal",
-          "player_id": "",
-          "team": "Los Angeles Dodgers",
-          "opponent": "San Francisco Giants",
-          "line": "",
-          "side": "PROJ 7.7",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 7.74,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "30.2% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
