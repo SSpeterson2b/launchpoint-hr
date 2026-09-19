@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-09-19T00:22:30.163559+00:00",
+  "generated_at_utc": "2026-09-19T06:38:39.915384+00:00",
   "slate_date": "2026-09-19",
   "model_version": "Player Props 1.1",
   "status": "ODDS UNAVAILABLE",
   "status_reason": "Sportsbook events matched, but no usable player-prop lines were returned",
   "sportsbook": {
     "status": "UNAVAILABLE",
-    "events_returned": 27,
-    "games_matched": 15,
+    "events_returned": 13,
+    "games_matched": 13,
     "verified_lines": 0,
     "play_legs": 0,
     "reason": "Sportsbook events matched, but no usable player-prop lines were returned"
@@ -130,7 +130,7 @@
         "Arizona Diamondbacks",
         "New York Yankees"
       ],
-      "venue": "Chase Field",
+      "venue": "Unknown",
       "game_datetime_utc": "2026-09-20T00:10:00Z",
       "props": [
         {
@@ -168,7 +168,7 @@
         "Detroit Tigers"
       ],
       "venue": "Rate Field",
-      "game_datetime_utc": "2026-09-19T23:10:00Z",
+      "game_datetime_utc": "2026-09-19T18:10:00Z",
       "props": [
         {
           "category": "STRIKEOUTS",
@@ -403,7 +403,7 @@
           "side": "PROJ 7.5",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 7.51,
+          "projection": 7.55,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -418,7 +418,7 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
     },
     {
       "game_pk": "824380",
@@ -492,7 +492,7 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
     },
     {
       "game_pk": "822843",
