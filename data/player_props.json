@@ -1,127 +1,18 @@
 {
-  "generated_at_utc": "2026-09-20T19:48:29.233924+00:00",
+  "generated_at_utc": "2026-09-20T20:50:32.027170+00:00",
   "slate_date": "2026-09-20",
   "model_version": "Player Props 1.1",
   "status": "ODDS UNAVAILABLE",
   "status_reason": "Sportsbook events matched, but no usable player-prop lines were returned",
   "sportsbook": {
     "status": "UNAVAILABLE",
-    "events_returned": 17,
-    "games_matched": 15,
+    "events_returned": 14,
+    "games_matched": 12,
     "verified_lines": 0,
     "play_legs": 0,
     "reason": "Sportsbook events matched, but no usable player-prop lines were returned"
   },
   "games": [
-    {
-      "game_pk": "824462",
-      "teams": [
-        "Chicago Cubs",
-        "Cincinnati Reds"
-      ],
-      "venue": "Great American Ball Park",
-      "game_datetime_utc": "2026-09-20T17:40:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Crow-Armstrong, Pete",
-          "player_id": 691718,
-          "team": "Chicago Cubs",
-          "opponent": "Cincinnati Reds",
-          "line": "",
-          "side": "PROJ 2.34",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 2.34,
-          "edge": null,
-          "confidence": 70,
-          "decision": "MODEL ONLY",
-          "batting_order": 1,
-          "reasons": [
-            "3/3 core signals",
-            "13.4% barrel rate",
-            "confirmed batting 1"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "De La Cruz, Elly",
-          "player_id": 682829,
-          "team": "Cincinnati Reds",
-          "opponent": "Chicago Cubs",
-          "line": "",
-          "side": "PROJ 0.85",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 0.85,
-          "edge": null,
-          "confidence": 71,
-          "decision": "MODEL ONLY",
-          "batting_order": 2,
-          "reasons": [
-            "3/3 core signals",
-            "16.3% barrel rate",
-            "confirmed batting 2"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "De La Cruz, Elly",
-          "player_id": 682829,
-          "team": "Cincinnati Reds",
-          "opponent": "Chicago Cubs",
-          "line": "",
-          "side": "PROJ 0.79",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 0.79,
-          "edge": null,
-          "confidence": 71,
-          "decision": "MODEL ONLY",
-          "batting_order": 2,
-          "reasons": [
-            "3/3 core signals",
-            "16.3% barrel rate",
-            "confirmed batting 2"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "David Peterson",
-          "player_id": "",
-          "team": "Chicago Cubs",
-          "opponent": "Cincinnati Reds",
-          "line": "",
-          "side": "PROJ 5.1",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 5.14,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "19.9% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
     {
       "game_pk": "823001",
       "teams": [
@@ -163,10 +54,10 @@
           "team": "Washington Nationals",
           "opponent": "St. Louis Cardinals",
           "line": "",
-          "side": "PROJ 0.81",
+          "side": "PROJ 0.80",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 0.81,
+          "projection": 0.8,
           "edge": null,
           "confidence": 69,
           "decision": "MODEL ONLY",
@@ -206,21 +97,21 @@
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Quinn Mathews",
+          "player": "Jake Irvin",
           "player_id": "",
-          "team": "St. Louis Cardinals",
-          "opponent": "Washington Nationals",
+          "team": "Washington Nationals",
+          "opponent": "St. Louis Cardinals",
           "line": "",
-          "side": "PROJ 5.1",
+          "side": "PROJ 4.6",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 5.08,
+          "projection": 4.62,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
           "batting_order": "",
           "reasons": [
-            "22.2% pitcher K rate",
+            "22.5% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
@@ -341,6 +232,115 @@
       "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
+      "game_pk": "824462",
+      "teams": [
+        "Chicago Cubs",
+        "Cincinnati Reds"
+      ],
+      "venue": "Great American Ball Park",
+      "game_datetime_utc": "2026-09-20T17:40:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Crow-Armstrong, Pete",
+          "player_id": 691718,
+          "team": "Chicago Cubs",
+          "opponent": "Cincinnati Reds",
+          "line": "",
+          "side": "PROJ 2.35",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 2.35,
+          "edge": null,
+          "confidence": 70,
+          "decision": "MODEL ONLY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "13.4% barrel rate",
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Crow-Armstrong, Pete",
+          "player_id": 691718,
+          "team": "Chicago Cubs",
+          "opponent": "Cincinnati Reds",
+          "line": "",
+          "side": "PROJ 0.87",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.87,
+          "edge": null,
+          "confidence": 70,
+          "decision": "MODEL ONLY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "13.4% barrel rate",
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Crow-Armstrong, Pete",
+          "player_id": 691718,
+          "team": "Chicago Cubs",
+          "opponent": "Cincinnati Reds",
+          "line": "",
+          "side": "PROJ 0.81",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.81,
+          "edge": null,
+          "confidence": 70,
+          "decision": "MODEL ONLY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "13.4% barrel rate",
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "David Peterson",
+          "player_id": "",
+          "team": "Chicago Cubs",
+          "opponent": "Cincinnati Reds",
+          "line": "",
+          "side": "PROJ 5.2",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 5.24,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "19.9% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+    },
+    {
       "game_pk": "825028",
       "teams": [
         "Arizona Diamondbacks",
@@ -357,10 +357,10 @@
           "team": "Arizona Diamondbacks",
           "opponent": "New York Yankees",
           "line": "",
-          "side": "PROJ 1.73",
+          "side": "PROJ 1.72",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 1.73,
+          "projection": 1.72,
           "edge": null,
           "confidence": 68,
           "decision": "MODEL ONLY",
@@ -543,6 +543,115 @@
           "batting_order": "",
           "reasons": [
             "19.6% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "824789",
+      "teams": [
+        "Baltimore Orioles",
+        "Milwaukee Brewers"
+      ],
+      "venue": "Oriole Park at Camden Yards",
+      "game_datetime_utc": "2026-09-20T23:20:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Alonso, Pete",
+          "player_id": 624413,
+          "team": "Baltimore Orioles",
+          "opponent": "Milwaukee Brewers",
+          "line": "",
+          "side": "PROJ 1.82",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 1.82,
+          "edge": null,
+          "confidence": 69,
+          "decision": "MODEL ONLY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "14.5% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Alonso, Pete",
+          "player_id": 624413,
+          "team": "Baltimore Orioles",
+          "opponent": "Milwaukee Brewers",
+          "line": "",
+          "side": "PROJ 0.75",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.75,
+          "edge": null,
+          "confidence": 69,
+          "decision": "MODEL ONLY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "14.5% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Bauers, Jake",
+          "player_id": 641343,
+          "team": "Milwaukee Brewers",
+          "opponent": "Baltimore Orioles",
+          "line": "",
+          "side": "PROJ 0.85",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.85,
+          "edge": null,
+          "confidence": 69,
+          "decision": "MODEL ONLY",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "14.0% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Jacob Misiorowski",
+          "player_id": "",
+          "team": "Milwaukee Brewers",
+          "opponent": "Baltimore Orioles",
+          "line": "",
+          "side": "PROJ 10.3",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 10.26,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "38.2% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
@@ -749,10 +858,10 @@
           "team": "Pittsburgh Pirates",
           "opponent": "Kansas City Royals",
           "line": "",
-          "side": "PROJ 5.1",
+          "side": "PROJ 5.3",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 5.09,
+          "projection": 5.28,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -967,10 +1076,10 @@
           "team": "Philadelphia Phillies",
           "opponent": "New York Mets",
           "line": "",
-          "side": "PROJ 5.8",
+          "side": "PROJ 6.2",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 5.79,
+          "projection": 6.16,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -985,7 +1094,7 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
     },
     {
       "game_pk": "824381",
@@ -1243,10 +1352,10 @@
           "team": "Toronto Blue Jays",
           "opponent": "Texas Rangers",
           "line": "",
-          "side": "PROJ 0.71",
+          "side": "PROJ 0.70",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 0.71,
+          "projection": 0.7,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -1289,10 +1398,10 @@
           "team": "Texas Rangers",
           "opponent": "Toronto Blue Jays",
           "line": "",
-          "side": "PROJ 6.6",
+          "side": "PROJ 6.7",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 6.64,
+          "projection": 6.71,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -1430,10 +1539,10 @@
           "team": "Tampa Bay Rays",
           "opponent": "Boston Red Sox",
           "line": "",
-          "side": "PROJ 1.94",
+          "side": "PROJ 1.93",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 1.94,
+          "projection": 1.93,
           "edge": null,
           "confidence": 68,
           "decision": "MODEL ONLY",
@@ -1454,10 +1563,10 @@
           "team": "Tampa Bay Rays",
           "opponent": "Boston Red Sox",
           "line": "",
-          "side": "PROJ 0.70",
+          "side": "PROJ 0.69",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 0.7,
+          "projection": 0.69,
           "edge": null,
           "confidence": 68,
           "decision": "MODEL ONLY",
@@ -1520,44 +1629,7 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
-    {
-      "game_pk": "824789",
-      "teams": [
-        "Baltimore Orioles",
-        "Milwaukee Brewers"
-      ],
-      "venue": "Oriole Park at Camden Yards",
-      "game_datetime_utc": "2026-09-20T23:20:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Jacob Misiorowski",
-          "player_id": "",
-          "team": "Milwaukee Brewers",
-          "opponent": "Baltimore Orioles",
-          "line": "",
-          "side": "PROJ 10.2",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 10.15,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "38.2% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
     }
   ],
   "rules": {
