@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-09-20T20:50:32.027170+00:00",
+  "generated_at_utc": "2026-09-20T22:27:52.873317+00:00",
   "slate_date": "2026-09-20",
   "model_version": "Player Props 1.1",
   "status": "ODDS UNAVAILABLE",
   "status_reason": "Sportsbook events matched, but no usable player-prop lines were returned",
   "sportsbook": {
     "status": "UNAVAILABLE",
-    "events_returned": 14,
-    "games_matched": 12,
+    "events_returned": 8,
+    "games_matched": 6,
     "verified_lines": 0,
     "play_legs": 0,
     "reason": "Sportsbook events matched, but no usable player-prop lines were returned"
@@ -120,116 +120,7 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
-    {
-      "game_pk": "824139",
-      "teams": [
-        "Atlanta Braves",
-        "Houston Astros"
-      ],
-      "venue": "Daikin Park",
-      "game_datetime_utc": "2026-09-20T18:10:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Alvarez, Yordan",
-          "player_id": 670541,
-          "team": "Houston Astros",
-          "opponent": "Atlanta Braves",
-          "line": "",
-          "side": "PROJ 2.27",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 2.27,
-          "edge": null,
-          "confidence": 70,
-          "decision": "MODEL ONLY",
-          "batting_order": 2,
-          "reasons": [
-            "3/3 core signals",
-            "16.2% barrel rate",
-            "confirmed batting 2"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Alvarez, Yordan",
-          "player_id": 670541,
-          "team": "Houston Astros",
-          "opponent": "Atlanta Braves",
-          "line": "",
-          "side": "PROJ 0.82",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 0.82,
-          "edge": null,
-          "confidence": 70,
-          "decision": "MODEL ONLY",
-          "batting_order": 2,
-          "reasons": [
-            "3/3 core signals",
-            "16.2% barrel rate",
-            "confirmed batting 2"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Alvarez, Yordan",
-          "player_id": 670541,
-          "team": "Houston Astros",
-          "opponent": "Atlanta Braves",
-          "line": "",
-          "side": "PROJ 0.85",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 0.85,
-          "edge": null,
-          "confidence": 70,
-          "decision": "MODEL ONLY",
-          "batting_order": 2,
-          "reasons": [
-            "3/3 core signals",
-            "16.2% barrel rate",
-            "confirmed batting 2"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Hunter Brown",
-          "player_id": "",
-          "team": "Houston Astros",
-          "opponent": "Atlanta Braves",
-          "line": "",
-          "side": "PROJ 6.0",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 6.02,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "27.1% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
     },
     {
       "game_pk": "824462",
@@ -272,10 +163,10 @@
           "team": "Chicago Cubs",
           "opponent": "Cincinnati Reds",
           "line": "",
-          "side": "PROJ 0.87",
+          "side": "PROJ 0.88",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 0.87,
+          "projection": 0.88,
           "edge": null,
           "confidence": 70,
           "decision": "MODEL ONLY",
@@ -341,6 +232,115 @@
       "status_reason": "No verified sportsbook event \u2014 showing model projections only"
     },
     {
+      "game_pk": "824139",
+      "teams": [
+        "Atlanta Braves",
+        "Houston Astros"
+      ],
+      "venue": "Daikin Park",
+      "game_datetime_utc": "2026-09-20T18:10:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Alvarez, Yordan",
+          "player_id": 670541,
+          "team": "Houston Astros",
+          "opponent": "Atlanta Braves",
+          "line": "",
+          "side": "PROJ 2.26",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 2.26,
+          "edge": null,
+          "confidence": 70,
+          "decision": "MODEL ONLY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "16.2% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Alvarez, Yordan",
+          "player_id": 670541,
+          "team": "Houston Astros",
+          "opponent": "Atlanta Braves",
+          "line": "",
+          "side": "PROJ 0.81",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.81,
+          "edge": null,
+          "confidence": 70,
+          "decision": "MODEL ONLY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "16.2% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Alvarez, Yordan",
+          "player_id": 670541,
+          "team": "Houston Astros",
+          "opponent": "Atlanta Braves",
+          "line": "",
+          "side": "PROJ 0.85",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.85,
+          "edge": null,
+          "confidence": 70,
+          "decision": "MODEL ONLY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "16.2% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Hunter Brown",
+          "player_id": "",
+          "team": "Houston Astros",
+          "opponent": "Atlanta Braves",
+          "line": "",
+          "side": "PROJ 6.0",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 6.02,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "27.1% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+    },
+    {
       "game_pk": "825028",
       "teams": [
         "Arizona Diamondbacks",
@@ -375,21 +375,22 @@
         {
           "category": "RUNS",
           "market": "batter_runs_scored",
-          "player": "Nootbaar, Lars",
-          "player_id": 663457,
+          "player": "Carroll, Corbin",
+          "player_id": 682998,
           "team": "Arizona Diamondbacks",
           "opponent": "New York Yankees",
           "line": "",
-          "side": "PROJ 0.79",
+          "side": "PROJ 0.66",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 0.79,
+          "projection": 0.66,
           "edge": null,
-          "confidence": 64,
+          "confidence": 68,
           "decision": "MODEL ONLY",
-          "batting_order": 1,
+          "batting_order": 5,
           "reasons": [
-            "confirmed batting 1"
+            "3/3 core signals",
+            "12.4% barrel rate"
           ],
           "locked_at_utc": "",
           "status_reason": "Sportsbook line unavailable \u2014 model projection only"
@@ -485,10 +486,10 @@
           "team": "Seattle Mariners",
           "opponent": "Colorado Rockies",
           "line": "",
-          "side": "PROJ 0.77",
+          "side": "PROJ 0.78",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 0.77,
+          "projection": 0.78,
           "edge": null,
           "confidence": 65,
           "decision": "MODEL ONLY",
@@ -533,10 +534,10 @@
           "team": "Seattle Mariners",
           "opponent": "Colorado Rockies",
           "line": "",
-          "side": "PROJ 4.3",
+          "side": "PROJ 4.7",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 4.33,
+          "projection": 4.69,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -551,7 +552,7 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
     },
     {
       "game_pk": "824789",
@@ -876,7 +877,7 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
     },
     {
       "game_pk": "823247",
@@ -967,10 +968,10 @@
           "team": "San Diego Padres",
           "opponent": "Miami Marlins",
           "line": "",
-          "side": "PROJ 4.7",
+          "side": "PROJ 4.9",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 4.71,
+          "projection": 4.86,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -1185,10 +1186,10 @@
           "team": "Cleveland Guardians",
           "opponent": "Athletics",
           "line": "",
-          "side": "PROJ 7.7",
+          "side": "PROJ 6.9",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 7.74,
+          "projection": 6.92,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -1203,7 +1204,7 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
     },
     {
       "game_pk": "823896",
@@ -1292,122 +1293,16 @@
           "team": "Los Angeles Dodgers",
           "opponent": "San Francisco Giants",
           "line": "",
-          "side": "PROJ 7.9",
+          "side": "PROJ 8.1",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 7.89,
+          "projection": 8.14,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
           "batting_order": "",
           "reasons": [
             "28.1% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
-    {
-      "game_pk": "822844",
-      "teams": [
-        "Texas Rangers",
-        "Toronto Blue Jays"
-      ],
-      "venue": "Globe Life Field",
-      "game_datetime_utc": "2026-09-20T18:35:00Z",
-      "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Okamoto, Kazuma",
-          "player_id": 672960,
-          "team": "Toronto Blue Jays",
-          "opponent": "Texas Rangers",
-          "line": "",
-          "side": "PROJ 1.76",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 1.76,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": 4,
-          "reasons": [
-            "13.5% barrel rate",
-            "confirmed batting 4"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Okamoto, Kazuma",
-          "player_id": 672960,
-          "team": "Toronto Blue Jays",
-          "opponent": "Texas Rangers",
-          "line": "",
-          "side": "PROJ 0.70",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 0.7,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": 4,
-          "reasons": [
-            "13.5% barrel rate",
-            "confirmed batting 4"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Okamoto, Kazuma",
-          "player_id": 672960,
-          "team": "Toronto Blue Jays",
-          "opponent": "Texas Rangers",
-          "line": "",
-          "side": "PROJ 0.84",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 0.84,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": 4,
-          "reasons": [
-            "13.5% barrel rate",
-            "confirmed batting 4"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Jacob deGrom",
-          "player_id": "",
-          "team": "Texas Rangers",
-          "opponent": "Toronto Blue Jays",
-          "line": "",
-          "side": "PROJ 6.7",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 6.71,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "31.2% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
@@ -1502,10 +1397,10 @@
           "team": "Minnesota Twins",
           "opponent": "Los Angeles Angels",
           "line": "",
-          "side": "PROJ 6.2",
+          "side": "PROJ 6.1",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 6.16,
+          "projection": 6.13,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
@@ -1521,6 +1416,112 @@
       "long_shots": [],
       "status": "MODEL ONLY",
       "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "822844",
+      "teams": [
+        "Texas Rangers",
+        "Toronto Blue Jays"
+      ],
+      "venue": "Globe Life Field",
+      "game_datetime_utc": "2026-09-20T18:35:00Z",
+      "props": [
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Okamoto, Kazuma",
+          "player_id": 672960,
+          "team": "Toronto Blue Jays",
+          "opponent": "Texas Rangers",
+          "line": "",
+          "side": "PROJ 1.73",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 1.73,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": 4,
+          "reasons": [
+            "13.5% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Okamoto, Kazuma",
+          "player_id": 672960,
+          "team": "Toronto Blue Jays",
+          "opponent": "Texas Rangers",
+          "line": "",
+          "side": "PROJ 0.68",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.68,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": 4,
+          "reasons": [
+            "13.5% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Okamoto, Kazuma",
+          "player_id": 672960,
+          "team": "Toronto Blue Jays",
+          "opponent": "Texas Rangers",
+          "line": "",
+          "side": "PROJ 0.84",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 0.84,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": 4,
+          "reasons": [
+            "13.5% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Jacob deGrom",
+          "player_id": "",
+          "team": "Texas Rangers",
+          "opponent": "Toronto Blue Jays",
+          "line": "",
+          "side": "PROJ 6.0",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 6.04,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "31.2% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
     },
     {
       "game_pk": "822922",
