@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-09-21T21:57:44.924863+00:00",
+  "generated_at_utc": "2026-09-21T23:16:39.033295+00:00",
   "slate_date": "2026-09-21",
   "model_version": "Player Props 1.1",
   "status": "ODDS UNAVAILABLE",
   "status_reason": "Sportsbook events matched, but no usable player-prop lines were returned",
   "sportsbook": {
     "status": "UNAVAILABLE",
-    "events_returned": 17,
+    "events_returned": 18,
     "games_matched": 3,
     "verified_lines": 0,
     "play_legs": 0,
@@ -221,7 +221,7 @@
           "side": "PROJ 5.5",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 5.46,
+          "projection": 5.54,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
