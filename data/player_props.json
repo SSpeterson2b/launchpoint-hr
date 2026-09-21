@@ -120,7 +120,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824462",
@@ -229,7 +230,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824139",
@@ -338,7 +340,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "825028",
@@ -444,7 +447,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824300",
@@ -552,7 +556,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824789",
@@ -661,7 +666,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824546",
@@ -768,7 +774,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823329",
@@ -877,7 +884,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823247",
@@ -986,7 +994,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823570",
@@ -1095,7 +1104,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "824381",
@@ -1204,7 +1214,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823896",
@@ -1311,7 +1322,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823975",
@@ -1415,7 +1427,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "822844",
@@ -1521,7 +1534,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "822922",
@@ -1630,7 +1644,8 @@
       ],
       "long_shots": [],
       "status": "MODEL ONLY",
-      "status_reason": "No verified sportsbook event \u2014 showing model projections only"
+      "status_reason": "No verified sportsbook event \u2014 showing model projections only",
+      "grading_status": "FINAL"
     }
   ],
   "rules": {
@@ -1638,5 +1653,6 @@
     "long_shots": "Maximum one per team",
     "missing_data": "MODEL ONLY until verified line is available",
     "disclaimer": "Model-only projections are not betting recommendations; no outcome is guaranteed."
-  }
+  },
+  "graded_at_utc": "2026-09-21T10:44:37.962339+00:00"
 }
