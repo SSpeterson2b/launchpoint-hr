@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-22T10:20:05.132664+00:00",
+  "generated_at_utc": "2026-09-22T11:01:01.563716+00:00",
   "slate_date": "2026-09-22",
   "model_version": "Player Props 2.0",
   "status": "LIVE",
@@ -43,7 +43,7 @@
             "27.2% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.128058+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.558210+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -81,7 +81,7 @@
             "25.1% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.128398+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.558563+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -119,7 +119,7 @@
             "20.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.128764+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.558893+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -157,7 +157,7 @@
             "17.1% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.129092+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.559256+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -195,7 +195,7 @@
             "29.5% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.129406+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.559582+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -233,7 +233,7 @@
             "23.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.129772+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.559956+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -271,7 +271,7 @@
             "27.5% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.130107+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.560310+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -309,7 +309,7 @@
             "16.0% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.130371+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.560595+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -347,7 +347,7 @@
             "28.7% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.130683+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.560941+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -385,7 +385,7 @@
             "22.3% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.131055+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.561268+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -423,7 +423,7 @@
             "16.7% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.131374+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.561592+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -461,7 +461,7 @@
             "25.3% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.131682+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.561926+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -499,7 +499,7 @@
             "23.5% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.132021+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.562321+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -537,7 +537,7 @@
             "20.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.132333+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.563006+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -575,7 +575,7 @@
             "26.2% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-22T10:20:05.132652+00:00",
+          "locked_at_utc": "2026-09-22T11:01:01.563684+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
