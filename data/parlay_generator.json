@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-22T20:35:02.519391+00:00",
+  "generated_at_utc": "2026-09-22T20:58:34.022890+00:00",
   "slate_date": "2026-09-22",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -53,7 +53,7 @@
           "type": "HR",
           "label": "Wood, James",
           "detail": "Washington Nationals HR",
-          "score": 69.95,
+          "score": 69.96,
           "game_pk": "824222"
         }
       ]
@@ -73,14 +73,14 @@
           "type": "HR",
           "label": "Wood, James",
           "detail": "Washington Nationals HR",
-          "score": 69.95,
+          "score": 69.96,
           "game_pk": "824222"
         },
         {
           "type": "HR",
           "label": "De La Cruz, Elly",
           "detail": "Cincinnati Reds HR",
-          "score": 68.92,
+          "score": 68.93,
           "game_pk": "824867"
         },
         {
@@ -100,14 +100,14 @@
           "type": "HR",
           "label": "Wood, James",
           "detail": "Washington Nationals HR",
-          "score": 69.95,
+          "score": 69.96,
           "game_pk": "824222"
         },
         {
           "type": "HR",
           "label": "De La Cruz, Elly",
           "detail": "Cincinnati Reds HR",
-          "score": 68.92,
+          "score": 68.93,
           "game_pk": "824867"
         },
         {
