@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-22T12:47:19.534071+00:00",
+  "generated_at_utc": "2026-09-22T17:05:50.417321+00:00",
   "slate_date": "2026-09-22",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -10,17 +10,17 @@
       "legs": [
         {
           "type": "STRIKEOUTS",
+          "label": "Shota Imanaga",
+          "detail": "5+",
+          "score": 69.6,
+          "game_pk": "824624"
+        },
+        {
+          "type": "STRIKEOUTS",
           "label": "Jared Jones",
           "detail": "5+",
           "score": 69.2,
           "game_pk": "823328"
-        },
-        {
-          "type": "STRIKEOUTS",
-          "label": "Parker Messick",
-          "detail": "5+",
-          "score": 68.4,
-          "game_pk": "824709"
         },
         {
           "type": "WINNER",
@@ -37,10 +37,10 @@
       "legs": [
         {
           "type": "STRIKEOUTS",
-          "label": "Jared Jones",
+          "label": "Shota Imanaga",
           "detail": "5+",
-          "score": 69.2,
-          "game_pk": "823328"
+          "score": 69.6,
+          "game_pk": "824624"
         },
         {
           "type": "WINNER",
@@ -64,10 +64,10 @@
         },
         {
           "type": "STRIKEOUTS",
-          "label": "Jared Jones",
+          "label": "Shota Imanaga",
           "detail": "5+",
-          "score": 69.2,
-          "game_pk": "823328"
+          "score": 69.6,
+          "game_pk": "824624"
         }
       ]
     }
