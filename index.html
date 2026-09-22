@@ -4182,7 +4182,7 @@ function render(){
         <button class="game-head" data-key="${esc(g.key)}">
           <span>
             <b class="game-matchup-title"><span>${teamLogo(teams[0])}${esc(teams[0])}</span><i>VS</i><span>${esc(teams[1])}${teamLogo(teams[1])}</span></b>
-            <small class="game-subline"><span>${esc(formatGameTime(p))}${displayVenue(p.venue)?` - ${esc(displayVenue(p.venue))}`:""}</span><em>${confirmed?"LINEUPS CONFIRMED ✓":"LINEUPS PENDING"}</em></small>
+            <small class="game-subline"><span>${p.doubleheader_game?`GAME ${esc(p.doubleheader_game)} · `:""}${esc(formatGameTime(p))}${displayVenue(p.venue)?` - ${esc(displayVenue(p.venue))}`:""}</span><em>${confirmed?"LINEUPS CONFIRMED ✓":"LINEUPS PENDING"}</em></small>
           </span>
           <span>${expanded?"^":"V"}</span>
         </button>
@@ -4522,7 +4522,7 @@ document.querySelector(".more-close").onclick=()=>document.querySelector("#more-
 document.querySelector(".results-close").onclick=()=>document.querySelector("#results-panel").hidden=true;
 Promise.all([fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()),fetch("data/game_status.json?ts="+Date.now()).then(r=>r.ok?r.json():{games:[]}).catch(()=>({games:[]}))]).then(([d,sd])=>{
   const statusByGame={};(sd.games||[]).forEach(s=>statusByGame[String(s.game_pk)]=s);
-  allPlayers=(d.players||[]).map(p=>{const s=statusByGame[String(p.game_pk)];if(!s)return p;const team=String(p.team||"").trim().toLowerCase();const away=String(s.away_team||"").trim().toLowerCase();const teamConfirmed=team===away?!!s.away_lineup_confirmed:!!s.home_lineup_confirmed;return {...p,game_datetime_utc:s.game_datetime_utc||p.game_datetime_utc,game_status:s.game_status||p.game_status,lineup_status:teamConfirmed&&String(p.lineup_status||"").toUpperCase()==="PENDING"?"CONFIRMED":p.lineup_status,lineup_confirmed:teamConfirmed?1:p.lineup_confirmed};});
+  allPlayers=(d.players||[]).map(p=>{const s=statusByGame[String(p.game_pk)];if(!s)return p;const team=String(p.team||"").trim().toLowerCase();const away=String(s.away_team||"").trim().toLowerCase();const teamConfirmed=team===away?!!s.away_lineup_confirmed:!!s.home_lineup_confirmed;return {...p,game_datetime_utc:s.game_datetime_utc||p.game_datetime_utc,game_status:s.game_status||p.game_status,doubleheader_game:s.doubleheader_game||p.doubleheader_game||"",lineup_status:teamConfirmed&&String(p.lineup_status||"").toUpperCase()==="PENDING"?"CONFIRMED":p.lineup_status,lineup_confirmed:teamConfirmed?1:p.lineup_confirmed};});
   modelVersion=d.model_version||"HR Edge 3.3";
   renderLaunch5(allPlayers);
   updateDashboardUI();
