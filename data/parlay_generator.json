@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-22T18:48:42.630656+00:00",
+  "generated_at_utc": "2026-09-22T19:11:05.266064+00:00",
   "slate_date": "2026-09-22",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -9,18 +9,18 @@
       "title": "Foundation Card",
       "legs": [
         {
-          "type": "STRIKEOUTS",
-          "label": "Shota Imanaga",
-          "detail": "5+",
-          "score": 69.6,
-          "game_pk": "824624"
+          "type": "HITS",
+          "label": "Wood, James",
+          "detail": "1+",
+          "score": 70.8,
+          "game_pk": "824222"
         },
         {
-          "type": "TOTAL BASES",
-          "label": "Bernal, Leo",
-          "detail": "2+",
-          "score": 69.0,
-          "game_pk": "823328"
+          "type": "RUNS",
+          "label": "Wood, James",
+          "detail": "1+",
+          "score": 70.0,
+          "game_pk": "824222"
         },
         {
           "type": "WINNER",
@@ -36,11 +36,11 @@
       "title": "Mixed Edge Card",
       "legs": [
         {
-          "type": "STRIKEOUTS",
-          "label": "Shota Imanaga",
-          "detail": "5+",
-          "score": 69.6,
-          "game_pk": "824624"
+          "type": "HITS",
+          "label": "Wood, James",
+          "detail": "1+",
+          "score": 70.8,
+          "game_pk": "824222"
         },
         {
           "type": "WINNER",
@@ -51,10 +51,10 @@
         },
         {
           "type": "HR",
-          "label": "Bernal, Leo",
-          "detail": "St. Louis Cardinals HR",
-          "score": 63.23,
-          "game_pk": "823328"
+          "label": "Wood, James",
+          "detail": "Washington Nationals HR",
+          "score": 69.96,
+          "game_pk": "824222"
         }
       ]
     },
@@ -71,24 +71,24 @@
         },
         {
           "type": "HR",
-          "label": "Bernal, Leo",
-          "detail": "St. Louis Cardinals HR",
-          "score": 63.23,
-          "game_pk": "823328"
+          "label": "Wood, James",
+          "detail": "Washington Nationals HR",
+          "score": 69.96,
+          "game_pk": "824222"
         },
         {
           "type": "HR",
-          "label": "Walker, Jordan",
-          "detail": "St. Louis Cardinals HR",
-          "score": 60.8,
-          "game_pk": "823328"
+          "label": "Schwarber, Kyle",
+          "detail": "Philadelphia Phillies HR",
+          "score": 64.83,
+          "game_pk": "823412"
         },
         {
-          "type": "STRIKEOUTS",
-          "label": "Shota Imanaga",
-          "detail": "5+",
-          "score": 69.6,
-          "game_pk": "824624"
+          "type": "HITS",
+          "label": "Wood, James",
+          "detail": "1+",
+          "score": 70.8,
+          "game_pk": "824222"
         }
       ]
     },
@@ -98,24 +98,24 @@
       "legs": [
         {
           "type": "HR",
-          "label": "Bernal, Leo",
-          "detail": "St. Louis Cardinals HR",
-          "score": 63.23,
-          "game_pk": "823328"
+          "label": "Wood, James",
+          "detail": "Washington Nationals HR",
+          "score": 69.96,
+          "game_pk": "824222"
         },
         {
           "type": "HR",
-          "label": "Walker, Jordan",
-          "detail": "St. Louis Cardinals HR",
-          "score": 60.8,
-          "game_pk": "823328"
+          "label": "Schwarber, Kyle",
+          "detail": "Philadelphia Phillies HR",
+          "score": 64.83,
+          "game_pk": "823412"
         },
         {
-          "type": "STRIKEOUTS",
-          "label": "Shota Imanaga",
-          "detail": "5+",
-          "score": 69.6,
-          "game_pk": "824624"
+          "type": "HITS",
+          "label": "Wood, James",
+          "detail": "1+",
+          "score": 70.8,
+          "game_pk": "824222"
         }
       ]
     }
