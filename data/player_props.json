@@ -1,130 +1,45 @@
 {
-  "generated_at_utc": "2026-09-21T23:16:39.033295+00:00",
-  "slate_date": "2026-09-21",
+  "generated_at_utc": "2026-09-22T00:47:13.027683+00:00",
+  "slate_date": "2026-09-22",
   "model_version": "Player Props 1.1",
   "status": "ODDS UNAVAILABLE",
   "status_reason": "Sportsbook events matched, but no usable player-prop lines were returned",
   "sportsbook": {
     "status": "UNAVAILABLE",
-    "events_returned": 18,
-    "games_matched": 3,
+    "events_returned": 19,
+    "games_matched": 15,
     "verified_lines": 0,
     "play_legs": 0,
     "reason": "Sportsbook events matched, but no usable player-prop lines were returned"
   },
   "games": [
     {
-      "game_pk": "824221",
+      "game_pk": "823089",
       "teams": [
-        "Detroit Tigers",
-        "Washington Nationals"
+        "Houston Astros",
+        "Seattle Mariners"
       ],
-      "venue": "Comerica Park",
-      "game_datetime_utc": "2026-09-21T22:40:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
-    {
-      "game_pk": "824787",
-      "teams": [
-        "Baltimore Orioles",
-        "Toronto Blue Jays"
-      ],
-      "venue": "Oriole Park at Camden Yards",
-      "game_datetime_utc": "2026-09-21T22:35:00Z",
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-23T01:40:00Z",
       "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Alonso, Pete",
-          "player_id": 624413,
-          "team": "Baltimore Orioles",
-          "opponent": "Toronto Blue Jays",
-          "line": "",
-          "side": "PROJ 1.84",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 1.84,
-          "edge": null,
-          "confidence": 69,
-          "decision": "MODEL ONLY",
-          "batting_order": 2,
-          "reasons": [
-            "3/3 core signals",
-            "14.3% barrel rate",
-            "confirmed batting 2"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Alonso, Pete",
-          "player_id": 624413,
-          "team": "Baltimore Orioles",
-          "opponent": "Toronto Blue Jays",
-          "line": "",
-          "side": "PROJ 0.75",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 0.75,
-          "edge": null,
-          "confidence": 69,
-          "decision": "MODEL ONLY",
-          "batting_order": 2,
-          "reasons": [
-            "3/3 core signals",
-            "14.3% barrel rate",
-            "confirmed batting 2"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Alonso, Pete",
-          "player_id": 624413,
-          "team": "Baltimore Orioles",
-          "opponent": "Toronto Blue Jays",
-          "line": "",
-          "side": "PROJ 0.78",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 0.78,
-          "edge": null,
-          "confidence": 69,
-          "decision": "MODEL ONLY",
-          "batting_order": 2,
-          "reasons": [
-            "3/3 core signals",
-            "14.3% barrel rate",
-            "confirmed batting 2"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Trey Yesavage",
+          "player": "Logan Gilbert",
           "player_id": "",
-          "team": "Toronto Blue Jays",
-          "opponent": "Baltimore Orioles",
+          "team": "Seattle Mariners",
+          "opponent": "Houston Astros",
           "line": "",
-          "side": "PROJ 6.6",
+          "side": "PROJ 6.2",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 6.62,
+          "projection": 6.22,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
           "batting_order": "",
           "reasons": [
-            "23.6% pitcher K rate",
+            "27.2% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
@@ -136,98 +51,513 @@
       "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
-      "game_pk": "823169",
+      "game_pk": "824222",
       "teams": [
-        "Minnesota Twins",
-        "San Francisco Giants"
+        "Detroit Tigers",
+        "Washington Nationals"
       ],
-      "venue": "Oracle Park",
-      "game_datetime_utc": "2026-09-22T01:45:00Z",
+      "venue": "Comerica Park",
+      "game_datetime_utc": "2026-09-22T22:40:00Z",
       "props": [
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Clemens, Kody",
-          "player_id": 665019,
-          "team": "Minnesota Twins",
-          "opponent": "San Francisco Giants",
-          "line": "",
-          "side": "PROJ 1.64",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 1.64,
-          "edge": null,
-          "confidence": 54,
-          "decision": "MODEL ONLY",
-          "batting_order": 4,
-          "reasons": [
-            "confirmed batting 4"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Clemens, Kody",
-          "player_id": 665019,
-          "team": "Minnesota Twins",
-          "opponent": "San Francisco Giants",
-          "line": "",
-          "side": "PROJ 0.57",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 0.57,
-          "edge": null,
-          "confidence": 54,
-          "decision": "MODEL ONLY",
-          "batting_order": 4,
-          "reasons": [
-            "confirmed batting 4"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Clemens, Kody",
-          "player_id": 665019,
-          "team": "Minnesota Twins",
-          "opponent": "San Francisco Giants",
-          "line": "",
-          "side": "PROJ 0.81",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 0.81,
-          "edge": null,
-          "confidence": 54,
-          "decision": "MODEL ONLY",
-          "batting_order": 4,
-          "reasons": [
-            "confirmed batting 4"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Zebby Matthews",
+          "player": "Drew Anderson",
           "player_id": "",
-          "team": "Minnesota Twins",
-          "opponent": "San Francisco Giants",
+          "team": "Detroit Tigers",
+          "opponent": "Washington Nationals",
           "line": "",
-          "side": "PROJ 5.5",
+          "side": "PROJ 5.7",
           "odds": null,
           "book": "MODEL ONLY",
-          "projection": 5.54,
+          "projection": 5.73,
           "edge": null,
           "confidence": 60,
           "decision": "MODEL ONLY",
           "batting_order": "",
           "reasons": [
-            "20.5% pitcher K rate",
+            "25.1% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "824867",
+      "teams": [
+        "Atlanta Braves",
+        "Cincinnati Reds"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-22T23:15:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "JR Ritchie",
+          "player_id": "",
+          "team": "Atlanta Braves",
+          "opponent": "Cincinnati Reds",
+          "line": "",
+          "side": "PROJ 5.5",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 5.51,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "20.9% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "824785",
+      "teams": [
+        "Baltimore Orioles",
+        "Toronto Blue Jays"
+      ],
+      "venue": "Oriole Park at Camden Yards",
+      "game_datetime_utc": "2026-09-22T22:35:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Max Scherzer",
+          "player_id": "",
+          "team": "Toronto Blue Jays",
+          "opponent": "Baltimore Orioles",
+          "line": "",
+          "side": "PROJ 4.5",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 4.54,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "17.1% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "823412",
+      "teams": [
+        "Milwaukee Brewers",
+        "Philadelphia Phillies"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-22T22:40:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Zack Wheeler",
+          "player_id": "",
+          "team": "Philadelphia Phillies",
+          "opponent": "Milwaukee Brewers",
+          "line": "",
+          "side": "PROJ 6.3",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 6.34,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "29.5% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "823166",
+      "teams": [
+        "Minnesota Twins",
+        "San Francisco Giants"
+      ],
+      "venue": "Oracle Park",
+      "game_datetime_utc": "2026-09-23T01:45:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Taj Bradley",
+          "player_id": "",
+          "team": "Minnesota Twins",
+          "opponent": "San Francisco Giants",
+          "line": "",
+          "side": "PROJ 7.4",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 7.43,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "27.5% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "824624",
+      "teams": [
+        "Chicago Cubs",
+        "Miami Marlins"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-22T23:40:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Janson Junk",
+          "player_id": "",
+          "team": "Miami Marlins",
+          "opponent": "Chicago Cubs",
+          "line": "",
+          "side": "PROJ 3.6",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 3.56,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "16.0% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "822840",
+      "teams": [
+        "New York Mets",
+        "Texas Rangers"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-23T00:05:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "MacKenzie Gore",
+          "player_id": "",
+          "team": "Texas Rangers",
+          "opponent": "New York Mets",
+          "line": "",
+          "side": "PROJ 6.3",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 6.33,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "23.9% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "823328",
+      "teams": [
+        "Pittsburgh Pirates",
+        "St. Louis Cardinals"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-22T22:40:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Jared Jones",
+          "player_id": "",
+          "team": "Pittsburgh Pirates",
+          "opponent": "St. Louis Cardinals",
+          "line": "",
+          "side": "PROJ 5.9",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 5.92,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "28.7% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "824953",
+      "teams": [
+        "Athletics",
+        "Los Angeles Angels"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-23T01:40:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Yusei Kikuchi",
+          "player_id": "",
+          "team": "Los Angeles Angels",
+          "opponent": "Athletics",
+          "line": "",
+          "side": "PROJ 5.1",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 5.1,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "22.3% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "824061",
+      "teams": [
+        "Chicago White Sox",
+        "Kansas City Royals"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-22T23:40:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Daniel Lynch IV",
+          "player_id": "",
+          "team": "Kansas City Royals",
+          "opponent": "Chicago White Sox",
+          "line": "",
+          "side": "PROJ 4.4",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 4.4,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "16.7% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "823494",
+      "teams": [
+        "New York Yankees",
+        "Tampa Bay Rays"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-22T23:05:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Drew Rasmussen",
+          "player_id": "",
+          "team": "Tampa Bay Rays",
+          "opponent": "New York Yankees",
+          "line": "",
+          "side": "PROJ 6.3",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 6.27,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "25.3% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "824302",
+      "teams": [
+        "Arizona Diamondbacks",
+        "Colorado Rockies"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-23T00:40:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Michael Soroka",
+          "player_id": "",
+          "team": "Arizona Diamondbacks",
+          "opponent": "Colorado Rockies",
+          "line": "",
+          "side": "PROJ 5.8",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 5.79,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "23.5% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "823897",
+      "teams": [
+        "Los Angeles Dodgers",
+        "San Diego Padres"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-23T02:10:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Michael King",
+          "player_id": "",
+          "team": "San Diego Padres",
+          "opponent": "Los Angeles Dodgers",
+          "line": "",
+          "side": "PROJ 4.1",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 4.11,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "20.9% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "824709",
+      "teams": [
+        "Boston Red Sox",
+        "Cleveland Guardians"
+      ],
+      "venue": "Unknown",
+      "game_datetime_utc": "2026-09-22T22:45:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Parker Messick",
+          "player_id": "",
+          "team": "Cleveland Guardians",
+          "opponent": "Boston Red Sox",
+          "line": "",
+          "side": "PROJ 5.8",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 5.84,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "26.2% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
