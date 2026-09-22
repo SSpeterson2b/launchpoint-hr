@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-22T18:47:47.073497+00:00",
+  "generated_at_utc": "2026-09-22T19:07:23.268258+00:00",
   "games": [
     {
       "game_pk": "823543",
@@ -8,9 +8,10 @@
       "game_status": "In Progress",
       "away_team": "Tampa Bay Rays",
       "home_team": "New York Yankees",
-      "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "away_lineup_confirmed": true,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true,
+      "doubleheader_game": 1
     },
     {
       "game_pk": "823494",
@@ -21,18 +22,20 @@
       "home_team": "New York Yankees",
       "away_lineup_confirmed": false,
       "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "lineups_confirmed": false,
+      "doubleheader_game": 2
     },
     {
       "game_pk": "824222",
       "game_date": "2026-09-22",
       "game_datetime_utc": "2026-09-22T22:40:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Washington Nationals",
       "home_team": "Detroit Tigers",
-      "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "away_lineup_confirmed": true,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true,
+      "doubleheader_game": ""
     },
     {
       "game_pk": "823328",
@@ -43,18 +46,20 @@
       "home_team": "Pittsburgh Pirates",
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
-      "lineups_confirmed": true
+      "lineups_confirmed": true,
+      "doubleheader_game": ""
     },
     {
       "game_pk": "823412",
       "game_date": "2026-09-22",
       "game_datetime_utc": "2026-09-22T22:40:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Milwaukee Brewers",
       "home_team": "Philadelphia Phillies",
       "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     },
     {
       "game_pk": "824709",
@@ -65,7 +70,8 @@
       "home_team": "Boston Red Sox",
       "away_lineup_confirmed": false,
       "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     },
     {
       "game_pk": "824867",
@@ -76,18 +82,20 @@
       "home_team": "Atlanta Braves",
       "away_lineup_confirmed": false,
       "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     },
     {
       "game_pk": "824061",
       "game_date": "2026-09-22",
       "game_datetime_utc": "2026-09-22T23:40:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Chicago White Sox",
       "home_team": "Kansas City Royals",
       "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     },
     {
       "game_pk": "824624",
@@ -98,7 +106,8 @@
       "home_team": "Chicago Cubs",
       "away_lineup_confirmed": false,
       "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     },
     {
       "game_pk": "822840",
@@ -109,7 +118,8 @@
       "home_team": "Texas Rangers",
       "away_lineup_confirmed": false,
       "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     },
     {
       "game_pk": "824302",
@@ -120,7 +130,8 @@
       "home_team": "Colorado Rockies",
       "away_lineup_confirmed": false,
       "home_lineup_confirmed": true,
-      "lineups_confirmed": false
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     },
     {
       "game_pk": "824953",
@@ -131,7 +142,8 @@
       "home_team": "Athletics",
       "away_lineup_confirmed": false,
       "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     },
     {
       "game_pk": "823089",
@@ -142,7 +154,8 @@
       "home_team": "Seattle Mariners",
       "away_lineup_confirmed": false,
       "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     },
     {
       "game_pk": "823166",
@@ -153,7 +166,8 @@
       "home_team": "San Francisco Giants",
       "away_lineup_confirmed": false,
       "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     },
     {
       "game_pk": "823897",
@@ -164,7 +178,8 @@
       "home_team": "Los Angeles Dodgers",
       "away_lineup_confirmed": false,
       "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     },
     {
       "game_pk": "824785",
@@ -175,7 +190,8 @@
       "home_team": "Baltimore Orioles",
       "away_lineup_confirmed": false,
       "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     }
   ]
 }
