@@ -1,16 +1,16 @@
 {
-  "generated_at_utc": "2026-09-22T08:37:36.549541+00:00",
+  "generated_at_utc": "2026-09-22T10:20:05.132664+00:00",
   "slate_date": "2026-09-22",
-  "model_version": "Player Props 1.1",
-  "status": "ODDS UNAVAILABLE",
-  "status_reason": "Sportsbook events matched, but no usable player-prop lines were returned",
+  "model_version": "Player Props 2.0",
+  "status": "LIVE",
+  "status_reason": "LaunchPoint model targets \u2014 sportsbook odds not required",
   "sportsbook": {
-    "status": "UNAVAILABLE",
-    "events_returned": 16,
-    "games_matched": 15,
+    "status": "NOT REQUIRED",
+    "events_returned": 0,
+    "games_matched": 0,
     "verified_lines": 0,
     "play_legs": 0,
-    "reason": "Sportsbook events matched, but no usable player-prop lines were returned"
+    "reason": "Sportsbook feed is optional and not used for model targets"
   },
   "games": [
     {
@@ -29,26 +29,27 @@
           "player_id": "",
           "team": "Seattle Mariners",
           "opponent": "Houston Astros",
-          "line": "",
-          "side": "PROJ 6.2",
+          "line": 6,
+          "target": 6,
+          "side": "6+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 6.22,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "27.2% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.128058+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "824222",
@@ -66,26 +67,27 @@
           "player_id": "",
           "team": "Detroit Tigers",
           "opponent": "Washington Nationals",
-          "line": "",
-          "side": "PROJ 5.7",
+          "line": 5,
+          "target": 5,
+          "side": "5+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 5.73,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "25.1% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.128398+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "824867",
@@ -103,26 +105,27 @@
           "player_id": "",
           "team": "Atlanta Braves",
           "opponent": "Cincinnati Reds",
-          "line": "",
-          "side": "PROJ 5.5",
+          "line": 5,
+          "target": 5,
+          "side": "5+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 5.51,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "20.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.128764+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "824785",
@@ -140,26 +143,27 @@
           "player_id": "",
           "team": "Toronto Blue Jays",
           "opponent": "Baltimore Orioles",
-          "line": "",
-          "side": "PROJ 4.5",
+          "line": 4,
+          "target": 4,
+          "side": "4+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 4.54,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "17.1% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.129092+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "823412",
@@ -177,26 +181,27 @@
           "player_id": "",
           "team": "Philadelphia Phillies",
           "opponent": "Milwaukee Brewers",
-          "line": "",
-          "side": "PROJ 6.3",
+          "line": 6,
+          "target": 6,
+          "side": "6+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 6.34,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "29.5% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.129406+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "822840",
@@ -214,26 +219,27 @@
           "player_id": "",
           "team": "Texas Rangers",
           "opponent": "New York Mets",
-          "line": "",
-          "side": "PROJ 6.3",
+          "line": 6,
+          "target": 6,
+          "side": "6+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 6.33,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "23.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.129772+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "823166",
@@ -251,26 +257,27 @@
           "player_id": "",
           "team": "Minnesota Twins",
           "opponent": "San Francisco Giants",
-          "line": "",
-          "side": "PROJ 7.4",
+          "line": 7,
+          "target": 7,
+          "side": "7+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 7.43,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "27.5% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.130107+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "824624",
@@ -288,26 +295,27 @@
           "player_id": "",
           "team": "Miami Marlins",
           "opponent": "Chicago Cubs",
-          "line": "",
-          "side": "PROJ 3.6",
+          "line": 3,
+          "target": 3,
+          "side": "3+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 3.56,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "16.0% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.130371+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "823328",
@@ -325,26 +333,27 @@
           "player_id": "",
           "team": "Pittsburgh Pirates",
           "opponent": "St. Louis Cardinals",
-          "line": "",
-          "side": "PROJ 5.9",
+          "line": 5,
+          "target": 5,
+          "side": "5+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 5.92,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "28.7% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.130683+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "824953",
@@ -362,26 +371,27 @@
           "player_id": "",
           "team": "Los Angeles Angels",
           "opponent": "Athletics",
-          "line": "",
-          "side": "PROJ 5.1",
+          "line": 5,
+          "target": 5,
+          "side": "5+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 5.1,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "22.3% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.131055+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "824061",
@@ -399,26 +409,27 @@
           "player_id": "",
           "team": "Kansas City Royals",
           "opponent": "Chicago White Sox",
-          "line": "",
-          "side": "PROJ 4.4",
+          "line": 4,
+          "target": 4,
+          "side": "4+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 4.4,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "16.7% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.131374+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "823494",
@@ -436,26 +447,27 @@
           "player_id": "",
           "team": "Tampa Bay Rays",
           "opponent": "New York Yankees",
-          "line": "",
-          "side": "PROJ 6.3",
+          "line": 6,
+          "target": 6,
+          "side": "6+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 6.27,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "25.3% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.131682+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "824302",
@@ -473,26 +485,27 @@
           "player_id": "",
           "team": "Arizona Diamondbacks",
           "opponent": "Colorado Rockies",
-          "line": "",
-          "side": "PROJ 5.8",
+          "line": 5,
+          "target": 5,
+          "side": "5+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 5.79,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "23.5% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.132021+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "823897",
@@ -510,26 +523,27 @@
           "player_id": "",
           "team": "San Diego Padres",
           "opponent": "Los Angeles Dodgers",
-          "line": "",
-          "side": "PROJ 4.1",
+          "line": 4,
+          "target": 4,
+          "side": "4+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 4.11,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "20.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.132333+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "824709",
@@ -547,32 +561,33 @@
           "player_id": "",
           "team": "Cleveland Guardians",
           "opponent": "Boston Red Sox",
-          "line": "",
-          "side": "PROJ 5.8",
+          "line": 5,
+          "target": 5,
+          "side": "5+",
           "odds": null,
-          "book": "MODEL ONLY",
+          "book": "LAUNCHPOINT",
           "projection": 5.84,
           "edge": null,
           "confidence": 60,
-          "decision": "MODEL ONLY",
+          "decision": "PLAY",
           "batting_order": "",
           "reasons": [
             "26.2% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+          "locked_at_utc": "2026-09-22T10:20:05.132652+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     }
   ],
   "rules": {
-    "main": "One best candidate per category per game",
-    "long_shots": "Maximum one per team",
-    "missing_data": "MODEL ONLY until verified line is available",
-    "disclaimer": "Model-only projections are not betting recommendations; no outcome is guaranteed."
+    "main": "One best LaunchPoint model target per category per game",
+    "long_shots": "Reserved for future model-only long-shot rules",
+    "missing_data": "DATA HOLD when required model inputs are unavailable",
+    "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
   }
 }
