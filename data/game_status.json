@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-22T20:54:54.089501+00:00",
+  "generated_at_utc": "2026-09-22T21:15:39.343497+00:00",
   "games": [
     {
       "game_pk": "823543",
@@ -104,9 +104,9 @@
       "game_status": "Pre-Game",
       "away_team": "Miami Marlins",
       "home_team": "Chicago Cubs",
-      "away_lineup_confirmed": false,
+      "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
-      "lineups_confirmed": false,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
