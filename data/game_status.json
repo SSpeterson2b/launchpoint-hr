@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-22T19:07:23.268258+00:00",
+  "generated_at_utc": "2026-09-22T19:45:19.996753+00:00",
   "games": [
     {
       "game_pk": "823543",
       "game_date": "2026-09-22",
       "game_datetime_utc": "2026-09-22T17:05:00Z",
-      "game_status": "In Progress",
+      "game_status": "Final",
       "away_team": "Tampa Bay Rays",
       "home_team": "New York Yankees",
       "away_lineup_confirmed": true,
@@ -56,33 +56,33 @@
       "game_status": "Pre-Game",
       "away_team": "Milwaukee Brewers",
       "home_team": "Philadelphia Phillies",
-      "away_lineup_confirmed": false,
+      "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
-      "lineups_confirmed": false,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
       "game_pk": "824709",
       "game_date": "2026-09-22",
       "game_datetime_utc": "2026-09-22T22:45:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Cleveland Guardians",
       "home_team": "Boston Red Sox",
-      "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false,
+      "away_lineup_confirmed": true,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
       "game_pk": "824867",
       "game_date": "2026-09-22",
       "game_datetime_utc": "2026-09-22T23:15:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Cincinnati Reds",
       "home_team": "Atlanta Braves",
-      "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false,
+      "away_lineup_confirmed": true,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
@@ -128,9 +128,9 @@
       "game_status": "Pre-Game",
       "away_team": "Arizona Diamondbacks",
       "home_team": "Colorado Rockies",
-      "away_lineup_confirmed": false,
+      "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
-      "lineups_confirmed": false,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
