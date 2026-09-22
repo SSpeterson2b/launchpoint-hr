@@ -4518,8 +4518,9 @@ document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
 });
 document.querySelector(".more-close").onclick=()=>document.querySelector("#more-panel").hidden=true;updateMorePanel();
 document.querySelector(".results-close").onclick=()=>document.querySelector("#results-panel").hidden=true;
-fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()).then(d=>{
-  allPlayers=d.players||[];
+Promise.all([fetch("data/todays_top_hr_picks.json?ts="+Date.now()).then(r=>r.json()),fetch("data/game_status.json?ts="+Date.now()).then(r=>r.ok?r.json():{games:[]}).catch(()=>({games:[]}))]).then(([d,sd])=>{
+  const statusByGame={};(sd.games||[]).forEach(s=>statusByGame[String(s.game_pk)]=s);
+  allPlayers=(d.players||[]).map(p=>{const s=statusByGame[String(p.game_pk)];if(!s)return p;return {...p,game_datetime_utc:s.game_datetime_utc||p.game_datetime_utc,game_status:s.game_status||p.game_status,lineup_status:s.lineups_confirmed&&String(p.lineup_status||"").toUpperCase()==="PENDING"?"CONFIRMED":p.lineup_status};});
   modelVersion=d.model_version||"HR Edge 3.3";
   renderLaunch5(allPlayers);
   updateDashboardUI();
