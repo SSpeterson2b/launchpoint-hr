@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-22T19:11:05.266064+00:00",
+  "generated_at_utc": "2026-09-22T19:46:06.083556+00:00",
   "slate_date": "2026-09-22",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -16,17 +16,17 @@
           "game_pk": "824222"
         },
         {
-          "type": "RUNS",
-          "label": "Wood, James",
+          "type": "HITS",
+          "label": "De La Cruz, Elly",
           "detail": "1+",
-          "score": 70.0,
-          "game_pk": "824222"
+          "score": 70.8,
+          "game_pk": "824867"
         },
         {
           "type": "WINNER",
           "label": "Atlanta Braves",
-          "detail": "71.9% model win",
-          "score": 71.9,
+          "detail": "71.6% model win",
+          "score": 71.6,
           "game_pk": "824867"
         }
       ]
@@ -45,8 +45,8 @@
         {
           "type": "WINNER",
           "label": "Atlanta Braves",
-          "detail": "71.9% model win",
-          "score": 71.9,
+          "detail": "71.6% model win",
+          "score": 71.6,
           "game_pk": "824867"
         },
         {
@@ -65,8 +65,8 @@
         {
           "type": "WINNER",
           "label": "Atlanta Braves",
-          "detail": "71.9% model win",
-          "score": 71.9,
+          "detail": "71.6% model win",
+          "score": 71.6,
           "game_pk": "824867"
         },
         {
@@ -78,10 +78,10 @@
         },
         {
           "type": "HR",
-          "label": "Schwarber, Kyle",
-          "detail": "Philadelphia Phillies HR",
-          "score": 64.83,
-          "game_pk": "823412"
+          "label": "De La Cruz, Elly",
+          "detail": "Cincinnati Reds HR",
+          "score": 68.91,
+          "game_pk": "824867"
         },
         {
           "type": "HITS",
@@ -105,10 +105,10 @@
         },
         {
           "type": "HR",
-          "label": "Schwarber, Kyle",
-          "detail": "Philadelphia Phillies HR",
-          "score": 64.83,
-          "game_pk": "823412"
+          "label": "De La Cruz, Elly",
+          "detail": "Cincinnati Reds HR",
+          "score": 68.91,
+          "game_pk": "824867"
         },
         {
           "type": "HITS",
