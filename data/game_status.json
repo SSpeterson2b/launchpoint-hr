@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-22T18:03:55.031953+00:00",
+  "generated_at_utc": "2026-09-22T18:47:47.073497+00:00",
   "games": [
     {
       "game_pk": "823543",
@@ -38,12 +38,12 @@
       "game_pk": "823328",
       "game_date": "2026-09-22",
       "game_datetime_utc": "2026-09-22T22:40:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "St. Louis Cardinals",
       "home_team": "Pittsburgh Pirates",
-      "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false
+      "away_lineup_confirmed": true,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true
     },
     {
       "game_pk": "823412",
@@ -115,11 +115,11 @@
       "game_pk": "824302",
       "game_date": "2026-09-22",
       "game_datetime_utc": "2026-09-23T00:40:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Arizona Diamondbacks",
       "home_team": "Colorado Rockies",
       "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
+      "home_lineup_confirmed": true,
       "lineups_confirmed": false
     },
     {
