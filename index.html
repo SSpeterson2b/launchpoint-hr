@@ -4213,7 +4213,7 @@ function render(){
   document.querySelectorAll(".game-head").forEach(b=>{
     b.onclick=()=>{
       openKey=openKey===b.dataset.key?null:b.dataset.key;
-      if(openKey)sessionStorage.setItem("launchpoint-selected-game",String(openKey));
+      if(openKey){const grp=groups().find(x=>String(x.key)===String(openKey));const pk=grp?.allPlayers?.[0]?.game_pk||"";if(pk)sessionStorage.setItem("launchpoint-selected-game",String(pk));}
       render();
     };
   });
@@ -4478,7 +4478,8 @@ document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
   b.classList.add("active");
 
   if(b.dataset.bottom==="player-props"){
-    window.location.href="player-props.html";
+    const selected=sessionStorage.getItem("launchpoint-selected-game")||"";
+    window.location.href=`player-props.html${selected?`?game_pk=${encodeURIComponent(selected)}`:""}`;
     return;
   }
 
@@ -4488,7 +4489,8 @@ document.querySelectorAll("[data-bottom]").forEach(b=>b.onclick=()=>{
   }
 
   if(b.dataset.bottom==="game-edge"){
-    const selected=openKey||sessionStorage.getItem("launchpoint-selected-game")||"";
+    const grp=openKey?groups().find(x=>String(x.key)===String(openKey)):null;
+    const selected=grp?.allPlayers?.[0]?.game_pk||sessionStorage.getItem("launchpoint-selected-game")||"";
     window.location.href=`game-edge.html${selected?`?game_pk=${encodeURIComponent(selected)}`:""}`;
     return;
   }
