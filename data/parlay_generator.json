@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-22T18:08:38.220445+00:00",
+  "generated_at_utc": "2026-09-22T18:48:42.630656+00:00",
   "slate_date": "2026-09-22",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -16,10 +16,10 @@
           "game_pk": "824624"
         },
         {
-          "type": "STRIKEOUTS",
-          "label": "Jared Jones",
-          "detail": "5+",
-          "score": 69.2,
+          "type": "TOTAL BASES",
+          "label": "Bernal, Leo",
+          "detail": "2+",
+          "score": 69.0,
           "game_pk": "823328"
         },
         {
@@ -48,6 +48,13 @@
           "detail": "71.9% model win",
           "score": 71.9,
           "game_pk": "824867"
+        },
+        {
+          "type": "HR",
+          "label": "Bernal, Leo",
+          "detail": "St. Louis Cardinals HR",
+          "score": 63.23,
+          "game_pk": "823328"
         }
       ]
     },
@@ -61,6 +68,47 @@
           "detail": "71.9% model win",
           "score": 71.9,
           "game_pk": "824867"
+        },
+        {
+          "type": "HR",
+          "label": "Bernal, Leo",
+          "detail": "St. Louis Cardinals HR",
+          "score": 63.23,
+          "game_pk": "823328"
+        },
+        {
+          "type": "HR",
+          "label": "Walker, Jordan",
+          "detail": "St. Louis Cardinals HR",
+          "score": 60.8,
+          "game_pk": "823328"
+        },
+        {
+          "type": "STRIKEOUTS",
+          "label": "Shota Imanaga",
+          "detail": "5+",
+          "score": 69.6,
+          "game_pk": "824624"
+        }
+      ]
+    },
+    {
+      "style": "LONGSHOT",
+      "title": "Longshot Card",
+      "legs": [
+        {
+          "type": "HR",
+          "label": "Bernal, Leo",
+          "detail": "St. Louis Cardinals HR",
+          "score": 63.23,
+          "game_pk": "823328"
+        },
+        {
+          "type": "HR",
+          "label": "Walker, Jordan",
+          "detail": "St. Louis Cardinals HR",
+          "score": 60.8,
+          "game_pk": "823328"
         },
         {
           "type": "STRIKEOUTS",
