@@ -3333,7 +3333,7 @@ body{background:radial-gradient(circle at 50% -10%,#073756 0,#01111e 34%,#00080e
 @media(max-width:560px){.game-footer>*{flex:1 1 calc(50% - 5px)!important}.lp-content-btn{font-size:10px;padding:9px 8px}}
 </style>
 
-</head><body><main class="shell">
+<style>.live[data-state="updating"]{border-color:#e5b72d!important;color:#ffd45c!important}.live[data-state="delay"]{border-color:#df5b5b!important;color:#ff8b8b!important}</style></head><body><main class="shell">
 <section class="hero">
   <div class="hero-top">
     <div class="brand">
@@ -3343,7 +3343,7 @@ body{background:radial-gradient(circle at 50% -10%,#073756 0,#01111e 34%,#00080e
         <p>MLB Home Run Intelligence</p>
       </div>
     </div>
-    <span class="live">MODEL LIVE</span>
+    <span class="live" id="model-live-status">UPDATING</span>
   </div>
   <div class="hero-center">
     <div class="hero-title">TARGET. ANALYZE. <span>LAUNCH.</span></div>
@@ -3782,7 +3782,7 @@ function gameLocalDate(p){const iso=String(p?.game_datetime_utc||"").trim();if(!
 function formatGameTime(p){const d=gameLocalDate(p);if(d)return new Intl.DateTimeFormat(undefined,{hour:"numeric",minute:"2-digit"}).format(d);return String(p?.game_time||"Time TBD")||"Time TBD"}
 function gamePeriod(p){const d=gameLocalDate(p);if(d){const h=d.getHours();return h<15?"early":h<19?"afternoon":"night"}const t=String(p?.game_time||"");const m=t.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);if(!m)return "unknown";let h=+m[1];const ap=(m[3]||"").toUpperCase();if(ap==="PM"&&h<12)h+=12;if(ap==="AM"&&h===12)h=0;return h<15?"early":h<19?"afternoon":"night"}
 function formatSlateDate(value){if(!value)return "DATE PENDING";const d=new Date(value+"T12:00:00");return Number.isNaN(d.getTime())?value:new Intl.DateTimeFormat(undefined,{month:"short",day:"numeric",year:"numeric"}).format(d)}
-function updateModelMeta(){const el=document.querySelector("#model-meta");if(!el)return;const updated=modelGenerated?new Intl.DateTimeFormat(undefined,{hour:"numeric",minute:"2-digit",month:"short",day:"numeric"}).format(new Date(modelGenerated)):"Pending";el.textContent=`Slate ${formatSlateDate(slateDate)}  -  Updated ${updated}`}
+function updateModelStatus(){const b=document.querySelector("#model-live-status");if(!b)return;const d=modelGenerated?new Date(modelGenerated):null;const age=d&&!Number.isNaN(d.getTime())?(Date.now()-d.getTime())/36e5:Infinity;const today=new Date().toISOString().slice(0,10);const feed=String(slateDate||"").slice(0,10);const populated=Array.isArray(allPlayers)&&allPlayers.length>0;let label="MODEL LIVE",state="live";if(!populated||!d||feed!==today){label="UPDATING";state="updating"}if((d&&age>4)||(!d&&!populated)){label="DATA DELAY";state="delay"}b.textContent=label;b.dataset.state=state} function updateModelMeta(){const el=document.querySelector("#model-meta");if(!el)return;const updated=modelGenerated?new Intl.DateTimeFormat(undefined,{hour:"numeric",minute:"2-digit",month:"short",day:"numeric"}).format(new Date(modelGenerated)):"Pending";el.textContent=`Slate ${formatSlateDate(slateDate)}  -  Updated ${updated}`;updateModelStatus()}
 function lineupOpportunity(p){
   if(n(p.lineup_score)>0)return n(p.lineup_score);
   const order=n(p.batting_order);
