@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-09-22T00:47:13.027683+00:00",
+  "generated_at_utc": "2026-09-22T07:36:22.977424+00:00",
   "slate_date": "2026-09-22",
   "model_version": "Player Props 1.1",
   "status": "ODDS UNAVAILABLE",
   "status_reason": "Sportsbook events matched, but no usable player-prop lines were returned",
   "sportsbook": {
     "status": "UNAVAILABLE",
-    "events_returned": 19,
+    "events_returned": 16,
     "games_matched": 15,
     "verified_lines": 0,
     "play_legs": 0,
@@ -19,7 +19,7 @@
         "Houston Astros",
         "Seattle Mariners"
       ],
-      "venue": "Unknown",
+      "venue": "T-Mobile Park",
       "game_datetime_utc": "2026-09-23T01:40:00Z",
       "props": [
         {
@@ -93,7 +93,7 @@
         "Atlanta Braves",
         "Cincinnati Reds"
       ],
-      "venue": "Unknown",
+      "venue": "Truist Park",
       "game_datetime_utc": "2026-09-22T23:15:00Z",
       "props": [
         {
@@ -167,7 +167,7 @@
         "Milwaukee Brewers",
         "Philadelphia Phillies"
       ],
-      "venue": "Unknown",
+      "venue": "Citizens Bank Park",
       "game_datetime_utc": "2026-09-22T22:40:00Z",
       "props": [
         {
@@ -188,6 +188,43 @@
           "batting_order": "",
           "reasons": [
             "29.5% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "",
+          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL ONLY",
+      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
+    },
+    {
+      "game_pk": "822840",
+      "teams": [
+        "New York Mets",
+        "Texas Rangers"
+      ],
+      "venue": "Globe Life Field",
+      "game_datetime_utc": "2026-09-23T00:05:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "MacKenzie Gore",
+          "player_id": "",
+          "team": "Texas Rangers",
+          "opponent": "New York Mets",
+          "line": "",
+          "side": "PROJ 6.3",
+          "odds": null,
+          "book": "MODEL ONLY",
+          "projection": 6.33,
+          "edge": null,
+          "confidence": 60,
+          "decision": "MODEL ONLY",
+          "batting_order": "",
+          "reasons": [
+            "23.9% pitcher K rate",
             "confirmed starter"
           ],
           "locked_at_utc": "",
@@ -241,7 +278,7 @@
         "Chicago Cubs",
         "Miami Marlins"
       ],
-      "venue": "Unknown",
+      "venue": "Wrigley Field",
       "game_datetime_utc": "2026-09-22T23:40:00Z",
       "props": [
         {
@@ -273,49 +310,12 @@
       "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
     },
     {
-      "game_pk": "822840",
-      "teams": [
-        "New York Mets",
-        "Texas Rangers"
-      ],
-      "venue": "Unknown",
-      "game_datetime_utc": "2026-09-23T00:05:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "MacKenzie Gore",
-          "player_id": "",
-          "team": "Texas Rangers",
-          "opponent": "New York Mets",
-          "line": "",
-          "side": "PROJ 6.3",
-          "odds": null,
-          "book": "MODEL ONLY",
-          "projection": 6.33,
-          "edge": null,
-          "confidence": 60,
-          "decision": "MODEL ONLY",
-          "batting_order": "",
-          "reasons": [
-            "23.9% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "",
-          "status_reason": "Sportsbook line unavailable \u2014 model projection only"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL ONLY",
-      "status_reason": "Prop odds unavailable: HTTP 401: Unauthorized (Usage quota has been reached. See usage plans at https://the-odds-api.com) \u2014 showing model projections only"
-    },
-    {
       "game_pk": "823328",
       "teams": [
         "Pittsburgh Pirates",
         "St. Louis Cardinals"
       ],
-      "venue": "Unknown",
+      "venue": "PNC Park",
       "game_datetime_utc": "2026-09-22T22:40:00Z",
       "props": [
         {
@@ -352,7 +352,7 @@
         "Athletics",
         "Los Angeles Angels"
       ],
-      "venue": "Unknown",
+      "venue": "Sutter Health Park",
       "game_datetime_utc": "2026-09-23T01:40:00Z",
       "props": [
         {
@@ -389,7 +389,7 @@
         "Chicago White Sox",
         "Kansas City Royals"
       ],
-      "venue": "Unknown",
+      "venue": "Kauffman Stadium",
       "game_datetime_utc": "2026-09-22T23:40:00Z",
       "props": [
         {
@@ -426,7 +426,7 @@
         "New York Yankees",
         "Tampa Bay Rays"
       ],
-      "venue": "Unknown",
+      "venue": "Yankee Stadium",
       "game_datetime_utc": "2026-09-22T23:05:00Z",
       "props": [
         {
@@ -463,7 +463,7 @@
         "Arizona Diamondbacks",
         "Colorado Rockies"
       ],
-      "venue": "Unknown",
+      "venue": "Coors Field",
       "game_datetime_utc": "2026-09-23T00:40:00Z",
       "props": [
         {
@@ -500,7 +500,7 @@
         "Los Angeles Dodgers",
         "San Diego Padres"
       ],
-      "venue": "Unknown",
+      "venue": "UNIQLO Field at Dodger Stadium",
       "game_datetime_utc": "2026-09-23T02:10:00Z",
       "props": [
         {
@@ -537,7 +537,7 @@
         "Boston Red Sox",
         "Cleveland Guardians"
       ],
-      "venue": "Unknown",
+      "venue": "Fenway Park",
       "game_datetime_utc": "2026-09-22T22:45:00Z",
       "props": [
         {
