@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-23T19:41:20.707059+00:00",
+  "generated_at_utc": "2026-09-23T20:41:40.753842+00:00",
   "games": [
     {
       "game_pk": "824223",
       "game_date": "2026-09-23",
       "game_datetime_utc": "2026-09-23T17:10:00Z",
-      "game_status": "In Progress",
+      "game_status": "Final",
       "away_team": "Washington Nationals",
       "home_team": "Detroit Tigers",
       "away_lineup_confirmed": true,
@@ -17,7 +17,7 @@
       "game_pk": "824785",
       "game_date": "2026-09-23",
       "game_datetime_utc": "2026-09-23T17:35:00Z",
-      "game_status": "In Progress",
+      "game_status": "Final",
       "away_team": "Toronto Blue Jays",
       "home_team": "Baltimore Orioles",
       "away_lineup_confirmed": true,
@@ -41,7 +41,7 @@
       "game_pk": "823168",
       "game_date": "2026-09-23",
       "game_datetime_utc": "2026-09-23T19:45:00Z",
-      "game_status": "Warmup",
+      "game_status": "In Progress",
       "away_team": "Minnesota Twins",
       "home_team": "San Francisco Giants",
       "away_lineup_confirmed": true,
@@ -56,9 +56,9 @@
       "game_status": "Pre-Game",
       "away_team": "St. Louis Cardinals",
       "home_team": "Pittsburgh Pirates",
-      "away_lineup_confirmed": false,
+      "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
-      "lineups_confirmed": false,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
@@ -68,9 +68,9 @@
       "game_status": "Pre-Game",
       "away_team": "Milwaukee Brewers",
       "home_team": "Philadelphia Phillies",
-      "away_lineup_confirmed": false,
+      "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
-      "lineups_confirmed": false,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
@@ -89,12 +89,12 @@
       "game_pk": "824710",
       "game_date": "2026-09-23",
       "game_datetime_utc": "2026-09-23T23:10:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Cleveland Guardians",
       "home_team": "Boston Red Sox",
-      "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false,
+      "away_lineup_confirmed": true,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
@@ -116,9 +116,9 @@
       "game_status": "Pre-Game",
       "away_team": "Chicago White Sox",
       "home_team": "Kansas City Royals",
-      "away_lineup_confirmed": false,
+      "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
-      "lineups_confirmed": false,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
@@ -137,12 +137,12 @@
       "game_pk": "822841",
       "game_date": "2026-09-23",
       "game_datetime_utc": "2026-09-24T00:05:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "New York Mets",
       "home_team": "Texas Rangers",
-      "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false,
+      "away_lineup_confirmed": true,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
@@ -152,9 +152,9 @@
       "game_status": "Pre-Game",
       "away_team": "Arizona Diamondbacks",
       "home_team": "Colorado Rockies",
-      "away_lineup_confirmed": false,
+      "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
-      "lineups_confirmed": false,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
