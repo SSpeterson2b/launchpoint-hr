@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-23T00:20:28.205219+00:00",
+  "generated_at_utc": "2026-09-23T07:09:13.135209+00:00",
   "slate_date": "2026-09-23",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -10,23 +10,23 @@
       "legs": [
         {
           "type": "STRIKEOUTS",
-          "label": "Framber Valdez",
-          "detail": "3+",
-          "score": 69.9,
-          "game_pk": "824223"
-        },
-        {
-          "type": "STRIKEOUTS",
           "label": "Chris Sale",
           "detail": "7+",
           "score": 69.80000000000001,
           "game_pk": "824868"
         },
         {
+          "type": "STRIKEOUTS",
+          "label": "Walbert Ure\u00f1a",
+          "detail": "4+",
+          "score": 69.4,
+          "game_pk": "824951"
+        },
+        {
           "type": "WINNER",
           "label": "Atlanta Braves",
-          "detail": "84.7% model win",
-          "score": 84.7,
+          "detail": "84.5% model win",
+          "score": 84.5,
           "game_pk": "824868"
         }
       ]
@@ -37,16 +37,16 @@
       "legs": [
         {
           "type": "STRIKEOUTS",
-          "label": "Framber Valdez",
-          "detail": "3+",
-          "score": 69.9,
-          "game_pk": "824223"
+          "label": "Chris Sale",
+          "detail": "7+",
+          "score": 69.80000000000001,
+          "game_pk": "824868"
         },
         {
           "type": "WINNER",
           "label": "Atlanta Braves",
-          "detail": "84.7% model win",
-          "score": 84.7,
+          "detail": "84.5% model win",
+          "score": 84.5,
           "game_pk": "824868"
         }
       ]
@@ -58,16 +58,16 @@
         {
           "type": "WINNER",
           "label": "Atlanta Braves",
-          "detail": "84.7% model win",
-          "score": 84.7,
+          "detail": "84.5% model win",
+          "score": 84.5,
           "game_pk": "824868"
         },
         {
           "type": "STRIKEOUTS",
-          "label": "Framber Valdez",
-          "detail": "3+",
-          "score": 69.9,
-          "game_pk": "824223"
+          "label": "Chris Sale",
+          "detail": "7+",
+          "score": 69.80000000000001,
+          "game_pk": "824868"
         }
       ]
     }
