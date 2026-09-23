@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-23T19:45:13.098476+00:00",
+  "generated_at_utc": "2026-09-23T20:45:40.661315+00:00",
   "slate_date": "2026-09-23",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -10,17 +10,17 @@
       "legs": [
         {
           "type": "HITS",
+          "label": "Nootbaar, Lars",
+          "detail": "1+",
+          "score": 71.5,
+          "game_pk": "824301"
+        },
+        {
+          "type": "HITS",
           "label": "Wood, James",
           "detail": "1+",
           "score": 70.8,
           "game_pk": "824223"
-        },
-        {
-          "type": "TOTAL BASES",
-          "label": "Rice, Ben",
-          "detail": "2+",
-          "score": 70.3,
-          "game_pk": "823492"
         },
         {
           "type": "WINNER",
@@ -37,10 +37,10 @@
       "legs": [
         {
           "type": "HITS",
-          "label": "Wood, James",
+          "label": "Nootbaar, Lars",
           "detail": "1+",
-          "score": 70.8,
-          "game_pk": "824223"
+          "score": 71.5,
+          "game_pk": "824301"
         },
         {
           "type": "WINNER",
@@ -78,17 +78,17 @@
         },
         {
           "type": "HR",
-          "label": "Wood, James",
-          "detail": "Washington Nationals HR",
-          "score": 66.9,
-          "game_pk": "824223"
+          "label": "Murakami, Munetaka",
+          "detail": "Chicago White Sox HR",
+          "score": 67.63,
+          "game_pk": "824060"
         },
         {
           "type": "HITS",
-          "label": "Wood, James",
+          "label": "Nootbaar, Lars",
           "detail": "1+",
-          "score": 70.8,
-          "game_pk": "824223"
+          "score": 71.5,
+          "game_pk": "824301"
         }
       ]
     },
@@ -105,17 +105,17 @@
         },
         {
           "type": "HR",
-          "label": "Wood, James",
-          "detail": "Washington Nationals HR",
-          "score": 66.9,
-          "game_pk": "824223"
+          "label": "Murakami, Munetaka",
+          "detail": "Chicago White Sox HR",
+          "score": 67.63,
+          "game_pk": "824060"
         },
         {
           "type": "HITS",
-          "label": "Wood, James",
+          "label": "Nootbaar, Lars",
           "detail": "1+",
-          "score": 70.8,
-          "game_pk": "824223"
+          "score": 71.5,
+          "game_pk": "824301"
         }
       ]
     }
