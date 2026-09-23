@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-23T21:30:02.326516+00:00",
+  "generated_at_utc": "2026-09-23T22:59:46.124974+00:00",
   "slate_date": "2026-09-23",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -10,17 +10,17 @@
       "legs": [
         {
           "type": "TOTAL BASES",
-          "label": "Crow-Armstrong, Pete",
-          "detail": "2+",
-          "score": 71.9,
-          "game_pk": "824625"
+          "label": "Trout, Mike",
+          "detail": "1+",
+          "score": 73.9,
+          "game_pk": "824951"
         },
         {
-          "type": "HITS",
-          "label": "Nootbaar, Lars",
-          "detail": "1+",
-          "score": 71.5,
-          "game_pk": "824301"
+          "type": "TOTAL BASES",
+          "label": "Crow-Armstrong, Pete",
+          "detail": "2+",
+          "score": 72.0,
+          "game_pk": "824625"
         },
         {
           "type": "WINNER",
@@ -37,10 +37,10 @@
       "legs": [
         {
           "type": "TOTAL BASES",
-          "label": "Crow-Armstrong, Pete",
-          "detail": "2+",
-          "score": 71.9,
-          "game_pk": "824625"
+          "label": "Trout, Mike",
+          "detail": "1+",
+          "score": 73.9,
+          "game_pk": "824951"
         },
         {
           "type": "WINNER",
@@ -53,7 +53,7 @@
           "type": "HR",
           "label": "Jones, Spencer",
           "detail": "New York Yankees HR",
-          "score": 69.76,
+          "score": 69.78,
           "game_pk": "823492"
         }
       ]
@@ -73,22 +73,22 @@
           "type": "HR",
           "label": "Jones, Spencer",
           "detail": "New York Yankees HR",
-          "score": 69.76,
+          "score": 69.78,
           "game_pk": "823492"
         },
         {
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 67.62,
+          "score": 67.57,
           "game_pk": "824060"
         },
         {
           "type": "TOTAL BASES",
-          "label": "Crow-Armstrong, Pete",
-          "detail": "2+",
-          "score": 71.9,
-          "game_pk": "824625"
+          "label": "Trout, Mike",
+          "detail": "1+",
+          "score": 73.9,
+          "game_pk": "824951"
         }
       ]
     },
@@ -100,22 +100,22 @@
           "type": "HR",
           "label": "Jones, Spencer",
           "detail": "New York Yankees HR",
-          "score": 69.76,
+          "score": 69.78,
           "game_pk": "823492"
         },
         {
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 67.62,
+          "score": 67.57,
           "game_pk": "824060"
         },
         {
           "type": "TOTAL BASES",
-          "label": "Crow-Armstrong, Pete",
-          "detail": "2+",
-          "score": 71.9,
-          "game_pk": "824625"
+          "label": "Trout, Mike",
+          "detail": "1+",
+          "score": 73.9,
+          "game_pk": "824951"
         }
       ]
     }
