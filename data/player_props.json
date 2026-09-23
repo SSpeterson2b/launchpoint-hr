@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-23T19:45:13.026186+00:00",
+  "generated_at_utc": "2026-09-23T20:45:40.596060+00:00",
   "slate_date": "2026-09-23",
   "model_version": "Player Props 2.0",
   "status": "LIVE",
@@ -44,7 +44,7 @@
             "13.9% barrel rate",
             "pitcher vulnerability"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.020077+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.589521+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -69,7 +69,7 @@
             "13.9% barrel rate",
             "pitcher vulnerability"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.020129+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.589568+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -94,7 +94,7 @@
             "13.9% barrel rate",
             "pitcher vulnerability"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.020169+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.589608+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -118,7 +118,7 @@
             "15.4% barrel rate",
             "pitcher vulnerability"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.020204+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.589689+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -142,7 +142,283 @@
             "20.4% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.020674+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.590084+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
+    },
+    {
+      "game_pk": "824060",
+      "teams": [
+        "Chicago White Sox",
+        "Kansas City Royals"
+      ],
+      "venue": "Kauffman Stadium",
+      "game_datetime_utc": "2026-09-23T23:40:00Z",
+      "props": [
+        {
+          "category": "HITS",
+          "market": "batter_hits",
+          "player": "Murakami, Munetaka",
+          "player_id": 808959,
+          "team": "Chicago White Sox",
+          "opponent": "Kansas City Royals",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.03,
+          "edge": null,
+          "confidence": 70,
+          "decision": "PLAY",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "18.8% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.590191+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Murakami, Munetaka",
+          "player_id": 808959,
+          "team": "Chicago White Sox",
+          "opponent": "Kansas City Royals",
+          "line": 2,
+          "target": 2,
+          "side": "2+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.7,
+          "edge": null,
+          "confidence": 70,
+          "decision": "PLAY",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "18.8% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.590242+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Murakami, Munetaka",
+          "player_id": 808959,
+          "team": "Chicago White Sox",
+          "opponent": "Kansas City Royals",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.68,
+          "edge": null,
+          "confidence": 70,
+          "decision": "PLAY",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "18.8% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.590302+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Murakami, Munetaka",
+          "player_id": 808959,
+          "team": "Chicago White Sox",
+          "opponent": "Kansas City Royals",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.93,
+          "edge": null,
+          "confidence": 70,
+          "decision": "PLAY",
+          "batting_order": 4,
+          "reasons": [
+            "3/3 core signals",
+            "18.8% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.590355+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Bryan Hudson",
+          "player_id": "",
+          "team": "Chicago White Sox",
+          "opponent": "Kansas City Royals",
+          "line": 4,
+          "target": 4,
+          "side": "4+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 4.5,
+          "edge": null,
+          "confidence": 60,
+          "decision": "PLAY",
+          "batting_order": "",
+          "reasons": [
+            "21.9% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.590569+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
+    },
+    {
+      "game_pk": "824301",
+      "teams": [
+        "Arizona Diamondbacks",
+        "Colorado Rockies"
+      ],
+      "venue": "Coors Field",
+      "game_datetime_utc": "2026-09-24T00:40:00Z",
+      "props": [
+        {
+          "category": "HITS",
+          "market": "batter_hits",
+          "player": "Nootbaar, Lars",
+          "player_id": 663457,
+          "team": "Arizona Diamondbacks",
+          "opponent": "Colorado Rockies",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.15,
+          "edge": null,
+          "confidence": 70,
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "pitcher vulnerability",
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.590694+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Goodman, Hunter",
+          "player_id": 696100,
+          "team": "Colorado Rockies",
+          "opponent": "Arizona Diamondbacks",
+          "line": 2,
+          "target": 2,
+          "side": "2+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 2.05,
+          "edge": null,
+          "confidence": 64,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "14.7% barrel rate",
+            "pitcher vulnerability",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.590748+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Nootbaar, Lars",
+          "player_id": 663457,
+          "team": "Arizona Diamondbacks",
+          "opponent": "Colorado Rockies",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.84,
+          "edge": null,
+          "confidence": 70,
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "pitcher vulnerability",
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.590803+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Goodman, Hunter",
+          "player_id": 696100,
+          "team": "Colorado Rockies",
+          "opponent": "Arizona Diamondbacks",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.92,
+          "edge": null,
+          "confidence": 64,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "14.7% barrel rate",
+            "pitcher vulnerability",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.590854+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Mason Adams",
+          "player_id": "",
+          "team": "Colorado Rockies",
+          "opponent": "Arizona Diamondbacks",
+          "line": 4,
+          "target": 4,
+          "side": "4+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 4.4,
+          "edge": null,
+          "confidence": 60,
+          "decision": "PLAY",
+          "batting_order": "",
+          "reasons": [
+            "22.8% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.591076+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -181,7 +457,7 @@
             "19.1% barrel rate",
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.020784+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.591168+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -205,7 +481,7 @@
             "3/3 core signals",
             "14.3% barrel rate"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.020834+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.591213+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -230,7 +506,7 @@
             "19.1% barrel rate",
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.020892+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.591269+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -254,7 +530,7 @@
             "3/3 core signals",
             "14.3% barrel rate"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.020943+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.591317+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -269,7 +545,7 @@
           "side": "4+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 4.39,
+          "projection": 4.64,
           "edge": null,
           "confidence": 60,
           "decision": "PLAY",
@@ -278,7 +554,7 @@
             "18.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.021166+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.591527+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -317,7 +593,7 @@
             "12.6% barrel rate",
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.021261+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.591609+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -342,7 +618,7 @@
             "16.3% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.021304+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.591705+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -367,7 +643,7 @@
             "16.3% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.021351+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.591756+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -392,7 +668,7 @@
             "16.3% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.021432+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.591804+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -416,7 +692,7 @@
             "30.3% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.021752+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.592017+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -454,7 +730,7 @@
             "19.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.022073+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.592319+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -493,7 +769,7 @@
             "16.0% barrel rate",
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.022145+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.592420+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -518,7 +794,7 @@
             "16.0% barrel rate",
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.022183+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.592474+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -543,32 +819,31 @@
             "16.0% barrel rate",
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.022216+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.592529+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "RBI",
           "market": "batter_rbis",
-          "player": "Schwarber, Kyle",
-          "player_id": 656941,
-          "team": "Philadelphia Phillies",
-          "opponent": "Milwaukee Brewers",
+          "player": "Bauers, Jake",
+          "player_id": 641343,
+          "team": "Milwaukee Brewers",
+          "opponent": "Philadelphia Phillies",
           "line": 1,
           "target": 1,
           "side": "1+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 0.79,
+          "projection": 0.86,
           "edge": null,
           "confidence": 69,
           "decision": "PLAY",
-          "batting_order": 1,
+          "batting_order": 5,
           "reasons": [
             "3/3 core signals",
-            "16.0% barrel rate",
-            "confirmed batting 1"
+            "14.2% barrel rate"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.022247+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.592579+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -592,279 +867,7 @@
             "30.7% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.022532+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets"
-    },
-    {
-      "game_pk": "824301",
-      "teams": [
-        "Arizona Diamondbacks",
-        "Colorado Rockies"
-      ],
-      "venue": "Coors Field",
-      "game_datetime_utc": "2026-09-24T00:40:00Z",
-      "props": [
-        {
-          "category": "HITS",
-          "market": "batter_hits",
-          "player": "Goodman, Hunter",
-          "player_id": 696100,
-          "team": "Colorado Rockies",
-          "opponent": "Arizona Diamondbacks",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.07,
-          "edge": null,
-          "confidence": 64,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "14.7% barrel rate",
-            "pitcher vulnerability",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.022604+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Goodman, Hunter",
-          "player_id": 696100,
-          "team": "Colorado Rockies",
-          "opponent": "Arizona Diamondbacks",
-          "line": 2,
-          "target": 2,
-          "side": "2+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 2.05,
-          "edge": null,
-          "confidence": 64,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "14.7% barrel rate",
-            "pitcher vulnerability",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.022634+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Goodman, Hunter",
-          "player_id": 696100,
-          "team": "Colorado Rockies",
-          "opponent": "Arizona Diamondbacks",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.74,
-          "edge": null,
-          "confidence": 64,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "14.7% barrel rate",
-            "pitcher vulnerability",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.022666+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Goodman, Hunter",
-          "player_id": 696100,
-          "team": "Colorado Rockies",
-          "opponent": "Arizona Diamondbacks",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.92,
-          "edge": null,
-          "confidence": 64,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "14.7% barrel rate",
-            "pitcher vulnerability",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.022696+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Mason Adams",
-          "player_id": "",
-          "team": "Colorado Rockies",
-          "opponent": "Arizona Diamondbacks",
-          "line": 4,
-          "target": 4,
-          "side": "4+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 4.75,
-          "edge": null,
-          "confidence": 60,
-          "decision": "PLAY",
-          "batting_order": "",
-          "reasons": [
-            "22.8% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.022955+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets"
-    },
-    {
-      "game_pk": "824060",
-      "teams": [
-        "Chicago White Sox",
-        "Kansas City Royals"
-      ],
-      "venue": "Kauffman Stadium",
-      "game_datetime_utc": "2026-09-23T23:40:00Z",
-      "props": [
-        {
-          "category": "HITS",
-          "market": "batter_hits",
-          "player": "Caglianone, Jac",
-          "player_id": 695506,
-          "team": "Kansas City Royals",
-          "opponent": "Chicago White Sox",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.01,
-          "edge": null,
-          "confidence": 64,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "13.5% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.023023+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Caglianone, Jac",
-          "player_id": 695506,
-          "team": "Kansas City Royals",
-          "opponent": "Chicago White Sox",
-          "line": 2,
-          "target": 2,
-          "side": "2+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.71,
-          "edge": null,
-          "confidence": 64,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "13.5% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.023058+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Caglianone, Jac",
-          "player_id": 695506,
-          "team": "Kansas City Royals",
-          "opponent": "Chicago White Sox",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.67,
-          "edge": null,
-          "confidence": 64,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "13.5% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.023092+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Caglianone, Jac",
-          "player_id": 695506,
-          "team": "Kansas City Royals",
-          "opponent": "Chicago White Sox",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.8,
-          "edge": null,
-          "confidence": 64,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "13.5% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.023123+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Seth Lugo",
-          "player_id": "",
-          "team": "Kansas City Royals",
-          "opponent": "Chicago White Sox",
-          "line": 4,
-          "target": 4,
-          "side": "4+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 4.67,
-          "edge": null,
-          "confidence": 60,
-          "decision": "PLAY",
-          "batting_order": "",
-          "reasons": [
-            "17.9% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.023375+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.592881+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -882,6 +885,106 @@
       "game_datetime_utc": "2026-09-24T00:05:00Z",
       "props": [
         {
+          "category": "HITS",
+          "market": "batter_hits",
+          "player": "Soto, Juan",
+          "player_id": 665742,
+          "team": "New York Mets",
+          "opponent": "Texas Rangers",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.07,
+          "edge": null,
+          "confidence": 69,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "13.8% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.592980+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Soto, Juan",
+          "player_id": 665742,
+          "team": "New York Mets",
+          "opponent": "Texas Rangers",
+          "line": 2,
+          "target": 2,
+          "side": "2+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 2.02,
+          "edge": null,
+          "confidence": 69,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "13.8% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.593025+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Soto, Juan",
+          "player_id": 665742,
+          "team": "New York Mets",
+          "opponent": "Texas Rangers",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.79,
+          "edge": null,
+          "confidence": 69,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "13.8% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.593081+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Soto, Juan",
+          "player_id": 665742,
+          "team": "New York Mets",
+          "opponent": "Texas Rangers",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.78,
+          "edge": null,
+          "confidence": 69,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "3/3 core signals",
+            "13.8% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.593132+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
           "player": "Nolan McLean",
@@ -893,7 +996,7 @@
           "side": "5+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 5.63,
+          "projection": 5.93,
           "edge": null,
           "confidence": 60,
           "decision": "PLAY",
@@ -902,7 +1005,7 @@
             "26.2% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.023716+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.593339+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -940,141 +1043,7 @@
             "24.3% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.024032+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets"
-    },
-    {
-      "game_pk": "823168",
-      "teams": [
-        "Minnesota Twins",
-        "San Francisco Giants"
-      ],
-      "venue": "Oracle Park",
-      "game_datetime_utc": "2026-09-23T19:45:00Z",
-      "props": [
-        {
-          "category": "HITS",
-          "market": "batter_hits",
-          "player": "Bericoto, Victor",
-          "player_id": 682674,
-          "team": "San Francisco Giants",
-          "opponent": "Minnesota Twins",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.04,
-          "edge": null,
-          "confidence": 64,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "14.3% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.024122+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Bericoto, Victor",
-          "player_id": 682674,
-          "team": "San Francisco Giants",
-          "opponent": "Minnesota Twins",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.59,
-          "edge": null,
-          "confidence": 64,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "14.3% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.024160+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Bericoto, Victor",
-          "player_id": 682674,
-          "team": "San Francisco Giants",
-          "opponent": "Minnesota Twins",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.65,
-          "edge": null,
-          "confidence": 64,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "14.3% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.024202+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Bericoto, Victor",
-          "player_id": 682674,
-          "team": "San Francisco Giants",
-          "opponent": "Minnesota Twins",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.79,
-          "edge": null,
-          "confidence": 64,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "14.3% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.024242+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Connor Prielipp",
-          "player_id": "",
-          "team": "Minnesota Twins",
-          "opponent": "San Francisco Giants",
-          "line": 6,
-          "target": 6,
-          "side": "6+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 6.28,
-          "edge": null,
-          "confidence": 60,
-          "decision": "PLAY",
-          "batting_order": "",
-          "reasons": [
-            "24.4% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.024463+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.593681+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -1112,7 +1081,7 @@
             "14.9% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.024554+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.593788+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1136,7 +1105,7 @@
             "14.9% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.024587+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.593838+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1160,31 +1129,30 @@
             "14.9% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.024619+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.593891+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "RBI",
           "market": "batter_rbis",
-          "player": "Flores Jr., Rafael",
-          "player_id": 804668,
-          "team": "Pittsburgh Pirates",
-          "opponent": "St. Louis Cardinals",
+          "player": "Bernal, Leo",
+          "player_id": 699024,
+          "team": "St. Louis Cardinals",
+          "opponent": "Pittsburgh Pirates",
           "line": 1,
           "target": 1,
           "side": "1+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 0.82,
+          "projection": 0.8,
           "edge": null,
-          "confidence": 60,
+          "confidence": 68,
           "decision": "PLAY",
-          "batting_order": 2,
+          "batting_order": 5,
           "reasons": [
-            "14.9% barrel rate",
-            "confirmed batting 2"
+            "3/3 core signals"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.024649+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.593942+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1199,7 +1167,7 @@
           "side": "5+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 5.26,
+          "projection": 5.15,
           "edge": null,
           "confidence": 60,
           "decision": "PLAY",
@@ -1208,7 +1176,141 @@
             "25.2% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.024976+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.594148+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
+    },
+    {
+      "game_pk": "823168",
+      "teams": [
+        "Minnesota Twins",
+        "San Francisco Giants"
+      ],
+      "venue": "Oracle Park",
+      "game_datetime_utc": "2026-09-23T19:45:00Z",
+      "props": [
+        {
+          "category": "HITS",
+          "market": "batter_hits",
+          "player": "Bericoto, Victor",
+          "player_id": 682674,
+          "team": "San Francisco Giants",
+          "opponent": "Minnesota Twins",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.04,
+          "edge": null,
+          "confidence": 64,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "14.3% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.594225+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Bericoto, Victor",
+          "player_id": 682674,
+          "team": "San Francisco Giants",
+          "opponent": "Minnesota Twins",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.58,
+          "edge": null,
+          "confidence": 64,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "14.3% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.594262+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Bericoto, Victor",
+          "player_id": 682674,
+          "team": "San Francisco Giants",
+          "opponent": "Minnesota Twins",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.65,
+          "edge": null,
+          "confidence": 64,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "14.3% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.594303+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Bericoto, Victor",
+          "player_id": 682674,
+          "team": "San Francisco Giants",
+          "opponent": "Minnesota Twins",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.79,
+          "edge": null,
+          "confidence": 64,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "14.3% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.594346+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Connor Prielipp",
+          "player_id": "",
+          "team": "Minnesota Twins",
+          "opponent": "San Francisco Giants",
+          "line": 6,
+          "target": 6,
+          "side": "6+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 6.28,
+          "edge": null,
+          "confidence": 60,
+          "decision": "PLAY",
+          "batting_order": "",
+          "reasons": [
+            "24.4% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.594555+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -1224,10 +1326,166 @@
       ],
       "venue": "Oriole Park at Camden Yards",
       "game_datetime_utc": "2026-09-23T22:35:00Z",
-      "props": [],
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Trey Gibson",
+          "player_id": "",
+          "team": "Baltimore Orioles",
+          "opponent": "Toronto Blue Jays",
+          "line": 3,
+          "target": 3,
+          "side": "3+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 3.85,
+          "edge": null,
+          "confidence": 60,
+          "decision": "PLAY",
+          "batting_order": "",
+          "reasons": [
+            "18.6% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.594858+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        }
+      ],
       "long_shots": [],
-      "status": "DATA HOLD",
-      "status_reason": "Required model data unavailable"
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
+    },
+    {
+      "game_pk": "824710",
+      "teams": [
+        "Boston Red Sox",
+        "Cleveland Guardians"
+      ],
+      "venue": "Fenway Park",
+      "game_datetime_utc": "2026-09-23T23:10:00Z",
+      "props": [
+        {
+          "category": "HITS",
+          "market": "batter_hits",
+          "player": "Anthony, Roman",
+          "player_id": 701350,
+          "team": "Boston Red Sox",
+          "opponent": "Cleveland Guardians",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.08,
+          "edge": null,
+          "confidence": 59,
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.594957+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "DeLauter, Chase",
+          "player_id": 800050,
+          "team": "Cleveland Guardians",
+          "opponent": "Boston Red Sox",
+          "line": 2,
+          "target": 2,
+          "side": "2+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.68,
+          "edge": null,
+          "confidence": 54,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.595005+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Anthony, Roman",
+          "player_id": 701350,
+          "team": "Boston Red Sox",
+          "opponent": "Cleveland Guardians",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.72,
+          "edge": null,
+          "confidence": 59,
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.595058+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Abreu, Wilyer",
+          "player_id": 677800,
+          "team": "Boston Red Sox",
+          "opponent": "Cleveland Guardians",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.78,
+          "edge": null,
+          "confidence": 54,
+          "decision": "PLAY",
+          "batting_order": 4,
+          "reasons": [
+            "12.7% barrel rate",
+            "confirmed batting 4"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.595112+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Foster Griffin",
+          "player_id": "",
+          "team": "Cleveland Guardians",
+          "opponent": "Boston Red Sox",
+          "line": 4,
+          "target": 4,
+          "side": "4+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 4.86,
+          "edge": null,
+          "confidence": 60,
+          "decision": "PLAY",
+          "batting_order": "",
+          "reasons": [
+            "21.8% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-23T20:45:40.595318+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "824951",
@@ -1259,7 +1517,7 @@
             "23.1% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.025465+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.595684+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -1297,45 +1555,7 @@
             "26.1% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-23T19:45:13.025854+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets"
-    },
-    {
-      "game_pk": "824710",
-      "teams": [
-        "Boston Red Sox",
-        "Cleveland Guardians"
-      ],
-      "venue": "Fenway Park",
-      "game_datetime_utc": "2026-09-23T23:10:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Foster Griffin",
-          "player_id": "",
-          "team": "Cleveland Guardians",
-          "opponent": "Boston Red Sox",
-          "line": 4,
-          "target": 4,
-          "side": "4+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 4.89,
-          "edge": null,
-          "confidence": 60,
-          "decision": "PLAY",
-          "batting_order": "",
-          "reasons": [
-            "21.8% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-23T19:45:13.026173+00:00",
+          "locked_at_utc": "2026-09-23T20:45:40.596049+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
