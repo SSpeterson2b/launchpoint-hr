@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-23T07:09:13.135209+00:00",
+  "generated_at_utc": "2026-09-23T19:45:13.098476+00:00",
   "slate_date": "2026-09-23",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -9,24 +9,24 @@
       "title": "Foundation Card",
       "legs": [
         {
-          "type": "STRIKEOUTS",
-          "label": "Chris Sale",
-          "detail": "7+",
-          "score": 69.80000000000001,
-          "game_pk": "824868"
+          "type": "HITS",
+          "label": "Wood, James",
+          "detail": "1+",
+          "score": 70.8,
+          "game_pk": "824223"
         },
         {
-          "type": "STRIKEOUTS",
-          "label": "Walbert Ure\u00f1a",
-          "detail": "4+",
-          "score": 69.4,
-          "game_pk": "824951"
+          "type": "TOTAL BASES",
+          "label": "Rice, Ben",
+          "detail": "2+",
+          "score": 70.3,
+          "game_pk": "823492"
         },
         {
           "type": "WINNER",
           "label": "Atlanta Braves",
-          "detail": "84.5% model win",
-          "score": 84.5,
+          "detail": "84.2% model win",
+          "score": 84.2,
           "game_pk": "824868"
         }
       ]
@@ -36,18 +36,25 @@
       "title": "Mixed Edge Card",
       "legs": [
         {
-          "type": "STRIKEOUTS",
-          "label": "Chris Sale",
-          "detail": "7+",
-          "score": 69.80000000000001,
-          "game_pk": "824868"
+          "type": "HITS",
+          "label": "Wood, James",
+          "detail": "1+",
+          "score": 70.8,
+          "game_pk": "824223"
         },
         {
           "type": "WINNER",
           "label": "Atlanta Braves",
-          "detail": "84.5% model win",
-          "score": 84.5,
+          "detail": "84.2% model win",
+          "score": 84.2,
           "game_pk": "824868"
+        },
+        {
+          "type": "HR",
+          "label": "Jones, Spencer",
+          "detail": "New York Yankees HR",
+          "score": 69.77,
+          "game_pk": "823492"
         }
       ]
     },
@@ -58,16 +65,57 @@
         {
           "type": "WINNER",
           "label": "Atlanta Braves",
-          "detail": "84.5% model win",
-          "score": 84.5,
+          "detail": "84.2% model win",
+          "score": 84.2,
           "game_pk": "824868"
         },
         {
-          "type": "STRIKEOUTS",
-          "label": "Chris Sale",
-          "detail": "7+",
-          "score": 69.80000000000001,
-          "game_pk": "824868"
+          "type": "HR",
+          "label": "Jones, Spencer",
+          "detail": "New York Yankees HR",
+          "score": 69.77,
+          "game_pk": "823492"
+        },
+        {
+          "type": "HR",
+          "label": "Wood, James",
+          "detail": "Washington Nationals HR",
+          "score": 66.9,
+          "game_pk": "824223"
+        },
+        {
+          "type": "HITS",
+          "label": "Wood, James",
+          "detail": "1+",
+          "score": 70.8,
+          "game_pk": "824223"
+        }
+      ]
+    },
+    {
+      "style": "LONGSHOT",
+      "title": "Longshot Card",
+      "legs": [
+        {
+          "type": "HR",
+          "label": "Jones, Spencer",
+          "detail": "New York Yankees HR",
+          "score": 69.77,
+          "game_pk": "823492"
+        },
+        {
+          "type": "HR",
+          "label": "Wood, James",
+          "detail": "Washington Nationals HR",
+          "score": 66.9,
+          "game_pk": "824223"
+        },
+        {
+          "type": "HITS",
+          "label": "Wood, James",
+          "detail": "1+",
+          "score": 70.8,
+          "game_pk": "824223"
         }
       ]
     }
