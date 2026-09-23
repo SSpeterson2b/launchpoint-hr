@@ -4547,7 +4547,7 @@ async function refreshLaunchPointData(){
     render();
     refreshHomerResults();
   }catch(error){
-    if(!allPlayers.length)document.querySelector("#games").innerHTML='<div class="empty">Today\\'s model data is not available yet.</div>';
+    if(!allPlayers.length)document.querySelector("#games").innerHTML="<div class=\"empty\">Today\u2019s model data is not available yet.</div>";
     console.warn("LaunchPoint lineup refresh failed:",error);
   }finally{lineupRefreshInFlight=false}
 }
