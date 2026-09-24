@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-24T20:46:21.873256+00:00",
+  "generated_at_utc": "2026-09-24T21:29:14.499245+00:00",
   "games": [
     {
       "game_pk": "823326",
@@ -17,7 +17,7 @@
       "game_pk": "824059",
       "game_date": "2026-09-24",
       "game_datetime_utc": "2026-09-24T18:10:00Z",
-      "game_status": "In Progress",
+      "game_status": "Final",
       "away_team": "Chicago White Sox",
       "home_team": "Kansas City Royals",
       "away_lineup_confirmed": true,
@@ -29,7 +29,7 @@
       "game_pk": "824623",
       "game_date": "2026-09-24",
       "game_datetime_utc": "2026-09-24T18:20:00Z",
-      "game_status": "In Progress",
+      "game_status": "Final",
       "away_team": "Miami Marlins",
       "home_team": "Chicago Cubs",
       "away_lineup_confirmed": true,
@@ -41,7 +41,7 @@
       "game_pk": "822842",
       "game_date": "2026-09-24",
       "game_datetime_utc": "2026-09-24T18:35:00Z",
-      "game_status": "In Progress",
+      "game_status": "Final",
       "away_team": "New York Mets",
       "home_team": "Texas Rangers",
       "away_lineup_confirmed": true,
@@ -125,11 +125,11 @@
       "game_pk": "823087",
       "game_date": "2026-09-24",
       "game_datetime_utc": "2026-09-25T01:40:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Los Angeles Angels",
       "home_team": "Seattle Mariners",
       "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
+      "home_lineup_confirmed": true,
       "lineups_confirmed": false,
       "doubleheader_game": ""
     },
