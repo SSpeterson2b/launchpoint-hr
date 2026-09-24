@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-24T18:28:53.964976+00:00",
+  "generated_at_utc": "2026-09-24T20:50:08.632548+00:00",
   "slate_date": "2026-09-24",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -16,11 +16,11 @@
           "game_pk": "823326"
         },
         {
-          "type": "TOTAL BASES",
-          "label": "Crow-Armstrong, Pete",
-          "detail": "2+",
-          "score": 70.6,
-          "game_pk": "824623"
+          "type": "HITS",
+          "label": "Olson, Matt",
+          "detail": "1+",
+          "score": 70.7,
+          "game_pk": "824866"
         },
         {
           "type": "WINNER",
@@ -51,10 +51,10 @@
         },
         {
           "type": "HR",
-          "label": "Cruz, Oneil",
-          "detail": "Pittsburgh Pirates HR",
-          "score": 69.0,
-          "game_pk": "823326"
+          "label": "Olson, Matt",
+          "detail": "Atlanta Braves HR",
+          "score": 69.61,
+          "game_pk": "824866"
         }
       ]
     },
@@ -71,17 +71,17 @@
         },
         {
           "type": "HR",
-          "label": "Cruz, Oneil",
-          "detail": "Pittsburgh Pirates HR",
-          "score": 69.0,
-          "game_pk": "823326"
+          "label": "Olson, Matt",
+          "detail": "Atlanta Braves HR",
+          "score": 69.61,
+          "game_pk": "824866"
         },
         {
           "type": "HR",
-          "label": "Murakami, Munetaka",
-          "detail": "Chicago White Sox HR",
-          "score": 64.13,
-          "game_pk": "824059"
+          "label": "Cruz, Oneil",
+          "detail": "Pittsburgh Pirates HR",
+          "score": 69.01,
+          "game_pk": "823326"
         },
         {
           "type": "HITS",
@@ -98,17 +98,17 @@
       "legs": [
         {
           "type": "HR",
-          "label": "Cruz, Oneil",
-          "detail": "Pittsburgh Pirates HR",
-          "score": 69.0,
-          "game_pk": "823326"
+          "label": "Olson, Matt",
+          "detail": "Atlanta Braves HR",
+          "score": 69.61,
+          "game_pk": "824866"
         },
         {
           "type": "HR",
-          "label": "Murakami, Munetaka",
-          "detail": "Chicago White Sox HR",
-          "score": 64.13,
-          "game_pk": "824059"
+          "label": "Cruz, Oneil",
+          "detail": "Pittsburgh Pirates HR",
+          "score": 69.01,
+          "game_pk": "823326"
         },
         {
           "type": "HITS",
