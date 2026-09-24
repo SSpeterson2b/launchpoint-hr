@@ -125,12 +125,25 @@ async function hydrateFinalOutcome(game){
     showFinalOutcome({actual_away_runs:away,actual_home_runs:home,actual_winner:away>home?(teams?.away?.name||game.away_team):(teams?.home?.name||game.home_team),away_team:game.away_team,home_team:game.home_team});
   }catch(error){}
 }
+function centralToday(){
+  const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+  const part=type=>parts.find(p=>p.type===type)?.value||'';
+  return [part('year'),part('month'),part('day')].join('-');
+}
 async function load(){
-  resultsByGame={};sharedStatus={};
+  games=[];resultsByGame={};sharedStatus={};
   try{const sr=await fetch('data/game_status.json?ts='+Date.now());if(sr.ok){const sd=await sr.json();(sd.games||[]).forEach(x=>sharedStatus[String(x.game_pk)]=x)}}catch(error){}
   try{const res=await fetch('data/game_edge_results.csv?ts='+Date.now());if(res.ok)(csv(await res.text())||[]).forEach(row=>{if(row.game_pk)resultsByGame[String(row.game_pk)]=row})}catch(error){}
   for(const url of ['data/daily_game_predictions.csv','daily_game_predictions.csv']){try{const res=await fetch(url+'?ts='+Date.now());if(!res.ok)continue;games=csv(await res.text());games.forEach(g=>{const s=sharedStatus[String(g.game_pk)];if(s){g.game_datetime_utc=s.game_datetime_utc||g.game_datetime_utc;g.game_status=s.game_status||g.game_status;g.doubleheader_game=s.doubleheader_game||"";if(s.lineups_confirmed){g.missing_inputs=String(g.missing_inputs||'').split(';').filter(x=>x&&x!=='confirmed_lineups').join(';');if(g.selection_status==='PRELIMINARY'&&!String(g.missing_inputs||'').includes('live_weather'))g.selection_status='FINAL READY'}}});if(games.length)break}catch(e){}}
-  if(!games.length){$('#ready').textContent='NOT READY';$('#screen').innerHTML='<div class="empty">Today’s Game Edge file has not been published yet.</div>';return}
+  const latestDate=games.map(g=>String(g.game_date||'')).filter(Boolean).sort().at(-1)||'';
+  games=games.filter(g=>String(g.game_date||'')===centralToday());
+  if(!games.length){
+    $('#ready').textContent='TODAY PENDING';
+    $('#ready').style.borderColor='#ffbb21';$('#ready').style.color='#ffbb21';
+    $('#screen').innerHTML='<div class="empty">Today’s Game Edge board is pending.'+(latestDate?' Last published slate: '+esc(latestDate)+'.':'')+' Check back after the next update.</div>';
+    $('#game-list').innerHTML='';
+    return;
+  }
   const requested=new URLSearchParams(location.search).get('game_pk')||sessionStorage.getItem('launchpoint-selected-game')||'';
   const selectedIndex=Math.max(0,games.findIndex(g=>String(g.game_pk)===String(requested)));
   selectGame(selectedIndex,false);
