@@ -137,6 +137,7 @@ async function load(){
   for(const url of ['data/daily_game_predictions.csv','daily_game_predictions.csv']){try{const res=await fetch(url+'?ts='+Date.now());if(!res.ok)continue;games=csv(await res.text());games.forEach(g=>{const s=sharedStatus[String(g.game_pk)];if(s){g.game_datetime_utc=s.game_datetime_utc||g.game_datetime_utc;g.game_status=s.game_status||g.game_status;g.doubleheader_game=s.doubleheader_game||"";if(s.lineups_confirmed){g.missing_inputs=String(g.missing_inputs||'').split(';').filter(x=>x&&x!=='confirmed_lineups').join(';');if(g.selection_status==='PRELIMINARY'&&!String(g.missing_inputs||'').includes('live_weather'))g.selection_status='FINAL READY'}}});if(games.length)break}catch(e){}}
   const latestDate=games.map(g=>String(g.game_date||'')).filter(Boolean).sort().at(-1)||'';
   games=games.filter(g=>String(g.game_date||'')===centralToday());
+  $('#content-launch').hidden=!games.length;
   if(!games.length){
     $('#ready').textContent='TODAY PENDING';
     $('#ready').style.borderColor='#ffbb21';$('#ready').style.color='#ffbb21';
