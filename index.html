@@ -3601,7 +3601,7 @@ function renderLaunch5(players){
 
   if(!pool.length){
     currentLaunch5=[];
-    container.innerHTML='<div class="launch5-empty">No confirmed Homer picks have cleared the model yet.</div>';
+    container.innerHTML='<div class="launch5-empty">'+(allScored.some(p=>String(p.launchpoint_34_role||'').toUpperCase()==='PRIMARY'&&String(p.launchpoint_34_state||'').toUpperCase()==='LOCKED')?'Today’s pregame picks are locked. Open Results to see those calls and their Homer badges.':'No confirmed Homer picks have cleared the model yet.')+'</div>';
     return;
   }
 
@@ -3661,7 +3661,7 @@ function homerBadge(p){
 function updateResultsUI(){
   const boardHitters=(allPlayers||[]).filter(p=>homeRunsForPlayer(p)>0);
   const totalHomers=boardHitters.reduce((sum,p)=>sum+homeRunsForPlayer(p),0);
-  const cardHits=(currentLaunch5||[]).filter(p=>homeRunsForPlayer(p)>0).length;
+  const cardHits=(allPlayers||[]).filter(p=>String(p.launchpoint_34_role||"").toUpperCase()==="PRIMARY"&&homeRunsForPlayer(p)>0).length;
   const set=(id,value)=>{const el=document.getElementById(id);if(el)el.textContent=String(value)};
   ["preview-card-hits","results-card-hits"].forEach(id=>set(id,cardHits));
   ["preview-board-hitters","results-board-hitters"].forEach(id=>set(id,boardHitters.length));
@@ -3876,10 +3876,14 @@ function selectGamePlayers(players){
       return isSelectionEligible(p)&&state==="PREGAME"&&role==="PRIMARY"&&
         String(p.lineup_status||"").toUpperCase()==="CONFIRMED"&&n(p.batting_order)>0;
     }));
-    // After first pitch the live model locks roles. Keep a small results
-    // browser, without presenting those ranked hitters as official picks.
+    // Keep the actual published pregame call after first pitch.
+    // Older slates without a saved call remain a ranked results browser.
     const locked=teamRows.length>0&&teamRows.every(p=>String(p.launchpoint_34_state||"").toUpperCase()==="LOCKED");
-    const picks=locked?teamRows.slice(0,2):cleanup.slice(0,1);
+    const recorded=cleanupRankPlayers(teamRows.filter(p=>
+      String(p.launchpoint_34_state||"").toUpperCase()==="LOCKED" &&
+      String(p.launchpoint_34_role||"").toUpperCase()==="PRIMARY"
+    ));
+    const picks=locked?(recorded.length?recorded.slice(0,1):teamRows.slice(0,2)):cleanup.slice(0,1);
     picks.forEach(p=>{if(!selected.includes(p))selected.push(p)});
   });
   return cleanupRankPlayers(selected).slice(0,4);
@@ -3903,7 +3907,8 @@ function gamePlayerLabel(player,index,strength,gamePlayers){
 function gameCardProfile(supportingIndex,isPrimary,player){
   const role=String(player?.launchpoint_34_role||"").toUpperCase();
   const state=String(player?.launchpoint_34_state||"").toUpperCase();
-  if(state==="LOCKED"||role==="HOLD")return null;
+  if(state==="LOCKED")return role==="PRIMARY"?{label:"PREGAME PICK",kind:"contender"}:null;
+  if(role==="HOLD")return null;
   if(role==="PRIMARY")return {label:"PRIMARY",kind:"contender"};
   if(role==="SECONDARY")return {label:"SECONDARY",kind:"sleeper"};
   if(role==="UPSIDE")return {label:"UPSIDE",kind:"value"};
@@ -3913,6 +3918,9 @@ function playerPublicProfile(player,forceSecondary=false){
   if(!isSelectionEligible(player))return {label:"DATA PENDING",kind:"hold"};
   const role=String(player?.launchpoint_34_role||"").toUpperCase();
   const state=String(player?.launchpoint_34_state||"").toUpperCase();
+  if(state==="LOCKED"&&role==="PRIMARY")return {label:"PREGAME PICK",kind:"contender"};
+  if(state==="LOCKED"&&role==="SECONDARY")return {label:"PREGAME SUPPORT",kind:"sleeper"};
+  if(state==="LOCKED")return {label:"RANKED HITTER",kind:"hold"};
   if(state!=="LOCKED"){
     if(role==="PRIMARY")return {label:"PRIMARY",kind:"contender"};
     if(role==="SECONDARY")return {label:"SECONDARY",kind:"sleeper"};
