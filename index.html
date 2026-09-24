@@ -3875,10 +3875,13 @@ function selectGamePlayers(players){
       return isSelectionEligible(p)&&state==="PREGAME"&&role==="PRIMARY"&&
         String(p.lineup_status||"").toUpperCase()==="CONFIRMED"&&n(p.batting_order)>0;
     }));
-    const picks=cleanup.slice(0,1);
+    // After first pitch the live model locks roles. Keep a small results
+    // browser, without presenting those ranked hitters as official picks.
+    const locked=teamRows.length>0&&teamRows.every(p=>String(p.launchpoint_34_state||"").toUpperCase()==="LOCKED");
+    const picks=locked?teamRows.slice(0,2):cleanup.slice(0,1);
     picks.forEach(p=>{if(!selected.includes(p))selected.push(p)});
   });
-  return cleanupRankPlayers(selected).slice(0,2);
+  return cleanupRankPlayers(selected).slice(0,4);
 }
 function groups(){
   const map={};
@@ -4133,6 +4136,7 @@ function render(){
   document.querySelector("#games").innerHTML=shown.map(g=>{
     const p=g.players[0]||g.allPlayers[0];
     const matchupPlayers=g.allPlayers||g.players;
+    const lockedGame=matchupPlayers.every(player=>String(player.launchpoint_34_state||"").toUpperCase()==="LOCKED");
     const teams=[p.team,p.opponent];
     const expanded=g.key===openKey;
     const rating=Math.round(gameLaunchRating(matchupPlayers));
@@ -4202,6 +4206,7 @@ function render(){
               ${pitcherCard(teams[1],matchupPlayers,true)}
             </div>
 
+            ${lockedGame?'<div class="empty">Game underway or finished · ranked hitters shown for results</div>':""}
             <div class="game-player-row">${playerCards||'<div class="empty">No confirmed Homer pick cleared this matchup. Browse eligible hitters for the full scored list.</div>'}</div>
 
             <div class="game-inline-detail" data-game-detail="${esc(g.key)}"></div>
