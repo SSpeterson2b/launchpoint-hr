@@ -3590,11 +3590,17 @@ function renderLaunch5(players){
     const state=String(p.launchpoint_34_state||"").toUpperCase();
     return isSelectionEligible(p)&&state!=="LOCKED"&&["PRIMARY","SECONDARY","UPSIDE"].includes(role);
   }));
-  const fallbackPool=rankPlayers(allScored.filter(isSelectionEligible));
-  const pool=cleanupPool.length?cleanupPool:fallbackPool;
+  // The featured board is a list of model calls, not the top five scores.
+  // A HOLD or an eligible hitter must not fill a vacant pick slot.
+  const pool=cleanupPool.filter(p=>
+    String(p.launchpoint_34_role||"").toUpperCase()==="PRIMARY" &&
+    String(p.lineup_status||"").toUpperCase()==="CONFIRMED" &&
+    n(p.batting_order)>0
+  );
 
   if(!pool.length){
-    container.innerHTML='<div class="launch5-empty">Launch 5 is not available yet.</div>';
+    currentLaunch5=[];
+    container.innerHTML='<div class="launch5-empty">No confirmed Homer picks have cleared the model yet.</div>';
     return;
   }
 
@@ -3866,12 +3872,13 @@ function selectGamePlayers(players){
     const cleanup=cleanupRankPlayers(teamRows.filter(p=>{
       const role=String(p.launchpoint_34_role||"").toUpperCase();
       const state=String(p.launchpoint_34_state||"").toUpperCase();
-      return state!=="LOCKED"&&role&&role!=="HOLD";
+      return isSelectionEligible(p)&&state==="PREGAME"&&role==="PRIMARY"&&
+        String(p.lineup_status||"").toUpperCase()==="CONFIRMED"&&n(p.batting_order)>0;
     }));
-    const picks=cleanup.length?cleanup.slice(0,2):rankPlayers(teamRows).slice(0,2);
+    const picks=cleanup.slice(0,1);
     picks.forEach(p=>{if(!selected.includes(p))selected.push(p)});
   });
-  return cleanupRankPlayers(selected).slice(0,4);
+  return cleanupRankPlayers(selected).slice(0,2);
 }
 function groups(){
   const map={};
@@ -4124,7 +4131,7 @@ function render(){
   if(!openKey)openKey=shown[0].key;
 
   document.querySelector("#games").innerHTML=shown.map(g=>{
-    const p=g.players[0];
+    const p=g.players[0]||g.allPlayers[0];
     const matchupPlayers=g.allPlayers||g.players;
     const teams=[p.team,p.opponent];
     const expanded=g.key===openKey;
@@ -4136,9 +4143,8 @@ function render(){
         .filter(Boolean)
     );
     const confirmed=confirmedTeams.size>=2;
-    const strength=gameCardStrength(matchupPlayers);
-    const primaryCandidate=g.players.find(isSelectionEligible);
-    const showPrimary=Boolean(primaryCandidate&&strength!=="weak");
+    const primaryCandidate=g.players.find(p=>String(p.launchpoint_34_role||"").toUpperCase()==="PRIMARY");
+    const showPrimary=Boolean(primaryCandidate);
 
     const displayedPlayers=view==="eligible"?g.players:g.players.slice(0,4);
     const displayedPrimary=showPrimary&&displayedPlayers.includes(primaryCandidate)?primaryCandidate:null;
@@ -4196,7 +4202,7 @@ function render(){
               ${pitcherCard(teams[1],matchupPlayers,true)}
             </div>
 
-            <div class="game-player-row">${playerCards}</div>
+            <div class="game-player-row">${playerCards||'<div class="empty">No confirmed Homer pick cleared this matchup. Browse eligible hitters for the full scored list.</div>'}</div>
 
             <div class="game-inline-detail" data-game-detail="${esc(g.key)}"></div>
 
