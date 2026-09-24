@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-24T20:49:37.368055+00:00",
+  "generated_at": "2026-09-24T21:32:45.138115+00:00",
   "results": [
-    {
-      "game_pk": 822842,
-      "player_id": 673962,
-      "player": "Jung, Josh",
-      "home_runs": 1
-    },
     {
       "game_pk": 822842,
       "player_id": 608369,
@@ -39,8 +33,14 @@
     },
     {
       "game_pk": 824298,
-      "player_id": 571448,
-      "player": "Arenado, Nolan",
+      "player_id": 543510,
+      "player": "McCann, James",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 824298,
+      "player_id": 691720,
+      "player": "Karros, Kyle",
       "home_runs": 1
     },
     {
