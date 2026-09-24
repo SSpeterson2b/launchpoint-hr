@@ -3583,6 +3583,7 @@ function launchArc(){
 function renderLaunch5(players){
   const container=document.getElementById("launch5");
   if(!container)return;
+  if(!slateIsCurrent){currentLaunch5=[];container.innerHTML='<div class="launch5-empty">Today’s Homer board is pending. Prior slate results remain available below.</div>';return}
 
   const allScored=(players||[]).filter(p=>p&&p.player);
   const cleanupPool=cleanupRankPlayers(allScored.filter(p=>{
@@ -3640,7 +3641,7 @@ function renderLaunch5(players){
   updateResultsUI();
 }
 const currentHour=new Date().getHours();
-let allPlayers=[],period=currentHour<15?"early":currentHour<19?"afternoon":"night",openKey=null,view="by-game",modelGenerated="",slateDate="",modelVersion="HR Edge 3.3";
+let allPlayers=[],period=currentHour<15?"early":currentHour<19?"afternoon":"night",openKey=null,view="by-game",modelGenerated="",slateDate="",modelVersion="HR Edge 3.3",slateIsCurrent=true;
 let homerResultsById=new Map(),homerResultsByGameName=new Map(),gameEdgeResults=[];
 let watchlist=[];try{watchlist=JSON.parse(localStorage.getItem("launchpoint-watchlist")||"[]")}catch(e){watchlist=[]}
 const n=v=>Number(v)||0, esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -4110,6 +4111,12 @@ function gameMatchupDetails(players){
 
 function render(){
   document.querySelector(".shell")?.setAttribute("data-view",view);
+  if(!slateIsCurrent){
+    const pending='<div class="empty">Today’s Homer board is pending. Last published slate: '+esc(formatSlateDate(slateDate))+'. Open Results for completed games.</div>';
+    document.querySelector("#top3").innerHTML=pending;
+    document.querySelector("#games").innerHTML=pending;
+    return;
+  }
   const gs=groups();
   const top=cleanupRankPlayers(allPlayers.filter(p=>
     isSelectionEligible(p)&&String(p.launchpoint_34_role||"").toUpperCase()==="PRIMARY"&&
@@ -4555,15 +4562,13 @@ async function refreshLaunchPointData(){
     modelVersion=d.model_version||"HR Edge 3.3";
     modelGenerated=d.generated_at_utc||"";
     slateDate=d.slate_date||allPlayers.find(p=>p.game_date)?.game_date||"";
-    if(String(slateDate).slice(0,10)!==centralToday()){
-      allPlayers=[];
-      currentLaunch5=[];
-      const pending='<div class="empty">Today’s Homer board is pending. The last published slate was '+esc(formatSlateDate(slateDate))+'.</div>';
-      document.querySelector("#launch5").innerHTML=pending;
-      document.querySelector("#top3").innerHTML=pending;
-      document.querySelector("#games").innerHTML=pending;
+    slateIsCurrent=String(slateDate).slice(0,10)===centralToday();
+    if(!slateIsCurrent){
+      renderLaunch5(allPlayers);
+      render();
       updateModelMeta();
       updateDashboardUI();
+      refreshHomerResults();
       return;
     }
     renderLaunch5(allPlayers);
