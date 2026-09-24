@@ -10,7 +10,7 @@ html{background:#000713}body{background:radial-gradient(circle at 50% -10%,#0730
 @media(max-width:520px){.app{padding-left:10px;padding-right:10px}.top{grid-template-columns:36px 1fr auto}.title{font-size:20px}.ready{font-size:8px;padding:7px}.matchup-team b{font-size:18px}.matchup-team img{width:39px;height:39px}.pick-row{grid-template-columns:46px 1fr auto}.team-mark{width:44px;height:44px}.pick-name{font-size:19px}.prob{font-size:39px}.confidence{font-size:7px;padding:5px}.metrics{grid-template-columns:1fr 1fr}.total-grid{grid-template-columns:repeat(3,1fr)}.reasons{grid-template-columns:1fr 1fr}.checks{grid-template-columns:repeat(4,1fr)}.check{font-size:7px}.check i{width:22px;height:22px;line-height:20px}.bottom{height:calc(72px + env(safe-area-inset-bottom))}}
 .game-state{display:inline-flex;margin-left:7px;padding:3px 7px;border:1px solid #37708b;border-radius:999px;color:#b8cbd5;font-size:9px;font-weight:900;letter-spacing:.7px}.final-outcome{display:none;align-items:center;justify-content:center;gap:7px;margin-top:10px;padding:8px 10px;border:1px solid #2f9f68;border-radius:9px;background:rgba(13,73,45,.5);color:#93ffbc;font-weight:900;font-size:12px;letter-spacing:.5px}.final-outcome.show{display:flex}.final-outcome .result-grade{padding:3px 6px;border-radius:5px;background:#133d2b;color:#8affb2;font-size:9px}.final-outcome .result-grade.miss{background:#491921;color:#ff9299}.projection-only{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:12px;padding:12px;border:1px solid #16445c;border-radius:10px;background:#03131f}.projection-only b{color:var(--cyan);font-family:Impact,"Arial Narrow",sans-serif;font-size:33px}.projection-only span{color:#9fb2bd;font-size:11px;line-height:1.35}.data-updated{text-align:center;color:#6f8d9e;font-size:9px;margin-top:8px;letter-spacing:.5px}
 .underdog-alert{display:inline-flex;vertical-align:middle;margin-left:7px;padding:5px 8px;border:1px solid #ff7a2f;border-radius:999px;background:rgba(105,34,4,.55);color:#ff9b54;font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:900;letter-spacing:.8px;white-space:nowrap}@media(max-width:520px){.underdog-alert{display:flex;width:max-content;margin:7px 0 0;padding:4px 7px;font-size:8px}}
- .content-launch{display:block;width:100%;margin:0 0 12px;padding:12px;border:1px solid #d5a72b;border-radius:12px;background:linear-gradient(90deg,#f7d46c,#d9a21f);color:#06121a;text-align:center;text-decoration:none;font-size:12px;font-weight:1000;letter-spacing:1px}</style></head><body><main class="app"><header class="top"><button class="back" onclick="location.href='index.html'" aria-label="Back">←</button><div><div class="kicker">LAUNCHPOINT HR</div><h1 class="title">GAME EDGE</h1></div><div class="ready" id="ready">LOADING</div></header><a id="content-launch" class="content-launch" href="game-edge-content.html">CREATE GAME EDGE CONTENT</a><section id="screen"><div class="empty">Loading today’s Game Edge…</div></section><section class="list" id="game-list"></section></main>
+ .content-launch[hidden]{display:none}.content-launch{display:block;width:100%;margin:0 0 12px;padding:12px;border:1px solid #d5a72b;border-radius:12px;background:linear-gradient(90deg,#f7d46c,#d9a21f);color:#06121a;text-align:center;text-decoration:none;font-size:12px;font-weight:1000;letter-spacing:1px}</style></head><body><main class="app"><header class="top"><button class="back" onclick="location.href='index.html'" aria-label="Back">←</button><div><div class="kicker">LAUNCHPOINT HR</div><h1 class="title">GAME EDGE</h1></div><div class="ready" id="ready">LOADING</div></header><a id="content-launch" class="content-launch" href="game-edge-content.html">CREATE GAME EDGE CONTENT</a><section id="screen"><div class="empty">Loading today’s Game Edge…</div></section><section class="list" id="game-list"></section></main>
 <nav class="bottom"><a href="index.html"><b>⌂</b>HOME</a><a href="index.html#games"><b>⌁</b>HR PICKS</a><a class="active" href="game-edge.html"><b>◎</b>GAME EDGE</a><a href="player-props.html"><b>◉</b>PROPS</a><a href="parlays.html"><b>◆</b>PARLAYS</a><a href="index.html#results"><b>▥</b>RESULTS</a><a href="index.html#more"><b>•••</b>MORE</a></nav>
 <script>
 const $=s=>document.querySelector(s),num=(v,d=0)=>{const n=Number(v);return Number.isFinite(n)?n:d},esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -69,8 +69,8 @@ function renderSafe(r){
   $('#ready').textContent=statusLabel;
   $('#ready').style.borderColor=finalReady?'#7ce63b':'#ffbb21';
   $('#ready').style.color=finalReady?'#7ce63b':'#ffbb21';
-  const pickTitle=hasProjection?`${esc(pick)} TO WIN`:'OFFICIAL PICK PENDING';
-  const underdog=hasProjection&&(String(r.underdog_alert||'').toUpperCase()==='UNDERDOG ALERT'||String(r.market_underdog||'')===String(pick));
+  const pickTitle=hasProjection?(finalReady&&playable?`${esc(pick)} TO WIN`:`MODEL LEAN: ${esc(pick)}`):'OFFICIAL PICK PENDING';
+  const underdog=playable&&hasProjection&&(String(r.underdog_alert||'').toUpperCase()==='UNDERDOG ALERT'||String(r.market_underdog||'')===String(pick));
   const underdogBadge=underdog?'<span class="underdog-alert">⚠ UNDERDOG ALERT</span>':'';
   const probability=hasProjection?`${fmt(win)}%`:'DATA PENDING';
   const totalPick=marketReady?(r.total_pick||'NO EDGE'):'NO LINE';
@@ -125,12 +125,26 @@ async function hydrateFinalOutcome(game){
     showFinalOutcome({actual_away_runs:away,actual_home_runs:home,actual_winner:away>home?(teams?.away?.name||game.away_team):(teams?.home?.name||game.home_team),away_team:game.away_team,home_team:game.home_team});
   }catch(error){}
 }
+function centralToday(){
+  const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+  const part=type=>parts.find(p=>p.type===type)?.value||'';
+  return [part('year'),part('month'),part('day')].join('-');
+}
 async function load(){
-  resultsByGame={};sharedStatus={};
+  games=[];resultsByGame={};sharedStatus={};
   try{const sr=await fetch('data/game_status.json?ts='+Date.now());if(sr.ok){const sd=await sr.json();(sd.games||[]).forEach(x=>sharedStatus[String(x.game_pk)]=x)}}catch(error){}
   try{const res=await fetch('data/game_edge_results.csv?ts='+Date.now());if(res.ok)(csv(await res.text())||[]).forEach(row=>{if(row.game_pk)resultsByGame[String(row.game_pk)]=row})}catch(error){}
   for(const url of ['data/daily_game_predictions.csv','daily_game_predictions.csv']){try{const res=await fetch(url+'?ts='+Date.now());if(!res.ok)continue;games=csv(await res.text());games.forEach(g=>{const s=sharedStatus[String(g.game_pk)];if(s){g.game_datetime_utc=s.game_datetime_utc||g.game_datetime_utc;g.game_status=s.game_status||g.game_status;g.doubleheader_game=s.doubleheader_game||"";if(s.lineups_confirmed){g.missing_inputs=String(g.missing_inputs||'').split(';').filter(x=>x&&x!=='confirmed_lineups').join(';');if(g.selection_status==='PRELIMINARY'&&!String(g.missing_inputs||'').includes('live_weather'))g.selection_status='FINAL READY'}}});if(games.length)break}catch(e){}}
-  if(!games.length){$('#ready').textContent='NOT READY';$('#screen').innerHTML='<div class="empty">Today’s Game Edge file has not been published yet.</div>';return}
+  const latestDate=games.map(g=>String(g.game_date||'')).filter(Boolean).sort().at(-1)||'';
+  games=games.filter(g=>String(g.game_date||'')===centralToday());
+  $('#content-launch').hidden=!games.length;
+  if(!games.length){
+    $('#ready').textContent='TODAY PENDING';
+    $('#ready').style.borderColor='#ffbb21';$('#ready').style.color='#ffbb21';
+    $('#screen').innerHTML='<div class="empty">Today’s Game Edge board is pending.'+(latestDate?' Last published slate: '+esc(latestDate)+'.':'')+' Check back after the next update.</div>';
+    $('#game-list').innerHTML='';
+    return;
+  }
   const requested=new URLSearchParams(location.search).get('game_pk')||sessionStorage.getItem('launchpoint-selected-game')||'';
   const selectedIndex=Math.max(0,games.findIndex(g=>String(g.game_pk)===String(requested)));
   selectGame(selectedIndex,false);

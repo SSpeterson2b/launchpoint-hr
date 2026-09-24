@@ -3583,6 +3583,7 @@ function launchArc(){
 function renderLaunch5(players){
   const container=document.getElementById("launch5");
   if(!container)return;
+  if(!slateIsCurrent){currentLaunch5=[];container.innerHTML='<div class="launch5-empty">Today’s Homer board is pending. Prior slate results remain available below.</div>';return}
 
   const allScored=(players||[]).filter(p=>p&&p.player);
   const cleanupPool=cleanupRankPlayers(allScored.filter(p=>{
@@ -3590,11 +3591,17 @@ function renderLaunch5(players){
     const state=String(p.launchpoint_34_state||"").toUpperCase();
     return isSelectionEligible(p)&&state!=="LOCKED"&&["PRIMARY","SECONDARY","UPSIDE"].includes(role);
   }));
-  const fallbackPool=rankPlayers(allScored.filter(isSelectionEligible));
-  const pool=cleanupPool.length?cleanupPool:fallbackPool;
+  // The featured board is a list of model calls, not the top five scores.
+  // A HOLD or an eligible hitter must not fill a vacant pick slot.
+  const pool=cleanupPool.filter(p=>
+    String(p.launchpoint_34_role||"").toUpperCase()==="PRIMARY" &&
+    String(p.lineup_status||"").toUpperCase()==="CONFIRMED" &&
+    n(p.batting_order)>0
+  );
 
   if(!pool.length){
-    container.innerHTML='<div class="launch5-empty">Launch 5 is not available yet.</div>';
+    currentLaunch5=[];
+    container.innerHTML='<div class="launch5-empty">'+(allScored.some(p=>String(p.launchpoint_34_role||'').toUpperCase()==='PRIMARY'&&String(p.launchpoint_34_state||'').toUpperCase()==='LOCKED')?'Today’s pregame picks are locked. Open Results to see those calls and their Homer badges.':'No confirmed Homer picks have cleared the model yet.')+'</div>';
     return;
   }
 
@@ -3634,7 +3641,7 @@ function renderLaunch5(players){
   updateResultsUI();
 }
 const currentHour=new Date().getHours();
-let allPlayers=[],period=currentHour<15?"early":currentHour<19?"afternoon":"night",openKey=null,view="by-game",modelGenerated="",slateDate="",modelVersion="HR Edge 3.3";
+let allPlayers=[],period=currentHour<15?"early":currentHour<19?"afternoon":"night",openKey=null,view="by-game",modelGenerated="",slateDate="",modelVersion="HR Edge 3.3",slateIsCurrent=true;
 let homerResultsById=new Map(),homerResultsByGameName=new Map(),gameEdgeResults=[];
 let watchlist=[];try{watchlist=JSON.parse(localStorage.getItem("launchpoint-watchlist")||"[]")}catch(e){watchlist=[]}
 const n=v=>Number(v)||0, esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -3643,7 +3650,8 @@ const normalizePlayerName=name=>String(displayName(name)||"").normalize("NFD").r
 const keyFor=p=>p.game_pk?String(p.game_pk):[p.team,p.opponent].sort().join("|");
 function homeRunsForPlayer(p){
   const id=String(p?.player_id||p?.mlb_id||p?.batter_id||"").replace(/\D/g,"");
-  if(id&&homerResultsById.has(id))return homerResultsById.get(id)||0;
+  const gameKey=`${p?.game_pk||""}|${id}`;
+  if(id&&homerResultsById.has(gameKey))return homerResultsById.get(gameKey)||0;
   return homerResultsByGameName.get(`${p?.game_pk||""}|${normalizePlayerName(p?.player)}`)||0;
 }
 function homerBadge(p){
@@ -3654,7 +3662,7 @@ function homerBadge(p){
 function updateResultsUI(){
   const boardHitters=(allPlayers||[]).filter(p=>homeRunsForPlayer(p)>0);
   const totalHomers=boardHitters.reduce((sum,p)=>sum+homeRunsForPlayer(p),0);
-  const cardHits=(currentLaunch5||[]).filter(p=>homeRunsForPlayer(p)>0).length;
+  const cardHits=(allPlayers||[]).filter(p=>String(p.launchpoint_34_role||"").toUpperCase()==="PRIMARY"&&homeRunsForPlayer(p)>0).length;
   const set=(id,value)=>{const el=document.getElementById(id);if(el)el.textContent=String(value)};
   ["preview-card-hits","results-card-hits"].forEach(id=>set(id,cardHits));
   ["preview-board-hitters","results-board-hitters"].forEach(id=>set(id,boardHitters.length));
@@ -3741,7 +3749,7 @@ async function refreshHomerResults(){
         const homers=Number(row.home_runs)||0;
         const id=String(row.player_id||"").replace(/\D/g,"");
         const name=normalizePlayerName(row.player||"");
-        if(id&&homers>0)byId.set(id,homers);
+        if(id&&homers>0)byId.set(`${row.game_pk||""}|${id}`,homers);
         if(name&&homers>0)byGameName.set(`${row.game_pk||""}|${name}`,homers);
       });
       homerResultsById=byId;
@@ -3756,16 +3764,18 @@ async function refreshHomerResults(){
     if(!response.ok)throw new Error(`MLB feed ${gamePk} failed`);
     return {gamePk,data:await response.json()};
   }));
-  const byId=new Map(),byGameName=new Map();
+  const byId=new Map(homerResultsById),byGameName=new Map(homerResultsByGameName);
   feeds.forEach(result=>{
     if(result.status!=="fulfilled")return;
     const {gamePk,data}=result.value;
+    for(const key of byId.keys())if(key.startsWith(`${gamePk}|`))byId.delete(key);
+    for(const key of byGameName.keys())if(key.startsWith(`${gamePk}|`))byGameName.delete(key);
     const plays=data?.liveData?.plays?.allPlays||[];
     plays.forEach(play=>{
       if(play?.result?.eventType!=="home_run")return;
       const id=String(play?.matchup?.batter?.id||"");
       const name=normalizePlayerName(play?.matchup?.batter?.fullName||"");
-      if(id)byId.set(id,(byId.get(id)||0)+1);
+      if(id){const key=`${gamePk}|${id}`;byId.set(key,(byId.get(key)||0)+1)}
       if(name){
         const key=`${gamePk}|${name}`;
         byGameName.set(key,(byGameName.get(key)||0)+1);
@@ -3782,7 +3792,7 @@ function gameLocalDate(p){const iso=String(p?.game_datetime_utc||"").trim();if(!
 function formatGameTime(p){const d=gameLocalDate(p);if(d)return new Intl.DateTimeFormat(undefined,{hour:"numeric",minute:"2-digit"}).format(d);return String(p?.game_time||"Time TBD")||"Time TBD"}
 function gamePeriod(p){const d=gameLocalDate(p);if(d){const h=d.getHours();return h<15?"early":h<19?"afternoon":"night"}const t=String(p?.game_time||"");const m=t.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);if(!m)return "unknown";let h=+m[1];const ap=(m[3]||"").toUpperCase();if(ap==="PM"&&h<12)h+=12;if(ap==="AM"&&h===12)h=0;return h<15?"early":h<19?"afternoon":"night"}
 function formatSlateDate(value){if(!value)return "DATE PENDING";const d=new Date(value+"T12:00:00");return Number.isNaN(d.getTime())?value:new Intl.DateTimeFormat(undefined,{month:"short",day:"numeric",year:"numeric"}).format(d)}
-function updateModelStatus(){const b=document.querySelector("#model-live-status");if(!b)return;const d=modelGenerated?new Date(modelGenerated):null;const age=d&&!Number.isNaN(d.getTime())?(Date.now()-d.getTime())/36e5:Infinity;const today=new Date().toISOString().slice(0,10);const feed=String(slateDate||"").slice(0,10);const populated=Array.isArray(allPlayers)&&allPlayers.length>0;let label="MODEL LIVE",state="live";if(!populated||!d||feed!==today){label="UPDATING";state="updating"}if((d&&age>4)||(!d&&!populated)){label="DATA DELAY";state="delay"}b.textContent=label;b.dataset.state=state} function updateModelMeta(){const el=document.querySelector("#model-meta");if(!el)return;const updated=modelGenerated?new Intl.DateTimeFormat(undefined,{hour:"numeric",minute:"2-digit",month:"short",day:"numeric"}).format(new Date(modelGenerated)):"Pending";el.textContent=`Slate ${formatSlateDate(slateDate)}  -  Updated ${updated}`;updateModelStatus()}
+function centralToday(){const parts=Object.fromEntries(new Intl.DateTimeFormat("en-US",{timeZone:"America/Chicago",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date()).map(x=>[x.type,x.value]));return `${parts.year}-${parts.month}-${parts.day}`}function updateModelStatus(){const b=document.querySelector("#model-live-status");if(!b)return;const d=modelGenerated?new Date(modelGenerated):null;const age=d&&!Number.isNaN(d.getTime())?(Date.now()-d.getTime())/36e5:Infinity;const today=centralToday();const feed=String(slateDate||"").slice(0,10);const populated=Array.isArray(allPlayers)&&allPlayers.length>0;let label="MODEL LIVE",state="live";if(!populated||!d||feed!==today){label="UPDATING";state="updating"}if((d&&age>4)||(!d&&!populated)){label="DATA DELAY";state="delay"}b.textContent=label;b.dataset.state=state} function updateModelMeta(){const el=document.querySelector("#model-meta");if(!el)return;const updated=modelGenerated?new Intl.DateTimeFormat(undefined,{hour:"numeric",minute:"2-digit",month:"short",day:"numeric"}).format(new Date(modelGenerated)):"Pending";el.textContent=`Slate ${formatSlateDate(slateDate)}  -  Updated ${updated}`;updateModelStatus()}
 function lineupOpportunity(p){
   if(n(p.lineup_score)>0)return n(p.lineup_score);
   const order=n(p.batting_order);
@@ -3866,9 +3876,17 @@ function selectGamePlayers(players){
     const cleanup=cleanupRankPlayers(teamRows.filter(p=>{
       const role=String(p.launchpoint_34_role||"").toUpperCase();
       const state=String(p.launchpoint_34_state||"").toUpperCase();
-      return state!=="LOCKED"&&role&&role!=="HOLD";
+      return isSelectionEligible(p)&&state==="PREGAME"&&role==="PRIMARY"&&
+        String(p.lineup_status||"").toUpperCase()==="CONFIRMED"&&n(p.batting_order)>0;
     }));
-    const picks=cleanup.length?cleanup.slice(0,2):rankPlayers(teamRows).slice(0,2);
+    // Keep the actual published pregame call after first pitch.
+    // Older slates without a saved call remain a ranked results browser.
+    const locked=teamRows.length>0&&teamRows.every(p=>String(p.launchpoint_34_state||"").toUpperCase()==="LOCKED");
+    const recorded=cleanupRankPlayers(teamRows.filter(p=>
+      String(p.launchpoint_34_state||"").toUpperCase()==="LOCKED" &&
+      String(p.launchpoint_34_role||"").toUpperCase()==="PRIMARY"
+    ));
+    const picks=locked?(recorded.length?recorded.slice(0,1):teamRows.slice(0,2)):cleanup.slice(0,1);
     picks.forEach(p=>{if(!selected.includes(p))selected.push(p)});
   });
   return cleanupRankPlayers(selected).slice(0,4);
@@ -3892,7 +3910,8 @@ function gamePlayerLabel(player,index,strength,gamePlayers){
 function gameCardProfile(supportingIndex,isPrimary,player){
   const role=String(player?.launchpoint_34_role||"").toUpperCase();
   const state=String(player?.launchpoint_34_state||"").toUpperCase();
-  if(state==="LOCKED"||role==="HOLD")return null;
+  if(state==="LOCKED")return role==="PRIMARY"?{label:"PREGAME PICK",kind:"contender"}:null;
+  if(role==="HOLD")return null;
   if(role==="PRIMARY")return {label:"PRIMARY",kind:"contender"};
   if(role==="SECONDARY")return {label:"SECONDARY",kind:"sleeper"};
   if(role==="UPSIDE")return {label:"UPSIDE",kind:"value"};
@@ -3902,6 +3921,9 @@ function playerPublicProfile(player,forceSecondary=false){
   if(!isSelectionEligible(player))return {label:"DATA PENDING",kind:"hold"};
   const role=String(player?.launchpoint_34_role||"").toUpperCase();
   const state=String(player?.launchpoint_34_state||"").toUpperCase();
+  if(state==="LOCKED"&&role==="PRIMARY")return {label:"PREGAME PICK",kind:"contender"};
+  if(state==="LOCKED"&&role==="SECONDARY")return {label:"PREGAME SUPPORT",kind:"sleeper"};
+  if(state==="LOCKED")return {label:"RANKED HITTER",kind:"hold"};
   if(state!=="LOCKED"){
     if(role==="PRIMARY")return {label:"PRIMARY",kind:"contender"};
     if(role==="SECONDARY")return {label:"SECONDARY",kind:"sleeper"};
@@ -4100,17 +4122,27 @@ function gameMatchupDetails(players){
 
 function render(){
   document.querySelector(".shell")?.setAttribute("data-view",view);
+  if(!slateIsCurrent){
+    const pending='<div class="empty">Today’s Homer board is pending. Last published slate: '+esc(formatSlateDate(slateDate))+'. Open Results for completed games.</div>';
+    document.querySelector("#top3").innerHTML=pending;
+    document.querySelector("#games").innerHTML=pending;
+    return;
+  }
   const gs=groups();
-  const top=rankPlayers(allPlayers.filter(isSelectionEligible)).slice(0,3);
+  const top=cleanupRankPlayers(allPlayers.filter(p=>
+    isSelectionEligible(p)&&String(p.launchpoint_34_role||"").toUpperCase()==="PRIMARY"&&
+    String(p.launchpoint_34_state||"").toUpperCase()==="PREGAME"&&
+    String(p.lineup_status||"").toUpperCase()==="CONFIRMED"&&n(p.batting_order)>0
+  )).slice(0,3);
 
   document.querySelector("#top3").innerHTML=top.map((p,i)=>`
     <div class="top-pick">
       <strong>${i+1}</strong>
       <span>${esc(displayName(p.player))}${homerBadge(p)}<i class="player-profile-badge ${playerPublicProfile(p).kind}">${playerPublicProfile(p).label}</i></span>
     </div>
-  `).join("");
+  `).join("")||'<div class="empty">No confirmed Homer picks yet.</div>';
 
-  const shown=gs.filter(g=>gamePeriod(g.players[0])===period);
+  const shown=gs.filter(g=>gamePeriod(g.allPlayers[0])===period);
 
   if(!shown.length){
     document.querySelector("#games").innerHTML=view==="eligible"
@@ -4124,8 +4156,9 @@ function render(){
   if(!openKey)openKey=shown[0].key;
 
   document.querySelector("#games").innerHTML=shown.map(g=>{
-    const p=g.players[0];
+    const p=g.players[0]||g.allPlayers[0];
     const matchupPlayers=g.allPlayers||g.players;
+    const lockedGame=matchupPlayers.every(player=>String(player.launchpoint_34_state||"").toUpperCase()==="LOCKED");
     const teams=[p.team,p.opponent];
     const expanded=g.key===openKey;
     const rating=Math.round(gameLaunchRating(matchupPlayers));
@@ -4136,9 +4169,8 @@ function render(){
         .filter(Boolean)
     );
     const confirmed=confirmedTeams.size>=2;
-    const strength=gameCardStrength(matchupPlayers);
-    const primaryCandidate=g.players.find(isSelectionEligible);
-    const showPrimary=Boolean(primaryCandidate&&strength!=="weak");
+    const primaryCandidate=g.players.find(p=>String(p.launchpoint_34_role||"").toUpperCase()==="PRIMARY");
+    const showPrimary=Boolean(primaryCandidate);
 
     const displayedPlayers=view==="eligible"?g.players:g.players.slice(0,4);
     const displayedPrimary=showPrimary&&displayedPlayers.includes(primaryCandidate)?primaryCandidate:null;
@@ -4196,7 +4228,8 @@ function render(){
               ${pitcherCard(teams[1],matchupPlayers,true)}
             </div>
 
-            <div class="game-player-row">${playerCards}</div>
+            ${lockedGame?'<div class="empty">Game underway or finished · ranked hitters shown for results</div>':""}
+            <div class="game-player-row">${playerCards||'<div class="empty">No confirmed Homer pick cleared this matchup. Browse eligible hitters for the full scored list.</div>'}</div>
 
             <div class="game-inline-detail" data-game-detail="${esc(g.key)}"></div>
 
@@ -4540,6 +4573,15 @@ async function refreshLaunchPointData(){
     modelVersion=d.model_version||"HR Edge 3.3";
     modelGenerated=d.generated_at_utc||"";
     slateDate=d.slate_date||allPlayers.find(p=>p.game_date)?.game_date||"";
+    slateIsCurrent=String(slateDate).slice(0,10)===centralToday();
+    if(!slateIsCurrent){
+      renderLaunch5(allPlayers);
+      render();
+      updateModelMeta();
+      updateDashboardUI();
+      refreshHomerResults();
+      return;
+    }
     renderLaunch5(allPlayers);
     updateDashboardUI();
     updateMorePanel();
