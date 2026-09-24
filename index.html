@@ -4111,16 +4111,20 @@ function gameMatchupDetails(players){
 function render(){
   document.querySelector(".shell")?.setAttribute("data-view",view);
   const gs=groups();
-  const top=rankPlayers(allPlayers.filter(isSelectionEligible)).slice(0,3);
+  const top=cleanupRankPlayers(allPlayers.filter(p=>
+    isSelectionEligible(p)&&String(p.launchpoint_34_role||"").toUpperCase()==="PRIMARY"&&
+    String(p.launchpoint_34_state||"").toUpperCase()==="PREGAME"&&
+    String(p.lineup_status||"").toUpperCase()==="CONFIRMED"&&n(p.batting_order)>0
+  )).slice(0,3);
 
   document.querySelector("#top3").innerHTML=top.map((p,i)=>`
     <div class="top-pick">
       <strong>${i+1}</strong>
       <span>${esc(displayName(p.player))}${homerBadge(p)}<i class="player-profile-badge ${playerPublicProfile(p).kind}">${playerPublicProfile(p).label}</i></span>
     </div>
-  `).join("");
+  `).join("")||'<div class="empty">No confirmed Homer picks yet.</div>';
 
-  const shown=gs.filter(g=>gamePeriod(g.players[0])===period);
+  const shown=gs.filter(g=>gamePeriod(g.allPlayers[0])===period);
 
   if(!shown.length){
     document.querySelector("#games").innerHTML=view==="eligible"
