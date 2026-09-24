@@ -1,4 +1,11 @@
 {
-  "generated_at": "2026-09-24T16:11:17.294113+00:00",
-  "results": []
+  "generated_at": "2026-09-24T18:28:08.827574+00:00",
+  "results": [
+    {
+      "game_pk": 823326,
+      "player_id": 676475,
+      "player": "Burleson, Alec",
+      "home_runs": 1
+    }
+  ]
 }
