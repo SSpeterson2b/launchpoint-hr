@@ -69,8 +69,8 @@ function renderSafe(r){
   $('#ready').textContent=statusLabel;
   $('#ready').style.borderColor=finalReady?'#7ce63b':'#ffbb21';
   $('#ready').style.color=finalReady?'#7ce63b':'#ffbb21';
-  const pickTitle=hasProjection?`${esc(pick)} TO WIN`:'OFFICIAL PICK PENDING';
-  const underdog=hasProjection&&(String(r.underdog_alert||'').toUpperCase()==='UNDERDOG ALERT'||String(r.market_underdog||'')===String(pick));
+  const pickTitle=hasProjection?(finalReady&&playable?`${esc(pick)} TO WIN`:`MODEL LEAN: ${esc(pick)}`):'OFFICIAL PICK PENDING';
+  const underdog=playable&&hasProjection&&(String(r.underdog_alert||'').toUpperCase()==='UNDERDOG ALERT'||String(r.market_underdog||'')===String(pick));
   const underdogBadge=underdog?'<span class="underdog-alert">⚠ UNDERDOG ALERT</span>':'';
   const probability=hasProjection?`${fmt(win)}%`:'DATA PENDING';
   const totalPick=marketReady?(r.total_pick||'NO EDGE'):'NO LINE';
