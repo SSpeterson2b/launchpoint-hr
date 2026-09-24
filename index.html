@@ -3650,7 +3650,8 @@ const normalizePlayerName=name=>String(displayName(name)||"").normalize("NFD").r
 const keyFor=p=>p.game_pk?String(p.game_pk):[p.team,p.opponent].sort().join("|");
 function homeRunsForPlayer(p){
   const id=String(p?.player_id||p?.mlb_id||p?.batter_id||"").replace(/\D/g,"");
-  if(id&&homerResultsById.has(id))return homerResultsById.get(id)||0;
+  const gameKey=`${p?.game_pk||""}|${id}`;
+  if(id&&homerResultsById.has(gameKey))return homerResultsById.get(gameKey)||0;
   return homerResultsByGameName.get(`${p?.game_pk||""}|${normalizePlayerName(p?.player)}`)||0;
 }
 function homerBadge(p){
@@ -3748,7 +3749,7 @@ async function refreshHomerResults(){
         const homers=Number(row.home_runs)||0;
         const id=String(row.player_id||"").replace(/\D/g,"");
         const name=normalizePlayerName(row.player||"");
-        if(id&&homers>0)byId.set(id,homers);
+        if(id&&homers>0)byId.set(`${row.game_pk||""}|${id}`,homers);
         if(name&&homers>0)byGameName.set(`${row.game_pk||""}|${name}`,homers);
       });
       homerResultsById=byId;
@@ -3763,16 +3764,18 @@ async function refreshHomerResults(){
     if(!response.ok)throw new Error(`MLB feed ${gamePk} failed`);
     return {gamePk,data:await response.json()};
   }));
-  const byId=new Map(),byGameName=new Map();
+  const byId=new Map(homerResultsById),byGameName=new Map(homerResultsByGameName);
   feeds.forEach(result=>{
     if(result.status!=="fulfilled")return;
     const {gamePk,data}=result.value;
+    for(const key of byId.keys())if(key.startsWith(`${gamePk}|`))byId.delete(key);
+    for(const key of byGameName.keys())if(key.startsWith(`${gamePk}|`))byGameName.delete(key);
     const plays=data?.liveData?.plays?.allPlays||[];
     plays.forEach(play=>{
       if(play?.result?.eventType!=="home_run")return;
       const id=String(play?.matchup?.batter?.id||"");
       const name=normalizePlayerName(play?.matchup?.batter?.fullName||"");
-      if(id)byId.set(id,(byId.get(id)||0)+1);
+      if(id){const key=`${gamePk}|${id}`;byId.set(key,(byId.get(key)||0)+1)}
       if(name){
         const key=`${gamePk}|${name}`;
         byGameName.set(key,(byGameName.get(key)||0)+1);
