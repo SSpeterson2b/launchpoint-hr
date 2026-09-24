@@ -1,10 +1,52 @@
 {
-  "generated_at": "2026-09-24T18:28:08.827574+00:00",
+  "generated_at": "2026-09-24T20:49:37.368055+00:00",
   "results": [
+    {
+      "game_pk": 822842,
+      "player_id": 673962,
+      "player": "Jung, Josh",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 822842,
+      "player_id": 608369,
+      "player": "Seager, Corey",
+      "home_runs": 1
+    },
     {
       "game_pk": 823326,
       "player_id": 676475,
       "player": "Burleson, Alec",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 824059,
+      "player_id": 691019,
+      "player": "Teel, Kyle",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 824059,
+      "player_id": 521692,
+      "player": "Perez, Salvador",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 824298,
+      "player_id": 672515,
+      "player": "Moreno, Gabriel",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 824298,
+      "player_id": 571448,
+      "player": "Arenado, Nolan",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 824623,
+      "player_id": 673548,
+      "player": "Suzuki, Seiya",
       "home_runs": 1
     }
   ]
