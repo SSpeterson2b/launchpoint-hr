@@ -1,4 +1,11 @@
 {
-  "generated_at": "2026-09-25T21:33:33.802911+00:00",
-  "results": []
+  "generated_at": "2026-09-25T23:19:27.439259+00:00",
+  "results": [
+    {
+      "game_pk": 823409,
+      "player_id": 663743,
+      "player": "Fortes, Nick",
+      "home_runs": 1
+    }
+  ]
 }
