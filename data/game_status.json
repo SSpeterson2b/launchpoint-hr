@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-25T21:13:28.424010+00:00",
+  "generated_at_utc": "2026-09-25T21:33:15.415378+00:00",
   "games": [
     {
       "game_pk": "824703",
@@ -17,7 +17,7 @@
       "game_pk": "824706",
       "game_date": "2026-09-25",
       "game_datetime_utc": "2026-09-25T21:35:00Z",
-      "game_status": "Pre-Game",
+      "game_status": "Warmup",
       "away_team": "Chicago Cubs",
       "home_team": "Boston Red Sox",
       "away_lineup_confirmed": true,
@@ -141,8 +141,8 @@
       "away_team": "St. Louis Cardinals",
       "home_team": "Milwaukee Brewers",
       "away_lineup_confirmed": true,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
