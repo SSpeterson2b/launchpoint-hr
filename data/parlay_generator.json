@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-25T21:34:57.183359+00:00",
+  "generated_at_utc": "2026-09-25T23:20:11.642991+00:00",
   "slate_date": "2026-09-25",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -10,23 +10,23 @@
       "legs": [
         {
           "type": "HITS",
-          "label": "Witt Jr., Bobby",
+          "label": "Wood, James",
           "detail": "1+",
-          "score": 70.0,
-          "game_pk": "824058"
+          "score": 71.7,
+          "game_pk": "822681"
         },
         {
           "type": "TOTAL BASES",
-          "label": "Caglianone, Jac",
+          "label": "Wood, James",
           "detail": "2+",
-          "score": 70.0,
-          "game_pk": "824058"
+          "score": 71.0,
+          "game_pk": "822681"
         },
         {
           "type": "WINNER",
           "label": "Los Angeles Dodgers",
-          "detail": "80.9% model win",
-          "score": 80.9,
+          "detail": "80.8% model win",
+          "score": 80.8,
           "game_pk": "823167"
         }
       ]
@@ -37,23 +37,23 @@
       "legs": [
         {
           "type": "HITS",
-          "label": "Witt Jr., Bobby",
+          "label": "Wood, James",
           "detail": "1+",
-          "score": 70.0,
-          "game_pk": "824058"
+          "score": 71.7,
+          "game_pk": "822681"
         },
         {
           "type": "WINNER",
           "label": "Los Angeles Dodgers",
-          "detail": "80.9% model win",
-          "score": 80.9,
+          "detail": "80.8% model win",
+          "score": 80.8,
           "game_pk": "823167"
         },
         {
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 71.87,
+          "score": 71.88,
           "game_pk": "824544"
         }
       ]
@@ -65,30 +65,30 @@
         {
           "type": "WINNER",
           "label": "Los Angeles Dodgers",
-          "detail": "80.9% model win",
-          "score": 80.9,
+          "detail": "80.8% model win",
+          "score": 80.8,
           "game_pk": "823167"
         },
         {
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 71.87,
+          "score": 71.88,
           "game_pk": "824544"
         },
         {
           "type": "HR",
-          "label": "Caglianone, Jac",
-          "detail": "Kansas City Royals HR",
-          "score": 67.94,
-          "game_pk": "824058"
+          "label": "Wood, James",
+          "detail": "Washington Nationals HR",
+          "score": 71.34,
+          "game_pk": "822681"
         },
         {
           "type": "HITS",
-          "label": "Witt Jr., Bobby",
+          "label": "Wood, James",
           "detail": "1+",
-          "score": 70.0,
-          "game_pk": "824058"
+          "score": 71.7,
+          "game_pk": "822681"
         }
       ]
     },
@@ -100,22 +100,22 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 71.87,
+          "score": 71.88,
           "game_pk": "824544"
         },
         {
           "type": "HR",
-          "label": "Caglianone, Jac",
-          "detail": "Kansas City Royals HR",
-          "score": 67.94,
-          "game_pk": "824058"
+          "label": "Wood, James",
+          "detail": "Washington Nationals HR",
+          "score": 71.34,
+          "game_pk": "822681"
         },
         {
           "type": "HITS",
-          "label": "Witt Jr., Bobby",
+          "label": "Wood, James",
           "detail": "1+",
-          "score": 70.0,
-          "game_pk": "824058"
+          "score": 71.7,
+          "game_pk": "822681"
         }
       ]
     }
