@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-25T20:48:29.168924+00:00",
+  "generated_at_utc": "2026-09-25T21:14:20.821750+00:00",
   "slate_date": "2026-09-25",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -25,8 +25,8 @@
         {
           "type": "WINNER",
           "label": "Los Angeles Dodgers",
-          "detail": "80.8% model win",
-          "score": 80.8,
+          "detail": "80.9% model win",
+          "score": 80.9,
           "game_pk": "823167"
         }
       ]
@@ -45,8 +45,8 @@
         {
           "type": "WINNER",
           "label": "Los Angeles Dodgers",
-          "detail": "80.8% model win",
-          "score": 80.8,
+          "detail": "80.9% model win",
+          "score": 80.9,
           "game_pk": "823167"
         },
         {
@@ -65,8 +65,8 @@
         {
           "type": "WINNER",
           "label": "Los Angeles Dodgers",
-          "detail": "80.8% model win",
-          "score": 80.8,
+          "detail": "80.9% model win",
+          "score": 80.9,
           "game_pk": "823167"
         },
         {
