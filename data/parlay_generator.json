@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-24T21:33:16.545534+00:00",
-  "slate_date": "2026-09-24",
+  "generated_at_utc": "2026-09-25T20:48:29.168924+00:00",
+  "slate_date": "2026-09-25",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
   "cards": [
@@ -10,24 +10,24 @@
       "legs": [
         {
           "type": "HITS",
-          "label": "Cruz, Oneil",
+          "label": "Witt Jr., Bobby",
           "detail": "1+",
-          "score": 71.2,
-          "game_pk": "823326"
+          "score": 70.0,
+          "game_pk": "824058"
         },
         {
-          "type": "HITS",
-          "label": "Olson, Matt",
-          "detail": "1+",
-          "score": 70.7,
-          "game_pk": "824866"
+          "type": "TOTAL BASES",
+          "label": "Caglianone, Jac",
+          "detail": "2+",
+          "score": 70.0,
+          "game_pk": "824058"
         },
         {
           "type": "WINNER",
-          "label": "Atlanta Braves",
-          "detail": "80.7% model win",
-          "score": 80.7,
-          "game_pk": "824866"
+          "label": "Los Angeles Dodgers",
+          "detail": "80.8% model win",
+          "score": 80.8,
+          "game_pk": "823167"
         }
       ]
     },
@@ -37,24 +37,24 @@
       "legs": [
         {
           "type": "HITS",
-          "label": "Cruz, Oneil",
+          "label": "Witt Jr., Bobby",
           "detail": "1+",
-          "score": 71.2,
-          "game_pk": "823326"
+          "score": 70.0,
+          "game_pk": "824058"
         },
         {
           "type": "WINNER",
-          "label": "Atlanta Braves",
-          "detail": "80.7% model win",
-          "score": 80.7,
-          "game_pk": "824866"
+          "label": "Los Angeles Dodgers",
+          "detail": "80.8% model win",
+          "score": 80.8,
+          "game_pk": "823167"
         },
         {
           "type": "HR",
-          "label": "Olson, Matt",
-          "detail": "Atlanta Braves HR",
-          "score": 69.61,
-          "game_pk": "824866"
+          "label": "Murakami, Munetaka",
+          "detail": "Chicago White Sox HR",
+          "score": 71.87,
+          "game_pk": "824544"
         }
       ]
     },
@@ -64,31 +64,31 @@
       "legs": [
         {
           "type": "WINNER",
-          "label": "Atlanta Braves",
-          "detail": "80.7% model win",
-          "score": 80.7,
-          "game_pk": "824866"
+          "label": "Los Angeles Dodgers",
+          "detail": "80.8% model win",
+          "score": 80.8,
+          "game_pk": "823167"
         },
         {
           "type": "HR",
-          "label": "Olson, Matt",
-          "detail": "Atlanta Braves HR",
-          "score": 69.61,
-          "game_pk": "824866"
+          "label": "Murakami, Munetaka",
+          "detail": "Chicago White Sox HR",
+          "score": 71.87,
+          "game_pk": "824544"
         },
         {
           "type": "HR",
-          "label": "Cruz, Oneil",
-          "detail": "Pittsburgh Pirates HR",
-          "score": 69.01,
-          "game_pk": "823326"
+          "label": "Caglianone, Jac",
+          "detail": "Kansas City Royals HR",
+          "score": 67.94,
+          "game_pk": "824058"
         },
         {
           "type": "HITS",
-          "label": "Cruz, Oneil",
+          "label": "Witt Jr., Bobby",
           "detail": "1+",
-          "score": 71.2,
-          "game_pk": "823326"
+          "score": 70.0,
+          "game_pk": "824058"
         }
       ]
     },
@@ -98,24 +98,24 @@
       "legs": [
         {
           "type": "HR",
-          "label": "Olson, Matt",
-          "detail": "Atlanta Braves HR",
-          "score": 69.61,
-          "game_pk": "824866"
+          "label": "Murakami, Munetaka",
+          "detail": "Chicago White Sox HR",
+          "score": 71.87,
+          "game_pk": "824544"
         },
         {
           "type": "HR",
-          "label": "Cruz, Oneil",
-          "detail": "Pittsburgh Pirates HR",
-          "score": 69.01,
-          "game_pk": "823326"
+          "label": "Caglianone, Jac",
+          "detail": "Kansas City Royals HR",
+          "score": 67.94,
+          "game_pk": "824058"
         },
         {
           "type": "HITS",
-          "label": "Cruz, Oneil",
+          "label": "Witt Jr., Bobby",
           "detail": "1+",
-          "score": 71.2,
-          "game_pk": "823326"
+          "score": 70.0,
+          "game_pk": "824058"
         }
       ]
     }
