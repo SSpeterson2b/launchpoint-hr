@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-26T20:07:58.560166+00:00",
+  "generated_at_utc": "2026-09-26T21:10:38.868126+00:00",
   "slate_date": "2026-09-26",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -9,17 +9,17 @@
       "title": "Foundation Card",
       "legs": [
         {
+          "type": "TOTAL BASES",
+          "label": "Valencia, Eduardo",
+          "detail": "2+",
+          "score": 71.5,
+          "game_pk": "824219"
+        },
+        {
           "type": "HITS",
           "label": "Murakami, Munetaka",
           "detail": "1+",
           "score": 71.1,
-          "game_pk": "824543"
-        },
-        {
-          "type": "RUNS",
-          "label": "Murakami, Munetaka",
-          "detail": "1+",
-          "score": 71.0,
           "game_pk": "824543"
         },
         {
@@ -36,11 +36,11 @@
       "title": "Mixed Edge Card",
       "legs": [
         {
-          "type": "HITS",
-          "label": "Murakami, Munetaka",
-          "detail": "1+",
-          "score": 71.1,
-          "game_pk": "824543"
+          "type": "TOTAL BASES",
+          "label": "Valencia, Eduardo",
+          "detail": "2+",
+          "score": 71.5,
+          "game_pk": "824219"
         },
         {
           "type": "WINNER",
@@ -53,7 +53,7 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 70.56,
+          "score": 70.5,
           "game_pk": "824543"
         }
       ]
@@ -73,22 +73,22 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 70.56,
+          "score": 70.5,
           "game_pk": "824543"
         },
         {
           "type": "HR",
           "label": "De La Cruz, Elly",
           "detail": "Cincinnati Reds HR",
-          "score": 67.67,
+          "score": 67.68,
           "game_pk": "822759"
         },
         {
-          "type": "HITS",
-          "label": "Murakami, Munetaka",
-          "detail": "1+",
-          "score": 71.1,
-          "game_pk": "824543"
+          "type": "TOTAL BASES",
+          "label": "Valencia, Eduardo",
+          "detail": "2+",
+          "score": 71.5,
+          "game_pk": "824219"
         }
       ]
     },
@@ -100,22 +100,22 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 70.56,
+          "score": 70.5,
           "game_pk": "824543"
         },
         {
           "type": "HR",
           "label": "De La Cruz, Elly",
           "detail": "Cincinnati Reds HR",
-          "score": 67.67,
+          "score": 67.68,
           "game_pk": "822759"
         },
         {
-          "type": "HITS",
-          "label": "Murakami, Munetaka",
-          "detail": "1+",
-          "score": 71.1,
-          "game_pk": "824543"
+          "type": "TOTAL BASES",
+          "label": "Valencia, Eduardo",
+          "detail": "2+",
+          "score": 71.5,
+          "game_pk": "824219"
         }
       ]
     }
