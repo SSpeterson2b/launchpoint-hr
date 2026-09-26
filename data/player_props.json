@@ -182,7 +182,10 @@
             "confirmed batting 2"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.694580+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-26T22:48:03.032025+00:00"
         },
         {
           "category": "TOTAL BASES",
@@ -207,7 +210,10 @@
             "confirmed batting 2"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.694631+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-26T22:48:03.032056+00:00"
         },
         {
           "category": "RUNS",
@@ -232,7 +238,10 @@
             "confirmed batting 2"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.694692+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-26T22:48:03.032065+00:00"
         },
         {
           "category": "RBI",
@@ -257,7 +266,10 @@
             "confirmed batting 2"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.694746+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-26T22:48:03.032072+00:00"
         },
         {
           "category": "STRIKEOUTS",
@@ -281,12 +293,16 @@
             "confirmed starter"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.694983+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 3,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-26T22:48:03.032087+00:00"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets"
+      "status_reason": "LaunchPoint projections with gradeable model targets",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823165",
@@ -592,7 +608,10 @@
             "confirmed batting 1"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.696041+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 2,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-26T22:48:03.174864+00:00"
         },
         {
           "category": "TOTAL BASES",
@@ -617,7 +636,10 @@
             "confirmed batting 1"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.696089+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 2,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-26T22:48:03.174906+00:00"
         },
         {
           "category": "RUNS",
@@ -642,7 +664,10 @@
             "confirmed batting 1"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.696143+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-26T22:48:03.174915+00:00"
         },
         {
           "category": "RBI",
@@ -667,7 +692,10 @@
             "confirmed batting 1"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.696193+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-26T22:48:03.174922+00:00"
         },
         {
           "category": "STRIKEOUTS",
@@ -691,12 +719,16 @@
             "confirmed starter"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.696431+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 1,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-26T22:48:03.174938+00:00"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets"
+      "status_reason": "LaunchPoint projections with gradeable model targets",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823733",
@@ -1001,7 +1033,10 @@
             "confirmed batting 4"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.697463+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 1,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-26T22:48:03.271713+00:00"
         },
         {
           "category": "TOTAL BASES",
@@ -1026,7 +1061,10 @@
             "confirmed batting 4"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.697492+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 4,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-26T22:48:03.271729+00:00"
         },
         {
           "category": "RUNS",
@@ -1051,7 +1089,10 @@
             "confirmed batting 4"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.697524+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 1,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-26T22:48:03.271734+00:00"
         },
         {
           "category": "RBI",
@@ -1076,7 +1117,10 @@
             "confirmed batting 4"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.697554+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 2,
+          "result": "HIT",
+          "graded_at_utc": "2026-09-26T22:48:03.271738+00:00"
         },
         {
           "category": "STRIKEOUTS",
@@ -1100,12 +1144,16 @@
             "confirmed starter"
           ],
           "locked_at_utc": "2026-09-26T22:47:33.697766+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 1,
+          "result": "MISS",
+          "graded_at_utc": "2026-09-26T22:48:03.271746+00:00"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets"
+      "status_reason": "LaunchPoint projections with gradeable model targets",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "823083",
@@ -1780,5 +1828,6 @@
     "long_shots": "Reserved for future model-only long-shot rules",
     "missing_data": "DATA HOLD when required model inputs are unavailable",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  }
+  },
+  "graded_at_utc": "2026-09-26T22:48:03.439581+00:00"
 }
