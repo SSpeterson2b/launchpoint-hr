@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-26T21:10:38.791785+00:00",
+  "generated_at_utc": "2026-09-26T22:47:33.700010+00:00",
   "slate_date": "2026-09-26",
   "model_version": "Player Props 2.0",
   "status": "LIVE",
@@ -44,7 +44,7 @@
             "20.2% barrel rate",
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.785926+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.693865+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -59,7 +59,7 @@
           "side": "2+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 2.07,
+          "projection": 2.08,
           "edge": null,
           "confidence": 68,
           "decision": "PLAY",
@@ -68,7 +68,7 @@
             "3/3 core signals",
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.785987+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.693929+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -93,7 +93,7 @@
             "20.2% barrel rate",
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.786048+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.693989+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -118,7 +118,7 @@
             "20.2% barrel rate",
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.786101+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.694043+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -142,7 +142,7 @@
             "19.8% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.786504+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.694471+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -181,7 +181,7 @@
             "16.5% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.786610+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.694580+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -206,7 +206,7 @@
             "16.5% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.786660+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.694631+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -231,7 +231,7 @@
             "16.5% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.786720+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.694692+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -256,7 +256,7 @@
             "16.5% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.786773+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.694746+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -271,7 +271,7 @@
           "side": "6+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 6.35,
+          "projection": 6.29,
           "edge": null,
           "confidence": 60,
           "decision": "PLAY",
@@ -280,7 +280,7 @@
             "23.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.787001+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.694983+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -319,7 +319,7 @@
             "16.6% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.787087+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.695080+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -344,7 +344,7 @@
             "16.6% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.787128+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.695124+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -369,7 +369,7 @@
             "16.6% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.787175+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.695174+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -394,7 +394,7 @@
             "16.6% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.787275+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.695221+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -404,12 +404,12 @@
           "player_id": "",
           "team": "Los Angeles Dodgers",
           "opponent": "San Francisco Giants",
-          "line": 10,
-          "target": 10,
-          "side": "10+",
+          "line": 8,
+          "target": 8,
+          "side": "8+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 10.05,
+          "projection": 8.8,
           "edge": null,
           "confidence": 60,
           "decision": "PLAY",
@@ -418,7 +418,7 @@
             "33.1% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.787511+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.695503+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -435,6 +435,102 @@
       "venue": "Sutter Health Park",
       "game_datetime_utc": "2026-09-27T01:40:00Z",
       "props": [
+        {
+          "category": "HITS",
+          "market": "batter_hits",
+          "player": "Langeliers, Shea",
+          "player_id": 669127,
+          "team": "Athletics",
+          "opponent": "Houston Astros",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.02,
+          "edge": null,
+          "confidence": 58,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "13.5% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-26T22:47:33.695573+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Langeliers, Shea",
+          "player_id": 669127,
+          "team": "Athletics",
+          "opponent": "Houston Astros",
+          "line": 2,
+          "target": 2,
+          "side": "2+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.72,
+          "edge": null,
+          "confidence": 58,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "13.5% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-26T22:47:33.695604+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Langeliers, Shea",
+          "player_id": 669127,
+          "team": "Athletics",
+          "opponent": "Houston Astros",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.64,
+          "edge": null,
+          "confidence": 58,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "13.5% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-26T22:47:33.695642+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Langeliers, Shea",
+          "player_id": 669127,
+          "team": "Athletics",
+          "opponent": "Houston Astros",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.8,
+          "edge": null,
+          "confidence": 58,
+          "decision": "PLAY",
+          "batting_order": 3,
+          "reasons": [
+            "13.5% barrel rate",
+            "confirmed batting 3"
+          ],
+          "locked_at_utc": "2026-09-26T22:47:33.695676+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
@@ -456,7 +552,7 @@
             "25.2% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.787829+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.695939+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -495,11 +591,8 @@
             "18.9% barrel rate",
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.787927+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-26T21:10:57.145821+00:00"
+          "locked_at_utc": "2026-09-26T22:47:33.696041+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "TOTAL BASES",
@@ -523,11 +616,8 @@
             "18.9% barrel rate",
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.787978+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-26T21:10:57.145846+00:00"
+          "locked_at_utc": "2026-09-26T22:47:33.696089+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "RUNS",
@@ -551,11 +641,8 @@
             "18.9% barrel rate",
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.788034+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-26T21:10:57.145855+00:00"
+          "locked_at_utc": "2026-09-26T22:47:33.696143+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "RBI",
@@ -579,11 +666,8 @@
             "18.9% barrel rate",
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.788090+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-26T21:10:57.145862+00:00"
+          "locked_at_utc": "2026-09-26T22:47:33.696193+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "STRIKEOUTS",
@@ -606,17 +690,13 @@
             "23.8% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.788329+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-26T21:10:57.145876+00:00"
+          "locked_at_utc": "2026-09-26T22:47:33.696431+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets",
-      "grading_status": "FINAL"
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "823733",
@@ -648,7 +728,7 @@
             "3/3 core signals",
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.788427+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.696533+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -672,7 +752,7 @@
             "3/3 core signals",
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.788474+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.696580+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -696,7 +776,7 @@
             "3/3 core signals",
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.788528+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.696637+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -721,7 +801,7 @@
             "13.4% barrel rate",
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.788580+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.696689+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -731,12 +811,12 @@
           "player_id": "",
           "team": "Milwaukee Brewers",
           "opponent": "St. Louis Cardinals",
-          "line": 4,
-          "target": 4,
-          "side": "4+",
+          "line": 5,
+          "target": 5,
+          "side": "5+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 4.94,
+          "projection": 5.07,
           "edge": null,
           "confidence": 60,
           "decision": "PLAY",
@@ -745,7 +825,7 @@
             "22.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.788793+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.696900+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -783,7 +863,7 @@
             "3/3 core signals",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.788887+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.697002+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -808,7 +888,7 @@
             "13.2% barrel rate",
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.788937+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.697049+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -832,7 +912,7 @@
             "3/3 core signals",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.788991+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.697108+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -857,7 +937,7 @@
             "13.2% barrel rate",
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.789042+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.697159+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -881,7 +961,7 @@
             "18.8% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.789281+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.697395+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -920,11 +1000,8 @@
             "15.4% barrel rate",
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.789346+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-26T21:10:57.248572+00:00"
+          "locked_at_utc": "2026-09-26T22:47:33.697463+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "TOTAL BASES",
@@ -948,11 +1025,8 @@
             "15.4% barrel rate",
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.789374+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 4,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-26T21:10:57.248588+00:00"
+          "locked_at_utc": "2026-09-26T22:47:33.697492+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "RUNS",
@@ -976,11 +1050,8 @@
             "15.4% barrel rate",
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.789407+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-26T21:10:57.248592+00:00"
+          "locked_at_utc": "2026-09-26T22:47:33.697524+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "RBI",
@@ -1004,11 +1075,8 @@
             "15.4% barrel rate",
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.789438+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-26T21:10:57.248596+00:00"
+          "locked_at_utc": "2026-09-26T22:47:33.697554+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "STRIKEOUTS",
@@ -1031,17 +1099,147 @@
             "27.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.789650+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-26T21:10:57.248603+00:00"
+          "locked_at_utc": "2026-09-26T22:47:33.697766+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets",
-      "grading_status": "FINAL"
+      "status_reason": "LaunchPoint projections with gradeable model targets"
+    },
+    {
+      "game_pk": "823083",
+      "teams": [
+        "Los Angeles Angels",
+        "Seattle Mariners"
+      ],
+      "venue": "T-Mobile Park",
+      "game_datetime_utc": "2026-09-27T01:40:00Z",
+      "props": [
+        {
+          "category": "HITS",
+          "market": "batter_hits",
+          "player": "Trout, Mike",
+          "player_id": 545361,
+          "team": "Los Angeles Angels",
+          "opponent": "Seattle Mariners",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.07,
+          "edge": null,
+          "confidence": 64,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "16.1% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-26T22:47:33.697837+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Trout, Mike",
+          "player_id": 545361,
+          "team": "Los Angeles Angels",
+          "opponent": "Seattle Mariners",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.57,
+          "edge": null,
+          "confidence": 64,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "16.1% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-26T22:47:33.697868+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Trout, Mike",
+          "player_id": 545361,
+          "team": "Los Angeles Angels",
+          "opponent": "Seattle Mariners",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.68,
+          "edge": null,
+          "confidence": 64,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "16.1% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-26T22:47:33.697900+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Trout, Mike",
+          "player_id": 545361,
+          "team": "Los Angeles Angels",
+          "opponent": "Seattle Mariners",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.71,
+          "edge": null,
+          "confidence": 64,
+          "decision": "PLAY",
+          "batting_order": 2,
+          "reasons": [
+            "16.1% barrel rate",
+            "confirmed batting 2"
+          ],
+          "locked_at_utc": "2026-09-26T22:47:33.697929+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Kade Anderson",
+          "player_id": "",
+          "team": "Seattle Mariners",
+          "opponent": "Los Angeles Angels",
+          "line": 5,
+          "target": 5,
+          "side": "5+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 5.59,
+          "edge": null,
+          "confidence": 60,
+          "decision": "PLAY",
+          "batting_order": "",
+          "reasons": [
+            "21.4% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-26T22:47:33.698185+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
       "game_pk": "823407",
@@ -1074,7 +1272,7 @@
             "15.6% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.789748+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.698309+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1099,7 +1297,7 @@
             "15.6% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.789796+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.698359+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1124,7 +1322,7 @@
             "15.6% barrel rate",
             "confirmed batting 2"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.789854+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.698418+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1149,7 +1347,7 @@
             "12.9% barrel rate",
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.789906+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.698469+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1173,7 +1371,7 @@
             "25.6% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.790111+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.698678+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -1210,7 +1408,7 @@
           "reasons": [
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.790198+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.698771+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1225,7 +1423,7 @@
           "side": "2+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 1.87,
+          "projection": 1.86,
           "edge": null,
           "confidence": 64,
           "decision": "PLAY",
@@ -1234,7 +1432,7 @@
             "14.3% barrel rate",
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.790261+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.698815+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1257,7 +1455,7 @@
           "reasons": [
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.790311+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.698866+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1281,7 +1479,7 @@
             "14.3% barrel rate",
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.790358+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.698913+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1305,7 +1503,7 @@
             "24.6% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.790575+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.699127+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -1343,7 +1541,7 @@
             "14.5% barrel rate",
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.790671+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.699227+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1358,7 +1556,7 @@
           "side": "2+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 1.69,
+          "projection": 1.7,
           "edge": null,
           "confidence": 64,
           "decision": "PLAY",
@@ -1366,7 +1564,7 @@
           "reasons": [
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.790721+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.699273+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1390,7 +1588,7 @@
             "14.5% barrel rate",
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.790775+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.699383+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1413,7 +1611,7 @@
           "reasons": [
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.790826+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.699440+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1437,7 +1635,7 @@
             "23.7% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.791036+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.699660+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -1474,7 +1672,7 @@
           "reasons": [
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.791096+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.699729+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1497,7 +1695,7 @@
           "reasons": [
             "confirmed batting 3"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.791124+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.699758+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1520,7 +1718,7 @@
           "reasons": [
             "confirmed batting 1"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.791155+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.699789+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1544,7 +1742,7 @@
             "3/3 core signals",
             "12.4% barrel rate"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.791185+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.699819+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
@@ -1568,45 +1766,7 @@
             "20.2% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-26T21:10:38.791462+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets"
-    },
-    {
-      "game_pk": "823083",
-      "teams": [
-        "Los Angeles Angels",
-        "Seattle Mariners"
-      ],
-      "venue": "T-Mobile Park",
-      "game_datetime_utc": "2026-09-27T01:40:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Kade Anderson",
-          "player_id": "",
-          "team": "Seattle Mariners",
-          "opponent": "Los Angeles Angels",
-          "line": 5,
-          "target": 5,
-          "side": "5+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 5.72,
-          "edge": null,
-          "confidence": 60,
-          "decision": "PLAY",
-          "batting_order": "",
-          "reasons": [
-            "21.4% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-26T21:10:38.791775+00:00",
+          "locked_at_utc": "2026-09-26T22:47:33.699999+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
@@ -1620,6 +1780,5 @@
     "long_shots": "Reserved for future model-only long-shot rules",
     "missing_data": "DATA HOLD when required model inputs are unavailable",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  },
-  "graded_at_utc": "2026-09-26T21:10:57.432480+00:00"
+  }
 }
