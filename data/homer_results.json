@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T20:26:24.032547+00:00",
+  "generated_at": "2026-09-27T21:23:05.036063+00:00",
   "results": [
     {
       "game_pk": 822679,
@@ -26,22 +26,10 @@
       "home_runs": 1
     },
     {
-      "game_pk": 823246,
-      "player_id": 657757,
-      "player": "Sheets, Gavin",
-      "home_runs": 1
-    },
-    {
       "game_pk": 823408,
       "player_id": 676356,
       "player": "DeLuca, Jonny",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 823408,
-      "player_id": 547180,
-      "player": "Harper, Bryce",
-      "home_runs": 1
+      "home_runs": 2
     },
     {
       "game_pk": 823408,
@@ -62,9 +50,27 @@
       "home_runs": 1
     },
     {
+      "game_pk": 823650,
+      "player_id": 553869,
+      "player": "D\u00edaz, Elias",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 823650,
+      "player_id": 668904,
+      "player": "Lewis, Royce",
+      "home_runs": 1
+    },
+    {
       "game_pk": 823731,
       "player_id": 596142,
       "player": "S\u00e1nchez, Gary",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 823731,
+      "player_id": 699024,
+      "player": "Bernal, Leo",
       "home_runs": 1
     },
     {
@@ -80,6 +86,12 @@
       "home_runs": 1
     },
     {
+      "game_pk": 823814,
+      "player_id": 665052,
+      "player": "Conine, Griffin",
+      "home_runs": 1
+    },
+    {
       "game_pk": 824055,
       "player_id": 682177,
       "player": "Schneemann, Daniel",
@@ -89,6 +101,12 @@
       "game_pk": 824055,
       "player_id": 686469,
       "player": "Pasquantino, Vinnie",
+      "home_runs": 2
+    },
+    {
+      "game_pk": 824055,
+      "player_id": 666176,
+      "player": "Adell, Jo",
       "home_runs": 1
     },
     {
@@ -98,9 +116,9 @@
       "home_runs": 1
     },
     {
-      "game_pk": 824542,
-      "player_id": 545341,
-      "player": "Grichuk, Randal",
+      "game_pk": 824217,
+      "player_id": 680664,
+      "player": "Valencia, Eduardo",
       "home_runs": 1
     },
     {
@@ -110,15 +128,21 @@
       "home_runs": 1
     },
     {
+      "game_pk": 824542,
+      "player_id": 694249,
+      "player": "Carrigg, Cole",
+      "home_runs": 1
+    },
+    {
       "game_pk": 824705,
       "player_id": 608324,
       "player": "Bregman, Alex",
       "home_runs": 2
     },
     {
-      "game_pk": 824705,
-      "player_id": 668939,
-      "player": "Rutschman, Adley",
+      "game_pk": 824948,
+      "player_id": 572233,
+      "player": "Walker, Christian",
       "home_runs": 1
     }
   ]
