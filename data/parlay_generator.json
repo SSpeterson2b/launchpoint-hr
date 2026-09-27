@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-27T18:19:55.171900+00:00",
+  "generated_at_utc": "2026-09-27T19:51:20.373225+00:00",
   "slate_date": "2026-09-27",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -25,8 +25,8 @@
         {
           "type": "WINNER",
           "label": "Los Angeles Dodgers",
-          "detail": "80.6% model win",
-          "score": 80.6,
+          "detail": "79.4% model win",
+          "score": 79.4,
           "game_pk": "823164"
         }
       ]
@@ -45,15 +45,15 @@
         {
           "type": "WINNER",
           "label": "Los Angeles Dodgers",
-          "detail": "80.6% model win",
-          "score": 80.6,
+          "detail": "79.4% model win",
+          "score": 79.4,
           "game_pk": "823164"
         },
         {
           "type": "HR",
           "label": "Alvarez, Yordan",
           "detail": "Houston Astros HR",
-          "score": 80.26,
+          "score": 80.28,
           "game_pk": "824948"
         }
       ]
@@ -65,22 +65,22 @@
         {
           "type": "WINNER",
           "label": "Los Angeles Dodgers",
-          "detail": "80.6% model win",
-          "score": 80.6,
+          "detail": "79.4% model win",
+          "score": 79.4,
           "game_pk": "823164"
         },
         {
           "type": "HR",
           "label": "Alvarez, Yordan",
           "detail": "Houston Astros HR",
-          "score": 80.26,
+          "score": 80.28,
           "game_pk": "824948"
         },
         {
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 77.7,
+          "score": 77.72,
           "game_pk": "824542"
         },
         {
@@ -100,14 +100,14 @@
           "type": "HR",
           "label": "Alvarez, Yordan",
           "detail": "Houston Astros HR",
-          "score": 80.26,
+          "score": 80.28,
           "game_pk": "824948"
         },
         {
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 77.7,
+          "score": 77.72,
           "game_pk": "824542"
         },
         {
