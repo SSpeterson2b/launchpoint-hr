@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-27T21:42:45.505994+00:00",
+  "generated_at_utc": "2026-09-27T23:02:25.169198+00:00",
   "slate_date": "2026-09-27",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -25,8 +25,8 @@
         {
           "type": "WINNER",
           "label": "Los Angeles Dodgers",
-          "detail": "79.5% model win",
-          "score": 79.5,
+          "detail": "79.7% model win",
+          "score": 79.7,
           "game_pk": "823164"
         }
       ]
@@ -45,8 +45,8 @@
         {
           "type": "WINNER",
           "label": "Los Angeles Dodgers",
-          "detail": "79.5% model win",
-          "score": 79.5,
+          "detail": "79.7% model win",
+          "score": 79.7,
           "game_pk": "823164"
         },
         {
@@ -65,8 +65,8 @@
         {
           "type": "WINNER",
           "label": "Los Angeles Dodgers",
-          "detail": "79.5% model win",
-          "score": 79.5,
+          "detail": "79.7% model win",
+          "score": 79.7,
           "game_pk": "823164"
         },
         {
@@ -80,7 +80,7 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 77.73,
+          "score": 77.69,
           "game_pk": "824542"
         },
         {
@@ -107,7 +107,7 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 77.73,
+          "score": 77.69,
           "game_pk": "824542"
         },
         {
