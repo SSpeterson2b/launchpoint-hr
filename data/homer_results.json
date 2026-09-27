@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T19:50:53.224850+00:00",
+  "generated_at": "2026-09-27T20:26:24.032547+00:00",
   "results": [
     {
       "game_pk": 822679,
@@ -26,9 +26,45 @@
       "home_runs": 1
     },
     {
+      "game_pk": 823246,
+      "player_id": 657757,
+      "player": "Sheets, Gavin",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 823408,
+      "player_id": 676356,
+      "player": "DeLuca, Jonny",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 823408,
+      "player_id": 547180,
+      "player": "Harper, Bryce",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 823408,
+      "player_id": 624641,
+      "player": "Sosa, Edmundo",
+      "home_runs": 1
+    },
+    {
       "game_pk": 823650,
       "player_id": 643376,
       "player": "Jansen, Danny",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 823650,
+      "player_id": 605137,
+      "player": "Bell, Josh",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 823731,
+      "player_id": 596142,
+      "player": "S\u00e1nchez, Gary",
       "home_runs": 1
     },
     {
@@ -38,15 +74,39 @@
       "home_runs": 1
     },
     {
+      "game_pk": 823814,
+      "player_id": 681715,
+      "player": "Hern\u00e1ndez, Heriberto",
+      "home_runs": 1
+    },
+    {
       "game_pk": 824055,
       "player_id": 682177,
       "player": "Schneemann, Daniel",
       "home_runs": 1
     },
     {
+      "game_pk": 824055,
+      "player_id": 686469,
+      "player": "Pasquantino, Vinnie",
+      "home_runs": 1
+    },
+    {
       "game_pk": 824217,
       "player_id": 804606,
       "player": "Griffin, Konnor",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 824542,
+      "player_id": 545341,
+      "player": "Grichuk, Randal",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 824542,
+      "player_id": 686668,
+      "player": "Doyle, Brenton",
       "home_runs": 1
     },
     {
