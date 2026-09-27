@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-27T19:47:26.043698+00:00",
+  "generated_at_utc": "2026-09-27T20:23:24.748836+00:00",
   "games": [
     {
       "game_pk": "822679",
@@ -11,18 +11,6 @@
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
-      "doubleheader_game": ""
-    },
-    {
-      "game_pk": "823490",
-      "game_date": "2026-09-27",
-      "game_datetime_utc": "2026-09-27T17:05:00Z",
-      "game_status": "Delayed Start",
-      "away_team": "Baltimore Orioles",
-      "home_team": "New York Yankees",
-      "away_lineup_confirmed": true,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false,
       "doubleheader_game": ""
     },
     {
@@ -179,6 +167,18 @@
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
+      "doubleheader_game": ""
+    },
+    {
+      "game_pk": "823490",
+      "game_date": "2026-09-27",
+      "game_datetime_utc": "2026-09-27T17:05:00Z",
+      "game_status": "Cancelled",
+      "away_team": "Baltimore Orioles",
+      "home_team": "New York Yankees",
+      "away_lineup_confirmed": false,
+      "home_lineup_confirmed": false,
+      "lineups_confirmed": false,
       "doubleheader_game": ""
     }
   ]
