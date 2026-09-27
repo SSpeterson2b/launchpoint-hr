@@ -1,4 +1,65 @@
 {
-  "generated_at": "2026-09-27T18:19:10.265569+00:00",
-  "results": []
+  "generated_at": "2026-09-27T19:50:53.224850+00:00",
+  "results": [
+    {
+      "game_pk": 822679,
+      "player_id": 677595,
+      "player": "Mauricio, Ronny",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 822679,
+      "player_id": 596019,
+      "player": "Lindor, Francisco",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 822679,
+      "player_id": 665953,
+      "player": "Chaparro, Andr\u00e9s",
+      "home_runs": 2
+    },
+    {
+      "game_pk": 822761,
+      "player_id": 678218,
+      "player": "Valenzuela, Brandon",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 823650,
+      "player_id": 643376,
+      "player": "Jansen, Danny",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 823814,
+      "player_id": 643289,
+      "player": "Dub\u00f3n, Mauricio",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 824055,
+      "player_id": 682177,
+      "player": "Schneemann, Daniel",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 824217,
+      "player_id": 804606,
+      "player": "Griffin, Konnor",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 824705,
+      "player_id": 608324,
+      "player": "Bregman, Alex",
+      "home_runs": 2
+    },
+    {
+      "game_pk": 824705,
+      "player_id": 668939,
+      "player": "Rutschman, Adley",
+      "home_runs": 1
+    }
+  ]
 }
