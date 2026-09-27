@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T21:23:05.036063+00:00",
+  "generated_at": "2026-09-27T23:02:00.945208+00:00",
   "results": [
     {
       "game_pk": 822679,
@@ -23,6 +23,24 @@
       "game_pk": 822761,
       "player_id": 678218,
       "player": "Valenzuela, Brandon",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 822761,
+      "player_id": 807727,
+      "player": "McAdoo, Charles",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 823084,
+      "player_id": 642350,
+      "player": "Siri, Jose",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 823164,
+      "player_id": 681624,
+      "player": "Pages, Andy",
       "home_runs": 1
     },
     {
@@ -59,6 +77,12 @@
       "game_pk": 823650,
       "player_id": 668904,
       "player": "Lewis, Royce",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 823650,
+      "player_id": 608369,
+      "player": "Seager, Corey",
       "home_runs": 1
     },
     {
