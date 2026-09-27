@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-27T19:51:20.373225+00:00",
+  "generated_at_utc": "2026-09-27T20:26:55.403232+00:00",
   "slate_date": "2026-09-27",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -53,7 +53,7 @@
           "type": "HR",
           "label": "Alvarez, Yordan",
           "detail": "Houston Astros HR",
-          "score": 80.28,
+          "score": 80.26,
           "game_pk": "824948"
         }
       ]
@@ -73,7 +73,7 @@
           "type": "HR",
           "label": "Alvarez, Yordan",
           "detail": "Houston Astros HR",
-          "score": 80.28,
+          "score": 80.26,
           "game_pk": "824948"
         },
         {
@@ -100,7 +100,7 @@
           "type": "HR",
           "label": "Alvarez, Yordan",
           "detail": "Houston Astros HR",
-          "score": 80.28,
+          "score": 80.26,
           "game_pk": "824948"
         },
         {
