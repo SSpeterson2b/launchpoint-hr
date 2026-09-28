@@ -46,9 +46,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.783742+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.380252+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.380252+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -74,9 +74,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.783805+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.380281+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.380281+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -102,9 +102,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.783863+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.380291+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.380291+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -130,9 +130,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.783914+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.380299+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.380299+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -157,9 +157,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.784288+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.380315+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.380315+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -200,9 +200,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.784377+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.482219+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.482219+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -228,9 +228,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.784406+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.482245+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.482245+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -256,9 +256,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.784440+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.482253+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.482253+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -284,9 +284,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.784468+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.482261+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.482261+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -311,9 +311,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.784681+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 3,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.482278+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.482278+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -354,9 +354,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.784771+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.574504+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.574504+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -382,9 +382,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.784812+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.574529+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.574529+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -410,9 +410,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.784859+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.574537+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.574537+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -438,9 +438,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.784903+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.574545+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.574545+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -465,9 +465,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.785108+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 7,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.574561+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.574561+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -508,9 +508,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.785200+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.694199+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.694199+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -536,9 +536,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.785244+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.694225+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.694225+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -564,9 +564,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.785298+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.694233+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.694233+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -592,9 +592,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.785384+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.694240+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.694240+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -619,9 +619,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.785590+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.694256+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.694256+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -661,8 +661,8 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.785912+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "result": "EXCLUDED",
-          "result_reason": "Player box-score statistic unavailable"
+          "result": "VOID",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -703,9 +703,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786007+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.836197+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.836197+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -731,9 +731,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786051+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.836215+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.836215+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -759,9 +759,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786102+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.836220+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.836220+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -787,9 +787,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786151+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.836223+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.836223+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -814,9 +814,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786376+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 8,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.836230+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.836230+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -856,9 +856,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786463+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.865957+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.865957+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -883,9 +883,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786504+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 4,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.865975+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.865975+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -910,9 +910,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786545+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.865980+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.865980+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -938,9 +938,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786587+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.865984+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.865984+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -965,9 +965,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786793+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.865991+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.865991+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -1008,9 +1008,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786848+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.957412+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.957412+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -1034,9 +1034,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786871+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 4,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.957432+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.957432+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -1062,9 +1062,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786898+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.957437+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.957437+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -1088,9 +1088,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.786923+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:43.957441+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.957441+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -1115,9 +1115,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.787109+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 5,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:43.957448+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:43.957448+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -1157,9 +1157,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.787203+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.044395+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.044395+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -1183,9 +1183,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.787250+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.044413+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.044413+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -1210,9 +1210,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.787302+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.044417+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.044417+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -1237,9 +1237,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.787385+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.044421+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.044421+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -1264,9 +1264,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.787594+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 4,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.044428+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.044428+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -1307,9 +1307,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.787691+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.122459+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.122459+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -1335,9 +1335,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.787737+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.122477+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.122477+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -1363,9 +1363,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.787789+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.122482+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.122482+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -1391,9 +1391,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.787837+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.122486+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.122486+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -1418,9 +1418,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.788041+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.122493+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.122493+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -1461,9 +1461,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.788141+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.201516+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.201516+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -1488,9 +1488,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.788190+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.201534+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.201534+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -1516,9 +1516,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.788243+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.201539+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.201539+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -1543,9 +1543,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.788293+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.201542+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.201542+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -1570,9 +1570,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.788508+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 5,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.201550+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.201550+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -1612,9 +1612,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.788613+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.293639+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.293639+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -1640,9 +1640,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.788663+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.293657+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.293657+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -1667,9 +1667,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.788717+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.293661+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.293661+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -1695,9 +1695,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.788768+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.293665+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.293665+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -1722,9 +1722,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.788997+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 4,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.293672+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.293672+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -1764,9 +1764,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.789091+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.394949+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.394949+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -1791,9 +1791,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.789137+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 3,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.394975+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.394975+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -1818,9 +1818,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.789186+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.394983+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.394983+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -1845,9 +1845,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.789233+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.394990+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.394990+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -1872,9 +1872,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.789439+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.395004+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.395004+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -1913,9 +1913,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.789499+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.480098+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.480098+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -1940,9 +1940,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.789524+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.480117+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.480117+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -1966,9 +1966,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.789552+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.480122+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.480122+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -1993,9 +1993,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.789582+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.480125+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.480125+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -2020,9 +2020,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.789775+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 3,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.480132+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.480132+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -2062,9 +2062,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.789877+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.510098+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.510098+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "TOTAL BASES",
@@ -2089,9 +2089,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.789927+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.510116+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.510116+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RUNS",
@@ -2116,9 +2116,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.789977+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-28T01:15:44.510121+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.510121+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "RBI",
@@ -2143,9 +2143,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.790026+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.510125+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.510125+00:00",
+          "result_reason": "No verified pregame lock"
         },
         {
           "category": "STRIKEOUTS",
@@ -2170,9 +2170,9 @@
           ],
           "locked_at_utc": "2026-09-28T01:15:23.790216+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 5,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-28T01:15:44.510133+00:00"
+          "result": "VOID",
+          "graded_at_utc": "2026-09-28T01:15:44.510133+00:00",
+          "result_reason": "No verified pregame lock"
         }
       ],
       "long_shots": [],
@@ -2186,5 +2186,6 @@
     "long_shots": "Reserved for future model-only long-shot rules",
     "missing_data": "DATA HOLD when required model inputs are unavailable",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  }
+  },
+  "graded_at_utc": "2026-09-28T04:51:48.801679+00:00"
 }
