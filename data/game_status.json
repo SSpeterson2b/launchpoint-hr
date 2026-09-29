@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-29T22:12:33.419871+00:00",
+  "generated_at_utc": "2026-09-29T23:38:52.364869+00:00",
   "games": [
     {
       "game_pk": "849845",
@@ -44,9 +44,9 @@
       "game_status": "Pre-Game",
       "away_team": "Chicago Cubs",
       "home_team": "San Diego Padres",
-      "away_lineup_confirmed": false,
+      "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
-      "lineups_confirmed": false,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     }
   ]
