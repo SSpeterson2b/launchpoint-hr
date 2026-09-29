@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-29T19:41:39.697574+00:00",
+  "generated_at_utc": "2026-09-29T20:48:10.576191+00:00",
   "slate_date": "2026-09-29",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -53,7 +53,7 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 75.23,
+          "score": 75.24,
           "game_pk": "849849"
         }
       ]
@@ -73,7 +73,7 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 75.23,
+          "score": 75.24,
           "game_pk": "849849"
         },
         {
@@ -100,7 +100,7 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 75.23,
+          "score": 75.24,
           "game_pk": "849849"
         },
         {
