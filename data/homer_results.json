@@ -1,4 +1,11 @@
 {
-  "generated_at": "2026-09-29T18:58:26.260520+00:00",
-  "results": []
+  "generated_at": "2026-09-29T20:47:42.647388+00:00",
+  "results": [
+    {
+      "game_pk": 849845,
+      "player_id": 663586,
+      "player": "Riley, Austin",
+      "home_runs": 1
+    }
+  ]
 }
