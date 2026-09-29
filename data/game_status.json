@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-29T18:55:02.402629+00:00",
+  "generated_at_utc": "2026-09-29T20:44:10.647422+00:00",
   "games": [
     {
       "game_pk": "849845",
@@ -29,12 +29,12 @@
       "game_pk": "849851",
       "game_date": "2026-09-29",
       "game_datetime_utc": "2026-09-30T00:00:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Boston Red Sox",
       "home_team": "New York Yankees",
-      "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false,
+      "away_lineup_confirmed": true,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
