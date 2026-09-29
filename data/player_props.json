@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-29T20:48:10.516792+00:00",
+  "generated_at_utc": "2026-09-29T21:32:24.031098+00:00",
   "slate_date": "2026-09-29",
   "model_version": "Player Props 2.0",
   "status": "LIVE",
@@ -152,20 +152,6 @@
       "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
-      "game_pk": "849845",
-      "teams": [
-        "Atlanta Braves",
-        "Philadelphia Phillies"
-      ],
-      "venue": "Truist Park",
-      "game_datetime_utc": "2026-09-29T18:00:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "CLOSED",
-      "status_reason": "No pregame player-prop snapshot was locked",
-      "grading_status": "FINAL"
-    },
-    {
       "game_pk": "849843",
       "teams": [
         "Chicago Cubs",
@@ -202,6 +188,20 @@
       "long_shots": [],
       "status": "MODEL TARGETS",
       "status_reason": "LaunchPoint projections with gradeable model targets"
+    },
+    {
+      "game_pk": "849845",
+      "teams": [
+        "Atlanta Braves",
+        "Philadelphia Phillies"
+      ],
+      "venue": "Truist Park",
+      "game_datetime_utc": "2026-09-29T18:00:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "CLOSED",
+      "status_reason": "No pregame player-prop snapshot was locked",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "849851",
@@ -247,6 +247,5 @@
     "long_shots": "Reserved for future model-only long-shot rules",
     "missing_data": "DATA HOLD when required model inputs are unavailable",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  },
-  "graded_at_utc": "2026-09-29T20:48:32.213009+00:00"
+  }
 }
