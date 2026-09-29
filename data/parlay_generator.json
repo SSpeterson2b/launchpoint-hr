@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-29T22:16:07.389678+00:00",
+  "generated_at_utc": "2026-09-29T23:42:50.949817+00:00",
   "slate_date": "2026-09-29",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -25,8 +25,8 @@
         {
           "type": "WINNER",
           "label": "Chicago White Sox",
-          "detail": "66.5% model win",
-          "score": 66.5,
+          "detail": "66.4% model win",
+          "score": 66.4,
           "game_pk": "849849"
         }
       ]
@@ -45,15 +45,15 @@
         {
           "type": "WINNER",
           "label": "Chicago White Sox",
-          "detail": "66.5% model win",
-          "score": 66.5,
+          "detail": "66.4% model win",
+          "score": 66.4,
           "game_pk": "849849"
         },
         {
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 75.24,
+          "score": 75.25,
           "game_pk": "849849"
         }
       ]
@@ -65,22 +65,22 @@
         {
           "type": "WINNER",
           "label": "Chicago White Sox",
-          "detail": "66.5% model win",
-          "score": 66.5,
+          "detail": "66.4% model win",
+          "score": 66.4,
           "game_pk": "849849"
         },
         {
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 75.24,
+          "score": 75.25,
           "game_pk": "849849"
         },
         {
           "type": "HR",
           "label": "Alvarez, Yordan",
           "detail": "Houston Astros HR",
-          "score": 65.68,
+          "score": 65.69,
           "game_pk": "849849"
         },
         {
@@ -100,14 +100,14 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 75.24,
+          "score": 75.25,
           "game_pk": "849849"
         },
         {
           "type": "HR",
           "label": "Alvarez, Yordan",
           "detail": "Houston Astros HR",
-          "score": 65.68,
+          "score": 65.69,
           "game_pk": "849849"
         },
         {
