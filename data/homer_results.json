@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T22:15:38.338533+00:00",
+  "generated_at": "2026-09-29T23:42:16.973398+00:00",
   "results": [
     {
       "game_pk": 849845,
@@ -11,6 +11,12 @@
       "game_pk": 849849,
       "player_id": 695657,
       "player": "Montgomery, Colson",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849849,
+      "player_id": 676369,
+      "player": "Vel\u00e1zquez, Nelson",
       "home_runs": 1
     }
   ]
