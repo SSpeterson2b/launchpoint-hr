@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T21:35:39.069474+00:00",
+  "generated_at": "2026-09-30T22:15:16.482647+00:00",
   "results": [
     {
       "game_pk": 849841,
@@ -17,6 +17,18 @@
       "game_pk": 849841,
       "player_id": 664761,
       "player": "Bohm, Alec",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849846,
+      "player_id": 665161,
+      "player": "Pe\u00f1a, Jeremy",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849846,
+      "player_id": 701358,
+      "player": "Smith, Cam",
       "home_runs": 1
     }
   ]
