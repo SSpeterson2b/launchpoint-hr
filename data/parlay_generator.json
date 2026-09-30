@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-30T19:42:10.545587+00:00",
+  "generated_at_utc": "2026-09-30T20:51:16.411671+00:00",
   "slate_date": "2026-09-30",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -25,8 +25,8 @@
         {
           "type": "WINNER",
           "label": "New York Yankees",
-          "detail": "62.5% model win",
-          "score": 62.5,
+          "detail": "62.4% model win",
+          "score": 62.4,
           "game_pk": "849848"
         }
       ]
@@ -45,16 +45,16 @@
         {
           "type": "WINNER",
           "label": "New York Yankees",
-          "detail": "62.5% model win",
-          "score": 62.5,
+          "detail": "62.4% model win",
+          "score": 62.4,
           "game_pk": "849848"
         },
         {
           "type": "HR",
-          "label": "Schwarber, Kyle",
-          "detail": "Philadelphia Phillies HR",
-          "score": 66.52,
-          "game_pk": "849841"
+          "label": "Alvarez, Yordan",
+          "detail": "Houston Astros HR",
+          "score": 75.97,
+          "game_pk": "849846"
         }
       ]
     },
@@ -65,23 +65,23 @@
         {
           "type": "WINNER",
           "label": "New York Yankees",
-          "detail": "62.5% model win",
-          "score": 62.5,
+          "detail": "62.4% model win",
+          "score": 62.4,
           "game_pk": "849848"
         },
         {
           "type": "HR",
-          "label": "Schwarber, Kyle",
-          "detail": "Philadelphia Phillies HR",
-          "score": 66.52,
-          "game_pk": "849841"
+          "label": "Alvarez, Yordan",
+          "detail": "Houston Astros HR",
+          "score": 75.97,
+          "game_pk": "849846"
         },
         {
           "type": "HR",
-          "label": "Olson, Matt",
-          "detail": "Atlanta Braves HR",
-          "score": 64.66,
-          "game_pk": "849841"
+          "label": "Jones, Spencer",
+          "detail": "New York Yankees HR",
+          "score": 67.02,
+          "game_pk": "849848"
         },
         {
           "type": "STRIKEOUTS",
@@ -98,17 +98,17 @@
       "legs": [
         {
           "type": "HR",
-          "label": "Schwarber, Kyle",
-          "detail": "Philadelphia Phillies HR",
-          "score": 66.52,
-          "game_pk": "849841"
+          "label": "Alvarez, Yordan",
+          "detail": "Houston Astros HR",
+          "score": 75.97,
+          "game_pk": "849846"
         },
         {
           "type": "HR",
-          "label": "Olson, Matt",
-          "detail": "Atlanta Braves HR",
-          "score": 64.66,
-          "game_pk": "849841"
+          "label": "Jones, Spencer",
+          "detail": "New York Yankees HR",
+          "score": 67.02,
+          "game_pk": "849848"
         },
         {
           "type": "STRIKEOUTS",
