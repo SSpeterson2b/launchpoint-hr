@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-29T23:59:11.388319+00:00",
-  "slate_date": "2026-09-29",
+  "generated_at_utc": "2026-09-30T18:40:55.333429+00:00",
+  "slate_date": "2026-09-30",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
   "cards": [
@@ -9,25 +9,25 @@
       "title": "Foundation Card",
       "legs": [
         {
-          "type": "HITS",
-          "label": "Murakami, Munetaka",
-          "detail": "1+",
-          "score": 72.3,
-          "game_pk": "849849"
+          "type": "STRIKEOUTS",
+          "label": "Hunter Brown",
+          "detail": "6+",
+          "score": 68.1,
+          "game_pk": "849846"
         },
         {
-          "type": "RUNS",
-          "label": "Murakami, Munetaka",
-          "detail": "1+",
-          "score": 72.0,
-          "game_pk": "849849"
+          "type": "STRIKEOUTS",
+          "label": "Nick Pivetta",
+          "detail": "6+",
+          "score": 66.7,
+          "game_pk": "849842"
         },
         {
           "type": "WINNER",
-          "label": "Chicago White Sox",
-          "detail": "66.4% model win",
-          "score": 66.4,
-          "game_pk": "849849"
+          "label": "New York Yankees",
+          "detail": "62.5% model win",
+          "score": 62.5,
+          "game_pk": "849848"
         }
       ]
     },
@@ -36,25 +36,25 @@
       "title": "Mixed Edge Card",
       "legs": [
         {
-          "type": "HITS",
-          "label": "Murakami, Munetaka",
-          "detail": "1+",
-          "score": 72.3,
-          "game_pk": "849849"
+          "type": "STRIKEOUTS",
+          "label": "Hunter Brown",
+          "detail": "6+",
+          "score": 68.1,
+          "game_pk": "849846"
         },
         {
           "type": "WINNER",
-          "label": "Chicago White Sox",
-          "detail": "66.4% model win",
-          "score": 66.4,
-          "game_pk": "849849"
+          "label": "New York Yankees",
+          "detail": "62.5% model win",
+          "score": 62.5,
+          "game_pk": "849848"
         },
         {
           "type": "HR",
-          "label": "Murakami, Munetaka",
-          "detail": "Chicago White Sox HR",
-          "score": 75.25,
-          "game_pk": "849849"
+          "label": "Schwarber, Kyle",
+          "detail": "Philadelphia Phillies HR",
+          "score": 66.52,
+          "game_pk": "849841"
         }
       ]
     },
@@ -64,31 +64,31 @@
       "legs": [
         {
           "type": "WINNER",
-          "label": "Chicago White Sox",
-          "detail": "66.4% model win",
-          "score": 66.4,
-          "game_pk": "849849"
+          "label": "New York Yankees",
+          "detail": "62.5% model win",
+          "score": 62.5,
+          "game_pk": "849848"
         },
         {
           "type": "HR",
-          "label": "Murakami, Munetaka",
-          "detail": "Chicago White Sox HR",
-          "score": 75.25,
-          "game_pk": "849849"
+          "label": "Schwarber, Kyle",
+          "detail": "Philadelphia Phillies HR",
+          "score": 66.52,
+          "game_pk": "849841"
         },
         {
           "type": "HR",
-          "label": "Alvarez, Yordan",
-          "detail": "Houston Astros HR",
-          "score": 65.69,
-          "game_pk": "849849"
+          "label": "Olson, Matt",
+          "detail": "Atlanta Braves HR",
+          "score": 64.66,
+          "game_pk": "849841"
         },
         {
-          "type": "HITS",
-          "label": "Murakami, Munetaka",
-          "detail": "1+",
-          "score": 72.3,
-          "game_pk": "849849"
+          "type": "STRIKEOUTS",
+          "label": "Hunter Brown",
+          "detail": "6+",
+          "score": 68.1,
+          "game_pk": "849846"
         }
       ]
     },
@@ -98,24 +98,24 @@
       "legs": [
         {
           "type": "HR",
-          "label": "Murakami, Munetaka",
-          "detail": "Chicago White Sox HR",
-          "score": 75.25,
-          "game_pk": "849849"
+          "label": "Schwarber, Kyle",
+          "detail": "Philadelphia Phillies HR",
+          "score": 66.52,
+          "game_pk": "849841"
         },
         {
           "type": "HR",
-          "label": "Alvarez, Yordan",
-          "detail": "Houston Astros HR",
-          "score": 65.69,
-          "game_pk": "849849"
+          "label": "Olson, Matt",
+          "detail": "Atlanta Braves HR",
+          "score": 64.66,
+          "game_pk": "849841"
         },
         {
-          "type": "HITS",
-          "label": "Murakami, Munetaka",
-          "detail": "1+",
-          "score": 72.3,
-          "game_pk": "849849"
+          "type": "STRIKEOUTS",
+          "label": "Hunter Brown",
+          "detail": "6+",
+          "score": 68.1,
+          "game_pk": "849846"
         }
       ]
     }
