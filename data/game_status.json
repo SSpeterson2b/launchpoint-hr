@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-30T18:37:22.208833+00:00",
+  "generated_at_utc": "2026-09-30T20:47:39.771915+00:00",
   "games": [
     {
       "game_pk": "849841",
@@ -17,24 +17,24 @@
       "game_pk": "849846",
       "game_date": "2026-09-30",
       "game_datetime_utc": "2026-09-30T21:00:00Z",
-      "game_status": "Pre-Game",
+      "game_status": "Warmup",
       "away_team": "Chicago White Sox",
       "home_team": "Houston Astros",
       "away_lineup_confirmed": true,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
       "game_pk": "849848",
       "game_date": "2026-09-30",
       "game_datetime_utc": "2026-10-01T00:00:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Boston Red Sox",
       "home_team": "New York Yankees",
-      "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false,
+      "away_lineup_confirmed": true,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
