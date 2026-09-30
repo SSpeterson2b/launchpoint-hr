@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-29T23:59:11.325865+00:00",
-  "slate_date": "2026-09-29",
+  "generated_at_utc": "2026-09-30T18:40:55.271648+00:00",
+  "slate_date": "2026-09-30",
   "model_version": "Player Props 2.0",
   "status": "LIVE",
   "status_reason": "LaunchPoint model targets \u2014 sportsbook odds not required",
@@ -14,13 +14,13 @@
   },
   "games": [
     {
-      "game_pk": "849849",
+      "game_pk": "849846",
       "teams": [
         "Chicago White Sox",
         "Houston Astros"
       ],
       "venue": "Daikin Park",
-      "game_datetime_utc": "2026-09-29T21:00:00Z",
+      "game_datetime_utc": "2026-09-30T21:00:00Z",
       "props": [
         {
           "category": "HITS",
@@ -34,49 +34,41 @@
           "side": "1+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 1.03,
+          "projection": 0.99,
           "edge": null,
-          "confidence": 72,
+          "confidence": 60,
           "decision": "PLAY",
           "batting_order": 4,
           "reasons": [
-            "3/3 core signals",
             "20.5% barrel rate",
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-29T18:58:58.936080+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-30T11:10:51.293218+00:00"
+          "locked_at_utc": "2026-09-30T18:40:55.270389+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "TOTAL BASES",
           "market": "batter_total_bases",
-          "player": "Alvarez, Yordan",
-          "player_id": 670541,
-          "team": "Houston Astros",
-          "opponent": "Chicago White Sox",
+          "player": "Murakami, Munetaka",
+          "player_id": 808959,
+          "team": "Chicago White Sox",
+          "opponent": "Houston Astros",
           "line": 2,
           "target": 2,
           "side": "2+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 2.2,
+          "projection": 1.69,
           "edge": null,
-          "confidence": 69,
+          "confidence": 60,
           "decision": "PLAY",
-          "batting_order": 2,
+          "batting_order": 4,
           "reasons": [
-            "3/3 core signals",
-            "16.0% barrel rate",
-            "confirmed batting 2"
+            "20.5% barrel rate",
+            "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-29T18:58:58.936146+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-30T11:10:51.293266+00:00"
+          "locked_at_utc": "2026-09-30T18:40:55.270426+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "RUNS",
@@ -90,21 +82,17 @@
           "side": "1+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 0.77,
+          "projection": 0.7,
           "edge": null,
-          "confidence": 72,
+          "confidence": 60,
           "decision": "PLAY",
           "batting_order": 4,
           "reasons": [
-            "3/3 core signals",
             "20.5% barrel rate",
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-29T18:58:58.936208+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-30T11:10:51.293272+00:00"
+          "locked_at_utc": "2026-09-30T18:40:55.270462+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "RBI",
@@ -118,152 +106,135 @@
           "side": "1+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 0.95,
+          "projection": 0.91,
           "edge": null,
-          "confidence": 72,
+          "confidence": 60,
           "decision": "PLAY",
           "batting_order": 4,
           "reasons": [
-            "3/3 core signals",
             "20.5% barrel rate",
             "confirmed batting 4"
           ],
-          "locked_at_utc": "2026-09-29T18:58:58.936264+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-30T11:10:51.293277+00:00"
+          "locked_at_utc": "2026-09-30T18:40:55.270490+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Hagen Smith",
+          "player": "Hunter Brown",
           "player_id": "",
-          "team": "Chicago White Sox",
-          "opponent": "Houston Astros",
-          "line": 8,
-          "target": 8,
-          "side": "8+",
+          "team": "Houston Astros",
+          "opponent": "Chicago White Sox",
+          "line": 6,
+          "target": 6,
+          "side": "6+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 8.56,
+          "projection": 6.81,
           "edge": null,
           "confidence": 60,
           "decision": "PLAY",
           "batting_order": "",
           "reasons": [
-            "37.3% pitcher K rate",
+            "27.5% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-29T18:58:58.936615+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "MISS",
-          "graded_at_utc": "2026-09-30T11:10:51.293285+00:00"
+          "locked_at_utc": "2026-09-30T18:40:55.270883+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets",
-      "grading_status": "FINAL"
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     },
     {
-      "game_pk": "849843",
-      "teams": [
-        "Chicago Cubs",
-        "San Diego Padres"
-      ],
-      "venue": "Petco Park",
-      "game_datetime_utc": "2026-09-30T02:00:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Michael King",
-          "player_id": "",
-          "team": "San Diego Padres",
-          "opponent": "Chicago Cubs",
-          "line": 4,
-          "target": 4,
-          "side": "4+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 4.67,
-          "edge": null,
-          "confidence": 60,
-          "decision": "PLAY",
-          "batting_order": "",
-          "reasons": [
-            "21.0% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-09-29T18:58:58.936967+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 8,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-30T11:10:51.735997+00:00"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "849845",
+      "game_pk": "849841",
       "teams": [
         "Atlanta Braves",
         "Philadelphia Phillies"
       ],
       "venue": "Truist Park",
-      "game_datetime_utc": "2026-09-29T18:00:00Z",
+      "game_datetime_utc": "2026-09-30T18:00:00Z",
       "props": [],
       "long_shots": [],
       "status": "CLOSED",
-      "status_reason": "No pregame player-prop snapshot was locked",
-      "grading_status": "FINAL"
+      "status_reason": "No pregame player-prop snapshot was locked"
     },
     {
-      "game_pk": "849851",
+      "game_pk": "849848",
       "teams": [
         "Boston Red Sox",
         "New York Yankees"
       ],
       "venue": "Yankee Stadium",
-      "game_datetime_utc": "2026-09-30T00:00:00Z",
+      "game_datetime_utc": "2026-10-01T00:00:00Z",
       "props": [
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Cam Schlittler",
+          "player": "Max Fried",
           "player_id": "",
           "team": "New York Yankees",
           "opponent": "Boston Red Sox",
-          "line": 7,
-          "target": 7,
-          "side": "7+",
+          "line": 5,
+          "target": 5,
+          "side": "5+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 7.18,
+          "projection": 5.49,
           "edge": null,
           "confidence": 60,
           "decision": "PLAY",
           "batting_order": "",
           "reasons": [
-            "31.4% pitcher K rate",
+            "24.0% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-09-29T18:58:58.937333+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 10,
-          "result": "HIT",
-          "graded_at_utc": "2026-09-30T11:10:52.183414+00:00"
+          "locked_at_utc": "2026-09-30T18:40:55.271302+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets",
-      "grading_status": "FINAL"
+      "status_reason": "LaunchPoint projections with gradeable model targets"
+    },
+    {
+      "game_pk": "849842",
+      "teams": [
+        "Chicago Cubs",
+        "San Diego Padres"
+      ],
+      "venue": "Petco Park",
+      "game_datetime_utc": "2026-10-01T02:00:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Nick Pivetta",
+          "player_id": "",
+          "team": "San Diego Padres",
+          "opponent": "Chicago Cubs",
+          "line": 6,
+          "target": 6,
+          "side": "6+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 6.67,
+          "edge": null,
+          "confidence": 60,
+          "decision": "PLAY",
+          "batting_order": "",
+          "reasons": [
+            "30.0% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-09-30T18:40:55.271637+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     }
   ],
   "rules": {
@@ -271,6 +242,5 @@
     "long_shots": "Reserved for future model-only long-shot rules",
     "missing_data": "DATA HOLD when required model inputs are unavailable",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  },
-  "graded_at_utc": "2026-09-30T11:10:52.183434+00:00"
+  }
 }
