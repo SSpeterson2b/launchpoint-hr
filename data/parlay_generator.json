@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-30T22:15:43.194170+00:00",
+  "generated_at_utc": "2026-09-30T23:44:33.526427+00:00",
   "slate_date": "2026-09-30",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -80,7 +80,7 @@
           "type": "HR",
           "label": "Jones, Spencer",
           "detail": "New York Yankees HR",
-          "score": 67.02,
+          "score": 67.01,
           "game_pk": "849848"
         },
         {
@@ -107,7 +107,7 @@
           "type": "HR",
           "label": "Jones, Spencer",
           "detail": "New York Yankees HR",
-          "score": 67.02,
+          "score": 67.01,
           "game_pk": "849848"
         },
         {
