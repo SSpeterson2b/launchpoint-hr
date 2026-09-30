@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-09-30",
-  "generated_at_utc": "2026-09-30T18:40:57.273935+00:00",
+  "generated_at_utc": "2026-09-30T20:51:20.344138+00:00",
   "picks": [
     {
       "game_pk": "849841",
@@ -22,12 +22,30 @@
     },
     {
       "game_pk": "849846",
+      "player_id": "670541",
+      "player": "Alvarez, Yordan",
+      "team": "Houston Astros",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-09-30T21:00:00Z",
+      "locked_at_utc": "2026-09-30T20:50:45.855483+00:00"
+    },
+    {
+      "game_pk": "849846",
       "player_id": "808959",
       "player": "Murakami, Munetaka",
       "team": "Chicago White Sox",
       "role": "UPSIDE",
       "game_datetime_utc": "2026-09-30T21:00:00Z",
       "locked_at_utc": "2026-09-30T18:40:19.455180+00:00"
+    },
+    {
+      "game_pk": "849848",
+      "player_id": "682987",
+      "player": "Jones, Spencer",
+      "team": "New York Yankees",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-01T00:00:00Z",
+      "locked_at_utc": "2026-09-30T20:50:45.855483+00:00"
     }
   ]
 }
