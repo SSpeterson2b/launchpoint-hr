@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-30T16:51:03.215367+00:00",
+  "generated_at_utc": "2026-09-30T18:37:22.208833+00:00",
   "games": [
     {
       "game_pk": "849841",
       "game_date": "2026-09-30",
       "game_datetime_utc": "2026-09-30T18:00:00Z",
-      "game_status": "Pre-Game",
+      "game_status": "In Progress",
       "away_team": "Philadelphia Phillies",
       "home_team": "Atlanta Braves",
       "away_lineup_confirmed": true,
@@ -17,10 +17,10 @@
       "game_pk": "849846",
       "game_date": "2026-09-30",
       "game_datetime_utc": "2026-09-30T21:00:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Chicago White Sox",
       "home_team": "Houston Astros",
-      "away_lineup_confirmed": false,
+      "away_lineup_confirmed": true,
       "home_lineup_confirmed": false,
       "lineups_confirmed": false,
       "doubleheader_game": ""
