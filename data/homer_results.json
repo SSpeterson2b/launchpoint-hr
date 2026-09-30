@@ -1,4 +1,17 @@
 {
-  "generated_at": "2026-09-30T18:40:23.039075+00:00",
-  "results": []
+  "generated_at": "2026-09-30T20:50:48.743293+00:00",
+  "results": [
+    {
+      "game_pk": 849841,
+      "player_id": 656941,
+      "player": "Schwarber, Kyle",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849841,
+      "player_id": 547180,
+      "player": "Harper, Bryce",
+      "home_runs": 1
+    }
+  ]
 }
