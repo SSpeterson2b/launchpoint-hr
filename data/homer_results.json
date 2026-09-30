@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T22:15:16.482647+00:00",
+  "generated_at": "2026-09-30T23:43:58.411041+00:00",
   "results": [
     {
       "game_pk": 849841,
@@ -29,6 +29,18 @@
       "game_pk": 849846,
       "player_id": 701358,
       "player": "Smith, Cam",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849846,
+      "player_id": 514888,
+      "player": "Altuve, Jose",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849846,
+      "player_id": 805367,
+      "player": "Meidroth, Chase",
       "home_runs": 1
     }
   ]
