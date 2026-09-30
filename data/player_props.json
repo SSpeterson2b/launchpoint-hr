@@ -196,7 +196,8 @@
       "props": [],
       "long_shots": [],
       "status": "CLOSED",
-      "status_reason": "No pregame player-prop snapshot was locked"
+      "status_reason": "No pregame player-prop snapshot was locked",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "849842",
@@ -242,5 +243,6 @@
     "long_shots": "Reserved for future model-only long-shot rules",
     "missing_data": "DATA HOLD when required model inputs are unavailable",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  }
+  },
+  "graded_at_utc": "2026-09-30T21:36:29.882408+00:00"
 }
