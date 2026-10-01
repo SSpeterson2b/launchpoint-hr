@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-01T22:42:02.948737+00:00",
+  "generated_at_utc": "2026-10-01T23:55:37.553877+00:00",
   "slate_date": "2026-10-01",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -46,7 +46,7 @@
           "type": "HR",
           "label": "Olson, Matt",
           "detail": "Atlanta Braves HR",
-          "score": 65.15,
+          "score": 65.17,
           "game_pk": "849844"
         }
       ]
@@ -66,14 +66,14 @@
           "type": "HR",
           "label": "Olson, Matt",
           "detail": "Atlanta Braves HR",
-          "score": 65.15,
+          "score": 65.17,
           "game_pk": "849844"
         },
         {
           "type": "HR",
           "label": "Baldwin, Drake",
           "detail": "Atlanta Braves HR",
-          "score": 60.88,
+          "score": 60.89,
           "game_pk": "849844"
         },
         {
@@ -93,14 +93,14 @@
           "type": "HR",
           "label": "Olson, Matt",
           "detail": "Atlanta Braves HR",
-          "score": 65.15,
+          "score": 65.17,
           "game_pk": "849844"
         },
         {
           "type": "HR",
           "label": "Baldwin, Drake",
           "detail": "Atlanta Braves HR",
-          "score": 60.88,
+          "score": 60.89,
           "game_pk": "849844"
         },
         {
