@@ -1,47 +1,4 @@
 {
-  "generated_at": "2026-09-30T23:43:58.411041+00:00",
-  "results": [
-    {
-      "game_pk": 849841,
-      "player_id": 656941,
-      "player": "Schwarber, Kyle",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849841,
-      "player_id": 547180,
-      "player": "Harper, Bryce",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849841,
-      "player_id": 664761,
-      "player": "Bohm, Alec",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849846,
-      "player_id": 665161,
-      "player": "Pe\u00f1a, Jeremy",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849846,
-      "player_id": 701358,
-      "player": "Smith, Cam",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849846,
-      "player_id": 514888,
-      "player": "Altuve, Jose",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849846,
-      "player_id": 805367,
-      "player": "Meidroth, Chase",
-      "home_runs": 1
-    }
-  ]
+  "generated_at": "2026-10-01T19:07:56.236377+00:00",
+  "results": []
 }
