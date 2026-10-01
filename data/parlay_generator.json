@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-10-01T00:13:43.876479+00:00",
-  "slate_date": "2026-09-30",
+  "generated_at_utc": "2026-10-01T19:08:32.707181+00:00",
+  "slate_date": "2026-10-01",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
   "cards": [
@@ -10,24 +10,17 @@
       "legs": [
         {
           "type": "STRIKEOUTS",
-          "label": "Hunter Brown",
-          "detail": "6+",
-          "score": 68.1,
-          "game_pk": "849846"
-        },
-        {
-          "type": "STRIKEOUTS",
-          "label": "Nick Pivetta",
-          "detail": "6+",
-          "score": 66.7,
-          "game_pk": "849842"
+          "label": "Aaron Nola",
+          "detail": "5+",
+          "score": 64.6,
+          "game_pk": "849844"
         },
         {
           "type": "WINNER",
-          "label": "New York Yankees",
-          "detail": "62.4% model win",
-          "score": 62.4,
-          "game_pk": "849848"
+          "label": "Atlanta Braves",
+          "detail": "72.5% model win",
+          "score": 72.5,
+          "game_pk": "849844"
         }
       ]
     },
@@ -37,24 +30,17 @@
       "legs": [
         {
           "type": "STRIKEOUTS",
-          "label": "Hunter Brown",
-          "detail": "6+",
-          "score": 68.1,
-          "game_pk": "849846"
+          "label": "Aaron Nola",
+          "detail": "5+",
+          "score": 64.6,
+          "game_pk": "849844"
         },
         {
           "type": "WINNER",
-          "label": "New York Yankees",
-          "detail": "62.4% model win",
-          "score": 62.4,
-          "game_pk": "849848"
-        },
-        {
-          "type": "HR",
-          "label": "Alvarez, Yordan",
-          "detail": "Houston Astros HR",
-          "score": 75.96,
-          "game_pk": "849846"
+          "label": "Atlanta Braves",
+          "detail": "72.5% model win",
+          "score": 72.5,
+          "game_pk": "849844"
         }
       ]
     },
@@ -64,58 +50,17 @@
       "legs": [
         {
           "type": "WINNER",
-          "label": "New York Yankees",
-          "detail": "62.4% model win",
-          "score": 62.4,
-          "game_pk": "849848"
-        },
-        {
-          "type": "HR",
-          "label": "Alvarez, Yordan",
-          "detail": "Houston Astros HR",
-          "score": 75.96,
-          "game_pk": "849846"
-        },
-        {
-          "type": "HR",
-          "label": "Jones, Spencer",
-          "detail": "New York Yankees HR",
-          "score": 67.01,
-          "game_pk": "849848"
+          "label": "Atlanta Braves",
+          "detail": "72.5% model win",
+          "score": 72.5,
+          "game_pk": "849844"
         },
         {
           "type": "STRIKEOUTS",
-          "label": "Hunter Brown",
-          "detail": "6+",
-          "score": 68.1,
-          "game_pk": "849846"
-        }
-      ]
-    },
-    {
-      "style": "LONGSHOT",
-      "title": "Longshot Card",
-      "legs": [
-        {
-          "type": "HR",
-          "label": "Alvarez, Yordan",
-          "detail": "Houston Astros HR",
-          "score": 75.96,
-          "game_pk": "849846"
-        },
-        {
-          "type": "HR",
-          "label": "Jones, Spencer",
-          "detail": "New York Yankees HR",
-          "score": 67.01,
-          "game_pk": "849848"
-        },
-        {
-          "type": "STRIKEOUTS",
-          "label": "Hunter Brown",
-          "detail": "6+",
-          "score": 68.1,
-          "game_pk": "849846"
+          "label": "Aaron Nola",
+          "detail": "5+",
+          "score": 64.6,
+          "game_pk": "849844"
         }
       ]
     }
