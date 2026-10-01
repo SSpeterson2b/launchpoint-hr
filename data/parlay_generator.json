@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-01T19:56:49.817903+00:00",
+  "generated_at_utc": "2026-10-01T21:04:34.152729+00:00",
   "slate_date": "2026-10-01",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -18,8 +18,8 @@
         {
           "type": "WINNER",
           "label": "Atlanta Braves",
-          "detail": "72.5% model win",
-          "score": 72.5,
+          "detail": "72.4% model win",
+          "score": 72.4,
           "game_pk": "849844"
         }
       ]
@@ -38,8 +38,15 @@
         {
           "type": "WINNER",
           "label": "Atlanta Braves",
-          "detail": "72.5% model win",
-          "score": 72.5,
+          "detail": "72.4% model win",
+          "score": 72.4,
+          "game_pk": "849844"
+        },
+        {
+          "type": "HR",
+          "label": "Olson, Matt",
+          "detail": "Atlanta Braves HR",
+          "score": 64.81,
           "game_pk": "849844"
         }
       ]
@@ -51,8 +58,49 @@
         {
           "type": "WINNER",
           "label": "Atlanta Braves",
-          "detail": "72.5% model win",
-          "score": 72.5,
+          "detail": "72.4% model win",
+          "score": 72.4,
+          "game_pk": "849844"
+        },
+        {
+          "type": "HR",
+          "label": "Olson, Matt",
+          "detail": "Atlanta Braves HR",
+          "score": 64.81,
+          "game_pk": "849844"
+        },
+        {
+          "type": "HR",
+          "label": "Baldwin, Drake",
+          "detail": "Atlanta Braves HR",
+          "score": 60.54,
+          "game_pk": "849844"
+        },
+        {
+          "type": "STRIKEOUTS",
+          "label": "Aaron Nola",
+          "detail": "5+",
+          "score": 64.6,
+          "game_pk": "849844"
+        }
+      ]
+    },
+    {
+      "style": "LONGSHOT",
+      "title": "Longshot Card",
+      "legs": [
+        {
+          "type": "HR",
+          "label": "Olson, Matt",
+          "detail": "Atlanta Braves HR",
+          "score": 64.81,
+          "game_pk": "849844"
+        },
+        {
+          "type": "HR",
+          "label": "Baldwin, Drake",
+          "detail": "Atlanta Braves HR",
+          "score": 60.54,
           "game_pk": "849844"
         },
         {
