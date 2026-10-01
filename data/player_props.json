@@ -44,7 +44,10 @@
             "confirmed batting 4"
           ],
           "locked_at_utc": "2026-09-30T18:40:55.270389+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-10-01T11:37:25.885605+00:00"
         },
         {
           "category": "TOTAL BASES",
@@ -68,7 +71,10 @@
             "confirmed batting 4"
           ],
           "locked_at_utc": "2026-09-30T18:40:55.270426+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-10-01T11:37:25.885628+00:00"
         },
         {
           "category": "RUNS",
@@ -92,7 +98,10 @@
             "confirmed batting 4"
           ],
           "locked_at_utc": "2026-09-30T18:40:55.270462+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-10-01T11:37:25.885633+00:00"
         },
         {
           "category": "RBI",
@@ -116,7 +125,10 @@
             "confirmed batting 4"
           ],
           "locked_at_utc": "2026-09-30T18:40:55.270490+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 0,
+          "result": "MISS",
+          "graded_at_utc": "2026-10-01T11:37:25.885637+00:00"
         },
         {
           "category": "STRIKEOUTS",
@@ -140,12 +152,16 @@
             "confirmed starter"
           ],
           "locked_at_utc": "2026-09-30T18:40:55.270883+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 2,
+          "result": "MISS",
+          "graded_at_utc": "2026-10-01T11:37:25.885644+00:00"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets"
+      "status_reason": "LaunchPoint projections with gradeable model targets",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "849848",
@@ -178,12 +194,16 @@
             "confirmed starter"
           ],
           "locked_at_utc": "2026-09-30T18:40:55.271302+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 6,
+          "result": "HIT",
+          "graded_at_utc": "2026-10-01T11:37:25.985362+00:00"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets"
+      "status_reason": "LaunchPoint projections with gradeable model targets",
+      "grading_status": "FINAL"
     },
     {
       "game_pk": "849841",
@@ -230,12 +250,16 @@
             "confirmed starter"
           ],
           "locked_at_utc": "2026-09-30T18:40:55.271637+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
+          "actual": 4,
+          "result": "MISS",
+          "graded_at_utc": "2026-10-01T11:37:26.091531+00:00"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets"
+      "status_reason": "LaunchPoint projections with gradeable model targets",
+      "grading_status": "FINAL"
     }
   ],
   "rules": {
@@ -243,5 +267,6 @@
     "long_shots": "Reserved for future model-only long-shot rules",
     "missing_data": "DATA HOLD when required model inputs are unavailable",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  }
+  },
+  "graded_at_utc": "2026-10-01T11:37:26.091556+00:00"
 }
