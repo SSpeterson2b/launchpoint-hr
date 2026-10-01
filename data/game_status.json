@@ -1,16 +1,16 @@
 {
-  "generated_at_utc": "2026-10-01T19:05:03.876053+00:00",
+  "generated_at_utc": "2026-10-01T21:00:46.337449+00:00",
   "games": [
     {
       "game_pk": "849844",
       "game_date": "2026-10-01",
       "game_datetime_utc": "2026-10-02T00:00:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Philadelphia Phillies",
       "home_team": "Atlanta Braves",
-      "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false,
+      "away_lineup_confirmed": true,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     }
   ]
