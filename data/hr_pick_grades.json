@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-10-01",
-  "generated_at_utc": "2026-10-01T21:04:32.689880+00:00",
+  "generated_at_utc": "2026-10-02T05:42:49.042505+00:00",
   "picks": [
     {
       "game_pk": "849844",
@@ -9,7 +9,9 @@
       "team": "Atlanta Braves",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-02T00:00:00Z",
-      "locked_at_utc": "2026-10-01T21:04:04.062284+00:00"
+      "locked_at_utc": "2026-10-01T21:04:04.062284+00:00",
+      "home_runs": 1,
+      "result": "HIT"
     },
     {
       "game_pk": "849844",
@@ -18,7 +20,9 @@
       "team": "Philadelphia Phillies",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-02T00:00:00Z",
-      "locked_at_utc": "2026-10-01T21:04:04.062284+00:00"
+      "locked_at_utc": "2026-10-01T21:04:04.062284+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     },
     {
       "game_pk": "849844",
@@ -27,7 +31,9 @@
       "team": "Atlanta Braves",
       "role": "SECONDARY",
       "game_datetime_utc": "2026-10-02T00:00:00Z",
-      "locked_at_utc": "2026-10-01T21:04:04.062284+00:00"
+      "locked_at_utc": "2026-10-01T21:04:04.062284+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     }
   ]
 }
