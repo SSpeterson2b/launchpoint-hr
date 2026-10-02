@@ -1,17 +1,19 @@
 {
-  "generated_at_utc": "2026-10-01T23:51:57.686360+00:00",
+  "generated_at_utc": "2026-10-02T06:25:51.677721+00:00",
   "games": [
     {
       "game_pk": "849844",
       "game_date": "2026-10-01",
       "game_datetime_utc": "2026-10-02T00:00:00Z",
-      "game_status": "Warmup",
+      "game_status": "Final",
       "away_team": "Philadelphia Phillies",
       "home_team": "Atlanta Braves",
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
-      "doubleheader_game": ""
+      "doubleheader_game": "",
+      "status_checked_at_utc": "2026-10-02T06:25:51.677721+00:00",
+      "status_source": "MLB_STATS_API"
     }
   ]
 }
