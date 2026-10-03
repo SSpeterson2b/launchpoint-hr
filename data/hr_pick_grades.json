@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-10-03",
-  "generated_at_utc": "2026-10-03T19:15:14.938320+00:00",
+  "generated_at_utc": "2026-10-03T20:09:43.444592+00:00",
   "picks": [
     {
       "game_pk": "849828",
@@ -27,7 +27,18 @@
       "team": "Chicago White Sox",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-03T17:00:00Z",
-      "locked_at_utc": "2026-10-03T15:13:10.778889+00:00"
+      "locked_at_utc": "2026-10-03T15:13:10.778889+00:00",
+      "home_runs": 1,
+      "result": "HIT"
+    },
+    {
+      "game_pk": "849830",
+      "player_id": "641343",
+      "player": "Bauers, Jake",
+      "team": "Milwaukee Brewers",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-04T00:30:00Z",
+      "locked_at_utc": "2026-10-03T20:09:26.247827+00:00"
     },
     {
       "game_pk": "849835",
