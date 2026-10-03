@@ -1,7 +1,16 @@
 {
   "slate_date": "2026-10-03",
-  "generated_at_utc": "2026-10-03T17:42:26.181512+00:00",
+  "generated_at_utc": "2026-10-03T19:15:14.938320+00:00",
   "picks": [
+    {
+      "game_pk": "849828",
+      "player_id": "621566",
+      "player": "Olson, Matt",
+      "team": "Atlanta Braves",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-03T20:00:00Z",
+      "locked_at_utc": "2026-10-03T19:14:54.582944+00:00"
+    },
     {
       "game_pk": "849828",
       "player_id": "660271",
@@ -19,6 +28,24 @@
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-03T17:00:00Z",
       "locked_at_utc": "2026-10-03T15:13:10.778889+00:00"
+    },
+    {
+      "game_pk": "849835",
+      "player_id": "682987",
+      "player": "Jones, Spencer",
+      "team": "New York Yankees",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-03T22:30:00Z",
+      "locked_at_utc": "2026-10-03T19:14:54.582944+00:00"
+    },
+    {
+      "game_pk": "849835",
+      "player_id": "691406",
+      "player": "Caminero, Junior",
+      "team": "Tampa Bay Rays",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-03T22:30:00Z",
+      "locked_at_utc": "2026-10-03T19:14:54.582944+00:00"
     }
   ]
 }
