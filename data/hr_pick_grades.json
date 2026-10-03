@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-10-03",
-  "generated_at_utc": "2026-10-03T20:09:43.444592+00:00",
+  "generated_at_utc": "2026-10-03T22:53:29.696186+00:00",
   "picks": [
     {
       "game_pk": "849828",
@@ -9,7 +9,9 @@
       "team": "Atlanta Braves",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-03T20:00:00Z",
-      "locked_at_utc": "2026-10-03T19:14:54.582944+00:00"
+      "locked_at_utc": "2026-10-03T19:14:54.582944+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     },
     {
       "game_pk": "849828",
@@ -18,7 +20,9 @@
       "team": "Los Angeles Dodgers",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-03T20:00:00Z",
-      "locked_at_utc": "2026-10-03T17:42:05.080555+00:00"
+      "locked_at_utc": "2026-10-03T17:42:05.080555+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     },
     {
       "game_pk": "849829",
@@ -39,6 +43,15 @@
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-04T00:30:00Z",
       "locked_at_utc": "2026-10-03T20:09:26.247827+00:00"
+    },
+    {
+      "game_pk": "849830",
+      "player_id": "665487",
+      "player": "Tatis Jr., Fernando",
+      "team": "San Diego Padres",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-04T00:30:00Z",
+      "locked_at_utc": "2026-10-03T21:38:42.015465+00:00"
     },
     {
       "game_pk": "849835",
