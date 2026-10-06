@@ -1,19 +1,17 @@
 {
-  "generated_at_utc": "2026-10-06T21:53:05.600466+00:00",
+  "generated_at_utc": "2026-10-06T22:38:37.281575+00:00",
   "games": [
     {
       "game_pk": "849819",
       "game_date": "2026-10-06",
       "game_datetime_utc": "2026-10-06T22:00:00Z",
-      "game_status": "Warmup",
+      "game_status": "In Progress",
       "away_team": "Los Angeles Dodgers",
       "home_team": "Atlanta Braves",
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-06T21:53:05.600466+00:00",
-      "status_source": "MLB_STATS_API"
+      "doubleheader_game": ""
     },
     {
       "game_pk": "849826",
@@ -22,12 +20,10 @@
       "game_status": "Pre-Game",
       "away_team": "Milwaukee Brewers",
       "home_team": "San Diego Padres",
-      "away_lineup_confirmed": false,
+      "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
-      "lineups_confirmed": false,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-06T21:53:05.600466+00:00",
-      "status_source": "MLB_STATS_API"
+      "lineups_confirmed": true,
+      "doubleheader_game": ""
     }
   ]
 }
