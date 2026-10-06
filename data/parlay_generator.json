@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-06T12:41:24.792957+00:00",
+  "generated_at_utc": "2026-10-06T19:11:25.131322+00:00",
   "slate_date": "2026-10-06",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -48,6 +48,13 @@
           "detail": "56.3% model win",
           "score": 56.3,
           "game_pk": "849826"
+        },
+        {
+          "type": "HR",
+          "label": "Ohtani, Shohei",
+          "detail": "Los Angeles Dodgers HR",
+          "score": 61.62,
+          "game_pk": "849819"
         }
       ]
     },
@@ -61,6 +68,47 @@
           "detail": "56.3% model win",
           "score": 56.3,
           "game_pk": "849826"
+        },
+        {
+          "type": "HR",
+          "label": "Ohtani, Shohei",
+          "detail": "Los Angeles Dodgers HR",
+          "score": 61.62,
+          "game_pk": "849819"
+        },
+        {
+          "type": "HR",
+          "label": "Harris II, Michael",
+          "detail": "Atlanta Braves HR",
+          "score": 51.06,
+          "game_pk": "849819"
+        },
+        {
+          "type": "STRIKEOUTS",
+          "label": "Nick Pivetta",
+          "detail": "6+",
+          "score": 64.1,
+          "game_pk": "849826"
+        }
+      ]
+    },
+    {
+      "style": "LONGSHOT",
+      "title": "Longshot Card",
+      "legs": [
+        {
+          "type": "HR",
+          "label": "Ohtani, Shohei",
+          "detail": "Los Angeles Dodgers HR",
+          "score": 61.62,
+          "game_pk": "849819"
+        },
+        {
+          "type": "HR",
+          "label": "Harris II, Michael",
+          "detail": "Atlanta Braves HR",
+          "score": 51.06,
+          "game_pk": "849819"
         },
         {
           "type": "STRIKEOUTS",
