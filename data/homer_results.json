@@ -1,23 +1,4 @@
 {
-  "generated_at": "2026-10-06T12:36:53.340888+00:00",
-  "results": [
-    {
-      "game_pk": 849844,
-      "player_id": 671739,
-      "player": "Harris II, Michael",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849844,
-      "player_id": 645277,
-      "player": "Albies, Ozzie",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849844,
-      "player_id": 621566,
-      "player": "Olson, Matt",
-      "home_runs": 1
-    }
-  ]
+  "generated_at": "2026-10-06T12:40:48.268367+00:00",
+  "results": []
 }
