@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-10-02T01:36:15.321874+00:00",
-  "slate_date": "2026-10-01",
+  "generated_at_utc": "2026-10-06T12:41:24.722290+00:00",
+  "slate_date": "2026-10-06",
   "model_version": "Player Props 2.0",
   "status": "LIVE",
   "status_reason": "LaunchPoint model targets \u2014 sportsbook odds not required",
@@ -14,46 +14,80 @@
   },
   "games": [
     {
-      "game_pk": "849844",
+      "game_pk": "849826",
       "teams": [
-        "Atlanta Braves",
-        "Philadelphia Phillies"
+        "Milwaukee Brewers",
+        "San Diego Padres"
       ],
-      "venue": "Truist Park",
-      "game_datetime_utc": "2026-10-02T00:00:00Z",
+      "venue": "Petco Park",
+      "game_datetime_utc": "2026-10-07T01:30:00Z",
       "props": [
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Aaron Nola",
+          "player": "Nick Pivetta",
           "player_id": "",
-          "team": "Philadelphia Phillies",
-          "opponent": "Atlanta Braves",
-          "line": 5,
-          "target": 5,
-          "side": "5+",
+          "team": "San Diego Padres",
+          "opponent": "Milwaukee Brewers",
+          "line": 6,
+          "target": 6,
+          "side": "6+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 5.46,
+          "projection": 6.41,
           "edge": null,
           "confidence": 60,
           "decision": "PLAY",
           "batting_order": "",
           "reasons": [
-            "23.8% pitcher K rate",
+            "30.0% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-10-01T19:08:32.657266+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-02T11:06:49.377406+00:00"
+          "locked_at_utc": "2026-10-06T12:41:24.721631+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets",
-      "grading_status": "FINAL"
+      "status_reason": "LaunchPoint projections with gradeable model targets"
+    },
+    {
+      "game_pk": "849819",
+      "teams": [
+        "Atlanta Braves",
+        "Los Angeles Dodgers"
+      ],
+      "venue": "Truist Park",
+      "game_datetime_utc": "2026-10-06T22:00:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Yoshinobu Yamamoto",
+          "player_id": "",
+          "team": "Los Angeles Dodgers",
+          "opponent": "Atlanta Braves",
+          "line": 6,
+          "target": 6,
+          "side": "6+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 6.19,
+          "edge": null,
+          "confidence": 60,
+          "decision": "PLAY",
+          "batting_order": "",
+          "reasons": [
+            "25.7% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-10-06T12:41:24.722270+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     }
   ],
   "rules": {
@@ -61,6 +95,5 @@
     "long_shots": "Reserved for future model-only long-shot rules",
     "missing_data": "DATA HOLD when required model inputs are unavailable",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  },
-  "graded_at_utc": "2026-10-02T11:06:49.377425+00:00"
+  }
 }
