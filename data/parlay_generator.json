@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-10-02T01:36:15.384357+00:00",
-  "slate_date": "2026-10-01",
+  "generated_at_utc": "2026-10-06T12:41:24.792957+00:00",
+  "slate_date": "2026-10-06",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
   "cards": [
@@ -10,17 +10,24 @@
       "legs": [
         {
           "type": "STRIKEOUTS",
-          "label": "Aaron Nola",
-          "detail": "5+",
-          "score": 64.6,
-          "game_pk": "849844"
+          "label": "Nick Pivetta",
+          "detail": "6+",
+          "score": 64.1,
+          "game_pk": "849826"
+        },
+        {
+          "type": "STRIKEOUTS",
+          "label": "Yoshinobu Yamamoto",
+          "detail": "6+",
+          "score": 61.900000000000006,
+          "game_pk": "849819"
         },
         {
           "type": "WINNER",
-          "label": "Atlanta Braves",
-          "detail": "72.4% model win",
-          "score": 72.4,
-          "game_pk": "849844"
+          "label": "San Diego Padres",
+          "detail": "56.3% model win",
+          "score": 56.3,
+          "game_pk": "849826"
         }
       ]
     },
@@ -30,24 +37,17 @@
       "legs": [
         {
           "type": "STRIKEOUTS",
-          "label": "Aaron Nola",
-          "detail": "5+",
-          "score": 64.6,
-          "game_pk": "849844"
+          "label": "Nick Pivetta",
+          "detail": "6+",
+          "score": 64.1,
+          "game_pk": "849826"
         },
         {
           "type": "WINNER",
-          "label": "Atlanta Braves",
-          "detail": "72.4% model win",
-          "score": 72.4,
-          "game_pk": "849844"
-        },
-        {
-          "type": "HR",
-          "label": "Olson, Matt",
-          "detail": "Atlanta Braves HR",
-          "score": 65.17,
-          "game_pk": "849844"
+          "label": "San Diego Padres",
+          "detail": "56.3% model win",
+          "score": 56.3,
+          "game_pk": "849826"
         }
       ]
     },
@@ -57,58 +57,17 @@
       "legs": [
         {
           "type": "WINNER",
-          "label": "Atlanta Braves",
-          "detail": "72.4% model win",
-          "score": 72.4,
-          "game_pk": "849844"
-        },
-        {
-          "type": "HR",
-          "label": "Olson, Matt",
-          "detail": "Atlanta Braves HR",
-          "score": 65.17,
-          "game_pk": "849844"
-        },
-        {
-          "type": "HR",
-          "label": "Baldwin, Drake",
-          "detail": "Atlanta Braves HR",
-          "score": 60.89,
-          "game_pk": "849844"
+          "label": "San Diego Padres",
+          "detail": "56.3% model win",
+          "score": 56.3,
+          "game_pk": "849826"
         },
         {
           "type": "STRIKEOUTS",
-          "label": "Aaron Nola",
-          "detail": "5+",
-          "score": 64.6,
-          "game_pk": "849844"
-        }
-      ]
-    },
-    {
-      "style": "LONGSHOT",
-      "title": "Longshot Card",
-      "legs": [
-        {
-          "type": "HR",
-          "label": "Olson, Matt",
-          "detail": "Atlanta Braves HR",
-          "score": 65.17,
-          "game_pk": "849844"
-        },
-        {
-          "type": "HR",
-          "label": "Baldwin, Drake",
-          "detail": "Atlanta Braves HR",
-          "score": 60.89,
-          "game_pk": "849844"
-        },
-        {
-          "type": "STRIKEOUTS",
-          "label": "Aaron Nola",
-          "detail": "5+",
-          "score": 64.6,
-          "game_pk": "849844"
+          "label": "Nick Pivetta",
+          "detail": "6+",
+          "score": 64.1,
+          "game_pk": "849826"
         }
       ]
     }
