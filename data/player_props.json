@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-06T21:00:28.329289+00:00",
+  "generated_at_utc": "2026-10-06T21:53:10.707169+00:00",
   "slate_date": "2026-10-06",
   "model_version": "Player Props 2.0",
   "status": "LIVE",
@@ -13,44 +13,6 @@
     "reason": "Sportsbook feed is optional and not used for model targets"
   },
   "games": [
-    {
-      "game_pk": "849819",
-      "teams": [
-        "Atlanta Braves",
-        "Los Angeles Dodgers"
-      ],
-      "venue": "Truist Park",
-      "game_datetime_utc": "2026-10-06T22:00:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Yoshinobu Yamamoto",
-          "player_id": "",
-          "team": "Los Angeles Dodgers",
-          "opponent": "Atlanta Braves",
-          "line": 6,
-          "target": 6,
-          "side": "6+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 6.19,
-          "edge": null,
-          "confidence": 60,
-          "decision": "PLAY",
-          "batting_order": "",
-          "reasons": [
-            "25.7% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-10-06T12:41:24.722270+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets"
-    },
     {
       "game_pk": "849826",
       "teams": [
@@ -82,6 +44,44 @@
             "confirmed starter"
           ],
           "locked_at_utc": "2026-10-06T12:41:24.721631+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        }
+      ],
+      "long_shots": [],
+      "status": "MODEL TARGETS",
+      "status_reason": "LaunchPoint projections with gradeable model targets"
+    },
+    {
+      "game_pk": "849819",
+      "teams": [
+        "Atlanta Braves",
+        "Los Angeles Dodgers"
+      ],
+      "venue": "Truist Park",
+      "game_datetime_utc": "2026-10-06T22:00:00Z",
+      "props": [
+        {
+          "category": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "player": "Yoshinobu Yamamoto",
+          "player_id": "",
+          "team": "Los Angeles Dodgers",
+          "opponent": "Atlanta Braves",
+          "line": 6,
+          "target": 6,
+          "side": "6+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 6.19,
+          "edge": null,
+          "confidence": 60,
+          "decision": "PLAY",
+          "batting_order": "",
+          "reasons": [
+            "25.7% pitcher K rate",
+            "confirmed starter"
+          ],
+          "locked_at_utc": "2026-10-06T12:41:24.722270+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
