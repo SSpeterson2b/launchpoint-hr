@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-06T21:00:28.381840+00:00",
+  "generated_at_utc": "2026-10-06T21:53:10.746692+00:00",
   "slate_date": "2026-10-06",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -25,8 +25,8 @@
         {
           "type": "WINNER",
           "label": "San Diego Padres",
-          "detail": "56.3% model win",
-          "score": 56.3,
+          "detail": "57.0% model win",
+          "score": 57.0,
           "game_pk": "849826"
         }
       ]
@@ -45,16 +45,16 @@
         {
           "type": "WINNER",
           "label": "San Diego Padres",
-          "detail": "56.3% model win",
-          "score": 56.3,
+          "detail": "57.0% model win",
+          "score": 57.0,
           "game_pk": "849826"
         },
         {
           "type": "HR",
-          "label": "Ohtani, Shohei",
-          "detail": "Los Angeles Dodgers HR",
-          "score": 61.66,
-          "game_pk": "849819"
+          "label": "Tatis Jr., Fernando",
+          "detail": "San Diego Padres HR",
+          "score": 65.56,
+          "game_pk": "849826"
         }
       ]
     },
@@ -65,22 +65,22 @@
         {
           "type": "WINNER",
           "label": "San Diego Padres",
-          "detail": "56.3% model win",
-          "score": 56.3,
+          "detail": "57.0% model win",
+          "score": 57.0,
+          "game_pk": "849826"
+        },
+        {
+          "type": "HR",
+          "label": "Tatis Jr., Fernando",
+          "detail": "San Diego Padres HR",
+          "score": 65.56,
           "game_pk": "849826"
         },
         {
           "type": "HR",
           "label": "Ohtani, Shohei",
           "detail": "Los Angeles Dodgers HR",
-          "score": 61.66,
-          "game_pk": "849819"
-        },
-        {
-          "type": "HR",
-          "label": "Harris II, Michael",
-          "detail": "Atlanta Braves HR",
-          "score": 51.1,
+          "score": 61.67,
           "game_pk": "849819"
         },
         {
@@ -98,16 +98,16 @@
       "legs": [
         {
           "type": "HR",
-          "label": "Ohtani, Shohei",
-          "detail": "Los Angeles Dodgers HR",
-          "score": 61.66,
-          "game_pk": "849819"
+          "label": "Tatis Jr., Fernando",
+          "detail": "San Diego Padres HR",
+          "score": 65.56,
+          "game_pk": "849826"
         },
         {
           "type": "HR",
-          "label": "Harris II, Michael",
-          "detail": "Atlanta Braves HR",
-          "score": 51.1,
+          "label": "Ohtani, Shohei",
+          "detail": "Los Angeles Dodgers HR",
+          "score": 61.67,
           "game_pk": "849819"
         },
         {
