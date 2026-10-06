@@ -1,5 +1,24 @@
 {
   "slate_date": "2026-10-06",
-  "generated_at_utc": "2026-10-06T12:36:52.641477+00:00",
-  "picks": []
+  "generated_at_utc": "2026-10-06T19:11:25.515000+00:00",
+  "picks": [
+    {
+      "game_pk": "849819",
+      "player_id": "621566",
+      "player": "Olson, Matt",
+      "team": "Atlanta Braves",
+      "role": "UPSIDE",
+      "game_datetime_utc": "2026-10-06T22:00:00Z",
+      "locked_at_utc": "2026-10-06T19:10:55.708862+00:00"
+    },
+    {
+      "game_pk": "849819",
+      "player_id": "660271",
+      "player": "Ohtani, Shohei",
+      "team": "Los Angeles Dodgers",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-06T22:00:00Z",
+      "locked_at_utc": "2026-10-06T19:10:55.708862+00:00"
+    }
+  ]
 }
