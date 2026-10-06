@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-10-06",
-  "generated_at_utc": "2026-10-06T19:11:25.515000+00:00",
+  "generated_at_utc": "2026-10-06T21:53:05.069381+00:00",
   "picks": [
     {
       "game_pk": "849819",
@@ -19,6 +19,24 @@
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-06T22:00:00Z",
       "locked_at_utc": "2026-10-06T19:10:55.708862+00:00"
+    },
+    {
+      "game_pk": "849826",
+      "player_id": "665487",
+      "player": "Tatis Jr., Fernando",
+      "team": "San Diego Padres",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-07T01:30:00Z",
+      "locked_at_utc": "2026-10-06T21:52:35.151032+00:00"
+    },
+    {
+      "game_pk": "849826",
+      "player_id": "701538",
+      "player": "Merrill, Jackson",
+      "team": "San Diego Padres",
+      "role": "SECONDARY",
+      "game_datetime_utc": "2026-10-07T01:30:00Z",
+      "locked_at_utc": "2026-10-06T21:52:35.151032+00:00"
     }
   ]
 }
