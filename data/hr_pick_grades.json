@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-10-06",
-  "generated_at_utc": "2026-10-06T21:53:05.069381+00:00",
+  "generated_at_utc": "2026-10-06T22:41:23.307124+00:00",
   "picks": [
     {
       "game_pk": "849819",
@@ -22,12 +22,30 @@
     },
     {
       "game_pk": "849826",
+      "player_id": "641343",
+      "player": "Bauers, Jake",
+      "team": "Milwaukee Brewers",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-07T01:30:00Z",
+      "locked_at_utc": "2026-10-06T22:40:48.567361+00:00"
+    },
+    {
+      "game_pk": "849826",
       "player_id": "665487",
       "player": "Tatis Jr., Fernando",
       "team": "San Diego Padres",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-07T01:30:00Z",
       "locked_at_utc": "2026-10-06T21:52:35.151032+00:00"
+    },
+    {
+      "game_pk": "849826",
+      "player_id": "669003",
+      "player": "Mitchell, Garrett",
+      "team": "Milwaukee Brewers",
+      "role": "SECONDARY",
+      "game_datetime_utc": "2026-10-07T01:30:00Z",
+      "locked_at_utc": "2026-10-06T22:40:48.567361+00:00"
     },
     {
       "game_pk": "849826",
