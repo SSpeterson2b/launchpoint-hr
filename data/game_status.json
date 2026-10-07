@@ -1,28 +1,28 @@
 {
-  "generated_at_utc": "2026-10-07T15:33:40.319175+00:00",
+  "generated_at_utc": "2026-10-07T19:34:32.440687+00:00",
   "games": [
     {
       "game_pk": "849833",
       "game_date": "2026-10-07",
       "game_datetime_utc": "2026-10-07T20:00:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Cleveland Guardians",
       "home_team": "Chicago White Sox",
-      "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false,
+      "away_lineup_confirmed": true,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
       "game_pk": "849822",
       "game_date": "2026-10-07",
       "game_datetime_utc": "2026-10-07T22:00:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Los Angeles Dodgers",
       "home_team": "Atlanta Braves",
-      "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
-      "lineups_confirmed": false,
+      "away_lineup_confirmed": true,
+      "home_lineup_confirmed": true,
+      "lineups_confirmed": true,
       "doubleheader_game": ""
     },
     {
