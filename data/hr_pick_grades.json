@@ -1,72 +1,42 @@
 {
-  "slate_date": "2026-10-06",
-  "generated_at_utc": "2026-10-07T06:04:42.873945+00:00",
+  "slate_date": "2026-10-07",
+  "generated_at_utc": "2026-10-07T19:37:42.877281+00:00",
   "picks": [
     {
-      "game_pk": "849819",
+      "game_pk": "849822",
       "player_id": "621566",
       "player": "Olson, Matt",
       "team": "Atlanta Braves",
-      "role": "UPSIDE",
-      "game_datetime_utc": "2026-10-06T22:00:00Z",
-      "locked_at_utc": "2026-10-06T19:10:55.708862+00:00",
-      "home_runs": 0,
-      "result": "MISS"
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-07T22:00:00Z",
+      "locked_at_utc": "2026-10-07T19:37:10.968554+00:00"
     },
     {
-      "game_pk": "849819",
+      "game_pk": "849822",
       "player_id": "660271",
       "player": "Ohtani, Shohei",
       "team": "Los Angeles Dodgers",
       "role": "PRIMARY",
-      "game_datetime_utc": "2026-10-06T22:00:00Z",
-      "locked_at_utc": "2026-10-06T19:10:55.708862+00:00",
-      "home_runs": 0,
-      "result": "MISS"
+      "game_datetime_utc": "2026-10-07T22:00:00Z",
+      "locked_at_utc": "2026-10-07T19:37:10.968554+00:00"
     },
     {
-      "game_pk": "849826",
-      "player_id": "641343",
-      "player": "Bauers, Jake",
-      "team": "Milwaukee Brewers",
-      "role": "PRIMARY",
-      "game_datetime_utc": "2026-10-07T01:30:00Z",
-      "locked_at_utc": "2026-10-06T22:40:48.567361+00:00",
-      "home_runs": 0,
-      "result": "MISS"
-    },
-    {
-      "game_pk": "849826",
-      "player_id": "665487",
-      "player": "Tatis Jr., Fernando",
-      "team": "San Diego Padres",
-      "role": "PRIMARY",
-      "game_datetime_utc": "2026-10-07T01:30:00Z",
-      "locked_at_utc": "2026-10-06T21:52:35.151032+00:00",
-      "home_runs": 0,
-      "result": "MISS"
-    },
-    {
-      "game_pk": "849826",
-      "player_id": "669003",
-      "player": "Mitchell, Garrett",
-      "team": "Milwaukee Brewers",
+      "game_pk": "849822",
+      "player_id": "686948",
+      "player": "Baldwin, Drake",
+      "team": "Atlanta Braves",
       "role": "SECONDARY",
-      "game_datetime_utc": "2026-10-07T01:30:00Z",
-      "locked_at_utc": "2026-10-06T22:40:48.567361+00:00",
-      "home_runs": 0,
-      "result": "MISS"
+      "game_datetime_utc": "2026-10-07T22:00:00Z",
+      "locked_at_utc": "2026-10-07T19:37:10.968554+00:00"
     },
     {
-      "game_pk": "849826",
-      "player_id": "701538",
-      "player": "Merrill, Jackson",
-      "team": "San Diego Padres",
-      "role": "SECONDARY",
-      "game_datetime_utc": "2026-10-07T01:30:00Z",
-      "locked_at_utc": "2026-10-06T21:52:35.151032+00:00",
-      "home_runs": 0,
-      "result": "MISS"
+      "game_pk": "849833",
+      "player_id": "808959",
+      "player": "Murakami, Munetaka",
+      "team": "Chicago White Sox",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-07T20:00:00Z",
+      "locked_at_utc": "2026-10-07T19:37:10.968554+00:00"
     }
   ]
 }
