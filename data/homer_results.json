@@ -1,29 +1,4 @@
 {
-  "generated_at": "2026-10-07T13:29:25.396928+00:00",
-  "results": [
-    {
-      "game_pk": 849819,
-      "player_id": 571771,
-      "player": "Hern\u00e1ndez, Enrique",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849819,
-      "player_id": 518692,
-      "player": "Freeman, Freddie",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849826,
-      "player_id": 661388,
-      "player": "Contreras, William",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849826,
-      "player_id": 630105,
-      "player": "Cronenworth, Jake",
-      "home_runs": 1
-    }
-  ]
+  "generated_at": "2026-10-07T15:36:19.952323+00:00",
+  "results": []
 }
