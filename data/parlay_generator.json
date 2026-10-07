@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-07T21:19:48.311220+00:00",
+  "generated_at_utc": "2026-10-07T22:15:33.071387+00:00",
   "slate_date": "2026-10-07",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -53,7 +53,7 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 71.87,
+          "score": 71.81,
           "game_pk": "849833"
         }
       ]
@@ -73,14 +73,14 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 71.87,
+          "score": 71.81,
           "game_pk": "849833"
         },
         {
           "type": "HR",
           "label": "Ohtani, Shohei",
           "detail": "Los Angeles Dodgers HR",
-          "score": 69.39,
+          "score": 69.43,
           "game_pk": "849822"
         },
         {
@@ -100,14 +100,14 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 71.87,
+          "score": 71.81,
           "game_pk": "849833"
         },
         {
           "type": "HR",
           "label": "Ohtani, Shohei",
           "detail": "Los Angeles Dodgers HR",
-          "score": 69.39,
+          "score": 69.43,
           "game_pk": "849822"
         },
         {
