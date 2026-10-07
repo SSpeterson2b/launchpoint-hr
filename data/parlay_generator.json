@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-07T22:15:33.071387+00:00",
+  "generated_at_utc": "2026-10-07T23:06:28.687340+00:00",
   "slate_date": "2026-10-07",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -25,8 +25,8 @@
         {
           "type": "WINNER",
           "label": "Milwaukee Brewers",
-          "detail": "66.2% model win",
-          "score": 66.2,
+          "detail": "66.8% model win",
+          "score": 66.8,
           "game_pk": "849827"
         }
       ]
@@ -45,15 +45,15 @@
         {
           "type": "WINNER",
           "label": "Milwaukee Brewers",
-          "detail": "66.2% model win",
-          "score": 66.2,
+          "detail": "66.8% model win",
+          "score": 66.8,
           "game_pk": "849827"
         },
         {
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 71.81,
+          "score": 71.82,
           "game_pk": "849833"
         }
       ]
@@ -65,22 +65,22 @@
         {
           "type": "WINNER",
           "label": "Milwaukee Brewers",
-          "detail": "66.2% model win",
-          "score": 66.2,
+          "detail": "66.8% model win",
+          "score": 66.8,
           "game_pk": "849827"
         },
         {
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 71.81,
+          "score": 71.82,
           "game_pk": "849833"
         },
         {
           "type": "HR",
           "label": "Ohtani, Shohei",
           "detail": "Los Angeles Dodgers HR",
-          "score": 69.43,
+          "score": 69.42,
           "game_pk": "849822"
         },
         {
@@ -100,14 +100,14 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 71.81,
+          "score": 71.82,
           "game_pk": "849833"
         },
         {
           "type": "HR",
           "label": "Ohtani, Shohei",
           "detail": "Los Angeles Dodgers HR",
-          "score": 69.43,
+          "score": 69.42,
           "game_pk": "849822"
         },
         {
