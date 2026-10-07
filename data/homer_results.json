@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T01:27:23.914960+00:00",
+  "generated_at": "2026-10-07T06:04:43.269265+00:00",
   "results": [
     {
       "game_pk": 849819,
@@ -11,6 +11,18 @@
       "game_pk": 849819,
       "player_id": 518692,
       "player": "Freeman, Freddie",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849826,
+      "player_id": 661388,
+      "player": "Contreras, William",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849826,
+      "player_id": 630105,
+      "player": "Cronenworth, Jake",
       "home_runs": 1
     }
   ]
