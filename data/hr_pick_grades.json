@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-10-06",
-  "generated_at_utc": "2026-10-07T01:27:23.369106+00:00",
+  "generated_at_utc": "2026-10-07T06:04:42.873945+00:00",
   "picks": [
     {
       "game_pk": "849819",
@@ -31,7 +31,9 @@
       "team": "Milwaukee Brewers",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-07T01:30:00Z",
-      "locked_at_utc": "2026-10-06T22:40:48.567361+00:00"
+      "locked_at_utc": "2026-10-06T22:40:48.567361+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     },
     {
       "game_pk": "849826",
@@ -40,7 +42,9 @@
       "team": "San Diego Padres",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-07T01:30:00Z",
-      "locked_at_utc": "2026-10-06T21:52:35.151032+00:00"
+      "locked_at_utc": "2026-10-06T21:52:35.151032+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     },
     {
       "game_pk": "849826",
@@ -49,7 +53,9 @@
       "team": "Milwaukee Brewers",
       "role": "SECONDARY",
       "game_datetime_utc": "2026-10-07T01:30:00Z",
-      "locked_at_utc": "2026-10-06T22:40:48.567361+00:00"
+      "locked_at_utc": "2026-10-06T22:40:48.567361+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     },
     {
       "game_pk": "849826",
@@ -58,7 +64,9 @@
       "team": "San Diego Padres",
       "role": "SECONDARY",
       "game_datetime_utc": "2026-10-07T01:30:00Z",
-      "locked_at_utc": "2026-10-06T21:52:35.151032+00:00"
+      "locked_at_utc": "2026-10-06T21:52:35.151032+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     }
   ]
 }
