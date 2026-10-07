@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-10-07",
-  "generated_at_utc": "2026-10-07T19:37:42.877281+00:00",
+  "generated_at_utc": "2026-10-07T21:19:47.766547+00:00",
   "picks": [
     {
       "game_pk": "849822",
@@ -30,6 +30,15 @@
       "locked_at_utc": "2026-10-07T19:37:10.968554+00:00"
     },
     {
+      "game_pk": "849827",
+      "player_id": "665487",
+      "player": "Tatis Jr., Fernando",
+      "team": "San Diego Padres",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-08T02:00:00Z",
+      "locked_at_utc": "2026-10-07T21:19:11.404421+00:00"
+    },
+    {
       "game_pk": "849833",
       "player_id": "808959",
       "player": "Murakami, Munetaka",
@@ -37,6 +46,15 @@
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-07T20:00:00Z",
       "locked_at_utc": "2026-10-07T19:37:10.968554+00:00"
+    },
+    {
+      "game_pk": "849838",
+      "player_id": "682987",
+      "player": "Jones, Spencer",
+      "team": "New York Yankees",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-08T00:00:00Z",
+      "locked_at_utc": "2026-10-07T20:17:05.558409+00:00"
     }
   ]
 }
