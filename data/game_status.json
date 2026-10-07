@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-07T21:21:46.591249+00:00",
+  "generated_at_utc": "2026-10-07T22:14:52.531766+00:00",
   "games": [
     {
       "game_pk": "849833",
@@ -17,7 +17,7 @@
       "game_pk": "849822",
       "game_date": "2026-10-07",
       "game_datetime_utc": "2026-10-07T22:00:00Z",
-      "game_status": "Pre-Game",
+      "game_status": "In Progress",
       "away_team": "Los Angeles Dodgers",
       "home_team": "Atlanta Braves",
       "away_lineup_confirmed": true,
