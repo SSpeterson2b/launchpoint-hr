@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-07T22:15:34.057741+00:00",
+  "generated_at_utc": "2026-10-07T23:03:38.409131+00:00",
   "games": [
     {
       "game_pk": "849833",
@@ -11,9 +11,7 @@
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-07T22:15:34.057741+00:00",
-      "status_source": "MLB_STATS_API"
+      "doubleheader_game": ""
     },
     {
       "game_pk": "849822",
@@ -25,9 +23,7 @@
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-07T22:15:34.057741+00:00",
-      "status_source": "MLB_STATS_API"
+      "doubleheader_game": ""
     },
     {
       "game_pk": "849838",
@@ -39,9 +35,7 @@
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-07T22:15:34.057741+00:00",
-      "status_source": "MLB_STATS_API"
+      "doubleheader_game": ""
     },
     {
       "game_pk": "849827",
@@ -50,12 +44,10 @@
       "game_status": "Pre-Game",
       "away_team": "Milwaukee Brewers",
       "home_team": "San Diego Padres",
-      "away_lineup_confirmed": false,
+      "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
-      "lineups_confirmed": false,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-07T22:15:34.057741+00:00",
-      "status_source": "MLB_STATS_API"
+      "lineups_confirmed": true,
+      "doubleheader_game": ""
     }
   ]
 }
