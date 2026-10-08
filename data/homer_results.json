@@ -1,4 +1,17 @@
 {
-  "generated_at": "2026-10-08T00:11:17.349493+00:00",
-  "results": []
+  "generated_at": "2026-10-08T01:49:23.769483+00:00",
+  "results": [
+    {
+      "game_pk": 849822,
+      "player_id": 571970,
+      "player": "Muncy, Max",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849838,
+      "player_id": 668723,
+      "player": "Vilade, Ryan",
+      "home_runs": 1
+    }
+  ]
 }
