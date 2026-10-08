@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-08T01:49:54.427752+00:00",
+  "generated_at_utc": "2026-10-08T06:09:53.289629+00:00",
   "games": [
     {
       "game_pk": "849833",
@@ -12,7 +12,7 @@
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
       "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-08T01:49:54.427752+00:00",
+      "status_checked_at_utc": "2026-10-08T06:09:53.289629+00:00",
       "status_source": "MLB_STATS_API"
     },
     {
@@ -26,35 +26,35 @@
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
       "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-08T01:49:54.427752+00:00",
+      "status_checked_at_utc": "2026-10-08T06:09:53.289629+00:00",
       "status_source": "MLB_STATS_API"
     },
     {
       "game_pk": "849838",
       "game_date": "2026-10-07",
       "game_datetime_utc": "2026-10-08T00:00:00Z",
-      "game_status": "In Progress",
+      "game_status": "Final",
       "away_team": "Tampa Bay Rays",
       "home_team": "New York Yankees",
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
       "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-08T01:49:54.427752+00:00",
+      "status_checked_at_utc": "2026-10-08T06:09:53.289629+00:00",
       "status_source": "MLB_STATS_API"
     },
     {
       "game_pk": "849827",
       "game_date": "2026-10-07",
       "game_datetime_utc": "2026-10-08T02:00:00Z",
-      "game_status": "Warmup",
+      "game_status": "Final",
       "away_team": "Milwaukee Brewers",
       "home_team": "San Diego Padres",
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
       "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-08T01:49:54.427752+00:00",
+      "status_checked_at_utc": "2026-10-08T06:09:53.289629+00:00",
       "status_source": "MLB_STATS_API"
     }
   ]
