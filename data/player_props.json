@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-08T00:11:16.961216+00:00",
+  "generated_at_utc": "2026-10-08T00:31:02.847853+00:00",
   "slate_date": "2026-10-07",
   "model_version": "Player Props 2.0",
   "status": "LIVE",
@@ -387,6 +387,5 @@
     "long_shots": "Reserved for future model-only long-shot rules",
     "missing_data": "DATA HOLD when required model inputs are unavailable",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  },
-  "graded_at_utc": "2026-10-08T00:11:41.621067+00:00"
+  }
 }
