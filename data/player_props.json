@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-10-08T01:49:52.711323+00:00",
-  "slate_date": "2026-10-07",
+  "generated_at_utc": "2026-10-08T19:34:13.605538+00:00",
+  "slate_date": "2026-10-08",
   "model_version": "Player Props 2.0",
   "status": "LIVE",
   "status_reason": "LaunchPoint model targets \u2014 sportsbook odds not required",
@@ -14,396 +14,42 @@
   },
   "games": [
     {
-      "game_pk": "849833",
+      "game_pk": "849832",
       "teams": [
         "Chicago White Sox",
         "Cleveland Guardians"
       ],
       "venue": "Rate Field",
-      "game_datetime_utc": "2026-10-07T20:00:00Z",
+      "game_datetime_utc": "2026-10-09T00:00:00Z",
       "props": [
-        {
-          "category": "HITS",
-          "market": "batter_hits",
-          "player": "Murakami, Munetaka",
-          "player_id": 808959,
-          "team": "Chicago White Sox",
-          "opponent": "Cleveland Guardians",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.04,
-          "edge": null,
-          "confidence": 71,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "3/3 core signals",
-            "20.5% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-10-07T19:37:41.543117+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-08T00:11:41.356054+00:00"
-        },
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Murakami, Munetaka",
-          "player_id": 808959,
-          "team": "Chicago White Sox",
-          "opponent": "Cleveland Guardians",
-          "line": 2,
-          "target": 2,
-          "side": "2+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.76,
-          "edge": null,
-          "confidence": 71,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "3/3 core signals",
-            "20.5% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-10-07T19:37:41.543181+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-08T00:11:41.356086+00:00"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Murakami, Munetaka",
-          "player_id": 808959,
-          "team": "Chicago White Sox",
-          "opponent": "Cleveland Guardians",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.75,
-          "edge": null,
-          "confidence": 71,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "3/3 core signals",
-            "20.5% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-10-07T19:37:41.543243+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-08T00:11:41.356097+00:00"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Murakami, Munetaka",
-          "player_id": 808959,
-          "team": "Chicago White Sox",
-          "opponent": "Cleveland Guardians",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.93,
-          "edge": null,
-          "confidence": 71,
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "3/3 core signals",
-            "20.5% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-10-07T19:37:41.543297+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-08T00:11:41.356104+00:00"
-        },
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Daniel Espino",
+          "player": "Hagen Smith",
           "player_id": "",
-          "team": "Cleveland Guardians",
-          "opponent": "Chicago White Sox",
-          "line": 9,
-          "target": 9,
-          "side": "9+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 9.44,
-          "edge": null,
-          "confidence": 60,
-          "decision": "PLAY",
-          "batting_order": "",
-          "reasons": [
-            "38.5% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-10-07T19:37:41.543652+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-08T00:11:41.356123+00:00"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "849822",
-      "teams": [
-        "Atlanta Braves",
-        "Los Angeles Dodgers"
-      ],
-      "venue": "Truist Park",
-      "game_datetime_utc": "2026-10-07T22:00:00Z",
-      "props": [
-        {
-          "category": "HITS",
-          "market": "batter_hits",
-          "player": "Ohtani, Shohei",
-          "player_id": 660271,
-          "team": "Los Angeles Dodgers",
-          "opponent": "Atlanta Braves",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.01,
-          "edge": null,
-          "confidence": 70,
-          "decision": "PLAY",
-          "batting_order": 4,
-          "reasons": [
-            "3/3 core signals",
-            "16.4% barrel rate",
-            "confirmed batting 4"
-          ],
-          "locked_at_utc": "2026-10-07T19:37:41.543821+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-08T12:02:17.190980+00:00"
-        },
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Ohtani, Shohei",
-          "player_id": 660271,
-          "team": "Los Angeles Dodgers",
-          "opponent": "Atlanta Braves",
-          "line": 2,
-          "target": 2,
-          "side": "2+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.83,
-          "edge": null,
-          "confidence": 70,
-          "decision": "PLAY",
-          "batting_order": 4,
-          "reasons": [
-            "3/3 core signals",
-            "16.4% barrel rate",
-            "confirmed batting 4"
-          ],
-          "locked_at_utc": "2026-10-07T19:37:41.543875+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-08T12:02:17.191006+00:00"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Ohtani, Shohei",
-          "player_id": 660271,
-          "team": "Los Angeles Dodgers",
-          "opponent": "Atlanta Braves",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.71,
-          "edge": null,
-          "confidence": 70,
-          "decision": "PLAY",
-          "batting_order": 4,
-          "reasons": [
-            "3/3 core signals",
-            "16.4% barrel rate",
-            "confirmed batting 4"
-          ],
-          "locked_at_utc": "2026-10-07T19:37:41.543932+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-10-08T12:02:17.191012+00:00"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Ohtani, Shohei",
-          "player_id": 660271,
-          "team": "Los Angeles Dodgers",
-          "opponent": "Atlanta Braves",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.87,
-          "edge": null,
-          "confidence": 70,
-          "decision": "PLAY",
-          "batting_order": 4,
-          "reasons": [
-            "3/3 core signals",
-            "16.4% barrel rate",
-            "confirmed batting 4"
-          ],
-          "locked_at_utc": "2026-10-07T19:37:41.543988+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-08T12:02:17.191016+00:00"
-        },
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Tyler Glasnow",
-          "player_id": "",
-          "team": "Los Angeles Dodgers",
-          "opponent": "Atlanta Braves",
+          "team": "Chicago White Sox",
+          "opponent": "Cleveland Guardians",
           "line": 7,
           "target": 7,
           "side": "7+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 7.59,
+          "projection": 7.35,
           "edge": null,
           "confidence": 60,
           "decision": "PLAY",
           "batting_order": "",
           "reasons": [
-            "34.0% pitcher K rate",
+            "37.3% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-10-07T19:37:41.544223+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 5,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-08T12:02:17.191022+00:00"
+          "locked_at_utc": "2026-10-08T19:34:13.605524+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "849827",
-      "teams": [
-        "Milwaukee Brewers",
-        "San Diego Padres"
-      ],
-      "venue": "Petco Park",
-      "game_datetime_utc": "2026-10-08T02:00:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Walker Buehler",
-          "player_id": "",
-          "team": "San Diego Padres",
-          "opponent": "Milwaukee Brewers",
-          "line": 4,
-          "target": 4,
-          "side": "4+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 4.3,
-          "edge": null,
-          "confidence": 60,
-          "decision": "PLAY",
-          "batting_order": "",
-          "reasons": [
-            "20.1% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-10-07T19:37:41.544489+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-08T12:02:17.234357+00:00"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets",
-      "grading_status": "FINAL"
-    },
-    {
-      "game_pk": "849838",
-      "teams": [
-        "New York Yankees",
-        "Tampa Bay Rays"
-      ],
-      "venue": "Yankee Stadium",
-      "game_datetime_utc": "2026-10-08T00:00:00Z",
-      "props": [
-        {
-          "category": "STRIKEOUTS",
-          "market": "pitcher_strikeouts",
-          "player": "Max Fried",
-          "player_id": "",
-          "team": "New York Yankees",
-          "opponent": "Tampa Bay Rays",
-          "line": 4,
-          "target": 4,
-          "side": "4+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 4.53,
-          "edge": null,
-          "confidence": 60,
-          "decision": "PLAY",
-          "batting_order": "",
-          "reasons": [
-            "24.0% pitcher K rate",
-            "confirmed starter"
-          ],
-          "locked_at_utc": "2026-10-07T19:37:41.544833+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 7,
-          "result": "HIT",
-          "graded_at_utc": "2026-10-08T12:02:17.277810+00:00"
-        }
-      ],
-      "long_shots": [],
-      "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets",
-      "grading_status": "FINAL"
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     }
   ],
   "rules": {
@@ -411,6 +57,5 @@
     "long_shots": "Reserved for future model-only long-shot rules",
     "missing_data": "DATA HOLD when required model inputs are unavailable",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  },
-  "graded_at_utc": "2026-10-08T12:02:17.277832+00:00"
+  }
 }
