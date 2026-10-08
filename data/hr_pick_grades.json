@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-10-07",
-  "generated_at_utc": "2026-10-07T23:06:29.802823+00:00",
+  "generated_at_utc": "2026-10-08T00:11:16.733628+00:00",
   "picks": [
     {
       "game_pk": "849822",
@@ -54,7 +54,9 @@
       "team": "Chicago White Sox",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-07T20:00:00Z",
-      "locked_at_utc": "2026-10-07T19:37:10.968554+00:00"
+      "locked_at_utc": "2026-10-07T19:37:10.968554+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     },
     {
       "game_pk": "849838",
