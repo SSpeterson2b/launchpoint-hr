@@ -1,29 +1,4 @@
 {
-  "generated_at": "2026-10-08T13:35:30.243735+00:00",
-  "results": [
-    {
-      "game_pk": 849822,
-      "player_id": 571970,
-      "player": "Muncy, Max",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849838,
-      "player_id": 668723,
-      "player": "Vilade, Ryan",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849838,
-      "player_id": 683748,
-      "player": "Mesa Jr., Victor",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849827,
-      "player_id": 665487,
-      "player": "Tatis Jr., Fernando",
-      "home_runs": 1
-    }
-  ]
+  "generated_at": "2026-10-08T19:33:36.789459+00:00",
+  "results": []
 }
