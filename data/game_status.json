@@ -1,19 +1,17 @@
 {
-  "generated_at_utc": "2026-10-08T23:20:59.241854+00:00",
+  "generated_at_utc": "2026-10-09T00:15:23.405198+00:00",
   "games": [
     {
       "game_pk": "849832",
       "game_date": "2026-10-08",
       "game_datetime_utc": "2026-10-09T00:00:00Z",
-      "game_status": "Pre-Game",
+      "game_status": "In Progress",
       "away_team": "Cleveland Guardians",
       "home_team": "Chicago White Sox",
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-08T23:20:59.241854+00:00",
-      "status_source": "MLB_STATS_API"
+      "doubleheader_game": ""
     }
   ]
 }
