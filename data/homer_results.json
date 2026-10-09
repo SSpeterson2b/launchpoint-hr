@@ -1,4 +1,17 @@
 {
-  "generated_at": "2026-10-09T00:16:08.993498+00:00",
-  "results": []
+  "generated_at": "2026-10-09T01:59:52.574295+00:00",
+  "results": [
+    {
+      "game_pk": 849832,
+      "player_id": 672275,
+      "player": "Bailey, Patrick",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849832,
+      "player_id": 608070,
+      "player": "Ram\u00edrez, Jos\u00e9",
+      "home_runs": 1
+    }
+  ]
 }
