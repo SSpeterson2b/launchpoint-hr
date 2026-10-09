@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-08T23:20:58.819557+00:00",
+  "generated_at_utc": "2026-10-09T00:45:26.916739+00:00",
   "slate_date": "2026-10-08",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -46,7 +46,7 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 64.47,
+          "score": 64.44,
           "game_pk": "849832"
         }
       ]
@@ -66,14 +66,14 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 64.47,
+          "score": 64.44,
           "game_pk": "849832"
         },
         {
           "type": "HR",
           "label": "Tommy Pham",
           "detail": "Chicago White Sox HR",
-          "score": 47.14,
+          "score": 47.1,
           "game_pk": "849832"
         },
         {
@@ -93,14 +93,14 @@
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
-          "score": 64.47,
+          "score": 64.44,
           "game_pk": "849832"
         },
         {
           "type": "HR",
           "label": "Tommy Pham",
           "detail": "Chicago White Sox HR",
-          "score": 47.14,
+          "score": 47.1,
           "game_pk": "849832"
         },
         {
