@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T02:00:27.033818+00:00",
+  "generated_at": "2026-10-09T06:13:35.043692+00:00",
   "results": [
     {
       "game_pk": 849832,
@@ -11,6 +11,12 @@
       "game_pk": 849832,
       "player_id": 608070,
       "player": "Ram\u00edrez, Jos\u00e9",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849832,
+      "player_id": 678246,
+      "player": "Vargas, Miguel",
       "home_runs": 1
     }
   ]
