@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-09T00:45:26.916739+00:00",
+  "generated_at_utc": "2026-10-09T02:00:21.799355+00:00",
   "slate_date": "2026-10-08",
   "model_version": "Parlay Generator 1.0",
   "status": "LIVE",
@@ -18,8 +18,8 @@
         {
           "type": "WINNER",
           "label": "Chicago White Sox",
-          "detail": "61.7% model win",
-          "score": 61.7,
+          "detail": "60.9% model win",
+          "score": 60.9,
           "game_pk": "849832"
         }
       ]
@@ -38,8 +38,8 @@
         {
           "type": "WINNER",
           "label": "Chicago White Sox",
-          "detail": "61.7% model win",
-          "score": 61.7,
+          "detail": "60.9% model win",
+          "score": 60.9,
           "game_pk": "849832"
         },
         {
@@ -58,8 +58,8 @@
         {
           "type": "WINNER",
           "label": "Chicago White Sox",
-          "detail": "61.7% model win",
-          "score": 61.7,
+          "detail": "60.9% model win",
+          "score": 60.9,
           "game_pk": "849832"
         },
         {
@@ -71,9 +71,9 @@
         },
         {
           "type": "HR",
-          "label": "Tommy Pham",
+          "label": "Teel, Kyle",
           "detail": "Chicago White Sox HR",
-          "score": 47.1,
+          "score": 41.99,
           "game_pk": "849832"
         },
         {
@@ -98,9 +98,9 @@
         },
         {
           "type": "HR",
-          "label": "Tommy Pham",
+          "label": "Teel, Kyle",
           "detail": "Chicago White Sox HR",
-          "score": 47.1,
+          "score": 41.99,
           "game_pk": "849832"
         },
         {
