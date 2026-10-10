@@ -52,4 +52,5 @@ async function lpShareCard(filename,title,text){
   finally{btn.disabled=false;btn.textContent=old}
 }
 document.getElementById('share').onclick=function(){var g=games[active];if(!g)return;var text='LaunchPoint Game Edge — '+g.away_team+' vs '+g.home_team,filename=lpPhotoName('launchpoint-game-edge-'+g.away_team+'-'+g.home_team);lpShareCard(filename,'LaunchPoint Game Edge',text)}})();
-</script></body></html>
+</script><script src="refresh-status.js?v=20261010" defer></script>
+</body></html>
