@@ -1,7 +1,102 @@
 {
-  "generated_at_utc": "2026-10-10T19:00:08.565114+00:00",
+  "generated_at_utc": "2026-10-10T20:05:50.295167+00:00",
   "slate_date": "2026-10-10",
   "model_version": "Parlay Generator 1.0",
-  "status": "WAITING FOR ELIGIBLE LEGS",
-  "cards": []
+  "status": "LIVE",
+  "cards": [
+    {
+      "style": "SAFE",
+      "title": "Foundation Card",
+      "legs": [
+        {
+          "type": "TOTAL BASES",
+          "label": "Murakami, Munetaka",
+          "detail": "2+",
+          "score": 72.0,
+          "game_pk": "849831"
+        },
+        {
+          "type": "RUNS",
+          "label": "Murakami, Munetaka",
+          "detail": "1+",
+          "score": 72.0,
+          "game_pk": "849831"
+        }
+      ]
+    },
+    {
+      "style": "BALANCED",
+      "title": "Mixed Edge Card",
+      "legs": [
+        {
+          "type": "TOTAL BASES",
+          "label": "Murakami, Munetaka",
+          "detail": "2+",
+          "score": 72.0,
+          "game_pk": "849831"
+        },
+        {
+          "type": "HR",
+          "label": "Murakami, Munetaka",
+          "detail": "Chicago White Sox HR",
+          "score": 75.63,
+          "game_pk": "849831"
+        }
+      ]
+    },
+    {
+      "style": "AGGRESSIVE",
+      "title": "Power Card",
+      "legs": [
+        {
+          "type": "HR",
+          "label": "Murakami, Munetaka",
+          "detail": "Chicago White Sox HR",
+          "score": 75.63,
+          "game_pk": "849831"
+        },
+        {
+          "type": "HR",
+          "label": "Vargas, Miguel",
+          "detail": "Chicago White Sox HR",
+          "score": 62.99,
+          "game_pk": "849831"
+        },
+        {
+          "type": "TOTAL BASES",
+          "label": "Murakami, Munetaka",
+          "detail": "2+",
+          "score": 72.0,
+          "game_pk": "849831"
+        }
+      ]
+    },
+    {
+      "style": "LONGSHOT",
+      "title": "Longshot Card",
+      "legs": [
+        {
+          "type": "HR",
+          "label": "Murakami, Munetaka",
+          "detail": "Chicago White Sox HR",
+          "score": 75.63,
+          "game_pk": "849831"
+        },
+        {
+          "type": "HR",
+          "label": "Vargas, Miguel",
+          "detail": "Chicago White Sox HR",
+          "score": 62.99,
+          "game_pk": "849831"
+        },
+        {
+          "type": "TOTAL BASES",
+          "label": "Murakami, Munetaka",
+          "detail": "2+",
+          "score": 72.0,
+          "game_pk": "849831"
+        }
+      ]
+    }
+  ]
 }
