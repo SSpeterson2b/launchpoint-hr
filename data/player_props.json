@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-10-09T02:00:21.747248+00:00",
-  "slate_date": "2026-10-08",
-  "model_version": "Player Props 2.0",
+  "generated_at_utc": "2026-10-10T09:58:45.179940+00:00",
+  "slate_date": "2026-10-10",
+  "model_version": "Player Props 2.2",
   "status": "LIVE",
   "status_reason": "LaunchPoint model targets \u2014 sportsbook odds not required",
   "sportsbook": {
@@ -14,53 +14,54 @@
   },
   "games": [
     {
-      "game_pk": "849832",
+      "game_pk": "849831",
       "teams": [
         "Chicago White Sox",
         "Cleveland Guardians"
       ],
-      "venue": "Rate Field",
-      "game_datetime_utc": "2026-10-09T00:00:00Z",
+      "venue": "Progressive Field",
+      "game_datetime_utc": "2026-10-11T00:00:00Z",
       "props": [
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Hagen Smith",
+          "player": "Gavin Williams",
           "player_id": "",
-          "team": "Chicago White Sox",
-          "opponent": "Cleveland Guardians",
-          "line": 7,
-          "target": 7,
-          "side": "7+",
+          "team": "Cleveland Guardians",
+          "opponent": "Chicago White Sox",
+          "line": 8,
+          "target": 8,
+          "side": "8+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 7.35,
+          "projection": 8.49,
           "edge": null,
-          "confidence": 60,
+          "confidence": null,
+          "signal_score": null,
+          "ranking_score": 60,
+          "hit_probability": null,
+          "probability_status": "NOT VALIDATED",
           "decision": "PLAY",
           "batting_order": "",
           "reasons": [
-            "37.3% pitcher K rate",
+            "33.2% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-10-08T19:34:13.605524+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-09T11:54:13.182582+00:00"
+          "locked_at_utc": "2026-10-10T09:58:45.179928+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets",
-      "grading_status": "FINAL"
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     }
   ],
   "rules": {
     "main": "One best LaunchPoint model target per category per game",
     "long_shots": "Reserved for future model-only long-shot rules",
     "missing_data": "DATA HOLD when required model inputs are unavailable",
+    "signal_score": "Heuristic model signal out of 100, not a target-hit probability",
+    "hit_probability": "Not validated; no probability estimate is published",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  },
-  "graded_at_utc": "2026-10-09T11:54:13.182612+00:00"
+  }
 }
