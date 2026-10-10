@@ -1,23 +1,4 @@
 {
-  "generated_at": "2026-10-10T05:56:58.791591+00:00",
-  "results": [
-    {
-      "game_pk": 849832,
-      "player_id": 672275,
-      "player": "Bailey, Patrick",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849832,
-      "player_id": 608070,
-      "player": "Ram\u00edrez, Jos\u00e9",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849832,
-      "player_id": 678246,
-      "player": "Vargas, Miguel",
-      "home_runs": 1
-    }
-  ]
+  "generated_at": "2026-10-10T09:58:14.507529+00:00",
+  "results": []
 }
