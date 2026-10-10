@@ -1,5 +1,24 @@
 {
   "slate_date": "2026-10-10",
-  "generated_at_utc": "2026-10-10T09:58:47.282104+00:00",
-  "picks": []
+  "generated_at_utc": "2026-10-10T20:05:50.557663+00:00",
+  "picks": [
+    {
+      "game_pk": "849831",
+      "player_id": "643217",
+      "player": "Benintendi, Andrew",
+      "team": "Chicago White Sox",
+      "role": "UPSIDE",
+      "game_datetime_utc": "2026-10-11T00:00:00Z",
+      "locked_at_utc": "2026-10-10T20:05:18.088117+00:00"
+    },
+    {
+      "game_pk": "849831",
+      "player_id": "808959",
+      "player": "Murakami, Munetaka",
+      "team": "Chicago White Sox",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-11T00:00:00Z",
+      "locked_at_utc": "2026-10-10T20:05:18.088117+00:00"
+    }
+  ]
 }
