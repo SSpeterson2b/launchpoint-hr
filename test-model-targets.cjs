@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
 const html = fs.readFileSync('player-props.html', 'utf8');
 const context = {};
 vm.createContext(context);
-for (const name of ['esc', 'odds', 'name', 'modelTarget', 'targetText', 'sourceText', 'result', 'card', 'hero']) {
+for (const name of ['esc', 'odds', 'name', 'modelTarget', 'targetText', 'sourceText', 'signalScore', 'signalMetric', 'result', 'card', 'hero']) {
   const line = html.split('\n').find(line => line.startsWith('function ' + name + '('));
   assert.ok(line, 'Missing rendering helper: ' + name);
   vm.runInContext(line, context);
@@ -22,3 +22,26 @@ assert.match(context.hero(historical), /SPORTSBOOK/);
 assert.match(context.hero(historical), /\+120/);
 assert.match(context.hero(historical), /OVER 0.5/);
 console.log('Model targets and historical sportsbook cards render with distinct labels.');
+
+const scored = {...model, signal_score: 69, confidence: null};
+assert.match(context.hero(scored), /MODEL SIGNAL/);
+assert.match(context.hero(scored), /69 \/ 100/);
+assert.match(context.hero(scored), /Not a hit probability/);
+assert.doesNotMatch(context.hero(scored), /CONFIDENCE|69%/);
+const legacy = {...model, confidence: 66};
+assert.match(context.hero(legacy), /66 \/ 100/);
+assert.doesNotMatch(context.hero(legacy), /66%/);
+const pitcher = {...legacy, market: 'pitcher_strikeouts', category: 'STRIKEOUTS', confidence: 60};
+assert.match(context.hero(pitcher), /HIT CHANCE/);
+assert.match(context.hero(pitcher), /Not validated/);
+assert.doesNotMatch(context.hero(pitcher), /60%|60 \/ 100/);
+assert.match(context.hero({...model, signal_score: NaN}), /Not validated/);
+console.log('New and historical heuristic scores are not displayed as hit probabilities.');
+
+for (const file of ['player-props.html', 'index.html']) {
+  const source = fs.readFileSync(file, 'utf8');
+  for (const match of source.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)) {
+    new vm.Script(match[1], {filename: file});
+  }
+}
+assert.match(fs.readFileSync('index.html', 'utf8'), /<span>Model signals<\/span>/);

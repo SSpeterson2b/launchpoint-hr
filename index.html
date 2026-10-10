@@ -3360,7 +3360,7 @@ body{background:radial-gradient(circle at 50% -10%,#073756 0,#01111e 34%,#00080e
   <div class="lp-status"><strong id="lp-player-count">--</strong><span>Players evaluated</span></div>
   <div class="lp-status"><strong id="lp-game-count">--</strong><span>Games today</span></div>
   <div class="lp-status"><strong id="lp-hit-rate">--</strong><span>Top 5 hit rate</span></div>
-  <div class="lp-status"><strong id="lp-confidence-label">--</strong><span>Model confidence</span></div>
+  <div class="lp-status"><strong id="lp-confidence-label">--</strong><span>Model signals</span></div>
 </section>
 <section class="top3"><div class="label">DAILY TOP 3 - GENERATOR</div><div class="top-grid" id="top3"></div></section>
 <section class="launch5-section">
@@ -3416,7 +3416,7 @@ body{background:radial-gradient(circle at 50% -10%,#073756 0,#01111e 34%,#00080e
     <section class="lp-side-card">
       <div class="lp-side-head">MODEL CONFIDENCE</div>
       <div class="lp-side-body">
-        <div class="lp-confidence-ring"><b id="side-confidence">--%</b></div>
+        <div class="lp-confidence-ring"><b id="side-confidence">-- / 100</b></div>
         <div class="lp-confidence-copy" id="side-confidence-copy">Waiting for slate.</div>
       </div>
     </section>
@@ -4462,7 +4462,7 @@ function updateDashboardUI(){
   setText("side-games",gameCount);
   setText("side-players",players.length);
   setText("side-top-score",topScore.toFixed(0));
-  setText("side-confidence",confidence+"%");
+  setText("side-confidence",confidence+" / 100");
 
   const confCopy=document.getElementById("side-confidence-copy");
   if(confCopy)confCopy.textContent="Based on the top 20 generator scores on today's slate.";
