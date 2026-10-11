@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-10-10",
-  "generated_at_utc": "2026-10-10T20:05:50.557663+00:00",
+  "generated_at_utc": "2026-10-11T05:52:00.307788+00:00",
   "picks": [
     {
       "game_pk": "849831",
@@ -9,7 +9,9 @@
       "team": "Chicago White Sox",
       "role": "UPSIDE",
       "game_datetime_utc": "2026-10-11T00:00:00Z",
-      "locked_at_utc": "2026-10-10T20:05:18.088117+00:00"
+      "locked_at_utc": "2026-10-10T20:05:18.088117+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     },
     {
       "game_pk": "849831",
@@ -18,7 +20,9 @@
       "team": "Chicago White Sox",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-11T00:00:00Z",
-      "locked_at_utc": "2026-10-10T20:05:18.088117+00:00"
+      "locked_at_utc": "2026-10-10T20:05:18.088117+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     }
   ]
 }
