@@ -13,16 +13,21 @@
           "label": "Murakami, Munetaka",
           "detail": "2+",
           "score": 72.0,
-          "game_pk": "849831"
+          "game_pk": "849831",
+          "result": "UNVERIFIED"
         },
         {
           "type": "RUNS",
           "label": "Murakami, Munetaka",
           "detail": "1+",
           "score": 72.0,
-          "game_pk": "849831"
+          "game_pk": "849831",
+          "result": "UNVERIFIED"
         }
-      ]
+      ],
+      "verification_status": "UNVERIFIED",
+      "result": "UNVERIFIED",
+      "result_reason": "No verified pregame card snapshot"
     },
     {
       "style": "BALANCED",
@@ -33,16 +38,21 @@
           "label": "Murakami, Munetaka",
           "detail": "2+",
           "score": 72.0,
-          "game_pk": "849831"
+          "game_pk": "849831",
+          "result": "UNVERIFIED"
         },
         {
           "type": "HR",
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
           "score": 75.47,
-          "game_pk": "849831"
+          "game_pk": "849831",
+          "result": "UNVERIFIED"
         }
-      ]
+      ],
+      "verification_status": "UNVERIFIED",
+      "result": "UNVERIFIED",
+      "result_reason": "No verified pregame card snapshot"
     },
     {
       "style": "AGGRESSIVE",
@@ -53,23 +63,29 @@
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
           "score": 75.47,
-          "game_pk": "849831"
+          "game_pk": "849831",
+          "result": "UNVERIFIED"
         },
         {
           "type": "HR",
           "label": "Vargas, Miguel",
           "detail": "Chicago White Sox HR",
           "score": 62.83,
-          "game_pk": "849831"
+          "game_pk": "849831",
+          "result": "UNVERIFIED"
         },
         {
           "type": "TOTAL BASES",
           "label": "Murakami, Munetaka",
           "detail": "2+",
           "score": 72.0,
-          "game_pk": "849831"
+          "game_pk": "849831",
+          "result": "UNVERIFIED"
         }
-      ]
+      ],
+      "verification_status": "UNVERIFIED",
+      "result": "UNVERIFIED",
+      "result_reason": "No verified pregame card snapshot"
     },
     {
       "style": "LONGSHOT",
@@ -80,23 +96,30 @@
           "label": "Murakami, Munetaka",
           "detail": "Chicago White Sox HR",
           "score": 75.47,
-          "game_pk": "849831"
+          "game_pk": "849831",
+          "result": "UNVERIFIED"
         },
         {
           "type": "HR",
           "label": "Vargas, Miguel",
           "detail": "Chicago White Sox HR",
           "score": 62.83,
-          "game_pk": "849831"
+          "game_pk": "849831",
+          "result": "UNVERIFIED"
         },
         {
           "type": "TOTAL BASES",
           "label": "Murakami, Munetaka",
           "detail": "2+",
           "score": 72.0,
-          "game_pk": "849831"
+          "game_pk": "849831",
+          "result": "UNVERIFIED"
         }
-      ]
+      ],
+      "verification_status": "UNVERIFIED",
+      "result": "UNVERIFIED",
+      "result_reason": "No verified pregame card snapshot"
     }
-  ]
+  ],
+  "graded_at_utc": "2026-10-11T07:34:09.778165+00:00"
 }
