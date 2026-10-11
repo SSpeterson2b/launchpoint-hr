@@ -3,6 +3,9 @@ name: Test model target display
 on:
   pull_request:
     paths:
+      - scripts/generator-cards.js
+      - parlays.html
+      - test-generator-cards.cjs
       - player-props.html
       - index.html
       - test-model-targets.cjs
@@ -10,6 +13,9 @@ on:
   push:
     branches: [main]
     paths:
+      - scripts/generator-cards.js
+      - parlays.html
+      - test-generator-cards.cjs
       - player-props.html
       - index.html
       - test-model-targets.cjs
@@ -27,3 +33,4 @@ jobs:
         with:
           node-version: '24'
       - run: node test-model-targets.cjs
+      - run: node test-generator-cards.cjs
