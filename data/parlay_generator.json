@@ -1,7 +1,57 @@
 {
-  "generated_at_utc": "2026-10-11T07:50:58.646162+00:00",
+  "generated_at_utc": "2026-10-11T20:16:45.463071+00:00",
   "slate_date": "2026-10-11",
   "model_version": "Parlay Generator 1.1",
-  "cards": [],
-  "status": "WAITING FOR ELIGIBLE LEGS"
+  "cards": [
+    {
+      "title": "Model combination",
+      "legs": [
+        {
+          "game_pk": "849809",
+          "game_date": "2026-10-11",
+          "game_datetime_utc": "2026-10-12T00:00:00Z",
+          "teams": [
+            "Los Angeles Dodgers",
+            "Milwaukee Brewers"
+          ],
+          "type": "STRIKEOUTS",
+          "market": "pitcher_strikeouts",
+          "target": 7,
+          "player_id": "",
+          "team": "Milwaukee Brewers",
+          "source_locked_at_utc": "2026-10-11T07:50:57.777042+00:00",
+          "label": "Jacob Misiorowski",
+          "detail": "7+",
+          "score": 65.3,
+          "locked_at_utc": "2026-10-11T20:16:45.463071+00:00",
+          "result": "PENDING"
+        },
+        {
+          "game_pk": "849809",
+          "game_date": "2026-10-11",
+          "game_datetime_utc": "2026-10-12T00:00:00Z",
+          "teams": [
+            "Los Angeles Dodgers",
+            "Milwaukee Brewers"
+          ],
+          "type": "HITS",
+          "market": "batter_hits",
+          "target": 1,
+          "player_id": 660271,
+          "team": "Los Angeles Dodgers",
+          "source_locked_at_utc": "2026-10-11T20:16:45.195065+00:00",
+          "label": "Ohtani, Shohei",
+          "detail": "1+",
+          "score": 64.8,
+          "locked_at_utc": "2026-10-11T20:16:45.463071+00:00",
+          "result": "PENDING"
+        }
+      ],
+      "locked_at_utc": "2026-10-11T20:16:45.463071+00:00",
+      "verification_status": "VERIFIED PREGAME",
+      "result": "PENDING",
+      "card_id": "5e4ec0ce70afb470e5cb"
+    }
+  ],
+  "status": "SAVED MODEL CARDS"
 }
