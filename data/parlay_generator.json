@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-11T20:54:31.200954+00:00",
+  "generated_at_utc": "2026-10-11T21:06:01.479744+00:00",
   "slate_date": "2026-10-11",
   "model_version": "Parlay Generator 1.1",
   "cards": [
@@ -23,7 +23,7 @@
           "label": "Jacob Misiorowski",
           "detail": "7+",
           "score": 65.3,
-          "locked_at_utc": "2026-10-11T20:54:31.200954+00:00",
+          "locked_at_utc": "2026-10-11T21:06:01.479744+00:00",
           "result": "PENDING"
         },
         {
@@ -43,11 +43,11 @@
           "label": "Ohtani, Shohei",
           "detail": "1+",
           "score": 64.8,
-          "locked_at_utc": "2026-10-11T20:54:31.200954+00:00",
+          "locked_at_utc": "2026-10-11T21:06:01.479744+00:00",
           "result": "PENDING"
         }
       ],
-      "locked_at_utc": "2026-10-11T20:54:31.200954+00:00",
+      "locked_at_utc": "2026-10-11T21:06:01.479744+00:00",
       "verification_status": "VERIFIED PREGAME",
       "result": "PENDING",
       "card_id": "5e4ec0ce70afb470e5cb"
