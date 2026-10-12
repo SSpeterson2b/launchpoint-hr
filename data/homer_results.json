@@ -1,4 +1,11 @@
 {
-  "generated_at": "2026-10-12T01:13:49.308965+00:00",
-  "results": []
+  "generated_at": "2026-10-12T02:15:44.313486+00:00",
+  "results": [
+    {
+      "game_pk": 849809,
+      "player_id": 668930,
+      "player": "Turang, Brice",
+      "home_runs": 1
+    }
+  ]
 }
