@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-12T23:36:12.627184+00:00",
+  "generated_at_utc": "2026-10-12T23:45:06.857793+00:00",
   "games": [
     {
       "game_pk": "849812",
@@ -17,7 +17,7 @@
       "game_pk": "849820",
       "game_date": "2026-10-12",
       "game_datetime_utc": "2026-10-13T00:00:00Z",
-      "game_status": "Pre-Game",
+      "game_status": "Warmup",
       "away_team": "Cleveland Guardians",
       "home_team": "Tampa Bay Rays",
       "away_lineup_confirmed": true,
