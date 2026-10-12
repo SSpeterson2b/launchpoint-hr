@@ -1,39 +1,15 @@
 {
-  "slate_date": "2026-10-11",
-  "generated_at_utc": "2026-10-12T05:43:57.936813+00:00",
+  "slate_date": "2026-10-12",
+  "generated_at_utc": "2026-10-12T21:56:39.076170+00:00",
   "picks": [
     {
-      "game_pk": "849809",
-      "player_id": "571970",
-      "player": "Muncy, Max",
-      "team": "Los Angeles Dodgers",
-      "role": "UPSIDE",
-      "game_datetime_utc": "2026-10-12T00:00:00Z",
-      "locked_at_utc": "2026-10-11T20:15:42.563176+00:00",
-      "home_runs": 0,
-      "result": "MISS"
-    },
-    {
-      "game_pk": "849809",
-      "player_id": "641343",
-      "player": "Bauers, Jake",
-      "team": "Milwaukee Brewers",
+      "game_pk": "849820",
+      "player_id": "691406",
+      "player": "Caminero, Junior",
+      "team": "Tampa Bay Rays",
       "role": "PRIMARY",
-      "game_datetime_utc": "2026-10-12T00:00:00Z",
-      "locked_at_utc": "2026-10-11T21:05:28.496786+00:00",
-      "home_runs": 0,
-      "result": "MISS"
-    },
-    {
-      "game_pk": "849809",
-      "player_id": "660271",
-      "player": "Ohtani, Shohei",
-      "team": "Los Angeles Dodgers",
-      "role": "PRIMARY",
-      "game_datetime_utc": "2026-10-12T00:00:00Z",
-      "locked_at_utc": "2026-10-11T20:15:42.563176+00:00",
-      "home_runs": 0,
-      "result": "MISS"
+      "game_datetime_utc": "2026-10-13T00:00:00Z",
+      "locked_at_utc": "2026-10-12T21:55:29.490036+00:00"
     }
   ]
 }
