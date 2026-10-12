@@ -1,4 +1,11 @@
 {
-  "generated_at": "2026-10-12T22:58:58.281363+00:00",
-  "results": []
+  "generated_at": "2026-10-12T23:35:09.450210+00:00",
+  "results": [
+    {
+      "game_pk": 849812,
+      "player_id": 661388,
+      "player": "Contreras, William",
+      "home_runs": 1
+    }
+  ]
 }
