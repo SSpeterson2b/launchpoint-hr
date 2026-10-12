@@ -1,6 +1,80 @@
 {
   "snapshots": [
     {
+      "generated_at_utc": "2026-10-12T21:56:04.374802+00:00",
+      "slate_date": "2026-10-12",
+      "model_version": "Parlay Generator 1.1",
+      "cards": [
+        {
+          "title": "Model combination",
+          "legs": [
+            {
+              "game_pk": "849820",
+              "game_date": "2026-10-12",
+              "game_datetime_utc": "2026-10-13T00:00:00Z",
+              "teams": [
+                "Cleveland Guardians",
+                "Tampa Bay Rays"
+              ],
+              "type": "STRIKEOUTS",
+              "market": "pitcher_strikeouts",
+              "target": 4,
+              "player_id": "",
+              "team": "Tampa Bay Rays",
+              "source_locked_at_utc": "2026-10-12T21:56:03.842103+00:00",
+              "label": "Drew Rasmussen",
+              "detail": "4+",
+              "score": 67.30000000000001,
+              "locked_at_utc": "2026-10-12T21:56:04.374802+00:00",
+              "result": "PENDING"
+            },
+            {
+              "game_pk": "849820",
+              "game_date": "2026-10-12",
+              "game_datetime_utc": "2026-10-13T00:00:00Z",
+              "teams": [
+                "Cleveland Guardians",
+                "Tampa Bay Rays"
+              ],
+              "type": "HITS",
+              "market": "batter_hits",
+              "target": 1,
+              "player_id": 691406,
+              "team": "Tampa Bay Rays",
+              "source_locked_at_utc": "2026-10-12T21:56:03.841689+00:00",
+              "label": "Caminero, Junior",
+              "detail": "1+",
+              "score": 65.4,
+              "locked_at_utc": "2026-10-12T21:56:04.374802+00:00",
+              "result": "PENDING"
+            },
+            {
+              "game_pk": "849820",
+              "game_date": "2026-10-12",
+              "game_datetime_utc": "2026-10-13T00:00:00Z",
+              "teams": [
+                "Cleveland Guardians",
+                "Tampa Bay Rays"
+              ],
+              "type": "WINNER",
+              "market": "game_winner",
+              "team": "Tampa Bay Rays",
+              "label": "Tampa Bay Rays",
+              "detail": "68.1% model win",
+              "score": 68.1,
+              "locked_at_utc": "2026-10-12T21:56:04.374802+00:00",
+              "result": "PENDING"
+            }
+          ],
+          "locked_at_utc": "2026-10-12T21:56:04.374802+00:00",
+          "verification_status": "VERIFIED PREGAME",
+          "result": "PENDING",
+          "card_id": "5d225158e71abd9e5e24"
+        }
+      ],
+      "status": "SAVED MODEL CARDS"
+    },
+    {
       "generated_at_utc": "2026-10-11T23:38:22.849840+00:00",
       "slate_date": "2026-10-11",
       "model_version": "Parlay Generator 1.1",
