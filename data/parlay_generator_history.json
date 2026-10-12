@@ -1,7 +1,7 @@
 {
   "snapshots": [
     {
-      "generated_at_utc": "2026-10-12T21:56:04.374802+00:00",
+      "generated_at_utc": "2026-10-12T22:17:19.195449+00:00",
       "slate_date": "2026-10-12",
       "model_version": "Parlay Generator 1.1",
       "cards": [
@@ -25,7 +25,7 @@
               "label": "Drew Rasmussen",
               "detail": "4+",
               "score": 67.30000000000001,
-              "locked_at_utc": "2026-10-12T21:56:04.374802+00:00",
+              "locked_at_utc": "2026-10-12T22:17:19.195449+00:00",
               "result": "PENDING"
             },
             {
@@ -45,7 +45,7 @@
               "label": "Caminero, Junior",
               "detail": "1+",
               "score": 65.4,
-              "locked_at_utc": "2026-10-12T21:56:04.374802+00:00",
+              "locked_at_utc": "2026-10-12T22:17:19.195449+00:00",
               "result": "PENDING"
             },
             {
@@ -62,11 +62,11 @@
               "label": "Tampa Bay Rays",
               "detail": "68.1% model win",
               "score": 68.1,
-              "locked_at_utc": "2026-10-12T21:56:04.374802+00:00",
+              "locked_at_utc": "2026-10-12T22:17:19.195449+00:00",
               "result": "PENDING"
             }
           ],
-          "locked_at_utc": "2026-10-12T21:56:04.374802+00:00",
+          "locked_at_utc": "2026-10-12T22:17:19.195449+00:00",
           "verification_status": "VERIFIED PREGAME",
           "result": "PENDING",
           "card_id": "5d225158e71abd9e5e24"
