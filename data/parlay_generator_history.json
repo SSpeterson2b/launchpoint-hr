@@ -26,7 +26,9 @@
               "detail": "7+",
               "score": 65.3,
               "locked_at_utc": "2026-10-11T23:38:22.849840+00:00",
-              "result": "PENDING"
+              "result": "MISS",
+              "actual": 5,
+              "graded_at_utc": "2026-10-12T05:44:49.158091+00:00"
             },
             {
               "game_pk": "849809",
@@ -46,16 +48,20 @@
               "detail": "1+",
               "score": 64.8,
               "locked_at_utc": "2026-10-11T23:38:22.849840+00:00",
-              "result": "PENDING"
+              "result": "HIT",
+              "actual": 1,
+              "graded_at_utc": "2026-10-12T05:44:49.158091+00:00"
             }
           ],
           "locked_at_utc": "2026-10-11T23:38:22.849840+00:00",
           "verification_status": "VERIFIED PREGAME",
-          "result": "PENDING",
-          "card_id": "5e4ec0ce70afb470e5cb"
+          "result": "MISS",
+          "card_id": "5e4ec0ce70afb470e5cb",
+          "graded_at_utc": "2026-10-12T05:44:49.158091+00:00"
         }
       ],
-      "status": "SAVED MODEL CARDS"
+      "status": "SAVED MODEL CARDS",
+      "graded_at_utc": "2026-10-12T05:44:49.158091+00:00"
     },
     {
       "generated_at_utc": "2026-10-11T01:48:38.143021+00:00",
