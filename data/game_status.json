@@ -1,19 +1,29 @@
 {
-  "generated_at_utc": "2026-10-12T15:32:45.059530+00:00",
+  "generated_at_utc": "2026-10-12T16:00:27.041758+00:00",
   "games": [
     {
-      "game_pk": "849809",
-      "game_date": "2026-10-11",
-      "game_datetime_utc": "2026-10-12T00:00:00Z",
-      "game_status": "Final",
+      "game_pk": "849812",
+      "game_date": "2026-10-12",
+      "game_datetime_utc": "2026-10-12T21:00:00Z",
+      "game_status": "Scheduled",
       "away_team": "Los Angeles Dodgers",
       "home_team": "Milwaukee Brewers",
-      "away_lineup_confirmed": true,
-      "home_lineup_confirmed": true,
-      "lineups_confirmed": true,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-12T15:32:45.059530+00:00",
-      "status_source": "MLB_STATS_API"
+      "away_lineup_confirmed": false,
+      "home_lineup_confirmed": false,
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
+    },
+    {
+      "game_pk": "849820",
+      "game_date": "2026-10-12",
+      "game_datetime_utc": "2026-10-13T00:00:00Z",
+      "game_status": "Scheduled",
+      "away_team": "Cleveland Guardians",
+      "home_team": "Tampa Bay Rays",
+      "away_lineup_confirmed": false,
+      "home_lineup_confirmed": false,
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     }
   ]
 }
