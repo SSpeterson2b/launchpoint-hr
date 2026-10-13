@@ -1,10 +1,22 @@
 {
-  "generated_at": "2026-10-13T01:17:35.896665+00:00",
+  "generated_at": "2026-10-13T02:00:41.842766+00:00",
   "results": [
     {
       "game_pk": 849812,
       "player_id": 661388,
       "player": "Contreras, William",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849820,
+      "player_id": 800050,
+      "player": "DeLauter, Chase",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849820,
+      "player_id": 672275,
+      "player": "Bailey, Patrick",
       "home_runs": 1
     }
   ]
