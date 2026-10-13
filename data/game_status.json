@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-13T03:01:16.155518+00:00",
+  "generated_at_utc": "2026-10-13T03:29:53.378316+00:00",
   "games": [
     {
       "game_pk": "849812",
@@ -12,21 +12,21 @@
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
       "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-13T03:01:16.155518+00:00",
+      "status_checked_at_utc": "2026-10-13T03:29:53.378316+00:00",
       "status_source": "MLB_STATS_API"
     },
     {
       "game_pk": "849820",
       "game_date": "2026-10-12",
       "game_datetime_utc": "2026-10-13T00:00:00Z",
-      "game_status": "In Progress",
+      "game_status": "Final",
       "away_team": "Cleveland Guardians",
       "home_team": "Tampa Bay Rays",
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
       "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-13T03:01:16.155518+00:00",
+      "status_checked_at_utc": "2026-10-13T03:29:53.378316+00:00",
       "status_source": "MLB_STATS_API"
     }
   ]
