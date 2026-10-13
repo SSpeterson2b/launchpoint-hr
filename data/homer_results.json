@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T02:31:39.550543+00:00",
+  "generated_at": "2026-10-13T03:00:25.212633+00:00",
   "results": [
     {
       "game_pk": 849812,
@@ -17,6 +17,12 @@
       "game_pk": 849820,
       "player_id": 672275,
       "player": "Bailey, Patrick",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849820,
+      "player_id": 656775,
+      "player": "Mullins, Cedric",
       "home_runs": 1
     }
   ]
