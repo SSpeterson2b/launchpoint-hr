@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-13T02:31:39.550543+00:00",
+  "generated_at_utc": "2026-10-13T02:58:17.719072+00:00",
   "games": [
     {
       "game_pk": "849812",
@@ -11,9 +11,7 @@
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-13T02:31:39.550543+00:00",
-      "status_source": "MLB_STATS_API"
+      "doubleheader_game": ""
     },
     {
       "game_pk": "849820",
@@ -25,9 +23,7 @@
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-13T02:31:39.550543+00:00",
-      "status_source": "MLB_STATS_API"
+      "doubleheader_game": ""
     }
   ]
 }
