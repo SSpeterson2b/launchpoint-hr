@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-13T20:24:13.651476+00:00",
+  "generated_at_utc": "2026-10-13T20:25:24.883210+00:00",
   "slate_date": "2026-10-13",
   "model_version": "Parlay Generator 1.1",
   "cards": [
@@ -23,7 +23,7 @@
           "label": "Parker Messick",
           "detail": "4+",
           "score": 68.7,
-          "locked_at_utc": "2026-10-13T20:24:13.651476+00:00",
+          "locked_at_utc": "2026-10-13T20:25:24.883210+00:00",
           "result": "PENDING"
         },
         {
@@ -40,11 +40,11 @@
           "label": "Cleveland Guardians",
           "detail": "58.0% model win",
           "score": 58.0,
-          "locked_at_utc": "2026-10-13T20:24:13.651476+00:00",
+          "locked_at_utc": "2026-10-13T20:25:24.883210+00:00",
           "result": "PENDING"
         }
       ],
-      "locked_at_utc": "2026-10-13T20:24:13.651476+00:00",
+      "locked_at_utc": "2026-10-13T20:25:24.883210+00:00",
       "verification_status": "VERIFIED PREGAME",
       "result": "PENDING",
       "card_id": "2b5b43af371835274f33"
