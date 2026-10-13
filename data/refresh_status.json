@@ -3,11 +3,11 @@
   "slate_date": "2026-10-13",
   "scheduled_games": 1,
   "playable_games": 1,
-  "schedule_checked_at_utc": "2026-10-13T19:58:28.720141+00:00",
-  "refresh_completed_at_utc": "2026-10-13T20:01:25.149634+00:00",
+  "schedule_checked_at_utc": "2026-10-13T21:12:28.969702+00:00",
+  "refresh_completed_at_utc": "2026-10-13T21:15:01.623404+00:00",
   "published_slate_date": "2026-10-13",
-  "predictions_generated_at_utc": "2026-10-13T20:01:09.947054+00:00",
+  "predictions_generated_at_utc": "2026-10-13T21:14:47.678404+00:00",
   "preserved_previous_slate": false,
   "schedule_source": "MLB_STATS_API",
-  "run_url": "https://github.com/SSpeterson2b/mlb-hr-edge/actions/runs/38459040045"
+  "run_url": "https://github.com/SSpeterson2b/mlb-hr-edge/actions/runs/38468777171"
 }
