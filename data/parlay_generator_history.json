@@ -26,7 +26,9 @@
               "detail": "4+",
               "score": 67.30000000000001,
               "locked_at_utc": "2026-10-12T23:45:48.833100+00:00",
-              "result": "PENDING"
+              "result": "HIT",
+              "actual": 7,
+              "graded_at_utc": "2026-10-13T03:15:32.654225+00:00"
             },
             {
               "game_pk": "849820",
@@ -46,7 +48,9 @@
               "detail": "1+",
               "score": 65.4,
               "locked_at_utc": "2026-10-12T23:45:48.833100+00:00",
-              "result": "PENDING"
+              "result": "HIT",
+              "actual": 1,
+              "graded_at_utc": "2026-10-13T03:15:32.654225+00:00"
             },
             {
               "game_pk": "849820",
@@ -63,16 +67,20 @@
               "detail": "68.1% model win",
               "score": 68.1,
               "locked_at_utc": "2026-10-12T23:45:48.833100+00:00",
-              "result": "PENDING"
+              "result": "MISS",
+              "actual": "Cleveland Guardians",
+              "graded_at_utc": "2026-10-13T03:15:32.654225+00:00"
             }
           ],
           "locked_at_utc": "2026-10-12T23:45:48.833100+00:00",
           "verification_status": "VERIFIED PREGAME",
-          "result": "PENDING",
-          "card_id": "5d225158e71abd9e5e24"
+          "result": "MISS",
+          "card_id": "5d225158e71abd9e5e24",
+          "graded_at_utc": "2026-10-13T03:15:32.654225+00:00"
         }
       ],
-      "status": "SAVED MODEL CARDS"
+      "status": "SAVED MODEL CARDS",
+      "graded_at_utc": "2026-10-13T03:15:32.654225+00:00"
     },
     {
       "generated_at_utc": "2026-10-11T23:38:22.849840+00:00",
