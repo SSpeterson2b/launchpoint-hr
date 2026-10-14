@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-10-14T04:41:27.174742+00:00",
-  "slate_date": "2026-10-13",
+  "generated_at_utc": "2026-10-14T18:14:36.952222+00:00",
+  "slate_date": "2026-10-14",
   "model_version": "Player Props 2.3",
   "status": "LIVE",
   "status_reason": "LaunchPoint model targets \u2014 sportsbook odds not required",
@@ -14,27 +14,27 @@
   },
   "games": [
     {
-      "game_pk": "849813",
+      "game_pk": "849811",
       "teams": [
-        "Cleveland Guardians",
-        "Tampa Bay Rays"
+        "Los Angeles Dodgers",
+        "Milwaukee Brewers"
       ],
-      "venue": "Tropicana Field",
-      "game_datetime_utc": "2026-10-14T00:00:00Z",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "game_datetime_utc": "2026-10-15T00:00:00Z",
       "props": [
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Parker Messick",
+          "player": "Blake Snell",
           "player_id": "",
-          "team": "Cleveland Guardians",
-          "opponent": "Tampa Bay Rays",
-          "line": 4,
-          "target": 4,
-          "side": "4+",
+          "team": "Los Angeles Dodgers",
+          "opponent": "Milwaukee Brewers",
+          "line": 6,
+          "target": 6,
+          "side": "6+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 4.87,
+          "projection": 6.8,
           "edge": null,
           "confidence": null,
           "signal_score": null,
@@ -44,146 +44,16 @@
           "decision": "PLAY",
           "batting_order": "",
           "reasons": [
-            "25.8% pitcher K rate",
+            "31.8% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-10-13T20:02:01.999039+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 3,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-14T04:42:19.584545+00:00"
-        },
-        {
-          "category": "HITS",
-          "market": "batter_hits",
-          "player": "Caminero, Junior",
-          "player_id": 691406,
-          "team": "Tampa Bay Rays",
-          "opponent": "Cleveland Guardians",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.11,
-          "edge": null,
-          "confidence": null,
-          "signal_score": 63,
-          "ranking_score": 63,
-          "hit_probability": null,
-          "probability_status": "NOT VALIDATED",
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "13.1% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-10-13T21:15:19.930170+00:00",
-          "batting_average": 0.276,
-          "batting_average_source": "DERIVED_SLG_MINUS_ISO",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-10-14T04:42:19.584571+00:00"
-        },
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Caminero, Junior",
-          "player_id": 691406,
-          "team": "Tampa Bay Rays",
-          "opponent": "Cleveland Guardians",
-          "line": 2,
-          "target": 2,
-          "side": "2+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.86,
-          "edge": null,
-          "confidence": null,
-          "signal_score": 63,
-          "ranking_score": 63,
-          "hit_probability": null,
-          "probability_status": "NOT VALIDATED",
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "13.1% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-10-13T21:15:19.930245+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "HIT",
-          "graded_at_utc": "2026-10-14T04:42:19.584578+00:00"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Caminero, Junior",
-          "player_id": 691406,
-          "team": "Tampa Bay Rays",
-          "opponent": "Cleveland Guardians",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.67,
-          "edge": null,
-          "confidence": null,
-          "signal_score": 63,
-          "ranking_score": 63,
-          "hit_probability": null,
-          "probability_status": "NOT VALIDATED",
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "13.1% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-10-13T21:15:19.930374+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-14T04:42:19.584583+00:00"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Caminero, Junior",
-          "player_id": 691406,
-          "team": "Tampa Bay Rays",
-          "opponent": "Cleveland Guardians",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.83,
-          "edge": null,
-          "confidence": null,
-          "signal_score": 63,
-          "ranking_score": 63,
-          "hit_probability": null,
-          "probability_status": "NOT VALIDATED",
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "13.1% barrel rate",
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-10-13T21:15:19.930507+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 0,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-14T04:42:19.584587+00:00"
+          "locked_at_utc": "2026-10-14T18:14:36.952197+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets",
-      "grading_status": "FINAL"
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     }
   ],
   "rules": {
@@ -193,6 +63,5 @@
     "signal_score": "Heuristic model signal out of 100, not a target-hit probability",
     "hit_probability": "Not validated; no probability estimate is published",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  },
-  "graded_at_utc": "2026-10-14T04:42:19.584590+00:00"
+  }
 }
