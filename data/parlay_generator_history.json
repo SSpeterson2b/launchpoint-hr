@@ -1,6 +1,13 @@
 {
   "snapshots": [
     {
+      "generated_at_utc": "2026-10-14T18:14:37.357670+00:00",
+      "slate_date": "2026-10-14",
+      "model_version": "Parlay Generator 1.1",
+      "cards": [],
+      "status": "WAITING FOR ELIGIBLE LEGS"
+    },
+    {
       "generated_at_utc": "2026-10-13T23:45:33.287413+00:00",
       "slate_date": "2026-10-13",
       "model_version": "Parlay Generator 1.1",
