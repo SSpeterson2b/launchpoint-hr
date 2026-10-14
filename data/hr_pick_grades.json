@@ -1,5 +1,15 @@
 {
   "slate_date": "2026-10-14",
-  "generated_at_utc": "2026-10-14T15:12:35.426202+00:00",
-  "picks": []
+  "generated_at_utc": "2026-10-14T20:59:19.114288+00:00",
+  "picks": [
+    {
+      "game_pk": "849811",
+      "player_id": "660271",
+      "player": "Ohtani, Shohei",
+      "team": "Los Angeles Dodgers",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-15T00:00:00Z",
+      "locked_at_utc": "2026-10-14T20:58:19.182510+00:00"
+    }
+  ]
 }
