@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-15T20:33:42.363381+00:00",
+  "generated_at_utc": "2026-10-15T21:19:23.264199+00:00",
   "games": [
     {
       "game_pk": "849818",
@@ -11,9 +11,7 @@
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-15T20:33:42.363381+00:00",
-      "status_source": "MLB_STATS_API"
+      "doubleheader_game": ""
     },
     {
       "game_pk": "849810",
@@ -22,12 +20,10 @@
       "game_status": "Pre-Game",
       "away_team": "Milwaukee Brewers",
       "home_team": "Los Angeles Dodgers",
-      "away_lineup_confirmed": false,
+      "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
-      "lineups_confirmed": false,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-15T20:33:42.363381+00:00",
-      "status_source": "MLB_STATS_API"
+      "lineups_confirmed": true,
+      "doubleheader_game": ""
     }
   ]
 }
