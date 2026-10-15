@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-15T20:33:22.676938+00:00",
+  "generated_at_utc": "2026-10-15T21:41:18.218481+00:00",
   "slate_date": "2026-10-15",
   "model_version": "Player Props 2.3",
   "status": "LIVE",
@@ -13,6 +13,19 @@
     "reason": "Sportsbook feed is optional and not used for model targets"
   },
   "games": [
+    {
+      "game_pk": "849818",
+      "teams": [
+        "Cleveland Guardians",
+        "Tampa Bay Rays"
+      ],
+      "venue": "Progressive Field",
+      "game_datetime_utc": "2026-10-15T17:00:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "CLOSED",
+      "status_reason": "No pregame player-prop snapshot was locked"
+    },
     {
       "game_pk": "849810",
       "teams": [
@@ -172,19 +185,6 @@
       "long_shots": [],
       "status": "MODEL TARGETS",
       "status_reason": "LaunchPoint projections with gradeable model targets"
-    },
-    {
-      "game_pk": "849818",
-      "teams": [
-        "Cleveland Guardians",
-        "Tampa Bay Rays"
-      ],
-      "venue": "Progressive Field",
-      "game_datetime_utc": "2026-10-15T17:00:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "CLOSED",
-      "status_reason": "No pregame player-prop snapshot was locked"
     }
   ],
   "rules": {
