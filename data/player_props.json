@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-15T20:15:52.894556+00:00",
+  "generated_at_utc": "2026-10-15T20:33:22.676938+00:00",
   "slate_date": "2026-10-15",
   "model_version": "Player Props 2.3",
   "status": "LIVE",
@@ -13,19 +13,6 @@
     "reason": "Sportsbook feed is optional and not used for model targets"
   },
   "games": [
-    {
-      "game_pk": "849818",
-      "teams": [
-        "Cleveland Guardians",
-        "Tampa Bay Rays"
-      ],
-      "venue": "Progressive Field",
-      "game_datetime_utc": "2026-10-15T17:00:00Z",
-      "props": [],
-      "long_shots": [],
-      "status": "CLOSED",
-      "status_reason": "No pregame player-prop snapshot was locked"
-    },
     {
       "game_pk": "849810",
       "teams": [
@@ -62,11 +49,142 @@
           ],
           "locked_at_utc": "2026-10-15T17:56:52.687583+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "HITS",
+          "market": "batter_hits",
+          "player": "Ohtani, Shohei",
+          "player_id": 660271,
+          "team": "Los Angeles Dodgers",
+          "opponent": "Milwaukee Brewers",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.2,
+          "edge": null,
+          "confidence": null,
+          "signal_score": 70,
+          "ranking_score": 70,
+          "hit_probability": null,
+          "probability_status": "NOT VALIDATED",
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "16.4% barrel rate",
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-10-15T20:33:22.676286+00:00",
+          "batting_average": 0.275,
+          "batting_average_source": "DERIVED_SLG_MINUS_ISO",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "TOTAL BASES",
+          "market": "batter_total_bases",
+          "player": "Ohtani, Shohei",
+          "player_id": 660271,
+          "team": "Los Angeles Dodgers",
+          "opponent": "Milwaukee Brewers",
+          "line": 2,
+          "target": 2,
+          "side": "2+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 1.98,
+          "edge": null,
+          "confidence": null,
+          "signal_score": 70,
+          "ranking_score": 70,
+          "hit_probability": null,
+          "probability_status": "NOT VALIDATED",
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "16.4% barrel rate",
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-10-15T20:33:22.676336+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RUNS",
+          "market": "batter_runs_scored",
+          "player": "Ohtani, Shohei",
+          "player_id": 660271,
+          "team": "Los Angeles Dodgers",
+          "opponent": "Milwaukee Brewers",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.79,
+          "edge": null,
+          "confidence": null,
+          "signal_score": 70,
+          "ranking_score": 70,
+          "hit_probability": null,
+          "probability_status": "NOT VALIDATED",
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "16.4% barrel rate",
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-10-15T20:33:22.676418+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
+        },
+        {
+          "category": "RBI",
+          "market": "batter_rbis",
+          "player": "Ohtani, Shohei",
+          "player_id": 660271,
+          "team": "Los Angeles Dodgers",
+          "opponent": "Milwaukee Brewers",
+          "line": 1,
+          "target": 1,
+          "side": "1+",
+          "odds": null,
+          "book": "LAUNCHPOINT",
+          "projection": 0.76,
+          "edge": null,
+          "confidence": null,
+          "signal_score": 70,
+          "ranking_score": 70,
+          "hit_probability": null,
+          "probability_status": "NOT VALIDATED",
+          "decision": "PLAY",
+          "batting_order": 1,
+          "reasons": [
+            "3/3 core signals",
+            "16.4% barrel rate",
+            "confirmed batting 1"
+          ],
+          "locked_at_utc": "2026-10-15T20:33:22.676497+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
       "status_reason": "LaunchPoint projections with gradeable model targets"
+    },
+    {
+      "game_pk": "849818",
+      "teams": [
+        "Cleveland Guardians",
+        "Tampa Bay Rays"
+      ],
+      "venue": "Progressive Field",
+      "game_datetime_utc": "2026-10-15T17:00:00Z",
+      "props": [],
+      "long_shots": [],
+      "status": "CLOSED",
+      "status_reason": "No pregame player-prop snapshot was locked"
     }
   ],
   "rules": {
