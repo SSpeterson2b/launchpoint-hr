@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-10-15T18:45:02.385975+00:00",
+  "generated_at_utc": "2026-10-15T19:52:09.397172+00:00",
   "games": [
     {
       "game_pk": "849818",
       "game_date": "2026-10-15",
       "game_datetime_utc": "2026-10-15T17:00:00Z",
-      "game_status": "In Progress",
+      "game_status": "Final",
       "away_team": "Tampa Bay Rays",
       "home_team": "Cleveland Guardians",
       "away_lineup_confirmed": true,
