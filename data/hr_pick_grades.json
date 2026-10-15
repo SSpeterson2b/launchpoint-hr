@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-10-15",
-  "generated_at_utc": "2026-10-15T15:04:56.020271+00:00",
+  "generated_at_utc": "2026-10-15T19:55:00.207016+00:00",
   "picks": [
     {
       "game_pk": "849818",
@@ -9,7 +9,9 @@
       "team": "Tampa Bay Rays",
       "role": "SECONDARY",
       "game_datetime_utc": "2026-10-15T17:00:00Z",
-      "locked_at_utc": "2026-10-15T15:04:21.402015+00:00"
+      "locked_at_utc": "2026-10-15T15:04:21.402015+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     },
     {
       "game_pk": "849818",
@@ -18,7 +20,9 @@
       "team": "Tampa Bay Rays",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-15T17:00:00Z",
-      "locked_at_utc": "2026-10-15T15:04:21.402015+00:00"
+      "locked_at_utc": "2026-10-15T15:04:21.402015+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     }
   ]
 }
