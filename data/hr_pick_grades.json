@@ -1,7 +1,16 @@
 {
   "slate_date": "2026-10-15",
-  "generated_at_utc": "2026-10-15T20:33:41.377331+00:00",
+  "generated_at_utc": "2026-10-15T21:21:56.843777+00:00",
   "picks": [
+    {
+      "game_pk": "849810",
+      "player_id": "641343",
+      "player": "Bauers, Jake",
+      "team": "Milwaukee Brewers",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-16T00:00:00Z",
+      "locked_at_utc": "2026-10-15T21:20:52.969727+00:00"
+    },
     {
       "game_pk": "849810",
       "player_id": "660271",
