@@ -1,4 +1,11 @@
 {
-  "generated_at": "2026-10-15T17:57:29.049650+00:00",
-  "results": []
+  "generated_at": "2026-10-15T18:43:07.633437+00:00",
+  "results": [
+    {
+      "game_pk": 849818,
+      "player_id": 690984,
+      "player": "Halpin, Petey",
+      "home_runs": 1
+    }
+  ]
 }
