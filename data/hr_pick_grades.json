@@ -1,17 +1,24 @@
 {
-  "slate_date": "2026-10-14",
-  "generated_at_utc": "2026-10-15T04:23:31.791275+00:00",
+  "slate_date": "2026-10-15",
+  "generated_at_utc": "2026-10-15T15:04:56.020271+00:00",
   "picks": [
     {
-      "game_pk": "849811",
-      "player_id": "660271",
-      "player": "Ohtani, Shohei",
-      "team": "Los Angeles Dodgers",
+      "game_pk": "849818",
+      "player_id": "666018",
+      "player": "Aranda, Jonathan",
+      "team": "Tampa Bay Rays",
+      "role": "SECONDARY",
+      "game_datetime_utc": "2026-10-15T17:00:00Z",
+      "locked_at_utc": "2026-10-15T15:04:21.402015+00:00"
+    },
+    {
+      "game_pk": "849818",
+      "player_id": "691406",
+      "player": "Caminero, Junior",
+      "team": "Tampa Bay Rays",
       "role": "PRIMARY",
-      "game_datetime_utc": "2026-10-15T00:00:00Z",
-      "locked_at_utc": "2026-10-14T20:58:19.182510+00:00",
-      "home_runs": 0,
-      "result": "MISS"
+      "game_datetime_utc": "2026-10-15T17:00:00Z",
+      "locked_at_utc": "2026-10-15T15:04:21.402015+00:00"
     }
   ]
 }
