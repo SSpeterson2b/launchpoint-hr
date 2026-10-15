@@ -1,4 +1,11 @@
 {
-  "generated_at": "2026-10-14T23:51:40.001402+00:00",
-  "results": []
+  "generated_at": "2026-10-15T00:27:46.692834+00:00",
+  "results": [
+    {
+      "game_pk": 849811,
+      "player_id": 694192,
+      "player": "Chourio, Jackson",
+      "home_runs": 1
+    }
+  ]
 }
