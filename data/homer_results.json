@@ -1,29 +1,4 @@
 {
-  "generated_at": "2026-10-16T09:53:21.146932+00:00",
-  "results": [
-    {
-      "game_pk": 849818,
-      "player_id": 690984,
-      "player": "Halpin, Petey",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849810,
-      "player_id": 660271,
-      "player": "Ohtani, Shohei",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849810,
-      "player_id": 669003,
-      "player": "Mitchell, Garrett",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849810,
-      "player_id": 666152,
-      "player": "Hamilton, David",
-      "home_runs": 1
-    }
-  ]
+  "generated_at": "2026-10-16T14:54:07.022710+00:00",
+  "results": []
 }
