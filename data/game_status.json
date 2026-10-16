@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-15T23:40:18.083148+00:00",
+  "generated_at_utc": "2026-10-16T00:14:26.479230+00:00",
   "games": [
     {
       "game_pk": "849818",
@@ -17,7 +17,7 @@
       "game_pk": "849810",
       "game_date": "2026-10-15",
       "game_datetime_utc": "2026-10-16T00:00:00Z",
-      "game_status": "Pre-Game",
+      "game_status": "In Progress",
       "away_team": "Milwaukee Brewers",
       "home_team": "Los Angeles Dodgers",
       "away_lineup_confirmed": true,
