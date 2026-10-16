@@ -1,10 +1,16 @@
 {
-  "generated_at": "2026-10-16T00:16:49.488712+00:00",
+  "generated_at": "2026-10-16T01:10:44.779774+00:00",
   "results": [
     {
       "game_pk": 849818,
       "player_id": 690984,
       "player": "Halpin, Petey",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849810,
+      "player_id": 660271,
+      "player": "Ohtani, Shohei",
       "home_runs": 1
     }
   ]
