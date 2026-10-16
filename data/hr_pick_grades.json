@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-10-15",
-  "generated_at_utc": "2026-10-15T21:21:56.843777+00:00",
+  "generated_at_utc": "2026-10-16T04:18:53.675090+00:00",
   "picks": [
     {
       "game_pk": "849810",
@@ -9,7 +9,9 @@
       "team": "Milwaukee Brewers",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-16T00:00:00Z",
-      "locked_at_utc": "2026-10-15T21:20:52.969727+00:00"
+      "locked_at_utc": "2026-10-15T21:20:52.969727+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     },
     {
       "game_pk": "849810",
@@ -18,7 +20,9 @@
       "team": "Los Angeles Dodgers",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-16T00:00:00Z",
-      "locked_at_utc": "2026-10-15T20:32:37.790873+00:00"
+      "locked_at_utc": "2026-10-15T20:32:37.790873+00:00",
+      "home_runs": 1,
+      "result": "HIT"
     },
     {
       "game_pk": "849818",
