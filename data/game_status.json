@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-16T22:03:11.578719+00:00",
+  "generated_at_utc": "2026-10-16T22:45:10.804573+00:00",
   "games": [
     {
       "game_pk": "849817",
@@ -11,9 +11,7 @@
       "away_lineup_confirmed": true,
       "home_lineup_confirmed": true,
       "lineups_confirmed": true,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-16T22:03:11.578719+00:00",
-      "status_source": "MLB_STATS_API"
+      "doubleheader_game": ""
     }
   ]
 }
