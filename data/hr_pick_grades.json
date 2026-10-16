@@ -1,50 +1,5 @@
 {
-  "slate_date": "2026-10-15",
-  "generated_at_utc": "2026-10-16T04:18:53.675090+00:00",
-  "picks": [
-    {
-      "game_pk": "849810",
-      "player_id": "641343",
-      "player": "Bauers, Jake",
-      "team": "Milwaukee Brewers",
-      "role": "PRIMARY",
-      "game_datetime_utc": "2026-10-16T00:00:00Z",
-      "locked_at_utc": "2026-10-15T21:20:52.969727+00:00",
-      "home_runs": 0,
-      "result": "MISS"
-    },
-    {
-      "game_pk": "849810",
-      "player_id": "660271",
-      "player": "Ohtani, Shohei",
-      "team": "Los Angeles Dodgers",
-      "role": "PRIMARY",
-      "game_datetime_utc": "2026-10-16T00:00:00Z",
-      "locked_at_utc": "2026-10-15T20:32:37.790873+00:00",
-      "home_runs": 1,
-      "result": "HIT"
-    },
-    {
-      "game_pk": "849818",
-      "player_id": "666018",
-      "player": "Aranda, Jonathan",
-      "team": "Tampa Bay Rays",
-      "role": "SECONDARY",
-      "game_datetime_utc": "2026-10-15T17:00:00Z",
-      "locked_at_utc": "2026-10-15T15:04:21.402015+00:00",
-      "result": "MISS",
-      "home_runs": 0
-    },
-    {
-      "game_pk": "849818",
-      "player_id": "691406",
-      "player": "Caminero, Junior",
-      "team": "Tampa Bay Rays",
-      "role": "PRIMARY",
-      "game_datetime_utc": "2026-10-15T17:00:00Z",
-      "locked_at_utc": "2026-10-15T15:04:21.402015+00:00",
-      "result": "MISS",
-      "home_runs": 0
-    }
-  ]
+  "slate_date": "2026-10-16",
+  "generated_at_utc": "2026-10-16T14:54:36.008782+00:00",
+  "picks": []
 }
