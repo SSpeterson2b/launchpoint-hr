@@ -1,19 +1,17 @@
 {
-  "generated_at_utc": "2026-10-17T19:42:54.430415+00:00",
+  "generated_at_utc": "2026-10-17T20:31:33.751466+00:00",
   "games": [
     {
       "game_pk": "849816",
       "game_date": "2026-10-17",
       "game_datetime_utc": "2026-10-18T00:08:00Z",
-      "game_status": "Scheduled",
+      "game_status": "Pre-Game",
       "away_team": "Tampa Bay Rays",
       "home_team": "Cleveland Guardians",
       "away_lineup_confirmed": false,
-      "home_lineup_confirmed": false,
+      "home_lineup_confirmed": true,
       "lineups_confirmed": false,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-17T19:42:54.430415+00:00",
-      "status_source": "MLB_STATS_API"
+      "doubleheader_game": ""
     }
   ]
 }
