@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-10-17T04:09:40.099491+00:00",
-  "slate_date": "2026-10-16",
+  "generated_at_utc": "2026-10-17T16:43:15.802928+00:00",
+  "slate_date": "2026-10-17",
   "model_version": "Player Props 2.3",
   "status": "LIVE",
   "status_reason": "LaunchPoint model targets \u2014 sportsbook odds not required",
@@ -14,13 +14,13 @@
   },
   "games": [
     {
-      "game_pk": "849817",
+      "game_pk": "849816",
       "teams": [
         "Cleveland Guardians",
         "Tampa Bay Rays"
       ],
       "venue": "Progressive Field",
-      "game_datetime_utc": "2026-10-17T00:00:00Z",
+      "game_datetime_utc": "2026-10-18T00:08:00Z",
       "props": [
         {
           "category": "STRIKEOUTS",
@@ -47,117 +47,7 @@
             "22.1% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-10-16T17:45:14.068277+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "HITS",
-          "market": "batter_hits",
-          "player": "DeLauter, Chase",
-          "player_id": 800050,
-          "team": "Cleveland Guardians",
-          "opponent": "Tampa Bay Rays",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.17,
-          "edge": null,
-          "confidence": null,
-          "signal_score": 54,
-          "ranking_score": 54,
-          "hit_probability": null,
-          "probability_status": "NOT VALIDATED",
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-10-16T20:05:24.167752+00:00",
-          "batting_average": 0.287,
-          "batting_average_source": "DERIVED_SLG_MINUS_ISO",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "DeLauter, Chase",
-          "player_id": 800050,
-          "team": "Cleveland Guardians",
-          "opponent": "Tampa Bay Rays",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.59,
-          "edge": null,
-          "confidence": null,
-          "signal_score": 54,
-          "ranking_score": 54,
-          "hit_probability": null,
-          "probability_status": "NOT VALIDATED",
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-10-16T20:05:24.167797+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "DeLauter, Chase",
-          "player_id": 800050,
-          "team": "Cleveland Guardians",
-          "opponent": "Tampa Bay Rays",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.57,
-          "edge": null,
-          "confidence": null,
-          "signal_score": 54,
-          "ranking_score": 54,
-          "hit_probability": null,
-          "probability_status": "NOT VALIDATED",
-          "decision": "PLAY",
-          "batting_order": 3,
-          "reasons": [
-            "confirmed batting 3"
-          ],
-          "locked_at_utc": "2026-10-16T20:05:24.167844+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Lowe, Nathaniel",
-          "player_id": 663993,
-          "team": "Cleveland Guardians",
-          "opponent": "Tampa Bay Rays",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.73,
-          "edge": null,
-          "confidence": null,
-          "signal_score": 54,
-          "ranking_score": 54,
-          "hit_probability": null,
-          "probability_status": "NOT VALIDATED",
-          "decision": "PLAY",
-          "batting_order": 5,
-          "reasons": [
-            "verified matchup data"
-          ],
-          "locked_at_utc": "2026-10-16T20:05:24.167886+00:00",
+          "locked_at_utc": "2026-10-17T16:43:15.802912+00:00",
           "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
