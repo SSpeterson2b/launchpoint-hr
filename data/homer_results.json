@@ -1,4 +1,17 @@
 {
-  "generated_at": "2026-10-18T00:51:42.520213+00:00",
-  "results": []
+  "generated_at": "2026-10-18T04:17:39.599755+00:00",
+  "results": [
+    {
+      "game_pk": 849816,
+      "player_id": 683953,
+      "player": "Bazzana, Travis",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849816,
+      "player_id": 650490,
+      "player": "D\u00edaz, Yandy",
+      "home_runs": 1
+    }
+  ]
 }
