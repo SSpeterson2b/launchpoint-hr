@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-19T21:03:34.578353+00:00",
+  "generated_at_utc": "2026-10-19T21:25:51.524058+00:00",
   "slate_date": "2026-10-19",
   "model_version": "Parlay Generator 1.1",
   "cards": [
@@ -23,7 +23,7 @@
           "label": "Caminero, Junior",
           "detail": "1+",
           "score": 65.1,
-          "locked_at_utc": "2026-10-19T21:03:34.578353+00:00",
+          "locked_at_utc": "2026-10-19T21:25:51.524058+00:00",
           "result": "PENDING"
         },
         {
@@ -40,11 +40,11 @@
           "label": "Tampa Bay Rays",
           "detail": "57.8% model win",
           "score": 57.8,
-          "locked_at_utc": "2026-10-19T21:03:34.578353+00:00",
+          "locked_at_utc": "2026-10-19T21:25:51.524058+00:00",
           "result": "PENDING"
         }
       ],
-      "locked_at_utc": "2026-10-19T21:03:34.578353+00:00",
+      "locked_at_utc": "2026-10-19T21:25:51.524058+00:00",
       "verification_status": "VERIFIED PREGAME",
       "result": "PENDING",
       "card_id": "48c01602d2adf4836746"
