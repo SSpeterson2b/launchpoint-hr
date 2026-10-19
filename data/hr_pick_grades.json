@@ -1,5 +1,15 @@
 {
   "slate_date": "2026-10-19",
-  "generated_at_utc": "2026-10-19T17:31:25.202456+00:00",
-  "picks": []
+  "generated_at_utc": "2026-10-19T21:03:54.652450+00:00",
+  "picks": [
+    {
+      "game_pk": "849815",
+      "player_id": "691406",
+      "player": "Caminero, Junior",
+      "team": "Tampa Bay Rays",
+      "role": "PRIMARY",
+      "game_datetime_utc": "2026-10-20T00:08:00Z",
+      "locked_at_utc": "2026-10-19T21:02:57.462764+00:00"
+    }
+  ]
 }
