@@ -1,7 +1,7 @@
 {
   "snapshots": [
     {
-      "generated_at_utc": "2026-10-19T20:17:08.921561+00:00",
+      "generated_at_utc": "2026-10-19T21:03:34.578353+00:00",
       "slate_date": "2026-10-19",
       "model_version": "Parlay Generator 1.1",
       "cards": [
@@ -16,16 +16,16 @@
                 "Cleveland Guardians",
                 "Tampa Bay Rays"
               ],
-              "type": "STRIKEOUTS",
-              "market": "pitcher_strikeouts",
-              "target": 4,
-              "player_id": "",
-              "team": "Cleveland Guardians",
-              "source_locked_at_utc": "2026-10-19T19:32:34.676508+00:00",
-              "label": "Shawn Armstrong",
-              "detail": "4+",
-              "score": 61.7,
-              "locked_at_utc": "2026-10-19T20:17:08.921561+00:00",
+              "type": "HITS",
+              "market": "batter_hits",
+              "target": 1,
+              "player_id": 691406,
+              "team": "Tampa Bay Rays",
+              "source_locked_at_utc": "2026-10-19T21:03:34.184380+00:00",
+              "label": "Caminero, Junior",
+              "detail": "1+",
+              "score": 65.1,
+              "locked_at_utc": "2026-10-19T21:03:34.578353+00:00",
               "result": "PENDING"
             },
             {
@@ -40,16 +40,16 @@
               "market": "game_winner",
               "team": "Tampa Bay Rays",
               "label": "Tampa Bay Rays",
-              "detail": "58.1% model win",
-              "score": 58.1,
-              "locked_at_utc": "2026-10-19T20:17:08.921561+00:00",
+              "detail": "57.8% model win",
+              "score": 57.8,
+              "locked_at_utc": "2026-10-19T21:03:34.578353+00:00",
               "result": "PENDING"
             }
           ],
-          "locked_at_utc": "2026-10-19T20:17:08.921561+00:00",
+          "locked_at_utc": "2026-10-19T21:03:34.578353+00:00",
           "verification_status": "VERIFIED PREGAME",
           "result": "PENDING",
-          "card_id": "201a5a0e91bacde66874"
+          "card_id": "48c01602d2adf4836746"
         }
       ],
       "status": "SAVED MODEL CARDS"
