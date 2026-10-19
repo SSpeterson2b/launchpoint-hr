@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-19T00:06:38.964147+00:00",
+  "generated_at_utc": "2026-10-19T00:34:10.655392+00:00",
   "slate_date": "2026-10-18",
   "model_version": "Player Props 2.3",
   "status": "LIVE",
@@ -193,6 +193,5 @@
     "signal_score": "Heuristic model signal out of 100, not a target-hit probability",
     "hit_probability": "Not validated; no probability estimate is published",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  },
-  "graded_at_utc": "2026-10-19T00:07:15.595260+00:00"
+  }
 }
