@@ -1,7 +1,7 @@
 {
   "snapshots": [
     {
-      "generated_at_utc": "2026-10-19T20:16:16.856914+00:00",
+      "generated_at_utc": "2026-10-19T20:17:08.921561+00:00",
       "slate_date": "2026-10-19",
       "model_version": "Parlay Generator 1.1",
       "cards": [
@@ -25,7 +25,7 @@
               "label": "Shawn Armstrong",
               "detail": "4+",
               "score": 61.7,
-              "locked_at_utc": "2026-10-19T20:16:16.856914+00:00",
+              "locked_at_utc": "2026-10-19T20:17:08.921561+00:00",
               "result": "PENDING"
             },
             {
@@ -42,11 +42,11 @@
               "label": "Tampa Bay Rays",
               "detail": "58.1% model win",
               "score": 58.1,
-              "locked_at_utc": "2026-10-19T20:16:16.856914+00:00",
+              "locked_at_utc": "2026-10-19T20:17:08.921561+00:00",
               "result": "PENDING"
             }
           ],
-          "locked_at_utc": "2026-10-19T20:16:16.856914+00:00",
+          "locked_at_utc": "2026-10-19T20:17:08.921561+00:00",
           "verification_status": "VERIFIED PREGAME",
           "result": "PENDING",
           "card_id": "201a5a0e91bacde66874"
