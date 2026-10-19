@@ -1,19 +1,17 @@
 {
-  "generated_at_utc": "2026-10-19T10:48:59.711805+00:00",
+  "generated_at_utc": "2026-10-19T17:29:42.361837+00:00",
   "games": [
     {
-      "game_pk": "849817",
-      "game_date": "2026-10-18",
-      "game_datetime_utc": "2026-10-18T21:08:00Z",
-      "game_status": "Final",
-      "away_team": "Tampa Bay Rays",
-      "home_team": "Cleveland Guardians",
-      "away_lineup_confirmed": true,
-      "home_lineup_confirmed": true,
-      "lineups_confirmed": true,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-19T10:48:59.711805+00:00",
-      "status_source": "MLB_STATS_API"
+      "game_pk": "849815",
+      "game_date": "2026-10-19",
+      "game_datetime_utc": "2026-10-20T00:08:00Z",
+      "game_status": "Scheduled",
+      "away_team": "Cleveland Guardians",
+      "home_team": "Tampa Bay Rays",
+      "away_lineup_confirmed": false,
+      "home_lineup_confirmed": false,
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     }
   ]
 }
