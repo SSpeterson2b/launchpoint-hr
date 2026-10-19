@@ -1,6 +1,60 @@
 {
   "snapshots": [
     {
+      "generated_at_utc": "2026-10-19T19:32:35.364564+00:00",
+      "slate_date": "2026-10-19",
+      "model_version": "Parlay Generator 1.1",
+      "cards": [
+        {
+          "title": "Model combination",
+          "legs": [
+            {
+              "game_pk": "849815",
+              "game_date": "2026-10-19",
+              "game_datetime_utc": "2026-10-20T00:08:00Z",
+              "teams": [
+                "Cleveland Guardians",
+                "Tampa Bay Rays"
+              ],
+              "type": "STRIKEOUTS",
+              "market": "pitcher_strikeouts",
+              "target": 4,
+              "player_id": "",
+              "team": "Cleveland Guardians",
+              "source_locked_at_utc": "2026-10-19T19:32:34.676508+00:00",
+              "label": "Shawn Armstrong",
+              "detail": "4+",
+              "score": 61.7,
+              "locked_at_utc": "2026-10-19T19:32:35.364564+00:00",
+              "result": "PENDING"
+            },
+            {
+              "game_pk": "849815",
+              "game_date": "2026-10-19",
+              "game_datetime_utc": "2026-10-20T00:08:00Z",
+              "teams": [
+                "Cleveland Guardians",
+                "Tampa Bay Rays"
+              ],
+              "type": "WINNER",
+              "market": "game_winner",
+              "team": "Tampa Bay Rays",
+              "label": "Tampa Bay Rays",
+              "detail": "58.1% model win",
+              "score": 58.1,
+              "locked_at_utc": "2026-10-19T19:32:35.364564+00:00",
+              "result": "PENDING"
+            }
+          ],
+          "locked_at_utc": "2026-10-19T19:32:35.364564+00:00",
+          "verification_status": "VERIFIED PREGAME",
+          "result": "PENDING",
+          "card_id": "201a5a0e91bacde66874"
+        }
+      ],
+      "status": "SAVED MODEL CARDS"
+    },
+    {
       "generated_at_utc": "2026-10-18T17:00:34.221602+00:00",
       "slate_date": "2026-10-18",
       "model_version": "Parlay Generator 1.1",
