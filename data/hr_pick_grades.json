@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-10-19",
-  "generated_at_utc": "2026-10-19T21:03:54.652450+00:00",
+  "generated_at_utc": "2026-10-20T04:36:54.801897+00:00",
   "picks": [
     {
       "game_pk": "849815",
@@ -9,7 +9,9 @@
       "team": "Tampa Bay Rays",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-20T00:08:00Z",
-      "locked_at_utc": "2026-10-19T21:02:57.462764+00:00"
+      "locked_at_utc": "2026-10-19T21:02:57.462764+00:00",
+      "home_runs": 1,
+      "result": "HIT"
     }
   ]
 }
