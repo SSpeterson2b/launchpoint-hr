@@ -1,4 +1,17 @@
 {
-  "generated_at": "2026-10-20T01:41:51.574505+00:00",
-  "results": []
+  "generated_at": "2026-10-20T04:36:55.351718+00:00",
+  "results": [
+    {
+      "game_pk": 849815,
+      "player_id": 691406,
+      "player": "Caminero, Junior",
+      "home_runs": 1
+    },
+    {
+      "game_pk": 849815,
+      "player_id": 650490,
+      "player": "D\u00edaz, Yandy",
+      "home_runs": 1
+    }
+  ]
 }
