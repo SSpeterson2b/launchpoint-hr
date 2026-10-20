@@ -26,7 +26,9 @@
               "detail": "1+",
               "score": 65.1,
               "locked_at_utc": "2026-10-20T00:00:03.790373+00:00",
-              "result": "PENDING"
+              "result": "HIT",
+              "actual": 2,
+              "graded_at_utc": "2026-10-20T04:37:34.578602+00:00"
             },
             {
               "game_pk": "849815",
@@ -43,16 +45,20 @@
               "detail": "57.8% model win",
               "score": 57.8,
               "locked_at_utc": "2026-10-20T00:00:03.790373+00:00",
-              "result": "PENDING"
+              "result": "HIT",
+              "actual": "Tampa Bay Rays",
+              "graded_at_utc": "2026-10-20T04:37:34.578602+00:00"
             }
           ],
           "locked_at_utc": "2026-10-20T00:00:03.790373+00:00",
           "verification_status": "VERIFIED PREGAME",
-          "result": "PENDING",
-          "card_id": "48c01602d2adf4836746"
+          "result": "HIT",
+          "card_id": "48c01602d2adf4836746",
+          "graded_at_utc": "2026-10-20T04:37:34.578602+00:00"
         }
       ],
-      "status": "SAVED MODEL CARDS"
+      "status": "SAVED MODEL CARDS",
+      "graded_at_utc": "2026-10-20T04:37:34.578602+00:00"
     },
     {
       "generated_at_utc": "2026-10-18T17:00:34.221602+00:00",
