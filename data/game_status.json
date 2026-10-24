@@ -1,19 +1,17 @@
 {
-  "generated_at_utc": "2026-10-24T14:01:35.208479+00:00",
+  "generated_at_utc": "2026-10-24T17:01:54.212693+00:00",
   "games": [
     {
-      "game_pk": "849805",
-      "game_date": "2026-10-23",
-      "game_datetime_utc": "2026-10-24T00:00:00Z",
-      "game_status": "Final",
+      "game_pk": "849802",
+      "game_date": "2026-10-24",
+      "game_datetime_utc": "2026-10-25T00:00:00Z",
+      "game_status": "Scheduled",
       "away_team": "Tampa Bay Rays",
       "home_team": "Milwaukee Brewers",
-      "away_lineup_confirmed": true,
-      "home_lineup_confirmed": true,
-      "lineups_confirmed": true,
-      "doubleheader_game": "",
-      "status_checked_at_utc": "2026-10-24T14:01:35.208479+00:00",
-      "status_source": "MLB_STATS_API"
+      "away_lineup_confirmed": false,
+      "home_lineup_confirmed": false,
+      "lineups_confirmed": false,
+      "doubleheader_game": ""
     }
   ]
 }
