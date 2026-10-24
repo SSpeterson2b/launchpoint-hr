@@ -1,28 +1,5 @@
 {
-  "slate_date": "2026-10-23",
-  "generated_at_utc": "2026-10-24T04:23:36.737468+00:00",
-  "picks": [
-    {
-      "game_pk": "849805",
-      "player_id": "641343",
-      "player": "Bauers, Jake",
-      "team": "Milwaukee Brewers",
-      "role": "PRIMARY",
-      "game_datetime_utc": "2026-10-24T00:00:00Z",
-      "locked_at_utc": "2026-10-23T20:37:29.101273+00:00",
-      "home_runs": 0,
-      "result": "MISS"
-    },
-    {
-      "game_pk": "849805",
-      "player_id": "691406",
-      "player": "Caminero, Junior",
-      "team": "Tampa Bay Rays",
-      "role": "PRIMARY",
-      "game_datetime_utc": "2026-10-24T00:00:00Z",
-      "locked_at_utc": "2026-10-23T20:37:29.101273+00:00",
-      "home_runs": 0,
-      "result": "MISS"
-    }
-  ]
+  "slate_date": "2026-10-24",
+  "generated_at_utc": "2026-10-24T17:03:45.150835+00:00",
+  "picks": []
 }
