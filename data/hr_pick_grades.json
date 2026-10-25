@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-10-24",
-  "generated_at_utc": "2026-10-24T20:44:16.269128+00:00",
+  "generated_at_utc": "2026-10-25T04:27:17.791723+00:00",
   "picks": [
     {
       "game_pk": "849802",
@@ -9,7 +9,9 @@
       "team": "Milwaukee Brewers",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-25T00:00:00Z",
-      "locked_at_utc": "2026-10-24T20:43:42.770598+00:00"
+      "locked_at_utc": "2026-10-24T20:43:42.770598+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     },
     {
       "game_pk": "849802",
@@ -18,7 +20,9 @@
       "team": "Tampa Bay Rays",
       "role": "PRIMARY",
       "game_datetime_utc": "2026-10-25T00:00:00Z",
-      "locked_at_utc": "2026-10-24T20:43:42.770598+00:00"
+      "locked_at_utc": "2026-10-24T20:43:42.770598+00:00",
+      "home_runs": 0,
+      "result": "MISS"
     }
   ]
 }
