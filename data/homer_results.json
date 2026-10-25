@@ -1,4 +1,11 @@
 {
-  "generated_at": "2026-10-25T00:13:32.177336+00:00",
-  "results": []
+  "generated_at": "2026-10-25T01:00:43.823319+00:00",
+  "results": [
+    {
+      "game_pk": 849802,
+      "player_id": 689414,
+      "player": "Hicks, Liam",
+      "home_runs": 1
+    }
+  ]
 }
