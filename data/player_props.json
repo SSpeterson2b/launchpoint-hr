@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-10-25T04:27:37.552923+00:00",
-  "slate_date": "2026-10-24",
+  "generated_at_utc": "2026-10-28T19:11:12.959917+00:00",
+  "slate_date": "2026-10-28",
   "model_version": "Player Props 2.3",
   "status": "LIVE",
   "status_reason": "LaunchPoint model targets \u2014 sportsbook odds not required",
@@ -14,27 +14,27 @@
   },
   "games": [
     {
-      "game_pk": "849802",
+      "game_pk": "849799",
       "teams": [
         "Milwaukee Brewers",
         "Tampa Bay Rays"
       ],
-      "venue": "American Family Field",
-      "game_datetime_utc": "2026-10-25T00:00:00Z",
+      "venue": "Tropicana Field",
+      "game_datetime_utc": "2026-10-29T00:00:00Z",
       "props": [
         {
           "category": "STRIKEOUTS",
           "market": "pitcher_strikeouts",
-          "player": "Logan Henderson",
+          "player": "Jacob Misiorowski",
           "player_id": "",
           "team": "Milwaukee Brewers",
           "opponent": "Tampa Bay Rays",
-          "line": 5,
-          "target": 5,
-          "side": "5+",
+          "line": 7,
+          "target": 7,
+          "side": "7+",
           "odds": null,
           "book": "LAUNCHPOINT",
-          "projection": 5.58,
+          "projection": 7.15,
           "edge": null,
           "confidence": null,
           "signal_score": null,
@@ -44,146 +44,16 @@
           "decision": "PLAY",
           "batting_order": "",
           "reasons": [
-            "29.6% pitcher K rate",
+            "37.9% pitcher K rate",
             "confirmed starter"
           ],
-          "locked_at_utc": "2026-10-24T17:03:25.650704+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 4,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-25T04:28:24.876888+00:00"
-        },
-        {
-          "category": "HITS",
-          "market": "batter_hits",
-          "player": "Chourio, Jackson",
-          "player_id": 694192,
-          "team": "Milwaukee Brewers",
-          "opponent": "Tampa Bay Rays",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.24,
-          "edge": null,
-          "confidence": null,
-          "signal_score": 62,
-          "ranking_score": 62,
-          "hit_probability": null,
-          "probability_status": "NOT VALIDATED",
-          "decision": "PLAY",
-          "batting_order": 1,
-          "reasons": [
-            "12.3% barrel rate",
-            "confirmed batting 1"
-          ],
-          "locked_at_utc": "2026-10-24T20:44:36.519767+00:00",
-          "batting_average": 0.291,
-          "batting_average_source": "DERIVED_SLG_MINUS_ISO",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 2,
-          "result": "HIT",
-          "graded_at_utc": "2026-10-25T04:28:24.876921+00:00"
-        },
-        {
-          "category": "TOTAL BASES",
-          "market": "batter_total_bases",
-          "player": "Caminero, Junior",
-          "player_id": 691406,
-          "team": "Tampa Bay Rays",
-          "opponent": "Milwaukee Brewers",
-          "line": 2,
-          "target": 2,
-          "side": "2+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 1.87,
-          "edge": null,
-          "confidence": null,
-          "signal_score": 64,
-          "ranking_score": 64,
-          "hit_probability": null,
-          "probability_status": "NOT VALIDATED",
-          "decision": "PLAY",
-          "batting_order": 4,
-          "reasons": [
-            "13.1% barrel rate",
-            "confirmed batting 4"
-          ],
-          "locked_at_utc": "2026-10-24T20:44:36.519840+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "MISS",
-          "graded_at_utc": "2026-10-25T04:28:24.876931+00:00"
-        },
-        {
-          "category": "RUNS",
-          "market": "batter_runs_scored",
-          "player": "Bauers, Jake",
-          "player_id": 641343,
-          "team": "Milwaukee Brewers",
-          "opponent": "Tampa Bay Rays",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.71,
-          "edge": null,
-          "confidence": null,
-          "signal_score": 64,
-          "ranking_score": 64,
-          "hit_probability": null,
-          "probability_status": "NOT VALIDATED",
-          "decision": "PLAY",
-          "batting_order": 2,
-          "reasons": [
-            "14.0% barrel rate",
-            "confirmed batting 2"
-          ],
-          "locked_at_utc": "2026-10-24T20:44:36.519980+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-10-25T04:28:24.876939+00:00"
-        },
-        {
-          "category": "RBI",
-          "market": "batter_rbis",
-          "player": "Caminero, Junior",
-          "player_id": 691406,
-          "team": "Tampa Bay Rays",
-          "opponent": "Milwaukee Brewers",
-          "line": 1,
-          "target": 1,
-          "side": "1+",
-          "odds": null,
-          "book": "LAUNCHPOINT",
-          "projection": 0.86,
-          "edge": null,
-          "confidence": null,
-          "signal_score": 64,
-          "ranking_score": 64,
-          "hit_probability": null,
-          "probability_status": "NOT VALIDATED",
-          "decision": "PLAY",
-          "batting_order": 4,
-          "reasons": [
-            "13.1% barrel rate",
-            "confirmed batting 4"
-          ],
-          "locked_at_utc": "2026-10-24T20:44:36.520118+00:00",
-          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required",
-          "actual": 1,
-          "result": "HIT",
-          "graded_at_utc": "2026-10-25T04:28:24.876946+00:00"
+          "locked_at_utc": "2026-10-28T19:11:12.959889+00:00",
+          "status_reason": "LaunchPoint model target \u2014 sportsbook line not required"
         }
       ],
       "long_shots": [],
       "status": "MODEL TARGETS",
-      "status_reason": "LaunchPoint projections with gradeable model targets",
-      "grading_status": "FINAL"
+      "status_reason": "LaunchPoint projections with gradeable model targets"
     }
   ],
   "rules": {
@@ -193,6 +63,5 @@
     "signal_score": "Heuristic model signal out of 100, not a target-hit probability",
     "hit_probability": "Not validated; no probability estimate is published",
     "disclaimer": "LaunchPoint targets are model projections, not sportsbook lines; no outcome is guaranteed."
-  },
-  "graded_at_utc": "2026-10-25T04:28:24.876952+00:00"
+  }
 }
