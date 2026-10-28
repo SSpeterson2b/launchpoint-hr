@@ -1,17 +1,4 @@
 {
-  "generated_at": "2026-10-28T12:59:52.151312+00:00",
-  "results": [
-    {
-      "game_pk": 849802,
-      "player_id": 689414,
-      "player": "Hicks, Liam",
-      "home_runs": 1
-    },
-    {
-      "game_pk": 849802,
-      "player_id": 686217,
-      "player": "Frelick, Sal",
-      "home_runs": 1
-    }
-  ]
+  "generated_at": "2026-10-28T19:09:41.676609+00:00",
+  "results": []
 }
