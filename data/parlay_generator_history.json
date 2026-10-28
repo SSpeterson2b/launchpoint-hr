@@ -1,11 +1,61 @@
 {
   "snapshots": [
     {
-      "generated_at_utc": "2026-10-28T19:11:13.618930+00:00",
+      "generated_at_utc": "2026-10-28T21:02:13.404574+00:00",
       "slate_date": "2026-10-28",
       "model_version": "Parlay Generator 1.1",
-      "cards": [],
-      "status": "WAITING FOR ELIGIBLE LEGS"
+      "cards": [
+        {
+          "title": "Model combination",
+          "legs": [
+            {
+              "game_pk": "849799",
+              "game_date": "2026-10-28",
+              "game_datetime_utc": "2026-10-29T00:00:00Z",
+              "teams": [
+                "Milwaukee Brewers",
+                "Tampa Bay Rays"
+              ],
+              "type": "HITS",
+              "market": "batter_hits",
+              "target": 1,
+              "player_id": 694192,
+              "team": "Milwaukee Brewers",
+              "source_locked_at_utc": "2026-10-28T21:02:13.151939+00:00",
+              "label": "Chourio, Jackson",
+              "detail": "1+",
+              "score": 64.4,
+              "locked_at_utc": "2026-10-28T21:02:13.404574+00:00",
+              "result": "PENDING"
+            },
+            {
+              "game_pk": "849799",
+              "game_date": "2026-10-28",
+              "game_datetime_utc": "2026-10-29T00:00:00Z",
+              "teams": [
+                "Milwaukee Brewers",
+                "Tampa Bay Rays"
+              ],
+              "type": "RUNS",
+              "market": "batter_runs_scored",
+              "target": 1,
+              "player_id": 641343,
+              "team": "Milwaukee Brewers",
+              "source_locked_at_utc": "2026-10-28T21:02:13.152062+00:00",
+              "label": "Bauers, Jake",
+              "detail": "1+",
+              "score": 64.0,
+              "locked_at_utc": "2026-10-28T21:02:13.404574+00:00",
+              "result": "PENDING"
+            }
+          ],
+          "locked_at_utc": "2026-10-28T21:02:13.404574+00:00",
+          "verification_status": "VERIFIED PREGAME",
+          "result": "PENDING",
+          "card_id": "4f5cb509b04d70296bff"
+        }
+      ],
+      "status": "SAVED MODEL CARDS"
     },
     {
       "generated_at_utc": "2026-10-24T17:03:26.415782+00:00",
