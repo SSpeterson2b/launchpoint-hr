@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-10-28T22:30:46.599907+00:00",
+  "generated_at_utc": "2026-10-28T23:38:43.049763+00:00",
   "games": [
     {
       "game_pk": "849799",
       "game_date": "2026-10-28",
       "game_datetime_utc": "2026-10-29T00:00:00Z",
-      "game_status": "Pre-Game",
+      "game_status": "Warmup",
       "away_team": "Milwaukee Brewers",
       "home_team": "Tampa Bay Rays",
       "away_lineup_confirmed": true,
